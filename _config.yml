@@ -1,0 +1,29 @@
+title: itenium
+baseurl: ""
+url: "https://itenium.be"
+
+# Blog
+github_data_url: https://github.com/itenium-be/blog-posts/blob/master
+# collections:
+#   posts:
+#     output: true
+#     permalink: /blog/:categories/:title/
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+# https://github.com/jekyll/minima
+# bundle show minima
+theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .editorconfig
