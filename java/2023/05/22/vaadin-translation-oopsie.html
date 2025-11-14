@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Vaadin: Translation Oopsie | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Vaadin: Translation Oopsie" />
+<meta name="author" content="Onur Bugdayci" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application." />
+<meta property="og:description" content="At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application." />
+<link rel="canonical" href="https://itenium.be/java/2023/05/22/vaadin-translation-oopsie.html" />
+<meta property="og:url" content="https://itenium.be/java/2023/05/22/vaadin-translation-oopsie.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-22T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Vaadin: Translation Oopsie" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Onur Bugdayci"},"dateModified":"2023-05-22T00:00:00+00:00","datePublished":"2023-05-22T00:00:00+00:00","description":"At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application.","headline":"Vaadin: Translation Oopsie","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/java/2023/05/22/vaadin-translation-oopsie.html"},"url":"https://itenium.be/java/2023/05/22/vaadin-translation-oopsie.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Vaadin: Translation Oopsie</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-05-22T00:00:00+00:00" itemprop="datePublished">May 22, 2023
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Onur Bugdayci</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application.</p>
+
+<!--more-->
+
+<h1 id="how-the-translations-are-done">How the translations are done</h1>
+
+<p>The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.</p>
+
+<p><strong>The translation key is formed as such</strong>:</p>
+
+<p><img src="/assets/blog-images/vaadin_translation_key_template.png" alt="Visual translation key formation" title="Pretty slick" /></p>
+
+<p>The parent id is set on the parent component. The component type is defined by the component itself and we refer to its class name for that, for example for a checkbox component it would be checkbox. The component id is set on the component. The translation field depends on the component type. Some component types put the translation values in label fields and in that case the translation field would be “caption” (labels used to be captions in Vaadin version 8), some have the translations in div fields in which case the translation field is set as “div”.</p>
+
+<p><strong>An example translation key would then look something like this</strong>:</p>
+
+<p><code>productview.checkbox.isavailable.caption</code></p>
+
+<p>The actual translation was then done by calling the static method translateLayout on the Translation utility class. This translateLayout method would take a parent component as an argument and would then loop through each child component within and for each child component it would proceed to form the translation key as defined above and do the translation by calling the static method translate which took the translation key as an argument and returned a translation.</p>
+
+<p>This translateLayout method worked. Not great performance wise as a loop needed to occur before each parent component rendered with a bunch of translation calls to the database. But it didn’t have enough of an impact to warrant a refactor. Until the upgrade of course…</p>
+
+<p><strong>translateLayout method</strong>:</p>
+<pre><code class="language-java">public static void translateLayout(String mainComponentId, HasComponents layout) {
+  for (Component component : layout) {
+    translateComponent(mainComponentId, component);
+  }
+}
+
+private static void translateComponent(String componentRoot, Component component) {
+  String componentId = retrieveComponentId(component);
+  if (Strings.isNotBlank(componentId)) {
+    setComponent(componentRoot, component, componentId);
+  }
+}
+
+private static void setComponent(String componentRoot, Component component, String componentId) {
+  String componentClass = component.getClass().getSimpleName();
+
+  String translation = translate(componentRoot, componentClass, componentId, ComponentType.CAPTION);
+  if (translation != null) {
+    component.setCaption(translation);
+  }
+
+  if (component instanceof AbstractComponent) {
+    String desc = translate(componentRoot, componentClass, componentId, ComponentType.DESCRIPTION);
+    if (desc != null) {
+        ((AbstractComponent) component).setDescription(desc);
+    }
+  }
+
+  if (component instanceof Label) {
+    String value = translate(componentRoot, componentClass, componentId, ComponentType.VALUE);
+    if (value != null) {
+        ((Label) component).setValue(value);
+    }
+  }
+
+  …etc
+}
+</code></pre>
+<h1 id="the-issue-in-the-upgrade">The issue in the upgrade</h1>
+
+<p>So an interesting limitation was introduced somewhere in the versions between 8 and 22.</p>
+
+<p><strong>Parent components defined as a TypeScript template file in Vaadin version 22</strong>:</p>
+<pre><code class="language-ts">@customElement('cred-vouch-design')
+export class CreditVouchDesign extends LitElement {
+  static get styles() {
+    return css`
+      :host {
+        display: block;
+        height: 100%;
+    
+    `;
+  }
+
+  render() {
+    return html`
+      &lt;vaadin-vertical-layout style="width: 100%; height: 100%; padding: var(--lumo-space-m);"&gt;
+        &lt;vaadin-text-field label="IB" id="ibTextField" type="text" tabindex=""
+          style="width: 100%;"&gt;&lt;/vaadin-text-field&gt;
+        &lt;vaadin-text-field label="Bz" id="bzTextField" type="text" tabindex=""
+          style="width: 100%;"&gt;&lt;/vaadin-text-field&gt;
+      &lt;/vaadin-vertical-layout&gt;
+    `;
+  }
+
+  // Remove this method to render the contents of this view inside Shadow DOM
+  createRenderRoot() {
+    return this;
+  }
+}
+</code></pre>
+
+<p>The corresponding java companion file that Vaadin creates for this template file on the server side would not allow you to access the child components within. I suppose this was done to further separate the client side from the server side of the application.</p>
+
+<p>So we had 3 options to fix this:</p>
+<ul>
+  <li>Tinker with the framework so child components can be accessed. This was tried and failed and wouldn’t really be ideal as this functionality might change again in a future version and would need more tinkering. Our aim was for a more permanent solution</li>
+  <li>Implement the translation logic fully on the client side in TypeScript as from the client side we do still have access to the child components from a parent component. This was a no go as well as we had the convention of having all the logic only on the server side.</li>
+  <li>Find a different way of translating each component.</li>
+</ul>
+
+<p>Option 3 was the ideal way to fix this issue. The way we found to fix this issue was to do the translation from the other way around. No more using the translateLayout method. Each component would now call the existing translate method before it is rendered and do its translation. To call this translate method,  we had to create a custom component class for each Vaadin component. We then made this custom component class implement a TranslatableTitle interface that enforced the implementation of the translate method. This was a better futureproof way of handling translation as for each new component type introduced we would just need to create a new custom component class for that type and implement the TranslatableTitle interface. The old way would require us to add another if check inside the translateLayout method which wasn’t a very SOLID way of coding.</p>
+
+<p><strong>Custom translatable component</strong>:</p>
+<pre><code class="language-java">public class CustomCheckbox extends Checkbox implements TranslatableTitle {
+  private static final String TRANSLATION_TYPE = ".checkbox.";
+
+  public CustomCheckbox() {
+    getId().ifPresent(this::translateTitle);
+  }
+
+  @Override
+  public void translateTitle(String id) {
+    String translation = getTranslation(parentName + TRANSLATION_TYPE + id + CAPTION_TRANSLATION_KEY)
+    CustomComponentUtil.getParentName(this).ifPresent(parentName -&gt; setLabel(translation));
+  }
+}
+
+</code></pre>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>
+
+  </div><a class="u-url" href="/java/2023/05/22/vaadin-translation-oopsie.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Frontend Track Setup | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Frontend Track Setup" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Q: How do you install Node? A: Well, you don’t!" />
+<meta property="og:description" content="Q: How do you install Node? A: Well, you don’t!" />
+<link rel="canonical" href="https://itenium.be/dev-setup/2024/08/31/itenium-frontend-track-setup.html" />
+<meta property="og:url" content="https://itenium.be/dev-setup/2024/08/31/itenium-frontend-track-setup.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-31T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Frontend Track Setup" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2024-08-31T00:00:00+00:00","datePublished":"2024-08-31T00:00:00+00:00","description":"Q: How do you install Node? A: Well, you don’t!","headline":"Frontend Track Setup","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dev-setup/2024/08/31/itenium-frontend-track-setup.html"},"url":"https://itenium.be/dev-setup/2024/08/31/itenium-frontend-track-setup.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Frontend Track Setup</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-08-31T00:00:00+00:00" itemprop="datePublished">Aug 31, 2024
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p class="notice--info">Q: How do you install Node?<br />
+A: Well, you don’t!</p>
+
+<p>You install NVM (Node Version Manager) because
+every project uses a different versions and
+they are not always that compatible!</p>
+
+<!--more-->
+
+<h1 id="node-version-manager">Node Version Manager</h1>
+
+<p>Install the <a href="https://community.chocolatey.org/packages/nvm">nvm package</a> with <a href="https://chocolatey.org/install">chocolatey</a>.
+There is also a <a href="https://community.chocolatey.org/packages/nvm.portable">portable version</a>.</p>
+
+<pre><code class="language-powershell">choco install nvm
+</code></pre>
+
+<p>NVM usage typically requires an Administrative prompt.</p>
+
+<pre><code class="language-powershell"># List help
+nvm
+
+# List available node versions
+nvm list available
+
+# Use a specific node version
+nvm install 22.1.0
+nvm use 22.1.0
+</code></pre>
+
+<p>The Github repo of the session lists the Node version used at the top of the README.</p>
+
+<h1 id="visual-studio-code">Visual Studio Code</h1>
+
+<p>Looks like it’s already 5 years since I switched from Sublime Text 3 to Visual Studio Code.
+While all attendees can obviously pick whichever IDE they fancy, if you don’t have strong
+convictions about your IDE for frontend development (yet), you can’t go wrong with VSC.</p>
+
+<p>Learning to use your IDE well is Pragmatic Tip 22. Learn those shortcuts, macro’s, install
+fancy plugins, learn how to work with multiple cursors etc. You’ll be typing quite a lot
+during your career, better do it elegantly!</p>
+
+<p>Previous blog posts on setting up and learning about Visual Studio Code:</p>
+
+<ul>
+  <li><a href="https://itenium.be/blog/dev-setup/pragmatic-tip-22-use-a-single-editor-well/">Pragmatic Tip #22 : Use A Single Editor Well</a></li>
+  <li><a href="https://itenium.be/blog/dev-setup/vscode-editor/">VSCode: Editor Settings and Shortcuts</a></li>
+</ul>
+
+<h2 id="syncing-settings">Syncing Settings</h2>
+
+<p>Back when those posts were written, Visual Studio Code didn’t have a builtin option
+to sync your settings so I did it with our <a href="https://github.com/Laoujin/dotfiles">dotfiles</a>. But now it’s just a
+<a href="https://code.visualstudio.com/docs/editor/settings-sync">menu option</a> away.</p>
+
+<p><img src="/assets/blog-images/frontend-track-turn-on-sync.png" alt="Turn on sync in Visual Studio Code" title="Turn on sync in Visual Studio Code" /></p>
+
+<p>Especially useful when you have an installation on your home and work laptops, or when
+you change projects!</p>
+
+<h2 id="plugins">Plugins</h2>
+
+<p>Each itenium session lists its own set of suggested Visual Studio Code plugins
+in the README.</p>
+
+<p>If you start doing “Angular” development, or “Flutter”, just <code>Control + Shift + X</code> and search for it,
+you see a plugin with a few million downloads? It’s probably worth checking out.</p>
+
+<p>You can’t go wrong with these for frontend development:</p>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Plugin</th>
+      <th style="text-align: right">Installs</th>
+      <th>Description</th>
+      <th>Repo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>JavaScript</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster">JavaScript Booster</a></td>
+      <td style="text-align: right">620k</td>
+      <td>JavaScript &amp; TypeScript Refactorings</td>
+      <td><a href="https://github.com/xsburg/vscode-javascript-booster">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JS Snippets</a></td>
+      <td style="text-align: right">16M</td>
+      <td>Code snippets for JavaScript in ES6 syntax</td>
+      <td><a href="https://github.com/xabikos/vscode-javascript">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes">Toggle Quotes</a></td>
+      <td style="text-align: right">260k</td>
+      <td>Quote toggler to cycle through “ ‘ and `</td>
+      <td><a href="https://github.com/BriteSnow/vscode-toggle-quotes">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></td>
+      <td style="text-align: right">53M</td>
+      <td>Local Server with live reload</td>
+      <td><a href="https://github.com/ritwickdey/vscode-live-server">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Importing</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=steoates.autoimport">Auto Import</a></td>
+      <td style="text-align: right">4M</td>
+      <td>Generates your import statements</td>
+      <td><a href="https://github.com/soates/Auto-Import">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense">npm Intellisense</a></td>
+      <td style="text-align: right">8M</td>
+      <td>Autocompletes import statements</td>
+      <td><a href="https://github.com/ChristianKohler/NpmIntellisense">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost">Import Cost</a></td>
+      <td style="text-align: right">4M</td>
+      <td>Display import/require package size</td>
+      <td><a href="https://github.com/wix/import-cost">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></td>
+      <td style="text-align: right">13M</td>
+      <td>Autocompletes filenames</td>
+      <td><a href="https://github.com/ChristianKohler/PathIntellisense">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>CSS</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek">CSS Peek</a></td>
+      <td style="text-align: right">6M</td>
+      <td>Peek and Go to definition for CSS</td>
+      <td><a href="https://github.com/pranaygp/vscode-css-peek">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">CSS Completion</a></td>
+      <td style="text-align: right">8M</td>
+      <td>IntelliSense for CSS class names</td>
+      <td><a href="https://github.com/Zignd/HTML-CSS-Class-Completion">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier">Beautify (S)CSS</a></td>
+      <td style="text-align: right">2M</td>
+      <td>Beautify css, sass and less</td>
+      <td><a href="https://github.com/mike7515/code-beautifier">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Styling</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig</a></td>
+      <td style="text-align: right">10M</td>
+      <td>Automatically follow <code>.editorconfig</code></td>
+      <td><a href="https://github.com/editorconfig/editorconfig-vscode">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a></td>
+      <td style="text-align: right">48M</td>
+      <td>Prettier code formatter</td>
+      <td><a href="https://github.com/prettier/prettier-vscode">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></td>
+      <td style="text-align: right">37M</td>
+      <td>ESLint code formatter</td>
+      <td><a href="https://github.com/Microsoft/vscode-eslint">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag">Highlight Tag</a></td>
+      <td style="text-align: right">2M</td>
+      <td>Highlights matching <code>&lt;&gt;</code> and <code>&lt;/&gt;</code> tags</td>
+      <td><a href="https://github.com/vincaslt/vscode-highlight-matching-tag">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">Indent-Rainbow</a></td>
+      <td style="text-align: right">8M</td>
+      <td>Makes indentation easier to read</td>
+      <td><a href="https://github.com/oderwat/vscode-indent-rainbow">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a></td>
+      <td style="text-align: right">7M</td>
+      <td>Make those TODOs stand out</td>
+      <td><a href="https://github.com/aaron-bond/better-comments">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All In One</a></td>
+      <td style="text-align: right">9M</td>
+      <td>All you need to write Markdown</td>
+      <td><a href="https://github.com/yzhang-gh/vscode-markdown">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame">Git Blame</a></td>
+      <td style="text-align: right">2M</td>
+      <td>Git blame information in the status bar</td>
+      <td><a href="https://github.com/Sertion/vscode-gitblame">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">Git History</a></td>
+      <td style="text-align: right">12M</td>
+      <td>Git log, file history, compare branches or commit</td>
+      <td><a href="https://github.com/DonJayamanne/gitHistoryVSCode">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">Gitlens</a></td>
+      <td style="text-align: right">34M</td>
+      <td>Supercharge Git</td>
+      <td><a href="https://github.com/gitkraken/vscode-gitlens">Github</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="browser-extensions">Browser Extensions</h1>
+
+<p>Unlike your preferred IDE, while you can use whichever browser you like for your day-to-day development,
+you do need all browsers installed so that you can at least do some initial testing in Chrome, Firefox
+and Edge; and maybe in a few less known ones, like Opera.<br />
+This can also come in handy when testing something for which you need users with different roles. Have
+the Admin use Chrome and the regular user Firefox and you can perform tests without having to logout/login
+all the time.</p>
+
+<p>That being said, the browser extensions are available for pretty much all browsers:</p>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Plugin</th>
+      <th style="text-align: right">Installs</th>
+      <th>Rating</th>
+      <th>Description</th>
+      <th>Repo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Libraries</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">Redux</a></td>
+      <td style="text-align: right">1M</td>
+      <td>4.6 (700)</td>
+      <td>Current state of the store, time travel &amp; more</td>
+      <td><a href="https://github.com/reduxjs/redux-devtools">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh">Angular</a></td>
+      <td style="text-align: right">300k</td>
+      <td>3.9 (160)</td>
+      <td>Angular specific debugging and profiling capabilities</td>
+      <td><a href="https://github.com/angular/angular/tree/main/devtools">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React</a></td>
+      <td style="text-align: right">4M</td>
+      <td>4.0 (1.6k)</td>
+      <td>⚛️ Components” and “⚛️ Profiler Tabs</td>
+      <td><a href="https://github.com/facebook/react">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">Vue</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.2 (2.1k)</td>
+      <td>Debug Vue.js applications</td>
+      <td><a href="https://github.com/vuejs/devtools">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Tools</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn">Clear Cache</a></td>
+      <td style="text-align: right">900k</td>
+      <td>4.5 (1.1k)</td>
+      <td>Powerful, user-friendly browser data management</td>
+      <td><a href="https://clearcache.io">Website</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Live Reload</a></td>
+      <td style="text-align: right">100k</td>
+      <td>3.8 (807)</td>
+      <td>Browser integration for LiveReload</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.6 (1.8k)</td>
+      <td>Make JSON easy to read</td>
+      <td><a href="https://github.com/callumlocke/json-formatter">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en">JSONVue</a></td>
+      <td style="text-align: right">1M</td>
+      <td>4.5 (2.7k)</td>
+      <td>Validate and view JSON documents</td>
+      <td><a href="https://github.com/gildas-lormeau/JSONVue">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg">EditThisCookie</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.4 (11k)</td>
+      <td>Edit, search, protect and block cookies!</td>
+      <td><a href="https://github.com/ETCExtensions/Edit-This-Cookie">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj">ModHeader</a></td>
+      <td style="text-align: right">700k</td>
+      <td>3.2 (1.1k)</td>
+      <td>Modify HTTP request/response headers, redirect URLs</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/requestly-intercept-modif/mdnleldcmiljblolnjhpnblkcekpdkpa">Requestly</a></td>
+      <td style="text-align: right">200k</td>
+      <td>4.4 (1.2k)</td>
+      <td>Redirect URLs, Modify HTTP Headers, Mock APIs, …</td>
+      <td><a href="https://github.com/requestly/requestly">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/lightshot-screenshot-tool/mbniclmhobmnbdlbpiphghaielnnpgdp">Lightshot</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.4 (6.9k)</td>
+      <td>Screenshot tool</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg">Wappalyzer</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.6 (1.9k)</td>
+      <td>Technology profiler</td>
+      <td><a href="https://github.com/projectdiscovery/wappalyzergo">Github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Web Developer</a></td>
+      <td style="text-align: right">1M</td>
+      <td>4.5 (2.8k)</td>
+      <td>Toolbar with various web developer tools</td>
+      <td><a href="https://github.com/chrispederick/web-developer/">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Rulers</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff">Page Ruler</a></td>
+      <td style="text-align: right">400k</td>
+      <td>3.9 (77)</td>
+      <td>Measure page elements size in pixel</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/pixgrid-ruler/glkplndamjplebapgopdlbicglmfimic">PixGrid Ruler</a></td>
+      <td style="text-align: right">1M</td>
+      <td>4.1 (12)</td>
+      <td>Your Pixel-Perfect Ruler</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/dimensions/baocaagndhipibgklemoalmkljaimfdj">Dimensions</a></td>
+      <td style="text-align: right">200k</td>
+      <td>4.1 (453)</td>
+      <td>A tool for designers to measure screen dimensions</td>
+      <td><a href="https://github.com/mrflix/dimensions">Github</a></td>
+    </tr>
+    <tr>
+      <td><strong>Color Pickers</strong></td>
+      <td style="text-align: right"> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/color-picker-eyedropper-g/eokjikchkppnkdipbiggnmlkahcdkikp">Geco Colorpick</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.2 (800)</td>
+      <td>Color Picker, Eyedropper - Geco colorpick</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">ColorZilla</a></td>
+      <td style="text-align: right">4M</td>
+      <td>4.6 (3.8k)</td>
+      <td>Eyedropper, Color Picker, Gradient Generator</td>
+      <td><a href="https://www.colorzilla.com/">Website</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/snap-color-picker/nbpljhppefmpifoffhhmllmacfdckokh">Snap Color Picker</a></td>
+      <td style="text-align: right">5M</td>
+      <td>4.1 (40)</td>
+      <td>Choose Your Colors in a Snap</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/amazing-color-picker/hclbckmnpbnkcpemopdngipibdagmjei">Amazing Color Picker</a></td>
+      <td style="text-align: right">4M</td>
+      <td>4.6 (45)</td>
+      <td>Just amazing color picker tool</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg">ColorPick-Eyedropper</a></td>
+      <td style="text-align: right">2M</td>
+      <td>4.2 (1.2k)</td>
+      <td>A zoomed eyedropper &amp; color chooser</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="the-project">The Project</h1>
+
+<pre><code class="language-powershell"># Always use source control ;)
+git init
+
+# And always have a README 😀
+touch README.md
+
+# Start a frontend project
+# This creates a package.json
+npm init --force
+</code></pre>
+
+<h2 id="editorconfig">editorconfig</h2>
+
+<p>After having installed the <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig</a>
+VSCode plugin, you also need an <code>.editorconfig</code>. Pretty much every template generator creates one of these.</p>
+
+<pre><code class="language-ini"># See https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = crlf
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+[*.sh]
+# If you have shell scripts, make
+# sure to also have a .gitattributes
+# With: *.sh text eol=lf
+end_of_line = lf
+</code></pre>
+
+<h2 id="typescript">TypeScript</h2>
+
+<p>While there are some devs out there that don’t like TypeScript,
+personally I use TypeScript even for the smallest of projects.</p>
+
+<p>We covered the latest features of ECMAScript and the power
+of TypeScript in our session <a href="https://github.com/itenium-be/ModernJS">ModernJS</a></p>
+
+<p>These days most libraries ship their own type definitions but if one doesn’t
+it’s probably available in <a href="https://github.com/DefinitelyTyped/DefinitelyTyped">DefinitelyTyped</a></p>
+
+<pre><code class="language-powershell"># Add TypeScript to package.json
+npm install typescript --save-dev
+</code></pre>
+
+<p>You want to configure yourself a <a href="https://www.typescriptlang.org/tsconfig/"><code>tsconfig.json</code></a>.
+See this <a href="https://www.totaltypescript.com/tsconfig-cheat-sheet">tsconfig cheat sheet</a></p>
+
+<pre><code class="language-json">{
+  "compilerOptions": {
+    // Use all the latest ECMAScript goodness
+    "lib": ["es2024", "dom", "dom.iterable"]
+    // Fix the module.exports and export x mess
+    "esModuleInterop": true,
+    // Performance: don't check all node_module types
+    "skipLibCheck": true,
+    // Use all the latest ECMAScript goodness
+    "target": "es6",
+    // Import js/json files
+    "allowJs": true,
+    "resolveJsonModule": true,
+    // Treat everything as a module
+    "moduleDetection": "force",
+    // Always use import/export
+    "verbatimModuleSyntax": true,
+    // Enables strictNullChecks, noImplicitAny etc
+    "strict": true,
+    // If you access it, it must be defined
+    "noUncheckedIndexedAccess": true,
+    // For all modern projects use this module system
+    "module": "NodeNext",
+    // Where to put the generated js files
+    "outDir": "dist",
+    // For libraries: generate .d.ts files
+    "declaration": true
+  }
+}
+</code></pre>
+
+<h2 id="jest">Jest</h2>
+
+<p>Jest has come a long way and I would definitely recommend for
+your frontend UnitTesting needs.</p>
+
+<pre><code class="language-powershell">npm install --save-dev jest ts-jest @types/jest @jest/globals
+
+# Setup a jest.config.ts that works with TypeScript
+npx ts-jest config:init
+
+# Run tests
+npm t
+</code></pre>
+
+<p>This <a href="https://github.com/kulshekhar/ts-jest/issues/4081">complains</a> about:</p>
+
+<pre><code>TS1286: ESM syntax is not allowed in a CommonJS module when 'verbatimModuleSyntax' is enabled.
+</code></pre>
+
+<p>We override this for the tests with an extra <code>__test__</code> or <code>spec</code> tsconfig:</p>
+
+<pre><code class="language-json">{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "verbatimModuleSyntax": false
+  }
+}
+</code></pre>
+
+<p>And update the <code>jest.config.js</code> to use this tsconfig:</p>
+
+<pre><code class="language-js">/** @type {import('ts-jest').JestConfigWithTsJest} **/
+module.exports = {
+  testEnvironment: "node",
+  transform: {
+    "^.+.tsx?$": ["ts-jest",{
+      tsconfig: './spec/tsconfig.json'
+    }],
+  },
+};
+</code></pre>
+
+<h2 id="visual-studio-code-1">Visual Studio Code</h2>
+
+<p>Run the tests directly in Visual Studio Code with
+the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest">Jest Plugin</a>.</p>
+
+<p>And add a <code>.vscode/launch.json</code>:</p>
+
+<pre><code class="language-json">{
+  "name": "Debug Jest Tests",
+  "type": "node",
+  "request": "launch",
+  "runtimeArgs": [
+    "--inspect-brk",
+    "${workspaceRoot}/node_modules/.bin/jest",
+    "--runInBand"
+  ],
+  "console": "integratedTerminal",
+  "internalConsoleOptions": "neverOpen",
+  "port": 9229
+}
+</code></pre>
+
+<p>If you can’t see failure details, open the Terminal <code>Ctrl+J</code>!</p>
+
+<p><img src="/assets/blog-images/frontend-track-vscode-jest.png" alt="Jest in Visual Studio Code!" title="Jest in Visual Studio Code!" /></p>
+
+<h1 id="the-sessions">The Sessions</h1>
+
+<p>Some of our frontend development sessions at itenium.</p>
+
+<p><strong>JavaScript/TypeScript</strong>:</p>
+<ul>
+  <li><a href="https://github.com/itenium-be/ModernJS">ModernJS</a></li>
+  <li><a href="https://github.com/itenium-be/Frontend-UnitTesting">Frontend-UnitTesting</a></li>
+</ul>
+
+<p><strong>React</strong>:</p>
+<ul>
+  <li><a href="https://github.com/itenium-be/Talk-React">React</a></li>
+  <li><a href="https://github.com/itenium-be/React-New-Features">React-New-Features</a></li>
+  <li><a href="https://github.com/itenium-be/React-ComponentProfiling">React-Component-Profiling</a></li>
+</ul>
+
+<p><strong>Angular</strong>:</p>
+<ul>
+  <li><a href="https://github.com/itenium-be/RXJS">RXJS</a></li>
+  <li><a href="https://github.com/itenium-be/angular-reactive-forms">Angular-ReactiveForms</a></li>
+  <li><a href="https://github.com/itenium-be/Angular-Days">Angular-Days</a></li>
+</ul>
+
+  </div><a class="u-url" href="/dev-setup/2024/08/31/itenium-frontend-track-setup.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

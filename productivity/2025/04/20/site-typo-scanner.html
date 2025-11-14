@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Site Inspector | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Site Inspector" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="While moving some todos from one location to another I came across “Check Site Inspector” and thought, why not run it against this website right now – how hard can it be." />
+<meta property="og:description" content="While moving some todos from one location to another I came across “Check Site Inspector” and thought, why not run it against this website right now – how hard can it be." />
+<link rel="canonical" href="https://itenium.be/productivity/2025/04/20/site-typo-scanner.html" />
+<meta property="og:url" content="https://itenium.be/productivity/2025/04/20/site-typo-scanner.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Site Inspector" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2025-04-20T00:00:00+00:00","datePublished":"2025-04-20T00:00:00+00:00","description":"While moving some todos from one location to another I came across “Check Site Inspector” and thought, why not run it against this website right now – how hard can it be.","headline":"Site Inspector","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/productivity/2025/04/20/site-typo-scanner.html"},"url":"https://itenium.be/productivity/2025/04/20/site-typo-scanner.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Site Inspector</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-04-20T00:00:00+00:00" itemprop="datePublished">Apr 20, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>While moving some todos from one location to another I came across “Check Site Inspector”
+and thought, why not run it against this website right now – how hard can it be.</p>
+
+<p><a href="https://github.com/siteinspector/siteinspector" class="github">
+    <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>
+:</p>
+
+<p>Not that hard it turns out.</p>
+
+<!--more-->
+
+<h1 id="-triplechecker">💸💸 Triplechecker</h1>
+
+<p>The git repository has been archived since January 2025 and they basically point you towards
+<a href="https://www.triplechecker.com/">www.triplechecker.com</a> which is their cloud deploy.</p>
+
+<p>It worked very well… Finding a whopping 100 spelling errors on itenium.be,
+but after the first 7 errors, it asked me to sign up for a mere €15/month. Uhm, no thanks.</p>
+
+<h1 id="docker-container">Docker Container</h1>
+
+<p>You can pretty easily host it yourself though!</p>
+
+<pre><code class="language-sh">git clone https://github.com/siteinspector/siteinspector
+cd siteinspector
+# Open docker-compose.yml, search for "SECRET_KEY_BASE:"
+# and enter a random 30+ character key.
+docker compose up -d
+</code></pre>
+
+<p>Surf to <a href="http://localhost:808">http://localhost:808</a></p>
+
+<p>📈 Profit!!</p>
+
+<h1 id="big-oopsie">Big oopsie</h1>
+
+<p>So one of the 100+ typos it found was on our home page,
+in the very first slide, a typo which has been screaming
+at our customers on our website for <strong>8 years</strong>. Whoops!<br />
+<small>(streng<strong>ht</strong>en vs streng<strong>th</strong>en)</small></p>
+
+<p><img src="/assets/blog-images/site-inspector-oopsie.png" alt="Strengthening our business" title="Strengthening our business" class="img-responsive" /></p>
+
+<p>Heh heh, maybe no one ever noticed? 😬🙈🤫</p>
+
+<h1 id="let-ai-figure-it-out">Let AI figure it out</h1>
+
+<p>Since the siteinspector README just points you towards the paying service,
+I had the brilliant idea of asking AI to figure it out for me!</p>
+
+<p><strong>Prompt</strong>: <em>https://github.com/siteinspector/siteinspector</em><br />
+<em>You know this one? Know how I can run it against my website?</em></p>
+
+<p class="notice--info">Yes! <code>siteinspector</code> is a Ruby gem that audits websites for things like redirects, headers, security, and more.</p>
+
+<p>Here’s how to run it against your website:</p>
+
+<p>✅ 1. Install Ruby (if needed)<br />
+✅ 2. Install siteinspector gem<br />
+✅ 3. Run it against your site</p>
+
+<pre><code class="language-sh">gem install siteinspector
+siteinspector https://itenium.be
+</code></pre>
+
+<h2 id="ai-slopsquatting">AI Slopsquatting</h2>
+
+<pre><code>ERROR:  Could not find a valid gem 'siteinspector' (&gt;= 0) in any repository
+ERROR:  Possible alternatives: site-inspector
+</code></pre>
+
+<p>That’s right, the gem doesn’t exist. And <code>site-inspector</code> is something different.</p>
+
+<p><a href="https://github.com/benbalter/site-inspector" class="github">
+    <img src="https://img.shields.io/github/stars/benbalter/site-inspector.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/benbalter/site-inspector">benbalter/site-inspector</a>
+:
+    Ruby Gem to sniff information about a domain’s technology and capabilities.</p>
+
+<p>It was a potential <strong>slopsquat</strong> attack; an emerging danger of AI!<br />
+Let’s use the same steps mechanism it used on me to run a potentially disastrous command to illustrate.</p>
+
+<p>✅ 1. AI hallucinates some dependency that looks real.<br />
+✅ 2. A malicious party registers this dependency and puts malware in it.<br />
+✅ 3. An unsuspecting developer runs the command and 💥</p>
+
+  </div><a class="u-url" href="/productivity/2025/04/20/site-typo-scanner.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

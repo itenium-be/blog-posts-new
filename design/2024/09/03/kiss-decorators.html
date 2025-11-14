@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>KISS and Decorators | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="KISS and Decorators" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I picked up a UserStory to make a small adjustment." />
+<meta property="og:description" content="I picked up a UserStory to make a small adjustment." />
+<link rel="canonical" href="https://itenium.be/design/2024/09/03/kiss-decorators.html" />
+<meta property="og:url" content="https://itenium.be/design/2024/09/03/kiss-decorators.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="KISS and Decorators" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2024-09-03T00:00:00+00:00","datePublished":"2024-09-03T00:00:00+00:00","description":"I picked up a UserStory to make a small adjustment.","headline":"KISS and Decorators","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/design/2024/09/03/kiss-decorators.html"},"url":"https://itenium.be/design/2024/09/03/kiss-decorators.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">KISS and Decorators</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-09-03T00:00:00+00:00" itemprop="datePublished">Sep 3, 2024
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I picked up a UserStory to make a small adjustment.</p>
+
+<p>The story was simple enough as was the required change
+but… Looking at the code, how was it
+supposed to work? It looked like it just.. Shouldn’t…</p>
+
+<p>Took some time but I found out, the behavior of the software was
+defined in the IOC registration, at startup, with Autofac.</p>
+
+<!--more-->
+
+<h1 id="the-implementation">The Implementation</h1>
+
+<p>A simplified version of the code would be:</p>
+
+<pre><code class="language-c#">public interface IDoer
+{
+  void DoIt();
+}
+
+
+public class Doer : IDoer
+{
+  public void DoIt()
+  {
+    // Actual Business Logic here
+    // But... Only happening for
+    // one case?
+  }
+}
+</code></pre>
+
+<p>And then another implementation, a decorator:</p>
+
+<pre><code class="language-c#">public class LoopingDoer : IDoer
+{
+  private readonly IDoer _inner;
+
+  public LoopingDoer(IDoer inner)
+  {
+    _inner = inner;
+  }
+
+  public void DoIt()
+  {
+    // We were looping over something
+    // that made sense here, not just
+    // this for loop:
+    for (int i = 0; i &lt; 10; i++)
+    {
+      _inner.DoIt();
+    }
+  }
+}
+</code></pre>
+
+<h2 id="the-magic">The Magic</h2>
+
+<p>To make it all work, the “magic” ✨🦄 <a href="https://autofac.org/">Autofac</a>
+wiring:</p>
+
+<pre><code class="language-c#">var containerBuilder = new ContainerBuilder();
+containerBuilder.RegisterType&lt;Doer&gt;().As&lt;IDoer&gt;();
+containerBuilder.RegisterDecorator&lt;LoopingDoer, IDoer&gt;();
+</code></pre>
+
+<p>Probably there is no one in your team who knows
+what this does exactly and they’d have to look
+at a completely different location (app startup) before it
+makes any sense.</p>
+
+<h1 id="keep-it-simple">Keep it Simple</h1>
+
+<p>After removing the decorator and the Autofac registration,
+we ended up with:</p>
+
+<pre><code class="language-c#">public class Doer : IDoer
+{
+  public void DoIt()
+  {
+    for (int i = 0; i &lt; 10; i++)
+    {
+      // Business Logic here
+
+      // New UseCase example
+      if (i == 0)
+      {
+        // UserStory implementation here
+      }
+    }
+  }
+}
+</code></pre>
+
+<p>Which is less code and much easier to
+understand, and it also made it easy, trivial even,
+to add the required change.</p>
+
+<h1 id="decorator-pattern">Decorator Pattern</h1>
+
+<p>An excellent design pattern to adhere to the Open/Closed Principle:
+Add functionality without modification.</p>
+
+<h2 id="intent">Intent</h2>
+
+<p>It’s one of the Structural Patterns from the <a href="https://en.wikipedia.org/wiki/Design_Patterns">GoF</a>.</p>
+
+<p class="notice--info">Attach additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for
+extending functionality.</p>
+
+<h2 id="applicability">Applicability</h2>
+
+<p>When extension by subclassing is impractical because a large number
+of independent extensions are possible and would produce an explosion
+of subclasses to support every combination.</p>
+
+<h2 id="consequences">Consequences</h2>
+
+<p><em>More flexible than static inheritance</em>:<br />
+Responsibilities can be added and removed at run-time whereas inheritance
+requires creating a new class for each new combination.</p>
+
+<p><em>Avoids feature-laden classes</em>:<br />
+Instead of trying to support all features in a complex, customizable class,
+you define a simple class and add functionality incrementally with Decorator
+objects.</p>
+
+<p><em>Lots of little objects</em>:<br />
+The objects differ only in the way they are interconnected. Although easy to
+customize, <strong>you can no longer follow the execution flow from the source code
+alone and they can be hard to debug</strong>.</p>
+
+<h2 id="known-uses">Known Uses</h2>
+
+<p>I/O Streams are typically implemented using Decorators and they are a really
+good fit for the pattern too!</p>
+
+<pre><code class="language-c#">byte[] buffer = "test"u8.ToArray();
+
+using (FileStream fileStream = new(path, FileMode.Create, FileAccess.Write))
+using (BufferedStream bufferedStream = new(fileStream))
+using (GZipStream gzipStream = new(bufferedStream, CompressionMode.Compress))
+{
+  gzipStream.Write(buffer, 0, buffer.Length);
+}
+</code></pre>
+
+<p>We cleanly avoid having to create a <code>GZipBufferedFileStream</code> for this particular
+case. Having to write all these implementations would result in said explosion
+of subclasses and also make it difficult to keep things DRY!</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Using the decorator pattern
+instead of writing a simple <code>foreach</code> loop;
+it’s just adding <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">accidental complexity</a>.</p>
+
+<p>You end up with the consequences of the design pattern (hard to learn and debug)
+without any of the benefits.</p>
+
+<p>Keep It Simple.</p>
+
+  </div><a class="u-url" href="/design/2024/09/03/kiss-decorators.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Git Pull Request Hygiene | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Git Pull Request Hygiene" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It seems that pretty much everyone is using some sort of UI for their git interactions." />
+<meta property="og:description" content="It seems that pretty much everyone is using some sort of UI for their git interactions." />
+<link rel="canonical" href="https://itenium.be/productivity/2024/06/08/git-pull-request-hygiene.html" />
+<meta property="og:url" content="https://itenium.be/productivity/2024/06/08/git-pull-request-hygiene.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-06-08T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Git Pull Request Hygiene" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2024-06-08T00:00:00+00:00","datePublished":"2024-06-08T00:00:00+00:00","description":"It seems that pretty much everyone is using some sort of UI for their git interactions.","headline":"Git Pull Request Hygiene","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/productivity/2024/06/08/git-pull-request-hygiene.html"},"url":"https://itenium.be/productivity/2024/06/08/git-pull-request-hygiene.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Git Pull Request Hygiene</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-06-08T00:00:00+00:00" itemprop="datePublished">Jun 8, 2024
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It seems that pretty much everyone is using
+some sort of UI for their git interactions.</p>
+
+<p>Which is obviously fine, until they are about to create a
+commit, in which case it’s using the “add all changes”-button
+and commit.</p>
+
+<p>Good PR hygiene starts with keeping your commits small and
+focused: check your changes and exclude everything that
+is not part of the UserStory per se.</p>
+
+<p>That’s why I advocate the use of <code>git add --patch</code> which gives
+you fine-grained control of exactly what you’re going to
+commit!</p>
+
+<!--more-->
+
+<p>You basically want to avoid forcing your colleagues to review
+mega PRs for what could have been much smaller, right?</p>
+
+<p><img src="/assets/blog-images/git-hygiene-pr.png" alt="Everyone loves reviewing such PR!" class="img-responsive" /></p>
+
+<p>These either result in your PR being open for a very long time
+(with all the merge conflicts that entails!)
+or the reviewer losing patience/focus and just approving
+after the first 20 files – both are outcomes that are not ideal.</p>
+
+<h1 id="pr-preparation">PR Preparation</h1>
+
+<h2 id="step-1-stage-your-changes">Step 1: Stage your changes</h2>
+
+<pre><code class="language-sh"># Shorter
+git add -p
+
+# Or even shorter with an alias
+git config --global alias.adp 'add -p'
+</code></pre>
+
+<p class="notice--info"><strong>git add –patch</strong><br />
+Interactively choose hunks of patch between the index and the work tree and add them to the index. This gives the user a chance to review the difference before adding modified contents to the index.</p>
+
+<p>Note that this will not add new files,
+you still have to add those with a <code>git add new_file</code>!</p>
+
+<p>For each hunk you have a few options, the most common:</p>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>y/n</td>
+      <td>Add or don’t add the hunk</td>
+    </tr>
+    <tr>
+      <td>a/d</td>
+      <td>Add all hunks in the file or skip to the next file</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>Split the hunk into smaller ones</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Decide manually on a line-per-line basis</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Quit. Whenever it turns out there is still some work left!</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="step-2-review-the-staging-area">Step 2: Review the staging area</h2>
+
+<p>Before doing the actual commit, go over all staged
+changes: are you about to commit everything that
+is needed, and nothing more?</p>
+
+<pre><code class="language-sh">git diff --staged
+
+# With an alias of course!
+git config --global alias.dfc 'diff --staged'
+</code></pre>
+
+<h2 id="step-3-commit">Step 3: Commit!</h2>
+
+<p><img src="/assets/blog-images/git-hygiene-commit-message.jpg" alt="Commit messages matter!" class="img-responsive" /></p>
+
+<p>Don’t write your life’s story (at least not in a commit message!)
+but do add something meaningful, what exactly are you changing?
+Are you fixing a bug, improving performance, doing source-code cleanup,
+a refactoring or are you implementing a new feature?</p>
+
+<p>I always try to get the entire team onboard for <strong>starting each commit message with a ticket ID</strong>
+so that there is always a link back to your bug tracking system or Scrum
+board. These artifacts are typically long-lived and may contain
+additional information like a link to the analysis, comments from
+team members, file attachments etc!</p>
+
+<h2 id="step-4-create-the-pr">Step 4: Create the PR</h2>
+
+<p>You obviously also want to automate this!
+See our blog post on <a href="https://itenium.be/blog/dev-setup/exotic-git-recipes/#create-pr-in-browser">exotic git snippets</a>
+for a small script to create a PR like a breeze.</p>
+
+<pre><code class="language-powershell"># Creating a PR from the commandline:
+pr
+</code></pre>
+
+<h3 id="check-the-files-changed">Check the “Files changed”</h3>
+
+<p>Since a PR typically exists of multiple commits,
+before sending the PR to your colleague, make
+sure to go through all your changes one last time.</p>
+
+<h3 id="consider-a-pr-checklist">Consider a PR checklist</h3>
+
+<p>Most systems allow you to create a file like
+<a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"><code>.github/pull_request_template.md</code></a>
+where you can add a checklist of things that are recurring
+comments from reviewer(s) that could’ve
+been easily catched by the PR creator.</p>
+
+<h1 id="poor-hygiene-examples">Poor Hygiene Examples</h1>
+
+<h2 id="lingering-debug-statements">Lingering debug statements</h2>
+
+<p>The PR still contains statements
+that a quick glance would’ve catched:</p>
+
+<pre><code class="language-ts">console.log('val', someValue);
+debugger;
+// TODO: xyz
+</code></pre>
+
+<p>You made some changes to speed up your manual testing,
+that is OK but make sure you don’t commit this!!</p>
+
+<pre><code class="language-ts">function isLoggedIn() {
+  // return !!this.userService.token;
+  return true;
+}
+</code></pre>
+
+<h2 id="should-never-have-been-committed">Should never have been committed</h2>
+
+<p>Earlier this week I deleted an HTML file
+which contained local test run results.</p>
+
+<p>Typically everything that is generated should not be committed
+as it can just be re-generated on the fly!<br />
+There are exceptions, for example a <code>package-lock.json</code> is
+generated but is used by a CI/CD pipeline to make sure
+new <code>npm install</code>s the exact same thing.</p>
+
+<p>Deleting such files is not enough though, create a PR
+to add the file/folder to your <code>.gitignore</code> so that
+this can never happen again!</p>
+
+<p>When in doubt whether you should <code>.gitignore</code> something,
+google it!</p>
+
+<h2 id="avoid-superfluous-changes">Avoid Superfluous Changes</h2>
+
+<p>These are changes that typically happen automatically on a save
+and means that someone has a different linter installed,
+or that they are running their linter with different settings 😲</p>
+
+<pre><code class="language-ts">-  constructor(private socksService: SocksService) {}
++  constructor(private socksService: SocksService) { }
+</code></pre>
+
+<p>Another classic, with one keystroke you can add missing imports
+but of course your default IDE configuration is different from
+the style that is used in 99% of the rest of the code base.</p>
+
+<p>Fix your configuration or fix the styling, please!</p>
+
+<pre><code class="language-ts">import { Review } from './sock.model';
++import {TimeAgoPipe} from '../time-ago.pipe';
+</code></pre>
+
+<p>It’s cool to have an <a href="https://editorconfig.org/"><code>.editorconfig</code></a> but if not all devs
+have the plugin installed in their IDE, it is pretty useless:</p>
+
+<pre><code class="language-ts">-}
++}
+\ No newline at end of file
+</code></pre>
+
+<p>Same for some extra whitespace at the end of a line: <code>&lt;router-outlet /&gt;</code>
+vs <code>&lt;router-outlet /&gt;  </code>. Please don’t 🥺</p>
+
+<p>Note that a git hook, for example with <a href="https://itenium.be/blog/dev-setup/git-hooks-with-husky/">Husky</a>,
+can pretty much solve this in your team by automatically fixing all linting issues right before
+a commit.</p>
+
+<h2 id="not-needed-after-all">Not Needed After All</h2>
+
+<p>If your first hunk is this one and there are no
+others in the same file, I guess you moved the
+code to somewhere else and forgot to clean up
+your import statements!</p>
+
+<pre><code class="language-ts">+import { LOCALE_ID } from '@angular/core';
+</code></pre>
+
+<p>You added a new package but didn’t end up actually using it
+or ended up using another one? Remove the dependency!</p>
+
+<pre><code class="language-json">"dependencies": {
++  "cool-package-i-did-not-use-in-the-end": "1.0.0",
++  "@types/cool-package-i-did-not-use-in-the-end": "1.0.0",
+}
+</code></pre>
+
+<p>Also note that dev stuff should be in <code>devDependencies</code>!</p>
+
+<h2 id="local-configuration">Local Configuration</h2>
+
+<p>Manual or automatic changes for local dev configuration should never be
+checked in! That db connectionString on your local machine has no place
+being in the official repo. Check our blog post on 
+<a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/#skip-worktree">Git Skip Worktree</a>
+how you can make it easier to avoid this.</p>
+
+<p>You are also opening up your project for a merge conflict on pretty much
+every PR until eternity…</p>
+
+<pre><code class="language-json">// PR from colleague A
+"cli": { "analytics": false }
+
+// PR from colleague B
+"cli": { "analytics": "guid" }
+</code></pre>
+
+<h2 id="generated-and-useless">Generated and Useless</h2>
+
+<p><code>ng generate</code>… So cool, so easy, and so many useless files
+that all get checked in.</p>
+
+<p>For each generated component there is a <code>component.scss</code> file. And
+even if there is not a single styling rule added, obviously
+the file gets checked in.</p>
+
+<p>This is more an issue of “writing vs reading code”. Code
+is written once, and then read many times over. Do you want
+to spend time opening empty files, just to find out it is
+indeed, empty? I know I don’t.</p>
+
+<p>The other useless file is the <code>.spec.ts</code>:</p>
+
+<pre><code class="language-ts">describe('MyPipe', () =&gt; {
+  it('creates an instance', () =&gt; {
+    const pipe = new MyPipe();
+    expect(pipe).toBeTruthy();
+  });
+});
+</code></pre>
+
+<p>This test will, literally, <strong>never</strong> fail.
+The <code>new</code> operator works, I guarantee it!</p>
+
+<p>So either delete the file, or, even better,
+actually write some tests for it!! Especially
+as is the case here,
+<a href="https://itenium.be/blog/javascript/angular-pipes/#testing">writing tests for an Angular Pipe</a>
+is very straightforward!</p>
+
+<p>Another thing the code generator seems to be
+doing from time to time, re-order statements:</p>
+
+<pre><code class="language-ts">-  imports: [NgIf, AsyncPipe, TitleCasePipe],
+-  templateUrl: './sock.component.html'
++  templateUrl: './sock.component.html',
++  imports: [NgIf, AsyncPipe, TitleCasePipe, CurrencyPipe],
+</code></pre>
+
+<p>This makes the PR look bigger than it really is,
+and also harder to spot what has actually changed.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Keep your PR short &amp; sweet, a mere glance through all
+changed files will spot almost all these things.</p>
+
+<p>It allows <strong>you</strong> to fix them instead getting comments from
+the PR reviewer, that I would say are a bit embarrassing,
+especially when it happens time and time again…</p>
+
+<p>Here’s one last meme to keep the mood light:</p>
+
+<p><img src="/assets/blog-images/git-hygiene-commit-message2.jpg" alt="Yup, pretty much every dev!" /></p>
+
+  </div><a class="u-url" href="/productivity/2024/06/08/git-pull-request-hygiene.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

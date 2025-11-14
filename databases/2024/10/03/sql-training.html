@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>QA TechEvent: SQL Training | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="QA TechEvent: SQL Training" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This month our QA TechEvent was “SQL Training”. Goal was to score most points by solving more and more complex SQL exercises against three datasets: countries of the world, teachers + departments (postgres) and the football worldcups (sql server)." />
+<meta property="og:description" content="This month our QA TechEvent was “SQL Training”. Goal was to score most points by solving more and more complex SQL exercises against three datasets: countries of the world, teachers + departments (postgres) and the football worldcups (sql server)." />
+<link rel="canonical" href="https://itenium.be/databases/2024/10/03/sql-training.html" />
+<meta property="og:url" content="https://itenium.be/databases/2024/10/03/sql-training.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="QA TechEvent: SQL Training" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2024-10-03T00:00:00+00:00","datePublished":"2024-10-03T00:00:00+00:00","description":"This month our QA TechEvent was “SQL Training”. Goal was to score most points by solving more and more complex SQL exercises against three datasets: countries of the world, teachers + departments (postgres) and the football worldcups (sql server).","headline":"QA TechEvent: SQL Training","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/databases/2024/10/03/sql-training.html"},"url":"https://itenium.be/databases/2024/10/03/sql-training.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">QA TechEvent: SQL Training</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-10-03T00:00:00+00:00" itemprop="datePublished">Oct 3, 2024
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This month our QA TechEvent was “SQL Training”. Goal was to score most points by solving
+more and more complex SQL exercises against three datasets: countries of the world,
+teachers + departments (postgres) and the football worldcups (sql server).</p>
+
+<p>Which country scored the most owngoals? Read on to find out!</p>
+
+<p><img src="/assets/blog-images/sql-training-meme.png" alt="Special SQL Skillset Taken meme" title="Special SQL Skillset" class="img-responsive" /></p>
+
+<!--more-->
+
+<h1 id="the-game">The Game</h1>
+
+<p>The game started with a hickup, other machines were not discoverable on the guest network so the leaderboard server had to be deployed on an external server – while everyone was already solving exercises! This messed up our scoreboard considerably, especially the ranking for “solved fastest” 😃</p>
+
+<p>After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production – as it should! 😉</p>
+
+<h2 id="before-we-start">Before we start</h2>
+
+<p><img src="/assets/blog-images/sql-training-meme2.png" alt="Meme SQL is always all caps!" title="It can only be SELECT FROM!!" class="img-responsive" /></p>
+
+<h2 id="notable-hacks">Notable Hacks</h2>
+
+<p>Even though we had definitely said “no cheating” during the intro powerpoint, some contestants still tried to get extra points for “leanest solution” or just “fixed” their query to get to the hinted at result 😀</p>
+
+<h3 id="mike">Mike</h3>
+
+<p>Q: <em>Which countries have a GDP greater than every country in Europe?</em></p>
+
+<pre><code class="language-sql">select name
+from countries
+where gdp &gt; 3425956000000
+-- I think we were looking instead for this:
+-- WHERE gdp &gt; (SELECT MAX(gdp) FROM countries WHERE continent='Europe')
+order by gdp
+</code></pre>
+
+<p>Straight to jail Mike! ;)</p>
+
+<h3 id="alexander">Alexander</h3>
+
+<p>Alexander scored some <code>+4</code> style points for this one!</p>
+
+<p>Q: <em>Select the year of the worldcup in which the most penalties were scored, also select the amount of penalties.</em></p>
+
+<pre><code class="language-sql">SELECT top 1 s.name, COUNT(*)+4 AS o
+FROM goals g JOIN matches m ON g.match_id = m.id
+JOIN groups a ON m.group_id = a.id
+JOIN events e ON a.event_id = e.id JOIN seasons s ON e.season_id = s.id
+WHERE g.penalty = 1
+GROUP BY s.name order by o desc
+</code></pre>
+
+<p>The reason was the join on the <code>groups</code> table. This led to penalties scored after the “group phase”
+to not be counted in his query!</p>
+
+<h2 id="the-leaderboards">The Leaderboards</h2>
+
+<p>The 🏆 top 4 on the final leaderboard 💯:</p>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th style="text-align: center">Rank</th>
+      <th>Player</th>
+      <th style="text-align: right">Points</th>
+      <th style="text-align: center"># Fastest</th>
+      <th style="text-align: center"># Shortest</th>
+      <th style="text-align: right">Total Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td>Michael</td>
+      <td style="text-align: right">35</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: right">63</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td>Mikedonna</td>
+      <td style="text-align: right">32</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: right">44</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td>Jonathan</td>
+      <td style="text-align: right">34</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: right">40</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td>Gery</td>
+      <td style="text-align: right">30</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">38</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-prize">The Prize</h2>
+
+<p>In the end Michael proved too strong and with 63 points, he went home with the title of <strong>itenium SQL Master</strong> and the gaming cup 🎈 🌟 🚀!</p>
+
+<figure class="imagewrapper" style="max-width: 500px">
+    <img src="/assets/blog-images/sql-training-winner.png" alt="SQL Training prize for the winner" title="" class="img-responsive" />
+
+    
+    <figcaption>Michael scored most points and went home with the prize! 🎉</figcaption>
+    
+</figure>
+
+<h1 id="host-your-own">Host Your Own?</h1>
+
+<p>You want to host your own SQL Training competition?<br />
+You can! The game, exercises and datasets are on our <a href="https://github.com/itenium-be/sql-training">Github</a>!</p>
+
+<p>Each contestant runs his own React frontend and databases with Docker:</p>
+
+<pre><code class="language-sh">git clone https://github.com/itenium-be/sql-training
+cd sql-training
+docker compose up -d --build
+</code></pre>
+
+<p>The game leader hosts the leaderboard:</p>
+
+<pre><code class="language-sh">cd sql-leaderboard
+cp .env.template .env
+docker compose up -d --build
+</code></pre>
+
+<p>You’ll have to change some configuration (see the <a href="https://github.com/itenium-be/sql-training/blob/master/README.md">README</a>) but that’s basically it!<br />
+Possible solutions can be found on a separate <a href="https://github.com/itenium-be/sql-training/blob/solutions/SOLUTIONS.md">branch</a>.</p>
+
+<h1 id="interesting-queries">Interesting Queries</h1>
+
+<h2 id="world-largest-country-per-continent">World: largest country per continent</h2>
+
+<p>Q: <em>Find the largest country (by area) in each continent, show the continent, the name and the area.</em></p>
+
+<p>During the preparation, I solved this exercise with the following query:</p>
+
+<pre><code class="language-sql">SELECT continent, name, area
+FROM countries
+WHERE area = (
+  SELECT MAX(area)
+  FROM countries AS subquery
+  WHERE subquery.continent = countries.continent
+)
+ORDER BY continent
+</code></pre>
+
+<p>Mike was using ChatGPT extensively and by just entering the exercise question, it came up with the following
+query:</p>
+
+<pre><code class="language-sql">SELECT DISTINCT ON (continent), continent, name, area
+FROM countries
+ORDER BY continent, area DESC
+</code></pre>
+
+<p>A pretty interesting solution which won him the “leanest query” award for this question. I didn’t even
+know the <code>DISTINCT ON (col_name)</code> was a thing!</p>
+
+<p>It’s the <code>ORDER BY area DESC</code> part that makes this work. Pretty neat!</p>
+
+<h2 id="world-all-vowels-no-spaces">World: all vowels, no spaces</h2>
+
+<p>Q: <em>Find the country that has all the vowels and no spaces in its name.</em></p>
+
+<p>Michael came up with a cool solution for this one:</p>
+
+<pre><code class="language-sql">select name from countries where name not like ('% %')
+and name like all (array['%a%', '%e%', '%i%', '%o%', '%u%'])
+</code></pre>
+
+<p>But I was surprised no one solved this with a good old regex!?
+It would most definitely have won the “leanest query” award!</p>
+
+<pre><code class="language-sql">SELECT name FROM countries
+WHERE name ~ '^(?=.*a)(?=.*e)(?=.*i)(?=.*o)(?=.*u)[^ ]+$'
+</code></pre>
+
+<h2 id="teachers-teacher-seniority">Teachers: Teacher seniority</h2>
+
+<p>Typically calculated like:</p>
+
+<pre><code class="language-sql">EXTRACT(YEAR FROM AGE(NOW(), employed_at)) AS seniority
+</code></pre>
+
+<p>Michael won the leanest query by instead doing:</p>
+
+<pre><code class="language-sql">(CURRENT_DATE - employed_at)/365
+</code></pre>
+
+<h2 id="worldcup-country-with-most-own-goals">Worldcup: country with most own goals</h2>
+
+<p>As promised in the intro…</p>
+
+<pre><code class="language-sql">SELECT TOP 1 c.name, COUNT(g.id) AS owngoals
+FROM goals g
+JOIN teams t ON g.team_id = t.id
+JOIN countries c ON t.country_id = c.id
+WHERE g.owngoal = 1
+GROUP BY c.name
+ORDER BY owngoals DESC
+</code></pre>
+
+<p>And the “winner” is… France, with 4 own goals!<br />
+(Valladdares, Yobo, Behich, Mandžukic)</p>
+
+<h2 id="unsolved">Unsolved</h2>
+
+<p><strong>World-8</strong>: Get confusing top level domains: tld that start/end in a different country name.<br />
+An exercise on joining a table with itself.</p>
+
+<p><strong>Woldcup-4</strong>: Find players that played for different countries and a “,” separated list of countries they played for.</p>
+
+<p><strong>Worldcup-5</strong>: Which countries always survived the “Group Stage” when present? (A round not called “Matchday”)</p>
+
+<p><strong>Worldcup-6</strong>: For the player that scored the most goals, list the worldcup.YYYY, the round name, the match date, the goal minute, scored Y/N and the total amount of goals scored so far. To keep things “simple”, evaluate only events.id 20, 21 and 22 and team.id 1.</p>
+
+<p>Anyone willing to give them a go? 😀</p>
+
+  </div><a class="u-url" href="/databases/2024/10/03/sql-training.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

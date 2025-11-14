@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Create Excels with C# and ClosedXML: A tutorial | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Create Excels with C# and ClosedXML: A tutorial" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quick tutorial about creating xlsx Excels with C# and the ClosedXML nuget package." />
+<meta property="og:description" content="Quick tutorial about creating xlsx Excels with C# and the ClosedXML nuget package." />
+<link rel="canonical" href="https://itenium.be/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-09-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Create Excels with C# and ClosedXML: A tutorial" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2025-09-29T00:00:00+00:00","datePublished":"2025-09-29T00:00:00+00:00","description":"Quick tutorial about creating xlsx Excels with C# and the ClosedXML nuget package.","headline":"Create Excels with C# and ClosedXML: A tutorial","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html"},"url":"https://itenium.be/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Create Excels with C# and ClosedXML: A tutorial</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-09-29T00:00:00+00:00" itemprop="datePublished">Sep 29, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Quick tutorial about creating xlsx Excels with
+C# and the <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML nuget package</a>.</p>
+
+<p>The blog posts only covers the most important functionality.
+<a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive code examples</a>
+can be found in the GitHub project.</p>
+
+<!--more-->
+
+<h1 id="closedxml">ClosedXML</h1>
+
+<p><a href="https://github.com/ClosedXML/ClosedXML" class="github">
+    <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>
+:
+    ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files.</p>
+
+<pre><code class="language-sh">Install-Package ClosedXML
+</code></pre>
+
+<p>It basically provides a more intuitive and user-friendly interface compared to
+the <a href="https://github.com/dotnet/Open-XML-SDK">OpenXML API</a> it’s built on top off. Hence the name ;)</p>
+
+<h2 id="mit-licensed">MIT Licensed</h2>
+
+<p>I used to be a big fan of EPPlus but since it is no longer free,
+this aims to be a pretty much 1 to 1 conversion of our EPPlus blog series.</p>
+
+<p>If you’re migrating, AI is pretty good at converting EPPlus code to ClosedXML,
+for most (simple) use cases, it just works!</p>
+
+<h1 id="documentation">Documentation</h1>
+
+<p>Documentation is a bit in limbo. The <strong>Github wiki</strong> contains most examples but
+they are not always up to date, as for some things the API has changed slightly.</p>
+
+<p>The <strong>ReadTheDocs</strong> is the new documentation and while it does go into a lot more detail
+for some particularities, it does not cover everything and has a lot less examples.</p>
+
+<ul>
+  <li><a href="https://github.com/closedxml/closedxml/wiki">Github Wiki</a>: Lots of example code here
+    <ul>
+      <li><a href="https://github.com/closedxml/closedxml/wiki/Data-Validation">Validation</a>: <code>cell.DataValidation</code> ⮕ <code>cell.CreateDataValidation()</code></li>
+      <li><a href="https://github.com/closedxml/closedxml/wiki/Styles-Alignment">Comments</a>: <code>cell.Comment</code> ⮕ <code>cell.CreateComment()</code></li>
+    </ul>
+  </li>
+  <li><a href="https://docs.closedxml.io/en/latest/">Read the docs</a>: Newer documentation, more details but less examples</li>
+</ul>
+
+<p>There is also the <a href="https://github.com/ClosedXML/ClosedXML/tree/develop/ClosedXML.Examples"><code>ClosedXML.Examples</code></a> console project in the source code.</p>
+
+<pre><code class="language-ps1">git clone https://github.com/closedxml/closedxml
+cd closedxml
+dotnet run --project ClosedXML.Examples --framework net8.0
+</code></pre>
+
+<p>This creates all the example Excels in <code>ClosedXML.Examples/bin/Debug/net8.0/Created</code>,
+you can then compare the code with the actual output and go from there!</p>
+
+<h1 id="basic-usage">Basic Usage</h1>
+
+<pre><code class="language-c#">using ClosedXML.Excel;
+
+using var workbook = new XLWorkbook();
+IXLWorksheet sheet = workbook.AddWorksheet("MySheet");
+
+// Setting &amp; getting values
+IXLCell firstCell = sheet.Cell(1, 1);
+firstCell.Value = "will it work?";
+sheet.Cell("A2").FormulaA1 = "CONCATENATE(A1,\" ... Of course it will!\")";
+Assert.That(firstCell.GetString(), Is.EqualTo("will it work?"));
+
+// Numbers
+var moneyCell = sheet.Cell("A3");
+moneyCell.Style.NumberFormat.Format = "$#,##0.00";
+// Or use a predefined style
+// See: https://github.com/closedxml/closedxml/wiki/NumberFormatId-Lookup-Table
+moneyCell.Style.NumberFormat.NumberFormatId = (int)XLPredefinedFormat.Number.Precision2WithSeparator;
+moneyCell.Value = 1500.25M;
+
+// Easily write any Enumerable to a sheet
+var data = new[]
+{
+  new { FunctionName = "CHAR", Description = "Returns the character specified by the code number" },
+  new { FunctionName = "FIND", Description = "Finds one text value within another (case-sensitive)" },
+};
+sheet.Cell("A4").InsertTable(data, true);
+sheet.Cell("A12").InsertData(data);
+
+// Styling cells
+var someCells = sheet.Cells("A1,A4:B4");
+someCells.Style.Font.Bold = true;
+someCells.Style.Font.SetFontColor(XLColor.Ivory);
+Assert.That(XLColor.Ivory, Is.EqualTo(XLColor.FromColor(Color.Ivory)));
+// XLColor also has static methods FromArgb, FromHtml, FromKnownColor etc
+// See: https://github.com/closedxml/closedxml/wiki/ClosedXML-Predefined-Colors
+someCells.Style.Fill.SetPatternType(XLFillPatternValues.Solid);
+someCells.Style.Fill.BackgroundColor = XLColor.Navy;
+
+// Full control over filtering
+// See: https://docs.closedxml.io/en/latest/features/autofilter.html
+int lastCol = sheet.ColumnsUsed().Last().ColumnNumber();
+sheet.Range(1, 1, 1, lastCol).SetAutoFilter();
+
+sheet.ColumnsUsed().AdjustToContents();
+workbook.SaveAs("basicUsage.xslx");
+</code></pre>
+
+<h2 id="fluent-syntax">Fluent Syntax</h2>
+
+<p>At first I didn’t quite understand why there were both properties and “setter functions”
+for so many things. It is a bit overkill but it does allow the following code:</p>
+
+<pre><code class="language-c#">someRange.Style.Fill.BackgroundColor = XLColor.FromHtml("#F0F4FF");
+someRange.Style.Border.RightBorder = XLBorderStyleValues.Thin;
+someRange.Style.Border.RightBorderColor = XLColor.FromHtml("#D4D4D4");
+</code></pre>
+
+<p>To also be written like:</p>
+
+<pre><code class="language-c#">someRange.Style
+  .Fill.SetBackgroundColor(XLColor.FromHtml("#F0F4FF"))
+  .Border.SetRightBorder(XLBorderStyleValues.Thin)
+  .Border.SetRightBorderColor(XLColor.FromHtml("#D4D4D4"));
+</code></pre>
+
+<p>Which does look better! 😃</p>
+
+<h1 id="examples">Examples</h1>
+
+<h2 id="selecting-cells">Selecting Cells</h2>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("MySheet");
+
+// One cell
+IXLCell cellA2 = sheet.Cell("A2");
+var alsoCellA2 = sheet.Cell(2, 1);
+Assert.That(cellA2.Address.ToString(), Is.EqualTo("A2"));
+Assert.That(cellA2.Address, Is.EqualTo(alsoCellA2.Address));
+
+// Get the column from a cell
+Assert.That(cellA2.Address.ColumnNumber, Is.EqualTo(1));
+// To really get the column: sheet.Column(1) or sheet.Column("A")
+
+// A range
+IXLRange ranger = sheet.Range("A2:C5");
+var sameRanger = sheet.Range(2, 1, 5, 3);
+Assert.That(ranger.RangeAddress, Is.EqualTo(sameRanger.RangeAddress));
+
+//sheet.Cells("A1,A4") // Just A1 and A4
+//sheet.Ranges("A1,A4") // Same, but as a range
+//sheet.Row(1) // A row
+//sheet.Range("A:B") // Two columns
+
+// Linq
+// Not so performant to use standard linq
+sheet.Range("A1:A5").Cells().Where(cell =&gt; cell.HasComment);
+
+// Better to use the ClosedXML specific functions
+// Also: RowsUsed, FirstColumnUsed, ...
+sheet.Range("A1:A5").Cells(cell =&gt; cell.HasComment);
+var usedBold = sheet.CellsUsed(x =&gt; x.Style.Font.Bold);
+
+// Dimensions used
+Assert.That(sheet.LastRowUsed(), Is.Null);
+Assert.That(sheet.LastColumnUsed(), Is.Null);
+
+ranger.Value = "pushing";
+var usedRange = sheet.RangeUsed();
+Assert.That(usedRange!.RangeAddress, Is.EqualTo(ranger.RangeAddress.ToString()));
+
+// Offset: down 5 rows, right 10 columns
+var movedRanger = sheet.Range(
+  ranger.FirstCell().CellBelow(5).CellRight(10),
+  ranger.LastCell().CellBelow(5).CellRight(10)
+);
+Assert.That(movedRanger.RangeAddress.ToString(), Is.EqualTo("K7:M10"));
+movedRanger.Value = "Moved";
+
+// Range has many functions:
+// Union, Intersection, Intersects, Difference
+</code></pre>
+
+<h2 id="writing-values">Writing Values</h2>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("MySheet");
+
+// Format as text
+sheet.Cell("A1").Style.NumberFormat.Format = "@";
+
+// Numbers
+sheet.Cell("B1").Value = 15.321;
+sheet.Cell("B1").Style.NumberFormat.Format = "#,##0.00";
+Assert.That(sheet.Cell("B1").GetFormattedString(), Is.EqualTo("15.32"));
+Assert.That(sheet.Cell("B1").GetString(), Is.EqualTo("15.321"));
+
+// Percentage
+sheet.Cell("C1").Value = 0.5;
+sheet.Cell("C1").Style.NumberFormat.Format = "0%";
+Assert.That(sheet.Cell("C1").GetString(), Is.EqualTo("0.5"));
+Assert.That(sheet.Cell("C1").GetFormattedString(), Is.EqualTo("50%"));
+Assert.That(sheet.Cell("C1").Value, Is.EqualTo(0.5));
+
+// Money
+sheet.Cells("B2,D2").Value = 15000.23D;
+sheet.Cells("C2,E2").Value = -2000.50D;
+sheet.Range("B2:C2").Style.NumberFormat.Format = "#,##0.00 [$€-813];[Red]-#,##0.00 [$€-813]";
+sheet.Range("D2:E2").Style.NumberFormat.Format = "[$$-409]#,##0";
+
+// DateTime
+sheet.Cell("B3").Style.NumberFormat.Format = "yyyy-mm-dd";
+sheet.Cell("B3").FormulaA1 = $"=DATE({DateTime.Now:yyyy,MM,dd})";
+sheet.Cells("C3,D3").Value = DateTime.Now;
+sheet.Cell("C3").Style.NumberFormat.Format = DateTimeFormatInfo.CurrentInfo.FullDateTimePattern;
+sheet.Cell("D3").Style.NumberFormat.Format = "dd/MM/yyyy HH:mm";
+
+// Hyperlink
+sheet.Cell("C24").SetHyperlink(new XLHyperlink("https://itenium.be"));
+sheet.Cell("C24").Value = "Visit us";
+
+// Internal hyperlink
+workbook.Worksheets.Add("Data");
+sheet.Cell("C26").SetHyperlink(new XLHyperlink("'Data'!A1", "(tooltip)"));
+sheet.Cell("C26").Value = "Link to data sheet";
+
+sheet.Cell("Z1").Clear();
+</code></pre>
+
+<h2 id="styling-cells">Styling Cells</h2>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("Styling");
+
+// Cells with style
+sheet.Cell("A1").Value = "Bold and proud";
+sheet.Cell("A1").Style.Font.FontName = "Stencil";
+sheet.Cell("A1").Style.Font.Bold = true;
+sheet.Cell("A1").Style.Font.FontColor = XLColor.Green;
+
+// Borders need to be made
+sheet.Range("A1:A2").Style.Border.OutsideBorder = XLBorderStyleValues.Dotted;es.Dotted;
+
+// Merge cells
+sheet.Range(5, 5, 9, 8).Merge();
+
+// More style
+sheet.Cell("D14").Style.Alignment.ShrinkToFit = true;
+sheet.Cell("D14").Style.Font.FontSize = 24;
+sheet.Cell("D14").Value = "Shrinking for fit";
+
+sheet.Cell("D15").Style.Alignment.WrapText = true;
+sheet.Cell("D15").Value = "A wrap, yummy!";
+sheet.Cell("D16").Value = "No wrap, ouch!";
+
+// Background color
+sheet.Cell("B5").Style.Fill.BackgroundColor = XLColor.Red;
+
+// Horizontal Alignment
+sheet.Cell("B5").Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+sheet.Cell("B5").Value = "I'm centered";
+</code></pre>
+
+<h3 id="conditional-formatting">Conditional Formatting</h3>
+
+<p>Because a picture is worth a 1000 words:</p>
+
+<p><img src="/assets/blog-images/closedxml-conditional-formatting.png" alt="The examples below" /></p>
+
+<pre><code class="language-c#">sheet.Cell("B3").Value = "WhenBetween";
+sheet
+  .Range("B4:B9")
+  .AddConditionalFormat()
+  .WhenBetween(0, 20)
+  .Fill.SetBackgroundColor(XLColor.Red);
+
+sheet.Cell("C3").Value = "ColorScale";
+sheet
+  .Range("C4:C9")
+  .AddConditionalFormat()
+  .ColorScale()
+  .LowestValue(XLColor.Red)
+  .Midpoint(XLCFContentType.Percent, 50, XLColor.Yellow)
+  .HighestValue(XLColor.Green);
+
+sheet.Cell("D3").Value = "IconSet";
+sheet
+  .Range("D4:D9")
+  .AddConditionalFormat()
+  .IconSet(XLIconSetStyle.ThreeTrafficLights2)
+  .AddValue(XLCFIconSetOperator.EqualOrGreaterThan, 0, XLCFContentType.Number)
+  .AddValue(XLCFIconSetOperator.EqualOrGreaterThan, 20, XLCFContentType.Number)
+  .AddValue(XLCFIconSetOperator.EqualOrGreaterThan, 40, XLCFContentType.Number);
+
+sheet.Cell("E3").Value = "DataBar";
+sheet
+  .Range("E4:E9")
+  .AddConditionalFormat()
+  .DataBar(XLColor.Red)
+  .LowestValue()
+  .HighestValue();
+</code></pre>
+
+<h2 id="sheets">Sheets</h2>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook("crash-if-not-exists.xlsx");
+
+// Has overload to add a worksheet from another workbook
+var sheet1 = workbook.AddWorksheet("Sheet1");
+sheet1.ShowGridLines = false;
+sheet1.ShowRowColHeaders = false;
+
+// While possible to password protect a sheet, it's not possible
+// to password protect an entire workbook.
+sheet1.Protect("password");
+
+// Position a new worksheet
+var sheet0 = workbook.AddWorksheet("Sheet0", 0);
+sheet0.TabColor = XLColor.Redwood;
+sheet0.TabSelected = true;
+sheet0.Visibility = XLWorksheetVisibility.Hidden;
+
+sheet0.ActiveCell = sheet0.Cell("A5"); // or:
+sheet0.Cell("A5").SetActive();
+// Can only have one active cell but multiple can be selected
+// sheet0.Cell("A5").Select();
+
+// Freezing
+sheet0.SheetView.FreezeRows(1);
+sheet0.SheetView.FreezeColumns(4);
+
+sheet0.Column(1).Hide();
+
+// Copy to same/other workbook:
+sheet1.CopyTo(workbook, "Copy");
+
+// workbook.SaveAs(Stream / string);
+// Overload to validate &amp; evaluate formulas
+</code></pre>
+
+<h1 id="webapi">WebApi</h1>
+
+<p>There are small nugets available for delivering the Excel in <a href="https://github.com/ClosedXML/ClosedXML?tab=readme-ov-file#extensions">ASP.NET, MVC and WebApi</a> environments.</p>
+
+<p>Find the implementation for <a href="https://github.com/ClosedXML/ClosedXML.Extensions.WebApi/blob/master/src/ClosedXML.Extensions.WebApi/WebApiExtensions.cs">WebApi here</a>.</p>
+
+<pre><code class="language-c#">public static class Extensions
+{
+  private const string ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+  public static FileStreamResult Deliver(this IXLWorkbook workbook, string fileName)
+  {
+    var memoryStream = new MemoryStream();
+    workbook.SaveAs(memoryStream);
+    memoryStream.Seek(0, SeekOrigin.Begin);
+    return new FileStreamResult(memoryStream, ContentType) { FileDownloadName = fileName };
+  }
+}
+</code></pre>
+
+<h1 id="extension-methods">Extension Methods</h1>
+
+<p>Just some handy tidbits.</p>
+
+<pre><code class="language-c#">public static class ExcelExtensions
+{
+  public static IXLDataValidation SetDropdownList(this IXLCell cell, IEnumerable&lt;string&gt; options)
+  {
+    var validation = cell.CreateDataValidation();
+    validation.AllowedValues = XLAllowedValues.List;
+    validation.InCellDropdown = true;
+    validation.IgnoreBlanks = true;
+    // ATTN: must start/end with a double quote (")
+    validation.List($"\"{string.Join(",", options)}\"");
+    return validation;
+  }
+
+  public static IXLCell SetHyperlink(this IXLCell cell, string url, string text, string? tooltip = null)
+  {
+    cell.SetValue(text).SetHyperlink(new XLHyperlink(url, tooltip));
+    return cell;
+  }
+
+  public static IXLStyle SetNumberFormatId(this IXLNumberFormat nf, XLPredefinedFormat.Number format)
+  {
+    return nf.SetNumberFormatId((int)format);
+  }
+
+  public static IXLStyle SetNumberFormatId(this IXLNumberFormat nf, XLPredefinedFormat.DateTime format)
+  {
+    return nf.SetNumberFormatId((int)format);
+  }
+}
+</code></pre>
+
+  </div><a class="u-url" href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CQRS and CRUD | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="CQRS and CRUD" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A ramble against CQRS" />
+<meta property="og:description" content="A ramble against CQRS" />
+<link rel="canonical" href="https://itenium.be/design/2019/09/19/CQRS-Ramble.html" />
+<meta property="og:url" content="https://itenium.be/design/2019/09/19/CQRS-Ramble.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-19T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CQRS and CRUD" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-09-19T00:00:00+00:00","datePublished":"2019-09-19T00:00:00+00:00","description":"A ramble against CQRS","headline":"CQRS and CRUD","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/design/2019/09/19/CQRS-Ramble.html"},"url":"https://itenium.be/design/2019/09/19/CQRS-Ramble.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CQRS and CRUD</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-09-19T00:00:00+00:00" itemprop="datePublished">Sep 19, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 class="hide-from-excerpt" id="a-ramble-against-cqrs">A ramble against CQRS</h1>
+
+<p>A lot of interesting articles have been published about <strong>Command Query Responsibility Segregation</strong>.</p>
+
+<p>This is a mere rant. Not necessarily against CQRS per se, but against <strong>when</strong>
+it is being applied in spite of Martin Fowlers cautionary words:</p>
+
+<blockquote>
+  <p>For some situations, this separation can be valuable, but beware
+that <strong>for most systems CQRS adds risky complexity</strong>.<br />
+— <em>Martin Fowler (<a href="https://martinfowler.com/bliki/CQRS.html">CQRS Article</a>)</em></p>
+</blockquote>
+
+<!--more-->
+
+<p>I’ve always loved <a href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation">CQS</a>.
+How could one not, it makes perfect sense that <code>getUser(5)</code>
+would return user “5” and not do much else, perhaps there is some caching in place
+but one would hope it doesn’t actually create a User record or something.</p>
+
+<p>Then Greg Young introduced CQRS: An architectural pattern that allows us
+to add nice things, like Event Sourcing or a reporting database pretty easily.
+Adding such significant changes might be much easier compared to the impact on a more classical
+architecture, even when doing so late in the development life cycle.</p>
+
+<blockquote>
+  <p>Despite these benefits, <strong>you should be very cautious about using CQRS</strong><br />
+— <em>Martin Fowler</em></p>
+</blockquote>
+
+<p>In his entire article on CQRS, this is the only sentence that Martin has put in bold.</p>
+
+<p>Unfortunately developers like the latest and greatest very much and CQRS has, for many organizations
+and teams been put forward as the de facto standard architecture.</p>
+
+<p>There is of course that one project where it makes a lot of sense but let’s be realistic,
+most of us are working on enterprise applications which are all pretty much CRUD.</p>
+
+<p>So let’s explore what usually happens when you use CQRS for a CRUD application…</p>
+
+<h1 id="the-cqrs-mayhem">The CQRS Mayhem</h1>
+
+<p>An often overlooked aspect of design patterns are the <code>Consequences</code>:</p>
+
+<blockquote>
+  <p>How does the pattern support its objectives? What are the trade-offs
+and results of using the pattern? What aspect of the system structure does it
+let you vary independently?<br />
+— <em>Design Patterns: Elements of Reusable Object-Oriented Software</em></p>
+</blockquote>
+
+<p>If there is a whole point to this blog post it’s probably:</p>
+
+<p class="notice">The aspect of a CQRS system that benefits most from using the pattern
+is adding new ways to display, update and create existing entities.
+<strong>This is the one thing that typically doesn’t happen in a CRUD system.</strong></p>
+
+<p>When applying CQRS to something that is 80% CRUD to all 100% of the application,
+you have not properly assessed the patterns’ <code>Applicability</code> nor its <code>Intent</code>
+and are left only with its <code>Consequences</code>:</p>
+
+<p><img src="/assets/blog-images/CQRS-Ramble-Consequences.jpg" alt="There will be consequences meme" title="There will be consequences" class="img-responsive" /></p>
+
+<h2 id="an-explosion-of-classes">An Explosion of Classes</h2>
+
+<p>A create and an update probably save to the same place in the same structure.</p>
+
+<p>So you need to do a mapping from 2 models to the “database” structure. I’m sure you have a mapper
+for that, so you now have 2 mappers. Oh and of course also 2 controllers, perhaps 2 services
+and also 2 validators. And 2 repositories and 2 dtos and 2 handlers and uhm do you not need
+a separate interface type for all these? We want to talk to an interface, not an implementation
+after all!</p>
+
+<p>Instead of a delete/getOne just passing along an <code>int id</code> we will now also introduce
+good old <code>DeleteModelRequest</code> and <code>GetModelByIdRequest</code>: Because who doesn’t like a hundred classes with one <code>int Id</code> field in them.
+Even if you don’t want them, you’ll probably end up with a package that requires a specific type per command for its wiring.</p>
+
+<p>So yeah, the amount of types in your application will grow. Dramatically.</p>
+
+<h2 id="an-explosion-of-duplication">An Explosion of Duplication</h2>
+
+<p>Well since it’s CRUD you are bound to be doing the exact same thing multiple times. Right.. not exactly the same thing of course,
+there is that one field… in which entity was it again?</p>
+
+<p><img src="/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" alt="Duplication!? Duplication everywhere!" /></p>
+
+<ul>
+  <li>The CreateHandler for entity 1 will look very much like the one for entity 2.</li>
+  <li>The CreateRequest and UpdateRequest for an entity will also very much look alike.</li>
+  <li>All DeleteRequests and GetByIdRequests will look exactly the same.</li>
+  <li>The mapping from the CreateModel and the UpdateModel to the persistence model…</li>
+</ul>
+
+<h2 id="confusion-on-the-frontend">Confusion on the frontend</h2>
+
+<p>An update screen is usually populated with existing values. You have a different model for
+the Read. So you need to map the Read to the Update model before you can populate the controls…
+Or you need to also create a Get for the Update model. Either way, yes, you’ll need to write more code.</p>
+
+<p>(perhaps I can’t pin the next one entirely on CQRS but there is no stopping now 🔨 🔨 🔨)</p>
+
+<p>For simple entities we obviously need to only fetch what we really need on the frontend. So
+we create a <code>ListModel</code> and an <code>FullModel</code>. When we need to show just a few fields, we also
+create a <code>HeaderModel</code> and a <code>ModalModel</code>. Since you’re not using GraphQL, each of these
+also needs a backend endpoint and suddenly we also need to write some more code:
+A <code>ListModelRequest</code>, <code>FullModelRequest</code> etc and their corresponding <code>ListModelRequestHandler</code> and <code>FullModelRequestHandler</code>.</p>
+
+<p>But things get even better! We now have to keep all representations of the same entity
+in sync. Alternatively we fetch when needed and discard from memory as soon as possible, for
+example when the entity is no longer visible to the user. The amazing part is that now, we are
+probably fetching more data compared to the single entity approach - which was probably the main
+reason for having multiple representations in the first place.</p>
+
+<p>Additionally it becomes harder to reuse components. Yeah, I would really like to use
+the cool <code>ModalModelPopupComponent</code> but what I have is a <code>ListModel</code> and the <code>ModalModel</code> doesn’t have
+that one property. The horror!</p>
+
+<p><br />
+<em>Disclaimer</em>: as always, “<a href="https://codepen.io/rachsmith/details/YweZbG/">it depends</a>”: for entities with many children it might be too heavy
+to work with just one representation. <small>(each heading should probably have a disclaimer)</small></p>
+
+<h1 id="the-search-for-answers">The Search For Answers</h1>
+
+<p>The search for answers <strong>to the wrong question</strong>:</p>
+
+<blockquote>
+  <p>How can I keep this CRUD application easy to understand and modify while also applying CQRS?<br />
+— <em>Every developer working on a CQRS + CRUD app</em></p>
+</blockquote>
+
+<p>Because you want to keep <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, one searches for solutions.</p>
+
+<p><img src="/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" alt="Keeping Oneself DRY" /></p>
+
+<h2 id="domain-inheritance">Domain Inheritance</h2>
+
+<p>The inevitable happens. In order to somewhat mitigate the maintainability issues
+that arise from applying CQRS when it really shouldn’t, inheritance is used so that each
+time a property changes, is removed or added, it doesn’t result in doing the same change
+x times.</p>
+
+<pre><code class="language-c#">class CreateUserRequest {
+    string Name;
+    DateTime BirthDate;
+    Address Address;
+}
+
+class UpdateUserRequest : CreateUserRequest {
+    int Id;
+}
+
+class FullUserViewModel : UpdateUserRequest {
+    // perhaps this one is a stretch 😅
+    DateTime CreatedOn;
+    string CreatedBy;
+}
+</code></pre>
+
+<p>The most striking, but perhaps also a non-issue, is that this is a Liskov Substitution Principle violation.
+Your <code>CreateUserRequestHandler</code> is going to accept the <code>UpdateUserRequest</code> but it will probably not do what you’d
+hope. A non issue because the execution chain is probably auto-wired.</p>
+
+<p>Then there is reduced readability: in order to see what an entity contains you need to drill down the inheritance
+chain and puzzle it together mentally.</p>
+
+<p>So we are back to copy/paste? Now it’s reduced maintainability: all property changes need to be done x times.
+And 🎉, most maintenance includes exactly that: add this one field, rename that field, delete that field.
+Even in-code class and property documentation needs to be duplicated.</p>
+
+<h2 id="generic-base-classes">Generic Base Classes</h2>
+
+<p>The next source of repetition needs to go and so a well intended developer creates generic base classes to avoid
+request handler code duplication.</p>
+
+<p>We end up with the same amount of “Handlers” but now they do not contain any code
+they only inherit a base, provide some options with generic parameters and a have constructor passing
+a bunch of dependencies. The same may happen at every layer / branch in the application.</p>
+
+<pre><code class="language-typescript">class CreateModelHandlerBase&lt;TReadModel, TCreateModel, TUpdateModel, TReturnModel&gt; {
+    constructor(
+        IRepository&lt;TReadModel, TCreateModel, TUpdateModel&gt;,
+        IUnitOfWork&lt;TCreateModel&gt;,
+        ITranslator,
+        IErrorHandler,
+        ILogger&lt;TCreateModel&gt;,
+        IAuditor,
+        IReferenceDataProvider,
+        IUserProvider,
+        ILanguageProvider,
+        IHopeIMNotMissingOne
+    ) {}
+
+    DoIt(model): TReturnModel {
+        // lots of crazy code here
+        // it probably handles all
+        // the creates for all the
+        // entities.This one might
+        // inherit from the Update
+    }
+}
+</code></pre>
+
+<p>Yeah you don’t really need the Read/Update models for a CreateHandlerBase but
+unfortunately the IRepository needed it. The TReadModel is first because the
+same order of generic parameters is used in the Read, Update and Delete handlers
+due to some nasty copy paste errors in the past.</p>
+
+<h4 id="how-to-recognize-such-class">How to recognize such class</h4>
+
+<ul>
+  <li>Lot’s of generic parameters</li>
+  <li>Zero documentation</li>
+  <li>Already contains <code>if (model is Model5Request)</code> branches.</li>
+  <li>No unit tests</li>
+  <li>Seems to work but only its creator knows how</li>
+</ul>
+
+<p>Okay, perhaps I can’t be too mad about this one, everyone probably ends up
+with something similar for a CRUD persistence layer using either architecture.</p>
+
+<h1 id="why-would-more-code-even-be-bad">Why would more code even be bad</h1>
+
+<blockquote>
+  <p>The ratio of time spent reading versus writing is well over 10 to 1.<br />
+— <em>Robert C. Martin</em></p>
+</blockquote>
+
+<p>So if you have a code base that is x times the size of what it could be
+you’ll now spend much more time on what you’re already doing most?</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p>You would naturally expect a project that’s twice as large as another to have
+twice as many errors. But the density of defects — the number of defects per 1000
+lines of code — increases.<br />
+— <em>Steve McConnell (Code Complete, “How Program Size Affects Construction”)</em></p>
+</blockquote>
+
+<p>More code === More bugs 😃</p>
+
+<h2 id="accidental-complexity-vs-essential-complexity">Accidental Complexity vs Essential Complexity</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">Essential Complexity</a> is driven by
+business needs and cannot be avoided.<br />
+Accidental Complexity is what we are creating here: More types to create and
+maintain. Arguably, a more difficult to follow flow of execution. More code to
+read/scan through during bug hunting.</p>
+
+<p>Not everyone in the team will have worked with CQRS. There is a learning curve. During an initial adjustment period
+less value will be delivered.</p>
+
+<p>Adding Accidental Complexity may be a good thing, but what are you buying yourself here?
+What did applying CQRS bring to table that starts really paying off months/years later?</p>
+
+<h1 id="freedom-or-enslavement">Freedom or Enslavement</h1>
+
+<p>For those of you who have not yet noticed, what bothers me most about CQRS is that for everything
+you do, it always means more code, usually in the form of new classes.</p>
+
+<p>And isn’t that exactly what the Open-Closed Principle advocates? Well yes… true… I rest my case,
+all hail CQRS.</p>
+
+<p><br />
+If the most common types of feature requests can be handled in an Open-Closed way, then 👍 for the team!
+Unfortunately for CQRS this is only the case when creating new Entities or new ways to Create/Update existing entities.
+Even long before you’ve gotten to 🎺 🎉 v1 🎉 🎺, no more new entities will be added and since it’s still very much a CRUD
+application you most often end up with “Please add field x to entity y” tickets which is something
+CQRS isn’t very good at.</p>
+
+<p>So what is one to do?</p>
+
+<h2 id="kiss">KISS</h2>
+
+<p>If the only difference between create and update is the availability of the <code>id</code> property,
+instead of literally writing/copying hundreds of lines of code, you can solve the issue
+with no more than about 2 lines of code:</p>
+
+<pre><code class="language-typescript">if (isCreate &amp;&amp; entity.id)
+    throw Error;
+</code></pre>
+
+<p>If there is more to it:</p>
+<ul>
+  <li>Add the second if!</li>
+  <li>How about <code>if (isUpdate) doThatOtherStuff();</code>?</li>
+  <li>Add metadata to properties signaling “allow edit on create only” and other things happening in your domain.</li>
+  <li>Introduce a seam</li>
+  <li>Be creative! Injectors, Interceptors, Filters!</li>
+</ul>
+
+<h2 id="a-cqrs-rule-of-thumb">A CQRS Rule of Thumb</h2>
+
+<p>An easy to follow checklist to determine if you need CQRS for this upcoming “MetaDataAdmin” project:</p>
+
+<p>If, for a single entity, your UX designer</p>
+
+<p>OR: created 1 wireframe for Create, Read and Update<br />
+OR: made one wireframe for each but they look pretty much alike<br />
+<strong>THEN</strong>: Choose CQRS at your own peril.</p>
+
+<p><br /></p>
+
+<p>If he made 7 radically different wireframes: 2 Creates, 3 Updates and 2 Reads - for the same entity.<br />
+<strong>THEN</strong>: I suggest you consider CQRS, it might be a good fit.</p>
+
+<h2 id="mitigation">Mitigation</h2>
+
+<p>If despite all this, it is CQRS or the highway:</p>
+
+<p>Create code snippets, perhaps even a little generator to mitigate the pain. (you mean, write even more code? 😀)</p>
+
+<p>Good documentation would help a lot but well, you know how it goes 😃</p>
+
+<p>A simple diagram explaining the flow for a typical CRUD operation:
+where in the project folder structure to create which class goes a long way
+getting new devs and juniors onboard.</p>
+
+<p>If you end up using the domain inheritance thing, (generated?) printouts
+for the important entity types so you can piece things together more easily are a good
+workaround for properties being “all over the place”.</p>
+
+<p>UnitTest the heck out of those pretty “BaseHandlers” and you’ll be fine!</p>
+
+<p><small>Or, you know, just abstract it away with a pretty meta-CQRS-CRUD design ;)</small></p>
+
+<h1 id="conclusions">Conclusions</h1>
+
+<!-- !Safely in comment! -->
+<!--   CQRS === The 😈   -->
+
+<p><a href="https://itenium.be/blog/productivity/pragmatic-tip-2-think-about-your-work/">THINK!</a> Does it make sense to use CQRS or not!?</p>
+
+<p>If so, will it be helpful to do for all parts of the application and for all entities?</p>
+
+<h2 id="the-cure-is-worse-than-the-disease">The Cure Is Worse Than The Disease</h2>
+
+<p>If you are using CQRS for a CRUDdy app, then you are basically avoiding issues like:</p>
+
+<ul>
+  <li>For a create, you cannot set the <code>id</code></li>
+  <li>For create and update, you cannot set audit fields (Create &amp; Update meta info)</li>
+  <li>Sometimes, for some entities there are some fields that can only be set during Create or Update</li>
+</ul>
+
+<p>And replacing them with issues like:</p>
+
+<ul>
+  <li>(Junior) Developers that have to learn this whole CQRS thing</li>
+  <li>An explosion of classes and duplication (mappers, entities, dtos, requests, …)</li>
+  <li>More expensive maintenance for CRUD-related feature requests</li>
+  <li>You are making your application Open-Closed in all the wrong ways</li>
+  <li>Developers that do not like duplication search for solutions
+    <ul>
+      <li>Domain classes that inherit from each other</li>
+      <li>Empty classes that just inherit from another class</li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/design/2019/09/19/CQRS-Ramble.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

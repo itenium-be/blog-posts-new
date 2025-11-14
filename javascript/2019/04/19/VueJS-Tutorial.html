@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Vue.js Tutorial | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Vue.js Tutorial" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="vuejs/vue : Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." />
+<meta property="og:description" content="vuejs/vue : Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." />
+<link rel="canonical" href="https://itenium.be/javascript/2019/04/19/VueJS-Tutorial.html" />
+<meta property="og:url" content="https://itenium.be/javascript/2019/04/19/VueJS-Tutorial.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-19T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Vue.js Tutorial" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-04-19T00:00:00+00:00","datePublished":"2019-04-19T00:00:00+00:00","description":"vuejs/vue : Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.","headline":"Vue.js Tutorial","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/javascript/2019/04/19/VueJS-Tutorial.html"},"url":"https://itenium.be/javascript/2019/04/19/VueJS-Tutorial.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Vue.js Tutorial</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-19T00:00:00+00:00" itemprop="datePublished">Apr 19, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+<p><a href="https://github.com/vuejs/vue" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vue">vuejs/vue</a>
+:
+    Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
+
+<h4 id="why-vue">Why Vue</h4>
+
+<ul>
+  <li><code>100k+ ⭐</code>: So many people can’t be wrong</li>
+  <li>Declarative rendering with a cool, terse syntax</li>
+  <li>Low learning curve</li>
+  <li>Reactive and composable view components</li>
+  <li>Optional official <code>vue-router</code> and <code>vuex</code> (statemanagement)</li>
+  <li><code>@vue/cli</code>: Scaffold project with optional support for TypeScript, PWA, CSS Pre-processors, Linters, Tests, …</li>
+  <li>Automatic dependency tracking</li>
+  <li>Virtual DOM</li>
+  <li>Supports IE9+</li>
+</ul>
+
+<!--more-->
+
+<h4 id="official-projects">Official Projects</h4>
+
+<p><a href="https://github.com/vuejs/vue-router" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vue-router.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vue-router">vuejs/vue-router</a>
+:
+    The official router for Vue.js.</p>
+
+<p><a href="https://github.com/vuejs/vuex" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vuex.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vuex">vuejs/vuex</a>
+:
+    Centralized State Management for Vue.js.</p>
+
+<p><a href="https://github.com/vuejs/vue-cli" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vue-cli.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vue-cli">vuejs/vue-cli</a>
+:
+    Standard Tooling for Vue.js Development</p>
+
+<p><a href="https://github.com/vuejs/vue-devtools" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vue-devtools.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vue-devtools">vuejs/vue-devtools</a>
+:
+    ⚙ Chrome and Firefox devtools extension for debugging Vue.js applications.</p>
+
+<p><a href="https://github.com/vuejs/vetur" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vetur.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuejs/vetur">vuejs/vetur</a>
+:
+    Vue tooling for VS Code.</p>
+
+<h1 id="hello-vue">Hello Vue</h1>
+
+<p class="title-url"><a href="/assets/blog-assets/vue-HelloVue.html">HelloVue.html source</a></p>
+
+<h4 id="html">Html</h4>
+<pre><code class="language-html">&lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;
+
+&lt;div id="app"&gt;
+  &lt;!-- Binding --&gt;
+  &lt;h1&gt;{{ product }}&lt;/h1&gt;
+
+
+  &lt;!-- v-bind directive --&gt;
+  &lt;img v-bind:src="image" :title="imageTitle"&gt;
+  &lt;!-- :src, :alt, :title, :class, :style, :disabled --&gt;
+
+
+  &lt;!-- Conditionals --&gt;
+  &lt;div&gt;
+    &lt;!-- Falsy will not include in DOM --&gt;
+    &lt;p v-if="inventory &gt; 10"&gt;In Stock&lt;/p&gt;
+    &lt;p v-else-if="inventory"&gt;Almost sold out&lt;/p&gt;
+    &lt;p v-else&gt;Out of Stock&lt;/p&gt;
+
+    &lt;!-- Render with display: none --&gt;
+    &lt;p v-show="inventory &lt; 0"&gt;Wuuk?&lt;/p&gt;
+  &lt;/div&gt;
+
+
+  &lt;!-- Events --&gt;
+  &lt;!-- v-on directive shorthand is @ --&gt;
+  &lt;button
+    v-on:click="cart++; inventory--"
+    :disabled="!inventory"
+    :class="inventory ? '' : 'disabledButton'"
+  &gt;
+    Add to Cart
+  &lt;/button&gt;
+  &lt;div class="cart"&gt;{{cart}}&lt;/div&gt;
+
+
+  &lt;!-- Loops --&gt;
+  &lt;div v-for="variant in variants"
+    :key="variant.id"
+    :style="{backgroundColor: variant.color}"
+    @mouseover="setImage(variant.color, $event)"
+  &gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="language-javascript">const vm = new Vue({
+    el: '#app',
+    data: {
+      product: 'Socks',
+      image: './assets/socks-green.jpg',
+      imageTitle: 'Green Socks',
+      variants: [
+        {id: 1, color: 'green'},
+        {id: 2, color: 'blue'}
+      ],
+      inventory: 3,
+      cart: 0
+    },
+    methods: {
+      addToCart() {
+        this.cart++;
+        this.inventory--;
+      },
+      setImage(color, event) {
+        console.log('Vue instance with data and methods', this, event);
+        this.image = `./assets/socks-${color}.jpg`;
+      }
+    }
+});
+console.log('Modify data directly from the console with `vm.product = "Shoes";`');
+</code></pre>
+
+<h1 id="templates">Templates</h1>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation">Interpolations guide</a></p>
+
+<h4 id="displaying-values">Displaying values:</h4>
+<pre><code class="language-html">&lt;h1&gt;{{ name.toUpperCase() }}&lt;/h1&gt;
+&lt;p v-text="name"&gt;&lt;/p&gt;
+&lt;p v-html="rawHtml"&gt;&lt;/p&gt;
+</code></pre>
+
+<h4 id="computed-properties">Computed Properties</h4>
+<p>Prefer <code>computed</code> properties over doing string formatting in the templates directly
+as they will only be re-evaluated when a relevant dependency changes.</p>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/computed.html#computed-properties">Computed Properties guide</a></p>
+<p>Usage computed property: <code>&lt;h1&gt;{{ title }}&lt;/h1&gt;</code>:</p>
+
+<pre><code>new Vue({
+    data: {name: 'Vuer'},
+    computed: {
+        title() {
+            return this.name.toUpperCase();
+        }
+    }
+});
+</code></pre>
+
+<h2 id="attributes">Attributes</h2>
+
+<p class="title-url"><a href="https://vuejs.org/api/built-in-directives.html#v-bind">Attributes guide</a></p>
+<p>Binding to attribute with <code>v-bind</code> directive:</p>
+<pre><code class="language-html">&lt;img v-bind:src="val"&gt;
+&lt;img v-bind:[evaluated]="val"&gt;
+&lt;img :src="val"&gt;
+</code></pre>
+
+<p>Evaluated should return a bindable property or <code>null</code>.</p>
+
+<p>Shorthands: <code>:src</code>, <code>:alt</code>, <code>:title</code>, <code>:class</code>, <code>:style</code>, <code>:disabled</code></p>
+
+<h4 id="style">:style</h4>
+<pre><code class="language-html">:style="{fontSize: '13px'}"
+:style="{'font-size': styles.size}"
+:style="styleObject"
+:style="[obj1, obj2]"
+</code></pre>
+
+<ul>
+  <li>Use camelCase or kebab-case (quoted)</li>
+  <li>Vendor prefixes are added automatically</li>
+  <li>Can combine html <code>style</code> and Vue <code>:style</code> attributes.</li>
+</ul>
+
+<h4 id="class">:class</h4>
+<pre><code class="language-html">:class="'btn' + btn.type"
+:class="[cond ? 'active' : '']"
+:class="{active: cond}"
+</code></pre>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/conditional.html#conditional-rendering">Conditional Rendering guide</a></p>
+<h2 id="conditions">Conditions</h2>
+<pre><code class="language-html">&lt;!-- Falsy values will not render --&gt;
+&lt;p v-if="inventory &gt; 10"&gt;In Stock&lt;/p&gt;
+&lt;p v-else-if="inventory"&gt;Almost sold out&lt;/p&gt;
+&lt;p v-else&gt;Out of Stock&lt;/p&gt;
+
+&lt;!-- Render a block of multiple elements --&gt;
+&lt;!-- The template tag itself will not be rendered --&gt;
+&lt;template v-if="cond"&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;div&gt;...&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;!-- Falsy values render with display: none --&gt;
+&lt;!-- Less DOM changes === better performance --&gt;
+&lt;!-- There is no v-else-show and it does not work with templates --&gt;
+&lt;p v-show="inventory"&gt;In Stock&lt;/p&gt;
+</code></pre>
+
+<p><code>v-show</code></p>
+<ul>
+  <li>Use when you need to toggle something often</li>
+  <li>Always rendered: Costlier initial rendering</li>
+</ul>
+
+<p><code>v-if</code></p>
+<ul>
+  <li>Use when the condition is unlikely to change</li>
+  <li>Rendered only when the condition is true</li>
+</ul>
+
+<p><code>v-once</code>: Will never be updated after initial render.</p>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/list.html#list-rendering">Lists guide</a></p>
+<h2 id="looping">Looping</h2>
+<pre><code class="language-html">&lt;!-- Render 5 stars --&gt;
+&lt;i v-for="i in 5" class="fa fa-star" :key="i"&gt;&lt;/i&gt;
+
+&lt;!-- Loop through an Array --&gt;
+&lt;li v-for="item in ['Gold', 'Silver', 'Bronze']" :key="item"&gt;{{ item }}&lt;/li&gt;
+&lt;li v-for="(item, index) in [1, 2, 3]" :key="item"&gt;{{ index + ' ' + item }}&lt;/li&gt;
+
+&lt;!-- Loop through an Object --&gt;
+&lt;li v-for="(value, key) in {a: 1}" :key="key"&gt;{{ value }}&lt;/li&gt;
+&lt;li v-for="(value, key, index) in {a: 1}" :key="key"&gt;{{ value }}&lt;/li&gt;
+</code></pre>
+
+<p>Like <code>v-if</code> you can use a template to render a block of multiple elements.</p>
+
+<p><code>:key</code> attribute:</p>
+<ul>
+  <li>Should be a primitive type</li>
+  <li>Recommended unless you want to intentionally rely on the default behavior</li>
+  <li>Required when using <code>v-for</code> with a custom component
+<!-- :key => React=key, Angular=trackBy --></li>
+</ul>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/event-handling.html#event-handling">Events guide</a></p>
+<h2 id="events">Events</h2>
+<pre><code class="language-html">&lt;button v-on:click="nr++"&gt;&lt;/button&gt;
+&lt;form @submit="methodName"&gt;&lt;/form&gt;
+&lt;input @keyup.enter="fn(arg1, arg2, ...)"&gt;
+</code></pre>
+
+<h4 id="event-modifiers">Event Modifiers</h4>
+<ul>
+  <li><code>@keyup.enter</code>: <code>.enter</code> is called a <a href="https://vuejs.org/guide/essentials/event-handling.html#key-modifiers">Key Modifier</a></li>
+  <li>Modifiers are stackable: <code>.mod1.mod2</code></li>
+  <li><code>@keyup.page-down="onPageDown"</code></li>
+  <li><code>.prevent</code> == <code>event.preventDefault()</code></li>
+  <li><code>.stop</code> == <code>event.stopPropagation()</code>: Shorthand <code>~</code>.</li>
+  <li><code>.once</code>: Unregister after first trigger</li>
+  <li><code>.self</code>: Trigger only when the element is the <code>.target</code></li>
+  <li><code>@click.ctrl.exact</code>: Only trigger when ctrl is pressed without any other keys</li>
+  <li><code>@click.capture</code>: An event on an inner element is handled here before the <code>.target</code>. Shorthand <code>!</code>.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters"><code>.passive</code></a>: Corresponds to <code>addEventListener</code>’s passive option. Shorthand <code>&amp;</code>.</li>
+</ul>
+
+<!-- TODO: not covered? .native modifier etc -->
+<!-- .native (native events in custom components) -->
+<!-- v-on:update:propName="doStuff" ==> .sync == two way binding? -->
+
+<h1 id="components">Components</h1>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/component-basics.html#components-basics">Components guide</a></p>
+
+<h4 id="usage">Usage</h4>
+<pre><code class="language-javascript">// Html
+// &lt;product :premium="premium" @add-to-cart="updateCart" class="main-prod"&gt;&lt;/product&gt;
+
+// JavaScript
+new Vue({
+  data: {
+    premium: true,
+    cart: [],
+  },
+  methods: {
+    updateCart(product) {
+      this.cart.push(product);
+    }
+  }
+});
+</code></pre>
+
+<h4 id="declare">Declare</h4>
+
+<pre><code class="language-javascript">const comp = Vue.component('product', {
+  // Props with validation
+  props: {
+    premium: {type: Boolean, required: true, default: false},
+    // Types: String, Number, Array, Object, Function, Promise, any ctor
+    // Null and undefined always pass validation
+    // oneOf: [String, Number],
+    // special: {
+    //   default() { return 'calculatedValue'; },
+    //   validator(value) { return true; }
+    // }
+  },
+  // Props without validation
+  // props: ['premium'],
+  template: `
+    &lt;!-- Must have single root element --&gt;
+    &lt;div class="product"&gt;
+      &lt;h1&gt;{{ product }}&lt;/h1&gt;
+      &lt;p v-if="premium"&gt;&lt;b&gt;FREE Shipping&lt;/b&gt;&lt;/p&gt;
+
+      &lt;button @click="addToCart"&gt;
+        Add to Cart
+      &lt;/button&gt;
+    &lt;/div&gt;
+  `,
+  data() {
+    // data is a function inside a Vue.component()
+    // Do return a new object reference each time.
+    return {
+      product: 'Socks',
+      inventory: 3,
+    };
+  },
+  methods: {
+    addToCart() {
+      this.inventory--;
+      this.$emit('add-to-cart', {product: this.product});
+    }
+  },
+
+  // Local Subcomponent Registration
+  // const LocalComponent = {};
+  // components: {
+  //   'local-component': LocalComponent,
+  // }
+
+  // Watches
+  watch: {
+    iventory(newInventory, oldInventory) {
+      // TODO: Call backend to check if product is still available
+    }
+  },
+
+
+  // LifeCycle Methods
+  created() {
+    console.log('Http requests probably here');
+  },
+  mounted() {},
+  updated() {},
+  destroyed() {},
+  beforeDestroy() {},
+});
+</code></pre>
+
+<h2 id="slots">Slots</h2>
+
+<p>Slots, like React <code>props.children</code> or Angular <code>ng-content</code>.</p>
+
+<p class="title-url"><a href="https://vuejs.org/guide/components/slots.html#slots">Slots guide</a></p>
+
+<h4 id="usage-1">Usage</h4>
+<pre><code class="language-html">&lt;alert-box&gt;
+  &lt;!-- Named Slot --&gt;
+  &lt;template v-slot:title&gt;
+    &lt;!-- Shorthand #title --&gt;
+    Oh noes!
+  &lt;/template&gt;
+
+  &lt;!-- Default Slot --&gt;
+  Something bad happened.
+  &lt;!-- Could put default slot into: v-slot:default --&gt;
+&lt;/alert-box&gt;
+</code></pre>
+
+<h4 id="declare-1">Declare</h4>
+<pre><code class="language-javascript">Vue.component('alert-box', {
+  template: `
+    &lt;div&gt;
+      &lt;slot name="title"&gt;Error!&lt;/slot&gt;
+      &lt;slot&gt;Default value&lt;/slot&gt;
+    &lt;/div&gt;
+  `
+});
+</code></pre>
+
+<h1 id="forms">Forms</h1>
+
+<p class="title-url"><a href="https://vuejs.org/guide/essentials/forms.html#form-input-bindings">Forms guide</a></p>
+
+<h4 id="html-1">Html</h4>
+<pre><code class="language-html">&lt;form @submit.prevent="onSubmit"&gt;
+  &lt;input v-model="name" @keydown.ctrl.v.prevent="blockPaste"&gt;
+
+  &lt;div v-for="error in errors" :key="error"&gt;
+    * {{ error }}
+  &lt;/div&gt;
+
+  &lt;select v-model.number="rating"&gt;
+    &lt;!-- Other modifiers: --&gt;
+    &lt;!-- .lazy =&gt; Sync on change event --&gt;
+    &lt;!-- .trim =&gt; Strip whitespace --&gt;
+    &lt;option disabled value=""&gt;select&lt;/option&gt;
+    &lt;option v-for="i in 5" :key="i"&gt;{{ i }}&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;br&gt;
+  &lt;input
+    type="checkbox"
+    v-model="acceptTerms"
+    true-value="yes"
+    false-value="no"
+  &gt;
+  Accept terms
+
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h4 id="javascript-1">JavaScript</h4>
+<pre><code class="language-javascript">new Vue({
+  data: {
+    name: null,
+    rating: '',
+    acceptTerms: false,
+    errors: []
+  },
+  methods: {
+    onSubmit() {
+      this.errors = [];
+      if (!this.rating) {
+        this.errors.push('Please select a rating');
+        return;
+      }
+
+      const review = {name: this.name, rating: this.rating};
+      console.log('Submitting', review);
+    },
+    blockPaste() {
+      console.log('Control + V is not allowed!');
+    }
+  },
+});
+</code></pre>
+
+<h4 id="validation-not-included">Validation not included</h4>
+
+<p><a href="https://github.com/vuelidate/vuelidate" class="github">
+    <img src="https://img.shields.io/github/stars/vuelidate/vuelidate.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/vuelidate/vuelidate">vuelidate/vuelidate</a>
+:
+    Simple, lightweight model-based validation for Vue.js</p>
+
+<p><a href="https://github.com/baianat/vee-validate" class="github">
+    <img src="https://img.shields.io/github/stars/baianat/vee-validate.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/baianat/vee-validate">baianat/vee-validate</a>
+:
+    Template Based Validation Framework for Vue.js</p>
+
+<h4 id="caveat">Caveat</h4>
+
+<p>Reuse of <code>&lt;input&gt;</code> elements could lead to strange behavior.</p>
+
+<pre><code class="language-html">&lt;template v-if="loginType === 'username'"&gt;
+  &lt;!-- Using `key` so the inputs are not reused when loginType changes --&gt;
+  &lt;input placeholder="Enter your username" key="username-input"&gt;
+&lt;/template&gt;
+
+&lt;template v-else&gt;
+  &lt;input placeholder="Enter your email address" key="email-input"&gt;
+&lt;/template&gt;
+</code></pre>
+
+<p class="title-url"><a href="https://vuejs.org/guide/components/v-model.html#component-v-model">Using v-model on Components</a></p>
+
+<h2 id="custom-model-binding">Custom Model Binding</h2>
+
+<pre><code class="language-javascript">Vue.component('custom-input', {
+    props: ['value'],
+    template: `&lt;input :value="value" @input="$emit('input', $event.target.value)"&gt;`
+})
+
+// Html
+// &lt;custom-input v-model="searchText"&gt;&lt;/custom-input&gt;
+
+new Vue({
+    el: '#app',
+    data: {
+      searchText: ''
+    },
+});
+</code></pre>
+
+<h1 id="reactivity">Reactivity</h1>
+
+<h4 id="array">Array</h4>
+
+<p>Vue.js has wrapped array functions so that they are reactive:<br />
+<code>push</code>, <code>pop</code>, <code>shift</code>, <code>unshift</code>, <code>splice</code>, <code>sort</code>, <code>reverse</code></p>
+
+<p>Assigning a new array will reuse DOM elements if possible on the re-render.</p>
+
+<p>It <strong>will not detect <code>this.items[0] = 'newVal'</code></strong>. If you must, use:</p>
+<pre><code class="language-javascript">Vue.set(vm.items, indexOfItem, newValue);
+vm.items.splice(indexOfItem, 1, newValue);
+vm.$set(vm.items, indexOfItem, newValue);
+</code></pre>
+
+<h4 id="objects">Objects</h4>
+
+<p>Assigning a new property to an object is not reactive.
+Assign it a default value on initialization.</p>
+
+<p>If you must, use:</p>
+<pre><code class="language-javascript">Vue.set(vm.userProfile, 'age', 27);
+vm.$set(vm.userProfile, 'age', 27);
+</code></pre>
+
+<p><br /></p>
+<h1 id="closing-thoughts">Closing Thoughts</h1>
+
+<p>I was really surprised by Vue’s simplicity and terse syntax due its many shorthands.
+Tooling in Visual Studio Code and Chrome is really good. The CLI was pretty amazing
+at setting up a full blown starter project.</p>
+
+<p>So, I learned me some Vue.js for a technical session
+and am already set on using it for a few small projects.</p>
+
+  </div><a class="u-url" href="/javascript/2019/04/19/VueJS-Tutorial.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

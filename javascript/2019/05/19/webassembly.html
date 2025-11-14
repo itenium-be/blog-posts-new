@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Google I/O ‘19: WebAssembly for Web Developers | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Google I/O ‘19: WebAssembly for Web Developers" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://itenium.be/javascript/2019/05/19/webassembly.html" />
+<meta property="og:url" content="https://itenium.be/javascript/2019/05/19/webassembly.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-19T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Google I/O ‘19: WebAssembly for Web Developers" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-05-19T00:00:00+00:00","datePublished":"2019-05-19T00:00:00+00:00","headline":"Google I/O ‘19: WebAssembly for Web Developers","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/javascript/2019/05/19/webassembly.html"},"url":"https://itenium.be/javascript/2019/05/19/webassembly.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Google I/O &#39;19: WebAssembly for Web Developers</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-05-19T00:00:00+00:00" itemprop="datePublished">May 19, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <figure class="youtubemovie">
+    <div class="iframewrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/njt-Qzw0mVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+
+    
+    <figcaption></figcaption>
+    
+</figure>
+
+<!--more-->
+
+<h1 id="emscripten">Emscripten</h1>
+
+<p><a href="https://github.com/emscripten-core/emscripten" class="github">
+    <img src="https://img.shields.io/github/stars/emscripten-core/emscripten.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/emscripten-core/emscripten">emscripten-core/emscripten</a>
+:
+    An LLVM-to-Web Compiler</p>
+
+<p>Brings your existing C/C++ applications to the web (ex: Autocad, Game Engines like Unity).
+Provides a drop-in replacement: Whatever you wrote, it should just work on the web.
+It emulates OpenGL, the FileSystem etc.</p>
+
+<h1 id="for-web-developers">For Web Developers</h1>
+
+<p>Two main use cases</p>
+<ul>
+  <li>Surgical replacement of tiny modules in your JavaScript, the hot paths, the bottlenecks, with WebAssembly</li>
+  <li>Use existing libraries that do not exist on npm from another ecosystem (C/C++, Rust, …)</li>
+</ul>
+
+<h1 id="the-performance-myth">The Performance Myth</h1>
+
+<p>WebAssembly and JavaScript both have the same peak performance. But…
+JavaScript can easily fall off the “fast path” while WebAssembly will not.</p>
+
+<figure class="imagewrapper" style="max-width: 700px">
+    <img src="/assets/blog-images/webassembly-v8-js-vs-wasm.png" alt="" title="" class="img-responsive" />
+
+    
+    <figcaption>Inside V8</figcaption>
+    
+</figure>
+
+<ul>
+  <li><code>js</code> input
+    <ul>
+      <li>Ignition: Interprets the JS text and runs it. While running, collects analytics data about how the code is behaving before TurboFan kicks in.</li>
+      <li>TurboFan: The optimizing compiler.</li>
+    </ul>
+  </li>
+  <li><code>wasm</code> input
+    <ul>
+      <li>Liftoff: The streaming WebAssembly compiler which generates machine code.</li>
+      <li>TurboFan: The optimizing compiler which generates optimized code.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>With JavaScript input, TurboFan will deopt (deoptimization) when
+the assumptions from the collected analytics no longer hold true
+reverting back to the Ignition interpreter.
+With Liftoff you always stay on the fast path.</p>
+
+<p><strong>WebAssembly delivers more predictable performance than JavaScript</strong></p>
+
+<figure class="imagewrapper" style="max-width: 678px">
+    <img src="/assets/blog-images/webassembly-js-vs-wasm.png" alt="" title="" class="img-responsive" />
+
+    
+    <figcaption>The peak performance is about the same but in some browsers the JavaScript performance is way off!</figcaption>
+    
+</figure>
+
+<h1 id="the-future">The Future</h1>
+
+<h4 id="webassembly-threads-and-simd">WebAssembly Threads and SIMD</h4>
+
+<p>Will allow WebAssembly to outperform JavaScript.</p>
+
+<ul>
+  <li>Shared Linear Memory</li>
+  <li>Atomic operations</li>
+  <li>Implemented with WebWorkers</li>
+  <li>Ships with Chrome 74</li>
+</ul>
+
+<h4 id="host-bindings">Host bindings</h4>
+
+<!-- IDL: Interface Description Language -->
+<p>Interact easily with JavaScript and DOM objects with the <strong>Web IDL interface</strong>.
+Will also greatly reduce the glue overhead that is currently required.</p>
+
+<p>Web IDL is a requirement for other proposals such as <strong>Garbage Collection</strong>,
+<strong>Tail Call optimizations</strong> and <strong>Exception Handling</strong>.</p>
+
+<h4 id="ecma-module-integration">ECMA module integration</h4>
+
+<pre><code class="language-javascript">import {foo} from './myModule.wasm';
+</code></pre>
+
+<h1 id="an-example">An Example</h1>
+
+<h2 id="windows-emscripten-sdk-installation">Windows Emscripten SDK Installation</h2>
+
+<p><a href="https://emscripten.org/docs/getting_started/downloads.html">Install the Emscripten SDK</a></p>
+
+<pre><code class="language-powershell">git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
+.\emsdk.ps1 install latest
+.\emsdk.ps1 activate latest
+emsdk_env.bat
+</code></pre>
+
+<h2 id="an-application">An Application</h2>
+
+<p>Your original, mega complex C application <code>HelloWorld.c</code></p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main(int argc, char ** argv) {
+    printf("Hello World\n");
+}
+</code></pre>
+
+<p>Turning it into a <code>wasm</code> file:</p>
+<pre><code class="language-bash">emcc HelloWorld.c -s WASM=1 -o HelloWorld.html
+npx http-server
+</code></pre>
+
+<p>Open the generated <code>HelloWorld.html</code> in a browser to see your WebAssembly file executed!</p>
+
+<p>For this “program”, a 40kb <code>HelloWorld.wasm</code> file
+and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>
+
+  </div><a class="u-url" href="/javascript/2019/05/19/webassembly.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

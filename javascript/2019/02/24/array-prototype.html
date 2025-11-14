@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Array.prototype for .NET developers | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Array.prototype for .NET developers" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Array.prototype functions have been available for a long time but it’s since Arrow functions that “Linq lambda syntax”-like functionality is available in JavaScript." />
+<meta property="og:description" content="The Array.prototype functions have been available for a long time but it’s since Arrow functions that “Linq lambda syntax”-like functionality is available in JavaScript." />
+<link rel="canonical" href="https://itenium.be/javascript/2019/02/24/array-prototype.html" />
+<meta property="og:url" content="https://itenium.be/javascript/2019/02/24/array-prototype.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Array.prototype for .NET developers" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2024-05-31T22:00:00+00:00","datePublished":"2019-02-24T00:00:00+00:00","description":"The Array.prototype functions have been available for a long time but it’s since Arrow functions that “Linq lambda syntax”-like functionality is available in JavaScript.","headline":"Array.prototype for .NET developers","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/javascript/2019/02/24/array-prototype.html"},"url":"https://itenium.be/javascript/2019/02/24/array-prototype.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Array.prototype for .NET developers</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-24T00:00:00+00:00" itemprop="datePublished">Feb 24, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"><code>Array.prototype</code></a> functions have been available for a long time but
+it’s since <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow functions</a>
+that “Linq lambda syntax”-like functionality is available in JavaScript.</p>
+
+<p>This blog post explains the most common functions by comparing them to their C# equivalents.</p>
+
+<p>A basic example:</p>
+<pre><code class="language-javascript">// JavaScript
+const result = [0, 1, 2, 3, null]
+    .filter(x =&gt; x !== null)
+    .map(x =&gt; x * 10)
+    .sort((a, b) =&gt; b - a);
+
+expect(result).toEqual([30, 20, 10, 0]);
+
+// C#
+var result = new int?[] {0, 1, 2, 3, null}
+    .Where(x =&gt; x != null)
+    .Select(x =&gt; x * 10)
+    .OrderByDescending(x =&gt; x)
+    .ToArray();
+</code></pre>
+
+<!--more-->
+
+<p>Whenever you want to write a <code>for</code> to loop over an array, the <code>Array.prototype</code> functions
+probably allow you to achieve the same result but in more functional and succinct manner.</p>
+
+<p>Do note that the deferred execution we know from Linq does not apply to <code>Array.prototype</code>!</p>
+
+<h1 id="comparison-table">Comparison Table</h1>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>C#</th>
+      <th>JavaScript</th>
+      <th>MDN Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Select()</td>
+      <td><b>map</b>((cur, index, array): any)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map</a></td>
+    </tr>
+    <tr>
+      <td>Where()</td>
+      <td><b>filter</b>((cur): boolean)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter</a></td>
+    </tr>
+    <tr>
+      <td>Contains()</td>
+      <td><b>includes</b>(value, fromIndex)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">includes</a></td>
+    </tr>
+    <tr>
+      <td>FirstOrDefault()</td>
+      <td><b>find</b>((cur): boolean): undefined | any</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">find</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">findIndex</a></td>
+    </tr>
+    <tr>
+      <td>LastOrDefault()</td>
+      <td><b>findLast</b>((cur): boolean): undefined | any</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast">findLast</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex">findLastIndex</a></td>
+    </tr>
+    <tr>
+      <td>All()</td>
+      <td><b>every</b>((cur): boolean): boolean</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every">every</a></td>
+    </tr>
+    <tr>
+      <td>Any()</td>
+      <td><b>some</b>((cur): boolean): boolean</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some">some</a></td>
+    </tr>
+    <tr>
+      <td>Concat()</td>
+      <td><b>concat</b>(arr: any[]): any[]</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">concat</a></td>
+    </tr>
+    <tr>
+      <td>Skip(start).Take(start - end)</td>
+      <td><b>slice</b>(start = 0, end = length-1)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice</a></td>
+    </tr>
+    <tr>
+      <td>string.Join()</td>
+      <td><b>join</b>(separator = ‘,’)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">join</a></td>
+    </tr>
+    <tr>
+      <td>Array.IndexOf()</td>
+      <td><b>findIndex</b>((cur): boolean): -1 | number</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">findIndex</a></td>
+    </tr>
+    <tr>
+      <td>ElementAt()</td>
+      <td><b>at</b>(index) (accepts negative indexes)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at">at</a></td>
+    </tr>
+    <tr>
+      <td>Count()</td>
+      <td><b>length</b>: number</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length">length</a></td>
+    </tr>
+    <tr>
+      <td>SelectMany()</td>
+      <td><b>flat</b>(levels = 1) / <b>flatMap</b>(fn)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat">flat</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap">flatMap</a></td>
+    </tr>
+    <tr>
+      <td>GroupBy()</td>
+      <td><b>Object.groupBy</b>(arr, groupFn)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy">groupBy</a></td>
+    </tr>
+    <tr>
+      <td>Distinct()</td>
+      <td><b>filter</b>((el, i, arr) =&gt; arr.indexOf(el) === i)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Extension method</td>
+      <td>forEach((cur): void): void</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mutating in JS</strong></td>
+      <td>These are <a href="https://en.wikipedia.org/wiki/In-place_algorithm">in place</a> operations</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>OrderBy()</td>
+      <td><b>sort</b>((a, b): number)</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">sort</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted">toSorted</a></td>
+    </tr>
+    <tr>
+      <td>Reverse()</td>
+      <td>reverse()</td>
+      <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">reverse</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed">toReversed</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="commonly-used-methods">Commonly used methods</h1>
+
+<h2 id="select--map">Select = map</h2>
+
+<pre><code class="language-javascript">// C#
+var result = enumerable.Select(x =&gt; x);
+
+// JavaScript
+let result = array.map(x =&gt; x);
+
+// Using spread to avoid mutation
+const input = [{k: 1, v: true}, {k: 2, v: false}];
+const result = input.map(x =&gt; ({...x, v: !x.v}))
+</code></pre>
+
+<p>When mapping to an object without code block, you need to wrap your object between extra parentheses like</p>
+
+<pre><code class="language-javascript">[0, 1].map(x =&gt; ({value: x}));
+
+// Because without the extra parentheses
+[0, 1].map(x =&gt; {value: x});
+// --&gt; [undefined, undefined]
+
+// it is the same as writing:
+[0, 1].map(x =&gt; {
+  value: x; // No error, because JavaScript?
+  return undefined;
+});
+</code></pre>
+
+<h2 id="where-distinct--filter">Where, Distinct = filter</h2>
+
+<p><code>Where</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter</code></a> behave pretty much exactly alike.
+Linqs <code>Distinct</code> we’ll need to implement ourselves.</p>
+
+<pre><code class="language-javascript">const input = [0, 0, 1, 5, 5];
+// Equals true when the first occurrence of the value is the current value
+const result = input.filter((element, index, array) =&gt; array.indexOf(element) === index);
+// Or: [...new Set(input)];
+expect(result).toEqual([0, 1, 5]);
+</code></pre>
+
+<h2 id="aggregate-groupby---reduce">Aggregate, GroupBy, … = reduce</h2>
+
+<p>Linq has Sum, Min, Max, Average, GroupBy, etc.
+While JavaScript doesn’t have them, they can all be achieved trivially with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"><code>reduce</code></a></p>
+
+<!-- [apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) -->
+
+<p><strong>Sum, Min, Max, Average</strong>:</p>
+<pre><code class="language-javascript">const input = [0, 1];
+const sum = input.reduce((total, cur) =&gt; total + cur, 0);
+const average = sum / input.length;
+const min = Math.min.apply(Math, input); // Old school
+const min = Math.min(...input); // Using spread
+</code></pre>
+
+<p><strong>Aggregate, GroupBy</strong>:</p>
+<pre><code class="language-javascript">const input = [0, 1, 2, 3];
+
+const result = input.reduce((acc, cur) =&gt; {
+  if (cur % 2 === 0) {
+    acc.even.push(cur);
+  } else {
+    acc.odd.push(cur);
+  }
+  return acc;
+}, {even: [], odd: []});
+
+expect(result).toEqual({even: [0, 2], odd: [1, 3]});
+</code></pre>
+
+<p>Since 2024, JS has a dedicated <code>Object.groupBy</code>:</p>
+
+<pre><code class="language-js">const socks = [
+  { name: 'JavaScript', type: 'lang' },
+  { name: 'Angular', type: 'package' },
+  { name: 'React', type: 'package' },
+];
+
+const grouped = Object.groupBy(socks, sock =&gt; sock.type);
+
+expect(grouped).toEqual({
+  lang: [{ name: 'JavaScript', type: 'lang' }],
+  package: [
+    { name: 'Angular', type: 'package' },
+    { name: 'React', type: 'package' },
+  ]
+})
+</code></pre>
+
+<h2 id="slice">slice</h2>
+
+<p>Linq has First, Last, Skip, SkipLast, SkipWhile, Take, TakeLast, TakeWhile.
+JavaScript has <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>slice</code></a>.</p>
+
+<pre><code class="language-javascript">// Shallow copy
+const input = [0, 1, 2, 3];
+expect(input.slice()).toEqual([...input]);
+
+// Signature
+slice(startIndex = 0, endIndex = length-1);
+</code></pre>
+
+<h3 id="c-ranges">C# Ranges</h3>
+
+<pre><code class="language-c#">var array = new[] { 1, 2, 3, 4, 5 };
+
+Assert.Equal(new[] { 3, 4 }, array[2..^1]);
+Assert.Equal(new[] { 1, 2 }, array[..^3]);
+Assert.Equal(new[] { 3, 4, 5 }, array[2..]);
+Assert.Equal(new[] { 1, 2, 3, 4, 5 }, array[..]);
+</code></pre>
+
+<h3 id="with">with</h3>
+
+<p>Since 2023, there is also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with"><code>with</code></a> which returns a new
+array where one item is replaced with a new value by index.</p>
+
+<pre><code class="language-js">const newArr = arr.with(index, newValue);
+</code></pre>
+
+<h1 id="mutations">Mutations</h1>
+
+<p>These functions operate in place.<br />
+Since ECMAScript 2023, some have non-mutating alternatives!</p>
+
+<h2 id="orderby--sort-and-tosorted">OrderBy = sort and toSorted</h2>
+
+<ul>
+  <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted">toSorted</a> if you need a new array for the sorted result.</li>
+  <li><strong>Without compareFn the array is sorted according to each character’s Unicode code point value.</strong></li>
+  <li>The compareFn should return a number:
+    <ul>
+      <li><code>-1</code> (or any negative number): <code>a</code> comes <strong>before</strong> <code>b</code></li>
+      <li><code>0</code>: Equal</li>
+      <li><code>1</code> (or any positive number): <code>a</code> comes <strong>after</strong> <code>b</code></li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code class="language-javascript">// Numbers
+[10, 5].sort(); // [10, 5]: each element is converted to a string
+[10, 5].sort((a, b) =&gt; a - b); // [5, 10]
+
+// Strings
+['z', 'e', 'é'].sort(); // ['e', 'z', 'é']
+['z', 'e', 'é'].sort((a, b) =&gt; a.localeCompare(b)); // ['e', 'é', 'z']
+
+// Dates
+[d1, d2, d3].sort((a, b) =&gt; a.getTime() - b.getTime());
+</code></pre>
+
+<p><strong>C#</strong></p>
+<ul>
+  <li>The signature is a bit different: <code>OrderBy(Func&lt;TSource, TKey&gt; keySelector, IComparer&lt;TKey&gt; comparer)</code></li>
+  <li><code>OrderBy</code> vs <code>OrderByDescending</code>: switch <code>a</code> and <code>b</code>…</li>
+  <li>JS doesn’t have <code>ThenBy</code> chaining possibilities, you’ll have to do this yourself.</li>
+</ul>
+
+<h2 id="foreach">forEach</h2>
+
+<p>While <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><code>forEach</code></a> is not really doing any mutation by itself, it is often what it’s used for.
+Mutations are especially dangerous in for example a Redux environment where UI changes might lag.
+The same can usually be achieved with <code>map</code>.</p>
+
+<pre><code class="language-javascript">const input = [{value: 1, visited: 0}, {value: 2, visited: 0}];
+
+// Potentially dangerous
+input.forEach(el =&gt; {
+    el.visited++;
+});
+
+// ...el will create a shallow copy only!
+const result = input.map(el =&gt; ({...el, visited: el.visited + 1}));
+
+// Or use the good old loop?
+for (let itm of input) {
+    console.log(itm.value);
+}
+</code></pre>
+
+<h2 id="other-mutators">Other mutators</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"><code>reverse()</code></a>: There is now also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed"><code>toReversed()</code></a> (2023)</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"><code>push(el1, [el2, ...])</code></a>: Add element(s) at the end. Returns the new array length.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"><code>shift()</code></a>: Remove the first element at the start. Returns the removed element.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"><code>unshift(el, [el2, ...])</code></a>: Add element(s) at the start. Returns the new array length.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice(start, [deleteCount, [el1, [el2, ...]]])</code></a>
+    <ul>
+      <li>The swiss army knife: add and/or remove element(s)</li>
+      <li>Returns array of removed elements (or empty array)</li>
+      <li>There is now also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced">toSpliced</a> (2023)</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="linq-for-ages-5-and-up">Linq for ages 5 and up</h1>
+
+<p>Thanks <a href="https://x.com/bewidec/status/935573858136051713">Wim De Cleen</a> (and Martin Fowler)
+for this amazing diagram, I love it!</p>
+
+<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>
+
+
+  </div><a class="u-url" href="/javascript/2019/02/24/array-prototype.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

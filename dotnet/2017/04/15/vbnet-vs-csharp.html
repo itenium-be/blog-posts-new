@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>VB.NET vs C# Syntax differences | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="VB.NET vs C# Syntax differences" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written specifically for advanced C# developers with little to no VB.NET knowledge who need to do some VB.NET coding." />
+<meta property="og:description" content="A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written specifically for advanced C# developers with little to no VB.NET knowledge who need to do some VB.NET coding." />
+<link rel="canonical" href="https://itenium.be/dotnet/2017/04/15/vbnet-vs-csharp.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2017/04/15/vbnet-vs-csharp.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-04-15T13:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="VB.NET vs C# Syntax differences" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2017-04-15T13:00:00+00:00","datePublished":"2017-04-15T13:00:00+00:00","description":"A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written specifically for advanced C# developers with little to no VB.NET knowledge who need to do some VB.NET coding.","headline":"VB.NET vs C# Syntax differences","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2017/04/15/vbnet-vs-csharp.html"},"url":"https://itenium.be/dotnet/2017/04/15/vbnet-vs-csharp.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">VB.NET vs C# Syntax differences</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-04-15T13:00:00+00:00" itemprop="datePublished">Apr 15, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written
+specifically for advanced C# developers with little to no VB.NET knowledge who need to do
+some VB.NET coding.</p>
+
+<p class="notice--info">Because some things are just so similar but still confusingly different in VB.NET vs C#…</p>
+
+<p>Along the way we’ll make some amazing discoveries like:</p>
+<ul>
+  <li>There are things VB.NET just can’t do (pointers, …)</li>
+  <li>There are a few cases where VB.NET code is <em>shorter</em> than its C# counterpart (gasp!)</li>
+  <li>VB.NET defaults are not what you might expect from a strongly typed language due to its VB6 legacy (Option Strict, Explicit)</li>
+  <li>There is some VB.NET only stuff that comes in handy from time to time</li>
+</ul>
+
+<!--more-->
+
+<h2 id="confusingly-different">Confusingly different</h2>
+<p>Or some fun issues during heavy context switching :)</p>
+
+<ul>
+  <li>Terminating statements with <code>;</code> in VB.NET or not using <code>_</code> for line continuations.</li>
+  <li>Compare with <code>=</code> in C# or with <code>==</code> in VB.NET (and <code>!=</code> vs <code>&lt;&gt;</code>)</li>
+  <li>VB.NET is <em>not</em> case sensitive</li>
+  <li>Arrays in VB.NET are 1 based</li>
+</ul>
+
+<hr />
+
+<h2 id="syntax-comparison">Syntax comparison</h2>
+
+<h3 id="general-syntax">General syntax</h3>
+
+<pre><code class="language-vb">' VB.NET
+#If DEBUG Then
+#End If
+#Region "Imports"
+Imports System
+#End Region
+Namespace MyApp
+	&lt;Serializable&gt;
+	Public Class HappyCoding
+		''' &lt;summary&gt;
+		''' XML Comment
+		''' &lt;/summary&gt;
+		Shared Sub Main(ByVal args() As String)
+			Dim name As String = "VB.NET"
+			Dim builder As New StringBuilder()
+
+			' "X"c for defining a char
+			builder.Append("A"c)
+
+			' Parentheses are optional when calling
+			' a method without parameters
+			' Array accessor is with parentheses (), not with []
+			' All this allows for "fun" like this:
+			Dim firstChar = builder.ToString.ToArray(0)
+		End Sub
+	End Class
+End Namespace
+</code></pre>
+
+<p>C# equivalent</p>
+
+<pre><code class="language-c#">#if DEBUG
+#endif
+#region usings
+using System;
+#endregion
+namespace MyApp {
+	[Serializable]
+	public class HappyCoding {
+		/// &lt;summary&gt;
+		/// XML Comment
+		/// &lt;/summary&gt;
+		static void Main(string[] args) {
+			string name = "C#";
+			var builder = new StringBuilder();
+			builder.Append('A');
+			char firstChar = builder.ToString().ToArray()[0];
+		}
+	}
+}
+</code></pre>
+
+<h3 id="data-types">Data Types</h3>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dim b As Byte = &amp;H2A</td>
+      <td>byte b = 0x2A;</td>
+    </tr>
+    <tr>
+      <td>Dim c As Char = “B”c</td>
+      <td>char c = ‘c’;</td>
+    </tr>
+    <tr>
+      <td>Dim d As Decimal = 35.99@</td>
+      <td>decimal d = 35.99m;</td>
+    </tr>
+    <tr>
+      <td>Dim f As Single = 2.9!</td>
+      <td>float f = 2.9f;</td>
+    </tr>
+    <tr>
+      <td>Dim pi As Double = 3.1415</td>
+      <td>double pi = 3.1415D;</td>
+    </tr>
+    <tr>
+      <td>Dim lng As Long = 123456L ‘ UL</td>
+      <td>long lng = 123456L; // UL</td>
+    </tr>
+    <tr>
+      <td>Dim s As Short = 123S ‘ US</td>
+      <td>short s = 123;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dim i? As Integer = Nothing</td>
+      <td>int? i = null;</td>
+    </tr>
+    <tr>
+      <td>Dim i As Integer?</td>
+      <td>int? i;</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-vb">Dim d As Date = #10/15/2005# ' C#: var d = new DateTime(2005, 10, 15)
+Dim dt As DateTime = #10/15/2005 12:15:00 PM#
+</code></pre>
+
+<p>This compiles!? How cool is VB.NET :)<br />
+A VB.NET <code>Date</code> is in fact an alias for <code>DateTime</code>. 
+So yes, <code>Date</code> does have a time part.</p>
+
+<h3 id="type-information">Type Information</h3>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dim x As Integer</td>
+      <td>int x;</td>
+    </tr>
+    <tr>
+      <td>x.GetType()</td>
+      <td>x.GetType();</td>
+    </tr>
+    <tr>
+      <td>GetType(Integer)</td>
+      <td>typeof(int);</td>
+    </tr>
+    <tr>
+      <td>TypeName(x)</td>
+      <td>x.GetType().Name;</td>
+    </tr>
+    <tr>
+      <td>NameOf(StringBuilder)</td>
+      <td>nameof(StringBuilder)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dim lng = CType(x, Long)</td>
+      <td>var lng = Convert.ToInt64(x);</td>
+    </tr>
+    <tr>
+      <td>Dim lng = CLng(x)</td>
+      <td>var lng = Convert.ToInt64(x);</td>
+    </tr>
+    <tr>
+      <td>Dim i = Int(x)</td>
+      <td>var i = Conversion.Int(x);</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dim s As New Shape</td>
+      <td>var s = new Shape();</td>
+    </tr>
+    <tr>
+      <td>TypeOf s IsNot Circle</td>
+      <td>!(s is Circle)</td>
+    </tr>
+    <tr>
+      <td>s1 Is s2</td>
+      <td>Object.ReferenceEquals(s1, s2)</td>
+    </tr>
+    <tr>
+      <td>Dim c = TryCast(s, Circle)</td>
+      <td>var c = s as Circle;</td>
+    </tr>
+    <tr>
+      <td>c = DirectCast(s, Circle)</td>
+      <td>c = (Circle)s;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Aside from CLng, VB.NET also has: CInt, CDate, CStr, CByte, CDbl, CBool, CObj, Chr.
+And more conversion methods in <code>Microsoft.VisualBasic.Conversion</code>. This is a Module
+so <code>Conversion.Int(x)</code> is available as <code>Int(x)</code> without Import.</p>
+
+<h3 id="operators-strings">Operators, Strings</h3>
+
+<table class="table-base">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Comparison</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>&lt;&gt; =  &lt;  &gt;  &lt;=  &gt;=</td>
+      <td>!= ==  &lt;  &gt;  &lt;=  &gt;=</td>
+    </tr>
+    <tr>
+      <td>And   Or   Xor   Not   «   »</td>
+      <td>&amp;   |   ^   ~   «   »</td>
+    </tr>
+    <tr>
+      <td>AndAlso   OrElse  Not</td>
+      <td>&amp;&amp;   ||   !</td>
+    </tr>
+    <tr>
+      <td>x Is Nothing Or y IsNot Nothing</td>
+      <td>x == null | y != null</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Arithmetic</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>+  -  *  /</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Mod</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>\  (integer division)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^  (raise to a power)</td>
+      <td>Math.Pow</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Assignment</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>=  +=  -=, …</td>
+      <td>= += -=, …</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Strings</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Concatenation: &amp;</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Escape quote: “”</td>
+      <td>\”</td>
+    </tr>
+    <tr>
+      <td>vbCrLf, vbTab, …</td>
+      <td>\r\n, \t, …</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All logical comparisons in VB.NET are typically done with <code>AndAlso</code> and <code>OrElse</code>.
+It’s (surprise surprise) more typing than <code>And/Or</code> but the latter don’t short-circuit
+the evaluations. Ex: <code>If x IsNot Nothing And x.Trigger() Then</code> will crash.</p>
+
+<p>To escape a reserved word <code>Public Class [Class]</code>. (C#: <code>public class @class</code>)</p>
+
+<h3 id="control-flow">Control flow</h3>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dim i = If(y, 5)</td>
+      <td>var i = y ?? 5;</td>
+    </tr>
+    <tr>
+      <td>Dim x = If(i &gt; 0, “t”, “f”)</td>
+      <td>var x = i &gt; 0 ? “t” : “f”</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-vb">If x &lt; 0 Then res = "oeps" Else res = "yaye"
+
+If x &gt; 5 Then
+	x *= y
+ElseIf x = 5 OrElse y Mod 2 = 0
+	' Then is optional
+	x += y
+Else
+	x /= y
+End If
+
+' Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeString
+' Uses: Option Compare Binary/Text
+If "John 3:16" Like "Jo[Hh]? #:*" Then
+	' Use [!A-Z] for Regex [^A-Z]
+	' VB.NET Like =&gt; Regex
+	' # =&gt; \d, * =&gt; .*, ? =&gt; .
+End If
+' C#: Use Regex
+
+' VB.NET switch is more feature rich
+' There is no break; and no fallback
+Select Case x
+	Case 1, 2, 5 To 10
+	Case Is = y ' Is is optional
+	Case Is &gt; 10
+	Case Else
+		' Exit Select is implied
+End Select
+
+Select Case x.GetType
+	Case GetType(StringBuilder)
+End Select
+
+For i As Integer = 0 To arr.Length - 1 Step 3
+	' Step 1 is the default
+Next
+// C#: for (i = 0; i &lt; arr.Length; i += 3) {}
+
+For Each n As String In names
+	Exit For
+	Continue For
+Next
+
+// C#
+foreach (string n in names) {
+	break;
+	continue;
+}
+</code></pre>
+
+<h3 id="classes-generics-methods-enums-">Classes, Generics, Methods, Enums, …</h3>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public</td>
+      <td>public</td>
+    </tr>
+    <tr>
+      <td>Private</td>
+      <td>private</td>
+    </tr>
+    <tr>
+      <td>Friend</td>
+      <td>internal</td>
+    </tr>
+    <tr>
+      <td>Protected</td>
+      <td>protected</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Partial Class</td>
+      <td>partial class</td>
+    </tr>
+    <tr>
+      <td>MustInherit Class</td>
+      <td>abstract class</td>
+    </tr>
+    <tr>
+      <td>NotInheritable Class</td>
+      <td>sealed class</td>
+    </tr>
+    <tr>
+      <td>Module</td>
+      <td>static class</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Methods</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MustOverride</td>
+      <td>abstract</td>
+    </tr>
+    <tr>
+      <td>NotInheritable</td>
+      <td>sealed</td>
+    </tr>
+    <tr>
+      <td>Shared</td>
+      <td>static</td>
+    </tr>
+    <tr>
+      <td>Overridable</td>
+      <td>virtual</td>
+    </tr>
+    <tr>
+      <td>Overloads ‘ is optional</td>
+      <td>// no keyword required</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-vb">Interface IAlarm
+	Property WakeUpAt As DateTime
+End Interface
+
+Structure Student
+End Structure
+
+Enum Action
+	Start = 1
+	[Stop] ' Escape reserved words with []
+End Enum
+' enum Action {Start = 1, Stop}
+
+Class MyColl(Of TEntity)
+	Inherits ObjectModel.Collection(Of TEntity)
+	Implements IDisposable, IAlarm
+	' Class MyCall&lt;TEntity&gt; : Collection&lt;TEntity&gt;, IDisposable, IAlarm
+
+	ReadOnly MinInt As Integer = 0
+	Const MaxInt As Integer = 25
+
+	Public Property WakeUpAt As Date Implements IAlarm.WakeUpAt
+	' public DateTime WakeUpAt { get; set; }
+
+	Public Sub New()
+		' : this(DateTime.Now)
+		Me.New(DateTime.Now)
+	End Sub
+
+	Public Sub New(ByVal time As Date)
+		' : base()
+		MyBase.New()
+	End Sub
+
+	Shared Sub New()
+		' static constructor
+	End Sub
+
+	Protected Overrides Sub Finalize()
+		' C# "destructor": ~MyColl() {}
+		MyBase.Finalize()
+	End Sub
+
+	' Default value, Get and Set both Public
+	Public Property Size As Integer = -1
+
+	Private _name As String
+	Public Property Name As String
+		Get
+			Return _name
+		End Get
+		Protected Set(ByVal value As String)
+			_name = value
+		End Set
+	End Property
+
+	' WriteOnly for setter only
+	Public ReadOnly Property Name As String
+		Get
+			Return _name
+		End Get
+	End Property
+
+	Shared Function Max(Of T As {IComparable, Structure})(ByVal ParamArray items As T()) As T
+		' static T Max&lt;T&gt;(params T[] items) where T : IComparable, struct
+		' It is possible to assign the return value to the method name instead of Return items.Max
+		Max = items.Max
+	End Function
+
+	Protected Friend Function Yaye(Optional b As Boolean = True) As Boolean
+		Static entered As Integer
+		' Will increase with 1 each time the method is called
+		entered += 1
+		Return True
+	End Function
+
+	Private Function Yaye(Of Q As New)(ByRef b As String) As Q
+		' private Q Yaye&lt;Q&gt;(ref string b) where Q : new()
+		' VB.NET has no Out, only ByRef
+		Return new Q()
+	End Function
+
+	Private Function YayeCaller() As Integer
+		' Can pass a Property As ByRef
+		Return Me.Yaye(Of Integer)(Name)
+	End Function
+End Class
+</code></pre>
+
+<h3 id="linq-lambdas-and-anonymous-types">Linq, Lambdas and Anonymous Types</h3>
+
+<p><strong>Lambdas</strong>:</p>
+<pre><code class="language-vb">Dim adder = Function(x) x + 1
+' x =&gt; x + 1
+
+Dim writer =
+	Sub(time As TimeSpan)
+		Console.WriteLine(time)
+	End Sub
+</code></pre>
+
+<p><strong>Events</strong>:</p>
+<pre><code class="language-vb">Public Class School
+	Event Recess(ByVal time As TimeSpan)
+
+	Sub Sit()
+		' No null check required
+		RaiseEvent Recess(TimeSpan.FromMinutes(15))
+	End Sub
+End Class
+
+Shared Sub Main()
+	Dim school As New School
+	AddHandler school.Recess, writer
+	' AddHandler school.Recess, AddressOf Me.Play
+	school.Sit()
+	RemoveHandler school.Recess, writer
+End Sub
+</code></pre>
+
+<p><strong>Anonymous Types</strong>:</p>
+<pre><code class="language-vb">Dim stu = New With {Key .Name = "Sue", .Gpa = 3.4}
+' var stu2 = new {Name = "Sue", Gpa = 3.5};
+</code></pre>
+
+<p>C# doesn’t have <code>Key</code> which is used for comparisons: <code>stu.Equals(stu2)</code>.<br />
+VB.NET without the <code>Key</code> keyword and C# consider two anonymous types to be
+equal if all their properties are equal.</p>
+
+<p><strong>Linq</strong>:</p>
+<pre><code class="language-vb">Public Class Person
+	Property Name As String
+	Property Age As Integer
+End Class
+
+Dim persons As New List(Of Person) From 
+{
+	New Person With {.Name = "Bob", .Age = 21},
+	New Person With {.Name = "Alice", .Age = 25},
+	New Person With {.Name = "Janice", .Age = 25}
+}
+
+Dim adults =
+	From p In persons
+	Where p.Age &gt; 18
+	Order By p.Name Descending
+	Select New With {Key p.Name, .YearsOnEarth = p.Age}
+	Take 5
+
+' Do need _ for line continuations here
+Dim lambdaAdults = persons _
+	.Where(Function(p) p.Age &gt; 18) _
+	.OrderByDescending(Function(p) p.Name) _
+	.Select(Function(p) New With {Key p.Name, .YearsOnEarth = p.Age}) _
+	.Take(5)
+</code></pre>
+
+<p>Basic C# query syntax is exactly the same with all keywords in lowercase.
+Except <code>Order By</code> which is <code>orderby x desc</code> in C#. VB.NET also adds some
+extra functionality like <code>Take While</code>, <code>Select p Distinct</code>, <code>Skip</code> and
+<code>Skip While</code>.</p>
+
+<pre><code class="language-vb">' Without projection, Select is optional
+Dim peopleByAge =
+	From p In persons
+	Group By Age = p.Age
+	Into People = Group, Count()
+
+' TODO: VB.NET LINQ to add Group By, Join, Group Join, Aggregate and Let clauses
+' I should probably add some additional stuff here with exact C# translations
+' https://msdn.microsoft.com/en-us/library/bb763068.aspx
+</code></pre>
+
+<h3 id="initializers">Initializers</h3>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>VB.NET</th>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dim nums = New Integer() {1, 2, 3}</td>
+      <td>int[] nums = new[] {1, 2, 3};</td>
+    </tr>
+    <tr>
+      <td>Dim nums() As Integer = {1, 2, 3}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dim names(4) As String ‘ 4 elements</td>
+      <td>var names = new string[5];</td>
+    </tr>
+    <tr>
+      <td>ReDim Preserve names(6) ‘ Preserve optional</td>
+      <td>Array.Resize(ref names, 7);</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dim h = New Hero With {.Name = “Deadpool”}</td>
+      <td>var h = new Hero() {Name = “Deadpool”};</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-vb">' VB.NET
+Dim nums = New List(Of Integer) From {1, 2, 3}
+Dim students As New Dictionary(Of Integer, String) From
+{
+	{123, "Bob"}, {456, "Alice"}
+}
+</code></pre>
+
+<pre><code class="language-c#">// C#
+var nums = new List&lt;int&gt;() {1, 2, 3};
+var students = new Dictionary&lt;int, string&gt;
+{
+	{123, "Bob"}, {456, "Alice"}
+};
+</code></pre>
+
+<h3 id="other">Other</h3>
+
+<p><strong>Exception Handling</strong>:</p>
+<pre><code class="language-vb">Try
+Catch ex As ArgumentException When ex.ParamName = NameOf(Name)
+	' No C# equivalent for When
+	Throw
+Catch ex As Exception
+Finally
+	Throw New Exception()
+End Try
+</code></pre>
+
+<p><strong>Extension Methods</strong>:</p>
+<pre><code class="language-vb">Module StringExtensions
+	&lt;Extension()&gt;
+	Public Function Vowels(ByVal s As String) As Integer
+		' public static int Vowels(this string s) {}
+		Return s.Count(Function(c) "aeiou".Contains(Char.ToLower(c)))
+	End Function
+End Module
+</code></pre>
+
+<p><strong>Using</strong>:</p>
+<pre><code class="language-vb">Using r As StreamReader = File.OpenText("file.txt")
+End Using
+</code></pre>
+
+<p><strong>Yield</strong>:</p>
+<pre><code class="language-vb">Iterator Function Iterate() As IEnumerable(Of Integer)
+	Yield 5
+	Yield 7
+End Function
+</code></pre>
+
+<hr />
+
+<h2 id="dangers-of-vb6-legacy">Dangers of VB6 Legacy</h2>
+<p>A new VB.NET project starts with <code>Option Strict Off</code> and <code>Option Explicit Off</code>. This is bad.<br />
+… Unless you are a JavaScript developer, then you can just continue to do whatever you want!</p>
+
+<pre><code class="language-vb">' VB.NET
+Dim name = "string"
+name = 15
+' name is now an integer or a string.. depending whether `Option Infer` is On or Off.
+uhoh = 20 ' With `Option Explicit Off` this *will* compile.
+
+// C# equivalent
+object name = "string";
+</code></pre>
+
+<p>That’s obviously not what one wants. Emulating C#’s <code>var name = "str"</code> behavior can be achieved
+by turning <code>Option Strict On</code> and <code>Option Infer On</code> in the Project Properties Compile tab.</p>
+
+<h3 id="stuff-that-was-imported-from-vb6">Stuff that was imported from VB6</h3>
+
+<p>They are listed here, but you may skip this part and pretend it never happened.</p>
+
+<pre><code class="language-vb">' IIf always evaluates both branches. Use If() instead!
+Dim result = IIf(someBool, "truthyCase", "falsyCase")
+
+' Multiple statements on one line.
+If True Then s = "1": s = "2"
+
+' Who wouldn't want a good ol' GoTo in their code base
+On Error GoTo MyErrorHandler
+MyErrorHandler: Console.WriteLine(Err.Description)
+</code></pre>
+
+<h3 id="microsoftvisualbasic-namespace">Microsoft.VisualBasic namespace</h3>
+
+<p><code>Microsoft.VisualBasic.Strings</code>:<br />
+If you want to forego Object Oriented, the whole set of VB6 string methods is available.</p>
+<pre><code>UCase, Len, Replace, Format, Left, Mid, Trim, ...
+
+' Mid can be called like this because Microsoft.VisualBasic.Strings is a Module
+Dim s = Mid("testing", 2, 3)   ' est
+</code></pre>
+
+<p><code>Microsoft.VisualBasic.Constants</code>:</p>
+<ul>
+  <li>vbCancel = MsgBoxResult.Cancel</li>
+  <li>vbNullString = Nothing</li>
+  <li>vbLongDate = DateFormat.LongDate</li>
+  <li>vbHidden = FileAttribute.Hidden</li>
+  <li>VbFalse = TriState.False</li>
+</ul>
+
+<p><code>Microsoft.VisualBasic.DateAndTime</code>:</p>
+<ul>
+  <li>DateAdd, DatePart, WeekDayName, …</li>
+</ul>
+
+<p><code>Microsoft.VisualBasic.FileSystem</code>:<br />
+ChDrive, SetAttr, Lock, Seek, CurDir, Input …<br />
+It’s probably a good idea to steer away from these and stick to System.IO and Streams.</p>
+
+<p><code>Microsoft.VisualBasic.Interaction</code>:</p>
+<ul>
+  <li>Beep: Ow yeah…</li>
+  <li>SaveSetting/DeleteSetting: in the registry</li>
+  <li>InputBox</li>
+  <li>Environ: Get system environment variables</li>
+  <li>Shell: Run an executable program</li>
+</ul>
+
+<p><code>Microsoft.VisualBasic.Devices</code>:</p>
+<ul>
+  <li>Audio: Play, [Stop]</li>
+  <li>Clock: LocalTime, GmtTime</li>
+  <li>Keyboard: ShiftKeyDown, NumLock, …</li>
+  <li>Computer: Clipboard, Ports, Mouse, Screen, …</li>
+  <li>ComputerInfo: OSFullName, TotalPhysicalMemory, AvailableVirtualMemory, …</li>
+  <li>Network: DownloadFile, UploadFile, Ping, NetworkAvailabilityChanged</li>
+</ul>
+
+<p><code>Microsoft.VisualBasic.Information</code>:</p>
+<ul>
+  <li>IsNumeric, IsDate, IsArray, L/UBound, RGB, …</li>
+</ul>
+
+<p><code>Microsoft.VisualBasic.Logging</code>:</p>
+<ul>
+  <li>Write to the Application EventLog.</li>
+</ul>
+
+<hr />
+
+<h2 id="available-in-c-only">Available in C# only</h2>
+<p>The only real blocker against VB.NET is unsafe and checked/unchecked code.
+But if you really need to be working unsafely, perhaps you should consider not using .NET.</p>
+
+<p>There is other C# only stuff that has already been covered (ex: Out parameters) and there is more like multi line comments
+and <code>a++</code> but nothing serious that can’t be worked around with some additional statements in VB.NET.</p>
+
+<p>This somewhat changes with C# 7 features that have not been implemented for VB.NET:</p>
+<ul>
+  <li>Out variables: <code>int.TryParse(s, out var i)</code></li>
+  <li>Pattern Matching: <code>o is int i</code>, switch</li>
+  <li><code>return ref x;</code></li>
+  <li>Tuples</li>
+</ul>
+
+<hr />
+
+<h2 id="available-in-vbnet-only">Available in VB.NET only</h2>
+<p>Many things have been covered already:</p>
+<ul>
+  <li>More versatile switch</li>
+  <li>Extra Linq query keywords (Take, Skip, Distinct, …)</li>
+  <li><code>Key</code> keyword for anonymous types</li>
+  <li>Like operator for simple string matching</li>
+  <li>Static local variables</li>
+  <li>Modules: Which can be (sort of) emulated with <code>static class</code> and static using statements.</li>
+  <li>When blocks in exceptions</li>
+  <li>Inline DateTime declarations</li>
+  <li>Passing properties ByRef</li>
+</ul>
+
+<p><strong>With</strong></p>
+<pre><code class="language-vb">With hero
+	.Name = "SpamMan"
+	.PowerLevel = 3
+End With
+</code></pre>
+
+<p><strong>WithEvents and Handles</strong>:</p>
+<pre><code class="language-vb">Dim WithEvents Button1 As New Button
+
+Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+End Sub
+</code></pre>
+
+<p><strong>My namespace</strong><br />
+A whole bunch of convenience methods in <code>Microsoft.VisualBasic.ApplicationServices</code>.</p>
+<ul>
+  <li><code>My.Application</code>: CommandLineArgs, Culture, …</li>
+  <li><code>My.Computer</code>: Like Microsoft.VisualBasic.Devices</li>
+  <li><code>My.User</code>: CurrentPrincipal, IsAuthenticated, IsInRole</li>
+  <li><code>My.Settings</code>: Working with app.config AppSettings</li>
+  <li><code>My.Resources</code>: Easily get a resources as string or stream</li>
+</ul>
+
+<p><strong>XML Literals</strong><br />
+When you want to quickly build some Xml, VB.NET Xml literals can come in quite handy.</p>
+
+<pre><code class="language-vb">Dim xml As XElement = 
+	&lt;Root&gt;
+		&lt;Title&gt;Xml Literals&lt;/Title&gt;
+		&lt;Items&gt;
+			&lt;Item Type="Date"&gt;&lt;%= Datetime.Now %&gt;&lt;/Item&gt;
+			&lt;Item Type="String"&gt;Whoah&lt;/Item&gt;
+		&lt;/Items&gt;
+	 &lt;/Root&gt;
+</code></pre>
+
+<p>You can even build Xml with dynamic node names and by meshing in some Linq.
+It’s probably more a thing for migration and test code and not so much for production code.</p>
+
+<pre><code class="language-vb">Dim persons = 
+	&lt;Persons&gt;
+		&lt;%= From p In persons Select &lt;Person&gt;&lt;%= p.Name %&gt;&lt;/Person&gt; %&gt;
+	&lt;/Persons&gt;
+</code></pre>
+
+<p>Getting stuff out of XElement is also very nicely done:</p>
+<pre><code class="language-vb">Dim title = xml.&lt;Root&gt;.&lt;Title&gt;.Value
+Dim nowNode = xml...&lt;Item&gt;.First()
+Dim nowTypeAttribute = nowNode.@Type
+Dim nowNodeText = nowNode.Value
+</code></pre>
+
+<hr />
+
+<h2 id="conversion-troubles">Conversion troubles</h2>
+<p>While there are some online converters, they are not at all up to date, or very smart.</p>
+<ul>
+  <li><a href="http://www.carlosag.net/tools/codetranslator/">Carlosag converter</a></li>
+  <li><a href="http://converter.telerik.com/">Telerik converter</a> &lt;- If you must, take this one</li>
+</ul>
+
+<p>They do not provide much more than a starting point.</p>
+
+<ul>
+  <li>Using an array accessor in VB.NET (<code>arr(0)</code> vs <code>arr[0]</code>) results in an incorrect translation</li>
+  <li>“Newer” features, like lambdas are converted to dynamic, or not at all</li>
+  <li>Use any VB.NET or C# only feature and they won’t even make an attempt at converting it</li>
+</ul>
+
+<hr />
+
+<h2 id="summary">Summary</h2>
+<p><strong>So which is best</strong><br />
+(just kidding:)</p>
+
+<p>VB.NET used to be lacking many convenient C# features (using, yield, …). While it has mostly catched up, 
+C# proves to be a moving target.</p>
+
+<p>Properties used to be a real pain in VB.NET. A one liner syntax is now available like
+<code>Property Start As Date</code>. But by now C# already introduced property expression bodies
+leaving VB.NET behind again.</p>
+
+<p>For a long time VB.NET switch statement used to be more versatile but with the implementation of Pattern Matching
+in C# this is no longer the case.</p>
+
+<p>Lambda syntax like <code>o.Where(Function(x As Integer) x &lt; 0)</code> isn’t going to win any prizes when camped against
+C#’s <code>o.Where((int x) =&gt; x &lt; 0)</code>… But at least it’s there :)</p>
+
+<p>I’m probably a <em>little</em> biased towards C# because of the more succinct syntax and because the vast majority of
+online examples are written in C# while the free conversion tools are severely lacking.</p>
+
+<p>It’s perhaps worth mentioning that VB.NET and Resharper are not on the best of terms.</p>
+
+<p>Unless you really need some of the VB.NET or C# only features, choosing one over the other should probably
+still be a team decision.</p>
+
+
+  </div><a class="u-url" href="/dotnet/2017/04/15/vbnet-vs-csharp.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

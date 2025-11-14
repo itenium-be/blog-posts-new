@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AVA Tutorial | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="AVA Tutorial" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="avajs/ava : 🚀 Testing can be a drag. AVA helps you get it done." />
+<meta property="og:description" content="avajs/ava : 🚀 Testing can be a drag. AVA helps you get it done." />
+<link rel="canonical" href="https://itenium.be/javascript/2019/04/24/ava-tutorial.html" />
+<meta property="og:url" content="https://itenium.be/javascript/2019/04/24/ava-tutorial.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AVA Tutorial" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-04-24T00:00:00+00:00","datePublished":"2019-04-24T00:00:00+00:00","description":"avajs/ava : 🚀 Testing can be a drag. AVA helps you get it done.","headline":"AVA Tutorial","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/javascript/2019/04/24/ava-tutorial.html"},"url":"https://itenium.be/javascript/2019/04/24/ava-tutorial.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">AVA Tutorial</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-24T00:00:00+00:00" itemprop="datePublished">Apr 24, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+<p><a href="https://github.com/avajs/ava" class="github">
+    <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/avajs/ava">avajs/ava</a>
+:
+    🚀 Testing can be a drag. AVA helps you get it done.</p>
+
+<p><br />
+A concurrent test runner from the Andromeda galaxy. If I was to stray from 
+<a href="https://itenium.be/blog/javascript/javascript-testing-jasmine-getting-started/">Jasmine</a> then it could only 
+be for a project <a href="https://github.com/sindresorhus">Sindre Sorhus</a> is working on :)
+The screenshots on the project site promised extensive assertion failure output with clean stack traces
+and built-in Promise, async/await, Observable and React component support.
+So I tried it out and yup, AVA delivered.</p>
+
+<h1 class="hide-from-excerpt" id="get-started">Get Started</h1>
+
+<pre><code class="language-bash"># Install
+npm init ava
+
+# Run tests
+npx ava --watch --verbose
+</code></pre>
+
+<!--more-->
+
+<p>AVA runs automatically ignore:</p>
+<ul>
+  <li>Directories called <code>fixtures</code>, <code>helpers</code> or <code>node_modules</code></li>
+  <li>Files starting with an underscore (<code>_</code>)</li>
+</ul>
+
+<p>Checkout the <a href="https://github.com/avajs/ava#recipes">recipes</a> for examples when working with 
+<a href="https://github.com/avajs/ava/blob/master/docs/recipes/typescript.md">TypeScript</a>,
+<a href="https://github.com/avajs/ava/blob/master/docs/recipes/babel.md">Babel</a>,
+<a href="https://github.com/avajs/ava/blob/master/docs/recipes/vue.md">Vue.js</a>,
+Debugging with <a href="https://github.com/avajs/ava/blob/master/docs/recipes/debugging-with-chrome-devtools.md">Chrome DevTools</a>
+and <a href="https://github.com/avajs/ava/blob/master/docs/recipes/debugging-with-webstorm.md">WebStorm</a>
+and much more…
+There is also a <a href="https://github.com/avajs/ava/blob/master/docs/08-common-pitfalls.md">Common Pitfalls</a> document should
+you run into some trouble early on.</p>
+
+<h1 id="example">Example</h1>
+
+<pre><code class="language-javascript">import test from 'ava';
+
+// Parameter needs to be called `t`
+// for enhanced assertion messages.
+test('Basic test example', t =&gt; {
+    // Test will fail if not exactly
+    // two assertions are made
+    t.plan(2);
+    t.pass();
+    // Skipped tests still count to the plan
+    t.true.skip();
+
+
+    t.log(...values);
+
+
+    // Test fails if exceeded.
+    // Resets after each assertion.
+    // There is no default timeout.
+    // Globally from CLI: --timeout=10s
+    t.timeout(ms);
+});
+
+
+// HOOKS:
+// Runs before the first test in the file
+// Runs before beforeEach hooks, if any.
+test.before('optional title', t =&gt; {
+    t.context.data = 'Shared with the tests';
+    // t.context is an object by default but may be overwritten
+});
+
+// Runs after the last test in the file
+test.after(() =&gt; {});
+
+// Individual test setup/teardown
+test.beforeEach(() =&gt; {});
+test.afterEach(() =&gt; {});
+
+// Will run even if other hooks or the test fails
+test.afterEach.always(() =&gt; {});
+// Also: test.after.always()
+
+// Hooks run concurrently by default, unless:
+test.serial.before(() =&gt; {});
+</code></pre>
+
+<p class="title-url"><a href="https://github.com/avajs/ava/blob/master/docs/03-assertions.md">Assertions</a></p>
+
+<h1 id="assertions">Assertions</h1>
+
+<p>You can use any assertion library
+instead of or in addition to the built-in one,
+provided it throws exceptions on failures.</p>
+
+<p>All built-in assertions have a last optional <code>message</code> parameter.</p>
+
+<!-- [Object.is()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) -->
+
+<pre><code class="language-javascript">import test from 'ava';
+
+test('Built-in', t =&gt; {
+    t.pass('optional message');
+    t.fail();
+
+    t.true(value); // t.false()
+    t.truthy(value); // t.falsy()
+
+    t.is(value, expected); // Object.is() comparison
+    t.not(value, expected); // Inverted t.is()
+
+    t.regex(contents, regex); // Also: notRegex()
+
+    t.deepEqual(value, expected); // Also: notDeepEqual()
+});
+</code></pre>
+
+<h4 id="power-assert">power-assert</h4>
+
+<p><a href="https://github.com/power-assert-js/power-assert" class="github">
+    <img src="https://img.shields.io/github/stars/power-assert-js/power-assert.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/power-assert-js/power-assert">power-assert-js/power-assert</a>
+:
+    Very fancy assertion failure reporting</p>
+
+<pre><code class="language-javascript">// Outputs failures with power-assert when value is falsy
+t.assert(value, [message]);
+</code></pre>
+
+<h2 id="macros">Macros</h2>
+
+<p>Create custom testers with <a href="https://github.com/avajs/ava/blob/master/docs/01-writing-tests.md#reusing-test-logic-through-macros">macros</a>.</p>
+
+<pre><code class="language-javascript">function macro(t, input, expected) {
+  t.is(input, expected);
+}
+test('static title', macro, 'input', 'expected');
+
+
+// Dynamic Titles
+macro.title = (providedTitle = undefined, input, expected) =&gt; '';
+
+test(macro, 'input', 'expected');
+test('providedTitle', macro, 'in', 'expected');
+</code></pre>
+
+<h2 id="exceptions">Exceptions</h2>
+
+<pre><code class="language-javascript">test('throws error', t =&gt; {
+    const err = t.throws(fn, [expected]); // Also: .notThrows()
+    // with expected either
+    // - A constructor (instanceof)
+    // - A string (error.message comparison)
+    // - A RegExp (error.message match)
+    // - A matcher object. Ex:
+    const matcher = {
+        instanceOf: TypeError,
+        is: 'Object.is()',
+        message: 'string | RegExp',
+        name: 'err.name',
+        code: 'err.code',
+    };
+    // When omitting expected, you still need to
+    // pass null if you want to set the message.
+});
+
+
+test('throws async', async t =&gt; {
+    await t.throwsAsync(async () =&gt; {
+        throw new TypeError('oops');
+    }, {instanceOf: TypeError, message: 'oops'});
+    // Also: .notThrowsAsync()
+    
+    const error = await t.throwsAsync(() =&gt; Promise.reject('aargh'));
+    t.is(error.message, 'aargh');
+});
+</code></pre>
+
+<h2 id="not-included">Not included</h2>
+
+<ul>
+  <li><a href="https://github.com/avajs/ava/blob/master/docs/recipes/endpoint-testing.md">Endpoint testing Recipe</a>: Use your favourite library</li>
+  <li><a href="https://github.com/avajs/ava/blob/master/docs/recipes/browser-testing.md">Browser testing</a></li>
+  <li>Anything else you might need? Someone might have done it already: <a href="https://github.com/avajs/awesome-ava">Awesome AVA</a></li>
+</ul>
+
+<h1 id="workflow">Workflow</h1>
+
+<pre><code class="language-javascript">test.only('Like Jasmine fit', t =&gt; {
+    t.pass();
+});
+
+test.skip('Like Jasmine xit', t =&gt; {
+    t.pass();
+});
+
+test.todo('Really need to write this test');
+
+test.failing('Passes only when the test does NOT pass', t =&gt; {
+    t.fail();
+});
+</code></pre>
+
+<p class="title-url"><a href="https://github.com/avajs/ava/blob/master/docs/05-command-line.md">Command Line</a></p>
+
+<h1 id="cli">CLI</h1>
+
+<p>Always runs the local AVA installation if available.<br />
+CLI takes precedence over configuration.</p>
+
+<pre><code class="language-bash">npx ava --help
+
+# Default arguments
+npx ava test.js test-*.js test/**/*.js **/__tests__/**/*.js **/*.test.js
+
+npx ava
+    --watch     # or -w 
+    --verbose   # or -v: Outputs all test titles
+    --match     # or -m: Run only matching test titles
+    --timeout   # or -T: in ms. Or: "30s" (30 seconds), "3m" (3 minutes)
+    --fail-fast # Stop on first failure
+
+# Case insensitive test title matching
+# Overrides .only
+npx ava -m='startWith*' -m='!*notContains*' -m='exact'
+</code></pre>
+
+<p><a href="https://github.com/sindresorhus/matcher" class="github">
+    <img src="https://img.shields.io/github/stars/sindresorhus/matcher.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/sindresorhus/matcher">sindresorhus/matcher</a>
+:
+    Matcher used for <code>--match</code></p>
+
+<h4 id="other-cli-parameters">Other CLI parameters</h4>
+
+<ul>
+  <li><code>--serial</code>, <code>-s</code>: Run tests serially</li>
+  <li><code>--concurrency</code>, <code>-c</code>: Max tests running at the same time (Default: # CPU Cores)</li>
+  <li><code>--tap</code>, <code>-t</code>: Generate <a href="https://en.wikipedia.org/wiki/Test_Anything_Protocol">Test Anything Protocol</a> output</li>
+  <li><code>--color</code> and <code>--no-color</code>: With color by default</li>
+  <li><code>--reset-cache</code></li>
+</ul>
+
+<p class="title-url"><a href="https://github.com/avajs/ava/blob/master/docs/06-configuration.md">Configuration</a></p>
+
+<h1 id="configuration">Configuration</h1>
+
+<p>In your <code>package.json</code>:</p>
+<pre><code class="language-json">{
+    "ava": {
+        "files": [
+            "my-test-directory/**/*.js",
+            "!my-test-directory/exclude-this-directory/**/*.js",
+            "!**/exclude-this-file.js"
+        ],
+        "sources": [ // changes to matching files re-run tests while in --watch mode
+            "**/*.{js,jsx}",
+            "!dist/**/*"
+        ],
+        "failWithoutAssertions": false, // True by default: a test without assertion fails
+        "compileEnhancements": false,   // Disable power-assert
+        "require": [
+            "@babel/register"
+        ],
+        "babel": {
+            "extensions": ["jsx"],
+            "testOptions": {
+                "babelrc": false
+            }
+        },
+        "a-cli-arg": "ex: 'failFast': true"
+    }
+}
+</code></pre>
+
+<ul>
+  <li>Can also add json nodes matching the CLI parameters for failFast, tap, verbose, timeout and <code>match: string[]</code></li>
+  <li><code>cache</code>: <code>true</code>: Use cache in <code>node_modules/.cache/ava</code>. <code>false</code>: Use temp dir.</li>
+  <li>Also possible to create a <code>ava.config.js</code> in the same folder as your <code>package.json</code>.</li>
+</ul>
+
+<h1 id="async-support">Async Support</h1>
+
+<pre><code class="language-javascript">test('Promise support', t =&gt; {
+    return Promise.resolve(true).then(result =&gt; {
+        t.true(result);
+    });
+});
+
+test('async/await support', async t =&gt; {
+    const value = await Promise.resolve(true);
+    t.true(value);
+});
+
+test('Observable support', t =&gt; {
+    return of(1).pipe(map(() =&gt; t.pass()));
+});
+
+test.cb('Callback support with t.end', t =&gt; {
+    // Any truthy value passed as first argument
+    // to `t.end` will fail the test
+    fs.readFile('data.txt', t.end);
+});
+
+
+test.afterEach.cb('This stuff also works for hooks', t =&gt; {
+    setImmediate(t.end);
+});
+
+
+console.log('Currently running', test.meta.file);
+</code></pre>
+
+  </div><a class="u-url" href="/javascript/2019/04/24/ava-tutorial.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

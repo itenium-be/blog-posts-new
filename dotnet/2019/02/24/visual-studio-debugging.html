@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Debugging in Visual Studio | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Debugging in Visual Studio" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Basic Shortcuts" />
+<meta property="og:description" content="Basic Shortcuts" />
+<link rel="canonical" href="https://itenium.be/dotnet/2019/02/24/visual-studio-debugging.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2019/02/24/visual-studio-debugging.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Debugging in Visual Studio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-02-24T00:00:00+00:00","datePublished":"2019-02-24T00:00:00+00:00","description":"Basic Shortcuts","headline":"Debugging in Visual Studio","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2019/02/24/visual-studio-debugging.html"},"url":"https://itenium.be/dotnet/2019/02/24/visual-studio-debugging.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Debugging in Visual Studio</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-24T00:00:00+00:00" itemprop="datePublished">Feb 24, 2019
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 class="hide-from-excerpt" id="basic-shortcuts">Basic Shortcuts</h1>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>F5</kbd>
+			
+		
+
+		
+	
+	: Start debugging
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>F5</kbd>
+			
+		
+
+		
+	
+	: Start without debugging
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F5</kbd>
+			
+		
+
+		
+	
+	: Stop debugging
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F5</kbd>
+			
+		
+
+		
+	
+	: Stop, rebuild and start debugging
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>P</kbd>
+			
+		
+
+		
+	
+	: Attach to process
+</div>
+
+<p><br /></p>
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>Break</kbd>
+			
+		
+
+		
+	
+	: Break (Debug &gt; Break All)
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>F10</kbd>
+			
+		
+
+		
+	
+	: Step over
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>F11</kbd>
+			
+		
+
+		
+	
+	: Step into
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F11</kbd>
+			
+		
+
+		
+	
+	: Step out
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>F10</kbd>
+			
+		
+
+		
+	
+	: Run to cursor
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F10</kbd>
+			
+		
+
+		
+	
+	: Set next statement
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>Num *</kbd>
+			
+		
+
+		
+	
+	: See current statement
+</div>
+
+<p><br /></p>
+
+<!--more-->
+
+<p>Enable “<strong>Edit &amp; continue</strong>” in Tools &gt; Options &gt; Debugging.<br />
+Other interesting settings:</p>
+<ul>
+  <li>Step over properties and operators (Managed only)</li>
+  <li>Just My Code (Enable to step over system, framework and other non-user calls)</li>
+</ul>
+
+<h1 id="breakpoints">Breakpoints</h1>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>E</kbd>
+			
+		
+
+		
+	
+	: Control on which exceptions to break with the Exceptions window
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>B</kbd>
+			
+		
+
+		
+	
+	: Breakpoints window
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+	
+	: Toggle breakpoint
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+	
+	: Enable/Disable breakpoint
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+	
+	: Delete all breakpoints
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>B</kbd>
+			
+		
+
+		
+	
+	: New function breakpoint dialog
+</div>
+
+<p>Useful when you want to add a breakpoint to every method with a specific name.</p>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+			,
+		
+	
+		
+		
+			<kbd> C</kbd>
+			
+		
+
+		
+	
+	: Breakpoint condition
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+			,
+		
+	
+		
+		
+			<kbd> L</kbd>
+			
+		
+
+		
+	
+	: Breakpoint label
+</div>
+
+<p>Assigning labels to breakpoints could be handy together with the export/import functionality?</p>
+
+<p><br />
+Breakpoints in <code>DEBUG</code> mode only:</p>
+<pre><code class="language-c#">using System.Diagnostics;
+Debug.Fail();
+Debug.Assert(true, "Conditional break");
+</code></pre>
+
+<h1 id="attributes">Attributes</h1>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggerstepthroughattribute?view=netcore-3.0"><code>DebuggerStepThroughAttribute</code></a>: Makes F11 on a member behave like F10</li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggerhiddenattribute"><code>DebuggerHiddenAttribute</code></a>: Hide the member from the debugger</li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggernonusercodeattribute"><code>DebuggerNonUserCodeAttribute</code></a>: Combine the two above</li>
+</ul>
+
+<p>When you need to do some calculations for your assertions
+put it in a method decorated with the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute"><code>ConditionalAttribute("DEBUG")</code></a>.</p>
+
+<h1 id="inspection">Inspection</h1>
+
+<p>Hover over a variable to see its value. Double click on it to 
+change its value. Override <code>ToString()</code> or use the 
+<a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggerdisplayattribute"><code>DebuggerDisplayAttribute()</code></a> to display something better than
+<code>GetType().FullName</code> for your own classes.</p>
+
+<p><br />
+<strong>Attributes</strong>:</p>
+
+<pre><code class="language-c#">[DebuggerDisplay("Count={count}")]
+class Counter
+{
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    public int count = 4;
+
+    [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
+    public int[] y =&gt; new[] {1, 2, 3};
+}
+</code></pre>
+
+<p>More control with <a href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggertypeproxyattribute"><code>DebuggerTypeProxy</code></a>:</p>
+
+<p class="notice--info">Use this attribute when you need to significantly and fundamentally change the debugging view of a type, but not change the type itself.</p>
+
+<h2 id="windows">Windows</h2>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Shift</kbd>
+			
+				+
+			
+		
+			<kbd>F9</kbd>
+			
+		
+
+		
+	
+	: QuickWatch window for variable on cursor (blocking)
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>C</kbd>
+			
+		
+
+		
+	
+	: Call stack window
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>W</kbd>
+			
+		
+
+		
+			,
+		
+	
+		
+		
+			<kbd> 1-4</kbd>
+			
+		
+
+		
+	
+	: Watch windows 1-4
+</div>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>A</kbd>
+			
+		
+
+		
+	
+	: Command window
+</div>
+
+<h3 id="locals-and-autos">Locals and Autos</h3>
+
+<p>Open from menu:</p>
+<ul>
+  <li>Debug &gt; Windows &gt; Locals</li>
+  <li>Debug &gt; Windows &gt; Autos</li>
+</ul>
+
+<p>Can see member return values in the Autos window.<br />
+Text in red: variable value changed since last evaluation.</p>
+
+<h3 id="output-window">Output Window</h3>
+
+<p>Menu: Debug &gt; Windows &gt; Output<br />
+Control what is written to the Output Window with Tools &gt; Options &gt; Debugging &gt; Output Window</p>
+
+<pre><code class="language-c#">Debug.Write("msg");
+Debug.WriteIf(true, "msg");
+Debug.WriteLine("msg");
+Debug.WriteLineIf(false, "msg");
+</code></pre>
+
+<h3 id="immediate-window">Immediate window</h3>
+
+<div style="display: block">
+	
+	
+		
+		
+			<kbd>Control</kbd>
+			
+				+
+			
+		
+			<kbd>Alt</kbd>
+			
+				+
+			
+		
+			<kbd>I</kbd>
+			
+		
+
+		
+	
+	: Immediate window
+</div>
+
+<p>Can access local variables and call methods. Even Linq queries
+are possible here.</p>
+
+<h1 id="visualizers">Visualizers</h1>
+
+<p>One of my favourite bloggers, <a href="https://haacked.com/archive/2014/06/20/encourage-vs/">Phil Haack created the Visual Studio visualizer Encourage</a>.</p>
+
+<p><a href="https://github.com/haacked/encourage" class="github">
+    <img src="https://img.shields.io/github/stars/haacked/encourage.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/haacked/encourage">haacked/encourage</a>
+:
+    A bit of encouragment added to Visual Studio</p>
+
+<h2 id="plugins">Plugins</h2>
+
+<p><strong>ReadableExpressions</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers">download</a>)</p>
+
+<p><a href="https://github.com/agileobjects/ReadableExpressions" class="github">
+    <img src="https://img.shields.io/github/stars/agileobjects/ReadableExpressions.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/agileobjects/ReadableExpressions">agileobjects/ReadableExpressions</a>
+:
+    Readable views of Expression Trees</p>
+
+<p><br />
+<strong>DataTable Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer">download</a>)</p>
+
+<p><a href="https://github.com/MgSam/DataTableVisualizer" class="github">
+    <img src="https://img.shields.io/github/stars/MgSam/DataTableVisualizer.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/MgSam/DataTableVisualizer">MgSam/DataTableVisualizer</a>
+:
+    A non-modal, dockable, searchable DataTable visualizer</p>
+
+<p><br />
+<strong>Image Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=AleksanderBerus.DebuggerImageVisualizerPreview">download</a>)</p>
+
+<p><a href="https://github.com/aberus/ImageVisualizer" class="github">
+    <img src="https://img.shields.io/github/stars/aberus/ImageVisualizer.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a>
+:</p>
+
+<p><br />
+<strong>Entity Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=KirillPolishchuk.EntityVisualizer">download</a>)</p>
+
+<p><a href="https://github.com/kpol/EntityVisualizer" class="github">
+    <img src="https://img.shields.io/github/stars/kpol/EntityVisualizer.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/kpol/EntityVisualizer">kpol/EntityVisualizer</a>
+:
+    Display SQL source code generated by Entity Framework</p>
+
+<!-- <br> -->
+<!-- **Linq to Entity query visualizer** ([download](https://marketplace.visualstudio.com/items?itemName=RRV.LinqtoEntityqueryvisualizer))   -->
+
+<p><br />
+<strong>LINQBridgeVs</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=codingadventures.linqbridgevs">download</a>)</p>
+
+<p><a href="https://github.com/codingadventures/LINQBridgeVs" class="github">
+    <img src="https://img.shields.io/github/stars/codingadventures/LINQBridgeVs.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/codingadventures/LINQBridgeVs">codingadventures/LINQBridgeVs</a>
+:
+    Bridge between a Visual Studio debugging session and LINQPad.</p>
+
+<p><br />
+Not open source:</p>
+<ul>
+  <li><strong>Mole</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=Peli.VisualStudio2010Molesx86-IsolationFrameworkforNET">download</a>)</li>
+  <li><strong>DevArt LINQ Insight Express ORM Profiler</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=DevartSoftware.LINQInsightExpress">download</a>)</li>
+</ul>
+
+<h1 id="new-in-visual-studio">New in Visual Studio</h1>
+
+<h2 id="visual-studio-2017">Visual Studio 2017</h2>
+
+<p><strong>Run to click</strong>:<br />
+<img src="/assets/blog-images/visual-studio-debugging-run-to-click.png" alt="Run to click" /></p>
+
+<h2 id="visual-studio-2019">Visual Studio 2019</h2>
+
+<ul>
+  <li>Promises “significant” performance improvements in stepping</li>
+  <li>Yipiee, they added search to Autos, Locals and Watch windows! (Options &gt; Debugging &gt; Search)</li>
+  <li>They also managed to cut 25px from the title bar and still make it look <a href="/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
+</ul>
+
+
+  </div><a class="u-url" href="/dotnet/2019/02/24/visual-studio-debugging.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

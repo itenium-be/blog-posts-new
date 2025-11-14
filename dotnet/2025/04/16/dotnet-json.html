@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Newtonsoft.Json vs System.Text.Json | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Newtonsoft.Json vs System.Text.Json" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="JamesNK/Newtonsoft.Json" />
+<meta property="og:description" content="JamesNK/Newtonsoft.Json" />
+<link rel="canonical" href="https://itenium.be/dotnet/2025/04/16/dotnet-json.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2025/04/16/dotnet-json.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Newtonsoft.Json vs System.Text.Json" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2025-04-16T00:00:00+00:00","datePublished":"2025-04-16T00:00:00+00:00","description":"JamesNK/Newtonsoft.Json","headline":"Newtonsoft.Json vs System.Text.Json","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2025/04/16/dotnet-json.html"},"url":"https://itenium.be/dotnet/2025/04/16/dotnet-json.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Newtonsoft.Json vs System.Text.Json</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-04-16T00:00:00+00:00" itemprop="datePublished">Apr 16, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
+    <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
+
+<p>System.Text.Json (STJ) is about twice as fast as Newtonsoft.Json while only consuming 50% as much memory.
+A legacy project might still be using Newtonsoft but chances are serialization
+isn’t a bottleneck so it’s probably not worth making the switch.</p>
+
+<p>For new applications you’ll want to stick with STJ however. Only add the extra nuget
+if you really need one of the advanced Newtonsoft features (ex: Linq to Json, polymorphic
+serialization, circular reference handling).</p>
+
+<!--more-->
+
+<p>System.Text.Json is included in the runtime for .NET Core 3.1 and later.
+Otherwise use the <a href="https://www.nuget.org/packages/System.Text.Json">nuget package</a>.</p>
+
+<h1 id="tldr">TL&amp;DR</h1>
+
+<ul>
+  <li><strong>System.Text.Json</strong>: The default, fast, memory efficient, but basic features</li>
+  <li><strong>Newtonsoft.Json</strong>: Easy, tolerant, lots of features, but much slower</li>
+</ul>
+
+<h1 id="basic-usage">Basic Usage</h1>
+
+<p>(De)Serialization with optional settings/options:</p>
+
+<pre><code class="language-csharp">// System.Text.Json
+var options = new JsonSerializerOptions();
+string json = JsonSerializer.Serialize(obj[, options]);
+MyClass? obj = JsonSerializer.Deserialize&lt;MyClass&gt;(json[, options]);
+
+// Newtonsoft.Json
+var settings = new JsonSerializerSettings();
+string json = JsonConvert.SerializeObject(obj[, settings]);
+MyClass? obj = JsonConvert.DeserializeObject&lt;MyClass&gt;(json[, settings]);
+</code></pre>
+
+<h1 id="configuration">Configuration</h1>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>System.Text.Json</th>
+      <th>Newtonsoft.Json</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Type</td>
+      <td>JsonSerializerOptions</td>
+      <td>JsonSerializerSettings</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>DefaultIgnoreCondition</td>
+      <td><em>separate properties</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Default</td>
+      <td>JsonIgnoreCondition.WhenWritingDefault</td>
+      <td>DefaultValueHandling</td>
+      <td>Skip default(T)</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>JsonIgnoreCondition.WhenWritingNull</td>
+      <td>NullValueHandling</td>
+      <td>Skip null only</td>
+    </tr>
+    <tr>
+      <td>Pretty Print</td>
+      <td>WriteIndented, IndentCharacter, IndentSize, NewLine</td>
+      <td>Formatting</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Numbers</td>
+      <td>NumberHandling</td>
+      <td>FloatFormatHandling</td>
+      <td>See Floats</td>
+    </tr>
+    <tr>
+      <td>Dates</td>
+      <td><em>custom converters</em></td>
+      <td>DateFormatString, DateFormatHandling, DateTimeZoneHandling, DateParseHandling</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Circular Refs</td>
+      <td>ReferenceHandler</td>
+      <td>ReferenceLoopHandling</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Unexisting properties</td>
+      <td>UnmappedMemberHandling</td>
+      <td>MissingMemberHandling</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Constructor</td>
+      <td>RespectRequiredConstructorParameters</td>
+      <td>ConstructorHandling</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="floats">Floats</h2>
+
+<p>Serialize float/double NaN, Infinity and -Infinity as strings.</p>
+
+<pre><code class="language-csharp">// System.Text.Json
+var opts = new JsonSerializerOptions()
+{
+  NumberHandling = JsonNumberHandling.AllowNamedFloatingPointLiterals,
+  // JsonNumberHandling.Strict (default): Throw ArgumentException for NaN etc
+};
+var obj = new Floats() { Float = 3.1415f, Float2 = float.NaN };
+string json = JsonSerializer.Serialize(obj, opts);
+Assert.Equal("{\"Float\":3.1415,\"Float2\":\"NaN\"}", json);
+
+// Serialize all values as strings
+opts = new JsonSerializerOptions()
+{
+  NumberHandling = JsonNumberHandling.WriteAsString | JsonNumberHandling.AllowReadingFromString
+};
+obj = new Floats() { Float = 3.1415f, Float2 = float.PositiveInfinity};
+json = JsonSerializer.Serialize(obj, opts);
+Assert.Equal("{\"Float\":\"3.1415\",\"Float2\":\"Infinity\"}", json);
+
+
+// Newtonsoft.Json
+var sets = new JsonSerializerSettings()
+{
+  // "String" is the default behavior:
+  FloatFormatHandling = FloatFormatHandling.String,
+  // FloatFormatHandling.DefaultValue: Serialize NaN etc as 0.0
+  // FloatFormatHandling.Symbol: Serialize NaN etc WITHOUT quotes (=not valid json)
+};
+var obj = new Floats() { Float = 3.1415f, Float2 = float.NegativeInfinity };
+string json = JsonConvert.SerializeObject(obj, sets);
+Assert.Equal("{\"Float\":3.1415,\"Float2\":\"-Infinity\"}", json);
+
+// Newtonsoft can also serialize ALL floats as a string with a custom converter
+var settings = new JsonSerializerSettings
+{
+  Converters = new List&lt;JsonConverter&gt; { new StringFloatConverter() },
+};
+
+public class StringFloatConverter : JsonConverter
+{
+  public override bool CanConvert(Type objectType) =&gt; objectType == typeof(float);
+
+  public override object ReadJson(JsonReader reader, Type objType, object value, JsonSerializer serializer)
+  {
+    if (reader.TokenType == JsonToken.String)
+      return float.Parse((string)reader.Value);
+
+    return Convert.ToDouble(reader.Value);
+  }
+
+  public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+  {
+    writer.WriteValue(((float)value).ToString(CultureInfo.InvariantCulture));
+  }
+}
+</code></pre>
+
+<h2 id="default-options">Default Options</h2>
+
+<p>Only for Newtonsoft:</p>
+
+<pre><code class="language-csharp">JsonConvert.DefaultSettings = () =&gt; new JsonSerializerSettings {};
+
+// Read-only for STJ:
+var defaultOpts = JsonSerializerOptions.Default;
+</code></pre>
+
+<h1 id="performance">Performance</h1>
+
+<h2 id="case-sensitivity">Case Sensitivity</h2>
+
+<p>One of the reasons System.Text.Json is so much more performant is because
+Newtonsoft json key names are completely case insensitive, while property
+name cases have to match exactly in STJ.</p>
+
+<pre><code class="language-csharp">public record Person(string Name);
+
+// System.Text.Json
+string json = "{\"name\":\"Bert\"}";
+var obj = JsonSerializer.Deserialize&lt;Person&gt;(json);
+Assert.Null(obj.Name);
+
+// Newtonsoft.Json
+string json = "{\"name\":\"Bert\"}";
+var obj = JsonConvert.DeserializeObject&lt;Person&gt;(json);
+Assert.Equal("Bert", obj.Name);
+</code></pre>
+
+<h2 id="postels-law">Postel’s law</h2>
+
+<p class="notice--info">Be conservative in what you send, be liberal in what you accept.</p>
+
+<p>Newtonsoft.Json is <strong>very</strong> liberal in what it will deserialize
+for you without complaint.</p>
+
+<pre><code class="language-csharp">string json = """
+{
+  // Newtonsoft parses this
+  Name: 'Bert',
+}
+""";
+</code></pre>
+
+<p>While System.Text.Json throws a <code>JsonException</code> on:</p>
+<ul>
+  <li>The comment</li>
+  <li>The missing quotes around Name</li>
+  <li>The use of single quotes around Bert</li>
+  <li>The extra comma after ‘Bert’</li>
+</ul>
+
+<p>Some of these can still be parsed by STJ with some extra configuration:</p>
+
+<pre><code class="language-csharp">var opts = new JsonSerializerOptions()
+{
+  PropertyNameCaseInsensitive = true,
+  ReadCommentHandling = JsonCommentHandling.Skip,
+  AllowTrailingCommas = true,
+};
+</code></pre>
+
+<h2 id="spanof-t">Span(Of T)</h2>
+
+<p>The main reason for the performance difference however is the use of <code>Span&lt;T&gt;</code>
+in System.Text.Json. Which is not being adopted by Newtonsoft because of
+.NET Framework support.</p>
+
+<p>Performance is about 2x but this increases to about 3x for serialization when
+using the STJ <a href="https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/">source generation</a>
+feature to eliminate the use of Reflection.</p>
+
+<h1 id="webapi">WebApi</h1>
+
+<p>System.Text.Json is the default from .NET Core 3.1 and up.</p>
+
+<p>I’ve added the same “sensible” configuration for both:</p>
+<ul>
+  <li>Use camelCase for property names – which is typically used in JavaScript</li>
+  <li>During development, pretty print the json</li>
+  <li>Do not include <code>null</code> and primitive default values (ex: <code>false</code>, <code>0</code>) in the output so the bytes sent over the network are somewhat reduced</li>
+  <li>Serialize enums as strings. While this increases the bytes sent, it does make them more human-readable.</li>
+</ul>
+
+<pre><code class="language-csharp">var builder = WebApplication.CreateBuilder(args);
+
+// System.Text.Json
+builder.Services.AddControllers().AddJsonOptions(options =&gt;
+{
+  options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+
+  if (builder.Environment.IsDevelopment())
+    options.JsonSerializerOptions.WriteIndented = true;
+
+  options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault;
+  options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+
+// System.Text.Json for Minimal APIs (.NET Core 7)
+builder.Services.ConfigureHttpJsonOptions(options =&gt; { ... });
+// If not specified, defaults to:
+var opts = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+Assert.True(opts.PropertyNameCaseInsensitive);
+Assert.Equal(JsonNamingPolicy.CamelCase, opts.PropertyNamingPolicy);
+Assert.Equal(JsonNumberHandling.AllowReadingFromString, opts.NumberHandling);
+
+
+// Newtonsoft.Json
+Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+using Newtonsoft.Json.Serialization;
+builder.Services.AddControllers().AddNewtonsoftJson(options =&gt;
+{
+  options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+  if (builder.Environment.IsDevelopment())
+    options.SerializerSettings.Formatting = Formatting.Indented;
+
+  options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+  options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+  options.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+});
+</code></pre>
+
+<h1 id="custom-converters">Custom Converters</h1>
+
+<p>When the serialization options/settings can’t handle your case, maybe because
+you cannot control how the json communication happens or because some values
+should be converted to a domain specific type, you can add your own converters.</p>
+
+<p>Imagine that our frontend sends and/or accepts Money in a specific culture, like
+<code>15.000,99</code> (nl-BE formatting).</p>
+
+<h2 id="stj-culturalmoney">STJ CulturalMoney</h2>
+
+<p>For illustration purposes only; you’ll probably want to handle all sorts of edge cases 😉</p>
+
+<pre><code class="language-csharp">new JsonSerializerOptions().Converters.Add(new CulturalMoneyConverter(new CultureInfo("nl-BE")));
+
+public class CulturalMoneyConverter(CultureInfo culture) : JsonConverter&lt;decimal&gt;
+{
+  public override decimal Read(ref Utf8JsonReader reader, Type toConvert, JsonSerializerOptions opts)
+  {
+    return reader.TokenType == JsonTokenType.String
+      ? decimal.Parse(reader.GetString(), NumberStyles.Any, culture)
+      : reader.GetDecimal();
+  }
+
+  public override void Write(Utf8JsonWriter writer, decimal value, JsonSerializerOptions options)
+  {
+    writer.WriteStringValue(value.ToString("#,###.##", culture));
+  }
+}
+</code></pre>
+
+<h2 id="newtonsoft-culturalmoney">Newtonsoft CulturalMoney</h2>
+
+<pre><code class="language-csharp">new JsonSerializerSettings().Converters.Add(new CulturalMoneyConverter(new CultureInfo("nl-BE")));
+
+public class CulturalMoneyConverter(CultureInfo culture) : Newtonsoft.Json.JsonConverter
+{
+  public override bool CanConvert(Type objectType) =&gt; objectType == typeof(decimal);
+
+  public override object ReadJson(JsonReader reader, Type objType, object? value, JsonSerializer js)
+  {
+    return reader.TokenType == JsonToken.String
+      ? decimal.Parse((string)reader.Value, NumberStyles.Any, culture)
+      : Convert.ToDecimal(reader.Value);
+  }
+
+  public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
+  {
+    writer.WriteValue(((decimal)value).ToString("#,###.##", culture));
+  }
+}
+</code></pre>
+
+<h2 id="contract-resolvers">Contract Resolvers</h2>
+
+<p>If converters aren’t doing it for you, because your frontend team is sending some
+really weird stuff, it’s still possible to further alter the behavior of serialization.</p>
+
+<p>In STJ this is done by setting the <code>JsonSerializerOptions.TypeInfoResolver</code>, where you
+could use <code>new DefaultJsonTypeInfoResolver()</code> and set the <code>Modifiers</code> property or provide
+custom implementation(s) with <code>JsonTypeInfoResolver.Combine(...)</code>.</p>
+
+<p>For Newtonsoft, set the <code>JsonSerializerSettings.ContractResolver</code> and inherit from
+the <code>DefaultContractResolver</code>.</p>
+
+<h1 id="adoption">Adoption</h1>
+
+<p><a href="https://nugettrends.com/packages?ids=System.Text.Json&amp;ids=Newtonsoft.Json&amp;months=120">Adoption for both libraries is going up</a>, with no decline in sight for Newtonsoft.Json
+but I’m guessing this is comparing apples and oranges because STJ is included by default
+and is thus under-represented in the graph.</p>
+
+<p><img src="/assets/blog-images/dotnet-json-trend.png" alt="Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years" title="Nuget downloads comparison" class="img-responsive" /></p>
+
+<h1 id="more">More!!</h1>
+
+<h2 id="polymorphism">Polymorphism</h2>
+
+<p>Works pretty much out of the box for Newtonsoft.
+For STJ it is possible to achieve starting from .NET Core 7
+with the <code>JsonDerivedTypeAttribute</code> on the base class.</p>
+
+<h2 id="attributes">Attributes</h2>
+
+<p>Both have attributes that can be applied to fields and/or
+properties to change serialization behavior without reverting
+to custom code.</p>
+
+<h3 id="stj-attributes">STJ Attributes</h3>
+
+<pre><code class="language-csharp">public class Person
+{
+  [JsonPropertyName("person_name")]
+  [JsonPropertyOrder(10)]
+  public string Name { get; }
+
+  [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+  public int? Age { get; }
+
+  [JsonIgnore]
+  public string Password { get; set; }
+
+  // We cannot pass a format to the Converter (like Newtonsoft allows)
+  [JsonConverter(typeof(BirthDateFormatConverter))]
+  public DateTime BirthDate { get; }
+
+  [JsonConstructor]
+  public PersonWithAttributes(string name, int? age = null)
+  {
+    Name = name; // "person_name" does NOT work
+    Age = age;
+  }
+}
+</code></pre>
+
+<h3 id="newtonsoft-attributes">Newtonsoft Attributes</h3>
+
+<pre><code class="language-csharp">[JsonObject(MemberSerialization.OptOut)]
+public class PersonWithAttributes
+{
+  [JsonProperty("person_name", Order = 10)]
+  public string Name { get; }
+
+  [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+  public int? Age { get; }
+
+  [JsonIgnore]
+  public string Password { get; set; }
+
+  // Pass the format to the Converter
+  [JsonConverter(typeof(DateFormatConverter), "yyyy-MM-dd")]
+  public DateTime BirthDate { get; }
+
+  [JsonConstructor]
+  public PersonWithAttributes(string name, int? age)
+  {
+      Name = name; // This parameter could also be called person_name
+      Age = age;
+  }
+}
+</code></pre>
+
+<h2 id="callbacks">Callbacks</h2>
+
+<p>Execute code before/after (de)serialization:</p>
+<ul>
+  <li>STJ: implement interfaces (IJsonOnSerializing, IJsonOnSerialized, IJsonOnDeserializing, IJsonOnDeserialized)</li>
+  <li>Newtonsoft: attributes on methods (OnSerializing, OnSerialized, OnDeserializing, OnDeserialized)</li>
+</ul>
+
+  </div><a class="u-url" href="/dotnet/2025/04/16/dotnet-json.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

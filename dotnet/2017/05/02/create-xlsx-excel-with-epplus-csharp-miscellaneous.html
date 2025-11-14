@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Create Excels with C# and EPPlus: Miscellaneous | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Create Excels with C# and EPPlus: Miscellaneous" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use. See some alternatives if that is a dealbreaker for you!" />
+<meta property="og:description" content="Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use. See some alternatives if that is a dealbreaker for you!" />
+<link rel="canonical" href="https://itenium.be/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-05-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Create Excels with C# and EPPlus: Miscellaneous" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2017-05-02T00:00:00+00:00","datePublished":"2017-05-02T00:00:00+00:00","description":"Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use. See some alternatives if that is a dealbreaker for you!","headline":"Create Excels with C# and EPPlus: Miscellaneous","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html"},"url":"https://itenium.be/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Create Excels with C# and EPPlus: Miscellaneous</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-05-02T00:00:00+00:00" itemprop="datePublished">May 2, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
+
+<p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous">ClosedXML</a></strong><br />
+Which is basically on equal footing with EPPlus.</p>
+
+<!--more-->
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h1 id="miscellaneous-features">Miscellaneous features</h1>
+
+<p>EPPlus can do a whole lot more for you. This post covers some interesting stuff that didn’t really fit anywhere else.</p>
+
+<pre><code class="language-c#">// Set workbook properties like title, author, company, ...
+OfficeProperties props = package.Workbook.Properties;
+
+// Modify column props: AutoFit(), Hidden, ...
+var colE = package.Workbook.Worksheets.First().Column(5);
+</code></pre>
+
+<h2 id="printing">Printing</h2>
+<pre><code class="language-c#">using (var package = new ExcelPackage())
+{
+	var sheet = package.Workbook.Worksheets.Add("Printing");
+	sheet.Cells["A1"].Value = "Check the print preview (Ctrl+P)";
+
+	var header = sheet.HeaderFooter.OddHeader;
+	// &amp;24: Font size
+	// &amp;U: Underlined
+	// &amp;"": Font name
+	header.CenteredText = "&amp;24&amp;U&amp;\"Arial,Regular Bold\" YourTitle";
+	header.RightAlignedText = ExcelHeaderFooter.CurrentDate;
+	header.LeftAlignedText = ExcelHeaderFooter.SheetName;
+
+	ExcelHeaderFooterText footer = sheet.HeaderFooter.OddFooter;
+	footer.RightAlignedText = $"Page {ExcelHeaderFooter.PageNumber} of {ExcelHeaderFooter.NumberOfPages}";
+	footer.CenteredText = ExcelHeaderFooter.SheetName;
+	footer.LeftAlignedText = ExcelHeaderFooter.FilePath + ExcelHeaderFooter.FileName;
+
+	sheet.PrinterSettings.RepeatRows = sheet.Cells["1:2"];
+	sheet.PrinterSettings.RepeatColumns = sheet.Cells["A:G"];
+
+	sheet.View.PageLayoutView = true;
+
+	package.SaveAs(new FileInfo(@""));
+}
+</code></pre>
+
+<h2 id="comments--richtext">Comments &amp; RichText</h2>
+
+<p>Each RichText.Add() returns a new object that takes over all styling from the textobject is was invoked on
+and can then be styled separately.</p>
+
+<pre><code class="language-c#">using (var package = new ExcelPackage())
+{
+	var sheet = package.Workbook.Worksheets.Add("Rich Comments");
+
+	ExcelComment comment = sheet.Cells["A1"].AddComment("Bold title:\r\n", "evil corp");
+	comment.Font.Bold = true;
+	comment.AutoFit = true;
+
+	ExcelRichText rt = comment.RichText.Add("Unbolded subtext");
+	rt.Bold = false;
+	// Also rt.Color, FontName, Size, ...
+
+	// A more extensive example can be found in Sample6.cs::AddComments of the official examples project
+	// https://github.com/JanKallman/EPPlus/blob/master/SampleApp/Sample6.cs
+
+	package.SaveAs(new FileInfo(@""));
+}
+</code></pre>
+
+<h2 id="converting-indexes-and-ranges">Converting indexes and ranges</h2>
+
+<pre><code class="language-c#">[Test]
+public void ConvertingIndexesAndAddresses()
+{
+	Assert.That(ExcelCellBase.GetAddress(1, 1), Is.EqualTo("A1"));
+	Assert.That(ExcelCellBase.IsValidCellAddress("A5"), Is.True);
+
+	Assert.That(ExcelCellBase.GetFullAddress("MySheet", "A1:A3"), Is.EqualTo("'MySheet'!A1:A3"));
+
+	Assert.That(ExcelCellBase.TranslateToR1C1("AB23", 0, 0), Is.EqualTo("R[23]C[28]"));
+	Assert.That(ExcelCellBase.TranslateFromR1C1("R23C28", 0, 0), Is.EqualTo("$AB$23"));
+}
+</code></pre>
+
+<p><a href="https://github.com/itenium-be/EPPlusTutorial">The project code</a> also contains additional examples with</p>
+
+<ul>
+  <li>Workbook &amp; sheet protection from user editing</li>
+  <li>A UnitTest to generate excel with a sample LoadFromXXX with a sheet for each TableStyles enum value.</li>
+</ul>
+
+
+  </div><a class="u-url" href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

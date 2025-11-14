@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Create Excels with C# and ClosedXML: Miscellaneous | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Create Excels with C# and ClosedXML: Miscellaneous" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Miscellaneous features" />
+<meta property="og:description" content="Miscellaneous features" />
+<link rel="canonical" href="https://itenium.be/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-10-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Create Excels with C# and ClosedXML: Miscellaneous" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2025-10-01T00:00:00+00:00","datePublished":"2025-10-01T00:00:00+00:00","description":"Miscellaneous features","headline":"Create Excels with C# and ClosedXML: Miscellaneous","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html"},"url":"https://itenium.be/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Create Excels with C# and ClosedXML: Miscellaneous</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-10-01T00:00:00+00:00" itemprop="datePublished">Oct 1, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 class="hide-from-excerpt" id="miscellaneous-features">Miscellaneous features</h1>
+
+<p>ClosedXML can do a whole lot more for you. This post covers some interesting stuff that didn’t really fit anywhere else.</p>
+
+<!--more-->
+
+<pre><code class="language-c#">// Set workbook properties like title, author, company, ...
+XLWorkbookProperties props = workbook.Properties;
+
+// Modify default settings for all new workbooks
+workbook.RowHeight = 20; // &amp; ColumnWidth
+// DefaultShowGridLines, DefaultShowZeros, ...
+</code></pre>
+
+<h2 id="printing">Printing</h2>
+
+<ul>
+  <li><a href="https://github.com/closedxml/closedxml/wiki#page-setup-print-options">More advanced printing options</a></li>
+  <li><a href="https://github.com/closedxml/closedxml/wiki/Paper-Size-Lookup-Table">sheet.PageSetup.PaperSize options</a></li>
+  <li><a href="https://github.com/closedxml/closedxml/wiki/Margins-Tab">Margins options</a> with <code>sheet.PageSetup.Margins</code></li>
+</ul>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("Printing");
+
+sheet.PageSetup.Header.Center.AddText("YourTitle", XLHFOccurrence.AllPages)
+  .SetFontSize(24)
+  .SetBold()
+  .SetUnderline();
+sheet.PageSetup.Header.Right.AddText(XLHFPredefinedText.Date, XLHFOccurrence.AllPages);
+sheet.PageSetup.Header.Left.AddText(XLHFPredefinedText.SheetName, XLHFOccurrence.AllPages);
+
+sheet.PageSetup.Footer.Right.AddText("Page ", XLHFOccurrence.AllPages);
+sheet.PageSetup.Footer.Right.AddText(XLHFPredefinedText.PageNumber, XLHFOccurrence.AllPages);
+sheet.PageSetup.Footer.Right.AddText(" of ", XLHFOccurrence.AllPages);
+sheet.PageSetup.Footer.Right.AddText(XLHFPredefinedText.NumberOfPages, XLHFOccurrence.AllPages);
+
+sheet.PageSetup.SetRowsToRepeatAtTop(1, 2);
+sheet.PageSetup.SetColumnsToRepeatAtLeft(1, 7);
+
+sheet.SheetView.View = XLSheetViewOptions.PageLayout;
+</code></pre>
+
+<h2 id="comments">Comments</h2>
+
+<pre><code class="language-c#">using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("Comments");
+
+var comment = sheet.Cell("D4").CreateComment();
+comment.Author = "evil corp";
+comment.AddSignature(); // Makes Author visible
+comment.AddText("Bold title:\r\n").SetBold(); // or use .AddNewLine()
+comment.AddText("Unbolded subtext").SetBold(false);
+
+sheet.Cell("G4").CreateComment().AddText("Orientation = Vertical");
+sheet.Cell("G4").GetComment().Style
+  .Alignment.SetOrientation(XLDrawingTextOrientation.Vertical)
+  .Alignment.SetAutomaticSize()
+  .Margins.SetAll(0.25)
+  .ColorsAndLines.SetFillColor(XLColor.RichCarmine)
+  .ColorsAndLines.SetFillTransparency(0.25);
+
+// Control positioning of the comment:
+// sheet.Cell(G4").GetComment().Position
+
+foreach (var cell in sheet.CellsUsed(XLCellsUsedOptions.Comments, c =&gt; c.HasComment))
+{
+  cell.GetComment().SetVisible();
+}
+</code></pre>
+
+<h2 id="richtext">RichText</h2>
+
+<pre><code class="language-c#">using var wb = new XLWorkbook();
+var ws = wb.Worksheets.Add("Rich Text");
+
+var cell1 = ws.Cell(1, 1).SetValue("The show must go on...");
+cell1.Style.Font.FontColor = XLColor.Blue;
+cell1.CreateRichText().Substring(4, 4)
+  .SetFontColor(XLColor.Red)
+  .SetFontName("Broadway");
+
+ws.Cell(3, 1).CreateRichText()
+  .AddText("Hello").SetFontColor(XLColor.Red)
+  .AddText(" BIG ").SetFontColor(XLColor.Blue).SetBold()
+  .AddText("World").SetFontColor(XLColor.Red);
+</code></pre>
+
+<h1 id="migrating-from-epplus">Migrating from EPPlus</h1>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>EPPlus</th>
+      <th>ClosedXML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Basics</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>new ExcelPackage()</td>
+      <td>new XLWorkbook()</td>
+    </tr>
+    <tr>
+      <td>Workbook.Worksheets.Add(“str”)</td>
+      <td>AddWorksheet(“str”)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>With Sheet</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cells[1, 1]</td>
+      <td>Cell(1, 1)</td>
+    </tr>
+    <tr>
+      <td>Cell[“A2”]</td>
+      <td>Cell(“A2”)</td>
+    </tr>
+    <tr>
+      <td>Cells[“A2:C5”]</td>
+      <td>Range(“A2:C5”)</td>
+    </tr>
+    <tr>
+      <td>Cells[“B2,D2”]</td>
+      <td>Cells(“B2,D2”) or Ranges(“B2,D2”)</td>
+    </tr>
+    <tr>
+      <td>Dimension</td>
+      <td>LastRowUsed() &amp; LastColumnUsed()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Or RangeUsed()</td>
+    </tr>
+    <tr>
+      <td>View.FreezePanes</td>
+      <td>SheetView.Freeze</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>SheetView.FreezeRows &amp; FreezeColumns</td>
+    </tr>
+    <tr>
+      <td>View.ShowGridLines</td>
+      <td>ShowGridLines</td>
+    </tr>
+    <tr>
+      <td>View.ShowHeaders</td>
+      <td>ShowRowColHeaders</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>With Cell(s)</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>Address.ToString()</td>
+    </tr>
+    <tr>
+      <td>Start.Column</td>
+      <td>Address.ColumnNumber</td>
+    </tr>
+    <tr>
+      <td>Formula</td>
+      <td>FormulaA1</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>GetString() &amp; GetFormattedString()</td>
+    </tr>
+    <tr>
+      <td>Hyperlink = new Uri()</td>
+      <td>SetHyperlink(new XLHyperlink())</td>
+    </tr>
+    <tr>
+      <td>Merge = true</td>
+      <td>Merge() / Unmerge()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Styling with Cell.Style</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Font.Color.SetColor(Color.Ivory)</td>
+      <td>Style.Font.SetFontColor(XLColor.Ivory)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Style.Font.FontColor = XLColor.Ivory</td>
+    </tr>
+    <tr>
+      <td>Fill.PatternType = ExcelFillStyle.Solid</td>
+      <td>Fill.SetPatternType(XLFillPatternValues.Solid)</td>
+    </tr>
+    <tr>
+      <td>Fill.BackgroundColor.SetColor(Color.Navy)</td>
+      <td>Fill.SetBackgroundColor(XLColor.Navy)</td>
+    </tr>
+    <tr>
+      <td>Border.BorderAround()</td>
+      <td>Border.OutsideBorder</td>
+    </tr>
+    <tr>
+      <td>ShrinkToFit = true</td>
+      <td>Alignment.ShrinkToFit = true</td>
+    </tr>
+    <tr>
+      <td>WrapText = true</td>
+      <td>Alignment.WrapText = true</td>
+    </tr>
+    <tr>
+      <td>HorizontalAlignment</td>
+      <td>Alignment.Horizontal</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Formulas</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Formula</td>
+      <td>FormulaA1</td>
+    </tr>
+    <tr>
+      <td>Calculate()</td>
+      <td>RecalculateAllFormulas()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Misc</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LoadFromCollection</td>
+      <td>InsertTable / InsertData</td>
+    </tr>
+    <tr>
+      <td>Cells.AutoFitColumns()</td>
+      <td>ColumnsUsed().AdjustToContents()</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="other">Other</h1>
+
+<p>Things not covered…</p>
+
+<ul>
+  <li><a href="https://docs.closedxml.io/en/latest/features/protect.html">Sheet Protection</a></li>
+  <li><a href="https://docs.closedxml.io/en/latest/features/autofilter.html">AutoFilter</a></li>
+  <li><a href="https://docs.closedxml.io/en/latest/features/sort.html">Sorting</a></li>
+</ul>
+
+<h2 id="tables">Tables</h2>
+
+<p>ClosedXML has good functionality and examples for creating tables:</p>
+
+<ul>
+  <li><a href="https://docs.closedxml.io/en/latest/features/tables.html">In-depth info</a></li>
+  <li><a href="https://github.com/closedxml/closedxml/wiki/Inserting-Tables">Example Inserting Tables</a></li>
+  <li><a href="https://github.com/closedxml/closedxml/wiki/Inserting-Data">Example Inserting Data</a></li>
+  <li><a href="https://docs.closedxml.io/en/latest/features/pivot-tables.html">Pivot Tables</a>
+    <ul>
+      <li><a href="https://github.com/closedxml/closedxml/wiki/Transpose-Ranges">Transpose Ranges</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

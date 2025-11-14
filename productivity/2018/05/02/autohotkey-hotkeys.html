@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Autohotkey Tutorial - hotkeys | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Autohotkey Tutorial - hotkeys" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for newcomers in and by itself. But we don’t stop there as after adding more and more hotkeys, it will also become harder and harder to think of new key combinations that are somehow still memorable. There is only so much you can do with the # (Windows) key etc. Time for some creative hotkey combinations! ‘Advanced Hotkeys’ covers code snippets on how to run different scripts on single, double or triple key presses as well as how to differentiate between long(ish) key presses or mouse clicks. And more…" />
+<meta property="og:description" content="First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for newcomers in and by itself. But we don’t stop there as after adding more and more hotkeys, it will also become harder and harder to think of new key combinations that are somehow still memorable. There is only so much you can do with the # (Windows) key etc. Time for some creative hotkey combinations! ‘Advanced Hotkeys’ covers code snippets on how to run different scripts on single, double or triple key presses as well as how to differentiate between long(ish) key presses or mouse clicks. And more…" />
+<link rel="canonical" href="https://itenium.be/productivity/2018/05/02/autohotkey-hotkeys.html" />
+<meta property="og:url" content="https://itenium.be/productivity/2018/05/02/autohotkey-hotkeys.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-02T22:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Autohotkey Tutorial - hotkeys" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2023-03-27T22:00:00+00:00","datePublished":"2018-05-02T22:00:00+00:00","description":"First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for newcomers in and by itself. But we don’t stop there as after adding more and more hotkeys, it will also become harder and harder to think of new key combinations that are somehow still memorable. There is only so much you can do with the # (Windows) key etc. Time for some creative hotkey combinations! ‘Advanced Hotkeys’ covers code snippets on how to run different scripts on single, double or triple key presses as well as how to differentiate between long(ish) key presses or mouse clicks. And more…","headline":"Autohotkey Tutorial - hotkeys","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/productivity/2018/05/02/autohotkey-hotkeys.html"},"url":"https://itenium.be/productivity/2018/05/02/autohotkey-hotkeys.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Autohotkey Tutorial - hotkeys</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-05-02T22:00:00+00:00" itemprop="datePublished">May 2, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for
+newcomers in and by itself.<br />
+<br />
+But we don’t stop there as after adding more and more hotkeys, it will also become harder and harder
+to think of new key combinations that are somehow still memorable. There is only so much
+you can do with the <code>#</code> (Windows) key etc.<br />
+<br />
+Time for some creative hotkey combinations! ‘Advanced Hotkeys’ covers code snippets on
+how to run different scripts on single, double or triple key presses as well as how to
+differentiate between long(ish) key presses or mouse clicks. And more…</p>
+
+<h1 class="hide-from-excerpt" id="example">Example</h1>
+
+<pre><code class="language-autohotkey">; Single line hotkey
+^#D::MsgBox Pressed Control + Win + D (%A_ThisHotKey%)
+
+; Control + Win + C: Multi line script
+^#C::
+Run, notepad.exe
+WinWait, Untitled - Notepad, , 3
+Send, Dear sir,{enter}{enter}
+Return
+</code></pre>
+
+<!--more-->
+
+<h1 id="basic-syntax">Basic Syntax</h1>
+
+<h2 id="keyboard">Keyboard</h2>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Shorthand</th>
+      <th>Full</th>
+      <th>Desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>Shift</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>Control or Ctrl</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Win</td>
+      <td>Windows</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Alt</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>&lt;#</td>
+      <td>LWin</td>
+      <td>Left Windows</td>
+    </tr>
+    <tr>
+      <td>+&gt;</td>
+      <td>RShift</td>
+      <td>Right Shift</td>
+    </tr>
+    <tr>
+      <td>&lt;^&gt;!</td>
+      <td>AltGr</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>AppsKey</td>
+      <td>Menu key</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CapsLock</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Others</strong>:</p>
+
+<ul>
+  <li>F[1-24], Tab, Space, Enter/Return, Backspace/BS</li>
+  <li>Left, Up, Down, Right</li>
+  <li>Esc, Ins, Delete/Del, Home, End, PgUp, PgDn</li>
+  <li>PrintScreen, ScrollLock, CtrlBreak</li>
+  <li>Sleep, Pause</li>
+</ul>
+
+<p><strong>Numpad</strong>:</p>
+
+<ul>
+  <li>Numlock ON: Numpad[0-9],</li>
+  <li>Numlock OFF: NumpadIns, NumpadEnd, NumpadMult, NumpadEnter, …</li>
+</ul>
+
+<p><strong>Multimedia</strong>:</p>
+
+<ul>
+  <li>Browser_Stop, Media_Next, Volume_Up, Launch_App2, …</li>
+</ul>
+
+<p><strong>Mouse</strong>:</p>
+
+<ul>
+  <li>LButton, RButton, MButton</li>
+  <li>XButton1 (Browser_Back), XButton2 (Browser_Forward)</li>
+  <li>WheelUp, WheelDown, WheelLeft, WheelRight</li>
+</ul>
+
+<p><strong>Joystick</strong>:</p>
+
+<ul>
+  <li>JoyX, JoyPOV, JoyInfo, …</li>
+</ul>
+
+<p><a href="https://autohotkey.com/docs/scripts/JoystickTest.htm">JoystickTest</a>: A simple script 
+for determining the exact mapping of your joystick.</p>
+
+<p><br />
+Find <a href="https://autohotkey.com/docs/KeyList.htm">the full KeyList here</a>.
+If your keyboard has keys that are not in the full keylist,
+<a href="https://autohotkey.com/docs/KeyList.htm#SpecialKeys">it might still be possible to map them to a script</a>.</p>
+
+<p>You can also let Autohotkey itself do the figuring out for you. Its builtin command
+<code>KeyHistory</code> opens a window where you can figure out which is which.</p>
+
+<h2 id="native-function">Native function</h2>
+
+<p>Prefix a hotkey with <code>~</code> to not block the native function.</p>
+
+<pre><code class="language-autohotkey">#IfWinActive, ahk_class CabinetWClass
+; Control + Shift + 6: Details View in Windows Explorer
+; Resize columns so that filenames are completely visible
+~^+6::Send, {Control Down}{NumpadAdd}{Control Up}
+#IfWinActive
+</code></pre>
+
+<h2 id="custom-combinations">Custom combinations</h2>
+
+<p>To combine keys that do not have a shorthand use <code>&amp;</code>.
+Keys on the left side of such custom combinations lose their native function.
+They are called prefix keys.</p>
+
+<p>Example: Search google for text on the clipboard by pressing Capslock and X.</p>
+<pre><code class="language-autohotkey">Capslock &amp; X::Run, http://www.google.com/search?q=%clipboard%
+</code></pre>
+
+<h2 id="other">Other</h2>
+
+<p><strong>Key Down and Up</strong><br />
+Add <code>UP</code> to a hotkey combination to run the script on key release rather than on keypress.</p>
+
+<pre><code class="language-autohotkey">AppsKey::ToolTip Press &lt; or &gt; to cycle through tabs.
+AppsKey Up::ToolTip
+~AppsKey &amp; &lt;::Send ^+{tab}
+~AppsKey &amp; &gt;::Send ^{tab}
+</code></pre>
+
+<p><strong>Wildcard</strong><br />
+<code>*</code> acts as a key modifier wildcard.</p>
+
+<pre><code class="language-autohotkey">*#c::Msgbox Triggered by Win+C, Shift+Win+C, Ctrl+Win+C, etc
+</code></pre>
+
+<p><strong>Resending</strong><br />
+<code>$</code> is necessary when you need to send the same hotkey and not execute your script again.</p>
+
+<pre><code class="language-autohotkey">$#e::
+; Send Control + C =&gt; Copy text
+Send, ^c
+ClipWait, 1
+fileExists := FileExist(clipboard)
+if (fileExists = "D") {
+    ; Open explorer in path on clipboard
+    Run % "explorer.exe /root," clipboard
+
+} else if (fileExists) {
+    ; Open explorer with file selected
+    Run % "explorer.exe /select," clipboard
+
+} else {
+    ; No path on clipboard, just open explorer
+    Send #e
+}
+Return
+</code></pre>
+
+<h1 id="advanced-hotkeys">Advanced Hotkeys</h1>
+
+<p>Creating more advanced hotkey combinations.</p>
+
+<h2 id="context-sensitive-hotkeys">Context sensitive hotkeys</h2>
+
+<p>Control in which applications a hotkey is (not) active with the
+keywords 
+<a href="https://autohotkey.com/docs/commands/WinActive.htm"><code>IfWinActive</code></a>, 
+<code>IfWinExist</code>, <code>IfWinNotActive</code> and <code>IfWinNotExist</code>.</p>
+
+<pre><code class="language-autohotkey">#IfWinActive, ahk_class Notepad
+^a::MsgBox You pressed Ctrl-A while Notepad is active. Pressing Ctrl-A in any other window will pass the Ctrl-A keystroke to that window.
+#c::MsgBox You pressed Win-C while Notepad is active.
+#IfWinActive
+
+#c::MsgBox You pressed Win-C while any window except Notepad is active.
+
+
+#If MouseIsOver("ahk_class Shell_TrayWnd") and true
+WheelUp::Send {Volume_Up}     ; Wheel over taskbar: increase/decrease volume.
+WheelDown::Send {Volume_Down} ;
+
+MouseIsOver(WinTitle) {
+    MouseGetPos,,, Win
+    return WinExist(WinTitle . " ahk_id " . Win)
+}
+#If
+
+
+$^p::
+IfWinActive ahk_class Notepad
+    return  ; i.e. do nothing, which causes Control-P to do nothing in Notepad.
+
+Send ^p
+return
+</code></pre>
+
+<p>Find out the <code>ahk_class</code> of a program with Window Spy (AU3_Spy.exe)
+which comes bundled with Autohotkey itself.</p>
+
+<h2 id="combining-2-hotkeys">Combining 2 hotkeys</h2>
+
+<p><strong>Check if a hotkey combination is pressed twice</strong></p>
+
+<pre><code class="language-autohotkey">~Esc::
+; Esc twice to close an application
+If (A_PriorHotKey = A_ThisHotKey and A_TimeSincePriorHotkey &lt; 500)
+    WinClose
+Return
+</code></pre>
+
+<p>Gotcha: the <code>A_PriorHotkey</code> will only hold values of combinations that are also defined
+as a hotkey. The value of <code>A_PriorHotkey</code> will be exactly as the hotkey is defined.</p>
+
+<p><br />
+<strong>Follow a hotkey up with an additional keypress</strong></p>
+
+<pre><code class="language-autohotkey">; AltGr + C: Change the case of the selected text
+; Follow up with (U)PPER, l(ower) or T(itle)
+&lt;^&gt;!c::
+clipboard =
+Send, ^c
+ClipWait, 1
+Input keyPressed, I L1
+if (keyPressed = "u") {
+    StringUpper toUpperCase, clipboard
+    Send %toUpperCase%
+} else if (keyPressed = "l") {
+    StringLower toLowerCase, clipboard
+    Send %toLowerCase%
+} else if (keyPressed = "p" or keyPressed = "t") {
+    StringUpper toTitleCase, clipboard, T
+    Send %toTitleCase%
+}
+return
+</code></pre>
+
+<p><a href="https://autohotkey.com/docs/commands/Input.htm"><code>Input</code></a> option <code>L1</code> is the maximum allowed length. (L1 -&gt; L5)</p>
+
+<h2 id="double-triple-and-long-key-presses">Double, triple and long key presses</h2>
+
+<h4 id="simple-double-keypress">Simple double keypress</h4>
+
+<p>Map a double <code>µ</code> keypress to a smiley.</p>
+<pre><code class="language-autohotkey">; File needs to be encoded in UTF8 BOM
+; for a binding of "µ" to work.
+$µ::
+    KeyWait, µ
+    KeyWait, µ, D T0.2
+    if ErrorLevel
+        ; No second µ keypress
+        SendInput µ
+    Else
+        ; Replace double keypress
+        ; with something else
+        SendInput 😀
+Return
+</code></pre>
+
+<h4 id="the-whole-shebang">The whole shebang</h4>
+
+<pre><code class="language-autohotkey">#c::
+DoubleClickTime := DllCall("GetDoubleClickTime") ; in milliseconds
+
+; Wait for 'c' to be released
+KeyWait, c
+if (A_TimeSinceThisHotkey &gt; DoubleClickTime) {
+    Msgbox Longpress
+    return
+}
+
+; Wait for 'c' to be pressed down again (option "d")
+; But timeout after T0.5 seconds (If DoubleClickTime is 500)
+KeyWait, c, % "d T"DoubleClickTime/1000
+If ! Errorlevel
+    Msgbox Doublepress
+else
+    Msgbox Singlepress
+Return
+</code></pre>
+
+<p><a href="https://autohotkey.com/docs/commands/KeyWait.htm"><code>KeyWait</code></a> docs
+or <a href="https://autohotkey.com/board/topic/51354-singlepress-doublepress-and-pressandhold/">more info on the forum</a>.</p>
+
+<p><br />
+<strong>Long middle mouse click with <a href="https://autohotkey.com/docs/commands/GetKeyState.htm"><code>GetKeyState</code></a></strong></p>
+
+<pre><code class="language-autohotkey">~MButton::
+HowLong = 0
+Loop
+{
+    HowLong++
+    Sleep, 10
+    GetKeyState, MButton, MButton, P
+    IfEqual, MButton, U, Break
+}
+IfLess, HowLong, 20, Return
+
+; Do stuff when middle mouse button was pressed longer than 20ms
+</code></pre>
+
+<p><strong>Triple, quadruple etc keypresses</strong></p>
+
+<pre><code class="language-autohotkey">; Example #3: Detection of single, double, and triple-presses of a hotkey. This
+; allows a hotkey to perform a different operation depending on how many times
+; you press it:
+#j::
+if winc_presses &gt; 0 ; SetTimer already started, so we log the keypress instead.
+{
+    winc_presses += 1
+    return
+}
+; Otherwise, this is the first press of a new series. Set count to 1 and start
+; the timer:
+winc_presses = 1
+SetTimer, KeyWinC, -400 ; Wait for more presses within a 400 millisecond window.
+return
+
+KeyWinC:
+if winc_presses = 1 ; The key was pressed once.
+{
+    Run, c:\  ; Open a folder.
+}
+else if winc_presses = 2 ; The key was pressed twice.
+{
+    Run, c:\windows  ; Open a different folder.
+}
+else if winc_presses &gt; 2
+{
+    MsgBox, Three or more clicks detected.
+}
+; Regardless of which action above was triggered, reset the count to
+; prepare for the next series of presses:
+winc_presses = 0
+return
+</code></pre>
+
+<h2 id="morse-hotkeys">Morse hotkeys</h2>
+
+<p>The <a href="https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns">forum thread on hold patterns</a>.</p>
+
+<pre><code class="language-autohotkey">Morse(timeout = 400) {
+   tout := timeout/1000
+   key := RegExReplace(A_ThisHotKey,"[\*\~\$\#\+\!\^]")
+   Loop {
+      t := A_TickCount
+      KeyWait %key%
+      Pattern .= A_TickCount-t &gt; timeout
+      KeyWait %key%,DT%tout%
+      If (ErrorLevel)
+         Return Pattern
+   }
+}
+
+; Use Backspace
+BS::MsgBox % "Morse press pattern " Morse()
+
+; Alt + Z
+!z::
+p := Morse()
+If (p = "0")
+  MsgBox Short press
+Else If (p = "00")
+  MsgBox Two short presses
+Else If (p = "01")
+  MsgBox Short+Long press
+Else
+  MsgBox Press pattern %p%
+Return
+</code></pre>
+<h1 id="other-1">Other</h1>
+
+<h2 id="waiting-for-something">Waiting for something</h2>
+
+<p>Wait for something to happen with <a href="https://autohotkey.com/docs/commands/SetTimer.htm"><code>SetTimer</code></a></p>
+
+<pre><code class="language-autohotkey">; Example #2: Wait for a certain window to appear and then alert the user:
+#Persistent
+SetTimer, Alert1, 500
+return
+
+Alert1:
+IfWinNotExist, Video Conversion, Process Complete
+    return
+
+; Otherwise:
+SetTimer, Alert1, Off  ; i.e. the timer turns itself off here.
+SplashTextOn, , , The video conversion is finished.
+Sleep, 3000
+SplashTextOff
+return
+</code></pre>
+
+<h2 id="suspension">Suspension</h2>
+
+<pre><code class="language-autohotkey">; Toggle script suspension
+^#s:: ; Control + Win + S
+Suspend
+Msgbox % "Script is now " (A_IsSuspended ? "suspended" : "running")
+Return
+</code></pre>
+
+<p>The <a href="https://autohotkey.com/docs/commands/Pause.htm"><code>Pause</code></a> keyword would halt the current thread 
+while <a href="https://autohotkey.com/docs/commands/Suspend.htm"><code>Suspend</code></a> stops all hotkeys from triggering.</p>
+
+<p>Start a script with <code>Suspend, Permit</code> to have that hotkey still trigger
+even while the script is suspended.</p>
+
+  </div><a class="u-url" href="/productivity/2018/05/02/autohotkey-hotkeys.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

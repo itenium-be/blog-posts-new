@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript Testing: Jasmine plugins | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="JavaScript Testing: Jasmine plugins" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What would we be without some extra plugins. There are over 1000 Jasmine npm packages and we’ll cover them all here." />
+<meta property="og:description" content="What would we be without some extra plugins. There are over 1000 Jasmine npm packages and we’ll cover them all here." />
+<link rel="canonical" href="https://itenium.be/javascript/2017/08/06/javascript-testing-jasmine-plugins.html" />
+<meta property="og:url" content="https://itenium.be/javascript/2017/08/06/javascript-testing-jasmine-plugins.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-08-06T22:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript Testing: Jasmine plugins" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2019-01-16T22:00:00+00:00","datePublished":"2017-08-06T22:00:00+00:00","description":"What would we be without some extra plugins. There are over 1000 Jasmine npm packages and we’ll cover them all here.","headline":"JavaScript Testing: Jasmine plugins","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/javascript/2017/08/06/javascript-testing-jasmine-plugins.html"},"url":"https://itenium.be/javascript/2017/08/06/javascript-testing-jasmine-plugins.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript Testing: Jasmine plugins</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-08-06T22:00:00+00:00" itemprop="datePublished">Aug 6, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>What would we be without some extra plugins. There
+are over 1000 Jasmine npm packages and we’ll cover them all here.</p>
+
+<!--more-->
+
+<p>Or apparently just</p>
+
+<p><a href="https://github.com/thlorenz/proxyquire" class="github">
+    <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>
+:
+    Proxies nodejs require in order to allow overriding dependencies during testing.</p>
+
+<p><br />
+and some custom reporters:</p>
+
+<p><a href="https://github.com/bcaudan/jasmine-spec-reporter" class="github">
+    <img src="https://img.shields.io/github/stars/bcaudan/jasmine-spec-reporter.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/bcaudan/jasmine-spec-reporter">bcaudan/jasmine-spec-reporter</a>
+:
+    Real time console spec reporter for jasmine testing framework</p>
+
+<p><a href="https://github.com/Marak/colors.js" class="github">
+    <img src="https://img.shields.io/github/stars/Marak/colors.js.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/Marak/colors.js">Marak/colors.js</a>
+:
+    Color configuration for jasmine-spec-reporter</p>
+
+<p><a href="https://github.com/larrymyers/jasmine-reporters" class="github">
+    <img src="https://img.shields.io/github/stars/larrymyers/jasmine-reporters.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/larrymyers/jasmine-reporters">larrymyers/jasmine-reporters</a>
+:
+    Reporter classes for the jasmine test framework.</p>
+
+<p><br />
+Other Jasmine plugins you might find useful:</p>
+
+<p><a href="https://github.com/node-nock/nock" class="github">
+    <img src="https://img.shields.io/github/stars/node-nock/nock.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/node-nock/nock">node-nock/nock</a>
+:
+    HTTP server mocking and expectations library for Node.js</p>
+
+<p><a href="https://github.com/visionmedia/supertest" class="github">
+    <img src="https://img.shields.io/github/stars/visionmedia/supertest.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/visionmedia/supertest">visionmedia/supertest</a>
+:
+    Super-agent driven library for testing node.js HTTP servers using a fluent API.</p>
+
+<p><a href="https://github.com/jhnns/rewire" class="github">
+    <img src="https://img.shields.io/github/stars/jhnns/rewire.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/jhnns/rewire">jhnns/rewire</a>
+:
+    Use <code>rewire('./file.js')</code> instead of <code>require()</code> and get a fresh copy each time</p>
+
+<h1 id="reporters">Reporters</h1>
+
+<h2 id="jasmine-spec-reporter">Jasmine Spec Reporter</h2>
+
+<p>Probably your goto console logger: <a href="https://github.com/bcaudan/jasmine-spec-reporter">jasmine-spec-reporter</a>:</p>
+
+<pre><code class="language-sh">npm install jasmine-spec-reporter --save-dev
+</code></pre>
+
+<p>Usage:</p>
+
+<pre><code class="language-js">const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+
+jasmine.getEnv().clearReporters();
+jasmine.getEnv().addReporter(new SpecReporter({
+  spec: {
+    displayPending: true,
+    // See configuration.d.ts for more config
+    // Colors: https://github.com/Marak/colors.js
+    colors: {
+        failed: 'magenta',
+        prettyStacktraceError: 'magenta',
+    }
+  }
+}));
+</code></pre>
+
+<h2 id="jasmine-reporters">Jasmine-Reporters</h2>
+
+<p>A collection of reporters: JUnitXmlReporter, NUnitXmlReporter,
+AppVeyor, TapReporter, TeamCityReporter and TerminalReporter.</p>
+
+<h1 id="proxyquire">Proxyquire</h1>
+
+<p>Stub imports of the code being tested.</p>
+
+<pre><code>npm install --save-dev proxyquire
+</code></pre>
+
+<p><strong>api.js</strong>:</p>
+<pre><code>module.exports = {
+  someLongRunningOperation: function() {
+    for (var i = 0; i &lt;= 1000; i++) {}
+  }
+};
+</code></pre>
+
+<p><strong>cut.js</strong>:</p>
+<pre><code class="language-js">const webApi = require('./api.js');
+module.exports = function() {
+  webApi.someLongRunningOperation();
+};
+</code></pre>
+
+<p><strong>spec.js</strong>:</p>
+<pre><code class="language-js">const proxyquire = require('proxyquire');
+var apiStub = {};
+const cut = proxyquire('./cut.js', {'./api.js': apiStub});
+
+describe('fake the api call', function() {
+  beforeEach(function() {
+    this.hasRunStub = false;
+    apiStub.someLongRunningOperation = () =&gt; this.hasRunStub = true;
+  });
+
+  it('should not actually call the api', function() {
+    cut();
+    expect(this.hasRunStub).toBe(true);
+  });
+});
+</code></pre>
+
+<h1 id="vscode-integration">VSCode Integration</h1>
+
+<p>The Jest VSCode test runner got me thinking, this probably also exists for Jasmine.</p>
+
+<p><a href="https://github.com/hbenl/vscode-jasmine-test-adapter" class="github">
+    <img src="https://img.shields.io/github/stars/hbenl/vscode-jasmine-test-adapter.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/hbenl/vscode-jasmine-test-adapter">hbenl/vscode-jasmine-test-adapter</a>
+:
+    Jasmine Test Adapter for the VS Code Test Explorer</p>
+
+<p>And <a href="https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code">instructions for setting up a <code>launch.json</code> on Stackoverflow</a></p>
+
+
+  </div><a class="u-url" href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

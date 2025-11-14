@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Performance optimization for ‘bundle exec jekyll serve’ | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Performance optimization for ‘bundle exec jekyll serve’" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Every change to a blog post on this website took a whopping 20 second delay before I could see the result." />
+<meta property="og:description" content="Every change to a blog post on this website took a whopping 20 second delay before I could see the result." />
+<link rel="canonical" href="https://itenium.be/ruby/2025/10/03/jekyll-serve-performance.html" />
+<meta property="og:url" content="https://itenium.be/ruby/2025/10/03/jekyll-serve-performance.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-10-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Performance optimization for ‘bundle exec jekyll serve’" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2025-10-03T00:00:00+00:00","datePublished":"2025-10-03T00:00:00+00:00","description":"Every change to a blog post on this website took a whopping 20 second delay before I could see the result.","headline":"Performance optimization for ‘bundle exec jekyll serve’","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/ruby/2025/10/03/jekyll-serve-performance.html"},"url":"https://itenium.be/ruby/2025/10/03/jekyll-serve-performance.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Performance optimization for &#39;bundle exec jekyll serve&#39;</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-10-03T00:00:00+00:00" itemprop="datePublished">Oct 3, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Every change to a blog post on this website took a whopping 20 second
+delay before I could see the result.</p>
+
+<p>The <a href="https://talk.jekyllrb.com/t/exclude-jekyll-feed-in-development-environment/2681/4">solution</a>
+was really simple, really. And was committed in the README as a TODO over 3 years ago.</p>
+
+<!--more-->
+
+<h1 id="upgrade-jekyll">Upgrade Jekyll</h1>
+
+<p>Upgrading Jekyll from v3.9.0 to 4.2.2 already brought the
+reload time down from <strong>20s to 12s</strong>.</p>
+
+<p>After updating the <code>Gemfile</code>, I also had to upgrade a few other gems:</p>
+
+<pre><code class="language-txt">gem "jekyll", "4.2.2"
+
+group :jekyll_plugins do
+  gem "kramdown-parser-gfm"
+  gem "jekyll-feed", "~&gt; 0.17"
+  gem "jekyll-paginate", "~&gt; 1.1.0"
+  gem "jemoji", "~&gt; 0.13.0"
+  gem "jekyll-gist", "~&gt; 1.5.0"
+  gem "jekyll-avatar", "~&gt; 0.8.0"
+  gem "jekyll-redirect-from"
+end
+</code></pre>
+
+<p>And then apply the changes with <code>bundle update</code>.</p>
+
+<p>There probably isn’t much you have to do when <a href="https://jekyllrb.com/docs/upgrading/3-to-4/">upgrading from v3 to v4</a>.</p>
+
+<ul>
+  <li><code>ruby -v</code> needs to be &gt;=2.7.0</li>
+  <li><code>{{ site.baseurl }}/{% post_url some-post %}</code> -&gt; <code>{% post_url some-post %}</code></li>
+</ul>
+
+<h1 id="incremental-serving">Incremental Serving</h1>
+
+<p>The next logical step is to only re-render what has actually changed.
+This reduced reload times from <strong>12s to 3s</strong> 🎉🥳</p>
+
+<pre><code class="language-ps1">bundle exec jekyll serve --incremental
+
+# or:
+bundle exec jekyll serve -I
+</code></pre>
+
+<h2 id="caveat">Caveat</h2>
+
+<p>The <code>--incremental</code> will only update file(s) that have actually changed.
+This means that a new post will not appear in your blog post listing /
+home page because <strong>that</strong> file has not changed…</p>
+
+<p>To force an update:</p>
+
+<pre><code class="language-ps1">touch blog/index.html
+</code></pre>
+
+<p>Which works on my Windows system because of this function:</p>
+
+<pre><code class="language-ps1">function touch($file) {
+	if (Test-Path $file) {
+		(Get-ChildItem $file).LastWriteTime = Get-Date
+	} else {
+		$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+		$path = Get-Location
+		$path = Join-Path -Path $path -ChildPath $file
+		[System.IO.File]::WriteAllText($path, "", $Utf8NoBomEncoding)
+	}
+}
+</code></pre>
+
+<p>For pages like that, you can automate this by adding to the front matter:</p>
+
+<pre><code class="language-yaml">regenerate: true
+</code></pre>
+
+<h2 id="windows-directory-monitor">Windows Directory Monitor</h2>
+
+<p><a href="https://github.com/Maher4Ever/wdm" class="github">
+    <img src="https://img.shields.io/github/stars/Maher4Ever/wdm.svg?style=social&amp;label=Star" />
+</a>
+<a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>
+:
+    A threaded directories monitor for Windows.</p>
+
+<p>For Windows, you also need to add <code>wdm</code> to the <code>Gemfile</code>:</p>
+
+<pre><code class="language-txt"># Performance-booster for watching directories on Windows
+gem "wdm", "~&gt; 0.2.0", :platforms =&gt; [:mingw, :x64_mingw, :mswin]
+</code></pre>
+
+<p><code>bundle install</code> and you’re ready to go!</p>
+
+<h1 id="development-configyml">Development config.yml</h1>
+
+<p>This can be improved even further by not doing some plugin work
+that is typically not necessary during development anyway.</p>
+
+<pre><code class="language-ps1">bundle exec jekyll serve --incremental --config _config_dev.yml
+</code></pre>
+
+<p>In the copied <code>_config_dev.yml</code> I removed all the gems in
+<code>group :jekyll_plugins do</code>.</p>
+
+<p>This however only reduced the reload time by 0.5s which wasn’t worth
+it for me as I’d have to keep two config.ymls in sync.</p>
+
+<h2 id="limit-posts">Limit Posts</h2>
+
+<p>In the <code>_config_dev.yml</code>, you can specify to only render the last x posts.
+This turned out to be not very useful because the profiler told me
+that most time is spent on reading and not so much on the rendering
+phase.</p>
+
+<pre><code class="language-yaml"># While this seems like a super great idea, this no longer makes
+# it possible to use post_url to point to a post that is older..
+limit_posts: 20
+</code></pre>
+
+<h1 id="profiling">Profiling</h1>
+
+<p>If it’s still taking too long, you can use <code>--profile</code> to figure out
+what’s going on.</p>
+
+<pre><code class="language-ps1">bundle exec jekyll serve --profile
+</code></pre>
+
+<h1 id="powershell-profile">PowerShell Profile</h1>
+
+<p>I have these added to my <a href="/dev-setup/2017/04/11/powershell-profiles.html">ps profile</a>,
+because who wants to remember/write all the bundle exec etc etc 😀</p>
+
+<pre><code class="language-ps1">function Start-Jekyll {
+	bundle exec jekyll serve --incremental
+}
+function Start-JekyllWithDrafts {
+	bundle exec jekyll serve --drafts --incremental
+}
+function Start-JekyllDev {
+	bundle exec jekyll serve --incremental --config _config_dev.yml
+}
+function Start-JekyllDevWithDrafts {
+	bundle exec jekyll serve --drafts --incremental --config _config_dev.yml
+}
+
+Set-Alias bejs Start-Jekyll
+Set-Alias bejsd Start-JekyllWithDrafts
+Set-Alias bejsdev Start-JekyllDev
+Set-Alias bejsddev Start-JekyllDevWithDrafts
+</code></pre>
+
+  </div><a class="u-url" href="/ruby/2025/10/03/jekyll-serve-performance.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

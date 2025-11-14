@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>.NET Number and Date Formatting | itenium</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content=".NET Number and Date Formatting" />
+<meta name="author" content="Wouter Van Schandevijl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A cheat sheet with everything there is to know about formatting the primitive types, DateTimes and TimeSpans in .NET." />
+<meta property="og:description" content="A cheat sheet with everything there is to know about formatting the primitive types, DateTimes and TimeSpans in .NET." />
+<link rel="canonical" href="https://itenium.be/dotnet/2017/04/20/dot-net-number-and-date-formatting.html" />
+<meta property="og:url" content="https://itenium.be/dotnet/2017/04/20/dot-net-number-and-date-formatting.html" />
+<meta property="og:site_name" content="itenium" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-04-20T13:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content=".NET Number and Date Formatting" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wouter Van Schandevijl"},"dateModified":"2017-04-20T13:00:00+00:00","datePublished":"2017-04-20T13:00:00+00:00","description":"A cheat sheet with everything there is to know about formatting the primitive types, DateTimes and TimeSpans in .NET.","headline":".NET Number and Date Formatting","mainEntityOfPage":{"@type":"WebPage","@id":"https://itenium.be/dotnet/2017/04/20/dot-net-number-and-date-formatting.html"},"url":"https://itenium.be/dotnet/2017/04/20/dot-net-number-and-date-formatting.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://itenium.be/feed.xml" title="itenium" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">itenium</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">.NET Number and Date Formatting</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-04-20T13:00:00+00:00" itemprop="datePublished">Apr 20, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Wouter Van Schandevijl</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>A cheat sheet with everything there is to know about 
+formatting the primitive types, <code>DateTime</code>s and <code>TimeSpan</code>s in .NET.</p>
+
+<!--more-->
+
+<h1 id="stringify">Stringify</h1>
+
+<p>The different ways of formatting these ValueTypes.</p>
+<pre><code class="language-c#">// ValueType.ToString("format");
+Console.Write(5000.ToString("#,##0"));
+
+// Composite Formatting
+Console.WriteLine("{0:yyyy-MM-dd HH:mm:ss}", DateTime.Now);
+
+var str = new StringBuilder();
+str.AppendFormat("{0:F} - {1:0.00}", 1, 2);
+
+using (var stream = new StreamWriter(@"c:\temp\aargh.txt"))
+{
+	stream.Write("{0} -&gt; {1}", 1, 2);
+}
+
+// String interpolation
+int i = 5;
+Debug.WriteLine($"{i:F}");
+
+// Escaping {}
+Debug.WriteLine("{{0}} = {0}", 5); // {0} = 5
+// Nested braces like {{0:D}} are NOT supported
+
+// Optional alignment component
+// Positive: Right-align
+// Negative: Left-align
+var table = new StringBuilder();
+table.AppendFormat("{0,-10} | {1,5}\n", "Name", "Age");
+table.AppendFormat("{0,-10} | {1,5:F}\n", "Bob", 18);
+table.AppendFormat("{0,-10} | {1,5:F}\n", "Alice", 24);
+table.AppendFormat("{0,-10} | {1,5:F}\n", "Methuselah", 969);
+
+// table.ToString():
+Name       |   Age
+Bob        | 18.00
+Alice      | 24.00
+Methuselah | 969.00
+</code></pre>
+
+<hr />
+
+<h1 id="cultures">Cultures</h1>
+
+<p>The culture for all threads defaults to the Windows system culture.</p>
+
+<pre><code class="language-c#">using System.Threading;
+using System.Globalization;
+
+// Number, Date, ... formatting
+Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
+// Translations from ResX files
+Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+</code></pre>
+
+<p>Starting from .NET Framework 4.5, default cultures can be set for all new and all existing
+threads in the AppDomain that have not explicitly set their <code>CurrentThread.CurrentCulture</code>.</p>
+
+<pre><code class="language-c#">CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
+</code></pre>
+
+<hr />
+
+<h1 id="number-formatting">Number Formatting</h1>
+<h3 id="standard-numeric-formats">Standard Numeric Formats</h3>
+
+<pre><code class="language-c#">decimal m = 1000.5050M;
+string pretty = money.ToString(SomeFormat);
+</code></pre>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>SomeFormat</th>
+      <th>Name</th>
+      <th>Result en-US</th>
+      <th>Result nl-BE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C</td>
+      <td>Currency</td>
+      <td>$1,000.51</td>
+      <td>€ 1.000,51</td>
+    </tr>
+    <tr>
+      <td>C0</td>
+      <td> </td>
+      <td>$1,001</td>
+      <td>€ 1.001</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td> </td>
+      <td>$1,000.505</td>
+      <td>€ 1.000,505</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>Percent</td>
+      <td>100,050.50 %</td>
+      <td>100 050,50%</td>
+    </tr>
+    <tr>
+      <td>0.5 (“P1”)</td>
+      <td> </td>
+      <td>50.0 %</td>
+      <td>50,0%</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>Number</td>
+      <td>1,000.51</td>
+      <td>1 000,51</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code>SomeFormat</code> is case insensitive. All standard numeric formats
+may be suffixed with an optional precision specifier. If no
+number is provided, it defaults to the value of <code>CurrencyDecimalDigits</code>
+in the configuration of the current culture <code>NumberFormatInfo</code>.</p>
+<pre><code class="language-c#">Thread.CurrentThread.CurrentCulture.NumberFormat
+</code></pre>
+
+<p>Other standard numeric formats:</p>
+<pre><code class="language-c#">// Pad integral types (int, byte, long, ...)
+15.ToString("D4"); // 0015
+
+// Fixed point
+15.495.ToString("F"); // 15.50
+
+// Round-trip (Single, Double, BigInteger)
+// ATTN: /platform:x64 vs /platform:anycpu (Use "G17" instead?)
+(15.0123453f).ToString("N7"); // 15.0123500
+(15.0123453f).ToString("R0"); // 15.0123453
+
+// "E" =&gt; Exponential notation
+// "G" =&gt; General, the more compact of either "F" or "E" (default)
+// "X" =&gt; Hexidecimal (integral only)
+</code></pre>
+
+<h3 id="custom-formats">Custom formats:</h3>
+
+<table class="table-base">
+  <thead>
+    <tr>
+      <th>Specifier</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Zero placeholder (force display)</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Digit placeholder (do not display non-significant)</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>Decimal point</td>
+    </tr>
+    <tr>
+      <td>,</td>
+      <td>Thousands separator</td>
+    </tr>
+    <tr>
+      <td>\</td>
+      <td>Escape next character</td>
+    </tr>
+    <tr>
+      <td>‘string’</td>
+      <td>Escape entire string</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-c#">// Explicitly show the +/- sign
+10.ToString("positive;negative;zero"); // positive
+10.ToString("+#;-#;0"); // +10
+0.ToString("+0;-0"); // +0
+
+// Percentage (NumberFormatInfo.PercentSymbol)
+0.01.ToString("#%"); // 1%
+
+// ‰ == "\u2030" (Per mille)
+0.01.ToString("#\u2030"); // 10‰
+
+// , is also used as number scaling specifier
+// Where each , divides the number by 1000
+123456789.ToString("#,,"); // 123
+
+// Bananas (https://www.youtube.com/watch?v=EdR72ACz_xI)
+1234586789.ToString(@"\##,##0.00\#"); // #1,234,586,789.00#
+1234586789.ToString(@"\##,##0,,.00\#"); // #1,234.59#
+8009999999.ToString("000-000-0000"); // 800-999-9999
+</code></pre>
+
+<hr />
+
+<h1 id="date-formatting">Date Formatting</h1>
+<h3 id="standard-date-and-time-format-strings">Standard Date and Time Format Strings</h3>
+
+<p>Configuration: <code>System.Globalization.DateTimeFormatInfo</code></p>
+
+<pre><code class="language-c#">var dt = new DateTime(2017, 1, 31, 22, 15, 59);
+</code></pre>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Name</th>
+      <th>Result en-US</th>
+      <th>Result nl-BE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>d</td>
+      <td>Short date</td>
+      <td>1/31/2017</td>
+      <td>31/01/2017</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Long date</td>
+      <td>Tuesday, January 31, 2017</td>
+      <td>dinsdag 31 januari 2017</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>Full (short time)</td>
+      <td>Tuesday, January 31, 2017 10:15 PM</td>
+      <td>dinsdag 31 januari 2017 22:15</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Full (long time)</td>
+      <td>Tuesday, January 31, 2017 10:15:59 PM</td>
+      <td>dinsdag 31 januari 2017 22:15:59</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>Universal full</td>
+      <td>Like “F” but converted to UTC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>General (short time)</td>
+      <td>1/31/2017 10:15 PM</td>
+      <td>31/01/2017 22:15</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>General (long time)</td>
+      <td>1/31/2017 10:15:59 PM</td>
+      <td>31/01/2017 22:15:59</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Partials</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>M / m</td>
+      <td>Month/day</td>
+      <td>January 31</td>
+      <td>31 januari</td>
+    </tr>
+    <tr>
+      <td>Y / y</td>
+      <td>Year/month</td>
+      <td>January 2017</td>
+      <td>januari 2017</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>Short time</td>
+      <td>10:15 PM</td>
+      <td>22:15</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>Long time</td>
+      <td>10:15:59 PM</td>
+      <td>22:15:59</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Culture insensitive formats</strong></p>
+
+<pre><code class="language-c#">var dt = new DateTime(2017, 1, 31, 22, 15, 59);
+var dto = new DateTimeOffset(dt, TimeSpan.FromHours(2));
+</code></pre>
+
+<table class="table-code">
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Name</th>
+      <th>dt.ToString(“format”)</th>
+      <th>dto.ToString(“format”)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>s</td>
+      <td>Sortable</td>
+      <td>2017-01-31T22:15:59</td>
+      <td>2017-01-31T22:15:59</td>
+    </tr>
+    <tr>
+      <td>O / o</td>
+      <td>Round-trip</td>
+      <td>2017-01-31T22:15:59.0000000</td>
+      <td>2017-01-31T22:15:59.0000000+02:00</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Universal sortable</td>
+      <td>2017-01-31 22:15:59Z</td>
+      <td>2017-01-31 20:15:59Z</td>
+    </tr>
+    <tr>
+      <td>R / r</td>
+      <td>RFC1123</td>
+      <td>Tue, 31 Jan 2017 22:15:59 GMT</td>
+      <td>Tue, 31 Jan 2017 20:15:59 GMT</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="custom-date-and-time-format-strings">Custom Date and Time Format Strings</h3>
+
+<table class="table-base">
+  <thead>
+    <tr>
+      <th>Specifier</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Date</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>Day of month (1 -&gt; 31)</td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>01 -&gt; 31</td>
+    </tr>
+    <tr>
+      <td>ddd</td>
+      <td>Mon -&gt; Sun</td>
+    </tr>
+    <tr>
+      <td>dddd</td>
+      <td>Monday -&gt; Sunday</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>Month of year (1 -&gt; 12)</td>
+    </tr>
+    <tr>
+      <td>MM</td>
+      <td>01 -&gt; 12</td>
+    </tr>
+    <tr>
+      <td>MMM</td>
+      <td>Jan -&gt; Dec</td>
+    </tr>
+    <tr>
+      <td>MMMM</td>
+      <td>January -&gt; December</td>
+    </tr>
+    <tr>
+      <td>y</td>
+      <td>Year (0 -&gt; 99)</td>
+    </tr>
+    <tr>
+      <td>yy</td>
+      <td>00 -&gt; 99</td>
+    </tr>
+    <tr>
+      <td>yyyy</td>
+      <td>0001 -&gt; 2017</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>Hour (1 -&gt; 12)</td>
+    </tr>
+    <tr>
+      <td>HH</td>
+      <td>01 -&gt; 24</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>Minute (1 -&gt; 59)</td>
+    </tr>
+    <tr>
+      <td>mm</td>
+      <td>01 -&gt; 59</td>
+    </tr>
+    <tr>
+      <td>ss</td>
+      <td>Second (01 -&gt; 59)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Special</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>:</td>
+      <td>Time separator</td>
+    </tr>
+    <tr>
+      <td>tt</td>
+      <td>AM/PM</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>Fractional seconds separator</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Date separator</td>
+    </tr>
+    <tr>
+      <td>‘literal’</td>
+      <td>String literal</td>
+    </tr>
+    <tr>
+      <td>“literal”</td>
+      <td>String literal</td>
+    </tr>
+    <tr>
+      <td>\</td>
+      <td>Escape character</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-c#">// Use % for single character custom formats
+DateTime.Now.ToString("%M");
+
+// Other:
+// g -&gt; A.D
+// K -&gt; Time zone info: Kind Unspecified, Kind Utc, Kind Local or -01:00
+// fff -&gt; Milliseconds (Other from f to FFFFFFF)
+// z -&gt; Hours offset from Utc
+</code></pre>
+
+<h2 id="timespan-formatting">TimeSpan Formatting</h2>
+
+<pre><code class="language-c#">var span = new TimeSpan(31, 22, 15, 59);
+</code></pre>
+
+<table class="table-base">
+  <thead>
+    <tr>
+      <th>Specifier</th>
+      <th>Format</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c</td>
+      <td>[d’.’]hh’:’mm’:’ss[’.’fffffff]</td>
+      <td>31.22:15:59</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>[-][d’:’]h’:’mm’:’ss[.FFFFFFF]</td>
+      <td>31:22:15:59</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>[-]d’:’hh’:’mm’:’ss.fffffff</td>
+      <td>31:22:15:59.0000000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The square brackets will omit the part if not significant. They are not valid as custom format.</p>
+
+<p><strong>Custom formats</strong>:<br />
+Like Date Custom formats but each part represents the whole part in the time interval.</p>
+<pre><code class="language-c#">span.ToString(@"dd\.hh\:mm\:ss"); // 31.22:15:59
+Console.WriteLine("{0:%d}", span); // 31
+Console.WriteLine("{0:ddddd}", span); // 00031
+</code></pre>
+
+  </div><a class="u-url" href="/dotnet/2017/04/20/dot-net-number-and-date-formatting.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">itenium</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">itenium</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
