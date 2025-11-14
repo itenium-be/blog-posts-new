@@ -26,9 +26,9 @@ group :jekyll_plugins do
   #  gem "kramdown-parser-gfm"
   #  gem "jekyll-feed", "~> 0.17"
   #  gem "jekyll-paginate", "~> 1.1.0"
-  #  gem "jemoji", "~> 0.13.0"
-  #  gem "jekyll-gist", "~> 1.5.0"
-  #  gem "jekyll-avatar", "~> 0.8.0"
+   gem "jemoji", "~> 0.13.0"
+   gem "jekyll-gist", "~> 1.5.0"
+   gem "jekyll-avatar", "~> 0.8.0"
   #  gem "jekyll-redirect-from"
 end
 
