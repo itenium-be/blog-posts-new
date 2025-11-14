@@ -68,7 +68,17 @@ layout: null
       {%- endif %}
     </toc>
     {%- endif %}
-    <body><![CDATA[{{ post.content }}]]></body>
+    <excerpt><![CDATA[{{ post.excerpt }}]]></excerpt>
+    {%- assign content_parts = post.content | split: "<!--block1-->" %}
+    {%- if content_parts.size > 1 %}
+      {%- assign before_block1 = content_parts[0] | split: "<!--more-->" %}
+      {%- if before_block1.size > 1 %}
+      <block1><![CDATA[{{ before_block1[1] }}]]></block1>
+      {%- endif %}
+      <body><![CDATA[{{ content_parts[1] }}]]></body>
+    {%- else %}
+      <body><![CDATA[{{ post.content }}]]></body>
+    {%- endif %}
   </post>
 {%- endfor %}
 </blog-posts>
