@@ -5,6 +5,7 @@
     <author>Wouter Van Schandevijl</author>
     <subTitle>Because why stop at GitHub Repositories</subTitle>
     <date>2025-10-23T00:00:00+00:00</date>
+    <print_date>2025-10-23T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/starify-links/</url>
     <category>javascript</category>
     <tags>product</tags>
@@ -142,6 +143,7 @@ took to get it back on track!</p>]]></body>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Required for 100MB+ files on Github</subTitle>
     <date>2025-10-11T00:00:00+00:00</date>
+    <print_date>2025-10-11T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/git-lfs/</url>
     <category>dev-setup</category>
     <tags>tutorial,windows</tags>
@@ -238,6 +240,7 @@ remote: warning: GH001: Large files detected. You may want to try Git Large File
     <author>Wouter Van Schandevijl</author>
     <subTitle>Because waiting 20+ seconds is just not acceptable</subTitle>
     <date>2025-10-03T00:00:00+00:00</date>
+    <print_date>2025-10-03T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/ruby/jekyll-serve-performance/</url>
     <category>ruby</category>
     <tags>powershell,windows,war-story</tags>
@@ -417,6 +420,7 @@ Set-Alias bejsddev Start-JekyllDevWithDrafts
     <title>Excel formulas cheat sheet</title>
     <author>Wouter Van Schandevijl</author>
     <date>2025-10-02T00:00:00+00:00</date>
+    <print_date>2025-10-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/excel-formulas-cheat-sheet-closedxml/</url>
     <category>dotnet</category>
     <tags>excel,cheat-sheet</tags>
@@ -938,6 +942,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <title>Create Excels with C# and ClosedXML: Miscellaneous</title>
     <author>Wouter Van Schandevijl</author>
     <date>2025-10-01T00:00:00+00:00</date>
+    <print_date>2025-10-01T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -1254,6 +1259,7 @@ ws.Cell(3, 1).CreateRichText()
     <title>Create Excels with C# and ClosedXML: Formulas &amp; DataValidation</title>
     <author>Wouter Van Schandevijl</author>
     <date>2025-09-30T00:00:00+00:00</date>
+    <print_date>2025-09-30T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -1526,6 +1532,7 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
     <title>Create Excels with C# and ClosedXML: A tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2025-09-29T00:00:00+00:00</date>
+    <print_date>2025-09-29T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-closedxml-csharp/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -1951,6 +1958,7 @@ sheet1.CopyTo(workbook, "Copy");
     <author>Bert Vermorgen</author>
     <subTitle>A great mix of deep dives, practical tips, and renewed perspectives</subTitle>
     <date>2025-07-04T00:00:00+00:00</date>
+    <print_date>2025-07-04T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/ddd-europe-2025/</url>
     <category>trends</category>
     <tags>war-story,tech-talk</tags>
@@ -2030,6 +2038,7 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
     <author>Wouter Van Schandevijl</author>
     <subTitle>Just clicking through some forms</subTitle>
     <date>2025-06-22T00:00:00+00:00</date>
+    <print_date>2025-06-22T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/docker/reverse-proxy-for-synology-container/</url>
     <category>docker</category>
     <tags>synology</tags>
@@ -2114,6 +2123,7 @@ it on your Synology in a Docker container.</p>
     <author>Van Schandevijl Wouter</author>
     <subTitle>It just worked on Windows 😀</subTitle>
     <date>2025-05-02T00:00:00+00:00</date>
+    <print_date>2025-05-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/docker/ml-net-lightgbm-docker/</url>
     <category>docker</category>
     <tags>war-story,net,synology</tags>
@@ -2237,6 +2247,7 @@ ldd /usr/local/lib/lib_lightgbm.so
     <author>Wouter Van Schandevijl</author>
     <subTitle>Check broken links and typos</subTitle>
     <date>2025-04-20T00:00:00+00:00</date>
+    <print_date>2025-04-20T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/site-typo-scanner/</url>
     <category>productivity</category>
     <tags>tutorial</tags>
@@ -2352,6 +2363,7 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
     <author>Wouter Van Schandevijl</author>
     <subTitle>Smart Socket soldering and Home Assistant integration</subTitle>
     <date>2025-04-16T00:00:00+00:00</date>
+    <print_date>2025-04-16T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/bootcamp-home-automation/</url>
     <category>productivity</category>
     <tags>fun</tags>
@@ -2479,6 +2491,7 @@ And now to find something cool for next year! 😀</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Just what we needed, choices.</subTitle>
     <date>2025-04-16T00:00:00+00:00</date>
+    <print_date>2025-04-16T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/dotnet-json/</url>
     <category>dotnet</category>
     <tags>tutorial</tags>
@@ -2962,6 +2975,7 @@ public class PersonWithAttributes
     <author>Wouter Van Schandevijl</author>
     <subTitle>Make sure your controller action methods are properly secured, automatically, on your CI</subTitle>
     <date>2025-04-14T00:00:00+00:00</date>
+    <print_date>2025-04-14T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/check-web-api-security/</url>
     <category>dotnet</category>
     <tags>testing,war-story</tags>
@@ -3135,6 +3149,7 @@ if (unsecured.Any())
     <author>Wouter Van Schandevijl</author>
     <subTitle>Batteries Included: Reselect</subTitle>
     <date>2025-02-27T00:00:00+00:00</date>
+    <print_date>2025-02-27T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit-createSelector/</url>
     <category>javascript</category>
     <tags>tutorial,react</tags>
@@ -3452,6 +3467,7 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
     <author>Wouter Van Schandevijl</author>
     <subTitle>How to keep all this type-safe</subTitle>
     <date>2025-02-17T00:00:00+00:00</date>
+    <print_date>2025-02-17T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit-typescript/</url>
     <category>javascript</category>
     <tags>tutorial,react</tags>
@@ -3524,6 +3540,7 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
     <author>Wouter Van Schandevijl</author>
     <subTitle>Let&apos;s do some API calls shall we</subTitle>
     <date>2025-02-13T00:00:00+00:00</date>
+    <print_date>2025-02-13T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit-createAsyncThunk/</url>
     <category>javascript</category>
     <tags>tutorial,react</tags>
@@ -3750,6 +3767,7 @@ const creatorSlice = createAppSlice({
     <author>Wouter Van Schandevijl</author>
     <subTitle>The very minimum you need to know</subTitle>
     <date>2025-02-08T00:00:00+00:00</date>
+    <print_date>2025-02-08T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit-createSlice/</url>
     <category>javascript</category>
     <tags>tutorial,react</tags>
@@ -4100,6 +4118,7 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
     <author>Wouter Van Schandevijl</author>
     <subTitle>Seamless immutability with immer</subTitle>
     <date>2025-02-07T00:00:00+00:00</date>
+    <print_date>2025-02-07T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit-immer/</url>
     <category>javascript</category>
     <tags>tutorial,react</tags>
@@ -4425,6 +4444,7 @@ const TodoAdd = () =&gt; {
     <author>Wouter Van Schandevijl</author>
     <subTitle>The opinionated way of building Redux apps</subTitle>
     <date>2025-02-06T00:00:00+00:00</date>
+    <print_date>2025-02-06T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/reduxjs-toolkit/</url>
     <category>javascript</category>
     <tags>tutorial,react,war-story</tags>
@@ -4637,6 +4657,7 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
     <author>Wouter Van Schandevijl</author>
     <subTitle>Just what is going on here</subTitle>
     <date>2025-01-31T00:00:00+00:00</date>
+    <print_date>2025-01-31T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/docker/generated-files-and-synology-cloud-sync/</url>
     <category>docker</category>
     <tags>synology</tags>
@@ -4774,6 +4795,7 @@ but, of course, that doesn’t work.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Shorter &amp; Sweeter</subTitle>
     <date>2024-12-15T00:00:00+00:00</date>
+    <print_date>2024-12-15T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/angular-new-template-syntax/</url>
     <category>javascript</category>
     <tags>tutorial,angular</tags>
@@ -4912,6 +4934,7 @@ Nr = {{ randomNr }}
     <author>Wouter Van Schandevijl</author>
     <subTitle>Testing internal methods of a class</subTitle>
     <date>2024-12-08T00:00:00+00:00</date>
+    <print_date>2024-12-08T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/testing-internals/</url>
     <category>dotnet</category>
     <tags>testing</tags>
@@ -5061,6 +5084,7 @@ and “encapsulation” instead!</p>]]></body>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Recover your mac without password</subTitle>
     <date>2024-12-01T00:00:00+00:00</date>
+    <print_date>2024-12-01T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/reset-imac/</url>
     <category>dev-setup</category>
     <tags>tutorial</tags>
@@ -5138,6 +5162,7 @@ At that point you can also kill the old user.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Keep track of what&apos;s happening</subTitle>
     <date>2024-10-26T00:00:00+00:00</date>
+    <print_date>2024-10-26T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/db-audit-ef/</url>
     <category>dotnet</category>
     <tags>tutorial,sql</tags>
@@ -5550,6 +5575,7 @@ really track everything 😀</p>]]></body>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Gamification - our internal SQL competition</subTitle>
     <date>2024-10-03T00:00:00+00:00</date>
+    <print_date>2024-10-03T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/databases/sql-training/</url>
     <category>databases</category>
     <tags>sql,product,fun</tags>
@@ -5794,6 +5820,7 @@ An exercise on joining a table with itself.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Avoid pushing changes that break the build with githooks and Husky.</subTitle>
     <date>2024-09-08T00:00:00+00:00</date>
+    <print_date>2024-09-08T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9/</url>
     <category>dev-setup</category>
     <tags>git</tags>
@@ -5975,6 +6002,7 @@ exit $hasBuildErrors
     <author>Wouter Van Schandevijl</author>
     <subTitle>Decorators: a powerful and often misused design pattern</subTitle>
     <date>2024-09-03T00:00:00+00:00</date>
+    <print_date>2024-09-03T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/kiss-decorators/</url>
     <category>design</category>
     <tags>war-story</tags>
@@ -6151,6 +6179,7 @@ without any of the benefits.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Setup your machine for the itenium Frontend Track</subTitle>
     <date>2024-08-31T00:00:00+00:00</date>
+    <print_date>2024-08-31T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/itenium-frontend-track-setup/</url>
     <category>dev-setup</category>
     <tags>tutorial,windows,testing,debugging</tags>
@@ -6795,6 +6824,7 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
     <author>Wouter Van Schandevijl</author>
     <subTitle>Load data with js or sh</subTitle>
     <date>2024-08-18T00:00:00+00:00</date>
+    <print_date>2024-09-13T22:00:00+00:00</print_date>
     <last_modified_at>2024-09-13T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/docker/docker-mongo/</url>
     <category>docker</category>
@@ -7180,6 +7210,7 @@ CMD ["mongod"]
     <title>Git Pull Request Hygiene</title>
     <author>Wouter Van Schandevijl</author>
     <date>2024-06-08T00:00:00+00:00</date>
+    <print_date>2024-06-08T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/git-pull-request-hygiene/</url>
     <category>productivity</category>
     <tags>git,war-story</tags>
@@ -7506,6 +7537,7 @@ especially when it happens time and time again…</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>How to setup your brand new Synology</subTitle>
     <date>2024-06-01T00:00:00+00:00</date>
+    <print_date>2024-06-01T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/synology-setup/</url>
     <category>productivity</category>
     <tags>synology</tags>
@@ -7827,6 +7859,7 @@ services:
     <author>Wouter Van Schandevijl</author>
     <subTitle>A little internal &apos;best screenshot&apos; competition!</subTitle>
     <date>2024-03-25T00:00:00+00:00</date>
+    <print_date>2024-03-25T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/bootcamp-3d-modelling/</url>
     <category>design</category>
     <tags>fun</tags>
@@ -7944,6 +7977,7 @@ with terrain and foliage assets.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Start our game of capture the flag with an edge</subTitle>
     <date>2024-03-16T00:00:00+00:00</date>
+    <print_date>2024-03-16T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/security/security-bootcamp-prep/</url>
     <category>security</category>
     <tags>tutorial,hacking</tags>
@@ -8176,6 +8210,7 @@ as passphrase and score Vault multipliers.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Comparing NUnit, xUnit, MSTest and TUnit</subTitle>
     <date>2024-03-13T00:00:00+00:00</date>
+    <print_date>2025-03-11T22:00:00+00:00</print_date>
     <last_modified_at>2025-03-11T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/testing-frameworks/</url>
     <category>dotnet</category>
@@ -8787,6 +8822,7 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
     <author>Simon Verhoeven</author>
     <subTitle>Not just a rebranding!</subTitle>
     <date>2024-02-16T00:00:00+00:00</date>
+    <print_date>2024-02-16T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/angular17/</url>
     <category>javascript</category>
     <tags>angular</tags>
@@ -8945,6 +8981,7 @@ It’s also quite easy to add an empty placeholder.</p>
     <author>Simon Verhoeven</author>
     <subTitle>Cute, fuzzy little refactorings that nobody could possibly hate on</subTitle>
     <date>2023-12-24T00:00:00+00:00</date>
+    <print_date>2023-12-24T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/tidy-first/</url>
     <category>design</category>
     <tags>book-review</tags>
@@ -9049,6 +9086,7 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     <author>Sofie Vinck</author>
     <subTitle>Beyond Algorithms: Explainable AI</subTitle>
     <date>2023-10-19T00:00:00+00:00</date>
+    <print_date>2023-10-19T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/european-women-in-tech-2023/</url>
     <category>trends</category>
     <tags>war-story,tech-talk</tags>
@@ -9123,6 +9161,7 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     <author>Van Schandevijl Wouter</author>
     <subTitle>Extensive guide on React performance optimalization in a real-world application</subTitle>
     <date>2023-10-06T00:00:00+00:00</date>
+    <print_date>2023-10-06T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/react-component-profiling/</url>
     <category>javascript</category>
     <tags>react,war-story</tags>
@@ -9716,6 +9755,7 @@ function callback(id, phase, actualDuration) {
     <author>Wouter Van Schandevijl</author>
     <subTitle>Michiel&apos;s latest hands-on workshop</subTitle>
     <date>2023-10-05T00:00:00+00:00</date>
+    <print_date>2023-10-05T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/build-your-own-macropad/</url>
     <category>dev-setup</category>
     <tags>fun,tech-talk</tags>
@@ -9836,6 +9876,7 @@ of Michiel.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Strengthen Your Organization&apos;s Defenses with our Security Bootcamp</subTitle>
     <date>2023-10-04T00:00:00+00:00</date>
+    <print_date>2023-10-04T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/security/introducing-the-security-bootcamp/</url>
     <category>security</category>
     <tags>hacking</tags>
@@ -9931,6 +9972,7 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Database takeover tool</subTitle>
     <date>2023-10-03T00:00:00+00:00</date>
+    <print_date>2023-10-03T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/security/hacking-tool-sqlmap/</url>
     <category>security</category>
     <tags>tutorial,hacking</tags>
@@ -10038,6 +10080,7 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Brute force login cracker</subTitle>
     <date>2023-10-02T00:00:00+00:00</date>
+    <print_date>2023-10-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/security/hacking-tool-hydra/</url>
     <category>security</category>
     <tags>tutorial,hacking</tags>
@@ -10130,6 +10173,7 @@ Security Bootcamp for such clue!</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>The free Network Mapper</subTitle>
     <date>2023-10-01T00:00:00+00:00</date>
+    <print_date>2023-10-01T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/security/hacking-tool-nmap/</url>
     <category>security</category>
     <tags>tutorial,hacking</tags>
@@ -10262,6 +10306,7 @@ an nmap scan to discover services that are not (yet) available directly from the
     <author>Van Schandevijl Wouter</author>
     <subTitle>Implementation was easy enough. Is ChatGPT up for the task?</subTitle>
     <date>2023-07-05T00:00:00+00:00</date>
+    <print_date>2023-07-05T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/ai-the-slack-meme-bot/</url>
     <category>javascript</category>
     <tags>product,fun</tags>
@@ -10615,6 +10660,7 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
     <author>Van Schandevijl Wouter</author>
     <subTitle>How was the Slack Meme Bot implemented?</subTitle>
     <date>2023-07-04T00:00:00+00:00</date>
+    <print_date>2023-07-04T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/implementing-the-slack-meme-bot/</url>
     <category>javascript</category>
     <tags>product,fun</tags>
@@ -10681,6 +10727,7 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
     <author>Van Schandevijl Wouter</author>
     <subTitle>Use your meme collection to liven op your Slack channel</subTitle>
     <date>2023-07-03T00:00:00+00:00</date>
+    <print_date>2023-07-03T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/install-the-slack-meme-bot/</url>
     <category>javascript</category>
     <tags>product,fun</tags>
@@ -10784,6 +10831,7 @@ docker-compose up --build -d
     <author>Stéphane Vandenbulcke</author>
     <subTitle>Current Trends in Q&amp;A Engineering and How Itenium Can Help</subTitle>
     <date>2023-06-29T00:00:00+00:00</date>
+    <print_date>2023-06-29T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/qa-and-itenium-in-2023/</url>
     <category>trends</category>
     <tags></tags>
@@ -10823,6 +10871,7 @@ At itenium, we understand the importance of staying up-to-date with the latest t
     <author>Stéphane Vandenbulcke</author>
     <subTitle>Unleashing the Power of Functional Analysis: A Guide for Success</subTitle>
     <date>2023-06-29T00:00:00+00:00</date>
+    <print_date>2023-06-29T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/functional-analysis-and-itenium-in-2023/</url>
     <category>trends</category>
     <tags></tags>
@@ -10863,6 +10912,7 @@ It is therefore important to have a talented functional analyst on a software de
     <author>Onur Bugdayci</author>
     <subTitle>A deep dive into an interesting translation issue</subTitle>
     <date>2023-05-22T00:00:00+00:00</date>
+    <print_date>2023-05-22T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/java/vaadin-translation-oopsie/</url>
     <category>java</category>
     <tags>war-story</tags>
@@ -11008,6 +11058,7 @@ export class CreditVouchDesign extends LitElement {
     <author>Wouter Van Schandevijl</author>
     <subTitle>The absolute minimum amount of regex to learn</subTitle>
     <date>2023-05-21T22:00:00+00:00</date>
+    <print_date>2023-05-21T22:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/regex-tutorial/</url>
     <category>productivity</category>
     <tags>regex,tutorial,cheat-sheet</tags>
@@ -11362,6 +11413,7 @@ when you want to replace some text but only when it is (not) preceded/succeeded 
     <author>Onur Bugdayci and Van Schandevijl Wouter</author>
     <subTitle>A quick comparison of the most popular React Charting frameworks</subTitle>
     <date>2023-05-17T00:00:00+00:00</date>
+    <print_date>2023-05-17T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/what-chart-library-to-use-in-react/</url>
     <category>javascript</category>
     <tags>react</tags>
@@ -11920,6 +11972,7 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
     <author>Stéphane Vandenbulcke</author>
     <subTitle>We&apos;ve got some of the best Java Brewers in town</subTitle>
     <date>2023-04-29T00:00:00+00:00</date>
+    <print_date>2023-04-29T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/java-and-itenium-in-2023/</url>
     <category>trends</category>
     <tags></tags>
@@ -11958,6 +12011,7 @@ So if you want to ensure that your Java projects are completed on time and to th
     <title>Xamarin.Forms vs .NET MAUI</title>
     <author>Tim De Belder</author>
     <date>2023-04-16T00:00:00+00:00</date>
+    <print_date>2023-04-16T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/xamarin-forms-vs-maui/</url>
     <category>dotnet</category>
     <tags></tags>
@@ -12045,6 +12099,7 @@ So if you want to ensure that your Java projects are completed on time and to th
     <author>Wouter Van Schandevijl</author>
     <subTitle>A regex intro so gentle it doesn&apos;t even contain a regex</subTitle>
     <date>2023-04-09T22:00:00+00:00</date>
+    <print_date>2023-04-09T22:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/regex-introduction/</url>
     <category>productivity</category>
     <tags>regex</tags>
@@ -12229,6 +12284,7 @@ to change often? Don’t be shy to write them, even if they are the only ones in
     <author>Wouter Van Schandevijl</author>
     <subTitle>What you need to know when switching to Jest</subTitle>
     <date>2023-04-01T03:00:00+00:00</date>
+    <print_date>2023-04-01T03:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-to-jest/</url>
     <category>javascript</category>
     <tags>tutorial,testing</tags>
@@ -12720,6 +12776,7 @@ out of the box with <code>create-react-app</code>.</p>
     <author>Stéphane Vandenbulcke</author>
     <subTitle>.NET Magicians in the House</subTitle>
     <date>2023-03-29T00:00:00+00:00</date>
+    <print_date>2023-03-29T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/trends/dotnet-and-itenium-in-2023/</url>
     <category>trends</category>
     <tags></tags>
@@ -12760,6 +12817,7 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
     <title>EPPlus: No longer free to use in a commercial setting</title>
     <author>Wouter Van Schandevijl</author>
     <date>2023-03-09T22:00:00+00:00</date>
+    <print_date>2025-02-25T00:00:00+00:00</print_date>
     <last_modified_at>2025-02-25T00:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/epplus-pay-to-play/</url>
     <category>dotnet</category>
@@ -12885,6 +12943,7 @@ which only works on Windows. The non-free version has removed this dependency.</
     <author>Sofie Vinck</author>
     <subTitle>Products built by only men will represent 50% of the world’s population.</subTitle>
     <date>2022-06-13T00:00:00+00:00</date>
+    <print_date>2022-06-13T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/european-women-in-tech/</url>
     <category>productivity</category>
     <tags>war-story,tech-talk</tags>
@@ -13012,6 +13071,7 @@ Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Cou
     <author>Wouter Van Schandevijl</author>
     <subTitle>... If you can call it that much.</subTitle>
     <date>2021-01-27T00:00:00+00:00</date>
+    <print_date>2021-01-27T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/first-hack/</url>
     <category>design</category>
     <tags>fun,war-story</tags>
@@ -13087,6 +13147,7 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
     <author>Wouter Van Schandevijl</author>
     <subTitle>A Loving Relationship</subTitle>
     <date>2019-09-19T00:00:00+00:00</date>
+    <print_date>2019-09-19T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/CQRS-Ramble/</url>
     <category>design</category>
     <tags>war-story</tags>
@@ -13454,6 +13515,7 @@ workaround for properties being “all over the place”.</p>
     <title>VSCode: Editor Settings and Shortcuts</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-07-17T22:01:00+00:00</date>
+    <print_date>2019-07-17T22:01:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/vscode-editor/</url>
     <category>dev-setup</category>
     <tags>cheat-sheet,tutorial,pragmatic-tips</tags>
@@ -15319,6 +15381,7 @@ Custom shortcuts:</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>A Sublime Goodbye</subTitle>
     <date>2019-07-17T22:00:00+00:00</date>
+    <print_date>2019-07-17T22:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/pragmatic-tip-22-use-a-single-editor-well/</url>
     <category>dev-setup</category>
     <tags>cheat-sheet,tutorial,pragmatic-tips</tags>
@@ -16464,6 +16527,7 @@ you know, something like Vim.</p>
     <title>The itenium Bliki</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-06-20T00:00:00+00:00</date>
+    <print_date>2019-06-20T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/the-itenium-bliki/</url>
     <category>productivity</category>
     <tags>pragmatic-tips</tags>
@@ -16563,6 +16627,7 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>And Their Evil Relatives</subTitle>
     <date>2019-06-19T00:00:00+00:00</date>
+    <print_date>2019-06-19T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/datestart-and-dateend/</url>
     <category>design</category>
     <tags>war-story</tags>
@@ -16734,6 +16799,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <title>Robocode Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-06-18T01:00:00+00:00</date>
+    <print_date>2019-06-18T01:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/robocode-tutorial/</url>
     <category>design</category>
     <tags>fun</tags>
@@ -16894,6 +16960,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <title>Robocode Installation &amp; Debugging</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-06-18T00:00:00+00:00</date>
+    <print_date>2019-06-18T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/design/robocode-installation/</url>
     <category>design</category>
     <tags>fun</tags>
@@ -17052,6 +17119,7 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
     <title>Autohotkey Debugging</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-05-23T00:00:00+00:00</date>
+    <print_date>2019-05-23T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/autohotkey-debugging/</url>
     <category>productivity</category>
     <tags>autohotkey,testing,debugging</tags>
@@ -17347,6 +17415,7 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
     <title>Google I/O &apos;19: WebAssembly for Web Developers</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-05-19T00:00:00+00:00</date>
+    <print_date>2019-05-19T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/webassembly/</url>
     <category>javascript</category>
     <tags>tech-talk</tags>
@@ -17502,6 +17571,7 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
     <title>AVA Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-24T00:00:00+00:00</date>
+    <print_date>2019-04-24T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/ava-tutorial/</url>
     <category>javascript</category>
     <tags>testing,tutorial</tags>
@@ -17850,6 +17920,7 @@ console.log('Currently running', test.meta.file);
     <title>.NET Regex Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-19T01:00:00+00:00</date>
+    <print_date>2019-04-19T01:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/regex-in-dotnet/</url>
     <category>dotnet</category>
     <tags>cheat-sheet,regex</tags>
@@ -17960,6 +18031,7 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
     <title>Vue.js Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-19T00:00:00+00:00</date>
+    <print_date>2019-04-19T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/VueJS-Tutorial/</url>
     <category>javascript</category>
     <tags>tutorial</tags>
@@ -18535,6 +18607,7 @@ and am already set on using it for a few small projects.</p>
     <title>Moment.js Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-19T00:00:00+00:00</date>
+    <print_date>2023-03-07T22:00:00+00:00</print_date>
     <last_modified_at>2023-03-07T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/momentjs/</url>
     <category>javascript</category>
@@ -19192,6 +19265,7 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
     <title>Git Hooks with Husky</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-13T00:00:00+00:00</date>
+    <print_date>2019-04-13T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/git-hooks-with-husky/</url>
     <category>dev-setup</category>
     <tags>git</tags>
@@ -19301,6 +19375,7 @@ module.exports = {
     <title>Exotic Git Snippets</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-04-05T00:00:00+00:00</date>
+    <print_date>2024-06-04T22:00:00+00:00</print_date>
     <last_modified_at>2024-06-04T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/exotic-git-recipes/</url>
     <category>dev-setup</category>
@@ -19459,6 +19534,7 @@ Set-Alias pr Create-PullRequest
     <title>Chrome Extension: Starify Github project links</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-03-07T00:00:00+00:00</date>
+    <print_date>2024-03-16T22:00:00+00:00</print_date>
     <last_modified_at>2024-03-16T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/starify-github-links/</url>
     <category>javascript</category>
@@ -19548,6 +19624,7 @@ const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?
     <title>JavaScript RegExp Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-03-05T00:00:00+00:00</date>
+    <print_date>2025-01-29T22:00:00+00:00</print_date>
     <last_modified_at>2025-01-29T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/regex-in-javascript/</url>
     <category>javascript</category>
@@ -19854,6 +19931,7 @@ regex.test(input); // Returns false. lastIndex is reset to 0
     <title>Rubber Duck Debugging</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-27T00:00:00+00:00</date>
+    <print_date>2019-02-27T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/rubber-duck-debugging/</url>
     <category>productivity</category>
     <tags>debugging</tags>
@@ -19978,6 +20056,7 @@ It would be perfect if you added a little voice chip that asked, “<em>Did you 
     <title>Create a new blog post</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-25T00:00:00+00:00</date>
+    <print_date>2019-02-25T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/create-blog-post/</url>
     <category>productivity</category>
     <tags>meta</tags>
@@ -20552,6 +20631,7 @@ emoj [text]
     <title>Array.prototype for .NET developers</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-24T00:00:00+00:00</date>
+    <print_date>2024-05-31T22:00:00+00:00</print_date>
     <last_modified_at>2024-05-31T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/array-prototype/</url>
     <category>javascript</category>
@@ -20906,6 +20986,7 @@ for this amazing diagram, I love it!</p>
     <title>Debugging in Visual Studio</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-24T00:00:00+00:00</date>
+    <print_date>2019-02-24T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/visual-studio-debugging/</url>
     <category>dotnet</category>
     <tags>tutorial,cheat-sheet,debugging</tags>
@@ -21400,6 +21481,7 @@ Not open source:</p>
     <title>Angular Pipes</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-20T00:00:00+00:00</date>
+    <print_date>2024-05-31T22:00:00+00:00</print_date>
     <last_modified_at>2024-05-31T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/angular-pipes/</url>
     <category>javascript</category>
@@ -21983,6 +22065,7 @@ export class MyApplicationModule {}
     <title>Git Assume Unchanged</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-18T00:00:00+00:00</date>
+    <print_date>2019-02-18T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/git-assume-unchanged/</url>
     <category>dev-setup</category>
     <tags>git</tags>
@@ -22050,6 +22133,7 @@ git update-index --no-skip-worktree fileName
     <title>Autohotkey DynaRun</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-02-17T00:00:00+00:00</date>
+    <print_date>2019-02-17T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/autohotkey-dyna-run/</url>
     <category>productivity</category>
     <tags>autohotkey</tags>
@@ -22185,6 +22269,7 @@ DynaRun(TempScript, pipename="")
     <title>Autohotkey Use Case: Submitting a Form</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-01-31T00:00:00+00:00</date>
+    <print_date>2019-01-31T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/autohotkey-use-case/</url>
     <category>productivity</category>
     <tags>autohotkey</tags>
@@ -22323,6 +22408,7 @@ Return
     <title>Programming Mnemonics</title>
     <author>Wouter Van Schandevijl</author>
     <date>2019-01-12T00:00:00+00:00</date>
+    <print_date>2025-02-01T22:00:00+00:00</print_date>
     <last_modified_at>2025-02-01T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/productivity/programming-mnemonics/</url>
     <category>productivity</category>
@@ -22457,6 +22543,7 @@ and I liked it too much to not add it here 😀</p>
     <title>Angular Road Trip</title>
     <author>Steven Robijns</author>
     <date>2018-10-22T21:00:00+00:00</date>
+    <print_date>2018-10-22T21:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/angular-journey/</url>
     <category>javascript</category>
     <tags>angular,war-story</tags>
@@ -22536,6 +22623,7 @@ All in all it’s just a great framework for modern web applications and most of
     <title>Developing with LocalDb</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-10-08T23:00:00+00:00</date>
+    <print_date>2018-10-08T23:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/LocalDb/</url>
     <category>dev-setup</category>
     <tags>sql,tutorial</tags>
@@ -22603,6 +22691,7 @@ versions|v: Lists all LocalDb version-numbers installed
     <title>Git-NumberedAdd for PowerShell</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-08-30T15:00:00+00:00</date>
+    <print_date>2025-10-16T22:00:00+00:00</print_date>
     <last_modified_at>2025-10-16T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/</url>
     <category>dev-setup</category>
@@ -22782,6 +22871,7 @@ Also, see below for similar implementations in Bash and Perl.</p>]]></body>
     <title>Less for your git pager</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-08-18T22:00:00+00:00</date>
+    <print_date>2018-08-18T22:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/git-core-pager-less-pager/</url>
     <category>dev-setup</category>
     <tags>git</tags>
@@ -23729,6 +23819,7 @@ was way overdue.</p>]]></body>
     <title>Yaml tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-08-13T18:00:00+00:00</date>
+    <print_date>2018-08-13T18:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/yaml-tutorial/</url>
     <category>productivity</category>
     <tags>tutorial</tags>
@@ -23977,6 +24068,7 @@ try {
     <title>NSubstitute Tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-08-12T10:00:00+00:00</date>
+    <print_date>2018-08-12T10:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/nsubstitute-tutorial/</url>
     <category>dotnet</category>
     <tags>tutorial,testing</tags>
@@ -24304,6 +24396,7 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
     <title>Autohotkey Tutorial - hotkeys</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-05-02T22:00:00+00:00</date>
+    <print_date>2023-03-27T22:00:00+00:00</print_date>
     <last_modified_at>2023-03-27T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/productivity/autohotkey-hotkeys/</url>
     <category>productivity</category>
@@ -24778,6 +24871,7 @@ even while the script is suspended.</p>
     <title>Excel formulas cheat sheet</title>
     <author>Wouter Van Schandevijl</author>
     <date>2018-03-28T18:00:00+00:00</date>
+    <print_date>2018-03-28T18:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/excel-formulas-cheat-sheet/</url>
     <category>dotnet</category>
     <tags>excel,cheat-sheet</tags>
@@ -25258,6 +25352,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <title>JavaScript Testing: Jasmine plugins</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-08-06T22:00:00+00:00</date>
+    <print_date>2019-01-16T22:00:00+00:00</print_date>
     <last_modified_at>2019-01-16T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-plugins/</url>
     <category>javascript</category>
@@ -25429,6 +25524,7 @@ describe('fake the api call', function() {
     <title>JavaScript Testing: Jasmine customization</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-08-05T22:00:00+00:00</date>
+    <print_date>2017-08-05T22:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-customization/</url>
     <category>javascript</category>
     <tags>tutorial,testing</tags>
@@ -25599,6 +25695,7 @@ it('has its own jasmine.getEnv()', function() {
     <title>JavaScript Testing: Jasmine async syntax</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-31T10:00:00+00:00</date>
+    <print_date>2019-01-17T22:00:00+00:00</print_date>
     <last_modified_at>2019-01-17T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-async/</url>
     <category>javascript</category>
@@ -25707,6 +25804,7 @@ it('can pass context - which will show on failure', async () =&gt; {
     <title>JavaScript Testing: Jasmine Spies</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-30T13:00:00+00:00</date>
+    <print_date>2017-05-30T13:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-spies/</url>
     <category>javascript</category>
     <tags>tutorial,testing</tags>
@@ -25875,6 +25973,7 @@ it('and on setters', () =&gt; {
     <title>JavaScript Testing: Jasmine syntax</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-30T10:00:00+00:00</date>
+    <print_date>2017-05-30T10:00:00+00:00</print_date>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-syntax/</url>
     <category>javascript</category>
     <tags>tutorial,testing</tags>
@@ -26041,6 +26140,7 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
     <title>JavaScript Testing: Getting started with Jasmine</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-29T10:00:00+00:00</date>
+    <print_date>2023-03-27T22:00:00+00:00</print_date>
     <last_modified_at>2023-03-27T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/javascript/javascript-testing-jasmine-getting-started/</url>
     <category>javascript</category>
@@ -26224,6 +26324,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     <title>Create Excels with C# and EPPlus: Miscellaneous</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-02T00:00:00+00:00</date>
+    <print_date>2017-05-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -26345,6 +26446,7 @@ public void ConvertingIndexesAndAddresses()
     <title>Create Excels with C# and EPPlus: Import</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-05-01T10:00:00+00:00</date>
+    <print_date>2017-05-01T10:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-epplus-csharp-import/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -26509,6 +26611,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
     <title>NSubstitute vs Moq</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-30T10:00:00+00:00</date>
+    <print_date>2017-04-30T10:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/nsubstitute-vs-moq/</url>
     <category>dotnet</category>
     <tags>tutorial,testing</tags>
@@ -26684,6 +26787,7 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
     <title>Create Excels with C# and EPPlus: Formulas &amp; DataValidation</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-27T10:00:00+00:00</date>
+    <print_date>2017-04-27T10:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/</url>
     <category>dotnet</category>
     <tags>excel,tutorial</tags>
@@ -26976,6 +27080,7 @@ Filtered-out rows are always excluded.</p>
     <title>Create Excels with C# and EPPlus: A tutorial</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-26T20:00:00+00:00</date>
+    <print_date>2023-03-09T22:00:00+00:00</print_date>
     <last_modified_at>2023-03-09T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/create-xlsx-excel-with-epplus-csharp/</url>
     <category>dotnet</category>
@@ -27302,6 +27407,7 @@ cfRule1.Style.Font.Bold = true;
     <title>Advanced Windows Explorer</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-22T00:00:00+00:00</date>
+    <print_date>2018-08-30T17:23:30+00:00</print_date>
     <last_modified_at>2018-08-30T17:23:30+00:00</last_modified_at>
     <url>https://itenium.be/blog/productivity/advanced-windows-explorer/</url>
     <category>productivity</category>
@@ -27989,6 +28095,7 @@ Return
     <title>PowerShell and Git for the colorblind</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-21T13:00:00+00:00</date>
+    <print_date>2024-07-07T22:00:00+00:00</print_date>
     <last_modified_at>2024-07-07T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/powershell-and-git-for-the-colorblind/</url>
     <category>dev-setup</category>
@@ -28136,6 +28243,7 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
     <title>.NET Number and Date Formatting</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-20T13:00:00+00:00</date>
+    <print_date>2017-04-20T13:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/dot-net-number-and-date-formatting/</url>
     <category>dotnet</category>
     <tags>cheat-sheet</tags>
@@ -28675,6 +28783,7 @@ Console.WriteLine("{0:ddddd}", span); // 00031
     <title>VB.NET vs C# Syntax differences</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-15T13:00:00+00:00</date>
+    <print_date>2017-04-15T13:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dotnet/vbnet-vs-csharp/</url>
     <category>dotnet</category>
     <tags>cheat-sheet</tags>
@@ -29625,6 +29734,7 @@ still be a team decision.</p>]]></body>
     <title>Managing Environment Variables with PowerShell</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-12T13:00:00+00:00</date>
+    <print_date>2018-08-24T22:00:00+00:00</print_date>
     <last_modified_at>2018-08-24T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/environment-variables-management-with-powershell/</url>
     <category>dev-setup</category>
@@ -29826,6 +29936,7 @@ $env:TEMP
     <title>PowerShell profiles</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-11T18:00:00+00:00</date>
+    <print_date>2018-09-03T23:04:05+00:00</print_date>
     <last_modified_at>2018-09-03T23:04:05+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/powershell-profiles/</url>
     <category>dev-setup</category>
@@ -29884,6 +29995,7 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
     <title>Package Manager Console Entity Framework 6 Migrations profile</title>
     <author>Wouter Van Schandevijl</author>
     <date>2017-04-10T18:22:13+00:00</date>
+    <print_date>2018-03-27T22:00:00+00:00</print_date>
     <last_modified_at>2018-03-27T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/package-manager-console-ef-migrations/</url>
     <category>dev-setup</category>
@@ -30046,6 +30158,7 @@ Custom shortcut: View.PackageManagerConsole</p>]]></body>
     <title>Synchronize Additional Folders With Dropbox Using Junction on Windows</title>
     <author>Wouter Van Schandevijl</author>
     <date>2013-03-04T00:00:00+00:00</date>
+    <print_date>2013-03-04T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/synchronize-folders-dropbox-using-junctions-windows/</url>
     <category>dev-setup</category>
     <tags></tags>
@@ -30099,6 +30212,7 @@ If you want to get rid of everything, merely deleting the original directory wil
     <title>Notepad++ double click PHP variable including the $ sign</title>
     <author>Wouter Van Schandevijl</author>
     <date>2012-12-07T00:00:00+00:00</date>
+    <print_date>2012-12-07T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/notepad-plus-plus-php-var-selection/</url>
     <category>dev-setup</category>
     <tags></tags>
@@ -30201,6 +30315,7 @@ GetCurrentlySelectedText()
     <title>Notepad++ Bookmarks</title>
     <author>Wouter Van Schandevijl</author>
     <date>2012-12-04T00:00:00+00:00</date>
+    <print_date>2012-12-04T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/dev-setup/notepad-plus-plus-bookmarks/</url>
     <category>dev-setup</category>
     <tags></tags>
@@ -30241,6 +30356,7 @@ Suddenly you can write a regular expression to capture certain lines of text and
     <title>Pragmatic Tip 2: Think! About Your Work</title>
     <author>Wouter Van Schandevijl</author>
     <date>2012-12-02T00:00:00+00:00</date>
+    <print_date>2012-12-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/pragmatic-tip-2-think-about-your-work/</url>
     <category>productivity</category>
     <tags>pragmatic-tips</tags>
@@ -30347,6 +30463,7 @@ required, the unneeded complexity can always be taken back out. No regrets. Plus
     <title>Pragmatic Tip 1: Care About Your Craft</title>
     <author>Wouter Van Schandevijl</author>
     <date>2012-12-01T00:00:00+00:00</date>
+    <print_date>2012-12-01T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/productivity/pragmatic-tip-1-care-about-your-craft/</url>
     <category>productivity</category>
     <tags>pragmatic-tips</tags>
