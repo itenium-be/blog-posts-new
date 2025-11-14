@@ -24,7 +24,7 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   #  gem "kramdown-parser-gfm"
-  #  gem "jekyll-feed", "~> 0.17"
+   gem "jekyll-feed", "~> 0.17"
   #  gem "jekyll-paginate", "~> 1.1.0"
    gem "jemoji", "~> 0.13.0"
    gem "jekyll-gist", "~> 1.5.0"

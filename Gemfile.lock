@@ -125,6 +125,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 4.2.2)
   jekyll-avatar (~> 0.8.0)
+  jekyll-feed (~> 0.17)
   jekyll-gist (~> 1.5.0)
   jemoji (~> 0.13.0)
   minima (~> 2.0)
