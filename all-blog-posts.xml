@@ -1,0 +1,84 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<blog-posts>
+{%- for post in site.posts %}
+  <post>
+    <title>{{ post.title | xml_escape }}</title>
+    <author>{{ post.author | xml_escape }}</author>
+    {%- if post.subTitle %}
+    <subTitle>{{ post.subTitle | xml_escape }}</subTitle>
+    {%- endif %}
+    <date>{{ post.date | date_to_xmlschema }}</date>
+    <url>{{ post.url | absolute_url | xml_escape }}</url>
+    <categories>
+      {%- for category in post.categories %}
+      <category>{{ category | xml_escape }}</category>
+      {%- endfor %}
+    </categories>
+    {%- if post.tags %}
+    <tags>
+      {%- for tag in post.tags %}
+      <tag>{{ tag | xml_escape }}</tag>
+      {%- endfor %}
+    </tags>
+    {%- endif %}
+    {%- if post.bigimg %}
+    <bigimg>
+      {%- if post.bigimg.url %}
+      <url>{{ post.bigimg.url | xml_escape }}</url>
+      {%- endif %}
+      {%- if post.bigimg.desc %}
+      <desc>{{ post.bigimg.desc | xml_escape }}</desc>
+      {%- endif %}
+      {%- if post.bigimg.origin %}
+      <origin>{{ post.bigimg.origin | xml_escape }}</origin>
+      {%- endif %}
+      {%- if post.bigimg.prompt %}
+      <prompt>{{ post.bigimg.prompt | xml_escape }}</prompt>
+      {%- endif %}
+    </bigimg>
+    {%- endif %}
+    {%- if post.img %}
+    <img>
+      {%- if post.img.url %}
+      <url>{{ post.img.url | xml_escape }}</url>
+      {%- endif %}
+      {%- if post.img.desc %}
+      <desc>{{ post.img.desc | xml_escape }}</desc>
+      {%- endif %}
+      {%- if post.img.origin %}
+      <origin>{{ post.img.origin | xml_escape }}</origin>
+      {%- endif %}
+      {%- if post.img.title %}
+      <title>{{ post.img.title | xml_escape }}</title>
+      {%- endif %}
+      {%- if post.img.prompt %}
+      <prompt>{{ post.img.prompt | xml_escape }}</prompt>
+      {%- endif %}
+    </img>
+    {%- endif %}
+    {%- if post.desc %}
+    <desc>{{ post.desc | xml_escape }}</desc>
+    {%- endif %}
+    {%- if post.series %}
+    <series>{{ post.series | xml_escape }}</series>
+    {%- endif %}
+    {%- if post.toc %}
+    <toc>
+      {%- if post.toc.icon %}
+      <icon>{{ post.toc.icon | xml_escape }}</icon>
+      {%- endif %}
+      {%- if post.toc.title %}
+      <title>{{ post.toc.title | xml_escape }}</title>
+      {%- endif %}
+    </toc>
+    {%- endif %}
+    {%- if post.last_modified_at %}
+    <last_modified_at>{{ post.last_modified_at | date_to_xmlschema }}</last_modified_at>
+    {%- endif %}
+    <body><![CDATA[{{ post.content }}]]></body>
+  </post>
+{%- endfor %}
+</blog-posts>
