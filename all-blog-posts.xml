@@ -17,9 +17,9 @@ layout: null
     <url>https://itenium.be/blog/{{ post.categories | first }}/{{ post.slug }}/</url>
     <category>{{ post.categories | first | xml_escape }}</category>
     {%- if post.tags %}
-    <tags>{{ post.tags | join: ", " | xml_escape }}</tags>
+    <tags>{{ post.tags | join: "," | xml_escape }}</tags>
     {%- endif %}
-    <desc>{{ post.desc | xml_escape }}</desc>
+    <desc>{{ post.desc | xml_escape | strip }}</desc>
     {%- if post.series %}
     <series>{{ post.series | xml_escape }}</series>
     {%- endif %}
@@ -73,9 +73,9 @@ layout: null
     {%- if content_parts.size > 1 %}
       {%- assign before_block1 = content_parts[0] | split: "<!--more-->" %}
       {%- if before_block1.size > 1 %}
-      <block1><![CDATA[{{ before_block1[1] }}]]></block1>
+      <block1><![CDATA[{{ before_block1[1] | strip }}]]></block1>
       {%- endif %}
-      <body><![CDATA[{{ content_parts[1] }}]]></body>
+      <body><![CDATA[{{ content_parts[1] | strip }}]]></body>
     {%- else %}
       <body><![CDATA[{{ post.content }}]]></body>
     {%- endif %}
