@@ -52,6 +52,10 @@ because well, I lost the history of the feature. Not only less
 commits for my Github statistics but I also lost `git blame` so it could no longer
 tell me why a particular algorithm was written the way it was.
 
+
+<!--block1-->
+
+
 Turns out git allows you to have your cake and eat it too!
 
 ```bash

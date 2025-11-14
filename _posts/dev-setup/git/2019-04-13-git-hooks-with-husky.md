@@ -49,6 +49,9 @@ You can find some example files in that directory. Remove their `.sample` suffix
 to test them out.
 
 
+<!--block1-->
+
+
 # Husky
 
 Hooks are saved locally and not pushed to the remote.

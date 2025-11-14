@@ -99,6 +99,9 @@ Typically test classes and/or methods are decorated with Attributes.
 
 
 
+<!--block1-->
+
+
 #### xUnit IClassFixture
 
 Setup in xUnit doesn't work with Attributes!  

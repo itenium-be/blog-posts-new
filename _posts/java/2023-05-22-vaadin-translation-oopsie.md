@@ -31,6 +31,10 @@ At a client where I worked on a Vaadin application that had to be upgraded from 
 
 The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.
 
+
+<!--block1-->
+
+
 **The translation key is formed as such**:
 
 ![Visual translation key formation](/assets/blog-images/vaadin_translation_key_template.png "Pretty slick")

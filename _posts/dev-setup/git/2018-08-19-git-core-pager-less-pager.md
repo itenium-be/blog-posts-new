@@ -67,6 +67,10 @@ Default cursor is just a `:`
 {% include kbd k="-x, --window=x" l="Set default window line size to x for PgUp/PgDown" %}
 
 
+
+<!--block1-->
+
+
 ## Searching
 
 {% include kbd k="-I, --IGNORE-CASE" l="Case insensitive search" %}

@@ -46,6 +46,9 @@ Before we begin soldering...
 
 
 
+<!--block1-->
+
+
 # The Components
 
 A [microcontroller](https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/others/seeed-studio-seeeduino-xiao-rp2040-dual-core-cortex-m0-separate-headers), [1 rotary encoder](https://www.tinytronics.nl/shop/en/switches/manual-switches/rotary-encoders/rotary-encoder-module) and [6 keyboard switches](https://www.alternate.nl/Sharkoon/Gateron-PRO-2-0-BROWN-Switch-Set-keyboard-switches/html/product/1892291).

@@ -51,6 +51,9 @@ redirect_from: /blog/productivity/robocode-tutorial/
 [Wiki](http://robowiki.net/wiki/Robocode/Game_Physics)
 
 
+<!--block1-->
+
+
 # The Robot
 
 A Robot consists of:

@@ -61,6 +61,10 @@ BEGIN
 END;
 ```
 
+
+<!--block1-->
+
+
 The CreatedBy/On columns can be set with a default value for which
 some EF configuration is needed:
 

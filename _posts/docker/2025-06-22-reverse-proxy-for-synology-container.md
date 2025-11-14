@@ -58,6 +58,10 @@ Reverse Proxy Rules:
   - Port: _port exposed by your docker container_
 - Save
 
+
+<!--block1-->
+
+
 # Step 2: Create Certificate
 
 Control Panel > Security > Certificate > Add

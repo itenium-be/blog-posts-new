@@ -65,6 +65,10 @@ is which RAID you want to be using, for which
 Synology conveniently offers you their
 [RAID Calculator](https://www.synology.com/en-global/support/RAID_calculator).
 
+
+<!--block1-->
+
+
 ## Local IP
 
 Who can remember some random default IP?  

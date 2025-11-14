@@ -59,6 +59,11 @@ Steps: Control Panel > File Services > NFS > Enable
 
 ![Enabling NFS v4 on Synology](/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png "Enabling NFS v4 on Synology"){: .img-responsive}
 
+
+
+<!--block1-->
+
+
 ### Enable NFS on Shared Drive
 
 - Control Panel > Shared Folder > right Click "workspace" > Edit > NFS Permissions

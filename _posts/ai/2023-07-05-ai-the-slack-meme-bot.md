@@ -52,6 +52,9 @@ And then suggested using `cron` or `Task Scheduler` for the friday 16h part. Tha
 idea, I should add Windows instructions to the installation blog post for non-Docker usage 😃
 
 
+<!--block1-->
+
+
 Anyway, let's try it out!
 
 ```sh

@@ -65,6 +65,10 @@ function Show-Colors() {
 Show-Colors
 ```
 
+
+<!--block1-->
+
+
 With just changing how Errors are displayed, everything is readable, for me, with Cmder.
 
 ```ps1

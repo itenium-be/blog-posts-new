@@ -68,6 +68,8 @@ nvm use 22.1.0
 The Github repo of the session lists the Node version used at the top of the README.
 
 
+<!--block1-->
+
 
 # Visual Studio Code
 

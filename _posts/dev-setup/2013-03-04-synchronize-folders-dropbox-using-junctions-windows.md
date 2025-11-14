@@ -29,6 +29,9 @@ fixes this problem. Once a junction between an existing directory and a new one 
 to either directory gets immediately synchronized with Dropbox…
 
 
+<!--block1-->
+
+
 # To create a junction.
 
 The first parameter is the directory you want to create, the second parameter is the existing directory you want to link. Windows changes

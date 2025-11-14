@@ -42,6 +42,10 @@ These are similar to refactorings, but smaller in scope and impact, or as descri
 
 The "?" in the title is certainly not an error, it's not a how-to book but it offers us premises to makes us think and his insights are shared to help us define a framework. 
 
+
+<!--block1-->
+
+
 ## About the book
 
 This book is the start of a new series, and we start with tidying which he calls "the Pringles of software design" to facilitate future (behavioural) changes.

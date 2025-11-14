@@ -64,6 +64,10 @@ architecture, even when doing so late in the development life cycle.
 > Despite these benefits, **you should be very cautious about using CQRS**  
 > — _Martin Fowler_
 
+
+<!--block1-->
+
+
 In his entire article on CQRS, this is the only sentence that Martin has put in bold.
 
 Unfortunately developers like the latest and greatest very much and CQRS has, for many organizations

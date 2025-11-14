@@ -37,7 +37,8 @@ Or some fun issues during heavy context switching :)
 - VB.NET is *not* case sensitive
 - Arrays in VB.NET are 1 based
 
-* * *
+
+<!--block1-->
 
 
 Syntax comparison

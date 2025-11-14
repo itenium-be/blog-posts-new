@@ -58,6 +58,9 @@ rm /var/db/.applesetupdone
 shutdown -h now
 ```
 
+<!--block1-->
+
+
 # Reboot
 
 At this point, you're almost there!

@@ -35,6 +35,10 @@ the StackOverflow answers. The follow up answer provides a workaround using a No
 The problem is that it requires you to use a special keybinding (alt+click) to trigger the macro.
 I still want my Code-Genie feeling back.
 
+
+<!--block1-->
+
+
 With Notepad++ seemingly letting us down, I was sure it was Autohotkey to the rescue:
 
 ```autohotkey

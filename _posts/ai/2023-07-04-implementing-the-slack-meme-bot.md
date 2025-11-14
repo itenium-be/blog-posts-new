@@ -47,6 +47,9 @@ You will probably need to configure the meme file accessibility.
 chmod -R 755 memes_dir
 ```
 
+
+<!--block1-->
+
 ## Cron Job
 
 The `Dockerfile` copies the `job` folder with the Node program to the docker container

@@ -65,6 +65,10 @@ public class Doer : IDoer
 }
 ```
 
+
+<!--block1-->
+
+
 And then another implementation, a decorator:
 
 ```c#

@@ -47,6 +47,9 @@ it is time to post one!
 
 That's it, really!
 
+
+<!--block1-->
+
 # Installation & Configuration
 
 See [README.md](https://github.com/itenium-be/slack-meme-poster) for step by step instructions.

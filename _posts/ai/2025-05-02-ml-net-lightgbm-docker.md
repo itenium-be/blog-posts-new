@@ -58,6 +58,9 @@ It's a conscious decision by the team to not include LightGBM by default,
 and that makes perfect since it is a 1gig dependency which is only
 used when using that trainer.
 
+
+<!--block1-->
+
 # Installing LightGBM
 
 A simple Google search got me to the LightGBM installation instructions:

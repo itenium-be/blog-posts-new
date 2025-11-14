@@ -61,6 +61,10 @@ Some handy git aliases without `update-index` nightmarish syntax to be put in yo
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 ```
 
+
+<!--block1-->
+
+
 Or create the aliases from the CLI:  
 ```powershell
 git config --global alias.assume "update-index --assume-unchanged"

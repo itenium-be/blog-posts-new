@@ -39,6 +39,9 @@ inspired by the grandeur of ancient Rome and Greece.
 {% include post/image.html file="bootcamp-3dmodelling-breakfast.png" alt="" title="" desc="Can't go landscaping on an empty stomach!" maxWidth="500px" %}
 
 
+<!--block1-->
+
+
 ## Fake it!
 
 We started the bootcamp with a short introduction to "Game Graphics Production"

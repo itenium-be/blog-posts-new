@@ -84,6 +84,10 @@ if (missingAuthActions.Any())
 }
 ```
 
+
+<!--block1-->
+
+
 # Variations
 
 Maybe you want to remove the code allowing `[AllowAnonymous]` or something...

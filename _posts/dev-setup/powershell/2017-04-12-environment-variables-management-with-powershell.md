@@ -61,7 +61,7 @@ $env:PATH
 In cmd.exe, all envs can be listed with `set`.
 
 
-* * *
+<!--block1-->
 
 
 # Managing environment variables

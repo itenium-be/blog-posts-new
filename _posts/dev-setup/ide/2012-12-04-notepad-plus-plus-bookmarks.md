@@ -27,6 +27,10 @@ Bookmarks have their own margin where they can be toggled with a mouse click.
 
 They can also be **toggled with "CTRL + F2"**. Use **"F2" and "SHIFT + F2" to jump** back and forth between them.
 
+
+<!--block1-->
+
+
 <div style="clear: both"></div>
 
 <br>

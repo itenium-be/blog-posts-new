@@ -51,6 +51,9 @@ on Github itself and on Package Manager registries.
 {% include kbd k="Alt+Shift+S" l="Activate on any other page" %}
 
 
+<!--block1-->
+
+
 # More Examples
 
 ## Google Search Results

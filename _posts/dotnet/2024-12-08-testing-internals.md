@@ -63,6 +63,10 @@ public class Singleton
 }
 ```
 
+
+<!--block1-->
+
+
 ### Refactored Testable Singleton
 
 We introduce an interface, mimicking the original API

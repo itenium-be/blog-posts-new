@@ -51,7 +51,11 @@ package-versions:
 {% include kbd k="Shift+Alt+Left/Right" l="Shrink/Expand Selection" %}
 {% include kbd k="Control+/" l="Toggle Line Comment" %}
 
-<br>
+
+
+<!--block1-->
+
+
 Custom shortcuts:
 - `Control Shift J`: Join Lines
 - Change End Of Line Sequence

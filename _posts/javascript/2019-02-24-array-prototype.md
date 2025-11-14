@@ -75,6 +75,10 @@ probably allow you to achieve the same result but in more functional and succinc
 
 Do note that the deferred execution we know from Linq does not apply to `Array.prototype`!
 
+
+<!--block1-->
+
+
 # Comparison Table
 
 

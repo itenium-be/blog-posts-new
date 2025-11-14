@@ -51,6 +51,8 @@ If you get a _"'java' is not recognized as an internal or external command"_, th
 [add your JDK to PATH](http://robowiki.net/wiki/Robocode/System_Requirements#Setting_environmental_variables_on_Windows).
 
 
+<!--block1-->
+
 
 # Building a Robot
 

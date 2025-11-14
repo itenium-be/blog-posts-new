@@ -67,6 +67,9 @@ git commit -n
 ```
 
 
+<!--block1-->
+
+
 # Husky
 
 Or, use Husky to easily make the git hooks part of the repository itself and share it with the entire team.

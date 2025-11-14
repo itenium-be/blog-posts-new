@@ -40,7 +40,6 @@ toc:
 {% include kbd k="Alt+Num *" l="See current statement" %}
 
 
-<br>
 
 <!--more-->
 
@@ -48,6 +47,9 @@ Enable "**Edit & continue**" in Tools > Options > Debugging.
 Other interesting settings:  
 - Step over properties and operators (Managed only)
 - Just My Code (Enable to step over system, framework and other non-user calls)
+
+
+<!--block1-->
 
 
 # Breakpoints

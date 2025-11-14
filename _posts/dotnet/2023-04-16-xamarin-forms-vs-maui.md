@@ -32,6 +32,10 @@ On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi
 
 What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.
 
+
+<!--block1-->
+
+
 ## Xamarin
 
 Xamarin was introduced in May 2011 with the foundation of the Xamarin Company. It was created with a commercial purpose, until it was acquired by Microsoft in 2016. It was based on the mono project introduced in 2001.

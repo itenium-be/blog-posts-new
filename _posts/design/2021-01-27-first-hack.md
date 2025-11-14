@@ -37,6 +37,9 @@ If we could outgrow everyone fast enough, no one would be able to open a magical
 This was kind of the idea because as you can guess, having no troops in a war game usually is.. problematic.
 
 
+<!--block1-->
+
+
 # The Portal
 
 And... Turns out we hadn't grown enough, fast enough because right after the initial no-attack period an enemy empire did succeed in opening a portal to us 😲.  

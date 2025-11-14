@@ -49,6 +49,9 @@ The game started with a hickup, other machines were not discoverable on the gues
 
 After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production -- as it should! 😉
 
+
+<!--block1-->
+
 ## Before we start
 
 ![Meme SQL is always all caps!](/assets/blog-images/sql-training-meme2.png "It can only be SELECT FROM!!"){: .img-responsive}

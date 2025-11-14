@@ -71,6 +71,9 @@ choco install vscode
 - [`Help: Tips and Tricks`](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 
+<!--block1-->
+
+
 # Configuration
 
 ## Locations
