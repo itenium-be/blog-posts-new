@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/" rel="alternate" type="text/html" /><updated>2025-11-14T16:08:07+00:00</updated><id>https://itenium.be/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/" rel="alternate" type="text/html" /><updated>2025-11-14T16:27:48+00:00</updated><id>https://itenium.be/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
 “<a href="/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
 
 <p>I probably just discovered <a href="https://github.com/sindresorhus/awesome">sindresorhus awesome</a> lists.
@@ -20,6 +20,8 @@ had a web interface, it had a pretty bad one.</p>
 <p>So I created a UserScript called the <a href="https://github.com/SanguPackage/Script">Sangu Package</a>
 (for Opera, Firefox and Chrome) that rectified all that; making the UI more user friendly,
 more consistent, more powerful.</p>
+
+<!--block1-->
 
 <h1 id="one-star">One Star</h1>
 
@@ -153,6 +155,8 @@ git lfs install
 
 <p class="notice--info">Note the quotes around “*.mp4”, without them your shell will
 expand and add individual file entries to <code>.gitattributes</code>!</p>
+
+<!--block1-->
 
 <p>It will also add git hooks for <code>pre-push</code> etc:</p>
 
@@ -1869,6 +1873,8 @@ easiest one to setup: using the Synology nginx.</p>
   <li>Save</li>
 </ul>
 
+<!--block1-->
+
 <h1 id="step-2-create-certificate">Step 2: Create Certificate</h1>
 
 <p>Control Panel &gt; Security &gt; Certificate &gt; Add</p>
@@ -1929,6 +1935,8 @@ libgomp.so.1: cannot open shared object file: No such file or directory<br />
 <p>It’s a conscious decision by the team to not include LightGBM by default,
 and that makes perfect since it is a 1gig dependency which is only
 used when using that trainer.</p>
+
+<!--block1-->
 
 <h1 id="installing-lightgbm">Installing LightGBM</h1>
 

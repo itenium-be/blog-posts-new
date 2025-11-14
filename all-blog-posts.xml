@@ -26,18 +26,7 @@
     <excerpt><![CDATA[<p>Back in 2019 I created a Chrome Extension called
 “<a href="/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Back in 2019 I created a Chrome Extension called
-“<a href="/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
-
-<p>I probably just discovered <a href="https://github.com/sindresorhus/awesome">sindresorhus awesome</a> lists.
-And while awesome lists are, well, awesome, the problem is that while it has so many truly excellent
-links, some random guy that created a really niche thing easily ends up in there as well.</p>
-
-<p>So how do you know what to spend your time on, GitHub stars, obviously!</p>
-
-<!--more-->
-
-<p>And that is what this extension did, add star badges to GitHub repository links 😀</p>
+      <block1><![CDATA[<p>And that is what this extension did, add star badges to GitHub repository links 😀</p>
 
 <h1 id="not-my-first-rodeo">Not my first rodeo</h1>
 
@@ -47,9 +36,8 @@ had a web interface, it had a pretty bad one.</p>
 
 <p>So I created a UserScript called the <a href="https://github.com/SanguPackage/Script">Sangu Package</a>
 (for Opera, Firefox and Chrome) that rectified all that; making the UI more user friendly,
-more consistent, more powerful.</p>
-
-<h1 id="one-star">One Star</h1>
+more consistent, more powerful.</p>]]></block1>
+      <body><![CDATA[<h1 id="one-star">One Star</h1>
 
 <p>And that is how I ended up with one rating, a one star review for the “Starify Github Links”…
 Unlike the current two competitors (which arrived years after my extension, I’d like to add!)
@@ -147,8 +135,7 @@ without me doing any work, and all that in about 10-15 prompts.</p>
 <p>But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to “<em>API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation.</em>”
 While <code>/rewind</code> no longer exists, a simple “<em>You failed. Can you try to continue where you left off?</em>” was all it
-took to get it back on track!</p>
-]]></body>
+took to get it back on track!</p>]]></body>
   </post>
   <post>
     <title>Git Large File Storage</title>
@@ -177,29 +164,7 @@ took to get it back on track!</p>
 large media files to <a href="https://obsidian.md/">Obsidian</a> which
 I’m syncing with a private github repository.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Needed to get around installing <code>git lfs</code> because I’m adding
-large media files to <a href="https://obsidian.md/">Obsidian</a> which
-I’m syncing with a private github repository.</p>
-
-<p><a href="https://github.com/git-lfs/git-lfs" class="github">
-    <img src="https://img.shields.io/github/stars/git-lfs/git-lfs.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/git-lfs/git-lfs">git-lfs/git-lfs</a>
-:
-    Git extension for versioning large files</p>
-
-<p>It stores your large files on a separate server and works
-seamlessly with your normal git workflow.</p>
-
-<h1 class="hide-from-excerpt" id="install">Install</h1>
-
-<pre><code class="language-ps1">choco install git-lfs -y
-git lfs install
-</code></pre>
-
-<!--more-->
-
-<h1 id="usage">Usage</h1>
+      <block1><![CDATA[<h1 id="usage">Usage</h1>
 
 <pre><code class="language-ps1">git lfs track "*.mp4"
 </code></pre>
@@ -210,9 +175,8 @@ git lfs install
 </code></pre>
 
 <p class="notice--info">Note the quotes around “*.mp4”, without them your shell will
-expand and add individual file entries to <code>.gitattributes</code>!</p>
-
-<p>It will also add git hooks for <code>pre-push</code> etc:</p>
+expand and add individual file entries to <code>.gitattributes</code>!</p>]]></block1>
+      <body><![CDATA[<p>It will also add git hooks for <code>pre-push</code> etc:</p>
 
 <pre><code class="language-sh">#!/bin/sh
 command -v git-lfs &gt;/dev/null 2&gt;&amp;1 || { echo &gt;&amp;2 "\nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/pre-push.\n"; exit 2; }
@@ -267,8 +231,7 @@ git config --get-regexp 'filter\.lfs'
 <pre><code class="language-text">remote: warning: See https://gh.io/lfs for more information.
 remote: warning: File x.mp4 is 57.88 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Performance optimization for &apos;bundle exec jekyll serve&apos;</title>
@@ -2089,16 +2052,7 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
     <excerpt><![CDATA[<p>You’ve developed the most fancy application and are running
 it on your Synology in a Docker container.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>You’ve developed the most fancy application and are running
-it on your Synology in a Docker container.</p>
-
-<p>But you really don’t want that ugly “Not secure” when opening
-it. This series goes over your options, starting with the
-easiest one to setup: using the Synology nginx.</p>
-
-<!--more-->
-
-<p>Open Synology DSM and</p>
+      <block1><![CDATA[<p>Open Synology DSM and</p>
 
 <h1 id="step-1-setup-reverse-proxy">Step 1: Setup Reverse Proxy</h1>
 
@@ -2123,9 +2077,8 @@ easiest one to setup: using the Synology nginx.</p>
     </ul>
   </li>
   <li>Save</li>
-</ul>
-
-<h1 id="step-2-create-certificate">Step 2: Create Certificate</h1>
+</ul>]]></block1>
+      <body><![CDATA[<h1 id="step-2-create-certificate">Step 2: Create Certificate</h1>
 
 <p>Control Panel &gt; Security &gt; Certificate &gt; Add</p>
 
@@ -2154,8 +2107,7 @@ easiest one to setup: using the Synology nginx.</p>
 
 <p><code>https://your-syno.synology.me:some_port</code> should now work!</p>
 
-<p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>
-]]></body>
+<p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>]]></body>
   </post>
   <post>
     <title>Training with ML.NET and LightGBM on Synology with Docker</title>
@@ -2199,28 +2151,7 @@ easiest one to setup: using the Synology nginx.</p>
     A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
 
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/dotnet/machinelearning" class="github">
-    <img src="https://img.shields.io/github/stars/dotnet/machinelearning.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>
-:
-    ML.NET is an open source and cross-platform machine learning framework for .NET.</p>
-
-<p><a href="https://github.com/microsoft/LightGBM" class="github">
-    <img src="https://img.shields.io/github/stars/microsoft/LightGBM.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>
-:
-    A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
-
-<p>After writing some code to fetch and mold the data, I was ready to train
-“my” AI, dubbed “PongRank” which was easy enough and all was good until
-I added a small WebApi to automate future syncing, retraining and predictions.</p>
-
-<!--more-->
-
-<h1 id="docker-training">Docker Training</h1>
+      <block1><![CDATA[<h1 id="docker-training">Docker Training</h1>
 
 <p>As, once deployed, training failed with:</p>
 
@@ -2230,9 +2161,8 @@ libgomp.so.1: cannot open shared object file: No such file or directory<br />
 
 <p>It’s a conscious decision by the team to not include LightGBM by default,
 and that makes perfect since it is a 1gig dependency which is only
-used when using that trainer.</p>
-
-<h1 id="installing-lightgbm">Installing LightGBM</h1>
+used when using that trainer.</p>]]></block1>
+      <body><![CDATA[<h1 id="installing-lightgbm">Installing LightGBM</h1>
 
 <p>A simple Google search got me to the LightGBM installation instructions:</p>
 
@@ -2300,8 +2230,7 @@ find / -name 'lib_lightgbm.so' 2&gt;/dev/null
 ldd /usr/local/lib/lib_lightgbm.so
 </code></pre>
 
-<p>And there we have it, a WebApi that creates the models!</p>
-]]></body>
+<p>And there we have it, a WebApi that creates the models!</p>]]></body>
   </post>
   <post>
     <title>Site Inspector</title>
@@ -3054,18 +2983,7 @@ public class PersonWithAttributes
     <excerpt><![CDATA[<p>Adding the <code>[AllowAnonymous]</code> or <code>[Authorize("policy")]</code> whenever a new Controller
 Action Method is added, it’s something that is easily forgotten.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Adding the <code>[AllowAnonymous]</code> or <code>[Authorize("policy")]</code> whenever a new Controller
-Action Method is added, it’s something that is easily forgotten.</p>
-
-<p>… As I noticed when I was looking at some of our controllers 😵</p>
-
-<p>Of course I have written this test many times before. These days it can be quickly
-re-created with AI but to avoid having to debug its code, here is the copy pasta
-version, with some possible variations.</p>
-
-<!--more-->
-
-<h1 id="tldr">TL&amp;DR</h1>
+      <block1><![CDATA[<h1 id="tldr">TL&amp;DR</h1>
 
 <pre><code class="language-csharp">Type[] controllerTypes = typeof(YourController).Assembly.GetTypes()
   .Where(t =&gt; t.GetCustomAttributes(typeof(ApiControllerAttribute), true).Any())
@@ -3104,9 +3022,8 @@ if (missingAuthActions.Any())
   var sortedMethods = string.Join("\n", missingAuthActions.OrderBy(x =&gt; x));
   Assert.Fail($"The following actions are missing [Authorize] attribute:\n{sortedMethods}");
 }
-</code></pre>
-
-<h1 id="variations">Variations</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="variations">Variations</h1>
 
 <p>Maybe you want to remove the code allowing <code>[AllowAnonymous]</code> or something…</p>
 
@@ -3211,8 +3128,7 @@ if (unsecured.Any())
   var lst = string.Join("\n", unsecured);
   Assert.Fail($"Missing RequireAuthorization/AllowAnonymous for endpoints:\n{lst}");
 }
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createSelector</title>
@@ -4743,18 +4659,7 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
     <excerpt><![CDATA[<p>We needed to generate some files and share them with a third party.
 They preferred we put the files on our SharePoint since they already had access to it.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>We needed to generate some files and share them with a third party.
-They preferred we put the files on our SharePoint since they already had access to it.</p>
-
-<p>So we made a <code>docker-compose</code> that scheduled a CRON
-job to create the files in the shared folder.</p>
-
-<p>The files were getting generated alright and other files were
-getting synced alright, but the generated files were not!?</p>
-
-<!--more-->
-
-<h1 id="in-cloudsync-folder">In CloudSync Folder</h1>
+      <block1><![CDATA[<h1 id="in-cloudsync-folder">In CloudSync Folder</h1>
 
 <h2 id="synology-configuration">Synology Configuration</h2>
 
@@ -4762,9 +4667,8 @@ getting synced alright, but the generated files were not!?</p>
 
 <p>Steps: Control Panel &gt; File Services &gt; NFS &gt; Enable</p>
 
-<p><img src="/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" alt="Enabling NFS v4 on Synology" title="Enabling NFS v4 on Synology" class="img-responsive" /></p>
-
-<h3 id="enable-nfs-on-shared-drive">Enable NFS on Shared Drive</h3>
+<p><img src="/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" alt="Enabling NFS v4 on Synology" title="Enabling NFS v4 on Synology" class="img-responsive" /></p>]]></block1>
+      <body><![CDATA[<h3 id="enable-nfs-on-shared-drive">Enable NFS on Shared Drive</h3>
 
 <ul>
   <li>Control Panel &gt; Shared Folder &gt; right Click “workspace” &gt; Edit &gt; NFS Permissions
@@ -4863,8 +4767,7 @@ but, of course, that doesn’t work.</p>
   <li><code>--chown=CloudSync:CloudSync</code>: I didn’t have to change ownership for CloudSync to pick up the files</li>
 </ul>
 
-<p>Of course you could also just add this to the <code>docker-compose</code> 😀</p>
-]]></body>
+<p>Of course you could also just add this to the <code>docker-compose</code> 😀</p>]]></body>
   </post>
   <post>
     <title>The new Angular template syntax</title>
@@ -5033,15 +4936,7 @@ so that when you change the implementation, your tests
 remain green and you can do that ruthless refactoring
 without having to worry about introducing new bugs.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Typically you want to write tests only for <code>public</code> methods.
-You want to avoid writing tests for private methods
-so that when you change the implementation, your tests
-remain green and you can do that ruthless refactoring
-without having to worry about introducing new bugs.</p>
-
-<!--more-->
-
-<p>The tests are your safety net you want to rely on!</p>
+      <block1><![CDATA[<p>The tests are your safety net you want to rely on!</p>
 
 <h1 id="when">When</h1>
 
@@ -5063,9 +4958,8 @@ To put tests in place, we often have to change code.</p>
   public static readonly Singleton Instance = new();
   private Singleton() { }
 }
-</code></pre>
-
-<h3 id="refactored-testable-singleton">Refactored Testable Singleton</h3>
+</code></pre>]]></block1>
+      <body><![CDATA[<h3 id="refactored-testable-singleton">Refactored Testable Singleton</h3>
 
 <p>We introduce an interface, mimicking the original API
 and provide an <code>internal</code> setter so that we can substitute
@@ -5160,8 +5054,7 @@ the <code>csproj</code> one… not so much.</p>
 <p>Ready for copy-pasta now!</p>
 
 <p>Somehow I ended up writing about “high cohesion”, “Working Effectively with Legacy Code”
-and “encapsulation” instead!</p>
-]]></body>
+and “encapsulation” instead!</p>]]></body>
   </post>
   <post>
     <title>Can you reset my mac</title>
@@ -5190,14 +5083,7 @@ and “encapsulation” instead!</p>
     <excerpt><![CDATA[<p>A friend got himself a second-hand iMac but couldn’t log in
 because he didn’t have the Apple Account credentials.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A friend got himself a second-hand iMac but couldn’t log in
-because he didn’t have the Apple Account credentials.</p>
-
-<p><img src="/assets/blog-images/reset-mac-3.png" alt="Me with computer science degree as Jessica Jones and relative looking at me to fix their computer as Killgrave meme" class="img-responsive" /></p>
-
-<!--more-->
-
-<p>Create them an account at <a href="https://account.apple.com">account.apple.com</a>,
+      <block1><![CDATA[<p>Create them an account at <a href="https://account.apple.com">account.apple.com</a>,
 the shit already starts there, get ready to confirm the email once and
 your friends’ phone like, literally, a gazillion times.</p>
 
@@ -5221,9 +5107,8 @@ when trying to download the OS.</p>
 <pre><code class="language-sh">mount -uw /
 rm /var/db/.applesetupdone
 shutdown -h now
-</code></pre>
-
-<h1 id="reboot">Reboot</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="reboot">Reboot</h1>
 
 <p>At this point, you’re almost there!</p>
 
@@ -5246,8 +5131,7 @@ At that point you can also kill the old user.</p>
 
 <p>More memes!!</p>
 
-<p><img src="/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>
-]]></body>
+<p><img src="/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>]]></body>
   </post>
   <post>
     <title>Database Auditing with EntityFramework and SQL Server</title>
@@ -5275,15 +5159,7 @@ At that point you can also kill the old user.</p>
     <excerpt><![CDATA[<p>Keeping track of database changes in SQL Server with EntityFramework,
 let’s go over your options with sample implementations.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Keeping track of database changes in SQL Server with EntityFramework,
-let’s go over your options with sample implementations.</p>
-
-<p><a href="https://github.com/itenium-be/DbAuditWithEF">All code with some UnitTests</a>
-can be found at the Github repository.</p>
-
-<!--more-->
-
-<h1 id="option-1-created--modified-byon-triggers">Option 1: Created &amp; Modified By/On Triggers</h1>
+      <block1><![CDATA[<h1 id="option-1-created--modified-byon-triggers">Option 1: Created &amp; Modified By/On Triggers</h1>
 
 <p>Each table has 4 extra columns to keep track of by who/when the record was created
 and by who/when the record was last updated. Obviously little EF code is needed for
@@ -5299,9 +5175,8 @@ BEGIN
   SET ModifiedBy = SYSTEM_USER, ModifiedOn = GETDATE()
   WHERE Id IN (SELECT Id FROM inserted);
 END;
-</code></pre>
-
-<p>The CreatedBy/On columns can be set with a default value for which
+</code></pre>]]></block1>
+      <body><![CDATA[<p>The CreatedBy/On columns can be set with a default value for which
 some EF configuration is needed:</p>
 
 <pre><code class="language-c#">protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -5668,8 +5543,7 @@ It also allows you to implement this in different ways.</p>
 </ul>
 
 <p>Of course, if you trust no one, you could also implement a combination of triggers and EF to
-really track everything 😀</p>
-]]></body>
+really track everything 😀</p>]]></body>
   </post>
   <post>
     <title>QA TechEvent: SQL Training</title>
@@ -5697,23 +5571,12 @@ really track everything 😀</p>
 more and more complex SQL exercises against three datasets: countries of the world,
 teachers + departments (postgres) and the football worldcups (sql server).</p>
 ]]></excerpt>
-      <body><![CDATA[<p>This month our QA TechEvent was “SQL Training”. Goal was to score most points by solving
-more and more complex SQL exercises against three datasets: countries of the world,
-teachers + departments (postgres) and the football worldcups (sql server).</p>
-
-<p>Which country scored the most owngoals? Read on to find out!</p>
-
-<p><img src="/assets/blog-images/sql-training-meme.png" alt="Special SQL Skillset Taken meme" title="Special SQL Skillset" class="img-responsive" /></p>
-
-<!--more-->
-
-<h1 id="the-game">The Game</h1>
+      <block1><![CDATA[<h1 id="the-game">The Game</h1>
 
 <p>The game started with a hickup, other machines were not discoverable on the guest network so the leaderboard server had to be deployed on an external server – while everyone was already solving exercises! This messed up our scoreboard considerably, especially the ranking for “solved fastest” 😃</p>
 
-<p>After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production – as it should! 😉</p>
-
-<h2 id="before-we-start">Before we start</h2>
+<p>After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production – as it should! 😉</p>]]></block1>
+      <body><![CDATA[<h2 id="before-we-start">Before we start</h2>
 
 <p><img src="/assets/blog-images/sql-training-meme2.png" alt="Meme SQL is always all caps!" title="It can only be SELECT FROM!!" class="img-responsive" /></p>
 
@@ -5924,8 +5787,7 @@ An exercise on joining a table with itself.</p>
 
 <p><strong>Worldcup-6</strong>: For the player that scored the most goals, list the worldcup.YYYY, the round name, the match date, the goal minute, scored Y/N and the total amount of goals scored so far. To keep things “simple”, evaluate only events.id 20, 21 and 22 and team.id 1.</p>
 
-<p>Anyone willing to give them a go? 😀</p>
-]]></body>
+<p>Anyone willing to give them a go? 😀</p>]]></body>
   </post>
   <post>
     <title>Git Hooks with Husky v9</title>
@@ -5960,17 +5822,7 @@ An exercise on joining a table with itself.</p>
     Git hooks made easy 🐶 woof!</p>
 
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/typicode/husky" class="github">
-    <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/typicode/husky">typicode/husky</a>
-:
-    Git hooks made easy 🐶 woof!</p>
-
-<!--more-->
-
-<h1 id="hooks">Hooks</h1>
+      <block1><![CDATA[<h1 id="hooks">Hooks</h1>
 
 <blockquote>
   <p><strong>git hooks</strong><br />
@@ -5994,9 +5846,8 @@ git push --no-verify
 
 # Or if you want to really quickly skip it ;)
 git commit -n
-</code></pre>
-
-<h1 id="husky">Husky</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="husky">Husky</h1>
 
 <p>Or, use Husky to easily make the git hooks part of the repository itself and share it with the entire team.</p>
 
@@ -6117,9 +5968,7 @@ exit $hasBuildErrors
 </a>
 <a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>
 :
-    A framework for managing and maintaining multi-language pre-commit hooks</p>
-
-]]></body>
+    A framework for managing and maintaining multi-language pre-commit hooks</p>]]></body>
   </post>
   <post>
     <title>KISS and Decorators</title>
@@ -6146,18 +5995,7 @@ exit $hasBuildErrors
     </toc>
     <excerpt><![CDATA[<p>I picked up a UserStory to make a small adjustment.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>I picked up a UserStory to make a small adjustment.</p>
-
-<p>The story was simple enough as was the required change
-but… Looking at the code, how was it
-supposed to work? It looked like it just.. Shouldn’t…</p>
-
-<p>Took some time but I found out, the behavior of the software was
-defined in the IOC registration, at startup, with Autofac.</p>
-
-<!--more-->
-
-<h1 id="the-implementation">The Implementation</h1>
+      <block1><![CDATA[<h1 id="the-implementation">The Implementation</h1>
 
 <p>A simplified version of the code would be:</p>
 
@@ -6176,9 +6014,8 @@ public class Doer : IDoer
     // one case?
   }
 }
-</code></pre>
-
-<p>And then another implementation, a decorator:</p>
+</code></pre>]]></block1>
+      <body><![CDATA[<p>And then another implementation, a decorator:</p>
 
 <pre><code class="language-c#">public class LoopingDoer : IDoer
 {
@@ -6307,8 +6144,7 @@ it’s just adding <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">acci
 <p>You end up with the consequences of the design pattern (hard to learn and debug)
 without any of the benefits.</p>
 
-<p>Keep It Simple.</p>
-]]></body>
+<p>Keep It Simple.</p>]]></body>
   </post>
   <post>
     <title>Frontend Track Setup</title>
@@ -6337,16 +6173,7 @@ without any of the benefits.</p>
     <excerpt><![CDATA[<p class="notice--info">Q: How do you install Node?<br />
 A: Well, you don’t!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--info">Q: How do you install Node?<br />
-A: Well, you don’t!</p>
-
-<p>You install NVM (Node Version Manager) because
-every project uses a different versions and
-they are not always that compatible!</p>
-
-<!--more-->
-
-<h1 id="node-version-manager">Node Version Manager</h1>
+      <block1><![CDATA[<h1 id="node-version-manager">Node Version Manager</h1>
 
 <p>Install the <a href="https://community.chocolatey.org/packages/nvm">nvm package</a> with <a href="https://chocolatey.org/install">chocolatey</a>.
 There is also a <a href="https://community.chocolatey.org/packages/nvm.portable">portable version</a>.</p>
@@ -6367,9 +6194,8 @@ nvm install 22.1.0
 nvm use 22.1.0
 </code></pre>
 
-<p>The Github repo of the session lists the Node version used at the top of the README.</p>
-
-<h1 id="visual-studio-code">Visual Studio Code</h1>
+<p>The Github repo of the session lists the Node version used at the top of the README.</p>]]></block1>
+      <body><![CDATA[<h1 id="visual-studio-code">Visual Studio Code</h1>
 
 <p>Looks like it’s already 5 years since I switched from Sublime Text 3 to Visual Studio Code.
 While all attendees can obviously pick whichever IDE they fancy, if you don’t have strong
@@ -6962,8 +6788,7 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
   <li><a href="https://github.com/itenium-be/RXJS">RXJS</a></li>
   <li><a href="https://github.com/itenium-be/angular-reactive-forms">Angular-ReactiveForms</a></li>
   <li><a href="https://github.com/itenium-be/Angular-Days">Angular-Days</a></li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>Docker + Mongo: a guide</title>
@@ -6993,32 +6818,15 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
     <excerpt><![CDATA[<p>How to load some initial data after spinning up a mongo
 with Docker.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>How to load some initial data after spinning up a mongo
-with Docker.</p>
-
-<p>If you want to follow the examples:</p>
-
-<pre><code class="language-sh">git clone https://github.com/itenium-be/Docker-Mongo
-cd Docker-Mongo
-docker compose up -d --build
-
-# After fiddling, force re-creating the mongos:
-docker compose down -v
-docker compose up -d --build
-</code></pre>
-
-<!--more-->
-
-<h1 id="simple-run">Simple Run</h1>
+      <block1><![CDATA[<h1 id="simple-run">Simple Run</h1>
 
 <pre><code class="language-sh">docker run --name some-mongo \
   -e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
   -e MONGO_INITDB_ROOT_PASSWORD=pwd \
   -p 27017:27017
   -d mongo
-</code></pre>
-
-<h1 id="initial-load">Initial Load</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="initial-load">Initial Load</h1>
 
 <p>Scripts are executed in alphabetical order,
 executed on <code>MONGO_INITDB_DATABASE</code>.</p>
@@ -7366,8 +7174,7 @@ COPY import.sh /docker-entrypoint-initdb.d
 RUN chmod +x /docker-entrypoint-initdb.d/import.sh
 
 CMD ["mongod"]
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Git Pull Request Hygiene</title>
@@ -7722,14 +7529,7 @@ Now you need ssh, git and Docker so you
 can actually start using it for more than,
 you know, mere file storage.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>You’ve got yourself a brand new Synology.
-Now you need ssh, git and Docker so you
-can actually start using it for more than,
-you know, mere file storage.</p>
-
-<!--more-->
-
-<h1 id="initial-setup">Initial Setup</h1>
+      <block1><![CDATA[<h1 id="initial-setup">Initial Setup</h1>
 
 <p>Getting started is really easy, after connecting
 your NAS to your local network, navigate to
@@ -7744,9 +7544,8 @@ you can use to configure pretty much everything!</p>
 the only thing you may really want to think about
 is which RAID you want to be using, for which
 Synology conveniently offers you their
-<a href="https://www.synology.com/en-global/support/RAID_calculator">RAID Calculator</a>.</p>
-
-<h2 id="local-ip">Local IP</h2>
+<a href="https://www.synology.com/en-global/support/RAID_calculator">RAID Calculator</a>.</p>]]></block1>
+      <body><![CDATA[<h2 id="local-ip">Local IP</h2>
 
 <p>Who can remember some random default IP?<br />
 Control Panel &gt; Connectivity &gt; Network:</p>
@@ -8021,8 +7820,7 @@ services:
     ports:
       - 3000:3000
     restart: unless-stopped
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Bootcamp: 3D Modelling</title>
@@ -8048,13 +7846,7 @@ services:
 We started from the course materials of Emiel Sleegers to build a landscape
 inspired by the grandeur of ancient Rome and Greece.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>For our bootcamp this year, Tom Pauwaert introduced us to the Unreal Engine.
-We started from the course materials of Emiel Sleegers to build a landscape
-inspired by the grandeur of ancient Rome and Greece.</p>
-
-<!--more-->
-
-<h1 id="breakfast">Breakfast</h1>
+      <block1><![CDATA[<h1 id="breakfast">Breakfast</h1>
 
 <figure class="imagewrapper" style="max-width: 500px">
     <img src="/assets/blog-images/bootcamp-3dmodelling-breakfast.png" alt="" title="" class="img-responsive" />
@@ -8062,9 +7854,8 @@ inspired by the grandeur of ancient Rome and Greece.</p>
     
     <figcaption>Can't go landscaping on an empty stomach!</figcaption>
     
-</figure>
-
-<h2 id="fake-it">Fake it!</h2>
+</figure>]]></block1>
+      <body><![CDATA[<h2 id="fake-it">Fake it!</h2>
 
 <p>We started the bootcamp with a short introduction to “Game Graphics Production”
 followed by a Unreal Engine 101 where Tom also let us in on the game industry’s biggest
@@ -8146,8 +7937,7 @@ with terrain and foliage assets.</p>
 
 <hr />
 
-<p>Also special thanks to @Tom Pauwaert for teaching us the ins and outs of the Unreal Engine!</p>
-]]></body>
+<p>Also special thanks to @Tom Pauwaert for teaching us the ins and outs of the Unreal Engine!</p>]]></body>
   </post>
   <post>
     <title>Security Bootcamp Prep</title>
@@ -8408,39 +8198,7 @@ as passphrase and score Vault multipliers.</p>
     </toc>
     <excerpt><![CDATA[<p>Comparing .NET Testing Frameworks.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Comparing .NET Testing Frameworks.</p>
-
-<p><a href="https://github.com/xunit/xunit" class="github">
-    <img src="https://img.shields.io/github/stars/xunit/xunit.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/xunit/xunit">xunit/xunit</a>
-:
-    Community-focused unit testing tool</p>
-
-<p><a href="https://github.com/nunit/nunit" class="github">
-    <img src="https://img.shields.io/github/stars/nunit/nunit.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/nunit/nunit">nunit/nunit</a>
-:
-    NUnit Framework</p>
-
-<p><a href="https://github.com/microsoft/testfx" class="github">
-    <img src="https://img.shields.io/github/stars/microsoft/testfx.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/microsoft/testfx">microsoft/testfx</a>
-:
-    MSTest framework and adapter</p>
-
-<p><a href="https://github.com/thomhurst/TUnit" class="github">
-    <img src="https://img.shields.io/github/stars/thomhurst/TUnit.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/thomhurst/TUnit">thomhurst/TUnit</a>
-:
-    A modern, fast and flexible .NET testing framework</p>
-
-<!--more-->
-
-<p>Target audience: A developer switching frameworks :)</p>
+      <block1><![CDATA[<p>Target audience: A developer switching frameworks :)</p>
 
 <h1 id="test-suites">Test Suites</h1>
 
@@ -8549,9 +8307,8 @@ as passphrase and score Vault multipliers.</p>
       <td>Property</td>
     </tr>
   </tbody>
-</table>
-
-<h4 id="xunit-iclassfixture">xUnit IClassFixture</h4>
+</table>]]></block1>
+      <body><![CDATA[<h4 id="xunit-iclassfixture">xUnit IClassFixture</h4>
 
 <p>Setup in xUnit doesn’t work with Attributes!<br />
 xUnit injects the same <code>XUnitTestsFixture</code> to the constructor
@@ -9023,8 +8780,7 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 </code></pre>
 
 <p><strong>TUnit</strong>: For more complicated AND/OR logic, check
-<a href="https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups">AssertionGroup.For</a></p>
-]]></body>
+<a href="https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups">AssertionGroup.For</a></p>]]></body>
   </post>
   <post>
     <title>Angular 17 - What&apos;s new?</title>
@@ -9209,22 +8965,11 @@ It’s also quite easy to add an empty placeholder.</p>
     </toc>
     <excerpt><![CDATA[<p>Kent Beck, who certainly isn’t an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Kent Beck, who certainly isn’t an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.</p>
-
-<p>Price: €39.99 for the eBook<br />
-Publication date: October 2023<br />
-Publisher: O’Reilly Media, Inc.<br />
-Pages: 99<br />
-ISBN: 9781098151249</p>
-
-<!--more-->
-
-<p>In this book, which is the start of a new series we dive into the world of tidyings which are small changes that do not alter the behaviour of our applications.
+      <block1><![CDATA[<p>In this book, which is the start of a new series we dive into the world of tidyings which are small changes that do not alter the behaviour of our applications.
 These are similar to refactorings, but smaller in scope and impact, or as described in the book “cute, fuzzy little refactorings that nobody could possibly hate on”.</p>
 
-<p>The “?” in the title is certainly not an error, it’s not a how-to book but it offers us premises to makes us think and his insights are shared to help us define a framework.</p>
-
-<h2 id="about-the-book">About the book</h2>
+<p>The “?” in the title is certainly not an error, it’s not a how-to book but it offers us premises to makes us think and his insights are shared to help us define a framework.</p>]]></block1>
+      <body><![CDATA[<h2 id="about-the-book">About the book</h2>
 
 <p>This book is the start of a new series, and we start with tidying which he calls “the Pringles of software design” to facilitate future (behavioural) changes.</p>
 
@@ -9297,8 +9042,7 @@ What’s the value for the product owner?</p>
 This also makes it an easier recommendation, compared to certain more opinionated books.</p>
 
 <p>The “when” &amp; “why” section are where the real meat was for me.<br />
-In the finalle Ken put a lot of effort into the value (or lack thereof) of doing these changes and gives insights into bridging certain gaps/phrasing towards business-owners to discuss the buy-in.</p>
-]]></body>
+In the finalle Ken put a lot of effort into the value (or lack thereof) of doing these changes and gives insights into bridging certain gaps/phrasing towards business-owners to discuss the buy-in.</p>]]></body>
   </post>
   <post>
     <title>European Women in Tech 2023</title>
@@ -9996,14 +9740,7 @@ During this session the focus was on learning to solder
 and putting everything together, all under the supervising eye
 of Michiel.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Last Thursday we built our own MacroPad at itenium.
-During this session the focus was on learning to solder
-and putting everything together, all under the supervising eye
-of Michiel.</p>
-
-<!--more-->
-
-<h1 id="friendly-warning">Friendly Warning</h1>
+      <block1><![CDATA[<h1 id="friendly-warning">Friendly Warning</h1>
 
 <p>Before we begin soldering…</p>
 
@@ -10013,9 +9750,8 @@ of Michiel.</p>
     
     <figcaption>Thanks to Mike for the heads up!</figcaption>
     
-</figure>
-
-<h1 id="the-components">The Components</h1>
+</figure>]]></block1>
+      <body><![CDATA[<h1 id="the-components">The Components</h1>
 
 <p>A <a href="https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/others/seeed-studio-seeeduino-xiao-rp2040-dual-core-cortex-m0-separate-headers">microcontroller</a>, <a href="https://www.tinytronics.nl/shop/en/switches/manual-switches/rotary-encoders/rotary-encoder-module">1 rotary encoder</a> and <a href="https://www.alternate.nl/Sharkoon/Gateron-PRO-2-0-BROWN-Switch-Set-keyboard-switches/html/product/1892291">6 keyboard switches</a>.</p>
 
@@ -10093,8 +9829,7 @@ of Michiel.</p>
 
 <h2 id="whats-next">What’s Next</h2>
 
-<p>To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎</p>
-]]></body>
+<p>To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎</p>]]></body>
   </post>
   <post>
     <title>The Security Bootcamp</title>
@@ -10552,15 +10287,7 @@ an nmap scan to discover services that are not (yet) available directly from the
     <excerpt><![CDATA[<p>A few hours of fun, playing around with Docker, Cron, Node, Shell and a FileServer.
 Can ChatGPT do this too? And maybe in less time?</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A few hours of fun, playing around with Docker, Cron, Node, Shell and a FileServer.
-Can ChatGPT do this too? And maybe in less time?</p>
-
-<p>To be honest, I am very biased against ChatGPT but still hoping, very hard, that it can just do this,
-so that I can start using it for simple stuff, POCs and more!</p>
-
-<!--more-->
-
-<p>We’re talking a whole whopping 180 lines of code here, including newlines and comments.
+      <block1><![CDATA[<p>We’re talking a whole whopping 180 lines of code here, including newlines and comments.
 ChatGPT is all the hype, so surely it must be able to write this very very simple app, right?</p>
 
 <h1 id="initial-prompt">Initial Prompt</h1>
@@ -10573,9 +10300,8 @@ ChatGPT is all the hype, so surely it must be able to write this very very simpl
 
 <p>It created a small Python script with inline configuration for Slack API token and meme directory.
 And then suggested using <code>cron</code> or <code>Task Scheduler</code> for the friday 16h part. That’s actually a good
-idea, I should add Windows instructions to the installation blog post for non-Docker usage 😃</p>
-
-<p>Anyway, let’s try it out!</p>
+idea, I should add Windows instructions to the installation blog post for non-Docker usage 😃</p>]]></block1>
+      <body><![CDATA[<p>Anyway, let’s try it out!</p>
 
 <pre><code class="language-sh">pip install slack-sdk
 python 1-InitialPrompt.py
@@ -10882,8 +10608,7 @@ but then it failed at what is typically the hardest part anyway: integration.</p
 <p>I will be using this to generate small things on the side. Like my Bash skills are below par,
 I’m sure ChatGPT can give me something that already mostly works.</p>
 
-<p>Oh man, I feel old, bitter and out of touch now.</p>
-]]></body>
+<p>Oh man, I feel old, bitter and out of touch now.</p>]]></body>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Implementation</title>
@@ -10914,11 +10639,7 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
     </toc>
     <excerpt><![CDATA[<p>How does the Slack Meme Bot work, technically?</p>
 ]]></excerpt>
-      <body><![CDATA[<p>How does the Slack Meme Bot work, technically?</p>
-
-<!--more-->
-
-<h1 id="docker-compose">docker-compose</h1>
+      <block1><![CDATA[<h1 id="docker-compose">docker-compose</h1>
 
 <p>The <code>docker-compose</code> exists of two services</p>
 
@@ -10933,9 +10654,8 @@ download the image before actually posting it.</p>
 <p>You will probably need to configure the meme file accessibility.</p>
 
 <pre><code class="language-sh">chmod -R 755 memes_dir
-</code></pre>
-
-<h2 id="cron-job">Cron Job</h2>
+</code></pre>]]></block1>
+      <body><![CDATA[<h2 id="cron-job">Cron Job</h2>
 
 <p>The <code>Dockerfile</code> copies the <code>job</code> folder with the Node program to the docker container
 and then runs <code>start.sh</code> which schedules running <code>meme-poster.js</code> and starts the Cron daemon.</p>
@@ -10954,8 +10674,7 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
 <ul>
   <li><code>messageToPostWithMeme</code>: A simple string sent along with the meme</li>
   <li>Configure the entire Slack message using the Slack <a href="https://app.slack.com/block-kit-builder/">Block Kit Builder</a></li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
@@ -10988,13 +10707,7 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
 Time to automate this to avoid scrolling through your entire collection whenever
 it is time to post one!</p>
 ]]></excerpt>
-      <body><![CDATA[<p>You want to post memes to Slack but who has time for that?<br />
-Time to automate this to avoid scrolling through your entire collection whenever
-it is time to post one!</p>
-
-<!--more-->
-
-<h1 id="what-it-looks-like">What it looks like</h1>
+      <block1><![CDATA[<h1 id="what-it-looks-like">What it looks like</h1>
 
 <p><img src="/assets/blog-images/slack-meme-bot-example.png" alt="Example of a Slack Meme Bot posting" title="Slack Meme Bot in action" /></p>
 
@@ -11013,9 +10726,8 @@ it is time to post one!</p>
   <li>Slack</li>
 </ul>
 
-<p>That’s it, really!</p>
-
-<h1 id="installation--configuration">Installation &amp; Configuration</h1>
+<p>That’s it, really!</p>]]></block1>
+      <body><![CDATA[<h1 id="installation--configuration">Installation &amp; Configuration</h1>
 
 <p>See <a href="https://github.com/itenium-be/slack-meme-poster">README.md</a> for step by step instructions.</p>
 
@@ -11065,8 +10777,7 @@ docker-compose up --build -d
   </li>
 </ul>
 
-<p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>
-]]></body>
+<p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></body>
   </post>
   <post>
     <title>Quality Assurance @ itenium</title>
@@ -11170,15 +10881,10 @@ It is therefore important to have a talented functional analyst on a software de
     </toc>
     <excerpt><![CDATA[<p>At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>At a client where I worked on a Vaadin application that had to be upgraded from Vaadin version 8 to version 22, we encountered an interesting issue regarding the way translations were done in the application.</p>
+      <block1><![CDATA[<h1 id="how-the-translations-are-done">How the translations are done</h1>
 
-<!--more-->
-
-<h1 id="how-the-translations-are-done">How the translations are done</h1>
-
-<p>The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.</p>
-
-<p><strong>The translation key is formed as such</strong>:</p>
+<p>The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.</p>]]></block1>
+      <body><![CDATA[<p><strong>The translation key is formed as such</strong>:</p>
 
 <p><img src="/assets/blog-images/vaadin_translation_key_template.png" alt="Visual translation key formation" title="Pretty slick" /></p>
 
@@ -11295,8 +11001,7 @@ export class CreditVouchDesign extends LitElement {
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>
-]]></body>
+<p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>]]></body>
   </post>
   <post>
     <title>Regular Expressions: Tutorial</title>
@@ -12273,13 +11978,8 @@ So if you want to ensure that your Java projects are completed on time and to th
     </toc>
     <excerpt><![CDATA[<p>On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor.</p>
-
-<!--more-->
-
-<p>What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.</p>
-
-<h2 id="xamarin">Xamarin</h2>
+      <block1><![CDATA[<p>What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.</p>]]></block1>
+      <body><![CDATA[<h2 id="xamarin">Xamarin</h2>
 
 <p>Xamarin was introduced in May 2011 with the foundation of the Xamarin Company. It was created with a commercial purpose, until it was acquired by Microsoft in 2016. It was based on the mono project introduced in 2001.</p>
 
@@ -12338,8 +12038,7 @@ So if you want to ensure that your Java projects are completed on time and to th
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>.NET MAUI is the result of pulling Xamarin into the .NET BCL. It contains many features from Xamarin Forms and has many improvements to show the potential of this new UI framework.</p>
-]]></body>
+<p>.NET MAUI is the result of pulling Xamarin into the .NET BCL. It contains many features from Xamarin Forms and has many improvements to show the potential of this new UI framework.</p>]]></body>
   </post>
   <post>
     <title>Regular Expressions: Introduction</title>
@@ -13333,20 +13032,14 @@ Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Cou
     <excerpt><![CDATA[<p>A long, long time ago, when games like <a href="https://utopia-game.com">Utopia</a> and <a href="http://www.planetarion.com/">Planetarion</a> were all the rage,
 I started playing Ambar (since down) with a few friends. This could be the story of why one should have an IT-guy in the team.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A long, long time ago, when games like <a href="https://utopia-game.com">Utopia</a> and <a href="http://www.planetarion.com/">Planetarion</a> were all the rage,
-I started playing Ambar (since down) with a few friends. This could be the story of why one should have an IT-guy in the team.</p>
-
-<!--more-->
-
-<h1 id="the-strategy">The Strategy</h1>
+      <block1><![CDATA[<h1 id="the-strategy">The Strategy</h1>
 
 <p><img src="/assets/blog-images/first-hack-ambar-logo.jpg" alt="Ambar logo" title="Ambar logo" /></p>
 
 <p>During one age of the browser game Ambar, we were playing an empire in which our strategy was to grow like mad but without training any troops.
 If we could outgrow everyone fast enough, no one would be able to open a magical portal to our empire to attack us, since portal-opening was based on empire size.
-This was kind of the idea because as you can guess, having no troops in a war game usually is.. problematic.</p>
-
-<h1 id="the-portal">The Portal</h1>
+This was kind of the idea because as you can guess, having no troops in a war game usually is.. problematic.</p>]]></block1>
+      <body><![CDATA[<h1 id="the-portal">The Portal</h1>
 
 <p>And… Turns out we hadn’t grown enough, fast enough because right after the initial no-attack period an enemy empire did succeed in opening a portal to us 😲.<br />
 Usually this is not really a problem, as there is a spell to close a portal should someone open one to an “undesirable” target - in our case <strong>any</strong> other empire.</p>
@@ -13387,8 +13080,7 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 
 <p>Have a backup plan in case risky plan A goes awry.</p>
 
-<p>I’m a cheat and should’ve been banned.</p>
-]]></body>
+<p>I’m a cheat and should’ve been banned.</p>]]></body>
   </post>
   <post>
     <title>CQRS and CRUD</title>
@@ -13414,22 +13106,7 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="a-ramble-against-cqrs">A ramble against CQRS</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="a-ramble-against-cqrs">A ramble against CQRS</h1>
-
-<p>A lot of interesting articles have been published about <strong>Command Query Responsibility Segregation</strong>.</p>
-
-<p>This is a mere rant. Not necessarily against CQRS per se, but against <strong>when</strong>
-it is being applied in spite of Martin Fowlers cautionary words:</p>
-
-<blockquote>
-  <p>For some situations, this separation can be valuable, but beware
-that <strong>for most systems CQRS adds risky complexity</strong>.<br />
-— <em>Martin Fowler (<a href="https://martinfowler.com/bliki/CQRS.html">CQRS Article</a>)</em></p>
-</blockquote>
-
-<!--more-->
-
-<p>I’ve always loved <a href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation">CQS</a>.
+      <block1><![CDATA[<p>I’ve always loved <a href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation">CQS</a>.
 How could one not, it makes perfect sense that <code>getUser(5)</code>
 would return user “5” and not do much else, perhaps there is some caching in place
 but one would hope it doesn’t actually create a User record or something.</p>
@@ -13442,9 +13119,8 @@ architecture, even when doing so late in the development life cycle.</p>
 <blockquote>
   <p>Despite these benefits, <strong>you should be very cautious about using CQRS</strong><br />
 — <em>Martin Fowler</em></p>
-</blockquote>
-
-<p>In his entire article on CQRS, this is the only sentence that Martin has put in bold.</p>
+</blockquote>]]></block1>
+      <body><![CDATA[<p>In his entire article on CQRS, this is the only sentence that Martin has put in bold.</p>
 
 <p>Unfortunately developers like the latest and greatest very much and CQRS has, for many organizations
 and teams been put forward as the de facto standard architecture.</p>
@@ -13772,8 +13448,7 @@ workaround for properties being “all over the place”.</p>
       <li>Empty classes that just inherit from another class</li>
     </ul>
   </li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>VSCode: Editor Settings and Shortcuts</title>
@@ -13800,18 +13475,7 @@ workaround for properties being “all over the place”.</p>
     </toc>
     <excerpt><![CDATA[<p><img src="/assets/blog-images/vscode-editor.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
 ]]></excerpt>
-      <body><![CDATA[<p><img src="/assets/blog-images/vscode-editor.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
-
-<blockquote>
-  <p>Pragmatic Tip 22:
-The editor should be an extension of your hand;
-make sure your editor is configurable, extensible,
-and programmable.</p>
-</blockquote>
-
-<!--more-->
-
-<h1 id="basic-editing">Basic Editing</h1>
+      <block1><![CDATA[<h1 id="basic-editing">Basic Editing</h1>
 
 <div style="display: block">
 	
@@ -13940,10 +13604,8 @@ and programmable.</p>
 		
 	
 	: Toggle Line Comment
-</div>
-
-<p><br />
-Custom shortcuts:</p>
+</div>]]></block1>
+      <body><![CDATA[<p>Custom shortcuts:</p>
 <ul>
   <li><code>Control Shift J</code>: Join Lines</li>
   <li>Change End Of Line Sequence</li>
@@ -15650,8 +15312,7 @@ Custom shortcuts:</p>
     "markdown.extension.preview.autoShowPreviewToSide": false,
     "markdown.extension.toc.githubCompatibility": true,
 }
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Pragmatic Tip #22 : Use A Single Editor Well</title>
@@ -15677,23 +15338,7 @@ Custom shortcuts:</p>
     </toc>
     <excerpt><![CDATA[<p><img src="/assets/blog-images/vscode-screenshot.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
 ]]></excerpt>
-      <body><![CDATA[<p><img src="/assets/blog-images/vscode-screenshot.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
-
-<blockquote>
-  <p>Pragmatic Tip 22:
-The editor should be an extension of your hand;
-make sure your editor is configurable, extensible,
-and programmable.</p>
-</blockquote>
-
-<p>As a long time Sublime user, the infrequent updates and missing support for new-ish stuff
-started to become quite apparent. Like all plugin maintainers have turned to Visual Studio Code.</p>
-
-<p>And so I finally decided to leave Sublime Text 3 behind. Welcome Visual Studio Code, the new goto editor.</p>
-
-<!--more-->
-
-<h1 id="getting-started">Getting Started</h1>
+      <block1><![CDATA[<h1 id="getting-started">Getting Started</h1>
 
 <pre><code class="language-bash">choco install vscode
 </code></pre>
@@ -15762,9 +15407,8 @@ started to become quite apparent. Like all plugin maintainers have turned to Vis
   <li><code>Help: Interactive Playground</code>: Learn about refactoring, formatting, snippets and more</li>
   <li><a href="https://code.visualstudio.com/docs/getstarted/introvideos"><code>Help: Introductory Videos</code></a></li>
   <li><a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks"><code>Help: Tips and Tricks</code></a></li>
-</ul>
-
-<h1 id="configuration">Configuration</h1>
+</ul>]]></block1>
+      <body><![CDATA[<h1 id="configuration">Configuration</h1>
 
 <h2 id="locations">Locations</h2>
 
@@ -16814,8 +16458,7 @@ Next up: <a href="/blog/dev-setup/vscode-editor">VSCode: Editor Configuration an
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,
 you know, something like Vim.</p>
 
-<p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>
-]]></body>
+<p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></body>
   </post>
   <post>
     <title>The itenium Bliki</title>
@@ -16938,28 +16581,7 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="valueobjects">ValueObjects</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="valueobjects">ValueObjects</h1>
-
-<p>A ramble against objects containing <code>DateStart</code> &amp; <code>DateEnd</code> pairs of properties.</p>
-
-<p>Some of their equally evil relatives:</p>
-<ul>
-  <li><code>DateStart</code> &amp; <code>TimeSpan</code> or <code>Day/Month only in DateTime</code>, etc.</li>
-  <li><code>decimal Money</code> &amp; <code>string Currency</code></li>
-  <li><code>decimal X/Y</code> and/or <code>Width/Height</code></li>
-</ul>
-
-<p>This is the case for the <a href="https://martinfowler.com/bliki/ValueObject.html"><strong>ValueObject</strong></a>:</p>
-
-<blockquote>
-  <p><em>A small simple object, like money or a date</em><br />
-<em>range, whose equality isn’t based on identity.</em><br />
-— Martin Fowler</p>
-</blockquote>
-
-<!--more-->
-
-<h1 id="basic-example">Basic Example</h1>
+      <block1><![CDATA[<h1 id="basic-example">Basic Example</h1>
 
 <p>Consider the following class:</p>
 <pre><code class="language-c#">class Person {
@@ -16979,9 +16601,8 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
     public DateTime? ActiveEnd;
     // ... and many more?
 }
-</code></pre>
-
-<p>And how beautiful it could’ve been:</p>
+</code></pre>]]></block1>
+      <body><![CDATA[<p>And how beautiful it could’ve been:</p>
 <pre><code class="language-c#">class Person {
     // The first version was quite obfuscated, while in this version it's
     // quite obvious what's in it by merely glancing at the declaration.
@@ -17107,8 +16728,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 
 <h1 id="conclusions">Conclusions</h1>
 
-<p>Not creating a value object for coherent pairs of value types is a missed opportunity? 😂</p>
-]]></body>
+<p>Not creating a value object for coherent pairs of value types is a missed opportunity? 😂</p>]]></body>
   </post>
   <post>
     <title>Robocode Tutorial</title>
@@ -17137,22 +16757,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     Build the best - destroy the rest!</p>
 
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/robo-code/robocode" class="github">
-    <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>
-:
-    Build the best - destroy the rest!</p>
-
-<blockquote>
-  <p>Robocode is a <strong>programming game</strong>, where the goal is to develop a robot battle tank to battle against
-other tanks in Java or .NET. The robot battles are running in real-time and on-screen.</p>
-</blockquote>
-
-<!--more-->
-
-<h1 id="game-physics">Game Physics</h1>
+      <block1><![CDATA[<h1 id="game-physics">Game Physics</h1>
 
 <p><img src="/assets/blog-images/robocode-battleground.gif" alt="BattleFieldWidth and BattleFieldHeight" title="BattleFieldWidth and BattleFieldHeight" class="img-responsive" style="max-width: 500px" /></p>
 
@@ -17165,9 +16770,8 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
   <li>Distance (d): distance = velocity * time.</li>
 </ul>
 
-<p><a href="http://robowiki.net/wiki/Robocode/Game_Physics">Wiki</a></p>
-
-<h1 id="the-robot">The Robot</h1>
+<p><a href="http://robowiki.net/wiki/Robocode/Game_Physics">Wiki</a></p>]]></block1>
+      <body><![CDATA[<h1 id="the-robot">The Robot</h1>
 
 <p>A Robot consists of:</p>
 
@@ -17284,8 +16888,7 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
   <li><a href="https://www.youtube.com/watch?v=oTjjkXebCAY">Programming Games: Robocode // Patrick Cupka</a></li>
   <li><a href="https://www.youtube.com/watch?v=wJzJ57ZC1sc">Introduction to Robocode // Philip Johnson</a></li>
   <li><a href="https://www.youtube.com/watch?v=dHrupYhq7sI">Walk-through of testing code for robocode // Philip Johnson</a></li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>Robocode Installation &amp; Debugging</title>
@@ -17316,22 +16919,7 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
     Build the best - destroy the rest!</p>
 
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/robo-code/robocode" class="github">
-    <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>
-:
-    Build the best - destroy the rest!</p>
-
-<blockquote>
-  <p>Robocode is a <strong>programming game</strong>, where the goal is to develop a robot battle tank to battle against
-other tanks in Java or .NET. The robot battles are running in real-time and on-screen.</p>
-</blockquote>
-
-<!--more-->
-
-<h1 id="install-robocode">Install Robocode</h1>
+      <block1><![CDATA[<h1 id="install-robocode">Install Robocode</h1>
 
 <p>Prerequisites:</p>
 <ul>
@@ -17342,9 +16930,8 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
 <p>Or follow the official <a href="http://robowiki.net/wiki/Robocode/System_Requirements">step by step instructions</a>.</p>
 
 <p>If you get a <em>“‘java’ is not recognized as an internal or external command”</em>, then
-<a href="http://robowiki.net/wiki/Robocode/System_Requirements#Setting_environmental_variables_on_Windows">add your JDK to PATH</a>.</p>
-
-<h1 id="building-a-robot">Building a Robot</h1>
+<a href="http://robowiki.net/wiki/Robocode/System_Requirements#Setting_environmental_variables_on_Windows">add your JDK to PATH</a>.</p>]]></block1>
+      <body><![CDATA[<h1 id="building-a-robot">Building a Robot</h1>
 
 <h2 id="in-the-robocode-ui">In the Robocode UI</h2>
 
@@ -17459,8 +17046,7 @@ Find the CLI arguments in <code>robocode.bat</code>.</p>
 <h4 id="robot-console">Robot Console</h4>
 
 <p>See <code>out.println()</code> (or <code>Console.WriteLine()</code>) in your robot log by clicking on your robot name in the right top battle
-view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>
-]]></body>
+view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>]]></body>
   </post>
   <post>
     <title>Autohotkey Debugging</title>
@@ -17789,19 +17375,7 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
     
 </figure>
 ]]></excerpt>
-      <body><![CDATA[<figure class="youtubemovie">
-    <div class="iframewrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/njt-Qzw0mVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-    </div>
-
-    
-    <figcaption></figcaption>
-    
-</figure>
-
-<!--more-->
-
-<h1 id="emscripten">Emscripten</h1>
+      <block1><![CDATA[<h1 id="emscripten">Emscripten</h1>
 
 <p><a href="https://github.com/emscripten-core/emscripten" class="github">
     <img src="https://img.shields.io/github/stars/emscripten-core/emscripten.svg?style=social&amp;label=Star" />
@@ -17812,9 +17386,8 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
 
 <p>Brings your existing C/C++ applications to the web (ex: Autocad, Game Engines like Unity).
 Provides a drop-in replacement: Whatever you wrote, it should just work on the web.
-It emulates OpenGL, the FileSystem etc.</p>
-
-<h1 id="for-web-developers">For Web Developers</h1>
+It emulates OpenGL, the FileSystem etc.</p>]]></block1>
+      <body><![CDATA[<h1 id="for-web-developers">For Web Developers</h1>
 
 <p>Two main use cases</p>
 <ul>
@@ -17923,8 +17496,7 @@ npx http-server
 <p>Open the generated <code>HelloWorld.html</code> in a browser to see your WebAssembly file executed!</p>
 
 <p>For this “program”, a 40kb <code>HelloWorld.wasm</code> file
-and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>
-]]></body>
+and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]></body>
   </post>
   <post>
     <title>AVA Tutorial</title>
@@ -18298,24 +17870,11 @@ console.log('Currently running', test.meta.file);
     </toc>
     <excerpt><![CDATA[<p>Not nearly as confusing as it is in JavaScript.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Not nearly as confusing as it is in JavaScript.</p>
-
-<pre><code class="language-c#">using System.Text.RegularExpressions;
-
-bool mach = Regex.IsMatch("input", @"\w+", RegexOptions.None);
-Match match = Regex.Match("input", @"\w+");
-IReadOnlyList&lt;Match&gt; matches = Regex.Matches("input", @"\w+");
-string result = Regex.Replace("input", @"(\w+)", "$1");
-</code></pre>
-
-<!--more-->
-
-<p>When executing the same regex many times, prefer the static methods on <code>Regex</code>
+      <block1><![CDATA[<p>When executing the same regex many times, prefer the static methods on <code>Regex</code>
 over <code>new Regex()</code> as they keep an internal cache for performance.</p>
 
-<p>Its methods may throw a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexmatchtimeoutexception?"><code>RegexMatchTimeoutException</code></a></p>
-
-<h1 id="creation">Creation</h1>
+<p>Its methods may throw a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexmatchtimeoutexception?"><code>RegexMatchTimeoutException</code></a></p>]]></block1>
+      <body><![CDATA[<h1 id="creation">Creation</h1>
 
 <pre><code class="language-csharp">var regex = new Regex(@"\d+", RegexOptions.None);
 
@@ -18395,8 +17954,7 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
   <li><code>$'</code> : after</li>
   <li><code>$+</code> : last captured group</li>
   <li><code>$_</code> : entire input string</li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>Vue.js Tutorial</title>
@@ -19655,22 +19213,7 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
 A lot has changed in Husky since this blog post.
 See the <a href="https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9">2024 update of this article</a> instead!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice"><strong>Update for Husky v9</strong><br />
-A lot has changed in Husky since this blog post.
-See the <a href="https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9">2024 update of this article</a> instead!</p>
-
-<p>Avoid pushing changes that break the build with githooks and Husky.</p>
-
-<p><a href="https://github.com/typicode/husky" class="github">
-    <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/typicode/husky">typicode/husky</a>
-:
-    🐺 Git hooks made easy</p>
-
-<!--more-->
-
-<h1 id="hooks">Hooks</h1>
+      <block1><![CDATA[<h1 id="hooks">Hooks</h1>
 
 <blockquote>
   <p><strong>git hooks</strong><br />
@@ -19679,9 +19222,8 @@ Run a program before certain points in gits execution.</p>
 
 <p>They are defined in <code>.git\hooks</code>. <!-- (config: `core.hooksPath`) --><br />
 You can find some example files in that directory. Remove their <code>.sample</code> suffix
-to test them out.</p>
-
-<h1 id="husky">Husky</h1>
+to test them out.</p>]]></block1>
+      <body><![CDATA[<h1 id="husky">Husky</h1>
 
 <p>Hooks are saved locally and not pushed to the remote.
 Husky allows you to easily make the git hooks part of the repository itself.</p>
@@ -19753,8 +19295,7 @@ module.exports = {
     ])
   }
 };
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Exotic Git Snippets</title>
@@ -19780,11 +19321,7 @@ module.exports = {
     </toc>
     <excerpt><![CDATA[<p>Some git commands and scripts that come in handy from time to time.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Some git commands and scripts that come in handy from time to time.</p>
-
-<!--more-->
-
-<h1 id="splitting-repositories">Splitting Repositories</h1>
+      <block1><![CDATA[<h1 id="splitting-repositories">Splitting Repositories</h1>
 
 <p>You start with a small project. It grows over time as you add more and more features.
 And then, at some point, you realize one of these features should actually
@@ -19794,9 +19331,8 @@ in multiple contexts.</p>
 <p>So far I moved the files and did a <code>git init</code>. At this point, I was always sad
 because well, I lost the history of the feature. Not only less
 commits for my Github statistics but I also lost <code>git blame</code> so it could no longer
-tell me why a particular algorithm was written the way it was.</p>
-
-<p>Turns out git allows you to have your cake and eat it too!</p>
+tell me why a particular algorithm was written the way it was.</p>]]></block1>
+      <body><![CDATA[<p>Turns out git allows you to have your cake and eat it too!</p>
 
 <pre><code class="language-bash"># DEPRECATED!!
 git filter-branch --prune-empty --subdirectory-filter src master
@@ -19917,8 +19453,7 @@ Set-Alias pr Create-PullRequest
 <ul>
   <li><a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">git assume unchanged</a></li>
   <li><a href="https://itenium.be/blog/productivity/git-hooks-with-husky/">git hooks with Husky</a></li>
-</ul>
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>Chrome Extension: Starify Github project links</title>
@@ -19941,20 +19476,7 @@ Set-Alias pr Create-PullRequest
 Long live “Starify Links” because we’re now adding links to, well, everything! 🌟✨🤩
 See the <a href="/javascript/2025/10/23/starify-links.html">new blog post</a></p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--info">The Starify-GitHub-Links Chrome extension is no more! 🎉
-Long live “Starify Links” because we’re now adding links to, well, everything! 🌟✨🤩
-See the <a href="/javascript/2025/10/23/starify-links.html">new blog post</a></p>
-
-<p>A <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">free and open source Chrome Extension</a>
-that adds Github stars badges to all links on a web page.</p>
-
-<p><br />
-<strong>Before</strong>: <a href="https://github.com/sindresorhus/awesome">https://github.com/sindresorhus/awesome</a><br />
-<strong>After</strong>: <img src="https://img.shields.io/github/stars/sindresorhus/awesome.svg?style=social&amp;label=Star" alt="sindresorhus/awesome" /> <a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a></p>
-
-<!--more-->
-
-<p><br />
+      <block1><![CDATA[<p><br />
 Runs automatically on certain pages like Google search results, StackExchange questions,
 on Github itself and on Package Manager registries.</p>
 
@@ -19980,9 +19502,8 @@ on Github itself and on Package Manager registries.</p>
 		
 	
 	: Activate on any other page
-</div>
-
-<h1 id="more-examples">More Examples</h1>
+</div>]]></block1>
+      <body><![CDATA[<h1 id="more-examples">More Examples</h1>
 
 <h2 id="google-search-results">Google Search Results</h2>
 
@@ -20021,8 +19542,7 @@ const activateDirectlyOn = [
 
 // Shoutout to Shields.io for kindly providing the badges!
 const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?style=social&amp;label=Star';
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>JavaScript RegExp Tutorial</title>
@@ -20050,27 +19570,7 @@ const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?
     </toc>
     <excerpt><![CDATA[<p>A cheat sheet for the regex syntax in JavaScript.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A cheat sheet for the regex syntax in JavaScript.</p>
-
-<p style="float: right"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">MDN RegExp Guide</a></p>
-
-<p><strong>TL&amp;DR</strong></p>
-<pre><code class="language-javascript">/^$/.test(''); // boolean
-'ok'.replace(/(o)(k)/g, '$2$1');
-// Other replacements:
-// $$ (literal), $&amp; (all), $` (before), $' (after), $&lt;name&gt;
-
-const matchG = 'aaa'.match(/a/g);
-matchG == ['a', 'a', 'a'];
-
-const matchNoG = 'str'.match(/(st)r/);
-matchNoG == Object.assign(['str', 'st'], {groups: undefined, index: 0, input: 'str'});
-matchNoG == /(st)r/.exec('str');
-</code></pre>
-
-<!--more-->
-
-<h1 id="common-usage">Common Usage</h1>
+      <block1><![CDATA[<h1 id="common-usage">Common Usage</h1>
 
 <p>Define yourself a regex:</p>
 <pre><code class="language-javascript">// Preferred way
@@ -20078,9 +19578,8 @@ const expressionLiteral = /\w+/;
 
 // Only use this for dynamic patterns
 const ctor = new RegExp('\\w+');
-</code></pre>
-
-<h2 id="regexpprototypetest">RegExp.prototype.test</h2>
+</code></pre>]]></block1>
+      <body><![CDATA[<h2 id="regexpprototypetest">RegExp.prototype.test</h2>
 
 <p style="float: right"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test">RegExp.prototype.test</a></p>
 
@@ -20349,9 +19848,7 @@ const regex = /a/g;
 regex.test(input); // Returns true. lastIndex is now 1
 regex.test(input); // Returns true. lastIndex is now 2
 regex.test(input); // Returns false. lastIndex is reset to 0
-</code></pre>
-
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Rubber Duck Debugging</title>
@@ -21077,37 +20574,11 @@ it’s since <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 that “Linq lambda syntax”-like functionality is available in JavaScript.</p>
 
 ]]></excerpt>
-      <body><![CDATA[<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"><code>Array.prototype</code></a> functions have been available for a long time but
-it’s since <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow functions</a>
-that “Linq lambda syntax”-like functionality is available in JavaScript.</p>
-
-<p>This blog post explains the most common functions by comparing them to their C# equivalents.</p>
-
-<p>A basic example:</p>
-<pre><code class="language-javascript">// JavaScript
-const result = [0, 1, 2, 3, null]
-    .filter(x =&gt; x !== null)
-    .map(x =&gt; x * 10)
-    .sort((a, b) =&gt; b - a);
-
-expect(result).toEqual([30, 20, 10, 0]);
-
-// C#
-var result = new int?[] {0, 1, 2, 3, null}
-    .Where(x =&gt; x != null)
-    .Select(x =&gt; x * 10)
-    .OrderByDescending(x =&gt; x)
-    .ToArray();
-</code></pre>
-
-<!--more-->
-
-<p>Whenever you want to write a <code>for</code> to loop over an array, the <code>Array.prototype</code> functions
+      <block1><![CDATA[<p>Whenever you want to write a <code>for</code> to loop over an array, the <code>Array.prototype</code> functions
 probably allow you to achieve the same result but in more functional and succinct manner.</p>
 
-<p>Do note that the deferred execution we know from Linq does not apply to <code>Array.prototype</code>!</p>
-
-<h1 id="comparison-table">Comparison Table</h1>
+<p>Do note that the deferred execution we know from Linq does not apply to <code>Array.prototype</code>!</p>]]></block1>
+      <body><![CDATA[<h1 id="comparison-table">Comparison Table</h1>
 
 <table class="table-code">
   <thead>
@@ -21429,9 +20900,7 @@ for (let itm of input) {
 <p>Thanks <a href="https://x.com/bewidec/status/935573858136051713">Wim De Cleen</a> (and Martin Fowler)
 for this amazing diagram, I love it!</p>
 
-<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>
-
-]]></body>
+<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></body>
   </post>
   <post>
     <title>Debugging in Visual Studio</title>
@@ -21450,254 +20919,13 @@ for this amazing diagram, I love it!</p>
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="basic-shortcuts">Basic Shortcuts</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="basic-shortcuts">Basic Shortcuts</h1>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>F5</kbd>
-			
-		
-
-		
-	
-	: Start debugging
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>F5</kbd>
-			
-		
-
-		
-	
-	: Start without debugging
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Shift</kbd>
-			
-				+
-			
-		
-			<kbd>F5</kbd>
-			
-		
-
-		
-	
-	: Stop debugging
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>Shift</kbd>
-			
-				+
-			
-		
-			<kbd>F5</kbd>
-			
-		
-
-		
-	
-	: Stop, rebuild and start debugging
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>Alt</kbd>
-			
-				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Attach to process
-</div>
-
-<p><br /></p>
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>Alt</kbd>
-			
-				+
-			
-		
-			<kbd>Break</kbd>
-			
-		
-
-		
-	
-	: Break (Debug &gt; Break All)
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>F10</kbd>
-			
-		
-
-		
-	
-	: Step over
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>F11</kbd>
-			
-		
-
-		
-	
-	: Step into
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Shift</kbd>
-			
-				+
-			
-		
-			<kbd>F11</kbd>
-			
-		
-
-		
-	
-	: Step out
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>F10</kbd>
-			
-		
-
-		
-	
-	: Run to cursor
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-				+
-			
-		
-			<kbd>Shift</kbd>
-			
-				+
-			
-		
-			<kbd>F10</kbd>
-			
-		
-
-		
-	
-	: Set next statement
-</div>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>Alt</kbd>
-			
-				+
-			
-		
-			<kbd>Num *</kbd>
-			
-		
-
-		
-	
-	: See current statement
-</div>
-
-<p><br /></p>
-
-<!--more-->
-
-<p>Enable “<strong>Edit &amp; continue</strong>” in Tools &gt; Options &gt; Debugging.<br />
+      <block1><![CDATA[<p>Enable “<strong>Edit &amp; continue</strong>” in Tools &gt; Options &gt; Debugging.<br />
 Other interesting settings:</p>
 <ul>
   <li>Step over properties and operators (Managed only)</li>
   <li>Just My Code (Enable to step over system, framework and other non-user calls)</li>
-</ul>
-
-<h1 id="breakpoints">Breakpoints</h1>
+</ul>]]></block1>
+      <body><![CDATA[<h1 id="breakpoints">Breakpoints</h1>
 
 <div style="display: block">
 	
@@ -22166,9 +21394,7 @@ Not open source:</p>
   <li>Promises “significant” performance improvements in stepping</li>
   <li>Yipiee, they added search to Autos, Locals and Watch windows! (Options &gt; Debugging &gt; Search)</li>
   <li>They also managed to cut 25px from the title bar and still make it look <a href="/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
-</ul>
-
-]]></body>
+</ul>]]></body>
   </post>
   <post>
     <title>Angular Pipes</title>
@@ -22772,22 +21998,7 @@ export class MyApplicationModule {}
 environment but when you do have to revert to modifying a committed configuration file, at least there is
 “git assume unchanged” to avoid committing your changes in these files accidentally.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Ideally one would create a new gitignored file to configure an application to fit his local development
-environment but when you do have to revert to modifying a committed configuration file, at least there is
-“git assume unchanged” to avoid committing your changes in these files accidentally.</p>
-
-<h1 class="hide-from-excerpt" id="assume-unchanged">Assume Unchanged</h1>
-
-<pre><code class="language-powershell"># Git assume a file
-git update-index --assume-unchanged fileName
-
-# And unassume with
-git update-index --no-assume-unchanged fileName
-</code></pre>
-
-<!--more-->
-
-<h2 id="aliases">Aliases</h2>
+      <block1><![CDATA[<h2 id="aliases">Aliases</h2>
 
 <p>But who can remember that…<br />
 Some handy git aliases without <code>update-index</code> nightmarish syntax to be put in your <code>~/.gitconfig</code>:</p>
@@ -22804,9 +22015,8 @@ Some handy git aliases without <code>update-index</code> nightmarish syntax to b
 
     # List all currently git assumed files
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-</code></pre>
-
-<p>Or create the aliases from the CLI:</p>
+</code></pre>]]></block1>
+      <body><![CDATA[<p>Or create the aliases from the CLI:</p>
 <pre><code class="language-powershell">git config --global alias.assume "update-index --assume-unchanged"
 git config --global alias.noassume "update-index --no-assume-unchanged"
 git config --global alias.unassume "update-index --no-assume-unchanged"
@@ -22834,8 +22044,7 @@ git update-index --no-skip-worktree fileName
     hide = update-index --skip-worktree
     unhide = update-index --no-skip-worktree
     hidden = "!git ls-files -v | grep ^S | cut -c 3-"
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Autohotkey DynaRun</title>
@@ -23340,17 +22549,12 @@ All in all it’s just a great framework for modern web applications and most of
     </toc>
     <excerpt><![CDATA[<p>Tutorial on how to use LocalDb as a lightweight Sql Server substitution for development purposes.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Tutorial on how to use LocalDb as a lightweight Sql Server substitution for development purposes.</p>
-
-<!--more-->
-
-<h1 id="installation">Installation</h1>
+      <block1><![CDATA[<h1 id="installation">Installation</h1>
 
 <p>It’s a feature of <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL Server Express</a>.
 Make sure to select it during installation using the <strong>Express Advanced</strong> or <strong>LocalDb</strong> packages.<br />
-It can also be installed with the <strong>Visual Studio Installer</strong>. There it is a part of the <strong>.NET desktop development</strong> workload.</p>
-
-<h1 id="usage">Usage</h1>
+It can also be installed with the <strong>Visual Studio Installer</strong>. There it is a part of the <strong>.NET desktop development</strong> workload.</p>]]></block1>
+      <body><![CDATA[<h1 id="usage">Usage</h1>
 
 <p>LocalDb can usually be found in</p>
 <pre><code>C:\Program Files\Microsoft SQL Server\130\Tools\Binn\SqlLocalDB.exe
@@ -23393,8 +22597,7 @@ versions|v: Lists all LocalDb version-numbers installed
    connectionString="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=MyDatabaseName;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\MyDb.mdf" 
    providerName="System.Data.SqlClient" 
 /&gt;
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Git-NumberedAdd for PowerShell</title>
@@ -23421,26 +22624,13 @@ versions|v: Lists all LocalDb version-numbers installed
 There have been changes in both git (v2.26+) and PowerShell (v7+) that broke
 <code>Git-NumberedAdd</code>, it has been a long time coming but, the fixes are finally available in the PSGallery 😅</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--info"><strong>🎉🎉 October 2025 update: v1.2</strong><br />
-There have been changes in both git (v2.26+) and PowerShell (v7+) that broke
-<code>Git-NumberedAdd</code>, it has been a long time coming but, the fixes are finally available in the PSGallery 😅</p>
-
-<p><br /></p>
-
-<p>After copying file paths from <code>git status</code> output and pasting them after a <code>git add</code> quite a few times
-by now, I’ve written a small <a href="https://github.com/itenium-be/Git-NumberedAdd">PowerShell script</a>
-to manipulate the working directory and staging area with fabricated indexes.</p>
-
-<!--more-->
-
-<h1 id="powershell-gallery">PowerShell Gallery</h1>
+      <block1><![CDATA[<h1 id="powershell-gallery">PowerShell Gallery</h1>
 
 <p>Now available on the <a href="https://www.powershellgallery.com/packages/Git-NumberedAdd">PowerShell Gallery</a>!</p>
 
 <pre><code class="language-ps">Install-Module -Name Git-NumberedAdd
-</code></pre>
-
-<h1 id="git-numberedhelp-alias-gnh">Git-NumberedHelp <small>(alias: gnh)</small></h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="git-numberedhelp-alias-gnh">Git-NumberedHelp <small>(alias: gnh)</small></h1>
 
 <p>All these aliases to save time but who can remember all that?<br />
 Use <code>gnh</code> to display all actions available by Git-NumberedAdd with description and alias.</p>
@@ -23586,8 +22776,7 @@ Git-NumberedSetLocation # Alias: gsl
 <p>And then use <code>2: Update</code> to stage files.</p>
 
 <p><br />
-Also, see below for similar implementations in Bash and Perl.</p>
-]]></body>
+Also, see below for similar implementations in Bash and Perl.</p>]]></body>
   </post>
   <post>
     <title>Less for your git pager</title>
@@ -23607,46 +22796,7 @@ Also, see below for similar implementations in Bash and Perl.</p>
     <excerpt><![CDATA[<p>A <code>git diff</code> or <code>git log</code> starts the less program. Perhaps not the
 fanciest tool but more powerful than you might expect.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A <code>git diff</code> or <code>git log</code> starts the less program. Perhaps not the
-fanciest tool but more powerful than you might expect.</p>
-
-<p>This post details the arguments that can be passed to <code>less</code>
-and also how to navigate once less is running. Things not relevant
-for git are omitted.</p>
-
-<p>Your current configuration:</p>
-<pre><code>git config --get core.pager
-</code></pre>
-
-<p>If this returns nothing, there is room for improvement there!</p>
-
-<p><strong>TL&amp;DR</strong>:</p>
-
-<p>Configure something sensible:</p>
-<pre><code class="language-sh"># Short version
-git config --global core.pager "less -eFiJM~ -j3 --tabs=3"
-
-# Not so short version
-git config --global core.pager "less --LONG-PROMPT --tabs=3 --quit-at-eof --quit-if-one-screen --tilde --jump-target=3 --ignore-case --status-column"
-</code></pre>
-
-<div style="display: block">
-	
-	
-		
-		
-			<kbd>h</kbd>
-			
-		
-
-		
-	
-	: See all less commands.
-</div>
-
-<!--more-->
-
-<p>Add a link to the <a href="https://linux.die.net/man/1/less">man page</a> and this topic is hereby extensively covered :)</p>
+      <block1><![CDATA[<p>Add a link to the <a href="https://linux.die.net/man/1/less">man page</a> and this topic is hereby extensively covered :)</p>
 
 <h1 id="parameters-for-corepager">Parameters for core.pager</h1>
 
@@ -23798,9 +22948,8 @@ git config --global core.pager "less --LONG-PROMPT --tabs=3 --quit-at-eof --quit
 		
 	
 	: Set default window line size to x for PgUp/PgDown
-</div>
-
-<h2 id="searching">Searching</h2>
+</div>]]></block1>
+      <body><![CDATA[<h2 id="searching">Searching</h2>
 
 <div style="display: block">
 	
@@ -24574,9 +23723,7 @@ git config --global core.pager "less --LONG-PROMPT --tabs=3 --quit-at-eof --quit
 <h1 id="summary">Summary</h1>
 
 <p>After a few years of just using <code>PgUp</code> and <code>PgDown</code> I guess this research
-was way overdue.</p>
-
-]]></body>
+was way overdue.</p>]]></body>
   </post>
   <post>
     <title>Yaml tutorial</title>
@@ -28862,12 +28009,7 @@ Return
     <excerpt><![CDATA[<p>My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles
 with the default configurations.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles
-with the default configurations.</p>
-
-<!--more-->
-
-<blockquote>
+      <block1><![CDATA[<blockquote>
   <p>in the land of the blind, the one-eyed man is king</p>
 </blockquote>
 
@@ -28901,9 +28043,8 @@ with the default configurations.</p>
   Write-Host Progress -Back $colors.ProgressBackgroundColor -Fore $colors.ProgressForegroundColor
 }
 Show-Colors
-</code></pre>
-
-<p>With just changing how Errors are displayed, everything is readable, for me, with Cmder.</p>
+</code></pre>]]></block1>
+      <body><![CDATA[<p>With just changing how Errors are displayed, everything is readable, for me, with Cmder.</p>
 
 <pre><code class="language-ps1">$host.PrivateData.ErrorBackgroundColor = 'Red'
 $host.PrivateData.ErrorForegroundColor = 'Yellow' # or: "DarkMagenta"
@@ -28989,8 +28130,7 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 
 <h1 id="advantages">Advantages</h1>
 
-<p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>
-]]></body>
+<p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></body>
   </post>
   <post>
     <title>.NET Number and Date Formatting</title>
@@ -29010,12 +28150,7 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
     <excerpt><![CDATA[<p>A cheat sheet with everything there is to know about 
 formatting the primitive types, <code>DateTime</code>s and <code>TimeSpan</code>s in .NET.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A cheat sheet with everything there is to know about 
-formatting the primitive types, <code>DateTime</code>s and <code>TimeSpan</code>s in .NET.</p>
-
-<!--more-->
-
-<h1 id="stringify">Stringify</h1>
+      <block1><![CDATA[<h1 id="stringify">Stringify</h1>
 
 <p>The different ways of formatting these ValueTypes.</p>
 <pre><code class="language-c#">// ValueType.ToString("format");
@@ -29054,11 +28189,8 @@ Name       |   Age
 Bob        | 18.00
 Alice      | 24.00
 Methuselah | 969.00
-</code></pre>
-
-<hr />
-
-<h1 id="cultures">Cultures</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="cultures">Cultures</h1>
 
 <p>The culture for all threads defaults to the Windows system culture.</p>
 
@@ -29537,8 +28669,7 @@ Like Date Custom formats but each part represents the whole part in the time int
 <pre><code class="language-c#">span.ToString(@"dd\.hh\:mm\:ss"); // 31.22:15:59
 Console.WriteLine("{0:%d}", span); // 31
 Console.WriteLine("{0:ddddd}", span); // 00031
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>VB.NET vs C# Syntax differences</title>
@@ -29559,23 +28690,7 @@ Console.WriteLine("{0:ddddd}", span); // 00031
 specifically for advanced C# developers with little to no VB.NET knowledge who need to do
 some VB.NET coding.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written
-specifically for advanced C# developers with little to no VB.NET knowledge who need to do
-some VB.NET coding.</p>
-
-<p class="notice--info">Because some things are just so similar but still confusingly different in VB.NET vs C#…</p>
-
-<p>Along the way we’ll make some amazing discoveries like:</p>
-<ul>
-  <li>There are things VB.NET just can’t do (pointers, …)</li>
-  <li>There are a few cases where VB.NET code is <em>shorter</em> than its C# counterpart (gasp!)</li>
-  <li>VB.NET defaults are not what you might expect from a strongly typed language due to its VB6 legacy (Option Strict, Explicit)</li>
-  <li>There is some VB.NET only stuff that comes in handy from time to time</li>
-</ul>
-
-<!--more-->
-
-<h2 id="confusingly-different">Confusingly different</h2>
+      <block1><![CDATA[<h2 id="confusingly-different">Confusingly different</h2>
 <p>Or some fun issues during heavy context switching :)</p>
 
 <ul>
@@ -29583,11 +28698,8 @@ some VB.NET coding.</p>
   <li>Compare with <code>=</code> in C# or with <code>==</code> in VB.NET (and <code>!=</code> vs <code>&lt;&gt;</code>)</li>
   <li>VB.NET is <em>not</em> case sensitive</li>
   <li>Arrays in VB.NET are 1 based</li>
-</ul>
-
-<hr />
-
-<h2 id="syntax-comparison">Syntax comparison</h2>
+</ul>]]></block1>
+      <body><![CDATA[<h2 id="syntax-comparison">Syntax comparison</h2>
 
 <h3 id="general-syntax">General syntax</h3>
 
@@ -30507,9 +29619,7 @@ online examples are written in C# while the free conversion tools are severely l
 <p>It’s perhaps worth mentioning that VB.NET and Resharper are not on the best of terms.</p>
 
 <p>Unless you really need some of the VB.NET or C# only features, choosing one over the other should probably
-still be a team decision.</p>
-
-]]></body>
+still be a team decision.</p>]]></body>
   </post>
   <post>
     <title>Managing Environment Variables with PowerShell</title>
@@ -30533,19 +29643,7 @@ still be a team decision.</p>
 <p>After which you get a tiny, unresizable, form where you can view and manage them.
 Something better eventually arrived with Windows 10 but still, PowerShell :)</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Working with environment variables in Windows is as easy as:</p>
-<pre><code>Win + Pause &gt; "Advanced system settings" &gt; "Environment Variables..."
-</code></pre>
-<p>After which you get a tiny, unresizable, form where you can view and manage them.
-Something better eventually arrived with Windows 10 but still, PowerShell :)</p>
-
-<p>Use Autohotkey to open the window with <code>Left Alt + Pause</code>:</p>
-<pre><code class="language-autohotkey">LAlt &amp; Pause::Run % "rundll32 sysdm.cpl,EditEnvironmentVariables"
-</code></pre>
-
-<!--more-->
-
-<p>If you’d like a GUI instead you could try:</p>
+      <block1><![CDATA[<p>If you’d like a GUI instead you could try:</p>
 
 <p><a href="https://github.com/rix0rrr/WindowsPathEditor" class="github">
     <img src="https://img.shields.io/github/stars/rix0rrr/WindowsPathEditor.svg?style=social&amp;label=Star" />
@@ -30573,11 +29671,8 @@ $env:PATH
 [environment]::GetEnvironmentVariable("PATH", "User")
 </code></pre>
 
-<p>In cmd.exe, all envs can be listed with <code>set</code>.</p>
-
-<hr />
-
-<h1 id="managing-environment-variables">Managing environment variables</h1>
+<p>In cmd.exe, all envs can be listed with <code>set</code>.</p>]]></block1>
+      <body><![CDATA[<h1 id="managing-environment-variables">Managing environment variables</h1>
 
 <pre><code class="language-powershell"># Managing current session environment
 $env:test = "value"
@@ -30725,8 +29820,7 @@ $env:LOCALAPPDATA
 
 $env:TEMP
 # C:\Users\Wouter\AppData\Local\Temp
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>PowerShell profiles</title>
@@ -30748,19 +29842,12 @@ $env:TEMP
 <pre><code class="language-powershell">. $profile
 </code></pre>
 ]]></excerpt>
-      <body><![CDATA[<p>Reload PowerShell profile</p>
-<pre><code class="language-powershell">. $profile
-</code></pre>
-
-<!--more-->
-
-<h1 id="powershell-core">PowerShell Core</h1>
+      <block1><![CDATA[<h1 id="powershell-core">PowerShell Core</h1>
 
 <p>The default location changed in PowerShell Core to</p>
 <pre><code class="language-powershell">$home\Documents\PowerShell
-</code></pre>
-
-<h1 id="powershell">PowerShell</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="powershell">PowerShell</h1>
 
 <p>Profile locations</p>
 <pre><code class="language-powershell"># executes automatically
@@ -30791,8 +29878,7 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
 		}
 	}
 }
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Package Manager Console Entity Framework 6 Migrations profile</title>
@@ -30816,15 +29902,7 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
   <li>Allow updating the database using a numeric TargetMigration (-2 = migrate to the third last migration)</li>
 </ul>
 ]]></excerpt>
-      <body><![CDATA[<p>This tutorial is about adding the following functionality to the Entity Framework Migrations CLI:</p>
-<ul>
-  <li>Execute commands against the project containing the migrations by providing the most likely -Project parameter value</li>
-  <li>Allow updating the database using a numeric TargetMigration (-2 = migrate to the third last migration)</li>
-</ul>
-
-<!--more-->
-
-<h1 id="activating-your-nuget_profile">Activating your Nuget_profile</h1>
+      <block1><![CDATA[<h1 id="activating-your-nuget_profile">Activating your Nuget_profile</h1>
 
 <p>When opening the Package Manager Console (PMC) in Visual Studio, the profile file is executed.</p>
 
@@ -30836,11 +29914,8 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
 <p>The following aliases allow you to install a package with just <code>ip EntityFramework</code>:</p>
 <pre><code class="language-powershell">Set-Alias ip Install-Package
 Set-Alias unip Uninstall-Package
-</code></pre>
-
-<hr />
-
-<h1 id="provide-most-likely--project-parameter">Provide most likely -Project parameter</h1>
+</code></pre>]]></block1>
+      <body><![CDATA[<h1 id="provide-most-likely--project-parameter">Provide most likely -Project parameter</h1>
 
 <p>There is (unfortunately) no way to configure the “Default project” in the PMC. This workaround creates a Verb-RealNoun
 for each existing cmdlet and adds a short alias to these commands. Which project contains the migrations is by convention,
@@ -30965,9 +30040,7 @@ function Test-MigrationName($fileName) {
 
 <p>Menu: Tools &gt; NuGet Package Manager &gt; Package Manager Console<br />
 Shortcut: Alt + T, N, O<br />
-Custom shortcut: View.PackageManagerConsole</p>
-
-]]></body>
+Custom shortcut: View.PackageManagerConsole</p>]]></body>
   </post>
   <post>
     <title>Synchronize Additional Folders With Dropbox Using Junction on Windows</title>
@@ -30989,21 +30062,13 @@ Custom shortcut: View.PackageManagerConsole</p>
 mobile devices. The files are kept on your machine(s) and in the cloud, but they are also accessible from anywhere with a browser
 and shareable with everyone you’d like.</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="http://www.dropbox.com/">Dropbox</a> is great! I’m pretty sure you’ve already heard of it but for those who have not: It allows you to synchronize about 2 gig
-(and up to 16 gig with some effort) worth of documents, pictures or other files between your different computers, laptops or other
-mobile devices. The files are kept on your machine(s) and in the cloud, but they are also accessible from anywhere with a browser
-and shareable with everyone you’d like.</p>
-
-<!--more-->
-
-<p>While it is very nicely integrated with Windows, one little caveat is that additional directories outside the Dropbox main folder can’t
+      <block1><![CDATA[<p>While it is very nicely integrated with Windows, one little caveat is that additional directories outside the Dropbox main folder can’t
 be synchronized out of the box.</p>
 
 <p><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/junction">Junction</a>, a free download from <a href="http://www.sysinternals.com/">sysinternals.com</a>,
 fixes this problem. Once a junction between an existing directory and a new one somewhere inside the Dropbox folder has been established, any change 
-to either directory gets immediately synchronized with Dropbox…</p>
-
-<h1 id="to-create-a-junction">To create a junction.</h1>
+to either directory gets immediately synchronized with Dropbox…</p>]]></block1>
+      <body><![CDATA[<h1 id="to-create-a-junction">To create a junction.</h1>
 
 <p>The first parameter is the directory you want to create, the second parameter is the existing directory you want to link. Windows changes
 the icon of a junction folder to indicate its nature but when you have linked to a Dropbox folder, it is overwritten by the Dropbox
@@ -31028,8 +30093,7 @@ a whole bunch of already made junction points related to the current Windows acc
 If you want to get rid of everything, merely deleting the original directory will leave the junction “hanging”.</p>
 
 <pre><code class="language-bash">junction -d "C:\Users\Documents\Dropbox\www"
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Notepad++ double click PHP variable including the $ sign</title>
@@ -31050,22 +30114,15 @@ If you want to get rid of everything, merely deleting the original directory wil
     </toc>
     <excerpt><![CDATA[<p>Built-in in Notepad++ since 2016:</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Built-in in Notepad++ since 2016:</p>
-
-<p><strong>Settings &gt; Preferences &gt; Delimiter &gt; Add you character as part of word &gt; $</strong></p>
-
-<!--more-->
-
-<h1 id="old-broken-and-obsolete-autohotkey-solution">Old, Broken and Obsolete Autohotkey solution</h1>
+      <block1><![CDATA[<h1 id="old-broken-and-obsolete-autohotkey-solution">Old, Broken and Obsolete Autohotkey solution</h1>
 
 <p>My previous editor Code-Genie already selected the $ sign along with the variable name when I double clicked somewhere
 on a word. When I upgraded to Notepad++, I was confused this was no longer happening as it seemed pretty obvious to me that
 when writing PHP almost always you’d want the $ also. Apparently not that many agree, but I want that behavior so I checked
 the StackOverflow answers. The follow up answer provides a workaround using a Notepad++ macro and an Autohotkey script.
 The problem is that it requires you to use a special keybinding (alt+click) to trigger the macro.
-I still want my Code-Genie feeling back.</p>
-
-<p>With Notepad++ seemingly letting us down, I was sure it was Autohotkey to the rescue:</p>
+I still want my Code-Genie feeling back.</p>]]></block1>
+      <body><![CDATA[<p>With Notepad++ seemingly letting us down, I was sure it was Autohotkey to the rescue:</p>
 
 <pre><code class="language-autohotkey">; Also select the $ when control clicking a word in a Notepad++ PHP file
 ^LButton::
@@ -31138,8 +30195,7 @@ GetCurrentlySelectedText()
     Clipboard = %oldClipboard%
     return selectedText
 }
-</code></pre>
-]]></body>
+</code></pre>]]></body>
   </post>
   <post>
     <title>Notepad++ Bookmarks</title>
@@ -31161,18 +30217,12 @@ GetCurrentlySelectedText()
     <excerpt><![CDATA[<p>In many text-editors there are means to easily jump with the cursor between different points in the code and this is no different in Notepad++.
 Bookmarks have their own margin where they can be toggled with a mouse click.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>In many text-editors there are means to easily jump with the cursor between different points in the code and this is no different in Notepad++.
-Bookmarks have their own margin where they can be toggled with a mouse click.</p>
-
-<!--more-->
-
-<p><br /></p>
+      <block1><![CDATA[<p><br /></p>
 
 <p><img src="/assets/blog-images/notepad-bookmarks-1.jpg" alt="" style="float: left; margin-right: 25px" /></p>
 
-<p>They can also be <strong>toggled with “CTRL + F2”</strong>. Use <strong>“F2” and “SHIFT + F2” to jump</strong> back and forth between them.</p>
-
-<div style="clear: both"></div>
+<p>They can also be <strong>toggled with “CTRL + F2”</strong>. Use <strong>“F2” and “SHIFT + F2” to jump</strong> back and forth between them.</p>]]></block1>
+      <body><![CDATA[<div style="clear: both"></div>
 
 <p><br /></p>
 
@@ -31185,8 +30235,7 @@ That is until you combine them with the “Mark” tab in the “<strong>Find Di
 <p><br />
 Suddenly you can write a regular expression to capture certain lines of text and cut those lines with a single command. Pretty neat!</p>
 
-<p><img src="/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>
-]]></body>
+<p><img src="/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>]]></body>
   </post>
   <post>
     <title>Pragmatic Tip 2: Think! About Your Work</title>
