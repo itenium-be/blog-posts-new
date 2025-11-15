@@ -80,8 +80,12 @@ layout: null
     {%- else %}
       <block2><![CDATA[{{ post.content }}]]></block2>
     {%- endif %}
-    {%- capture package_versions_content %}{% include package-versions.html page=post %}{%- endcapture %}
-    <block3><![CDATA[{{ package_versions_content }}]]></block3>
+    {%- capture block3_content -%}
+      {%- include post-series.html page=post -%}
+      {%- include post-extras.html page=post -%}
+      {%- include package-versions.html page=post -%}
+    {%- endcapture %}
+    <block3><![CDATA[{{ block3_content }}]]></block3>
   </post>
 {%- endfor %}
 </blog-posts>
