@@ -11,12 +11,12 @@
     <tags>product</tags>
     <desc>While I was giving some of the old itenium products some love, the starify-github-links update got a bit.. out of hand.</desc>
     <bigimg>
-      <url>starify-links-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/starify-links-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A majestic galaxy made entirely of golden GitHub stars orbiting around a Chrome logo planet, cinematic poster, wide panoramic view, &apos;Starify Links&apos; glowing text</prompt>
     </bigimg>
     <img>
-      <url>starify-links.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/starify-links.png</url>
       <origin>Midjourney</origin>
       <prompt>Retro 1980s movie poster &apos;Starify Links&apos; neon typography, chrome reflections, GitHub stars exploding in the background like supernovas</prompt>
     </img>
@@ -25,7 +25,7 @@
       <title>Starify Links</title>
     </toc>
     <excerpt><![CDATA[<p>Back in 2019 I created a Chrome Extension called
-“<a href="/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
+“<a href="/blog/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
 ]]></excerpt>
       <block1><![CDATA[<p>And that is what this extension did, add star badges to GitHub repository links 😀</p>
 
@@ -161,12 +161,12 @@ took to get it back on track!</p>]]></block2>
     <tags>tutorial,windows</tags>
     <desc>Github already issues a warning for 50MB+ files.</desc>
     <bigimg>
-      <url>git-lfs-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-lfs-big.png</url>
       <origin>Midjourney</origin>
       <prompt>futuristic warehouse with tiny labels pointing to massive storage containers, git lfs metaphor, cyberpunk aesthetic --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>git-lfs.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-lfs.png</url>
       <origin>Midjourney</origin>
       <prompt>programmer trying to push a giant file boulder up a hill like Sisyphus, cartoon style, funny developer struggle --ar 6:5</prompt>
     </img>
@@ -265,12 +265,12 @@ remote: warning: GH001: Large files detected. You may want to try Git Large File
     <tags>powershell,windows,war-story</tags>
     <desc>I&apos;m such an apologist that I&apos;ve put up with that 20 second delay for far too long!</desc>
     <bigimg>
-      <url>jekyll-performance-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jekyll-performance-big.png</url>
       <origin>Midjourney</origin>
       <prompt>Jekyll as a cheetah made of code running at light speed, server racks forming its jungle, websites materializing in its wake, predator of slow load times --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>jekyll-performance.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jekyll-performance.png</url>
       <origin>Midjourney</origin>
       <prompt>Dr Jekyll (from Mr Hyde) serving websites at light speed, silver tray with holographic sites materializing instantly, Victorian steampunk aesthetic mixed with cyberpunk technology, gears turning at impossible velocities --ar 6:5</prompt>
     </img>
@@ -411,7 +411,7 @@ what’s going on.</p>
 
 <h1 id="powershell-profile">PowerShell Profile</h1>
 
-<p>I have these added to my <a href="/dev-setup/2017/04/11/powershell-profiles.html">ps profile</a>,
+<p>I have these added to my <a href="/blog/dev-setup/2017/04/11/powershell-profiles.html">ps profile</a>,
 because who wants to remember/write all the bundle exec etc etc 😀</p>
 
 <pre><code class="language-ps1">function Start-Jekyll {
@@ -455,12 +455,12 @@ Set-Alias bejsddev Start-JekyllDevWithDrafts
     <desc>Supported Excel formula functions in ClosedXML.</desc>
     <series>closedxml</series>
     <bigimg>
-      <url>closedxml-functions-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-functions-big.png</url>
       <origin>Midjourney</origin>
       <prompt>an illuminated manuscript showing magical runes shaped like Excel formulas, monks scribbling COUNTIF and CONCATENATE in the margins, high detail, satirical medieval art --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>closedxml-functions2.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-functions2.png</url>
       <origin>Midjourney</origin>
       <prompt>a wizard casting glowing spells in the shape of formulas IF, DATE, COUNTIF, floating symbols swirling around, fantasy illustration, dramatic lighting --ar 6:5</prompt>
     </img>
@@ -991,12 +991,12 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <desc></desc>
     <series>closedxml</series>
     <bigimg>
-      <url>closedxml-misc-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-misc-big.png</url>
       <origin>Midjourney</origin>
       <prompt>a renaissance woodcut illustration of a medieval scribe feeding scrolls into a strange mechanical printer, ink splattering, exaggerated comic style, high detail --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>closedxml-misc.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-misc.png</url>
       <origin>Midjourney</origin>
       <prompt>spreadsheet cells with colorful speech bubbles hovering above them, playful vector illustration, modern flat design --ar 6:5</prompt>
     </img>
@@ -1327,12 +1327,12 @@ ws.Cell(3, 1).CreateRichText()
     <desc></desc>
     <series>closedxml</series>
     <bigimg>
-      <url>closedxml-formulas-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-formulas-big.png</url>
       <origin>Midjourney</origin>
       <prompt>ancient scrolls covered in mathematical symbols, a stern judge stamping VALID or INVALID on parchment, renaissance painting style, high detail --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>closedxml-formulas.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-formulas.png</url>
       <origin>Midjourney</origin>
       <prompt>a glowing formula etched into glass, surrounded by checkmarks and red crosses symbolizing validation, modern minimalistic style, high contrast, elegant illustration</prompt>
     </img>
@@ -1623,12 +1623,12 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
     <desc></desc>
     <series>closedxml</series>
     <bigimg>
-      <url>closedxml-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml-big.png</url>
       <origin>Midjourney</origin>
       <prompt>a medieval newspaper headline illustration reading &apos;EPPlus is dead&apos;, old king replaced by new king, comic book style, bold colors, playful exaggeration --ar 800:131</prompt>
     </bigimg>
     <img>
-      <url>closedxml.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/closedxml.png</url>
       <origin>ChatGPT</origin>
       <prompt>computer graveyard, cracked tombstone engraved EPPlus, beside it a shining crystal monument glowing with the word ClosedXML, surreal digital illustration, moody atmosphere, high detail</prompt>
     </img>
@@ -2071,10 +2071,10 @@ sheet1.CopyTo(workbook, "Copy");
     <tags>war-story,tech-talk</tags>
     <desc>Our .NET Competence Center coach Bert Vermorgen was present at the Domain-Driven Design Europe 2025 conference.</desc>
     <bigimg>
-      <url>ddd-europe-2025-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ddd-europe-2025-big.png</url>
     </bigimg>
     <img>
-      <url>ddd-europe-2025.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ddd-europe-2025.png</url>
       <desc>Bert Vermorgen</desc>
     </img>
     <toc>
@@ -2158,12 +2158,12 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
     <tags>synology</tags>
     <desc>The easiest way to serve an app on your synology over https, using the builtin nginx reverse proxy.</desc>
     <bigimg>
-      <url>synology-https-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-https-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A sleek home server setup with a Synology NAS in the background, a glowing Docker logo floating above it, and a secure HTTPS padlock icon in the foreground. The scene is futuristic, slightly moody lighting, with digital connection lines representing reverse proxy routing to a web application. Techy, modern, clean composition --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>synology-https.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-https.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>Cartoon-style illustration of a smiling Synology NAS wearing sunglasses, sending HTTPS traffic through a glowing reverse proxy tunnel into a happy Docker whale. Bright, playful colors, comic-style outlines, fun and approachable vibe</prompt>
@@ -2249,13 +2249,13 @@ it on your Synology in a Docker container.</p>
     <tags>war-story,net,synology</tags>
     <desc>&quot;lib_lightgbm&quot; is almost 1GIG so it does make sense to not install it by default...</desc>
     <bigimg>
-      <url>ml-net-lightgbm-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ml-net-lightgbm-big.png</url>
       <desc>By Midjourney</desc>
       <origin>Midjourney</origin>
       <prompt>A developer surrounded by glowing code and terminal windows, working late night inside a sleek futuristic server room, Docker whales floating as holograms, AI models visualized as flowing data streams, mechanical arms building software, clean lighting, high-tech ambiance, digital chaos yet calm cinematic lighting, ultra-detailed, concept art</prompt>
     </bigimg>
     <img>
-      <url>ml-net-lightgbm.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ml-net-lightgbm.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <title>By Midjourney</title>
@@ -2378,12 +2378,12 @@ ldd /usr/local/lib/lib_lightgbm.so
     <tags>tutorial</tags>
     <desc>There are some todos I bolted down that have been lying around for, literally, years. Some for decades even 😀🤦 This is one of them, and it caught some &quot;interesting&quot; things right away.</desc>
     <bigimg>
-      <url>site-inspector-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/site-inspector-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A humorous yet sleek digital scene of a magnifying glass scanning a glitchy website, with typos, broken links, and warning symbols popping out, a floating terminal showing gem install siteinspector - ERROR, stylized browser UI, retro terminal vibes, moody lighting, emoji overlays like 🤦 and 😬, modern flat design, tech noir aesthetics, depth of field</prompt>
     </bigimg>
     <img>
-      <url>site-inspector.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/site-inspector.png</url>
       <origin>Midjourney</origin>
       <prompt>A cartoon detective inspecting a messy website filled with silly typos and red warning signs, surprised expression, magnifying glass revealing errors, broken chain links, a speech bubble with gem not found!, emojis like 🤦 and 🙈 floating around, bright colors, playful art style, vector flat design</prompt>
     </img>
@@ -2498,12 +2498,12 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
     <tags>fun</tags>
     <desc>Itenium bootcamp 2025: from solder fumes to smart rooms</desc>
     <bigimg>
-      <url>bootcamp-home-automation-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-home-automation-big.png</url>
       <origin>Midjourney</origin>
       <prompt>Colorful cartoon-style scene of a tech bootcamp, engineers happily soldering a glowing smart socket, whimsical tools and gadget parts scattered around, smiling smart home with antenna and blinking lights in the background, exaggerated expressions, bold outlines, soft shading, fun and educational vibe, comic book aesthetic</prompt>
     </bigimg>
     <img>
-      <url>bootcamp-home-automation.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-home-automation.png</url>
       <desc>Self powering socket!!</desc>
     </img>
     <toc>
@@ -2636,12 +2636,12 @@ And now to find something cool for next year! 😀</p>
     <tags>tutorial</tags>
     <desc>Newtonsoft.Json was the .NET go-to JSON library for a very long time. Yes there were some versioning issues, but now, is it even more confusing?</desc>
     <bigimg>
-      <url>dotnet-json-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/dotnet-json-big.png</url>
       <origin>Midjourney</origin>
       <prompt>Two futuristic glass vials labeled Newtonsoft.Json and System.Text.Json, each glowing with a different color (e.g., blue vs orange), on a high-tech lab table. Data particles or code symbols float inside.</prompt>
     </bigimg>
     <img>
-      <url>dotnet-json.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/dotnet-json.png</url>
       <origin>ChatGPT</origin>
       <prompt>A sleek, high-tech digital scale balancing two glowing cubes labeled &apos;Newtonsoft.Json&apos; and &apos;System.Text.Json&apos;, surrounded by abstract data streams and JSON code fragments, futuristic interface design, vibrant lighting, cyberpunk color palette, minimal shadows, modern UI aesthetics</prompt>
     </img>
@@ -3135,12 +3135,12 @@ public class PersonWithAttributes
     <tags>testing,war-story</tags>
     <desc>Ensure that each Controller or all its Action Methods are properly secured with AllowAnonymous or Authorize Attributes with an automated integration test.</desc>
     <bigimg>
-      <url>controller-security-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/controller-security-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A clean, modern flat illustration of a padlock icon subtly integrated into a C# controller file, soft white background with muted pastel blue and gray tones, minimal UI outlines, simple line art, lots of negative space, Scandinavian design aesthetic, ultra-minimal, vector style</prompt>
     </bigimg>
     <img>
-      <url>controller-security.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/controller-security.png</url>
       <origin>Reve</origin>
       <prompt>A comic book scene where a superhero (wearing a C# emblem) throws [Authorize] shields at rogue controller methods, cartoon villains named &apos;Anonymous Access&apos; dodge them, bright bold colors, halftone patterns, comic panels with &apos;BOOM&apos; and &apos;SECURED!&apos; captions, playful and energetic, comic book art style</prompt>
     </img>
@@ -3316,12 +3316,12 @@ if (unsecured.Any())
     <desc>Create memoized selector functions to avoid nasty re-rendering!</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-reselect-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-reselect-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A fun, cartoonish librarian racing through endless bookshelves, quickly picking and sorting books into the right sections with incredible precision. Some books glow as they are selected, while others stay on the shelves.</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit-reselect.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-reselect.png</url>
       <origin>ChatGPT</origin>
       <prompt>A futuristic energy core at the center of a massive digital network, precisely extracting and refining structured data from chaotic streams of information. Glowing, transparent data streams flow into the core, where a high-tech filtration system refines and optimizes them before channeling the clean output into structured pathways. The scene has a cyberpunk aesthetic, with neon-lit circuits and a sleek, high-tech control center.</prompt>
     </img>
@@ -3542,7 +3542,7 @@ const todo = useSelector(state =&gt; selectTodo(state, todoId));
 
 <h1 id="typescript">TypeScript</h1>
 
-<p>See <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a>
+<p>See <a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a>
 if you’re unsure how to create the <code>RootState</code>.</p>
 
 <pre><code class="language-ts">import { createSelector } from "@reduxjs/toolkit";
@@ -3651,12 +3651,12 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
     <desc>Avoiding getState() as RootState, like a champ!</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-typescript-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-typescript-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A powerful cybernetic guardian stands at the gateway of a vast digital network, ensuring only structured, validated data can pass through. Glowing energy pipelines stretch into the distance, representing seamless data flow. The guardian emanates a futuristic glow, embodying security, precision, and advanced system integrity.</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit-typescript.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-typescript.png</url>
       <origin>ChatGPT</origin>
       <prompt>A futuristic AI engineer meticulously assembling complex, interconnected digital components inside a glowing cybernetic workspace. Holographic interfaces float around, displaying intricate patterns of structured data and system logic. The environment is sleek and futuristic, radiating an aura of precision and technological mastery.</prompt>
     </img>
@@ -3736,12 +3736,12 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
     <desc>Need that Rest API to fill the store. ReduxJS/Toolkit comes with redux-thunk and the createAsyncThunk convenience function.</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-createAsyncThunk-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-createAsyncThunk-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A futuristic power core generating structured energy waves, symbolizing controlled asynchronous state management. Three main glowing rings labeled &apos;Pending&apos;, &apos;Fulfilled&apos;, and &apos;Rejected&apos; orbit the core, shifting dynamically based on data flow. The environment is a sleek cybernetic world with deep blue, purple, and orange hues, evoking an advanced state-processing system.</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit-createAsyncThunk.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-createAsyncThunk.png</url>
       <origin>ChatGPT</origin>
       <prompt>A high-tech command center where a digital AI assistant dispatches glowing data packets through multiple interconnected pathways labeled &apos;Pending&apos;, &apos;Fulfilled&apos;, and &apos;Rejected&apos;. The room is filled with floating holographic screens displaying API call results and Redux actions in real time. The colors are vibrant, dominated by neon blues and purples, with a sleek, futuristic UI aesthetic.</prompt>
     </img>
@@ -3984,12 +3984,12 @@ const creatorSlice = createAppSlice({
     <desc>If you just want to jump into the Toolkit, this is what you need to know.</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-createSlice-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-createSlice-big.png</url>
       <origin>Midjourney</origin>
       <prompt>slices</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit-createStore.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-createStore.png</url>
       <origin>ChatGPT</origin>
       <prompt>A detailed, blueprint-style illustration of a 1950s &apos;redux store&apos; under construction. he image has a sepia-toned nostalgic feel, with sketched lines and a vintage Americana aesthetic.</prompt>
     </img>
@@ -4074,7 +4074,7 @@ export const { selectTodo } = todoSlice.selectors;
 
 <h2 id="dispatching-an-action">Dispatching an action</h2>
 
-<p>See <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a>
+<p>See <a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a>
 for how to create the <code>useAppDispatch</code> hook.</p>
 
 <pre><code class="language-ts">import { addTodo } from "./todoSlice";
@@ -4343,12 +4343,12 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
     <desc>Write pure reducers without the spread hell. &lt;br&gt; Hell, without even thinking about it!</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-immer-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-immer-big.png</url>
       <origin>Midjourney</origin>
       <prompt>A dramatic split-screen: one side shows a chaotic red hot tangle of wires, which flows over to the other side which is a blue frozen cube</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit-immer.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-immer.png</url>
       <origin>Midjourney</origin>
       <prompt>A futuristic glass cube encapsulating dynamic swirling data streams, but the cube itself remains frozen in time. The background is a digital environment with blue and white neon elements, symbolizing immutable state updates in JavaScript</prompt>
     </img>
@@ -4684,12 +4684,12 @@ const TodoAdd = () =&gt; {
     <desc>First we went from Flux to Redux. And now to the Toolkit? &lt;br&gt; It certainly comes with a learning curve... Is it worth your time?</desc>
     <series>reduxjs-toolkit</series>
     <bigimg>
-      <url>reduxjs-toolkit-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-big.png</url>
       <origin>Midjourney</origin>
       <prompt>toolkit</prompt>
     </bigimg>
     <img>
-      <url>reduxjs-toolkit.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit.png</url>
       <origin>ChatGPT</origin>
       <prompt>A powerful glowing central hub surrounded by multiple orbiting data streams, symbolizing a single source of truth in application state management. The design is sleek, with futuristic UI elements and a sci-fi aesthetic</prompt>
     </img>
@@ -4747,7 +4747,7 @@ do <code>state.someProp</code>, you had to do <code>state.get('someProp')</code>
 <p>Immer is the solution the ReduxJS/Toolkit has adopted and I love how it allows you to write reducers
 while (almost) not having to think about immutability anymore!</p>
 
-<p><a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">Part 2: Immer</a></p>
+<p><a href="/blog/javascript/2025/02/07/reduxjs-toolkit-immer.html">Part 2: Immer</a></p>
 
 <h1 id="createslice-and-configurestore">createSlice and configureStore</h1>
 
@@ -4759,7 +4759,7 @@ exports of the Toolkit: <code>createSlice</code> and <code>configureStore</code>
   <li><code>configureStore</code>: abstracts away the pain that was <code>createStore</code></li>
 </ul>
 
-<p><a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">Part 3: createSlice and configureStore</a></p>
+<p><a href="/blog/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">Part 3: createSlice and configureStore</a></p>
 
 <h1 id="createasyncthunk">createAsyncThunk</h1>
 
@@ -4768,25 +4768,25 @@ all your API call needs.</p>
 
 <p>Coming from “legacy Redux”, this is the last basic piece of ReduxJS/Toolkit!</p>
 
-<p><a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">Part 4: createAsyncThunk</a></p>
+<p><a href="/blog/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">Part 4: createAsyncThunk</a></p>
 
 <h1 id="typescript">TypeScript</h1>
 
 <p>Keeping everything entirely type-safe.</p>
 
-<p><a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a></p>
+<p><a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a></p>
 
 <h1 id="reselect">Reselect</h1>
 
 <p>More batteries included. You basically only need this when running into
-<a href="/javascript/2023/10/06/react-component-profiling.html">performance issues</a>
+<a href="/blog/javascript/2023/10/06/react-component-profiling.html">performance issues</a>
 which is like, almost never (if you thought things through). Because JavaScript is
 just so damn fast these days.</p>
 
 <p>Still, it’s a good idea to just use selectors from the get-go, that way, you will still
 not be running into re-rendering performance issues after the addition of 6 years of production data.</p>
 
-<p><a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">Part 6: createSelector</a></p>
+<p><a href="/blog/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">Part 6: createSelector</a></p>
 
 <h1 id="rtk-query">RTK Query</h1>
 
@@ -4923,12 +4923,12 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
     <tags>synology</tags>
     <desc>A CRON job running with docker-compose on our Synology creates files that are synced with a third party using CloudSync. But the files are not synced at their end??</desc>
     <bigimg>
-      <url>synology-docker-cloud-sync-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-docker-cloud-sync-big.png</url>
       <origin>Midjourney</origin>
       <prompt>docker whale in the clouds</prompt>
     </bigimg>
     <img>
-      <url>synology-docker-cloud-sync.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-docker-cloud-sync.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>docker in the clouds</prompt>
@@ -5073,12 +5073,12 @@ but, of course, that doesn’t work.</p>
     <tags>tutorial,angular</tags>
     <desc>I don&apos;t think anyone ever liked the `*ngIf`, nor all the typing that came with it. &lt;br&gt;&lt;br&gt; Now it&apos;s finally become much shorter, more versatile, and with standalone being the new default, also no longer needed to be explicitly imported!</desc>
     <bigimg>
-      <url>angular-template-syntax-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-template-syntax-big.png</url>
       <origin>Midjourney</origin>
       <prompt>angular template</prompt>
     </bigimg>
     <img>
-      <url>angular-template-syntax.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-template-syntax.png</url>
       <origin>Midjourney</origin>
       <prompt>template</prompt>
     </img>
@@ -5227,12 +5227,12 @@ Nr = {{ randomNr }}
     <tags>testing</tags>
     <desc>You really shouldn&apos;t but... &lt;br&gt; Sometimes it&apos;s just too damn handy, ugh, I mean sometimes it just can&apos;t be avoided! 😀</desc>
     <bigimg>
-      <url>internals-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/internals-big.png</url>
       <origin>Midjourney</origin>
       <prompt>a surgeon face with mask in an operating room</prompt>
     </bigimg>
     <img>
-      <url>internals.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/internals.png</url>
       <origin>Midjourney</origin>
       <prompt>testing the internals</prompt>
     </img>
@@ -5383,12 +5383,12 @@ and “encapsulation” instead!</p>]]></block2>
     <tags>tutorial</tags>
     <desc>Apple products are so easy and straightforward to use, that is, until you need to do anything involving the Apple Account.</desc>
     <bigimg>
-      <url>reset-imac-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reset-imac-big.png</url>
       <origin>Midjourney</origin>
       <prompt>a tree with a single apple and a snake in the tree --ar 700:131</prompt>
     </bigimg>
     <img>
-      <url>reset-imac.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/reset-imac.png</url>
       <desc>Rotten Apple ;)</desc>
       <origin>Midjourney</origin>
       <prompt>rotten apple</prompt>
@@ -5462,12 +5462,12 @@ At that point you can also kill the old user.</p>
     <tags>tutorial,sql</tags>
     <desc>You want to keep track of who&apos;d done what when on your entities. &lt;br&gt;&lt;br&gt; What are your options?</desc>
     <bigimg>
-      <url>ef-audit-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ef-audit-big.png</url>
       <origin>Midjourney</origin>
       <prompt>1982 surveillance state</prompt>
     </bigimg>
     <img>
-      <url>ef-audit.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ef-audit.png</url>
       <origin>Midjourney</origin>
       <prompt>a thorough audit</prompt>
     </img>
@@ -5890,12 +5890,12 @@ really track everything 😀</p>]]></block2>
     <tags>sql,product,fun</tags>
     <desc>Our internal SQL Training was not just a pptx, it was a self-validating game: solve SQL exercises and get awarded points when the resultsets match!</desc>
     <bigimg>
-      <url>sql-training-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/sql-training-big.png</url>
       <origin>Midjourney</origin>
       <prompt>sql training with gamification</prompt>
     </bigimg>
     <img>
-      <url>sql-training.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/sql-training.png</url>
       <desc>Prize for the winner with banana for scale!</desc>
     </img>
     <toc>
@@ -6150,12 +6150,12 @@ An exercise on joining a table with itself.</p>
     <tags>git</tags>
     <desc>Lint, test, fix, build, ... before committing or pushing changes with git hooks and Husky v9.</desc>
     <bigimg>
-      <url>git-hooks-husky-v9-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hooks-husky-v9-big.png</url>
       <origin>Midjourney</origin>
       <prompt>huskies running in the snow</prompt>
     </bigimg>
     <img>
-      <url>git-hooks-husky-v9.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hooks-husky-v9.png</url>
       <desc>Modern native Git hooks made easy</desc>
       <origin>Midjourney</origin>
       <prompt>husky git hooks</prompt>
@@ -6343,12 +6343,12 @@ exit $hasBuildErrors
     <tags>war-story</tags>
     <desc>More often than not I see the Decorator pattern being used while using a different Design Pattern, or even none at all would have resulted in less and easier to understand code.</desc>
     <bigimg>
-      <url>kiss-decorators-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/kiss-decorators-big.png</url>
       <origin>Midjourney</origin>
       <prompt>workers decorating the interior of a home</prompt>
     </bigimg>
     <img>
-      <url>kiss-decorators.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/kiss-decorators.png</url>
       <desc>Stay wary of decorators but they should be in your toolbox</desc>
       <origin>Midjourney</origin>
       <prompt>kiss</prompt>
@@ -6526,12 +6526,12 @@ without any of the benefits.</p>
     <tags>tutorial,windows,testing,debugging</tags>
     <desc>Setting up Node and Visual Studio Code with TypeScript and Jest for the itenium Frontend Track sessions!</desc>
     <bigimg>
-      <url>frontend-track-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/frontend-track-big.png</url>
       <origin>Midjourney</origin>
       <prompt>frontend web development ui</prompt>
     </bigimg>
     <img>
-      <url>frontend-track.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/frontend-track.png</url>
       <desc>The itenium frontend track</desc>
       <origin>Midjourney</origin>
       <prompt>the frontend track</prompt>
@@ -7178,12 +7178,12 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
     <tags>synology,mongo</tags>
     <desc>Loading data in Mongo when spinning it up with Docker. Apparently not that easy!</desc>
     <bigimg>
-      <url>docker-mongo-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/docker-mongo-big.png</url>
       <origin>Midjourney</origin>
       <prompt>loading containers onto a ship</prompt>
     </bigimg>
     <img>
-      <url>docker-mongo.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/docker-mongo.png</url>
       <desc>Hours spent... The final solution? More Docker!</desc>
       <origin>Midjourney</origin>
       <prompt>docker mongo initial data load</prompt>
@@ -7582,12 +7582,12 @@ CMD ["mongod"]
     <tags>git,war-story</tags>
     <desc>Think about the reviewer: keep your PR as small as possible and avoid PR comments that you would have catched yourself easily by just quickly glancing over your changes.</desc>
     <bigimg>
-      <url>git-hygiene-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hygiene-big.png</url>
       <origin>Midjourney</origin>
       <prompt>poor hygiene</prompt>
     </bigimg>
     <img>
-      <url>git-hygiene.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hygiene.png</url>
       <origin>Midjourney</origin>
       <prompt>git hygiene</prompt>
     </img>
@@ -7910,13 +7910,13 @@ especially when it happens time and time again…</p>
     <tags>synology</tags>
     <desc>You&apos;ve finally gotten around buying yourself a NAS, more specifically, a Synology NAS (yaye!). &lt;br&gt; This setup guide should get you up and running in no time -- aimed at those with a Windows background that are not afraid of a little CLI 😃</desc>
     <bigimg>
-      <url>synology-setup-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-setup-big.png</url>
       <desc>It&apos;s maybe just a little smaller than this!</desc>
       <origin>Midjourney</origin>
       <prompt>synology nas</prompt>
     </bigimg>
     <img>
-      <url>synology-ds916.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/synology-ds916.png</url>
       <desc>Love this one!</desc>
     </img>
     <toc>
@@ -8244,11 +8244,11 @@ services:
     <tags>fun</tags>
     <desc>This year&apos;s itenium bootcamp was all about creating the most awesome landscape in the Unreal Engine.</desc>
     <bigimg>
-      <url>bootcamp-3dmodelling-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-3dmodelling-big.png</url>
       <desc>The screenshots from the 4 contenders</desc>
     </bigimg>
     <img>
-      <url>bootcamp-3dmodelling-winner.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-3dmodelling-winner.png</url>
       <desc>Competition Winner (Alexander)</desc>
     </img>
     <toc>
@@ -8369,12 +8369,12 @@ with terrain and foliage assets.</p>
     <desc>Things you can already install (and try out?) before the bootcamp starts. &lt;br&gt;&lt;br&gt; Less installing and more hacking on the day itself!</desc>
     <series>security-bootcamp</series>
     <bigimg>
-      <url>security-bootcamp-prep-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/security-bootcamp-prep-big.png</url>
       <origin>Midjourney</origin>
       <prompt>an underground bunker stuffed to the brim with food and other supplies</prompt>
     </bigimg>
     <img>
-      <url>security-bootcamp-prep.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/security-bootcamp-prep.png</url>
       <desc>Prepping!</desc>
       <origin>Midjourney</origin>
       <prompt>a fat computer engineer stretching his hands</prompt>
@@ -8608,12 +8608,12 @@ as passphrase and score Vault multipliers.</p>
     <tags>testing,cheat-sheet</tags>
     <desc>Cheat sheet comparing testing framework APIs for NUnit, xUnit, MSTest and TUnit.</desc>
     <bigimg>
-      <url>net-testing-frameworks-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/net-testing-frameworks-big.png</url>
       <origin>Midjourney</origin>
       <prompt>extensive comparison of three different things</prompt>
     </bigimg>
     <img>
-      <url>net-testing-frameworks.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/net-testing-frameworks.png</url>
       <desc>Battle!</desc>
       <origin>Midjourney</origin>
       <prompt>three unit testing frameworks battling</prompt>
@@ -9246,12 +9246,12 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
     <tags>angular</tags>
     <desc>Let&apos;s take a look at the new control flow and @Defer</desc>
     <bigimg>
-      <url>angular-17-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-17-big.png</url>
       <origin>Midjourney</origin>
       <prompt></prompt>
     </bigimg>
     <img>
-      <url>angular-17.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-17.png</url>
       <desc>New Angular logo</desc>
       <title>New Angular logo</title>
     </img>
@@ -9421,12 +9421,12 @@ It’s also quite easy to add an empty placeholder.</p>
     <tags>book-review</tags>
     <desc>Do we always need to go for full on refactorings, or is there a cute little variant? How do we convey the need to do so, and the added value?</desc>
     <bigimg>
-      <url>tidy-first-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/tidy-first-big.png</url>
       <origin>Midjourney</origin>
       <prompt>Cute Little Refactorings</prompt>
     </bigimg>
     <img>
-      <url>tidy-first.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/tidy-first.png</url>
       <desc></desc>
       <title>Book cover image</title>
     </img>
@@ -9527,13 +9527,13 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     <tags>war-story,tech-talk</tags>
     <desc>Embracing Sustainable, Responsible, and Explainable AI in a Digital Transformation Era.</desc>
     <bigimg>
-      <url>women-in-tech-2023-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/women-in-tech-2023-big.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>explainable AI</prompt>
     </bigimg>
     <img>
-      <url>women-in-tech-2023.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/women-in-tech-2023.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <title></title>
@@ -9608,12 +9608,12 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     <tags>react,war-story</tags>
     <desc>War Story on improving the performance of &quot;confac&quot;, our internal invoicing application.</desc>
     <bigimg>
-      <url>react-profiling-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/react-profiling-big.png</url>
       <origin>Midjourney</origin>
       <prompt>the fastest thing in the world</prompt>
     </bigimg>
     <img>
-      <url>react-profiling.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/react-profiling.png</url>
       <desc>Photo by Midjourney</desc>
       <prompt>a wristwatch with inside the react logo</prompt>
     </img>
@@ -10226,13 +10226,13 @@ function callback(id, phase, actualDuration) {
     <tags>fun,tech-talk</tags>
     <desc>We created our own MacroPad with 6 customizable buttons and a clickable volume knob.</desc>
     <bigimg>
-      <url>macropad-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/macropad-big.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt></prompt>
     </bigimg>
     <img>
-      <url>macropad.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/macropad.jpg</url>
       <desc>The End Goal</desc>
       <title></title>
     </img>
@@ -10356,12 +10356,12 @@ of Michiel.</p>
     <desc>Build security awareness within your orgisation with our full day immersive workshop.</desc>
     <series>security-bootcamp</series>
     <bigimg>
-      <url>hacking-bootcamp-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-bootcamp-big.png</url>
       <origin>Midjourney</origin>
       <prompt>a security bootcamp</prompt>
     </bigimg>
     <img>
-      <url>hacking-bootcamp.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-bootcamp.png</url>
       <origin>Midjourney</origin>
       <prompt>a security bootcamp</prompt>
     </img>
@@ -10466,13 +10466,13 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
     <desc>Automated discovery of SQL injection vulnerabilities. sqlmap works for all commonly used databases, and then some.</desc>
     <series>security-bootcamp</series>
     <bigimg>
-      <url>hacking-sqlmap-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-sqlmap-big.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>sql injection vulnerability exploited</prompt>
     </bigimg>
     <img>
-      <url>hacking-sqlmap.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-sqlmap.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <title></title>
@@ -10579,13 +10579,13 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
     <desc>Fast, flexible, modular, parallelized login cracker with support for over 50 protocols.</desc>
     <series>security-bootcamp</series>
     <bigimg>
-      <url>hacking-hydra-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-hydra-big.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>multi headed fire hydra</prompt>
     </bigimg>
     <img>
-      <url>hacking-hydra.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-hydra.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <title></title>
@@ -10682,13 +10682,13 @@ Security Bootcamp for such clue!</p>
     <desc>Scan all ports on a server to figure out what services are running.</desc>
     <series>security-bootcamp</series>
     <bigimg>
-      <url>hacking-nmap-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-nmap-big.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <prompt>the nmap logo looking down on vulnerable servers</prompt>
     </bigimg>
     <img>
-      <url>hacking-nmap.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hacking-nmap.png</url>
       <desc></desc>
       <origin>Midjourney</origin>
       <title></title>
@@ -10825,13 +10825,13 @@ an nmap scan to discover services that are not (yet) available directly from the
     <desc>Can ChatGPT create a Slack Meme Bot?</desc>
     <series>slack-meme-poster</series>
     <bigimg>
-      <url>slack-meme-bot-big2.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot-big2.png</url>
       <desc>By Midjourney</desc>
       <origin>Midjourney</origin>
       <prompt>chatgpt posting funny programming memes on social media --ar 2:1</prompt>
     </bigimg>
     <img>
-      <url>slack-meme-bot3.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot3.png</url>
       <desc>Added &apos;written by chatgpt&apos; to the prompt and I got a worse looking bot ;)</desc>
       <origin>Midjourney</origin>
       <title>By Midjourney</title>
@@ -11188,13 +11188,13 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
     <desc>Technical implementation details for the Slack Meme Bot</desc>
     <series>slack-meme-poster</series>
     <bigimg>
-      <url>slack-meme-bot-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot-big.png</url>
       <desc>By Midjourney</desc>
       <origin>Midjourney</origin>
       <prompt>memes on social media --ar 2:1</prompt>
     </bigimg>
     <img>
-      <url>slack-meme-bot2.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot2.png</url>
       <desc>Actual footage of our meme bot!</desc>
       <origin>Midjourney</origin>
       <title>By Midjourney</title>
@@ -11259,13 +11259,13 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
     <desc>Share your meme collection on Slack by posting a random meme at certain times with a scheduled job.</desc>
     <series>slack-meme-poster</series>
     <bigimg>
-      <url>slack-meme-bot-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot-big.png</url>
       <desc>By Midjourney</desc>
       <origin>Midjourney</origin>
       <prompt>memes on social media --ar 2:1</prompt>
     </bigimg>
     <img>
-      <url>slack-meme-bot.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot.png</url>
       <desc>Actual footage of our meme bot!</desc>
       <origin>Midjourney</origin>
       <title>By Midjourney</title>
@@ -11281,7 +11281,7 @@ it is time to post one!</p>
 ]]></excerpt>
       <block1><![CDATA[<h1 id="what-it-looks-like">What it looks like</h1>
 
-<p><img src="/assets/blog-images/slack-meme-bot-example.png" alt="Example of a Slack Meme Bot posting" title="Slack Meme Bot in action" /></p>
+<p><img src="blog/assets/blog-images/slack-meme-bot-example.png" alt="Example of a Slack Meme Bot posting" title="Slack Meme Bot in action" /></p>
 
 <h1 id="requirements">Requirements</h1>
 
@@ -11348,7 +11348,7 @@ docker-compose up --build -d
   </li>
 </ul>
 
-<p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
+<p><img src="blog/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: The itenium Slack Meme Bot® : Installation</li>
             <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
@@ -11365,11 +11365,11 @@ docker-compose up --build -d
     <tags></tags>
     <desc>Staying Ahead of the Curve: Current Trends in Q&amp;A Engineering and How Itenium Can Help</desc>
     <bigimg>
-      <url>trends-2023-qa-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-qa-big.png</url>
       <desc>Photo by Midjourney</desc>
     </bigimg>
     <img>
-      <url>trends-2023-qa.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-qa.png</url>
       <desc>Photo by Midjourney</desc>
     </img>
     <toc>
@@ -11406,11 +11406,11 @@ At itenium, we understand the importance of staying up-to-date with the latest t
     <tags></tags>
     <desc>Unleashing the Power of Functional Analysis: A Guide for Success</desc>
     <bigimg>
-      <url>trends-2023-fa-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-fa-big.png</url>
       <desc>Photo by Midjourney</desc>
     </bigimg>
     <img>
-      <url>trends-2023-fa.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-fa.png</url>
       <desc>Photo by Midjourney</desc>
     </img>
     <toc>
@@ -11448,11 +11448,11 @@ It is therefore important to have a talented functional analyst on a software de
     <tags>war-story</tags>
     <desc>A deep dive into fixing a translation issue we stumbled upon while upgrading Vaadin that through some frustration and out-of-the-box SOLID thinking, ultimately made my team&apos;s lives easier</desc>
     <bigimg>
-      <url>vaadin-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vaadin-big.png</url>
       <desc>Vaadin alternative logo</desc>
     </bigimg>
     <img>
-      <url>vaadin.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vaadin.png</url>
       <desc>Vaadin logo</desc>
     </img>
     <toc>
@@ -11605,11 +11605,11 @@ export class CreditVouchDesign extends LitElement {
     <desc>Regex tutorial: after our gentle regex intro, we now dive into the minimum set of regex you should really know.</desc>
     <series>regex</series>
     <bigimg>
-      <url>regex-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-big.png</url>
       <origin>Midjourney</origin>
     </bigimg>
     <img>
-      <url>regex-be-normal.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-be-normal.jpg</url>
       <desc>A small investment in regex now. Loads of return in the future...</desc>
     </img>
     <toc>
@@ -11973,12 +11973,12 @@ when you want to replace some text but only when it is (not) preceded/succeeded 
     <tags>react</tags>
     <desc>A showcase and comparison of the most popular React charting libraries using a simple &quot;Line Chart&quot;</desc>
     <bigimg>
-      <url>react-charting-chart-big.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/react-charting-chart-big.jpg</url>
       <desc>Photo by Supachai Promrit</desc>
       <origin>https://www.vecteezy.com/vector-art/1846151-cryptocurrency-stock-chart-light-futuristic-banner-background</origin>
     </bigimg>
     <img>
-      <url>react-charting-chart.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/react-charting-chart.png</url>
       <desc>Photo by clipartmax</desc>
       <origin>https://www.clipartmax.com/middle/m2H7H7d3b1G6Z5m2_line-chart-icon-line-graph-icon-png/</origin>
     </img>
@@ -12563,11 +12563,11 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
     <tags></tags>
     <desc>What&apos;s brewing in the Java landscape in 2023 and how can itenium assist with your Java projects.</desc>
     <bigimg>
-      <url>trends-2023-java-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-java-big.png</url>
       <desc>Photo by Midjourney</desc>
     </bigimg>
     <img>
-      <url>trends-2023-java.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-java.png</url>
     </img>
     <toc>
       <icon>icon-java</icon>
@@ -12603,12 +12603,12 @@ So if you want to ensure that your Java projects are completed on time and to th
     <tags></tags>
     <desc>After 2 decades Xamarin.Forms becomes .NET MAUI. Why a new name? Is there really a big difference? We are going to look at the differences and similarities between them.</desc>
     <bigimg>
-      <url>xamarin-vs-maui-bigimg.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/xamarin-vs-maui-bigimg.jpg</url>
       <desc>Picture by Olaf Val</desc>
       <origin>https://unsplash.com/photos/UTk9cXzYWAg</origin>
     </bigimg>
     <img>
-      <url>xamarin-vs-maui-img.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/xamarin-vs-maui-img.jpg</url>
       <desc>Picture by Olaf Val</desc>
       <origin>https://unsplash.com/photos/UTk9cXzYWAg</origin>
     </img>
@@ -12711,12 +12711,12 @@ So if you want to ensure that your Java projects are completed on time and to th
     <desc>A RegEx introduction: Why in the seven seas would you even want to learn this archaic thing.</desc>
     <series>regex</series>
     <bigimg>
-      <url>regex-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-big.png</url>
       <desc>Do I really have to?</desc>
       <origin>Midjourney</origin>
     </bigimg>
     <img>
-      <url>regex-how-to.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-how-to.png</url>
       <desc>It&apos;s that easy</desc>
     </img>
     <excerpt><![CDATA[<p>You already know regex is a (very) useful skill? Skip to the <a href="https://itenium.be/blog/productivity/regex-tutorial">Tutorial</a>.
@@ -12908,11 +12908,11 @@ to change often? Don’t be shy to write them, even if they are the only ones in
     <desc>Migrating from Jasmine to Jest is pretty straight forward. The syntax is largely identical and `jest-codemods` helps with pretty much everything else!</desc>
     <series>js-testing</series>
     <bigimg>
-      <url>jasmine-to-jest-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine-to-jest-big.png</url>
       <desc>Photo by Midjourney</desc>
     </bigimg>
     <img>
-      <url>jasmine-to-jest.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine-to-jest.png</url>
       <desc>Photo by Midjourney</desc>
     </img>
     <toc>
@@ -13422,11 +13422,11 @@ out of the box with <code>create-react-app</code>.</p>
     <tags></tags>
     <desc>A look ahead to .NET in 2023 and how itenium can assist you with your .NET projects.</desc>
     <bigimg>
-      <url>trends-2023-dotnet-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-dotnet-big.png</url>
       <desc>Photo by Midjourney</desc>
     </bigimg>
     <img>
-      <url>trends-2023-dotnet.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/trends-2023-dotnet.jpg</url>
     </img>
     <toc>
       <icon>icon-csharp</icon>
@@ -13466,12 +13466,12 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
     <desc></desc>
     <series>epplus</series>
     <bigimg>
-      <url>epplus-commercial-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/epplus-commercial-big.png</url>
       <origin>Midjourney</origin>
       <prompt>excel fork</prompt>
     </bigimg>
     <img>
-      <url>epplus-commercial.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/epplus-commercial.png</url>
     </img>
     <toc>
       <icon>ban</icon>
@@ -13594,12 +13594,12 @@ which only works on Windows. The non-free version has removed this dependency.</
     <tags>war-story,tech-talk</tags>
     <desc>&quot;Diversity and Inclusion&quot; @ European Women in Technology 2022</desc>
     <bigimg>
-      <url>women-in-tech-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/women-in-tech-big.png</url>
       <desc>Photo by Christina @ wocintechchat.com</desc>
       <origin>https://unsplash.com/photos/eAXpbb4vzKU</origin>
     </bigimg>
     <img>
-      <url>women-in-tech.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/women-in-tech.png</url>
       <desc>Photo by Christina @ wocintechchat.com</desc>
       <origin>https://unsplash.com/photos/glRqyWJgUeY</origin>
       <title></title>
@@ -13728,12 +13728,12 @@ Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Cou
     <tags>fun,war-story</tags>
     <desc>A story of an evil user.</desc>
     <bigimg>
-      <url>first-hack-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/first-hack-big.png</url>
       <desc>Photo by Jay Wennington</desc>
       <origin>https://unsplash.com/photos/JrDou1DZ95E</origin>
     </bigimg>
     <img>
-      <url>first-hack.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/first-hack.png</url>
       <desc>Photo by McGill Library</desc>
       <origin>https://unsplash.com/photos/xYRM6tusURI</origin>
     </img>
@@ -13810,12 +13810,12 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
     <tags>war-story</tags>
     <desc>Detailing the mess you burden yourself with when trying to combine these two arch enemies. Is there a way out of this dire nightmare?</desc>
     <bigimg>
-      <url>CQRS-Ramble-Big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/CQRS-Ramble-Big.png</url>
       <desc>Photo by NeONBRAND</desc>
       <origin>https://unsplash.com/photos/Gk578U8c2W8</origin>
     </bigimg>
     <img>
-      <url>CQRS-Ramble.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/CQRS-Ramble.png</url>
       <desc>If all you have is a hammer...</desc>
       <title>A Loving Relationship</title>
     </img>
@@ -14190,12 +14190,12 @@ workaround for properties being “all over the place”.</p>
     <desc>The VSCode Editor shortcuts I should memorize, somehow. (preferably this year)</desc>
     <series>vscode</series>
     <bigimg>
-      <url>vscode-editor-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vscode-editor-big.png</url>
       <desc>Photo by Adi Goldstein</desc>
       <origin>https://unsplash.com/photos/mDinBvq1Sfg</origin>
     </bigimg>
     <img>
-      <url>vscode-editor.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vscode-editor.png</url>
       <desc>Pretty IDE and pretty code.</desc>
       <origin>https://unsplash.com/photos/cvBBO4PzWPg</origin>
       <title>Photo by Markus Spiske</title>
@@ -14931,12 +14931,12 @@ Custom shortcuts:</p>
     <desc>Blog post series on all things VSCode I encountered during my switch from Sublime Text 3.</desc>
     <series>vscode</series>
     <bigimg>
-      <url>vscode-sublime-view.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vscode-sublime-view.png</url>
       <desc>Photo by Scott Webb</desc>
       <origin>https://unsplash.com/photos/PMq_b18cN6A</origin>
     </bigimg>
     <img>
-      <url>vscode-screenshot.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vscode-screenshot.png</url>
       <desc>Some fancy rainbow IDE I ended up with 🌈 🌈</desc>
     </img>
     <toc>
@@ -15562,7 +15562,7 @@ configuration afterwards.</p>
 <p style="text-align: center; margin-top: 32px; font-size: 23px;"><strong>Final score</strong>: 👍 👍 👍 🌈 🌈</p>
 
 <p><br />
-Next up: <a href="/blog/dev-setup/vscode-editor">VSCode: Editor Configuration and Shortcuts</a>
+Next up: <a href="/blog/blog/dev-setup/vscode-editor">VSCode: Editor Configuration and Shortcuts</a>
 <br /></p>
 
 <hr />
@@ -15612,7 +15612,7 @@ you know, something like Vim.</p>
     <tags>pragmatic-tips</tags>
     <desc>Don&apos;t let the &quot;Blog&quot; title fool you. This really is a &quot;Bliki&quot;.</desc>
     <img>
-      <url>intro-post.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/intro-post.png</url>
     </img>
     <toc>
       <icon>wordpress</icon>
@@ -15713,12 +15713,12 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
     <tags>war-story</tags>
     <desc></desc>
     <bigimg>
-      <url>valueobjects-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/valueobjects-big.png</url>
       <desc>Photo by freestocks.org</desc>
       <origin>https://unsplash.com/photos/y_dCjaRWthY</origin>
     </bigimg>
     <img>
-      <url>valueobjects.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/valueobjects.jpg</url>
       <desc>Photo by Seth Macey</desc>
     </img>
     <toc>
@@ -15893,10 +15893,10 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <desc>Robocode tutorials for the itenium roborumble™</desc>
     <series>robocode</series>
     <bigimg>
-      <url>robocode-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/robocode-big.png</url>
     </bigimg>
     <img>
-      <url>robocode-pew-pew.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/robocode-pew-pew.png</url>
     </img>
     <toc>
       <title>🎇 Tutorial</title>
@@ -16073,10 +16073,10 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <desc>Robocode tutorials for the itenium roborumble™</desc>
     <series>robocode</series>
     <bigimg>
-      <url>robocode-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/robocode-big.png</url>
     </bigimg>
     <img>
-      <url>robocode.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/robocode.png</url>
       <desc>Photo by Ray Rui</desc>
       <origin>https://unsplash.com/photos/SyzQ5aByJnE</origin>
     </img>
@@ -16250,12 +16250,12 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
     <tags>autohotkey,testing,debugging</tags>
     <desc>How to speed up and perhaps also help you get out of a pinch while debugging your Authotkey scripts...</desc>
     <bigimg>
-      <url>autohotkey-development-debugging-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/autohotkey-development-debugging-big.png</url>
       <desc>Photo by Jason D</desc>
       <origin>https://unsplash.com/photos/7BhTfoKsheQ</origin>
     </bigimg>
     <img>
-      <url>autohotkey-development-debugging.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/autohotkey-development-debugging.png</url>
       <desc>Is that even Authotkey code?? Are you kidding me???</desc>
       <origin>https://unsplash.com/photos/5VM5SHrs_E8</origin>
       <title>Photo by Taras Shypka</title>
@@ -16560,12 +16560,12 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
     <tags>tech-talk</tags>
     <desc>Google I/O &apos;19 talk on why you would ever need WebAssembly.</desc>
     <bigimg>
-      <url>webassembly-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/webassembly-big.png</url>
       <desc>Photo by Vlad Tchompalov</desc>
       <origin>https://unsplash.com/photos/KHxxCc8XMNE</origin>
     </bigimg>
     <img>
-      <url>webassembly.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/webassembly.png</url>
       <desc>Photo by Vadim Sherbakov</desc>
       <origin>https://unsplash.com/photos/osSryggkso4</origin>
     </img>
@@ -16735,10 +16735,10 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
     <tags>testing,tutorial</tags>
     <desc>The unicorn JavaScript testing framework by Sindre Sorhus.</desc>
     <bigimg>
-      <url>ava-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ava-big.png</url>
     </bigimg>
     <img>
-      <url>ava.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/ava.jpg</url>
       <desc>Photo by Marco Secchi</desc>
     </img>
     <toc>
@@ -17097,12 +17097,12 @@ console.log('Currently running', test.meta.file);
     <desc>Basic .NET Regex cheat sheet</desc>
     <series>regex</series>
     <bigimg>
-      <url>regex-water-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-water-big.png</url>
       <desc>Unsplash picture by Àlex Folguera</desc>
       <origin>https://unsplash.com/photos/eSfsjp6xuYU</origin>
     </bigimg>
     <img>
-      <url>regex-matches.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-matches.jpg</url>
       <desc>Picture by Devin Avery</desc>
       <origin>https://unsplash.com/photos/ZsgPd6ovNag</origin>
     </img>
@@ -17217,12 +17217,12 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
     <tags>tutorial</tags>
     <desc>Learning Vue.js basics with mostly code examples.</desc>
     <bigimg>
-      <url>vue-tutorial-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vue-tutorial-big.png</url>
       <desc>Photo by Jacky Lo</desc>
       <origin>https://unsplash.com/photos/LjX-m_UXQGM</origin>
     </bigimg>
     <img>
-      <url>vue-tutorial.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/vue-tutorial.jpg</url>
       <desc>What a Vue!</desc>
     </img>
     <toc>
@@ -17285,7 +17285,7 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
 
 <h1 id="hello-vue">Hello Vue</h1>
 
-<p class="title-url"><a href="/assets/blog-assets/vue-HelloVue.html">HelloVue.html source</a></p>
+<p class="title-url"><a href="/blog/assets/blog-assets/vue-HelloVue.html">HelloVue.html source</a></p>
 
 <h4 id="html">Html</h4>
 <pre><code class="language-html">&lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;
@@ -17802,12 +17802,12 @@ and am already set on using it for a few small projects.</p>
     <tags>cheat-sheet,tutorial</tags>
     <desc>Moment.js because why is January month 0 again?</desc>
     <bigimg>
-      <url>momentjs-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/momentjs-big.png</url>
       <desc>Photo by Jens Kreuter</desc>
       <origin>https://unsplash.com/photos/hj_Zz13tFEM</origin>
     </bigimg>
     <img>
-      <url>momentjs.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/momentjs.jpg</url>
       <desc>Picture by Jon Tyson</desc>
       <origin>https://unsplash.com/photos/FlHdnPO6dlw</origin>
     </img>
@@ -18459,12 +18459,12 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
     <tags>git</tags>
     <desc>Lint, test and try a production build before pushing changes with git hooks and Husky.</desc>
     <bigimg>
-      <url>git-hooks-husky-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hooks-husky-big.png</url>
       <desc>Photo by Chris Scott</desc>
       <origin>https://unsplash.com/photos/NEc3YEN1FFw</origin>
     </bigimg>
     <img>
-      <url>git-hooks-husky.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-hooks-husky.jpg</url>
       <desc>Photo by Simon Rae</desc>
     </img>
     <toc>
@@ -18585,11 +18585,11 @@ module.exports = {
     <tags>git</tags>
     <desc>Some not-so-often used git commands.</desc>
     <bigimg>
-      <url>exotic-git-recipes-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/exotic-git-recipes-big.png</url>
       <prompt>exotic git recipes</prompt>
     </bigimg>
     <img>
-      <url>git-snippets.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-snippets.jpg</url>
       <desc>Photo by Brine Blum</desc>
       <origin>https://unsplash.com/photos/Bb_X4JgSqIM</origin>
     </img>
@@ -18752,7 +18752,7 @@ Set-Alias pr Create-PullRequest
     <tags>product</tags>
     <desc>Automatically add Github stars badges to all Github project links. Runs automatically on google, stackoverflow and github. Activate with Alt + Shift + S on any other webpage.</desc>
     <img>
-      <url>starify-github-links.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/starify-github-links.png</url>
       <origin>https://github.com/sindresorhus/awesome-nodejs#mad-science</origin>
     </img>
     <toc>
@@ -18761,7 +18761,7 @@ Set-Alias pr Create-PullRequest
     </toc>
     <excerpt><![CDATA[<p class="notice--info">The Starify-GitHub-Links Chrome extension is no more! 🎉
 Long live “Starify Links” because we’re now adding links to, well, everything! 🌟✨🤩
-See the <a href="/javascript/2025/10/23/starify-links.html">new blog post</a></p>
+See the <a href="/blog/javascript/2025/10/23/starify-links.html">new blog post</a></p>
 ]]></excerpt>
       <block1><![CDATA[<p><br />
 Runs automatically on certain pages like Google search results, StackExchange questions,
@@ -18841,12 +18841,12 @@ const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?
     <desc>A tutorial and cheat-sheet on RegExp testing, matching and replacing in JavaScript.</desc>
     <series>regex</series>
     <bigimg>
-      <url>regex-tutorial-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/regex-tutorial-big.png</url>
       <desc>Photo by Midjourney</desc>
       <prompt>text in an alien language with lots of weird characters and a human looking at it, puzzled --ar 2:1</prompt>
     </bigimg>
     <img>
-      <url>when-searching-regular-expressions-on-unsplash.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/when-searching-regular-expressions-on-unsplash.jpg</url>
       <desc>Unsplash picture by Aga Putra</desc>
       <origin>https://unsplash.com/photos/7MBgGXQ2Rqg</origin>
     </img>
@@ -19173,12 +19173,12 @@ regex.test(input); // Returns false. lastIndex is reset to 0
     <tags>debugging</tags>
     <desc>Don&apos;t confront someone with your problem right away, Talk to the Duck™ first.</desc>
     <bigimg>
-      <url>rubber-duck-programming-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/rubber-duck-programming-big.png</url>
       <desc>Photo by Mpho Mojapelo</desc>
       <origin>https://unsplash.com/photos/nJVBdCk6YWc</origin>
     </bigimg>
     <img>
-      <url>rubber-duck-programming-duck-slippers.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/rubber-duck-programming-duck-slippers.jpg</url>
       <desc>I own one of these! :)</desc>
     </img>
     <toc>
@@ -19309,7 +19309,7 @@ It would be perfect if you added a little voice chip that asked, “<em>Did you 
     <tags>meta</tags>
     <desc>How to create a new blog post on this site :) Very meta.</desc>
     <img>
-      <url>meta-create-blog-post.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/meta-create-blog-post.png</url>
       <desc>Photo by Tom Sodoge</desc>
       <origin>https://unsplash.com/photos/Qeqg7F9pfuU</origin>
     </img>
@@ -19863,12 +19863,12 @@ emoj [text]
     <tags>cheat-sheet,tutorial</tags>
     <desc>A guide on learning JavaScript `Array.prototype` by comparing it to C# Linq.</desc>
     <bigimg>
-      <url>Array.prototype-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/Array.prototype-big.png</url>
       <origin>Midjourney</origin>
       <prompt>array prototype</prompt>
     </bigimg>
     <img>
-      <url>Array.prototype.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/Array.prototype.png</url>
     </img>
     <toc>
       <icon>icon-javascript</icon>
@@ -20245,7 +20245,7 @@ for this amazing diagram, I love it!</p>
     <tags>tutorial,cheat-sheet,debugging</tags>
     <desc>We obviously never encounter bugs in our code. Still, should you ever need to debug, use these shortcuts so that it may be over soon.</desc>
     <img>
-      <url>debugging.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/debugging.png</url>
     </img>
     <toc>
       <icon>bug</icon>
@@ -20523,12 +20523,12 @@ Not open source:</p>
     <tags>angular,cheat-sheet,tutorial</tags>
     <desc>Cheat-sheet covering pretty much everything relevant on Angular Pipes.</desc>
     <bigimg>
-      <url>angular-pipes-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-pipes-big.png</url>
       <desc>Photo by Kelly McCrimmon</desc>
       <origin>https://unsplash.com/photos/Xf3FNjXvcv0</origin>
     </bigimg>
     <img>
-      <url>angular-pipes.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular-pipes.png</url>
     </img>
     <toc>
       <icon>icon-angular</icon>
@@ -21126,7 +21126,7 @@ export class MyApplicationModule {}
     <tags>git</tags>
     <desc>&quot;git assume unchanged&quot; any (configuration) file you need to modify  but also want to avoid committing/pushing accidentally.</desc>
     <img>
-      <url>git-assume-unchanged.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-assume-unchanged.jpg</url>
     </img>
     <toc>
       <icon>icon-git</icon>
@@ -21205,7 +21205,7 @@ git update-index --no-skip-worktree fileName
     <tags>autohotkey</tags>
     <desc>Run any Autohotkey script on the web with a single.. Autohotkey hotkey.</desc>
     <img>
-      <url>autohotkey-dyna-run.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/autohotkey-dyna-run.jpg</url>
     </img>
     <toc>
       <icon>car</icon>
@@ -21348,7 +21348,7 @@ DynaRun(TempScript, pipename="")
     <tags>autohotkey</tags>
     <desc>Wait, how did you just fill in that form? Autohotkey, that&apos;s how!</desc>
     <img>
-      <url>productivity.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/productivity.jpg</url>
       <desc>Automate repetitive tasks with Autohotkey!</desc>
     </img>
     <toc>
@@ -21495,12 +21495,12 @@ Return
     <tags>cheat-sheet</tags>
     <desc>Mnemonics: aiding or designed to aid the memory. For Developers. Yeah.</desc>
     <bigimg>
-      <url>mnemonics-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/mnemonics-big.png</url>
       <origin>Midjourney</origin>
       <prompt>mnemonics</prompt>
     </bigimg>
     <img>
-      <url>mnemonics-xkcd.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/mnemonics-xkcd.png</url>
       <desc>XKCD Presents: Some New Science Mnemonics</desc>
       <origin>https://xkcd.com/992/</origin>
     </img>
@@ -21637,7 +21637,7 @@ and I liked it too much to not add it here 😀</p>
     <tags>angular,war-story</tags>
     <desc>2+ years of Angular: The good, the bad and the ugly</desc>
     <img>
-      <url>angular.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/angular.png</url>
     </img>
     <toc>
       <icon>icon-angular</icon>
@@ -21736,7 +21736,7 @@ All in all it’s just a great framework for modern web applications and most of
     <tags>sql,tutorial</tags>
     <desc>Tutorial on how to use LocalDb as a lightweight Sql Server substitution for development purposes.</desc>
     <img>
-      <url>LocalDb.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/LocalDb.png</url>
     </img>
     <toc>
       <icon>icon-mssql</icon>
@@ -21813,12 +21813,12 @@ versions|v: Lists all LocalDb version-numbers installed
     <tags>git,powershell,product</tags>
     <desc>Tired of copying &lt;code&gt;git status&lt;/code&gt; output for &lt;code&gt;git add&lt;/code&gt; input for the millionth time? Despair no more for &lt;code&gt;Git-NumberedAdd&lt;/code&gt; is here!</desc>
     <bigimg>
-      <url>git-add-numbered-add-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-add-numbered-add-big.png</url>
       <origin>Midjourney</origin>
       <prompt>Chibi-style programmer surrounded by floating numbered files, little Git logos dancing around, cute terminal screens showing staged files, exaggerated expressions, whimsical, colorful, fun, humorous coding scene, high detail, cartoon style</prompt>
     </bigimg>
     <img>
-      <url>git-add-numbered-add.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/git-add-numbered-add.jpg</url>
     </img>
     <toc>
       <icon>icon-git</icon>
@@ -22019,7 +22019,7 @@ Also, see below for similar implementations in Bash and Perl.</p>]]></block2>
     <tags>git</tags>
     <desc>How to navigate git diffs, logs, ... on the CLI with less</desc>
     <img>
-      <url>less.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/less.png</url>
     </img>
     <toc>
       <icon>icon-git</icon>
@@ -22276,7 +22276,7 @@ was way overdue.</p>]]></block2>
     <tags>tutorial</tags>
     <desc>If there was no such thing as JavaScript, Yaml could&apos;ve been the Xml killer.</desc>
     <img>
-      <url>yaml.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/yaml.png</url>
     </img>
     <toc>
       <title>Yaml Tutorial</title>
@@ -22523,7 +22523,7 @@ try {
     <desc>Tutorial for the mocking framework with the prettiest, most succinct syntax.</desc>
     <series>nsubstitute</series>
     <img>
-      <url>nsubstitute-alt.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/nsubstitute-alt.png</url>
     </img>
     <toc>
       <icon>dot-circle-o</icon>
@@ -22869,7 +22869,7 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
     <desc>Autohotkey allows you to define hotkeys like ^#D. But what does it mean?</desc>
     <series>autohotkey</series>
     <img>
-      <url>hotkeys.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/hotkeys.jpg</url>
     </img>
     <toc>
       <icon>car</icon>
@@ -23364,7 +23364,7 @@ even while the script is suspended.</p>
     <desc>Companion to the EPPlus series, specifically to Part 2: Formulas.   Covering the EPPlus syntax and implemented functions.</desc>
     <series>epplus</series>
     <img>
-      <url>excel-math.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/excel-math.jpg</url>
       <desc>Photo by Roman Mager</desc>
       <origin>https://unsplash.com/photos/5mZ_M06Fc9g</origin>
     </img>
@@ -23862,7 +23862,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <desc>What would we be without some extra plugins. There are over 1000 Jasmine npm packages and we&apos;ll cover them all here.</desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine2.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine2.jpg</url>
       <desc>Photo by Aliis Sinisalu</desc>
       <origin>https://unsplash.com/photos/yOh9lWBDjP4</origin>
     </img>
@@ -24050,7 +24050,7 @@ describe('fake the api call', function() {
     <desc>Customize Jasmine to your project needs with custom matchers, custom equality testers. Test legacy code by providing Jasmine with global variables.</desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine4.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine4.jpg</url>
       <desc>Photo by David Brooke Martin</desc>
       <origin>https://unsplash.com/photos/qGhYl8-ktz8</origin>
     </img>
@@ -24259,7 +24259,7 @@ it('has its own jasmine.getEnv()', function() {
     <desc>Test asynchronous code with Jasmine. Includes instructions on how to use ES2017 async/await.</desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine3.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine3.jpg</url>
       <desc>Photo by Irina Iriser</desc>
       <origin>https://unsplash.com/photos/vB4_CtsfaZ0</origin>
     </img>
@@ -24392,7 +24392,7 @@ it('can pass context - which will show on failure', async () =&gt; {
     <desc>Spies, the Jasmine version of mocks allow you to check whether methods and/or properties have been called, how many times and with which parameters.</desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine-spies.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine-spies.jpg</url>
       <desc>Photo by Sergiu Nista</desc>
       <origin>https://unsplash.com/photos/ew3-7k3sl-g</origin>
     </img>
@@ -24585,7 +24585,7 @@ it('and on setters', () =&gt; {
     <desc></desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine-tea.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine-tea.jpg</url>
       <desc>Photo by Carolyn V</desc>
       <origin>https://unsplash.com/photos/dPkn4562j3E</origin>
     </img>
@@ -24777,7 +24777,7 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
     <desc></desc>
     <series>js-testing</series>
     <img>
-      <url>jasmine.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/jasmine.jpg</url>
       <desc>Photo by Helena Munoz</desc>
       <origin>https://unsplash.com/photos/WbiDCxOnytg</origin>
     </img>
@@ -24993,7 +24993,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     <desc></desc>
     <series>epplus</series>
     <img>
-      <url>excel-print.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/excel-print.jpg</url>
       <desc>Photo by Bank Phrom</desc>
       <origin>https://unsplash.com/photos/Tzm3Oyu_6sk</origin>
     </img>
@@ -25136,7 +25136,7 @@ public void ConvertingIndexesAndAddresses()
     <desc></desc>
     <series>epplus</series>
     <img>
-      <url>excel-import.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/excel-import.jpg</url>
       <desc>Photo by chuttersnap</desc>
       <origin>https://unsplash.com/photos/fN603qcEA7g</origin>
     </img>
@@ -25322,7 +25322,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
     <desc>NSubstitute vs Moq syntax comparison.</desc>
     <series>nsubstitute</series>
     <img>
-      <url>nsubstitute-alt.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/nsubstitute-alt.png</url>
     </img>
     <toc>
       <icon>dot-circle-o</icon>
@@ -25519,7 +25519,7 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
     <desc></desc>
     <series>epplus</series>
     <img>
-      <url>excel-misc.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/excel-misc.jpg</url>
       <desc>Photo by Lukas Blazek</desc>
       <origin>https://unsplash.com/photos/mcSDtbWXUZU</origin>
     </img>
@@ -25834,7 +25834,7 @@ Filtered-out rows are always excluded.</p>
     <desc></desc>
     <series>epplus</series>
     <img>
-      <url>excel.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/excel.jpg</url>
       <desc>Photo by Mika Baumeister</desc>
       <origin>https://unsplash.com/photos/Wpnoqo2plFA</origin>
     </img>
@@ -26183,7 +26183,7 @@ cfRule1.Style.Font.Bold = true;
     <tags>autohotkey,powershell,windows</tags>
     <desc></desc>
     <img>
-      <url>explorer.gif</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/explorer.gif</url>
     </img>
     <toc>
       <icon>windows</icon>
@@ -26543,12 +26543,12 @@ Return
     <tags>powershell,git</tags>
     <desc></desc>
     <bigimg>
-      <url>colorblind-big.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/colorblind-big.png</url>
       <origin>Midjourney</origin>
       <prompt>colorblind</prompt>
     </bigimg>
     <img>
-      <url>colorblind.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/colorblind.png</url>
     </img>
     <toc>
       <icon>icon-git</icon>
@@ -26694,7 +26694,7 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
     <tags>cheat-sheet</tags>
     <desc></desc>
     <img>
-      <url>datetime-formatting.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/datetime-formatting.png</url>
     </img>
     <toc>
       <icon>dot-circle-o</icon>
@@ -27235,7 +27235,7 @@ Console.WriteLine("{0:ddddd}", span); // 00031
     <tags>cheat-sheet</tags>
     <desc></desc>
     <img>
-      <url>csharp-vs-vbnet.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/csharp-vs-vbnet.png</url>
     </img>
     <toc>
       <icon>dot-circle-o</icon>
@@ -28188,7 +28188,7 @@ still be a team decision.</p>]]></block2>
     <tags>powershell,windows</tags>
     <desc></desc>
     <img>
-      <url>environment-variables.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/environment-variables.jpg</url>
     </img>
     <toc>
       <icon>windows</icon>
@@ -28396,7 +28396,7 @@ $env:TEMP
     <tags>powershell,windows</tags>
     <desc>Where to find and how to reload the different PowerShell profiles.</desc>
     <img>
-      <url>powershell-profiles.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/powershell-profiles.png</url>
     </img>
     <toc>
       <icon>icon-shell</icon>
@@ -28458,7 +28458,7 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
     <tags>powershell</tags>
     <desc></desc>
     <img>
-      <url>powershell-migrations-profile.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/powershell-migrations-profile.jpg</url>
     </img>
     <toc>
       <icon>dot-circle-o</icon>
@@ -28628,7 +28628,7 @@ Custom shortcut: View.PackageManagerConsole</p>]]></block2>
     <tags></tags>
     <desc>Praise for Dropbox and junction.exe tutorial.</desc>
     <img>
-      <url>dropbox-junction.png</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/dropbox-junction.png</url>
     </img>
     <toc>
       <icon>dropbox</icon>
@@ -28683,7 +28683,7 @@ If you want to get rid of everything, merely deleting the original directory wil
     <tags></tags>
     <desc>Like toggling a checkbox these days.</desc>
     <img>
-      <url>notepad-php-vars.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/notepad-php-vars.jpg</url>
       <desc>Photo by Sharon McCutcheon</desc>
       <origin>https://unsplash.com/photos/8lnbXtxFGZw</origin>
     </img>
@@ -28789,7 +28789,7 @@ GetCurrentlySelectedText()
     <tags></tags>
     <desc>Nothing to see here.</desc>
     <img>
-      <url>notepad-bookmarks.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/notepad-bookmarks.jpg</url>
       <desc>Photo by Ben White</desc>
       <origin>https://unsplash.com/photos/W8Qqn1PmQH0</origin>
     </img>
@@ -28832,7 +28832,7 @@ Suddenly you can write a regular expression to capture certain lines of text and
     <desc>The second blog post of the original blog. &quot;THINK! About Your Work&quot;</desc>
     <series>pragmatic-tips</series>
     <img>
-      <url>pragmatic-programmer-think.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/pragmatic-programmer-think.jpg</url>
       <desc>The old IBM corporate motto &apos;THINK!&apos;</desc>
     </img>
     <toc>
@@ -28942,7 +28942,7 @@ required, the unneeded complexity can always be taken back out. No regrets. Plus
     <desc>The very first blog post of the original blog. Before my 5 year break :)</desc>
     <series>pragmatic-tips</series>
     <img>
-      <url>pragmatic-programmer.jpg</url>
+      <url>https://itenium.be/blog-posts-new/assets/blog-images/pragmatic-programmer.jpg</url>
     </img>
     <toc>
       <icon>wordpress</icon>
