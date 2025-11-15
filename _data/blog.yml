@@ -1,0 +1,113 @@
+# ICONS LOADED
+# - Do not prefix with fa to use font-awewome: https://fontawesome.com/icons
+# - Any from: http://fizzed.com/oss/font-mfizz
+# - Site has also loaded: flat-icon
+
+categories:
+  javascript: icon-javascript
+  dotnet: icon-csharp
+  productivity: fa fa-superpowers
+  dev-setup: fa fa-cogs
+  design: fa fa-object-group
+  trends: fa fa-binoculars
+  java: icon-java
+  security: fa fa-lock
+  docker: icon-docker
+  databases: fa fa-database
+  ruby: icon-ruby
+
+# fa fa-battery-full / fa fa-battery-three-quarters
+# fa fa-bolt / fa fa-cogs / fa fa-line-chart
+
+packages:
+  - package: jest
+    git: facebook/jest
+  - package: jasmine
+    git: jasmine/jasmine
+  - package: robocode
+    git: robo-code/robocode
+  - package: husky
+    git: typicode/husky
+  - package: vscode
+    git: microsoft/vscode
+  - package: moment
+    git: moment/moment
+  - package: angular
+    git: angular/angular
+  - package: ava
+    git: avajs/ava
+  - package: proxyquire
+    git: thlorenz/proxyquire
+  - package: vue
+    git: vuejs/vue
+  - package: EPPlus
+    git: JanKallman/EPPlus
+  - package: NSubstitute
+    git: nsubstitute/NSubstitute
+  - package: Moq
+    git: moq/moq4
+  - package: vaadin
+    git: vaadin/framework
+  - package: maui
+    git: dotnet/maui
+  - package: xamarin
+    git: xamarin/Xamarin.Forms
+  - package: recharts
+    git: recharts/recharts
+  - package: visx
+    git: airbnb/visx
+  - package: nivo
+    git: plouc/nivo
+  - package: victory
+    git: FormidableLabs/victory
+  - package: react-vis
+    git: uber/react-vis
+  - package: react-chartjs-2
+    git: reactchartjs/react-chartjs-2
+  - package: react
+    git: facebook/react
+  - package: EntityFramework
+    git: dotnet/efcore
+  - package: "@reduxjs/toolkit"
+    git: reduxjs/redux-toolkit
+  - package: immer
+    git: "immerjs/immer"
+  - package: redux
+    git: reduxjs/redux
+  - package: redux-thunk
+    git: reduxjs/redux-thunk
+  - package: react-redux
+    git: reduxjs/react-redux
+  - package: reselect
+    git: reduxjs/reselect
+  - package: ClosedXML
+    git: ClosedXML/ClosedXML
+  - package: Jekyll
+    git: jekyll/jekyll
+
+tags:
+  powershell: icon-shell
+  net: icon-csharp
+  javascript: icon-javascript
+  autohotkey: fa fa-key
+  git: icon-git
+  windows: fa fa-windows
+  excel: fa fa-file-excel-o
+  testing: fa fa-diamond
+  tutorial: fa fa-cogs
+  "cheat-sheet": fa fa-bookmark
+  angular: icon-angular
+  sql: icon-mssql
+  "war-story": fa fa-lightbulb-o
+  product: fa fa-money
+  debugging: fa fa-bug
+  meta: fa fa-tag
+  regex: icon-script
+  tech-talk: fa fa-certificate
+  pragmatic-tips: fa fa-trophy
+  fun: fa fa-gamepad
+  react: icon-reactjs
+  hacking: fa fa-unlock-alt
+  book-review: fa fa-book
+  synology: fa fa-server
+  mongo: icon-mongodb
