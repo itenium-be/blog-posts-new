@@ -20,6 +20,9 @@ kramdown:
 # bundle show minima
 theme: minima
 
+jekyll-feed:
+  enabled: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
