@@ -27,7 +27,7 @@ layout: null
     {%- if post.bigimg %}
     <bigimg>
       {%- if post.bigimg.url %}
-      <url>{{ post.bigimg.url | xml_escape }}</url>
+      <url>{{ 'https://itenium.be/blog-posts-new/assets/blog-images/' | append: post.bigimg.url | xml_escape }}</url>
       {%- endif %}
       {%- if post.bigimg.desc %}
       <desc>{{ post.bigimg.desc | xml_escape }}</desc>
@@ -43,7 +43,7 @@ layout: null
     {%- if post.img %}
     <img>
       {%- if post.img.url %}
-      <url>{{ post.img.url | xml_escape }}</url>
+      <url>{{ 'https://itenium.be/blog-posts-new/assets/blog-images/' | append: post.img.url | xml_escape }}</url>
       {%- endif %}
       {%- if post.img.desc %}
       <desc>{{ post.img.desc | xml_escape }}</desc>
