@@ -137,7 +137,18 @@ without me doing any work, and all that in about 10-15 prompts.</p>
 I came back to “<em>API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation.</em>”
 While <code>/rewind</code> no longer exists, a simple “<em>You failed. Can you try to continue where you left off?</em>” was all it
 took to get it back on track!</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/github-stars-links">Chrome Extension source code</a></li>
+        <li>
+                <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://shields.io">Shields.io: The badges provider!</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Git Large File Storage</title>
@@ -235,7 +246,13 @@ git config --get-regexp 'filter\.lfs'
 remote: warning: File x.mp4 is 57.88 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://git-lfs.com/">An open source Git extension for versioning large files</a></li>
+        <li><a href="https://github.com/git-lfs/git-lfs/security/advisories/GHSA-q6r2-x2cc-vrp7">They just fixed an interesting security issue (CVE-2024-53263, Score: 8.5)</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Performance optimization for &apos;bundle exec jekyll serve&apos;</title>
@@ -948,7 +965,20 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>This Part: Excel formulas cheat sheet</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188">Official documentation: list of all Excel functions</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and ClosedXML: Miscellaneous</title>
@@ -1266,7 +1296,16 @@ ws.Cell(3, 1).CreateRichText()
   </li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>This Part: Create Excels with C# and ClosedXML: Miscellaneous</li>
+            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -1549,7 +1588,20 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
 </code></pre>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>This Part: Create Excels with C# and ClosedXML: Formulas & DataValidation</li>
+            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188">Alphabetical list of Excel functions</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -1983,7 +2035,21 @@ sheet1.CopyTo(workbook, "Copy");
 }
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Create Excels with C# and ClosedXML: A tutorial</li>
+            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/ClosedXML/ClosedXML.Report">Report generation: export any data from .NET classes to Excel using an xlsx-template.</a></li>
+        <li><a href="https://github.com/Itenium-Forge/Itenium.ExcelCreator">Our own WebApi wrapper for ClosedXML</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -2073,7 +2139,13 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
 
 <p>Overall, DDD Europe 2025 was a great mix of deep dives, practical tips, and renewed perspectives. Already looking forward to next year!</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://dddeurope.com/">Domain Driven Design Europe</a></li>
+        <li><a href="https://www.youtube.com/@ddd_eu">Official Youtube channel</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Serving a Dockerized web app over https on Synology</title>
@@ -2159,7 +2231,12 @@ it on your Synology in a Docker container.</p>
 <p><code>https://your-syno.synology.me:some_port</code> should now work!</p>
 
 <p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://mariushosting.com/synology-https-ssl-to-your-docker-containers-without-port-at-the-end/">Marius Hosting: https and app.your-syno.synology.me (with screenshots!)</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Training with ML.NET and LightGBM on Synology with Docker</title>
@@ -2279,7 +2356,16 @@ ldd /usr/local/lib/lib_lightgbm.so
 </code></pre>
 
 <p>And there we have it, a WebApi that creates the models!</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/TTC-AAlst/PongRank">Predicting next year player rankings</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/dotnet/machinelearning/issues/7454">Issue: LightGbm in Linux Container</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Site Inspector</title>
@@ -2394,7 +2480,12 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
 ✅ 2. A malicious party registers this dependency and puts malware in it.<br />
 ✅ 3. An unsuspecting developer runs the command and 💥</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/siteinspector/siteinspector">A tool for catching spelling errors, grammatical errors, broken links, and other errors on websites.</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Bootcamp: Home Automation</title>
@@ -2523,7 +2614,16 @@ raspberry pies with the “Home Assistant OS” on them.</p>
 our little IoT adventure ;)<br />
 And now to find something cool for next year! 😀</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Bootcamp-Home-Automation">Pptx, materials, images, documentation, instructions, ...</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://itenium.be/Bootcamp-Home-Automation/">Deployed instructions website</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Newtonsoft.Json vs System.Text.Json</title>
@@ -3005,7 +3105,17 @@ public class PersonWithAttributes
   <li>Newtonsoft: attributes on methods (OnSerializing, OnSerialized, OnDeserializing, OnDeserialized)</li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/DotNet-Json">The code as xUnit tests</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/migrate-from-newtonsoft">Pretty in-depth migration article with a nice comparison table</a></li>
+        <li><a href="https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization">The official STJ test suite</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -3187,7 +3297,12 @@ if (unsecured.Any())
   Assert.Fail($"Missing RequireAuthorization/AllowAnonymous for endpoints:\n{lst}");
 }
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/DotNet-Controller-Security-Check">Source code, variations and tests for the tests</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createSelector</title>
@@ -3498,7 +3613,22 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 
 <p>As of Reselect v5, what you’d need this library for can now achieved with Reselect <code>createSelectorOptions</code> natively.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>This Part: ReduxJS/Toolkit: createSelector</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">Check todoSelectors.ts to see the examples in action</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://itenium.be/blog/javascript/react-component-profiling/">React Component Profiling also goes into some detail with Reselect for performance optimalizations</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -3581,7 +3711,18 @@ import { createSelector } from "@reduxjs/toolkit";
 const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>This Part: ReduxJS/Toolkit: TypeScript</li>
+            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createAsyncThunk</title>
@@ -3809,7 +3950,18 @@ const creatorSlice = createAppSlice({
 });
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>This Part: ReduxJS/Toolkit: createAsyncThunk</li>
+            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -4157,7 +4309,18 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
   </tbody>
 </table>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>This Part: ReduxJS/Toolkit: createSlice and configureStore</li>
+            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -4487,7 +4650,18 @@ const TodoAdd = () =&gt; {
 
 <p><code>use-immer</code> also exposes <code>useImmerReducer</code> to replace your <code>useReducer</code>s.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>This Part: ReduxJS/Toolkit: Immer</li>
+            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -4704,7 +4878,18 @@ sprinkled with a few Redux no-nos on top.</p>
 <p>Aside from the rant, that blog post would be something that explains basic Redux followed by what is
 basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: ReduxJS/Toolkit</li>
+            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -4864,7 +5049,18 @@ but, of course, that doesn’t work.</p>
 </ul>
 
 <p>Of course you could also just add this to the <code>docker-compose</code> 😀</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/synology-cloud-sync-vs-docker">Minimal Example Code</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://synocommunity.com/package/inotify-tools">SynoCommunity package: inotify-tools</a></li>
+        <li><a href="https://www.synology.com/en-global/dsm/feature/cloud_sync">Synology CloudSync</a></li>
+        <li><a href="https://www.reddit.com/r/synology/comments/pejrp5/files_created_by_docker_container_not_seen_by/">Files created by docker container not seen by Synology Drive</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>The new Angular template syntax</title>
@@ -5004,7 +5200,12 @@ same could be achieved with an <code>ngIf</code>:</p>
 Nr = {{ randomNr }}
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Angular-Days">See src/app/new-template for side-by-side comparison</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -5164,7 +5365,12 @@ the <code>csproj</code> one… not so much.</p>
 
 <p>Somehow I ended up writing about “high cohesion”, “Working Effectively with Legacy Code”
 and “encapsulation” instead!</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">Example UnitTests in NUnit, xUnit and MSTest</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Can you reset my mac</title>
@@ -5657,7 +5863,12 @@ It also allows you to implement this in different ways.</p>
 
 <p>Of course, if you trust no one, you could also implement a combination of triggers and EF to
 really track everything 😀</p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/DbAuditWithEF">SQL Server & EntityFramework Core: how to audit</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -5912,7 +6123,21 @@ An exercise on joining a table with itself.</p>
 <p><strong>Worldcup-6</strong>: For the player that scored the most goals, list the worldcup.YYYY, the round name, the match date, the goal minute, scored Y/N and the total amount of goals scored so far. To keep things “simple”, evaluate only events.id 20, 21 and 22 and team.id 1.</p>
 
 <p>Anyone willing to give them a go? 😀</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/sql-training">The SQL Training game (datasets, docker containers, game & leaderboard)</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://mystery.knightlab.com/">SQL Murder Mystery: Can you find out whodunnit?</a></li>
+        <li><a href="https://github.com/openfootball/worldcup" class="github">
+    <img src="https://img.shields.io/github/stars/openfootball/worldcup.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/openfootball/worldcup">openfootball/worldcup</a>:
+    The free dataset where we got the worldcup data from</li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Git Hooks with Husky v9</title>
@@ -6087,7 +6312,16 @@ exit $hasBuildErrors
 </a>
 <a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>:
     A framework for managing and maintaining multi-language pre-commit hooks</p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Frontend-Track">Template code repository</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://git-scm.com/docs/githooks">Official githooks documentation</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -6274,7 +6508,12 @@ it’s just adding <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">acci
 without any of the benefits.</p>
 
 <p>Keep It Simple.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/KISS-Decorators">The code from this blog post as xUnit tests</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Frontend Track Setup</title>
@@ -6920,7 +7159,12 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
   <li><a href="https://github.com/itenium-be/angular-reactive-forms">Angular-ReactiveForms</a></li>
   <li><a href="https://github.com/itenium-be/Angular-Days">Angular-Days</a></li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Frontend-Track">Template code repository</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Docker + Mongo: a guide</title>
@@ -7308,7 +7552,25 @@ RUN chmod +x /docker-entrypoint-initdb.d/import.sh
 
 CMD ["mongod"]
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Docker-Mongo">The docker + mongo examples</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://hub.docker.com/_/mongo">Docker Hub: Mongo (Community Maintained)</a></li>
+        <li><a href="https://hub.docker.com/r/mongodb/mongodb-community-server">Docker Hub: Mongo (MongoDb Company)</a></li>
+        <li><a href="https://github.com/docker-library/mongo" class="github">
+    <img src="https://img.shields.io/github/stars/docker-library/mongo.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/docker-library/mongo">docker-library/mongo</a>:
+    Github repo for Docker Image (Community)</li>
+        <li><a href="https://tutorialsight.com/how-to-install-mongodb-on-your-synology-nas/">Step by step Docker+Mongo Tutorial (with screenshots;)</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            14 September 2024: Added mongo-secure</li></ul>]]></block3>
   </post>
   <post>
     <title>Git Pull Request Hygiene</title>
@@ -7958,7 +8220,13 @@ services:
       - 3000:3000
     restart: unless-stopped
 </code></pre>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://global.download.synology.com/download/Document/Software/DeveloperGuide/Firmware/DSM/All/enu/Synology_DiskStation_Administration_CLI_Guide.pdf">Synology DiskStation Administration CLI Guide</a></li>
+        <li><a href="https://gist.github.com/walkerjeffd/374750c366605cd5123d">Configure Synology NAS as Git Server</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -8082,7 +8350,12 @@ with terrain and foliage assets.</p>
 <hr />
 
 <p>Also special thanks to @Tom Pauwaert for teaching us the ins and outs of the Unreal Engine!</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.artstation.com/marketplace/p/8O1qz/large-game-environment-creation-in-depth-tutorial-course-ue5">Emiel Sleegers course: Large Game Environment Creation - In-Depth Tutorial Course [UE5]</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Security Bootcamp Prep</title>
@@ -8316,7 +8589,12 @@ as passphrase and score Vault multipliers.</p>
 
 <p>Check the blog post in The Hacker’s Toolkit Blog in-game for more info!</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
+            <li>This Part: Security Bootcamp Prep</li></ul>]]></block3>
   </post>
   <post>
     <title>.NET Testing Frameworks</title>
@@ -8929,7 +9207,22 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 
 <p><strong>TUnit</strong>: For more complicated AND/OR logic, check
 <a href="https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups">AssertionGroup.For</a></p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">Example UnitTests in NUnit, xUnit and MSTest</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/shouldly/shouldly" class="github">
+    <img src="https://img.shields.io/github/stars/shouldly/shouldly.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/shouldly/shouldly">shouldly/shouldly</a>:
+    Should testing for .NET—the way assertions should be!</li>
+</ul><h1>Updates</h1>
+<ul><li>
+            12 March 2025: Updated to latest versions. Added TUnit, SoftAssertions, Throws derived, ...</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -9100,7 +9393,13 @@ It’s also quite easy to add an empty placeholder.</p>
 
 <p><code>@defer (on viewport; prefetch on idle) {...}</code></p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://blog.angular.io/introducing-angular-v17-4d7033312e4b">Blog post: Introducing Angular v17</a></li>
+        <li><a href="https://github.com/angular/angular/blob/main/CHANGELOG.md#1700-2023-11-08">Official Release Notes</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -9291,7 +9590,12 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
 
 <p>The European Women in Tech event 2023 in Amsterdam provided valuable insights into the ever-evolving world of technology, digital transformation, responsible AI, and the importance of Explainable AI. Embracing change, fostering diversity and inclusion, adopting data-driven decision-making, and ensuring the transparency of AI systems are key elements for success in this era of gardening the digital transformation. As technology continues to shape our world, staying informed, being adaptive and responsible is crucial for individuals and organizations alike.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.europeanwomenintech.com/">European Women in Technology</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>React Component Profiling</title>
@@ -9886,7 +10190,21 @@ function callback(id, phase, actualDuration) {
   <li><a href="https://react.dev/reference/react/useDebugValue"><strong>useDebugValue</strong></a>: to be used in custom hooks (more for library developers IMO)</li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/React-ComponentProfiling">Presentation source materials (pptx, code snippets, ...)</a></li>
+        <li><a href="https://github.com/itenium-be/confac">confac Github source</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/amsterdamharu/selectors" class="github">
+    <img src="https://img.shields.io/github/stars/amsterdamharu/selectors.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/amsterdamharu/selectors">amsterdamharu/selectors</a>:
+    Examples of reselect selectors</li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -10017,7 +10335,14 @@ of Michiel.</p>
 <h2 id="whats-next">What’s Next</h2>
 
 <p>To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/BuildYourOwnMacroPad">Hands-On Session: build your own MacroPad</a></li>
+        <li>
+                <a href="https://itenium.be/BuildYourOwnMacroPad/">Step by step instructions on how to do this yourself!</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>The Security Bootcamp</title>
@@ -10114,7 +10439,20 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <a href="mailto:">Contact us today</a>!</p>
 
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
+            <li>This Part: The Security Bootcamp</li>
+            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="https://itenium.be/Competence-Center/assets/SecurityBootcamp-flyer.png">Download the Security Bootcamp flyer</a></li>
+        <li>
+                <a href="https://itenium.be/Competence-Center/bootcamps/security">The official itenium Security Bootcamp website</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Hacking Tool: sqlmap</title>
@@ -10222,7 +10560,12 @@ docker run --rm -it -v ./sqlmap-data:/root/.sqlmap/ paoloo/sqlmap --url "url" --
 <p>During itenium’s Security Bootcamp <code>sqlmap</code> can be used to retrieve
 a flag hidden in a database by attacking a vulnerable web page.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
+            <li>This Part: Hacking Tool: sqlmap</li>
+            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Hacking Tool: hydra</title>
@@ -10315,7 +10658,17 @@ A famous one is <code>rockyou.txt</code> (14M).</p>
 it’s time to whip out Hydra! Check the Security Audit Blog during itenium’s
 Security Bootcamp for such clue!</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
+            <li>This Part: Hacking Tool: hydra</li>
+            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://hub.docker.com/r/vanhauser/hydra">Hydra docker image</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Hacking Tool: nmap</title>
@@ -10448,7 +10801,12 @@ for the port but there is no telling if that is actually the case.</p>
 <p>At the start of the itenium Security Bootcamp at least one player per team should do
 an nmap scan to discover services that are not (yet) available directly from the Portal.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Hacking Tool: nmap</li>
+            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -10808,7 +11166,15 @@ but then it failed at what is typically the hardest part anyway: integration.</p
 I’m sure ChatGPT can give me something that already mostly works.</p>
 
 <p>Oh man, I feel old, bitter and out of touch now.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2023/07/03/install-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Installation</a></li>
+            <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
+            <li>This Part: The itenium Slack Meme Bot® : with AI?</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/slack-meme-poster-ai">Some of the code that ChatGPT created</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Implementation</title>
@@ -10876,7 +11242,10 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
   <li><code>messageToPostWithMeme</code>: A simple string sent along with the meme</li>
   <li>Configure the entire Slack message using the Slack <a href="https://app.slack.com/block-kit-builder/">Block Kit Builder</a></li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2023/07/03/install-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Installation</a></li>
+            <li>This Part: The itenium Slack Meme Bot® : Implementation</li>
+            <li>Part 3: <a href="/javascript/2023/07/05/ai-the-slack-meme-bot.html">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
@@ -10980,7 +11349,10 @@ docker-compose up --build -d
 </ul>
 
 <p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: The itenium Slack Meme Bot® : Installation</li>
+            <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
+            <li>Part 3: <a href="/javascript/2023/07/05/ai-the-slack-meme-bot.html">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Quality Assurance @ itenium</title>
@@ -11575,7 +11947,20 @@ A(?!B)   – Literal A not followed by B
 <p>Lookarounds do not match anything in themselves which make them very handy
 when you want to replace some text but only when it is (not) preceded/succeeded by something else.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
+            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
+            <li>This Part: Regular Expressions: Tutorial</li></ul>
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Regex-Tutorial" class="github">
+    <img src="https://img.shields.io/github/stars/itenium-be/Regex-Tutorial.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/itenium-be/Regex-Tutorial">itenium-be/Regex-Tutorial</a>:
+    Powerpoint pptx and hands-on exercises</li>
+</ul>]]></block3>
   </post>
   <post>
     <title>What chart library to use in React?</title>
@@ -12121,7 +12506,12 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 
 <p><img src="/assets/blog-images/react-charting-demo-app.png" alt="Demo App Overview" title="Demo App Overview" /></p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/React-Charting">Project with all the examples for the React chart libraries</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -12289,7 +12679,12 @@ So if you want to ensure that your Java projects are completed on time and to th
 <h2 id="conclusion">Conclusion</h2>
 
 <p>.NET MAUI is the result of pulling Xamarin into the .NET BCL. It contains many features from Xamarin Forms and has many improvements to show the potential of this new UI framework.</p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-dotnet-7/">.Net Maui and .NET 7 by David Ortinau</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -12488,7 +12883,18 @@ Or heaven forbids, one someone else wrote! 😱</p>
 <p>Did I already mention that you’ll want to have tests of the code using regexes, especially if they tend
 to change often? Don’t be shy to write them, even if they are the only ones in your repository.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
+            <li>This Part: Regular Expressions: Introduction</li>
+            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="http://www.rexegg.com">RexEgg: Not only a cheeky name, but also a good resource</a></li>
+        <li><a href="http://www.regular-expressions.info">A lot of interesting info, but also a lot of text</a></li>
+        <li><a href="https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/">Regex Cheat Sheet</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine to Jest</title>
@@ -12976,7 +13382,25 @@ out of the box with <code>create-react-app</code>.</p>
 
 <p>Also note that today is truly the perfect day to publish a “Jest” article!</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>This Part: JavaScript Testing: Jasmine to Jest</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">Example UnitTests for Jasmine, TypeScript, Jest and Ava</a></li>
+        <li><a href="https://github.com/itenium-be/Frontend-UnitTesting">The technical session materials (pptx etc)</a></li>
+        <li><a href="https://github.com/itenium-be/confac">Jest exercises with increasing complexity in a real-world project (TS, React, Express, Mongo). Use git checkout jest-start</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://jestjs.io/docs/getting-started">Official Jest Documentation</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -13138,7 +13562,15 @@ which only works on Windows. The non-free version has removed this dependency.</
 <a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>:
     Open XML SDK by Microsoft.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>This Part: EPPlus: No longer free to use in a commercial setting</li></ul><h1>Updates</h1>
+<ul><li>
+            25 February 2025: Added EPPlus forks</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -13278,7 +13710,12 @@ Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Cou
 </figure>
 
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.europeanwomenintech.com/">European Women in Technology</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>First Hack</title>
@@ -13355,7 +13792,12 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 <p>Have a backup plan in case risky plan A goes awry.</p>
 
 <p>I’m a cheat and should’ve been banned.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/Laoujin/first-hack">First security hole exploited in a game :)</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>CQRS and CRUD</title>
@@ -13725,7 +14167,17 @@ workaround for properties being “all over the place”.</p>
     </ul>
   </li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://steve-yegge.blogspot.com/2008/02/portrait-of-n00b.html">Portrait of a n00b (by Steve Yegge)</a></li>
+        <li><a href="http://www.informit.com/store/enterprise-integration-patterns-designing-building-9780321200686">Book: Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions</a></li>
+        <li><a href="https://chriskiehl.com/article/event-sourcing-is-hard">Don't Let the Internet Dupe You, Event Sourcing is Hard</a></li>
+        <li><a href="https://www.infoq.com/news/2016/04/event-sourcing-anti-pattern">A Whole System Based on Event Sourcing is an Anti-Pattern</a></li>
+        <li><a href="https://www.youtube.com/watch?v=LDW0QWie21s&feature=youtu.be&t=2391">Video: Greg Young — A Decade of DDD, CQRS, Event Sourcing - Process Managers</a></li>
+        <li><a href="https://www.youtube.com/watch?v=LDW0QWie21s&feature=youtu.be&t=1926">Video: Greg Young — A Decade of DDD, CQRS, Event Sourcing - Frameworks :(</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>VSCode: Editor Settings and Shortcuts</title>
@@ -14449,7 +14901,14 @@ Custom shortcuts:</p>
     "markdown.extension.toc.githubCompatibility": true,
 }
 </code></pre>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dev-setup/2019/07/17/pragmatic-tip-22-use-a-single-editor-well.html">Pragmatic Tip #22 : Use A Single Editor Well</a></li>
+            <li>This Part: VSCode: Editor Settings and Shortcuts</li></ul>
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -15115,7 +15574,24 @@ or a dying community, it will be for an editor that will (hopefully!) outlive th
 you know, something like Vim.</p>
 
 <p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Pragmatic Tip #22 : Use A Single Editor Well</li>
+            <li>Part 2: <a href="/dev-setup/2019/07/17/vscode-editor.html">VSCode: Editor Settings and Shortcuts</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba">VSCode Settings Sync Gist</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/viatsko/awesome-vscode" class="github">
+    <img src="https://img.shields.io/github/stars/viatsko/awesome-vscode.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/viatsko/awesome-vscode">viatsko/awesome-vscode</a>:
+    A curated list of delightful VS Code packages and resources.</li>
+        <li><a href="https://marketplace.visualstudio.com/vscode">VSCode Marketplace</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -15398,7 +15874,13 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 <h1 id="conclusions">Conclusions</h1>
 
 <p>Not creating a value object for coherent pairs of value types is a missed opportunity? 😂</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.martinfowler.com/books/eaa.html">Patterns of Enterprise Application Architecture - Martin Fowler</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/ef/core/modeling/owned-entities">EF Core Owned Entities</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Robocode Tutorial</title>
@@ -15557,7 +16039,19 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
   <li><a href="https://www.youtube.com/watch?v=wJzJ57ZC1sc">Introduction to Robocode // Philip Johnson</a></li>
   <li><a href="https://www.youtube.com/watch?v=dHrupYhq7sI">Walk-through of testing code for robocode // Philip Johnson</a></li>
 </ul>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/design/2019/06/18/robocode-installation.html">Robocode Installation & Debugging</a></li>
+            <li>This Part: Robocode Tutorial</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/itenium-be.github.io">Example Eclipse and Visual Studio Robocode projects</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://robocode.sourceforge.io/">Official Robocode site</a></li>
+        <li><a href="http://robowiki.net/wiki/Robocode">Robocode Wiki</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -15723,7 +16217,19 @@ Find the CLI arguments in <code>robocode.bat</code>.</p>
 
 <p>See <code>out.println()</code> (or <code>Console.WriteLine()</code>) in your robot log by clicking on your robot name in the right top battle
 view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Robocode Installation & Debugging</li>
+            <li>Part 2: <a href="/design/2019/06/18/robocode-tutorial.html">Robocode Tutorial</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Robocode">Example Eclipse and Visual Studio Robocode projects</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://robocode.sourceforge.io/">Official Robocode site</a></li>
+        <li><a href="http://robowiki.net/wiki/Robocode">Robocode Wiki</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -16028,7 +16534,21 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
   <li><a href="https://www.autohotkey.com/docs/scripts/IntelliSense.htm">Autohotkey IntelliSense</a>: If your editor has no intellisense, switch editors instead :)</li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/ahkscript/awesome-AutoHotkey" class="github">
+    <img src="https://img.shields.io/github/stars/ahkscript/awesome-AutoHotkey.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/ahkscript/awesome-AutoHotkey">ahkscript/awesome-AutoHotkey</a>:
+    A curated list of awesome</li>
+        <li><a href="https://github.com/itenium-be/Mi-Ke" class="github">
+    <img src="https://img.shields.io/github/stars/itenium-be/Mi-Ke.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/itenium-be/Mi-Ke">itenium-be/Mi-Ke</a>:
+    Mi-Ke contains most stuff in this blog post, and then some.</li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Google I/O &apos;19: WebAssembly for Web Developers</title>
@@ -16184,7 +16704,26 @@ npx http-server
 
 <p>For this “program”, a 40kb <code>HelloWorld.wasm</code> file
 and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/TechTalk-WebAssembly">HelloWorld Emscripten example</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/AssemblyScript/assemblyscript" class="github">
+    <img src="https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/AssemblyScript/assemblyscript">AssemblyScript/assemblyscript</a>:
+    Definitely not a TypeScript to WebAssembly compiler</li>
+        <li><a href="https://github.com/WebAssembly/proposals" class="github">
+    <img src="https://img.shields.io/github/stars/WebAssembly/proposals.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/WebAssembly/proposals">WebAssembly/proposals</a>:
+    Tracking WebAssembly proposals</li>
+        <li><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIATmAmz7HcCzongGvQEtx8i">More sessions from Google I/O '19</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>AVA Tutorial</title>
@@ -16527,7 +17066,16 @@ test.afterEach.cb('This stuff also works for hooks', t =&gt; {
 console.log('Currently running', test.meta.file);
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/avajs/awesome-ava" class="github">
+    <img src="https://img.shields.io/github/stars/avajs/awesome-ava.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/avajs/awesome-ava">avajs/awesome-ava</a>:
+    Awesome AVA</li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -16648,7 +17196,16 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
   <li><code>$+</code> : last captured group</li>
   <li><code>$_</code> : entire input string</li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
+            <li>This Part: .NET Regex Tutorial</li>
+            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
+            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="http://blog.stevenlevithan.com/archives/balancing-groups">Steven Levithan: Fun with .NET Regex Balancing Groups</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Vue.js Tutorial</title>
@@ -17207,7 +17764,17 @@ at setting up a full blown starter project.</p>
 <p>So, I learned me some Vue.js for a technical session
 and am already set on using it for a few small projects.</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Vue.js-Tutorial">Project used for itenium Vue.js technical session</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en">Vue.js devtools Chrome extension</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur Visual Studio Code extension</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -17860,7 +18427,18 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
   <li><a href="https://momentjs.com/docs/#/i18n/pseudo-locale/"><code>moment.locale('x-pseudo')</code></a></li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://devhints.io/moment">Moment Cheat Sheet</a></li>
+        <li><a href="http://momentjs.com/docs/">Official docs</a></li>
+        <li><a href="http://momentjs.com/guides/#/externalresources/">Official Docs: External Resources (videos, blogs, ...)</a></li>
+        <li><a href="http://momentjs.com/docs/#/parsing/special-formats/">Parsing Special Formats which match Html input types</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1lPzBlmJVAkN6HUw28wBJmY1SdbSInRIBY0JCmBUDUmk/edit?amp;hl=en_US#gid=0">Comparison of Date formatting tokens (moment, php, ...)</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            8 March 2023: Added notice about MomentJS being in maintenance mode</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -17980,7 +18558,12 @@ module.exports = {
   }
 };
 </code></pre>]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://git-scm.com/docs/githooks">Official githooks documentation</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -18148,7 +18731,15 @@ Set-Alias pr Create-PullRequest
   <li><a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">git assume unchanged</a></li>
   <li><a href="https://itenium.be/blog/productivity/git-hooks-with-husky/">git hooks with Husky</a></li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://stackoverflow.com/a/21079437/540352">Ignore certain files in git output</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            5 June 2024: git filter-repo and Create-PullRequest for Github</li><li>
+            30 December 2019: PS scripts to remap remote urls & create a PR</li></ul>]]></block3>
   </post>
   <post>
     <title>Chrome Extension: Starify Github project links</title>
@@ -18223,7 +18814,20 @@ const activateDirectlyOn = [
 // Shoutout to Shields.io for kindly providing the badges!
 const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?style=social&amp;label=Star';
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/github-stars-links">Chrome Extension source code</a></li>
+        <li>
+                <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://shields.io">Shields.io: The Stars badges provider!</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            17 March 2024: Fix for Google layout. Updated to manifest.json v3.</li></ul>]]></block3>
   </post>
   <post>
     <title>JavaScript RegExp Tutorial</title>
@@ -18531,7 +19135,33 @@ regex.test(input); // Returns true. lastIndex is now 1
 regex.test(input); // Returns true. lastIndex is now 2
 regex.test(input); // Returns false. lastIndex is reset to 0
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: JavaScript RegExp Tutorial</li>
+            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
+            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
+            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/ModernJS">Jest UnitTests for all ECMAScript features since 2019</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/">Regexes Got Good: The History And Future Of Regular Expressions In JavaScript</a></li>
+        <li><a href="https://github.com/aloisdg/awesome-regex" class="github">
+    <img src="https://img.shields.io/github/stars/aloisdg/awesome-regex.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/aloisdg/awesome-regex">aloisdg/awesome-regex</a>:
+    A curated collection of awesome Regex libraries, tools, frameworks and software</li>
+        <li><a href="https://www.rexegg.com/">RexEgg.com: The world's most tyrannosaurical regex tutorial</a></li>
+        <li><a href="http://2ality.com/2015/07/regexp-es6.html">New regular expression features in ECMAScript 6 (7/2015)</a></li>
+        <li><a href="https://regexr.com/">regexr.com: Online, open source tool to learn, build, & test regexes</a></li>
+        <li><a href="https://regex101.com/">regex101.com: Another online regex test tool</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            30 January 2025: Added ES2024 //v flag (UnicodeSets)</li><li>
+            6 October 2023: Added ES2020 & ES2021 RegExp enhancements</li><li>
+            22 May 2023: RegExp.prototype.matchAll was added in ES2020</li></ul>]]></block3>
   </post>
   <post>
     <title>Rubber Duck Debugging</title>
@@ -18657,7 +19287,17 @@ They originally called it the <a href="http://wiki.c2.com/?CardboardProgrammer">
 It would be perfect if you added a little voice chip that asked, “<em>Did you write the test?</em>”</p>
 </blockquote>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/atleastimtrying/rubber_duck" class="github">
+    <img src="https://img.shields.io/github/stars/atleastimtrying/rubber_duck.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/atleastimtrying/rubber_duck">atleastimtrying/rubber_duck</a>:
+    A tool for one person pairing.</li>
+        <li><a href="https://rubberduckdebugging.com">Rubber Duck Debugging.com</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Create a new blog post</title>
@@ -19202,7 +19842,15 @@ emoj [text]
 <pre><code>{% avatar fabpot %}
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://fontawesome.com/icons">Font Awesome (for toc.icon)</a></li>
+        <li><a href="http://fizzed.com/oss/font-mfizz">Font mfizz (for toc.icon)</a></li>
+        <li><a href="https://unsplash.com/">Unsplash: Free Images & Pictures</a></li>
+        <li><a href="https://pixelsink.com/35-free-stock-photography-websites/">35 free stock photography websites</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Array.prototype for .NET developers</title>
@@ -19558,7 +20206,34 @@ for (let itm of input) {
 for this amazing diagram, I love it!</p>
 
 <p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Array.prototype">Github source code as UnitTests</a></li>
+        <li><a href="https://github.com/itenium-be/ModernJS">Jest UnitTests for all ECMAScript features since 2019</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/msn0/mdn-polyfills" class="github">
+    <img src="https://img.shields.io/github/stars/msn0/mdn-polyfills.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/msn0/mdn-polyfills">msn0/mdn-polyfills</a>:
+    Include polyfills for your favourite functions that are not (yet) implemented by your browser(s).</li>
+        <li><a href="http://2ality.com/">2ality.com: Blogging on ES proposals</a></li>
+        <li><a href="https://stackoverflow.com/a/200614/540352">StackOverflow: Jon Skeet on why there is no forEach in Linq</a></li>
+        <li><a href="https://github.com/morelinq/MoreLINQ" class="github">
+    <img src="https://img.shields.io/github/stars/morelinq/MoreLINQ.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/morelinq/MoreLINQ">morelinq/MoreLINQ</a>:
+    Extensions to LINQ to Objects</li>
+        <li><a href="https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible">MooTools: Why Contains is called includes in JavaScript</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            1 June 2024: Added Object.groupBy</li><li>
+            6 October 2023: More updates for ECMAScript 2023</li><li>
+            4 September 2023: Added flat and flatMap</li><li>
+            8 March 2023: Added Distinct, flatMap</li></ul>]]></block3>
   </post>
   <post>
     <title>Debugging in Visual Studio</title>
@@ -19829,7 +20504,13 @@ Not open source:</p>
   <li>Yipiee, they added search to Autos, Locals and Watch windows! (Options &gt; Debugging &gt; Search)</li>
   <li>They also managed to cut 25px from the title bar and still make it look <a href="/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
 </ul>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour">Official Visual Studio Debugger Tutorial</a></li>
+        <li><a href="https://devblogs.microsoft.com/visualstudio/7-more-lesser-known-debugging-tactics-for-visual-studio">7 More Lesser-known Debugging Tactics for Visual Studio</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Angular Pipes</title>
@@ -20412,7 +21093,19 @@ export class MyApplicationModule {}
 <a href="https://github.com/fknop/angular-pipes/blob/master/src/object/defaults.pipe.ts">defaults</a>
 , …</p>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Angular-Series">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://angular.io/generated/live-examples/pipes/stackblitz.html">Live examples from the official docs</a></li>
+        <li><a href="https://angular.dev/guide/pipes#built-in-pipes">Official Angular Pipes docs</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            1 June 2024: Update to Angular v18: locale configuration, i18n pipes, updated official doc links etc</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -20490,7 +21183,17 @@ git update-index --no-skip-worktree fileName
     unhide = update-index --no-skip-worktree
     hidden = "!git ls-files -v | grep ^S | cut -c 3-"
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/">Or use our PowerShell module Git-NumberedAdd</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree">Stackoverflow: --assume-unchanged vs --skip-worktree</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Autohotkey DynaRun</title>
@@ -20627,7 +21330,13 @@ DynaRun(TempScript, pipename="")
 <pre><code class="language-autohotkey">MsgBox Will it work?
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">autohotkey-dyna-run-capslock-f5.ahk</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Autohotkey Use Case: Submitting a Form</title>
@@ -20767,7 +21476,13 @@ WinGetTitle, title, A
 Return
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="/assets/blog-images/autohotkey-login-form.html">Test Form Html Page</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Programming Mnemonics</title>
@@ -20903,7 +21618,14 @@ and I liked it too much to not add it here 😀</p>
 
 <p><img src="/assets/blog-images/mnemonics-there-their.png" alt="There vs Their" title="There vs Their" /></p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://xkcd.com/992/">XKCD Presents: Some New Science Mnemonics</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            2 February 2025: There vs Their</li></ul>]]></block3>
   </post>
   <post>
     <title>Angular Road Trip</title>
@@ -20984,7 +21706,16 @@ I have a solid idea now, but only because it’s the logical result of a road fu
 All in all it’s just a great framework for modern web applications and most of the time a joy to work with :)</li>
 </ul>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://angular.io/">Angular</a></li>
+        <li><a href="https://cli.angular.io/">Angular CLI</a></li>
+        <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+        <li><a href="https://semver.org/">SemVer</a></li>
+        <li><a href="https://www.youtube.com/watch?v=cRC9DlH45lA">Angular: The Documentary | An origin story</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -21062,7 +21793,14 @@ versions|v: Lists all LocalDb version-numbers installed
    providerName="System.Data.SqlClient" 
 /&gt;
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb">Official LocalDb documentation</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/sql/tools/sqllocaldb-utility">Official LocalDb CLI documentation</a></li>
+        <li><a href="https://dba.stackexchange.com/questions/152881/how-to-programmatically-find-out-where-localdb-is-installed">Where is LocalDb installed</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Git-NumberedAdd for PowerShell</title>
@@ -21243,7 +21981,33 @@ Git-NumberedSetLocation # Alias: gsl
 
 <p><br />
 Also, see below for similar implementations in Bash and Perl.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Git-NumberedAdd">Git-NumberedStatus, Add, Diff, etc ps1 source</a></li>
+        <li>
+                <a href="https://www.powershellgallery.com/packages/Git-NumberedAdd">PowerShell Gallery</a></li>
+        <li>
+                <a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">itenium article with git aliases for --assume-unchanged and --skip-worktree</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/scmbreeze/scm_breeze" class="github">
+    <img src="https://img.shields.io/github/stars/scmbreeze/scm_breeze.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/scmbreeze/scm_breeze">scmbreeze/scm_breeze</a>:
+    Similar implementation in Bash</li>
+        <li><a href="https://github.com/holygeek/git-number" class="github">
+    <img src="https://img.shields.io/github/stars/holygeek/git-number.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/holygeek/git-number">holygeek/git-number</a>:
+    Similar implementation in Perl</li>
+</ul><h1>Updates</h1>
+<ul><li>
+            17 October 2025: v1.2: Fixes for git 2.26+ and PowerShell 7+</li><li>
+            16 January 2020: Published to the PowerShell Gallery</li><li>
+            12 January 2020: More actions and utilities + bugfixes</li></ul>]]></block3>
   </post>
   <post>
     <title>Less for your git pager</title>
@@ -21495,7 +22259,12 @@ fanciest tool but more powerful than you might expect.</p>
 
 <p>After a few years of just using <code>PgUp</code> and <code>PgDown</code> I guess this research
 was way overdue.</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://itenium.be/blog/dev-setup/exotic-git-recipes/#locking-out-package-lockjson">Blog post on how to skip uninteresting files in the diffs, logs, ...</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>Yaml tutorial</title>
@@ -22070,7 +22839,14 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 <p>For more examples - as UnitTests - check the <a href="https://github.com/itenium-be/NSubstituteTutorial">Github source</a>.</p>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/30/nsubstitute-vs-moq.html">NSubstitute vs Moq</a></li>
+            <li>This Part: NSubstitute Tutorial</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -22555,7 +23331,27 @@ while <a href="https://autohotkey.com/docs/commands/Suspend.htm"><code>Suspend</
 <p>Start a script with <code>Suspend, Permit</code> to have that hotkey still trigger
 even while the script is suspended.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Autohotkey Tutorial - hotkeys</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/Mi-Ke">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://www.autohotkey.com/docs/Hotkeys.htm">Official Hotkeys documentation</a></li>
+        <li><a href="https://autohotkey.com/docs/KeyList.htm">List of Keys (Keyboard, Mouse and Joystick)</a></li>
+        <li><a href="https://github.com/babin101/DevKeyboard" class="github">
+    <img src="https://img.shields.io/github/stars/babin101/DevKeyboard.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/babin101/DevKeyboard">babin101/DevKeyboard</a>:
+    Hold down a key to send a different key</li>
+        <li><a href="https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/">Morse code by Laszlo</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Added double keypress hotkey example</li><li>
+            25 August 2018</li></ul>]]></block3>
   </post>
   <post>
     <title>Excel formulas cheat sheet</title>
@@ -23037,7 +23833,22 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>This Part: Excel formulas cheat sheet</li>
+            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188">Official documentation: list of all Excel functions</a></li>
+</ul>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine plugins</title>
@@ -23196,7 +24007,22 @@ describe('fake the api call', function() {
 <p>And <a href="https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code">instructions for setting up a <code>launch.json</code> on Stackoverflow</a></p>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>This Part: JavaScript Testing: Jasmine plugins</li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Colorblindness: added color configuration + added jasmine-reporters</li><li>
+            17 January 2019: Added reporter plugins</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -23383,7 +24209,34 @@ it('has its own jasmine.getEnv()', function() {
 </code></pre>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>This Part: JavaScript Testing: Jasmine customization</li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://github.com/JamieMason/Jasmine-Matchers" class="github">
+    <img src="https://img.shields.io/github/stars/JamieMason/Jasmine-Matchers.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JamieMason/Jasmine-Matchers">JamieMason/Jasmine-Matchers</a>:
+    A whole bunch of generic custom matchers</li>
+        <li><a href="https://github.com/mjeanroy/jasmine-utils" class="github">
+    <img src="https://img.shields.io/github/stars/mjeanroy/jasmine-utils.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/mjeanroy/jasmine-utils">mjeanroy/jasmine-utils</a>:
+    Set of custom matchers for Jasmine Test Framework</li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -23502,7 +24355,22 @@ it('can pass context - which will show on failure', async () =&gt; {
 });
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>This Part: JavaScript Testing: Jasmine async syntax</li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Updated to Jasmine 4.3.0.</li><li>
+            18 January 2019: await/async is pretty standard now. Added expectAsync examples.</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -23681,7 +24549,21 @@ it('and on setters', () =&gt; {
 });
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>This Part: JavaScript Testing: Jasmine Spies</li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -23858,7 +24740,21 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
 </ul>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>This Part: JavaScript Testing: Jasmine syntax</li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -24052,7 +24948,30 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 </code></pre>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: JavaScript Testing: Getting started with Jasmine</li>
+            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+</ul>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://jasmine.github.io/api/edge/matchers.html">Jasmine documentation: Matchers</a></li>
+        <li><a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    </li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2023: jasmine-ts is deprecated. Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -24184,7 +25103,18 @@ public void ConvertingIndexesAndAddresses()
 </ul>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>This Part: Create Excels with C# and EPPlus: Miscellaneous</li>
+            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -24359,7 +25289,18 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
 <pre><code class="language-c#">sheet.Cells["A1"].LoadFromDataTable(new DataTable(), true);
 </code></pre>
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>This Part: Create Excels with C# and EPPlus: Import</li>
+            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -24543,7 +25484,14 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
 <p>The drop of <code>.Setup()</code> and <code>.Object</code> for <strong>all</strong> cases is very win for NSubstitute.</p>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: NSubstitute vs Moq</li>
+            <li>Part 2: <a href="/dotnet/2018/08/12/nsubstitute-tutorial.html">NSubstitute Tutorial</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -24852,7 +25800,18 @@ Filtered-out rows are always excluded.</p>
 </code></pre>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>This Part: Create Excels with C# and EPPlus: Formulas & DataValidation</li>
+            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+</ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -25187,7 +26146,20 @@ cfRule1.Style.Font.Bold = true;
 </code></pre>
 
 ]]></block2>
-    <block3><![CDATA[<h1>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Create Excels with C# and EPPlus: A tutorial</li>
+            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            10 March 2023: EPPlus is no longer free for commercial use!</li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -25556,7 +26528,9 @@ Return
 <p>According to <a href="http://alternativeto.net/software/windows-explorer">AlternativeTo Windows Explorer</a>, many people like Total Commander.</p>
 
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Updates</h1>
+<ul><li>
+            30 August 2018: Hijacking Windows + E</li></ul>]]></block3>
   </post>
   <post>
     <title>PowerShell and Git for the colorblind</title>
@@ -25705,7 +26679,10 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 <h1 id="advantages">Advantages</h1>
 
 <p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Updates</h1>
+<ul><li>
+            8 July 2024: Added Show-Colors function</li><li>
+            22 August 2018: Update for Posh-Git v1</li></ul>]]></block3>
   </post>
   <post>
     <title>.NET Number and Date Formatting</title>
@@ -27399,7 +28376,14 @@ $env:LOCALAPPDATA
 $env:TEMP
 # C:\Users\Wouter\AppData\Local\Temp
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/envpath.ps1">The full ps1 source</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            25 August 2018</li></ul>]]></block3>
   </post>
   <post>
     <title>PowerShell profiles</title>
@@ -27459,7 +28443,9 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
 	}
 }
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Updates</h1>
+<ul><li>
+            4 September 2018: Updated locations for PowerShell Core</li></ul>]]></block3>
   </post>
   <post>
     <title>Package Manager Console Entity Framework 6 Migrations profile</title>
@@ -27623,7 +28609,14 @@ function Test-MigrationName($fileName) {
 <p>Menu: Tools &gt; NuGet Package Manager &gt; Package Manager Console<br />
 Shortcut: Alt + T, N, O<br />
 Custom shortcut: View.PackageManagerConsole</p>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><a href="https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1">The EF nuget profile</a></li>
+</ul><h1>Updates</h1>
+<ul><li>
+            28 March 2018: Fix for Visual Studio 2017</li></ul>]]></block3>
   </post>
   <post>
     <title>Synchronize Additional Folders With Dropbox Using Junction on Windows</title>
@@ -27782,7 +28775,9 @@ GetCurrentlySelectedText()
     return selectedText
 }
 </code></pre>]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Updates</h1>
+<ul><li>
+            21 June 2019: Built-into Notepad++ for some time now</li></ul>]]></block3>
   </post>
   <post>
     <title>Notepad++ Bookmarks</title>
@@ -27932,7 +28927,9 @@ required, the unneeded complexity can always be taken back out. No regrets. Plus
 
 <p>Next up is “Provide Options, Don’t Make Lame Excuses”, one of my favorite tips!</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/productivity/2012/12/01/pragmatic-tip-1-care-about-your-craft.html">Pragmatic Tip 1: Care About Your Craft</a></li>
+            <li>This Part: Pragmatic Tip 2: Think! About Your Work</li></ul>]]></block3>
   </post>
   <post>
     <title>Pragmatic Tip 1: Care About Your Craft</title>
@@ -27994,6 +28991,8 @@ indeed even if it means having to learn a whole new paradigm. We’re more incli
 community opens up for which not yet any library or framework exists. Those who program only to pay the bills most likely don’t follow
 Pragmatic Tip 8: “<strong>Invest Regularly in Your Knowledge Portfolio</strong>”, and are slowly becoming obsolete as everyone and everything but them evolves.</p>
 ]]></block2>
-    <block3><![CDATA[]]></block3>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>This Part: Pragmatic Tip 1: Care About Your Craft</li>
+            <li>Part 2: <a href="/productivity/2012/12/02/pragmatic-tip-2-think-about-your-work.html">Pragmatic Tip 2: Think! About Your Work</a></li></ul>]]></block3>
   </post>
 </blog-posts>
