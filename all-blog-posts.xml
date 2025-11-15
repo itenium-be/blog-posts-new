@@ -38,7 +38,7 @@ had a web interface, it had a pretty bad one.</p>
 <p>So I created a UserScript called the <a href="https://github.com/SanguPackage/Script">Sangu Package</a>
 (for Opera, Firefox and Chrome) that rectified all that; making the UI more user friendly,
 more consistent, more powerful.</p>]]></block1>
-      <body><![CDATA[<h1 id="one-star">One Star</h1>
+      <block2><![CDATA[<h1 id="one-star">One Star</h1>
 
 <p>And that is how I ended up with one rating, a one star review for the “Starify Github Links”…
 Unlike the current two competitors (which arrived years after my extension, I’d like to add!)
@@ -136,7 +136,8 @@ without me doing any work, and all that in about 10-15 prompts.</p>
 <p>But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to “<em>API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation.</em>”
 While <code>/rewind</code> no longer exists, a simple “<em>You failed. Can you try to continue where you left off?</em>” was all it
-took to get it back on track!</p>]]></body>
+took to get it back on track!</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Git Large File Storage</title>
@@ -178,7 +179,7 @@ I’m syncing with a private github repository.</p>
 
 <p class="notice--info">Note the quotes around “*.mp4”, without them your shell will
 expand and add individual file entries to <code>.gitattributes</code>!</p>]]></block1>
-      <body><![CDATA[<p>It will also add git hooks for <code>pre-push</code> etc:</p>
+      <block2><![CDATA[<p>It will also add git hooks for <code>pre-push</code> etc:</p>
 
 <pre><code class="language-sh">#!/bin/sh
 command -v git-lfs &gt;/dev/null 2&gt;&amp;1 || { echo &gt;&amp;2 "\nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/pre-push.\n"; exit 2; }
@@ -233,7 +234,8 @@ git config --get-regexp 'filter\.lfs'
 <pre><code class="language-text">remote: warning: See https://gh.io/lfs for more information.
 remote: warning: File x.mp4 is 57.88 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Performance optimization for &apos;bundle exec jekyll serve&apos;</title>
@@ -262,7 +264,7 @@ remote: warning: GH001: Large files detected. You may want to try Git Large File
     <excerpt><![CDATA[<p>Every change to a blog post on this website took a whopping 20 second
 delay before I could see the result.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Every change to a blog post on this website took a whopping 20 second
+      <block2><![CDATA[<p>Every change to a blog post on this website took a whopping 20 second
 delay before I could see the result.</p>
 
 <p>The <a href="https://talk.jekyllrb.com/t/exclude-jekyll-feed-in-development-environment/2681/4">solution</a>
@@ -413,7 +415,17 @@ Set-Alias bejsd Start-JekyllWithDrafts
 Set-Alias bejsdev Start-JekyllDev
 Set-Alias bejsddev Start-JekyllDevWithDrafts
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jekyll/jekyll" class="github">
+    <img src="https://img.shields.io/github/stars/jekyll/jekyll.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jekyll/jekyll">jekyll/jekyll</a>:
+    v4.2.2
+        </div>]]></block3>
   </post>
   <post>
     <title>Excel formulas cheat sheet</title>
@@ -442,7 +454,7 @@ Set-Alias bejsddev Start-JekyllDevWithDrafts
     <excerpt><![CDATA[<p>Companion to the ClosedXML series, specifically to Part 2: Formulas.<br />
 Covering the ClosedXML syntax and implemented functions.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Companion to the ClosedXML series, specifically to Part 2: Formulas.<br />
+      <block2><![CDATA[<p>Companion to the ClosedXML series, specifically to Part 2: Formulas.<br />
 Covering the ClosedXML syntax and implemented functions.</p>
 
 <p>See the <a href="https://github.com/itenium-be/ClosedXMLTutorial">ClosedXML example code</a>
@@ -935,7 +947,8 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 ' Check if cell is either value
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and ClosedXML: Miscellaneous</title>
@@ -963,7 +976,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="miscellaneous-features">Miscellaneous features</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="miscellaneous-features">Miscellaneous features</h1>
+      <block2><![CDATA[<h1 class="hide-from-excerpt" id="miscellaneous-features">Miscellaneous features</h1>
 
 <p>ClosedXML can do a whole lot more for you. This post covers some interesting stuff that didn’t really fit anywhere else.</p>
 
@@ -1252,7 +1265,17 @@ ws.Cell(3, 1).CreateRichText()
     </ul>
   </li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/ClosedXML/ClosedXML" class="github">
+    <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
+    v0.105.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and ClosedXML: Formulas &amp; DataValidation</title>
@@ -1280,7 +1303,7 @@ ws.Cell(3, 1).CreateRichText()
     </toc>
     <excerpt><![CDATA[<p>In case your users want to continue working with the Excels after generation.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>In case your users want to continue working with the Excels after generation.</p>
+      <block2><![CDATA[<p>In case your users want to continue working with the Excels after generation.</p>
 
 <p>Not a problem for ClosedXML. Instead of calculating values and writing them to
 an excel, leverage the power of Excel formulas.</p>
@@ -1525,7 +1548,17 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
 //       it was crashing for me when opening the Excel
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/ClosedXML/ClosedXML" class="github">
+    <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
+    v0.105.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and ClosedXML: A tutorial</title>
@@ -1554,7 +1587,7 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
     <excerpt><![CDATA[<p>Quick tutorial about creating xlsx Excels with
 C# and the <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML nuget package</a>.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Quick tutorial about creating xlsx Excels with
+      <block2><![CDATA[<p>Quick tutorial about creating xlsx Excels with
 C# and the <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML nuget package</a>.</p>
 
 <p>The blog posts only covers the most important functionality.
@@ -1949,7 +1982,17 @@ sheet1.CopyTo(workbook, "Copy");
   }
 }
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/ClosedXML/ClosedXML" class="github">
+    <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
+    v0.105.0
+        </div>]]></block3>
   </post>
   <post>
     <title>DDD Europe 2025</title>
@@ -1973,7 +2016,7 @@ sheet1.CopyTo(workbook, "Copy");
     </toc>
     <excerpt><![CDATA[<p>Last month, I had the opportunity to attend <strong>DDD Europe 2025</strong> in the Queen Elisabeth Hall in Antwerp — a few inspiring days full of insights, ideas, and engaging discussions around Domain-Driven Design, software quality, and architecture. Here are some of my key takeaways:</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Last month, I had the opportunity to attend <strong>DDD Europe 2025</strong> in the Queen Elisabeth Hall in Antwerp — a few inspiring days full of insights, ideas, and engaging discussions around Domain-Driven Design, software quality, and architecture. Here are some of my key takeaways:</p>
+      <block2><![CDATA[<p>Last month, I had the opportunity to attend <strong>DDD Europe 2025</strong> in the Queen Elisabeth Hall in Antwerp — a few inspiring days full of insights, ideas, and engaging discussions around Domain-Driven Design, software quality, and architecture. Here are some of my key takeaways:</p>
 
 <!--more-->
 
@@ -2029,7 +2072,8 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
 <h1 id="final-thoughts">Final Thoughts</h1>
 
 <p>Overall, DDD Europe 2025 was a great mix of deep dives, practical tips, and renewed perspectives. Already looking forward to next year!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Serving a Dockerized web app over https on Synology</title>
@@ -2085,7 +2129,7 @@ it on your Synology in a Docker container.</p>
   </li>
   <li>Save</li>
 </ul>]]></block1>
-      <body><![CDATA[<h1 id="step-2-create-certificate">Step 2: Create Certificate</h1>
+      <block2><![CDATA[<h1 id="step-2-create-certificate">Step 2: Create Certificate</h1>
 
 <p>Control Panel &gt; Security &gt; Certificate &gt; Add</p>
 
@@ -2114,7 +2158,8 @@ it on your Synology in a Docker container.</p>
 
 <p><code>https://your-syno.synology.me:some_port</code> should now work!</p>
 
-<p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>]]></body>
+<p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Training with ML.NET and LightGBM on Synology with Docker</title>
@@ -2165,7 +2210,7 @@ libgomp.so.1: cannot open shared object file: No such file or directory<br />
 <p>It’s a conscious decision by the team to not include LightGBM by default,
 and that makes perfect since it is a 1gig dependency which is only
 used when using that trainer.</p>]]></block1>
-      <body><![CDATA[<h1 id="installing-lightgbm">Installing LightGBM</h1>
+      <block2><![CDATA[<h1 id="installing-lightgbm">Installing LightGBM</h1>
 
 <p>A simple Google search got me to the LightGBM installation instructions:</p>
 
@@ -2233,7 +2278,8 @@ find / -name 'lib_lightgbm.so' 2&gt;/dev/null
 ldd /usr/local/lib/lib_lightgbm.so
 </code></pre>
 
-<p>And there we have it, a WebApi that creates the models!</p>]]></body>
+<p>And there we have it, a WebApi that creates the models!</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Site Inspector</title>
@@ -2261,7 +2307,7 @@ ldd /usr/local/lib/lib_lightgbm.so
     <excerpt><![CDATA[<p>While moving some todos from one location to another I came across “Check Site Inspector”
 and thought, why not run it against this website right now – how hard can it be.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>While moving some todos from one location to another I came across “Check Site Inspector”
+      <block2><![CDATA[<p>While moving some todos from one location to another I came across “Check Site Inspector”
 and thought, why not run it against this website right now – how hard can it be.</p>
 
 <p><a href="https://github.com/siteinspector/siteinspector" class="github">
@@ -2347,7 +2393,8 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
 <p>✅ 1. AI hallucinates some dependency that looks real.<br />
 ✅ 2. A malicious party registers this dependency and puts malware in it.<br />
 ✅ 3. An unsuspecting developer runs the command and 💥</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Bootcamp: Home Automation</title>
@@ -2375,7 +2422,7 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
     <excerpt><![CDATA[<p>For our bootcamp we try to get everyone out of their comfort zone
 and, like many of our sessions, try to do something hands-on.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>For our bootcamp we try to get everyone out of their comfort zone
+      <block2><![CDATA[<p>For our bootcamp we try to get everyone out of their comfort zone
 and, like many of our sessions, try to do something hands-on.</p>
 
 <p>This year the topic of choice was “Home Automation”. The day was divided
@@ -2475,7 +2522,8 @@ raspberry pies with the “Home Assistant OS” on them.</p>
 <p>We ended the evening with maybe the most important part, the closing reception with discussions on
 our little IoT adventure ;)<br />
 And now to find something cool for next year! 😀</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Newtonsoft.Json vs System.Text.Json</title>
@@ -2506,7 +2554,7 @@ And now to find something cool for next year! 😀</p>
 </a>
 <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
     <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
@@ -2956,7 +3004,15 @@ public class PersonWithAttributes
   <li>STJ: implement interfaces (IJsonOnSerializing, IJsonOnSerialized, IJsonOnDeserializing, IJsonOnDeserialized)</li>
   <li>Newtonsoft: attributes on methods (OnSerializing, OnSerialized, OnDeserializing, OnDeserialized)</li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><p>
+            Newtonsoft.Json: v13.0.3
+        </p><p>
+            System.Text.Json: v9.0.4
+        </p>]]></block3>
   </post>
   <post>
     <title>UnitTest: Check Security on your Controllers</title>
@@ -3025,7 +3081,7 @@ if (missingAuthActions.Any())
   Assert.Fail($"The following actions are missing [Authorize] attribute:\n{sortedMethods}");
 }
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="variations">Variations</h1>
+      <block2><![CDATA[<h1 id="variations">Variations</h1>
 
 <p>Maybe you want to remove the code allowing <code>[AllowAnonymous]</code> or something…</p>
 
@@ -3130,7 +3186,8 @@ if (unsecured.Any())
   var lst = string.Join("\n", unsecured);
   Assert.Fail($"Missing RequireAuthorization/AllowAnonymous for endpoints:\n{lst}");
 }
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createSelector</title>
@@ -3163,7 +3220,7 @@ if (unsecured.Any())
 <a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
     Create memoized ‘selector’ functions</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/reduxjs/reselect" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/reduxjs/reselect" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
@@ -3440,7 +3497,17 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
     Enhance Reselect selectors with deeper memoization and cache management.</p>
 
 <p>As of Reselect v5, what you’d need this library for can now achieved with Reselect <code>createSelectorOptions</code> natively.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/reduxjs/reselect" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
+    v5.1.1
+        </div>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: TypeScript</title>
@@ -3471,7 +3538,7 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 in your code. Instead they are wrapped so that you can enjoy complete
 type safety!</p>
 ]]></excerpt>
-      <body><![CDATA[<p>You don’t want to be using <code>useDispatch</code>, <code>useSelector</code> etc directly
+      <block2><![CDATA[<p>You don’t want to be using <code>useDispatch</code>, <code>useSelector</code> etc directly
 in your code. Instead they are wrapped so that you can enjoy complete
 type safety!</p>
 
@@ -3513,7 +3580,8 @@ const createAppAsyncThunk = createAsyncThunk.withTypes&lt;{
 import { createSelector } from "@reduxjs/toolkit";
 const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createAsyncThunk</title>
@@ -3543,7 +3611,7 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
     <excerpt><![CDATA[<p><code>createAsyncThunk</code> generates promise lifecycle action types, which you
 handle in the <code>extraReducers</code> of your slice.</p>
 ]]></excerpt>
-      <body><![CDATA[<p><code>createAsyncThunk</code> generates promise lifecycle action types, which you
+      <block2><![CDATA[<p><code>createAsyncThunk</code> generates promise lifecycle action types, which you
 handle in the <code>extraReducers</code> of your slice.</p>
 
 <pre><code class="language-ts">import { createAsyncThunk } from "@reduxjs/toolkit";
@@ -3740,7 +3808,17 @@ const creatorSlice = createAppSlice({
   }),
 });
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/reduxjs/redux-thunk" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/redux-thunk">reduxjs/redux-thunk</a>:
+    v3.1.0
+        </div>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createSlice and configureStore</title>
@@ -3772,7 +3850,7 @@ const creatorSlice = createAppSlice({
 time also significantly reducing the boilerplate – you can basically delete
 all your actions as they are now defined by the reducers!</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The legacy Redux <code>createStore</code> could make a grown man cry, and probably has.
+      <block2><![CDATA[<p>The legacy Redux <code>createStore</code> could make a grown man cry, and probably has.
 <code>createSlice</code> and <code>configureStore</code> GREATLY simplifies this process while at the same
 time also significantly reducing the boilerplate – you can basically delete
 all your actions as they are now defined by the reducers!</p>
@@ -4078,7 +4156,17 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
     </tr>
   </tbody>
 </table>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/reduxjs/redux-toolkit" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
+    v2.5.0
+        </div>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: Immer</title>
@@ -4111,7 +4199,7 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
 <a href="https://github.com/immerjs/immer">immerjs/immer</a>:
     Create the next immutable state by mutating the current one</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/immerjs/immer" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/immerjs/immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/immerjs/immer">immerjs/immer</a>:
@@ -4398,7 +4486,17 @@ const TodoAdd = () =&gt; {
 </code></pre>
 
 <p><code>use-immer</code> also exposes <code>useImmerReducer</code> to replace your <code>useReducer</code>s.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/immerjs/immer" class="github">
+    <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/immerjs/immer">immerjs/immer</a>:
+    v9.0.21
+        </div>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit</title>
@@ -4431,7 +4529,7 @@ const TodoAdd = () =&gt; {
 <a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
     The official, opinionated, batteries-included toolset for efficient Redux development</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
@@ -4605,7 +4703,29 @@ sprinkled with a few Redux no-nos on top.</p>
 
 <p>Aside from the rant, that blog post would be something that explains basic Redux followed by what is
 basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/reduxjs/redux-toolkit" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
+    v2.5.0
+        </div><div>
+            <a href="https://github.com/reduxjs/redux" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/redux.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/redux">reduxjs/redux</a>:
+    v5.0.1
+        </div><div>
+            <a href="https://github.com/reduxjs/react-redux" class="github">
+    <img src="https://img.shields.io/github/stars/reduxjs/react-redux.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reduxjs/react-redux">reduxjs/react-redux</a>:
+    v9.2.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Share files generated by Docker with Synology CloudSync</title>
@@ -4644,7 +4764,7 @@ They preferred we put the files on our SharePoint since they already had access 
 <p>Steps: Control Panel &gt; File Services &gt; NFS &gt; Enable</p>
 
 <p><img src="/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" alt="Enabling NFS v4 on Synology" title="Enabling NFS v4 on Synology" class="img-responsive" /></p>]]></block1>
-      <body><![CDATA[<h3 id="enable-nfs-on-shared-drive">Enable NFS on Shared Drive</h3>
+      <block2><![CDATA[<h3 id="enable-nfs-on-shared-drive">Enable NFS on Shared Drive</h3>
 
 <ul>
   <li>Control Panel &gt; Shared Folder &gt; right Click “workspace” &gt; Edit &gt; NFS Permissions
@@ -4743,7 +4863,8 @@ but, of course, that doesn’t work.</p>
   <li><code>--chown=CloudSync:CloudSync</code>: I didn’t have to change ownership for CloudSync to pick up the files</li>
 </ul>
 
-<p>Of course you could also just add this to the <code>docker-compose</code> 😀</p>]]></body>
+<p>Of course you could also just add this to the <code>docker-compose</code> 😀</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>The new Angular template syntax</title>
@@ -4773,7 +4894,7 @@ but, of course, that doesn’t work.</p>
 cumbersome to do simple things like an if/else to show/hide
 certain UI parts.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Compared to other SPA frameworks, Angular really made it quite
+      <block2><![CDATA[<p>Compared to other SPA frameworks, Angular really made it quite
 cumbersome to do simple things like an if/else to show/hide
 certain UI parts.</p>
 
@@ -4882,7 +5003,17 @@ same could be achieved with an <code>ngIf</code>:</p>
 <pre><code class="language-html">@let randomNr = randomObs$ | async;
 Nr = {{ randomNr }}
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/angular/angular" class="github">
+    <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/angular/angular">angular/angular</a>:
+    v19
+        </div>]]></block3>
   </post>
   <post>
     <title>Testing Internal Methods</title>
@@ -4937,7 +5068,7 @@ To put tests in place, we often have to change code.</p>
   private Singleton() { }
 }
 </code></pre>]]></block1>
-      <body><![CDATA[<h3 id="refactored-testable-singleton">Refactored Testable Singleton</h3>
+      <block2><![CDATA[<h3 id="refactored-testable-singleton">Refactored Testable Singleton</h3>
 
 <p>We introduce an interface, mimicking the original API
 and provide an <code>internal</code> setter so that we can substitute
@@ -5032,7 +5163,8 @@ the <code>csproj</code> one… not so much.</p>
 <p>Ready for copy-pasta now!</p>
 
 <p>Somehow I ended up writing about “high cohesion”, “Working Effectively with Legacy Code”
-and “encapsulation” instead!</p>]]></body>
+and “encapsulation” instead!</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Can you reset my mac</title>
@@ -5087,7 +5219,7 @@ when trying to download the OS.</p>
 rm /var/db/.applesetupdone
 shutdown -h now
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="reboot">Reboot</h1>
+      <block2><![CDATA[<h1 id="reboot">Reboot</h1>
 
 <p>At this point, you’re almost there!</p>
 
@@ -5110,7 +5242,8 @@ At that point you can also kill the old user.</p>
 
 <p>More memes!!</p>
 
-<p><img src="/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>]]></body>
+<p><img src="/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Database Auditing with EntityFramework and SQL Server</title>
@@ -5156,7 +5289,7 @@ BEGIN
   WHERE Id IN (SELECT Id FROM inserted);
 END;
 </code></pre>]]></block1>
-      <body><![CDATA[<p>The CreatedBy/On columns can be set with a default value for which
+      <block2><![CDATA[<p>The CreatedBy/On columns can be set with a default value for which
 some EF configuration is needed:</p>
 
 <pre><code class="language-c#">protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -5523,7 +5656,17 @@ It also allows you to implement this in different ways.</p>
 </ul>
 
 <p>Of course, if you trust no one, you could also implement a combination of triggers and EF to
-really track everything 😀</p>]]></body>
+really track everything 😀</p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/dotnet/efcore" class="github">
+    <img src="https://img.shields.io/github/stars/dotnet/efcore.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/dotnet/efcore">dotnet/efcore</a>:
+    v8.0.10
+        </div>]]></block3>
   </post>
   <post>
     <title>QA TechEvent: SQL Training</title>
@@ -5557,7 +5700,7 @@ teachers + departments (postgres) and the football worldcups (sql server).</p>
 <p>The game started with a hickup, other machines were not discoverable on the guest network so the leaderboard server had to be deployed on an external server – while everyone was already solving exercises! This messed up our scoreboard considerably, especially the ranking for “solved fastest” 😃</p>
 
 <p>After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production – as it should! 😉</p>]]></block1>
-      <body><![CDATA[<h2 id="before-we-start">Before we start</h2>
+      <block2><![CDATA[<h2 id="before-we-start">Before we start</h2>
 
 <p><img src="/assets/blog-images/sql-training-meme2.png" alt="Meme SQL is always all caps!" title="It can only be SELECT FROM!!" class="img-responsive" /></p>
 
@@ -5768,7 +5911,8 @@ An exercise on joining a table with itself.</p>
 
 <p><strong>Worldcup-6</strong>: For the player that scored the most goals, list the worldcup.YYYY, the round name, the match date, the goal minute, scored Y/N and the total amount of goals scored so far. To keep things “simple”, evaluate only events.id 20, 21 and 22 and team.id 1.</p>
 
-<p>Anyone willing to give them a go? 😀</p>]]></body>
+<p>Anyone willing to give them a go? 😀</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Git Hooks with Husky v9</title>
@@ -5826,7 +5970,7 @@ git push --no-verify
 # Or if you want to really quickly skip it ;)
 git commit -n
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="husky">Husky</h1>
+      <block2><![CDATA[<h1 id="husky">Husky</h1>
 
 <p>Or, use Husky to easily make the git hooks part of the repository itself and share it with the entire team.</p>
 
@@ -5942,7 +6086,17 @@ exit $hasBuildErrors
     <img src="https://img.shields.io/github/stars/pre-commit/pre-commit.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>:
-    A framework for managing and maintaining multi-language pre-commit hooks</p>]]></body>
+    A framework for managing and maintaining multi-language pre-commit hooks</p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/typicode/husky" class="github">
+    <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/typicode/husky">typicode/husky</a>:
+    v9.1.5
+        </div>]]></block3>
   </post>
   <post>
     <title>KISS and Decorators</title>
@@ -5990,7 +6144,7 @@ public class Doer : IDoer
   }
 }
 </code></pre>]]></block1>
-      <body><![CDATA[<p>And then another implementation, a decorator:</p>
+      <block2><![CDATA[<p>And then another implementation, a decorator:</p>
 
 <pre><code class="language-c#">public class LoopingDoer : IDoer
 {
@@ -6119,7 +6273,8 @@ it’s just adding <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">acci
 <p>You end up with the consequences of the design pattern (hard to learn and debug)
 without any of the benefits.</p>
 
-<p>Keep It Simple.</p>]]></body>
+<p>Keep It Simple.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Frontend Track Setup</title>
@@ -6171,7 +6326,7 @@ nvm use 22.1.0
 </code></pre>
 
 <p>The Github repo of the session lists the Node version used at the top of the README.</p>]]></block1>
-      <body><![CDATA[<h1 id="visual-studio-code">Visual Studio Code</h1>
+      <block2><![CDATA[<h1 id="visual-studio-code">Visual Studio Code</h1>
 
 <p>Looks like it’s already 5 years since I switched from Sublime Text 3 to Visual Studio Code.
 While all attendees can obviously pick whichever IDE they fancy, if you don’t have strong
@@ -6764,7 +6919,8 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
   <li><a href="https://github.com/itenium-be/RXJS">RXJS</a></li>
   <li><a href="https://github.com/itenium-be/angular-reactive-forms">Angular-ReactiveForms</a></li>
   <li><a href="https://github.com/itenium-be/Angular-Days">Angular-Days</a></li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Docker + Mongo: a guide</title>
@@ -6803,7 +6959,7 @@ with Docker.</p>
   -p 27017:27017
   -d mongo
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="initial-load">Initial Load</h1>
+      <block2><![CDATA[<h1 id="initial-load">Initial Load</h1>
 
 <p>Scripts are executed in alphabetical order,
 executed on <code>MONGO_INITDB_DATABASE</code>.</p>
@@ -7151,7 +7307,8 @@ COPY import.sh /docker-entrypoint-initdb.d
 RUN chmod +x /docker-entrypoint-initdb.d/import.sh
 
 CMD ["mongod"]
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Git Pull Request Hygiene</title>
@@ -7179,7 +7336,7 @@ CMD ["mongod"]
     <excerpt><![CDATA[<p>It seems that pretty much everyone is using
 some sort of UI for their git interactions.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>It seems that pretty much everyone is using
+      <block2><![CDATA[<p>It seems that pretty much everyone is using
 some sort of UI for their git interactions.</p>
 
 <p>Which is obviously fine, until they are about to create a
@@ -7477,7 +7634,8 @@ especially when it happens time and time again…</p>
 <p>Here’s one last meme to keep the mood light:</p>
 
 <p><img src="/assets/blog-images/git-hygiene-commit-message2.jpg" alt="Yup, pretty much every dev!" /></p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Synology Setup</title>
@@ -7524,7 +7682,7 @@ the only thing you may really want to think about
 is which RAID you want to be using, for which
 Synology conveniently offers you their
 <a href="https://www.synology.com/en-global/support/RAID_calculator">RAID Calculator</a>.</p>]]></block1>
-      <body><![CDATA[<h2 id="local-ip">Local IP</h2>
+      <block2><![CDATA[<h2 id="local-ip">Local IP</h2>
 
 <p>Who can remember some random default IP?<br />
 Control Panel &gt; Connectivity &gt; Network:</p>
@@ -7799,7 +7957,13 @@ services:
     ports:
       - 3000:3000
     restart: unless-stopped
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><p>
+            DSM: v7.1.1
+        </p>]]></block3>
   </post>
   <post>
     <title>Bootcamp: 3D Modelling</title>
@@ -7835,7 +7999,7 @@ inspired by the grandeur of ancient Rome and Greece.</p>
     <figcaption>Can't go landscaping on an empty stomach!</figcaption>
     
 </figure>]]></block1>
-      <body><![CDATA[<h2 id="fake-it">Fake it!</h2>
+      <block2><![CDATA[<h2 id="fake-it">Fake it!</h2>
 
 <p>We started the bootcamp with a short introduction to “Game Graphics Production”
 followed by a Unreal Engine 101 where Tom also let us in on the game industry’s biggest
@@ -7917,7 +8081,8 @@ with terrain and foliage assets.</p>
 
 <hr />
 
-<p>Also special thanks to @Tom Pauwaert for teaching us the ins and outs of the Unreal Engine!</p>]]></body>
+<p>Also special thanks to @Tom Pauwaert for teaching us the ins and outs of the Unreal Engine!</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Security Bootcamp Prep</title>
@@ -7947,7 +8112,7 @@ with terrain and foliage assets.</p>
     </toc>
     <excerpt><![CDATA[<p>The next iteration of the itenium Security Bootcamp is at the <a href="https://www.mitechcon.org/">Michigan Technology Conference 2024</a>. Its vulnerable applications will be running for the duration of the conference: exploit the vulnerabilities (hack!?) and submit captured flags in the Portal website.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The next iteration of the itenium Security Bootcamp is at the <a href="https://www.mitechcon.org/">Michigan Technology Conference 2024</a>. Its vulnerable applications will be running for the duration of the conference: exploit the vulnerabilities (hack!?) and submit captured flags in the Portal website.</p>
+      <block2><![CDATA[<p>The next iteration of the itenium Security Bootcamp is at the <a href="https://www.mitechcon.org/">Michigan Technology Conference 2024</a>. Its vulnerable applications will be running for the duration of the conference: exploit the vulnerabilities (hack!?) and submit captured flags in the Portal website.</p>
 
 <p>Here is how those that will participate can prepare themselves.</p>
 
@@ -8150,7 +8315,8 @@ as passphrase and score Vault multipliers.</p>
 <p>Beware, incorrectly decrypted flags will cost points!</p>
 
 <p>Check the blog post in The Hacker’s Toolkit Blog in-game for more info!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>.NET Testing Frameworks</title>
@@ -8290,7 +8456,7 @@ as passphrase and score Vault multipliers.</p>
     </tr>
   </tbody>
 </table>]]></block1>
-      <body><![CDATA[<h4 id="xunit-iclassfixture">xUnit IClassFixture</h4>
+      <block2><![CDATA[<h4 id="xunit-iclassfixture">xUnit IClassFixture</h4>
 
 <p>Setup in xUnit doesn’t work with Attributes!<br />
 xUnit injects the same <code>XUnitTestsFixture</code> to the constructor
@@ -8762,7 +8928,19 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 </code></pre>
 
 <p><strong>TUnit</strong>: For more complicated AND/OR logic, check
-<a href="https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups">AssertionGroup.For</a></p>]]></body>
+<a href="https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups">AssertionGroup.For</a></p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><p>
+            NUnit: v4.3.2
+        </p><p>
+            xUnit: v2.9.3
+        </p><p>
+            MSTest.TestFramework: v3.8.2
+        </p><p>
+            TUnit: v0.18.9
+        </p>]]></block3>
   </post>
   <post>
     <title>Angular 17 - What&apos;s new?</title>
@@ -8792,7 +8970,7 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
   <p>Angular 17 has landed with a rebranding, and an <a href="https://angular.dev/">a new documentation home</a> which now also offers an interactive learning experience, but what else is new?</p>
 </blockquote>
 ]]></excerpt>
-      <body><![CDATA[<blockquote>
+      <block2><![CDATA[<blockquote>
   <p>Angular 17 has landed with a rebranding, and an <a href="https://angular.dev/">a new documentation home</a> which now also offers an interactive learning experience, but what else is new?</p>
 </blockquote>
 
@@ -8921,7 +9099,17 @@ It’s also quite easy to add an empty placeholder.</p>
 <p>Another nice thing is that deferrable views also allow us the option to prefetch dependencies before rendering them. This can be done by adding a <code>prefetch</code> to the defer block (the same triggers as above are supported).</p>
 
 <p><code>@defer (on viewport; prefetch on idle) {...}</code></p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/angular/angular" class="github">
+    <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/angular/angular">angular/angular</a>:
+    v17
+        </div>]]></block3>
   </post>
   <post>
     <title>Book review: Tidy first?</title>
@@ -8953,7 +9141,7 @@ It’s also quite easy to add an empty placeholder.</p>
 These are similar to refactorings, but smaller in scope and impact, or as described in the book “cute, fuzzy little refactorings that nobody could possibly hate on”.</p>
 
 <p>The “?” in the title is certainly not an error, it’s not a how-to book but it offers us premises to makes us think and his insights are shared to help us define a framework.</p>]]></block1>
-      <body><![CDATA[<h2 id="about-the-book">About the book</h2>
+      <block2><![CDATA[<h2 id="about-the-book">About the book</h2>
 
 <p>This book is the start of a new series, and we start with tidying which he calls “the Pringles of software design” to facilitate future (behavioural) changes.</p>
 
@@ -9026,7 +9214,8 @@ What’s the value for the product owner?</p>
 This also makes it an easier recommendation, compared to certain more opinionated books.</p>
 
 <p>The “when” &amp; “why” section are where the real meat was for me.<br />
-In the finalle Ken put a lot of effort into the value (or lack thereof) of doing these changes and gives insights into bridging certain gaps/phrasing towards business-owners to discuss the buy-in.</p>]]></body>
+In the finalle Ken put a lot of effort into the value (or lack thereof) of doing these changes and gives insights into bridging certain gaps/phrasing towards business-owners to discuss the buy-in.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>European Women in Tech 2023</title>
@@ -9056,7 +9245,7 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     </toc>
     <excerpt><![CDATA[<p class="hide-from-excerpt notice">(And of course, this blog is written with the help of AI)</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="hide-from-excerpt notice">(And of course, this blog is written with the help of AI)</p>
+      <block2><![CDATA[<p class="hide-from-excerpt notice">(And of course, this blog is written with the help of AI)</p>
 
 <p>In the ever-evolving world of technology, the <a href="https://europeanwomenintech.com/">European Women in Tech</a> in Amsterdam shed light on some crucial insights and perspectives. From the wise words of Elisabeth Theophille, who emphasized the importance of embracing change and enjoying the journey, to the valuable lessons learned from industry leaders like Heineken, Ikea, and ING, the event provided a unique opportunity to explore the complexities of digital transformation and AI.</p>
 
@@ -9101,7 +9290,8 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
 <h1 id="conclusion">Conclusion</h1>
 
 <p>The European Women in Tech event 2023 in Amsterdam provided valuable insights into the ever-evolving world of technology, digital transformation, responsible AI, and the importance of Explainable AI. Embracing change, fostering diversity and inclusion, adopting data-driven decision-making, and ensuring the transparency of AI systems are key elements for success in this era of gardening the digital transformation. As technology continues to shape our world, staying informed, being adaptive and responsible is crucial for individuals and organizations alike.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>React Component Profiling</title>
@@ -9132,7 +9322,7 @@ our internal React invoicing app. It reads the entire database in memory 😲 an
 pretty much exclusively on the frontend with the Redux store, so it’s not the db that
 is the performance bottleneck for once 😜</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Serious rendering performance troubles in <a href="https://github.com/itenium-be/confac">confac</a>,
+      <block2><![CDATA[<p>Serious rendering performance troubles in <a href="https://github.com/itenium-be/confac">confac</a>,
 our internal React invoicing app. It reads the entire database in memory 😲 and works
 pretty much exclusively on the frontend with the Redux store, so it’s not the db that
 is the performance bottleneck for once 😜</p>
@@ -9695,7 +9885,17 @@ function callback(id, phase, actualDuration) {
   <li><a href="https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts"><strong>useWhyDidYouUpdate</strong></a>: part of many hooks-libraries (I didn’t find it very useful)</li>
   <li><a href="https://react.dev/reference/react/useDebugValue"><strong>useDebugValue</strong></a>: to be used in custom hooks (more for library developers IMO)</li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/facebook/react" class="github">
+    <img src="https://img.shields.io/github/stars/facebook/react.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/facebook/react">facebook/react</a>:
+    v18.2.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Build your own MacroPad</title>
@@ -9738,7 +9938,7 @@ of Michiel.</p>
     <figcaption>Thanks to Mike for the heads up!</figcaption>
     
 </figure>]]></block1>
-      <body><![CDATA[<h1 id="the-components">The Components</h1>
+      <block2><![CDATA[<h1 id="the-components">The Components</h1>
 
 <p>A <a href="https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/others/seeed-studio-seeeduino-xiao-rp2040-dual-core-cortex-m0-separate-headers">microcontroller</a>, <a href="https://www.tinytronics.nl/shop/en/switches/manual-switches/rotary-encoders/rotary-encoder-module">1 rotary encoder</a> and <a href="https://www.alternate.nl/Sharkoon/Gateron-PRO-2-0-BROWN-Switch-Set-keyboard-switches/html/product/1892291">6 keyboard switches</a>.</p>
 
@@ -9816,7 +10016,8 @@ of Michiel.</p>
 
 <h2 id="whats-next">What’s Next</h2>
 
-<p>To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎</p>]]></body>
+<p>To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>The Security Bootcamp</title>
@@ -9845,7 +10046,7 @@ of Michiel.</p>
     </toc>
     <excerpt><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>
+      <block2><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>
 
 <!--more-->
 
@@ -9912,7 +10113,8 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <p>Interested in organizing our Security Bootcamp for your IT teams?
 <a href="mailto:">Contact us today</a>!</p>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Hacking Tool: sqlmap</title>
@@ -9944,7 +10146,7 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
     </toc>
     <excerpt><![CDATA[<p><a href="https://sqlmap.org/">sqlmap</a> is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://sqlmap.org/">sqlmap</a> is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.</p>
+      <block2><![CDATA[<p><a href="https://sqlmap.org/">sqlmap</a> is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.</p>
 
 <h1 class="hide-from-excerpt" id="what">What</h1>
 
@@ -10019,7 +10221,8 @@ docker run --rm -it -v ./sqlmap-data:/root/.sqlmap/ paoloo/sqlmap --url "url" --
 
 <p>During itenium’s Security Bootcamp <code>sqlmap</code> can be used to retrieve
 a flag hidden in a database by attacking a vulnerable web page.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Hacking Tool: hydra</title>
@@ -10051,7 +10254,7 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
     </toc>
     <excerpt><![CDATA[<p>Show how easy it would be to gain unauthorized access to a system remotely.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Show how easy it would be to gain unauthorized access to a system remotely.</p>
+      <block2><![CDATA[<p>Show how easy it would be to gain unauthorized access to a system remotely.</p>
 
 <h1 class="hide-from-excerpt" id="what">What</h1>
 
@@ -10111,7 +10314,8 @@ A famous one is <code>rockyou.txt</code> (14M).</p>
 <p>Whenever you figure out that a certain protocol and user has a weak password,
 it’s time to whip out Hydra! Check the Security Audit Blog during itenium’s
 Security Bootcamp for such clue!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Hacking Tool: nmap</title>
@@ -10143,7 +10347,7 @@ Security Bootcamp for such clue!</p>
     </toc>
     <excerpt><![CDATA[<p>Before Trinity could take down the electric grid, she had to find an attack vector. Her hack started with… <a href="https://nmap.org/">nmap</a>!</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Before Trinity could take down the electric grid, she had to find an attack vector. Her hack started with… <a href="https://nmap.org/">nmap</a>!</p>
+      <block2><![CDATA[<p>Before Trinity could take down the electric grid, she had to find an attack vector. Her hack started with… <a href="https://nmap.org/">nmap</a>!</p>
 
 <p><br /></p>
 
@@ -10243,7 +10447,13 @@ for the port but there is no telling if that is actually the case.</p>
 
 <p>At the start of the itenium Security Bootcamp at least one player per team should do
 an nmap scan to discover services that are not (yet) available directly from the Portal.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><p>
+            nmap: v5.2
+        </p>]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : with AI?</title>
@@ -10290,7 +10500,7 @@ ChatGPT is all the hype, so surely it must be able to write this very very simpl
 <p>It created a small Python script with inline configuration for Slack API token and meme directory.
 And then suggested using <code>cron</code> or <code>Task Scheduler</code> for the friday 16h part. That’s actually a good
 idea, I should add Windows instructions to the installation blog post for non-Docker usage 😃</p>]]></block1>
-      <body><![CDATA[<p>Anyway, let’s try it out!</p>
+      <block2><![CDATA[<p>Anyway, let’s try it out!</p>
 
 <pre><code class="language-sh">pip install slack-sdk
 python 1-InitialPrompt.py
@@ -10597,7 +10807,8 @@ but then it failed at what is typically the hardest part anyway: integration.</p
 <p>I will be using this to generate small things on the side. Like my Bash skills are below par,
 I’m sure ChatGPT can give me something that already mostly works.</p>
 
-<p>Oh man, I feel old, bitter and out of touch now.</p>]]></body>
+<p>Oh man, I feel old, bitter and out of touch now.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Implementation</title>
@@ -10645,7 +10856,7 @@ download the image before actually posting it.</p>
 
 <pre><code class="language-sh">chmod -R 755 memes_dir
 </code></pre>]]></block1>
-      <body><![CDATA[<h2 id="cron-job">Cron Job</h2>
+      <block2><![CDATA[<h2 id="cron-job">Cron Job</h2>
 
 <p>The <code>Dockerfile</code> copies the <code>job</code> folder with the Node program to the docker container
 and then runs <code>start.sh</code> which schedules running <code>meme-poster.js</code> and starts the Cron daemon.</p>
@@ -10664,7 +10875,8 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
 <ul>
   <li><code>messageToPostWithMeme</code>: A simple string sent along with the meme</li>
   <li>Configure the entire Slack message using the Slack <a href="https://app.slack.com/block-kit-builder/">Block Kit Builder</a></li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
@@ -10717,7 +10929,7 @@ it is time to post one!</p>
 </ul>
 
 <p>That’s it, really!</p>]]></block1>
-      <body><![CDATA[<h1 id="installation--configuration">Installation &amp; Configuration</h1>
+      <block2><![CDATA[<h1 id="installation--configuration">Installation &amp; Configuration</h1>
 
 <p>See <a href="https://github.com/itenium-be/slack-meme-poster">README.md</a> for step by step instructions.</p>
 
@@ -10767,7 +10979,8 @@ docker-compose up --build -d
   </li>
 </ul>
 
-<p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></body>
+<p><img src="/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Quality Assurance @ itenium</title>
@@ -10794,7 +11007,7 @@ docker-compose up --build -d
     <excerpt><![CDATA[<p>As technology continues to advance at an exponential rate, the field of quality assurance (Q&amp;A) engineering is constantly evolving.
 One of the current trends in Q&amp;A engineering is the <strong>increased use of automation</strong>. As the complexity of software applications continues to grow, so does the need for efficient and reliable testing methods. Automated testing can help speed up the testing process, improve accuracy, and reduce costs. With the use of advanced tools and techniques, automated testing can also be customized to fit the specific needs of each software project.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>As technology continues to advance at an exponential rate, the field of quality assurance (Q&amp;A) engineering is constantly evolving.
+      <block2><![CDATA[<p>As technology continues to advance at an exponential rate, the field of quality assurance (Q&amp;A) engineering is constantly evolving.
 One of the current trends in Q&amp;A engineering is the <strong>increased use of automation</strong>. As the complexity of software applications continues to grow, so does the need for efficient and reliable testing methods. Automated testing can help speed up the testing process, improve accuracy, and reduce costs. With the use of advanced tools and techniques, automated testing can also be customized to fit the specific needs of each software project.</p>
 
 <!--more-->
@@ -10807,7 +11020,8 @@ In addition to automation and security, another current trend in Q&amp;A enginee
 
 <p><br />
 At itenium, we understand the importance of staying up-to-date with the latest trends in Q&amp;A engineering. That’s why we have a team of experienced testers available to help you keep your software up to par. <strong>Whether you need help with automation, security testing, or agile methodologies, we have the expertise to assist you</strong> in achieving your Q&amp;A goals. <a href="mailto:">Contact us today</a> to learn more about our services and how we can help you stay ahead of the curve.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Functional Analysis @ itenium</title>
@@ -10833,7 +11047,7 @@ At itenium, we understand the importance of staying up-to-date with the latest t
     </toc>
     <excerpt><![CDATA[<p>A <strong>functional analyst</strong> is responsible for analyzing and understanding the functional requirements of a software system. They work closely with stakeholders, such as clients or end-users, to identify their needs and translate them into functional specifications that can be used by developers to build the software.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A <strong>functional analyst</strong> is responsible for analyzing and understanding the functional requirements of a software system. They work closely with stakeholders, such as clients or end-users, to identify their needs and translate them into functional specifications that can be used by developers to build the software.</p>
+      <block2><![CDATA[<p>A <strong>functional analyst</strong> is responsible for analyzing and understanding the functional requirements of a software system. They work closely with stakeholders, such as clients or end-users, to identify their needs and translate them into functional specifications that can be used by developers to build the software.</p>
 
 <!--more-->
 
@@ -10848,7 +11062,8 @@ It is therefore important to have a talented functional analyst on a software de
 
 <p><br />
 <a href="mailto:">Contact Itenium today</a> to learn more!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Vaadin: Translation Oopsie</title>
@@ -10877,7 +11092,7 @@ It is therefore important to have a talented functional analyst on a software de
       <block1><![CDATA[<h1 id="how-the-translations-are-done">How the translations are done</h1>
 
 <p>The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.</p>]]></block1>
-      <body><![CDATA[<p><strong>The translation key is formed as such</strong>:</p>
+      <block2><![CDATA[<p><strong>The translation key is formed as such</strong>:</p>
 
 <p><img src="/assets/blog-images/vaadin_translation_key_template.png" alt="Visual translation key formation" title="Pretty slick" /></p>
 
@@ -10994,7 +11209,17 @@ export class CreditVouchDesign extends LitElement {
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>]]></body>
+<p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/vaadin/framework" class="github">
+    <img src="https://img.shields.io/github/stars/vaadin/framework.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/vaadin/framework">vaadin/framework</a>:
+    v24.0.4
+        </div>]]></block3>
   </post>
   <post>
     <title>Regular Expressions: Tutorial</title>
@@ -11020,7 +11245,7 @@ export class CreditVouchDesign extends LitElement {
     </toc>
     <excerpt><![CDATA[<p>The minimum Regex one should know and still be fairly productive.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The minimum Regex one should know and still be fairly productive.</p>
+      <block2><![CDATA[<p>The minimum Regex one should know and still be fairly productive.</p>
 
 <!--more-->
 
@@ -11349,7 +11574,8 @@ A(?!B)   – Literal A not followed by B
 
 <p>Lookarounds do not match anything in themselves which make them very handy
 when you want to replace some text but only when it is (not) preceded/succeeded by something else.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>What chart library to use in React?</title>
@@ -11379,7 +11605,7 @@ when you want to replace some text but only when it is (not) preceded/succeeded 
 As suggested by a colleague, I created this blog post with the results of my research, maybe saving others from
 having to do the same.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The question “What chart library to use in React?” came about when I had to actually find one to introduce in a project.
+      <block2><![CDATA[<p>The question “What chart library to use in React?” came about when I had to actually find one to introduce in a project.
 As suggested by a colleague, I created this blog post with the results of my research, maybe saving others from
 having to do the same.</p>
 
@@ -11894,7 +12120,47 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 <p>The <code>create-react-app</code> is <a href="https://itenium.be/React-Charting/">published at itenium.be</a>.</p>
 
 <p><img src="/assets/blog-images/react-charting-demo-app.png" alt="Demo App Overview" title="Demo App Overview" /></p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/recharts/recharts" class="github">
+    <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/recharts/recharts">recharts/recharts</a>:
+    v2.5.0
+        </div><div>
+            <a href="https://github.com/airbnb/visx" class="github">
+    <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/airbnb/visx">airbnb/visx</a>:
+    v3.1.2
+        </div><div>
+            <a href="https://github.com/plouc/nivo" class="github">
+    <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/plouc/nivo">plouc/nivo</a>:
+    v0.80.0
+        </div><div>
+            <a href="https://github.com/FormidableLabs/victory" class="github">
+    <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/FormidableLabs/victory">FormidableLabs/victory</a>:
+    v36.6.0
+        </div><div>
+            <a href="https://github.com/uber/react-vis" class="github">
+    <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/uber/react-vis">uber/react-vis</a>:
+    v1.11.7
+        </div><div>
+            <a href="https://github.com/reactchartjs/react-chartjs-2" class="github">
+    <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/reactchartjs/react-chartjs-2">reactchartjs/react-chartjs-2</a>:
+    v5.2.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Java @ itenium</title>
@@ -11919,7 +12185,7 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
     </toc>
     <excerpt><![CDATA[<p>In the world of software development, Java has long been one of the most widely used programming languages. Its versatility and reliability make it a popular choice for a wide range of applications, from mobile apps to enterprise software systems. However, staying up-to-date with the latest trends and developments in Java can be a challenge, especially for busy development teams with tight project deadlines.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>In the world of software development, Java has long been one of the most widely used programming languages. Its versatility and reliability make it a popular choice for a wide range of applications, from mobile apps to enterprise software systems. However, staying up-to-date with the latest trends and developments in Java can be a challenge, especially for busy development teams with tight project deadlines.</p>
+      <block2><![CDATA[<p>In the world of software development, Java has long been one of the most widely used programming languages. Its versatility and reliability make it a popular choice for a wide range of applications, from mobile apps to enterprise software systems. However, staying up-to-date with the latest trends and developments in Java can be a challenge, especially for busy development teams with tight project deadlines.</p>
 
 <!--more-->
 
@@ -11934,7 +12200,8 @@ Of course, keeping up with these and other Java trends can be a daunting task, e
 
 <p><br />
 So if you want to ensure that your Java projects are completed on time and to the highest standards, don’t let yourself be delayed by a lack of expertise or resources. <a href="mailto:">Contact Itenium today</a> to learn more about how our senior Java consultants can help you stay ahead of the curve and achieve your goals.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Xamarin.Forms vs .NET MAUI</title>
@@ -11962,7 +12229,7 @@ So if you want to ensure that your Java projects are completed on time and to th
     <excerpt><![CDATA[<p>On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor.</p>
 ]]></excerpt>
       <block1><![CDATA[<p>What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.</p>]]></block1>
-      <body><![CDATA[<h2 id="xamarin">Xamarin</h2>
+      <block2><![CDATA[<h2 id="xamarin">Xamarin</h2>
 
 <p>Xamarin was introduced in May 2011 with the foundation of the Xamarin Company. It was created with a commercial purpose, until it was acquired by Microsoft in 2016. It was based on the mono project introduced in 2001.</p>
 
@@ -12021,7 +12288,21 @@ So if you want to ensure that your Java projects are completed on time and to th
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>.NET MAUI is the result of pulling Xamarin into the .NET BCL. It contains many features from Xamarin Forms and has many improvements to show the potential of this new UI framework.</p>]]></body>
+<p>.NET MAUI is the result of pulling Xamarin into the .NET BCL. It contains many features from Xamarin Forms and has many improvements to show the potential of this new UI framework.</p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/dotnet/maui" class="github">
+    <img src="https://img.shields.io/github/stars/dotnet/maui.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/dotnet/maui">dotnet/maui</a>
+        </div><div>
+            <a href="https://github.com/xamarin/Xamarin.Forms" class="github">
+    <img src="https://img.shields.io/github/stars/xamarin/Xamarin.Forms.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/xamarin/Xamarin.Forms">xamarin/Xamarin.Forms</a>
+        </div>]]></block3>
   </post>
   <post>
     <title>Regular Expressions: Introduction</title>
@@ -12046,7 +12327,7 @@ So if you want to ensure that your Java projects are completed on time and to th
     <excerpt><![CDATA[<p>You already know regex is a (very) useful skill? Skip to the <a href="https://itenium.be/blog/productivity/regex-tutorial">Tutorial</a>.
 If not, allow me to convince you…</p>
 ]]></excerpt>
-      <body><![CDATA[<p>You already know regex is a (very) useful skill? Skip to the <a href="https://itenium.be/blog/productivity/regex-tutorial">Tutorial</a>.
+      <block2><![CDATA[<p>You already know regex is a (very) useful skill? Skip to the <a href="https://itenium.be/blog/productivity/regex-tutorial">Tutorial</a>.
 If not, allow me to convince you…</p>
 
 <p class="notice">Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
@@ -12206,7 +12487,8 @@ Or heaven forbids, one someone else wrote! 😱</p>
 
 <p>Did I already mention that you’ll want to have tests of the code using regexes, especially if they tend
 to change often? Don’t be shy to write them, even if they are the only ones in your repository.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine to Jest</title>
@@ -12233,7 +12515,7 @@ to change often? Don’t be shy to write them, even if they are the only ones in
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="jasmine-vs-jest">Jasmine vs Jest</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="jasmine-vs-jest">Jasmine vs Jest</h1>
+      <block2><![CDATA[<h1 class="hide-from-excerpt" id="jasmine-vs-jest">Jasmine vs Jest</h1>
 
 <p>When you search “<strong>Jasmine vs Jest</strong>”, you get a lot of high level comparisons
 which might be helpful when you have yet to write your first test.
@@ -12693,7 +12975,17 @@ Useless info:
 out of the box with <code>create-react-app</code>.</p>
 
 <p>Also note that today is truly the perfect day to publish a “Jest” article!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/facebook/jest" class="github">
+    <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/facebook/jest">facebook/jest</a>:
+    v29.5.0
+        </div>]]></block3>
   </post>
   <post>
     <title>.NET @ itenium</title>
@@ -12718,7 +13010,7 @@ out of the box with <code>create-react-app</code>.</p>
     </toc>
     <excerpt><![CDATA[<p>As we look ahead to 2023, the world of .Net development is evolving rapidly. There are several new trends that are emerging and are set to dominate the industry in the coming years.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>As we look ahead to 2023, the world of .Net development is evolving rapidly. There are several new trends that are emerging and are set to dominate the industry in the coming years.</p>
+      <block2><![CDATA[<p>As we look ahead to 2023, the world of .Net development is evolving rapidly. There are several new trends that are emerging and are set to dominate the industry in the coming years.</p>
 
 <!--more-->
 
@@ -12735,7 +13027,8 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
 
 <p>So, if you’re looking to stay ahead of the competition in 2023, don’t let a delayed .Net project hold you back.
 <a href="mailto:">Contact Itenium today</a> to learn more about how our senior .Net consultants can help you achieve your goals.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>EPPlus: No longer free to use in a commercial setting</title>
@@ -12762,7 +13055,7 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
     </toc>
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong></p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong></p>
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong></p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp">ClosedXML</a></strong><br />
 Which is basically on equal footing with EPPlus.</p>
@@ -12844,7 +13137,19 @@ which only works on Windows. The non-free version has removed this dependency.</
 </a>
 <a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>:
     Open XML SDK by Microsoft.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/JanKallman/EPPlus" class="github">
+    <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    v4.5.3.3
+        </div><p>
+            EPPlus-Commercial: v5.0.3
+        </p>]]></block3>
   </post>
   <post>
     <title>European Women in Tech 2022</title>
@@ -12875,7 +13180,7 @@ which only works on Windows. The non-free version has removed this dependency.</
 <br /><span style="color: gray">That’s an issue! Unless you are building, euh…</span></p>
 </blockquote>
 ]]></excerpt>
-      <body><![CDATA[<blockquote class="hide-from-excerpt">
+      <block2><![CDATA[<blockquote class="hide-from-excerpt">
   <p>Products built by only men will represent 50% of the world’s population.
 <br /><span style="color: gray">That’s an issue! Unless you are building, euh…</span></p>
 </blockquote>
@@ -12972,7 +13277,8 @@ Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Cou
     
 </figure>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>First Hack</title>
@@ -13007,7 +13313,7 @@ I started playing Ambar (since down) with a few friends. This could be the story
 <p>During one age of the browser game Ambar, we were playing an empire in which our strategy was to grow like mad but without training any troops.
 If we could outgrow everyone fast enough, no one would be able to open a magical portal to our empire to attack us, since portal-opening was based on empire size.
 This was kind of the idea because as you can guess, having no troops in a war game usually is.. problematic.</p>]]></block1>
-      <body><![CDATA[<h1 id="the-portal">The Portal</h1>
+      <block2><![CDATA[<h1 id="the-portal">The Portal</h1>
 
 <p>And… Turns out we hadn’t grown enough, fast enough because right after the initial no-attack period an enemy empire did succeed in opening a portal to us 😲.<br />
 Usually this is not really a problem, as there is a spell to close a portal should someone open one to an “undesirable” target - in our case <strong>any</strong> other empire.</p>
@@ -13048,7 +13354,8 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 
 <p>Have a backup plan in case risky plan A goes awry.</p>
 
-<p>I’m a cheat and should’ve been banned.</p>]]></body>
+<p>I’m a cheat and should’ve been banned.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>CQRS and CRUD</title>
@@ -13089,7 +13396,7 @@ architecture, even when doing so late in the development life cycle.</p>
   <p>Despite these benefits, <strong>you should be very cautious about using CQRS</strong><br />
 — <em>Martin Fowler</em></p>
 </blockquote>]]></block1>
-      <body><![CDATA[<p>In his entire article on CQRS, this is the only sentence that Martin has put in bold.</p>
+      <block2><![CDATA[<p>In his entire article on CQRS, this is the only sentence that Martin has put in bold.</p>
 
 <p>Unfortunately developers like the latest and greatest very much and CQRS has, for many organizations
 and teams been put forward as the de facto standard architecture.</p>
@@ -13417,7 +13724,8 @@ workaround for properties being “all over the place”.</p>
       <li>Empty classes that just inherit from another class</li>
     </ul>
   </li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>VSCode: Editor Settings and Shortcuts</title>
@@ -13488,7 +13796,7 @@ workaround for properties being “all over the place”.</p>
 				+
 			<kbd>/</kbd>: Toggle Line Comment
 </div>]]></block1>
-      <body><![CDATA[<p>Custom shortcuts:</p>
+      <block2><![CDATA[<p>Custom shortcuts:</p>
 <ul>
   <li><code>Control Shift J</code>: Join Lines</li>
   <li>Change End Of Line Sequence</li>
@@ -14140,7 +14448,17 @@ Custom shortcuts:</p>
     "markdown.extension.preview.autoShowPreviewToSide": false,
     "markdown.extension.toc.githubCompatibility": true,
 }
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/microsoft/vscode" class="github">
+    <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/microsoft/vscode">microsoft/vscode</a>:
+    v1.36.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Pragmatic Tip #22 : Use A Single Editor Well</title>
@@ -14196,7 +14514,7 @@ Custom shortcuts:</p>
   <li><a href="https://code.visualstudio.com/docs/getstarted/introvideos"><code>Help: Introductory Videos</code></a></li>
   <li><a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks"><code>Help: Tips and Tricks</code></a></li>
 </ul>]]></block1>
-      <body><![CDATA[<h1 id="configuration">Configuration</h1>
+      <block2><![CDATA[<h1 id="configuration">Configuration</h1>
 
 <h2 id="locations">Locations</h2>
 
@@ -14796,7 +15114,17 @@ Next up: <a href="/blog/dev-setup/vscode-editor">VSCode: Editor Configuration an
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,
 you know, something like Vim.</p>
 
-<p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></body>
+<p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/microsoft/vscode" class="github">
+    <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/microsoft/vscode">microsoft/vscode</a>:
+    v1.36.0
+        </div>]]></block3>
   </post>
   <post>
     <title>The itenium Bliki</title>
@@ -14816,7 +15144,7 @@ you know, something like Vim.</p>
     </toc>
     <excerpt><![CDATA[<p class="hide-from-excerpt">This is what usually is the very first blog post. With links to some new-old posts, migrated from my 2012 blog.</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="hide-from-excerpt">This is what usually is the very first blog post. With links to some new-old posts, migrated from my 2012 blog.</p>
+      <block2><![CDATA[<p class="hide-from-excerpt">This is what usually is the very first blog post. With links to some new-old posts, migrated from my 2012 blog.</p>
 
 <h1 class="hide-from-excerpt" id="personal-reference-bliki">Personal Reference Bliki</h1>
 
@@ -14895,7 +15223,8 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
   <li><a href="/blog/dev-setup/notepad-plus-plus-bookmarks/">Notepad++ Bookmarks</a></li>
   <li><a href="/blog/dev-setup/notepad-plus-plus-php-var-selection/">Notepad++ double click PHP variable including the $ sign</a></li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>DateStart + DateEnd</title>
@@ -14942,7 +15271,7 @@ So yeah, I’ll try not to make any promises on this blog anymore.</p>
     // ... and many more?
 }
 </code></pre>]]></block1>
-      <body><![CDATA[<p>And how beautiful it could’ve been:</p>
+      <block2><![CDATA[<p>And how beautiful it could’ve been:</p>
 <pre><code class="language-c#">class Person {
     // The first version was quite obfuscated, while in this version it's
     // quite obvious what's in it by merely glancing at the declaration.
@@ -15068,7 +15397,8 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 
 <h1 id="conclusions">Conclusions</h1>
 
-<p>Not creating a value object for coherent pairs of value types is a missed opportunity? 😂</p>]]></body>
+<p>Not creating a value object for coherent pairs of value types is a missed opportunity? 😂</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Robocode Tutorial</title>
@@ -15109,7 +15439,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 </ul>
 
 <p><a href="http://robowiki.net/wiki/Robocode/Game_Physics">Wiki</a></p>]]></block1>
-      <body><![CDATA[<h1 id="the-robot">The Robot</h1>
+      <block2><![CDATA[<h1 id="the-robot">The Robot</h1>
 
 <p>A Robot consists of:</p>
 
@@ -15226,7 +15556,17 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
   <li><a href="https://www.youtube.com/watch?v=oTjjkXebCAY">Programming Games: Robocode // Patrick Cupka</a></li>
   <li><a href="https://www.youtube.com/watch?v=wJzJ57ZC1sc">Introduction to Robocode // Philip Johnson</a></li>
   <li><a href="https://www.youtube.com/watch?v=dHrupYhq7sI">Walk-through of testing code for robocode // Philip Johnson</a></li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/robo-code/robocode" class="github">
+    <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
+    v1.9.3.3
+        </div>]]></block3>
   </post>
   <post>
     <title>Robocode Installation &amp; Debugging</title>
@@ -15267,7 +15607,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 
 <p>If you get a <em>“‘java’ is not recognized as an internal or external command”</em>, then
 <a href="http://robowiki.net/wiki/Robocode/System_Requirements#Setting_environmental_variables_on_Windows">add your JDK to PATH</a>.</p>]]></block1>
-      <body><![CDATA[<h1 id="building-a-robot">Building a Robot</h1>
+      <block2><![CDATA[<h1 id="building-a-robot">Building a Robot</h1>
 
 <h2 id="in-the-robocode-ui">In the Robocode UI</h2>
 
@@ -15382,7 +15722,17 @@ Find the CLI arguments in <code>robocode.bat</code>.</p>
 <h4 id="robot-console">Robot Console</h4>
 
 <p>See <code>out.println()</code> (or <code>Console.WriteLine()</code>) in your robot log by clicking on your robot name in the right top battle
-view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>]]></body>
+view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/robo-code/robocode" class="github">
+    <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
+    v1.9.3.3
+        </div>]]></block3>
   </post>
   <post>
     <title>Autohotkey Debugging</title>
@@ -15411,7 +15761,7 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
 really taking the time to learn the language properly. This blog post contains some
 scripts and tools to help you try make some sense of what is going on.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>If you are like me, you just started writing Authotkey scripts without ever
+      <block2><![CDATA[<p>If you are like me, you just started writing Authotkey scripts without ever
 really taking the time to learn the language properly. This blog post contains some
 scripts and tools to help you try make some sense of what is going on.</p>
 
@@ -15677,7 +16027,8 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
   <li><a href="https://www.autohotkey.com/docs/scripts/JoystickTest.htm">Joystick Test Script</a>: Find out how to bind Jostick buttons</li>
   <li><a href="https://www.autohotkey.com/docs/scripts/IntelliSense.htm">Autohotkey IntelliSense</a>: If your editor has no intellisense, switch editors instead :)</li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Google I/O &apos;19: WebAssembly for Web Developers</title>
@@ -15723,7 +16074,7 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
 <p>Brings your existing C/C++ applications to the web (ex: Autocad, Game Engines like Unity).
 Provides a drop-in replacement: Whatever you wrote, it should just work on the web.
 It emulates OpenGL, the FileSystem etc.</p>]]></block1>
-      <body><![CDATA[<h1 id="for-web-developers">For Web Developers</h1>
+      <block2><![CDATA[<h1 id="for-web-developers">For Web Developers</h1>
 
 <p>Two main use cases</p>
 <ul>
@@ -15832,7 +16183,8 @@ npx http-server
 <p>Open the generated <code>HelloWorld.html</code> in a browser to see your WebAssembly file executed!</p>
 
 <p>For this “program”, a 40kb <code>HelloWorld.wasm</code> file
-and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]></body>
+and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>AVA Tutorial</title>
@@ -15859,7 +16211,7 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
 <a href="https://github.com/avajs/ava">avajs/ava</a>:
     🚀 Testing can be a drag. AVA helps you get it done.</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/avajs/ava" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/avajs/ava" class="github">
     <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/avajs/ava">avajs/ava</a>:
@@ -16174,7 +16526,17 @@ test.afterEach.cb('This stuff also works for hooks', t =&gt; {
 
 console.log('Currently running', test.meta.file);
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/avajs/ava" class="github">
+    <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/avajs/ava">avajs/ava</a>:
+    v1.4.1
+        </div>]]></block3>
   </post>
   <post>
     <title>.NET Regex Tutorial</title>
@@ -16205,7 +16567,7 @@ console.log('Currently running', test.meta.file);
 over <code>new Regex()</code> as they keep an internal cache for performance.</p>
 
 <p>Its methods may throw a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexmatchtimeoutexception?"><code>RegexMatchTimeoutException</code></a></p>]]></block1>
-      <body><![CDATA[<h1 id="creation">Creation</h1>
+      <block2><![CDATA[<h1 id="creation">Creation</h1>
 
 <pre><code class="language-csharp">var regex = new Regex(@"\d+", RegexOptions.None);
 
@@ -16285,7 +16647,8 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
   <li><code>$'</code> : after</li>
   <li><code>$+</code> : last captured group</li>
   <li><code>$_</code> : entire input string</li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Vue.js Tutorial</title>
@@ -16314,7 +16677,7 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
 <a href="https://github.com/vuejs/vue">vuejs/vue</a>:
     Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
 ]]></excerpt>
-      <body><![CDATA[<p><a href="https://github.com/vuejs/vue" class="github">
+      <block2><![CDATA[<p><a href="https://github.com/vuejs/vue" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/vuejs/vue">vuejs/vue</a>:
@@ -16843,7 +17206,23 @@ at setting up a full blown starter project.</p>
 
 <p>So, I learned me some Vue.js for a technical session
 and am already set on using it for a few small projects.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/vuejs/vue" class="github">
+    <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/vuejs/vue">vuejs/vue</a>:
+    v2.6.6
+        </div><p>
+            vue-router: v3.0.1
+        </p><p>
+            vuex: v3.0.1
+        </p><p>
+            vue-cli: v3.5.3
+        </p>]]></block3>
   </post>
   <post>
     <title>Moment.js Tutorial</title>
@@ -16871,7 +17250,7 @@ and am already set on using it for a few small projects.</p>
     <excerpt><![CDATA[<p class="notice--danger"><strong>Moment.js is a legacy project, now in maintenance mode. In most cases, you should choose a different library.</strong><br />
 See some <a href="#alternatives">alternatives</a> at the end of this post.</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Moment.js is a legacy project, now in maintenance mode. In most cases, you should choose a different library.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Moment.js is a legacy project, now in maintenance mode. In most cases, you should choose a different library.</strong><br />
 See some <a href="#alternatives">alternatives</a> at the end of this post.</p>
 
 <hr />
@@ -17480,7 +17859,17 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
   <li><a href="http://momentjs.com/docs/#/parsing/creation-data"><code>moment().creationData()</code></a> == <code>{input: string, format: string, locale: Locale, isUTC: boolean, strict: boolean}</code>.</li>
   <li><a href="https://momentjs.com/docs/#/i18n/pseudo-locale/"><code>moment.locale('x-pseudo')</code></a></li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/moment/moment" class="github">
+    <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/moment/moment">moment/moment</a>:
+    v2.24.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Git Hooks with Husky</title>
@@ -17518,7 +17907,7 @@ Run a program before certain points in gits execution.</p>
 <p>They are defined in <code>.git\hooks</code>. <!-- (config: `core.hooksPath`) --><br />
 You can find some example files in that directory. Remove their <code>.sample</code> suffix
 to test them out.</p>]]></block1>
-      <body><![CDATA[<h1 id="husky">Husky</h1>
+      <block2><![CDATA[<h1 id="husky">Husky</h1>
 
 <p>Hooks are saved locally and not pushed to the remote.
 Husky allows you to easily make the git hooks part of the repository itself.</p>
@@ -17590,7 +17979,17 @@ module.exports = {
     ])
   }
 };
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/typicode/husky" class="github">
+    <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/typicode/husky">typicode/husky</a>:
+    v1.3.1
+        </div>]]></block3>
   </post>
   <post>
     <title>Exotic Git Snippets</title>
@@ -17628,7 +18027,7 @@ in multiple contexts.</p>
 because well, I lost the history of the feature. Not only less
 commits for my Github statistics but I also lost <code>git blame</code> so it could no longer
 tell me why a particular algorithm was written the way it was.</p>]]></block1>
-      <body><![CDATA[<p>Turns out git allows you to have your cake and eat it too!</p>
+      <block2><![CDATA[<p>Turns out git allows you to have your cake and eat it too!</p>
 
 <pre><code class="language-bash"># DEPRECATED!!
 git filter-branch --prune-empty --subdirectory-filter src master
@@ -17748,7 +18147,8 @@ Set-Alias pr Create-PullRequest
 <ul>
   <li><a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">git assume unchanged</a></li>
   <li><a href="https://itenium.be/blog/productivity/git-hooks-with-husky/">git hooks with Husky</a></li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Chrome Extension: Starify Github project links</title>
@@ -17783,7 +18183,7 @@ on Github itself and on Package Manager registries.</p>
 				+
 			<kbd>S</kbd>: Activate on any other page
 </div>]]></block1>
-      <body><![CDATA[<h1 id="more-examples">More Examples</h1>
+      <block2><![CDATA[<h1 id="more-examples">More Examples</h1>
 
 <h2 id="google-search-results">Google Search Results</h2>
 
@@ -17822,7 +18222,8 @@ const activateDirectlyOn = [
 
 // Shoutout to Shields.io for kindly providing the badges!
 const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?style=social&amp;label=Star';
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>JavaScript RegExp Tutorial</title>
@@ -17860,7 +18261,7 @@ const expressionLiteral = /\w+/;
 // Only use this for dynamic patterns
 const ctor = new RegExp('\\w+');
 </code></pre>]]></block1>
-      <body><![CDATA[<h2 id="regexpprototypetest">RegExp.prototype.test</h2>
+      <block2><![CDATA[<h2 id="regexpprototypetest">RegExp.prototype.test</h2>
 
 <p style="float: right"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test">RegExp.prototype.test</a></p>
 
@@ -18129,7 +18530,8 @@ const regex = /a/g;
 regex.test(input); // Returns true. lastIndex is now 1
 regex.test(input); // Returns true. lastIndex is now 2
 regex.test(input); // Returns false. lastIndex is reset to 0
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Rubber Duck Debugging</title>
@@ -18155,7 +18557,7 @@ regex.test(input); // Returns false. lastIndex is reset to 0
     </toc>
     <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="talk-to-the-duck">Talk to the Duck</h1>
 ]]></excerpt>
-      <body><![CDATA[<h1 class="hide-from-excerpt" id="talk-to-the-duck">Talk to the Duck</h1>
+      <block2><![CDATA[<h1 class="hide-from-excerpt" id="talk-to-the-duck">Talk to the Duck</h1>
 
 <p>When confronted with a problem, don’t ask the person next to you for help right away,
 he’s probably doing something important as well!</p>
@@ -18254,7 +18656,8 @@ They originally called it the <a href="http://wiki.c2.com/?CardboardProgrammer">
   <p>You can even pair program with a rubber duck.<br />
 It would be perfect if you added a little voice chip that asked, “<em>Did you write the test?</em>”</p>
 </blockquote>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Create a new blog post</title>
@@ -18277,7 +18680,7 @@ It would be perfect if you added a little voice chip that asked, “<em>Did you 
     <excerpt><![CDATA[<p>This is something for me (or anyone else really)
 because I keep forgetting all this stuff.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>This is something for me (or anyone else really)
+      <block2><![CDATA[<p>This is something for me (or anyone else really)
 because I keep forgetting all this stuff.</p>
 
 <ul>
@@ -18798,7 +19201,8 @@ emoj [text]
 <p><img class="avatar avatar-small" alt="fabpot" width="40" height="40" data-proofer-ignore="true" src="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40" srcset="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40 1x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=80 2x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=120 3x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=160 4x" /></p>
 <pre><code>{% avatar fabpot %}
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Array.prototype for .NET developers</title>
@@ -18831,7 +19235,7 @@ that “Linq lambda syntax”-like functionality is available in JavaScript.</p>
 probably allow you to achieve the same result but in more functional and succinct manner.</p>
 
 <p>Do note that the deferred execution we know from Linq does not apply to <code>Array.prototype</code>!</p>]]></block1>
-      <body><![CDATA[<h1 id="comparison-table">Comparison Table</h1>
+      <block2><![CDATA[<h1 id="comparison-table">Comparison Table</h1>
 
 <table class="table-code">
   <thead>
@@ -19153,7 +19557,8 @@ for (let itm of input) {
 <p>Thanks <a href="https://x.com/bewidec/status/935573858136051713">Wim De Cleen</a> (and Martin Fowler)
 for this amazing diagram, I love it!</p>
 
-<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></body>
+<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Debugging in Visual Studio</title>
@@ -19179,7 +19584,7 @@ Other interesting settings:</p>
   <li>Step over properties and operators (Managed only)</li>
   <li>Just My Code (Enable to step over system, framework and other non-user calls)</li>
 </ul>]]></block1>
-      <body><![CDATA[<h1 id="breakpoints">Breakpoints</h1>
+      <block2><![CDATA[<h1 id="breakpoints">Breakpoints</h1>
 
 <div style="display: block">
 			<kbd>Control</kbd>
@@ -19423,7 +19828,8 @@ Not open source:</p>
   <li>Promises “significant” performance improvements in stepping</li>
   <li>Yipiee, they added search to Autos, Locals and Watch windows! (Options &gt; Debugging &gt; Search)</li>
   <li>They also managed to cut 25px from the title bar and still make it look <a href="/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
-</ul>]]></body>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Angular Pipes</title>
@@ -19449,7 +19855,7 @@ Not open source:</p>
     </toc>
     <excerpt><![CDATA[<p class="notice"><strong>Pipes</strong>: Chainable, declarative display-value transformations to use in your Html.</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice"><strong>Pipes</strong>: Chainable, declarative display-value transformations to use in your Html.</p>
+      <block2><![CDATA[<p class="notice"><strong>Pipes</strong>: Chainable, declarative display-value transformations to use in your Html.</p>
 
 <p>This post covers:</p>
 <ul>
@@ -20005,7 +20411,17 @@ export class MyApplicationModule {}
 <p><strong>Other:</strong>
 <a href="https://github.com/fknop/angular-pipes/blob/master/src/object/defaults.pipe.ts">defaults</a>
 , …</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/angular/angular" class="github">
+    <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/angular/angular">angular/angular</a>:
+    v18
+        </div>]]></block3>
   </post>
   <post>
     <title>Git Assume Unchanged</title>
@@ -20045,7 +20461,7 @@ Some handy git aliases without <code>update-index</code> nightmarish syntax to b
     # List all currently git assumed files
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 </code></pre>]]></block1>
-      <body><![CDATA[<p>Or create the aliases from the CLI:</p>
+      <block2><![CDATA[<p>Or create the aliases from the CLI:</p>
 <pre><code class="language-powershell">git config --global alias.assume "update-index --assume-unchanged"
 git config --global alias.noassume "update-index --no-assume-unchanged"
 git config --global alias.unassume "update-index --no-assume-unchanged"
@@ -20073,7 +20489,8 @@ git update-index --no-skip-worktree fileName
     hide = update-index --skip-worktree
     unhide = update-index --no-skip-worktree
     hidden = "!git ls-files -v | grep ^S | cut -c 3-"
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Autohotkey DynaRun</title>
@@ -20094,7 +20511,7 @@ git update-index --no-skip-worktree fileName
     <excerpt><![CDATA[<p>Run any Autohotkey script on the web with a
 single.. Autohotkey hotkey.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Run any Autohotkey script on the web with a
+      <block2><![CDATA[<p>Run any Autohotkey script on the web with a
 single.. Autohotkey hotkey.</p>
 
 <!--more-->
@@ -20209,7 +20626,8 @@ DynaRun(TempScript, pipename="")
 
 <pre><code class="language-autohotkey">MsgBox Will it work?
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Autohotkey Use Case: Submitting a Form</title>
@@ -20231,7 +20649,7 @@ DynaRun(TempScript, pipename="")
     <excerpt><![CDATA[<p>A simple Autohotkey use case you can start using in your application right away:<br />
 Filling in an entire form with predefined values.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A simple Autohotkey use case you can start using in your application right away:<br />
+      <block2><![CDATA[<p>A simple Autohotkey use case you can start using in your application right away:<br />
 Filling in an entire form with predefined values.</p>
 
 <!--more-->
@@ -20348,7 +20766,8 @@ WinGetTitle, title, A
 #IfWinActive
 Return
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Programming Mnemonics</title>
@@ -20376,7 +20795,7 @@ Return
     </toc>
     <excerpt><![CDATA[<p>Mnemonics - helping developers remember intrinsics since 1973.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Mnemonics - helping developers remember intrinsics since 1973.</p>
+      <block2><![CDATA[<p>Mnemonics - helping developers remember intrinsics since 1973.</p>
 
 <blockquote>
   <p>A mnemonic<br />
@@ -20483,7 +20902,8 @@ margin: T R B L;
 and I liked it too much to not add it here 😀</p>
 
 <p><img src="/assets/blog-images/mnemonics-there-their.png" alt="There vs Their" title="There vs Their" /></p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Angular Road Trip</title>
@@ -20503,7 +20923,7 @@ and I liked it too much to not add it here 😀</p>
     </toc>
     <excerpt><![CDATA[<p>Today I want to blog about my Angular(2 - 6) experiences the past years.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Today I want to blog about my Angular(2 - 6) experiences the past years.</p>
+      <block2><![CDATA[<p>Today I want to blog about my Angular(2 - 6) experiences the past years.</p>
 
 <p>After 3 years of desktop development I’ve started with Angular 2+ in july 2016, when it was still in beta.</p>
 
@@ -20563,7 +20983,17 @@ I have a solid idea now, but only because it’s the logical result of a road fu
 <br />
 All in all it’s just a great framework for modern web applications and most of the time a joy to work with :)</li>
 </ul>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/angular/angular" class="github">
+    <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/angular/angular">angular/angular</a>:
+    v6
+        </div>]]></block3>
   </post>
   <post>
     <title>Developing with LocalDb</title>
@@ -20588,7 +21018,7 @@ All in all it’s just a great framework for modern web applications and most of
 <p>It’s a feature of <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL Server Express</a>.
 Make sure to select it during installation using the <strong>Express Advanced</strong> or <strong>LocalDb</strong> packages.<br />
 It can also be installed with the <strong>Visual Studio Installer</strong>. There it is a part of the <strong>.NET desktop development</strong> workload.</p>]]></block1>
-      <body><![CDATA[<h1 id="usage">Usage</h1>
+      <block2><![CDATA[<h1 id="usage">Usage</h1>
 
 <p>LocalDb can usually be found in</p>
 <pre><code>C:\Program Files\Microsoft SQL Server\130\Tools\Binn\SqlLocalDB.exe
@@ -20631,7 +21061,8 @@ versions|v: Lists all LocalDb version-numbers installed
    connectionString="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=MyDatabaseName;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\MyDb.mdf" 
    providerName="System.Data.SqlClient" 
 /&gt;
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Git-NumberedAdd for PowerShell</title>
@@ -20665,7 +21096,7 @@ There have been changes in both git (v2.26+) and PowerShell (v7+) that broke
 
 <pre><code class="language-ps">Install-Module -Name Git-NumberedAdd
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="git-numberedhelp-alias-gnh">Git-NumberedHelp <small>(alias: gnh)</small></h1>
+      <block2><![CDATA[<h1 id="git-numberedhelp-alias-gnh">Git-NumberedHelp <small>(alias: gnh)</small></h1>
 
 <p>All these aliases to save time but who can remember all that?<br />
 Use <code>gnh</code> to display all actions available by Git-NumberedAdd with description and alias.</p>
@@ -20811,7 +21242,8 @@ Git-NumberedSetLocation # Alias: gsl
 <p>And then use <code>2: Update</code> to stage files.</p>
 
 <p><br />
-Also, see below for similar implementations in Bash and Perl.</p>]]></body>
+Also, see below for similar implementations in Bash and Perl.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Less for your git pager</title>
@@ -20871,7 +21303,7 @@ fanciest tool but more powerful than you might expect.</p>
 			<kbd>-x</kbd>,
 			<kbd> --window=x</kbd>: Set default window line size to x for PgUp/PgDown
 </div>]]></block1>
-      <body><![CDATA[<h2 id="searching">Searching</h2>
+      <block2><![CDATA[<h2 id="searching">Searching</h2>
 
 <div style="display: block">
 			<kbd>-I</kbd>,
@@ -21062,7 +21494,8 @@ fanciest tool but more powerful than you might expect.</p>
 <h1 id="summary">Summary</h1>
 
 <p>After a few years of just using <code>PgUp</code> and <code>PgDown</code> I guess this research
-was way overdue.</p>]]></body>
+was way overdue.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Yaml tutorial</title>
@@ -21083,7 +21516,7 @@ was way overdue.</p>]]></body>
 with the widespread use of Json. Less tags, more data.
 What’s there not to like. It’s also just so much easier for a human to read.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Everyone happy when the downfall Xml was a fact
+      <block2><![CDATA[<p>Everyone happy when the downfall Xml was a fact
 with the widespread use of Json. Less tags, more data.
 What’s there not to like. It’s also just so much easier for a human to read.</p>
 
@@ -21307,7 +21740,8 @@ try {
 }
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>NSubstitute Tutorial</title>
@@ -21331,7 +21765,7 @@ with comparable capabilities to the alternatives but with a shorter, more succin
 They have not failed to do so and I loved the NSubstitute syntax right away.</p>
 
 ]]></excerpt>
-      <body><![CDATA[<p>The creators of <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> craved a mocking framework
+      <block2><![CDATA[<p>The creators of <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> craved a mocking framework
 with comparable capabilities to the alternatives but with a shorter, more succinct syntax.
 They have not failed to do so and I loved the NSubstitute syntax right away.</p>
 
@@ -21635,7 +22069,17 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 
 <p>For more examples - as UnitTests - check the <a href="https://github.com/itenium-be/NSubstituteTutorial">Github source</a>.</p>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/nsubstitute/NSubstitute" class="github">
+    <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/nsubstitute/NSubstitute">nsubstitute/NSubstitute</a>:
+    v2.0.3
+        </div>]]></block3>
   </post>
   <post>
     <title>Autohotkey Tutorial - hotkeys</title>
@@ -21666,7 +22110,7 @@ Time for some creative hotkey combinations! ‘Advanced Hotkeys’ covers code s
 how to run different scripts on single, double or triple key presses as well as how to
 differentiate between long(ish) key presses or mouse clicks. And more…</p>
 ]]></excerpt>
-      <body><![CDATA[<p>First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for
+      <block2><![CDATA[<p>First we’ll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for
 newcomers in and by itself.<br />
 <br />
 But we don’t stop there as after adding more and more hotkeys, it will also become harder and harder
@@ -22110,7 +22554,8 @@ while <a href="https://autohotkey.com/docs/commands/Suspend.htm"><code>Suspend</
 
 <p>Start a script with <code>Suspend, Permit</code> to have that hotkey still trigger
 even while the script is suspended.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Excel formulas cheat sheet</title>
@@ -22134,7 +22579,7 @@ even while the script is suspended.</p>
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/excel-formulas-cheat-sheet-closedxml">ClosedXML</a></strong><br />
@@ -22591,7 +23036,8 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 ' Check if cell is either value
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine plugins</title>
@@ -22616,7 +23062,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <excerpt><![CDATA[<p>What would we be without some extra plugins. There
 are over 1000 Jasmine npm packages and we’ll cover them all here.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>What would we be without some extra plugins. There
+      <block2><![CDATA[<p>What would we be without some extra plugins. There
 are over 1000 Jasmine npm packages and we’ll cover them all here.</p>
 
 <!--more-->
@@ -22749,7 +23195,23 @@ describe('fake the api call', function() {
 
 <p>And <a href="https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code">instructions for setting up a <code>launch.json</code> on Stackoverflow</a></p>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div><div>
+            <a href="https://github.com/thlorenz/proxyquire" class="github">
+    <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>:
+    v2.1.3
+        </div>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine customization</title>
@@ -22774,7 +23236,7 @@ describe('fake the api call', function() {
 matchers and global convenience methods.<br />
 Mock global variables in your modules with <code>jasmine.getGlobal().pi = 3.14</code>.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Make your Jasmine experience even more luscious with custom
+      <block2><![CDATA[<p>Make your Jasmine experience even more luscious with custom
 matchers and global convenience methods.<br />
 Mock global variables in your modules with <code>jasmine.getGlobal().pi = 3.14</code>.</p>
 
@@ -22920,7 +23382,17 @@ it('has its own jasmine.getEnv()', function() {
 });
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine async syntax</title>
@@ -22945,7 +23417,7 @@ it('has its own jasmine.getEnv()', function() {
     <excerpt><![CDATA[<p>Need to test async code? No problem for Jasmine. 
 There is <code>done()</code> to inform Jasmine a test has finished running.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Need to test async code? No problem for Jasmine. 
+      <block2><![CDATA[<p>Need to test async code? No problem for Jasmine. 
 There is <code>done()</code> to inform Jasmine a test has finished running.</p>
 
 <p>With <code>jasmine.clock()</code>, the value of <code>new Date()</code> can be manipulated.</p>
@@ -23029,7 +23501,17 @@ it('can pass context - which will show on failure', async () =&gt; {
   await expectAsync(pie).withContext('test').toBeResolved();
 });
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine Spies</title>
@@ -23054,7 +23536,7 @@ it('can pass context - which will show on failure', async () =&gt; {
 featuring <code>spyOn</code> &amp; <code>spyOnProperty</code> as well as <code>jasmine.createSpy(Obj)</code>
 and how to inspect calls made.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Spies, the Jasmine implementation for mocks
+      <block2><![CDATA[<p>Spies, the Jasmine implementation for mocks
 featuring <code>spyOn</code> &amp; <code>spyOnProperty</code> as well as <code>jasmine.createSpy(Obj)</code>
 and how to inspect calls made.</p>
 
@@ -23198,7 +23680,17 @@ it('and on setters', () =&gt; {
   expect(spiez).toHaveBeenCalled();
 });
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Jasmine syntax</title>
@@ -23223,7 +23715,7 @@ it('and on setters', () =&gt; {
 two most used matchers <code>toBe()</code> (===) and <code>toEqual()</code> (deep compare),
 followed by all the other matchers that come out of the box.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>The basic example contains the general test suite structure and the 
+      <block2><![CDATA[<p>The basic example contains the general test suite structure and the 
 two most used matchers <code>toBe()</code> (===) and <code>toEqual()</code> (deep compare),
 followed by all the other matchers that come out of the box.</p>
 
@@ -23365,7 +23857,17 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
   <li><code>fail(string | Error)</code></li>
 </ul>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div>]]></block3>
   </post>
   <post>
     <title>JavaScript Testing: Getting started with Jasmine</title>
@@ -23389,7 +23891,7 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
     </toc>
     <excerpt><![CDATA[<p>Probably the most widely used JavaScript testing framework.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>Probably the most widely used JavaScript testing framework.</p>
+      <block2><![CDATA[<p>Probably the most widely used JavaScript testing framework.</p>
 
 <p>This tutorial covers installation, configuration and execution only.
 For the Jasmine syntax, see parts 2 to 4!</p>
@@ -23549,7 +24051,17 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 }
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/jasmine/jasmine" class="github">
+    <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    v4.3.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and EPPlus: Miscellaneous</title>
@@ -23573,7 +24085,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous">ClosedXML</a></strong><br />
@@ -23671,7 +24183,17 @@ public void ConvertingIndexesAndAddresses()
   <li>A UnitTest to generate excel with a sample LoadFromXXX with a sheet for each TableStyles enum value.</li>
 </ul>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/JanKallman/EPPlus" class="github">
+    <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    v4.1.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and EPPlus: Import</title>
@@ -23695,7 +24217,7 @@ public void ConvertingIndexesAndAddresses()
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp">ClosedXML</a></strong><br />
@@ -23836,7 +24358,17 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
 
 <pre><code class="language-c#">sheet.Cells["A1"].LoadFromDataTable(new DataTable(), true);
 </code></pre>
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/JanKallman/EPPlus" class="github">
+    <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    v4.1.0
+        </div>]]></block3>
   </post>
   <post>
     <title>NSubstitute vs Moq</title>
@@ -23859,7 +24391,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
 probably the most used mocking framework out there at the moment.</p>
 
 ]]></excerpt>
-      <body><![CDATA[<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
+      <block2><![CDATA[<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
 probably the most used mocking framework out there at the moment.</p>
 
 <p><a href="https://github.com/moq/moq4" class="github">
@@ -24010,7 +24542,23 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
 
 <p>The drop of <code>.Setup()</code> and <code>.Object</code> for <strong>all</strong> cases is very win for NSubstitute.</p>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/nsubstitute/NSubstitute" class="github">
+    <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/nsubstitute/NSubstitute">nsubstitute/NSubstitute</a>:
+    v2.0.3
+        </div><div>
+            <a href="https://github.com/moq/moq4" class="github">
+    <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/moq/moq4">moq/moq4</a>:
+    v4.7.9
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and EPPlus: Formulas &amp; DataValidation</title>
@@ -24034,7 +24582,7 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation">ClosedXML</a></strong><br />
@@ -24303,7 +24851,17 @@ Filtered-out rows are always excluded.</p>
 }
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/JanKallman/EPPlus" class="github">
+    <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    v4.1.0
+        </div>]]></block3>
   </post>
   <post>
     <title>Create Excels with C# and EPPlus: A tutorial</title>
@@ -24328,7 +24886,7 @@ Filtered-out rows are always excluded.</p>
     <excerpt><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 ]]></excerpt>
-      <body><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
+      <block2><![CDATA[<p class="notice--danger"><strong>Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.</strong><br />
 See <a href="/blog/dotnet/epplus-pay-to-play/">some alternatives</a> if that is a dealbreaker for you!</p>
 
 <p class="notice--info"><strong>We now have a blog series on an alternative Excel package <a href="/blog/dotnet/create-xlsx-excel-with-closedxml-csharp">ClosedXML</a></strong><br />
@@ -24628,7 +25186,19 @@ cfRule1.StopIfTrue = true;
 cfRule1.Style.Font.Bold = true;
 </code></pre>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1><div>
+            <a href="https://github.com/JanKallman/EPPlus" class="github">
+    <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+</a>
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    v4.5.3.3
+        </div><p>
+            EPPlus-Commerical: v6.1.3
+        </p>]]></block3>
   </post>
   <post>
     <title>Advanced Windows Explorer</title>
@@ -24650,7 +25220,7 @@ cfRule1.Style.Font.Bold = true;
     <excerpt><![CDATA[<p>A listing of handy but less known shortcuts in Windows Explorer
 and some Autohotkey examples on how to add extra functionality.</p>
 ]]></excerpt>
-      <body><![CDATA[<p>A listing of handy but less known shortcuts in Windows Explorer
+      <block2><![CDATA[<p>A listing of handy but less known shortcuts in Windows Explorer
 and some Autohotkey examples on how to add extra functionality.</p>
 
 <p style="display: inline">Open Windows Explorer, the most direct way:</p>
@@ -24985,7 +25555,8 @@ Return
 
 <p>According to <a href="http://alternativeto.net/software/windows-explorer">AlternativeTo Windows Explorer</a>, many people like Total Commander.</p>
 
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>PowerShell and Git for the colorblind</title>
@@ -25047,7 +25618,7 @@ with the default configurations.</p>
 }
 Show-Colors
 </code></pre>]]></block1>
-      <body><![CDATA[<p>With just changing how Errors are displayed, everything is readable, for me, with Cmder.</p>
+      <block2><![CDATA[<p>With just changing how Errors are displayed, everything is readable, for me, with Cmder.</p>
 
 <pre><code class="language-ps1">$host.PrivateData.ErrorBackgroundColor = 'Red'
 $host.PrivateData.ErrorForegroundColor = 'Yellow' # or: "DarkMagenta"
@@ -25133,7 +25704,8 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 
 <h1 id="advantages">Advantages</h1>
 
-<p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></body>
+<p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>.NET Number and Date Formatting</title>
@@ -25194,7 +25766,7 @@ Bob        | 18.00
 Alice      | 24.00
 Methuselah | 969.00
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="cultures">Cultures</h1>
+      <block2><![CDATA[<h1 id="cultures">Cultures</h1>
 
 <p>The culture for all threads defaults to the Windows system culture.</p>
 
@@ -25673,7 +26245,8 @@ Like Date Custom formats but each part represents the whole part in the time int
 <pre><code class="language-c#">span.ToString(@"dd\.hh\:mm\:ss"); // 31.22:15:59
 Console.WriteLine("{0:%d}", span); // 31
 Console.WriteLine("{0:ddddd}", span); // 00031
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>VB.NET vs C# Syntax differences</title>
@@ -25704,7 +26277,7 @@ some VB.NET coding.</p>
   <li>VB.NET is <em>not</em> case sensitive</li>
   <li>Arrays in VB.NET are 1 based</li>
 </ul>]]></block1>
-      <body><![CDATA[<h2 id="syntax-comparison">Syntax comparison</h2>
+      <block2><![CDATA[<h2 id="syntax-comparison">Syntax comparison</h2>
 
 <h3 id="general-syntax">General syntax</h3>
 
@@ -26624,7 +27197,8 @@ online examples are written in C# while the free conversion tools are severely l
 <p>It’s perhaps worth mentioning that VB.NET and Resharper are not on the best of terms.</p>
 
 <p>Unless you really need some of the VB.NET or C# only features, choosing one over the other should probably
-still be a team decision.</p>]]></body>
+still be a team decision.</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Managing Environment Variables with PowerShell</title>
@@ -26676,7 +27250,7 @@ $env:PATH
 </code></pre>
 
 <p>In cmd.exe, all envs can be listed with <code>set</code>.</p>]]></block1>
-      <body><![CDATA[<h1 id="managing-environment-variables">Managing environment variables</h1>
+      <block2><![CDATA[<h1 id="managing-environment-variables">Managing environment variables</h1>
 
 <pre><code class="language-powershell"># Managing current session environment
 $env:test = "value"
@@ -26824,7 +27398,8 @@ $env:LOCALAPPDATA
 
 $env:TEMP
 # C:\Users\Wouter\AppData\Local\Temp
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>PowerShell profiles</title>
@@ -26852,7 +27427,7 @@ $env:TEMP
 <p>The default location changed in PowerShell Core to</p>
 <pre><code class="language-powershell">$home\Documents\PowerShell
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="powershell">PowerShell</h1>
+      <block2><![CDATA[<h1 id="powershell">PowerShell</h1>
 
 <p>Profile locations</p>
 <pre><code class="language-powershell"># executes automatically
@@ -26883,7 +27458,8 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
 		}
 	}
 }
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Package Manager Console Entity Framework 6 Migrations profile</title>
@@ -26921,7 +27497,7 @@ $home\Documents\WindowsPowerShell\NuGet_profile.ps1
 <pre><code class="language-powershell">Set-Alias ip Install-Package
 Set-Alias unip Uninstall-Package
 </code></pre>]]></block1>
-      <body><![CDATA[<h1 id="provide-most-likely--project-parameter">Provide most likely -Project parameter</h1>
+      <block2><![CDATA[<h1 id="provide-most-likely--project-parameter">Provide most likely -Project parameter</h1>
 
 <p>There is (unfortunately) no way to configure the “Default project” in the PMC. This workaround creates a Verb-RealNoun
 for each existing cmdlet and adds a short alias to these commands. Which project contains the migrations is by convention,
@@ -27046,7 +27622,8 @@ function Test-MigrationName($fileName) {
 
 <p>Menu: Tools &gt; NuGet Package Manager &gt; Package Manager Console<br />
 Shortcut: Alt + T, N, O<br />
-Custom shortcut: View.PackageManagerConsole</p>]]></body>
+Custom shortcut: View.PackageManagerConsole</p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Synchronize Additional Folders With Dropbox Using Junction on Windows</title>
@@ -27075,7 +27652,7 @@ be synchronized out of the box.</p>
 <p><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/junction">Junction</a>, a free download from <a href="http://www.sysinternals.com/">sysinternals.com</a>,
 fixes this problem. Once a junction between an existing directory and a new one somewhere inside the Dropbox folder has been established, any change 
 to either directory gets immediately synchronized with Dropbox…</p>]]></block1>
-      <body><![CDATA[<h1 id="to-create-a-junction">To create a junction.</h1>
+      <block2><![CDATA[<h1 id="to-create-a-junction">To create a junction.</h1>
 
 <p>The first parameter is the directory you want to create, the second parameter is the existing directory you want to link. Windows changes
 the icon of a junction folder to indicate its nature but when you have linked to a Dropbox folder, it is overwritten by the Dropbox
@@ -27100,7 +27677,8 @@ a whole bunch of already made junction points related to the current Windows acc
 If you want to get rid of everything, merely deleting the original directory will leave the junction “hanging”.</p>
 
 <pre><code class="language-bash">junction -d "C:\Users\Documents\Dropbox\www"
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Notepad++ double click PHP variable including the $ sign</title>
@@ -27130,7 +27708,7 @@ when writing PHP almost always you’d want the $ also. Apparently not that many
 the StackOverflow answers. The follow up answer provides a workaround using a Notepad++ macro and an Autohotkey script.
 The problem is that it requires you to use a special keybinding (alt+click) to trigger the macro.
 I still want my Code-Genie feeling back.</p>]]></block1>
-      <body><![CDATA[<p>With Notepad++ seemingly letting us down, I was sure it was Autohotkey to the rescue:</p>
+      <block2><![CDATA[<p>With Notepad++ seemingly letting us down, I was sure it was Autohotkey to the rescue:</p>
 
 <pre><code class="language-autohotkey">; Also select the $ when control clicking a word in a Notepad++ PHP file
 ^LButton::
@@ -27203,7 +27781,8 @@ GetCurrentlySelectedText()
     Clipboard = %oldClipboard%
     return selectedText
 }
-</code></pre>]]></body>
+</code></pre>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Notepad++ Bookmarks</title>
@@ -27231,7 +27810,7 @@ Bookmarks have their own margin where they can be toggled with a mouse click.</p
 <p><img src="/assets/blog-images/notepad-bookmarks-1.jpg" alt="" style="float: left; margin-right: 25px" /></p>
 
 <p>They can also be <strong>toggled with “CTRL + F2”</strong>. Use <strong>“F2” and “SHIFT + F2” to jump</strong> back and forth between them.</p>]]></block1>
-      <body><![CDATA[<div style="clear: both"></div>
+      <block2><![CDATA[<div style="clear: both"></div>
 
 <p><br /></p>
 
@@ -27244,7 +27823,8 @@ That is until you combine them with the “Mark” tab in the “<strong>Find Di
 <p><br />
 Suddenly you can write a regular expression to capture certain lines of text and cut those lines with a single command. Pretty neat!</p>
 
-<p><img src="/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>]]></body>
+<p><img src="/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Pragmatic Tip 2: Think! About Your Work</title>
@@ -27269,7 +27849,7 @@ Suddenly you can write a regular expression to capture certain lines of text and
 — The Pragmatic Programmers</p>
 </blockquote>
 ]]></excerpt>
-      <body><![CDATA[<blockquote>
+      <block2><![CDATA[<blockquote>
   <p>“<em>Turn off the autopilot and take control. Constantly critique and appraise your work.</em>”<br />
 — The Pragmatic Programmers</p>
 </blockquote>
@@ -27351,7 +27931,8 @@ Pragmatic Tip 14: “<strong>There Are No Final Decisions</strong>” . This als
 required, the unneeded complexity can always be taken back out. No regrets. Plus I like to delete dead code.</p>
 
 <p>Next up is “Provide Options, Don’t Make Lame Excuses”, one of my favorite tips!</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
   <post>
     <title>Pragmatic Tip 1: Care About Your Craft</title>
@@ -27375,7 +27956,7 @@ required, the unneeded complexity can always be taken back out. No regrets. Plus
 — The Pragmatic Programmers</p>
 </blockquote>
 ]]></excerpt>
-      <body><![CDATA[<blockquote>
+      <block2><![CDATA[<blockquote>
   <p>“Why spend your life developing software unless you care about doing it well?”<br />
 — The Pragmatic Programmers</p>
 </blockquote>
@@ -27412,6 +27993,7 @@ For those, like you and me, who care deeply about our craft these now-unattainab
 indeed even if it means having to learn a whole new paradigm. We’re more inclined to be happy about this turn of events: A whole new
 community opens up for which not yet any library or framework exists. Those who program only to pay the bills most likely don’t follow
 Pragmatic Tip 8: “<strong>Invest Regularly in Your Knowledge Portfolio</strong>”, and are slowly becoming obsolete as everyone and everything but them evolves.</p>
-]]></body>
+]]></block2>
+    <block3><![CDATA[]]></block3>
   </post>
 </blog-posts>
