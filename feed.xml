@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/" rel="alternate" type="text/html" /><updated>2025-11-14T16:32:11+00:00</updated><id>https://itenium.be/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/" rel="alternate" type="text/html" /><updated>2025-11-15T10:35:48+00:00</updated><id>https://itenium.be/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
 “<a href="/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
 
 <p>I probably just discovered <a href="https://github.com/sindresorhus/awesome">sindresorhus awesome</a> lists.
@@ -128,8 +128,7 @@ I’m syncing with a private github repository.</p>
 <p><a href="https://github.com/git-lfs/git-lfs" class="github">
     <img src="https://img.shields.io/github/stars/git-lfs/git-lfs.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/git-lfs/git-lfs">git-lfs/git-lfs</a>
-:
+<a href="https://github.com/git-lfs/git-lfs">git-lfs/git-lfs</a>:
     Git extension for versioning large files</p>
 
 <p>It stores your large files on a separate server and works
@@ -296,8 +295,7 @@ home page because <strong>that</strong> file has not changed…</p>
 <p><a href="https://github.com/Maher4Ever/wdm" class="github">
     <img src="https://img.shields.io/github/stars/Maher4Ever/wdm.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>
-:
+<a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>:
     A threaded directories monitor for Windows.</p>
 
 <p>For Windows, you also need to add <code>wdm</code> to the <code>Gemfile</code>:</p>
@@ -1401,8 +1399,7 @@ can be found in the GitHub project.</p>
 <p><a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>
-:
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
     ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files.</p>
 
 <pre><code class="language-sh">Install-Package ClosedXML
@@ -1907,15 +1904,12 @@ easiest one to setup: using the Synology nginx.</p>
 <p>This configuration is written to <code>/etc/nginx/sites-enabled/server.ReverseProxy.conf</code></p>]]></content><author><name>Wouter Van Schandevijl</name></author><category term="docker" /><category term="synology" /><summary type="html"><![CDATA[You’ve developed the most fancy application and are running it on your Synology in a Docker container.]]></summary></entry><entry><title type="html">Training with ML.NET and LightGBM on Synology with Docker</title><link href="https://itenium.be/docker/2025/05/02/ml-net-lightgbm-docker.html" rel="alternate" type="text/html" title="Training with ML.NET and LightGBM on Synology with Docker" /><published>2025-05-02T00:00:00+00:00</published><updated>2025-05-02T00:00:00+00:00</updated><id>https://itenium.be/docker/2025/05/02/ml-net-lightgbm-docker</id><content type="html" xml:base="https://itenium.be/docker/2025/05/02/ml-net-lightgbm-docker.html"><![CDATA[<p><a href="https://github.com/dotnet/machinelearning" class="github">
     <img src="https://img.shields.io/github/stars/dotnet/machinelearning.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>
-:
-    ML.NET is an open source and cross-platform machine learning framework for .NET.</p>
-
-<p><a href="https://github.com/microsoft/LightGBM" class="github">
+<a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>:
+    ML.NET is an open source and cross-platform machine learning framework for .NET.
+<a href="https://github.com/microsoft/LightGBM" class="github">
     <img src="https://img.shields.io/github/stars/microsoft/LightGBM.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>
-:
+<a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>:
     A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
 
 <p>After writing some code to fetch and mold the data, I was ready to train
@@ -2006,4 +2000,4 @@ find / -name 'lib_lightgbm.so' 2&gt;/dev/null
 ldd /usr/local/lib/lib_lightgbm.so
 </code></pre>
 
-<p>And there we have it, a WebApi that creates the models!</p>]]></content><author><name>Van Schandevijl Wouter</name></author><category term="docker" /><category term="war-story" /><category term="net" /><category term="synology" /><summary type="html"><![CDATA[dotnet/machinelearning : ML.NET is an open source and cross-platform machine learning framework for .NET. microsoft/LightGBM : A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.]]></summary></entry></feed>
+<p>And there we have it, a WebApi that creates the models!</p>]]></content><author><name>Van Schandevijl Wouter</name></author><category term="docker" /><category term="war-story" /><category term="net" /><category term="synology" /><summary type="html"><![CDATA[dotnet/machinelearning: ML.NET is an open source and cross-platform machine learning framework for .NET. microsoft/LightGBM: A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.]]></summary></entry></feed>

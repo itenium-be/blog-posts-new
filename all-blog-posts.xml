@@ -345,8 +345,7 @@ home page because <strong>that</strong> file has not changed…</p>
 <p><a href="https://github.com/Maher4Ever/wdm" class="github">
     <img src="https://img.shields.io/github/stars/Maher4Ever/wdm.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>
-:
+<a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>:
     A threaded directories monitor for Windows.</p>
 
 <p>For Windows, you also need to add <code>wdm</code> to the <code>Gemfile</code>:</p>
@@ -1569,8 +1568,7 @@ can be found in the GitHub project.</p>
 <p><a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>
-:
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
     ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files.</p>
 
 <pre><code class="language-sh">Install-Package ClosedXML
@@ -2145,21 +2143,16 @@ it on your Synology in a Docker container.</p>
       <icon>icon-shell</icon>
       <title>LightGBM Installation</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/dotnet/machinelearning" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/dotnet/machinelearning" class="github">
     <img src="https://img.shields.io/github/stars/dotnet/machinelearning.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>
-:
-    ML.NET is an open source and cross-platform machine learning framework for .NET.</p>
-
-<p><a href="https://github.com/microsoft/LightGBM" class="github">
+<a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>:
+    ML.NET is an open source and cross-platform machine learning framework for .NET.
+<a href="https://github.com/microsoft/LightGBM" class="github">
     <img src="https://img.shields.io/github/stars/microsoft/LightGBM.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>
-:
+<a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>:
     A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
-
 ]]></excerpt>
       <block1><![CDATA[<h1 id="docker-training">Docker Training</h1>
 
@@ -2274,8 +2267,7 @@ and thought, why not run it against this website right now – how hard can it b
 <p><a href="https://github.com/siteinspector/siteinspector" class="github">
     <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>
-:</p>
+<a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>:</p>
 
 <p>Not that hard it turns out.</p>
 
@@ -2346,8 +2338,7 @@ ERROR:  Possible alternatives: site-inspector
 <p><a href="https://github.com/benbalter/site-inspector" class="github">
     <img src="https://img.shields.io/github/stars/benbalter/site-inspector.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/benbalter/site-inspector">benbalter/site-inspector</a>
-:
+<a href="https://github.com/benbalter/site-inspector">benbalter/site-inspector</a>:
     Ruby Gem to sniff information about a domain’s technology and capabilities.</p>
 
 <p>It was a potential <strong>slopsquat</strong> attack; an emerging danger of AI!<br />
@@ -2510,15 +2501,12 @@ And now to find something cool for next year! 😀</p>
       <icon>dot-circle-o</icon>
       <title>.NET Json</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
     <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
+      <body><![CDATA[<p><a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
     <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" />
 </a>
 <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
@@ -3169,21 +3157,16 @@ if (unsecured.Any())
       <icon>icon-reactjs</icon>
       <title>reselect</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/reduxjs/reselect" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/reduxjs/reselect" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>
-:
+<a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
     Create memoized ‘selector’ functions</p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/reduxjs/reselect" class="github">
+      <body><![CDATA[<p><a href="https://github.com/reduxjs/reselect" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>
-:
+<a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
     Create memoized ‘selector’ functions</p>
 
 <p>One of the Redux Style Guide “Strongly Recommended” rules is
@@ -3399,8 +3382,7 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 <p><a href="https://github.com/skortchmark9/reselect-tools" class="github">
     <img src="https://img.shields.io/github/stars/skortchmark9/reselect-tools.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/skortchmark9/reselect-tools">skortchmark9/reselect-tools</a>
-:
+<a href="https://github.com/skortchmark9/reselect-tools">skortchmark9/reselect-tools</a>:
     Debugging Tools for Reselect</p>
 
 <p>Once you get many selectors depending on other selectors, you can use
@@ -3423,8 +3405,7 @@ this tool to visualize re-computations.</p>
 <p><a href="https://github.com/dai-shi/proxy-memoize" class="github">
     <img src="https://img.shields.io/github/stars/dai-shi/proxy-memoize.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/dai-shi/proxy-memoize">dai-shi/proxy-memoize</a>
-:
+<a href="https://github.com/dai-shi/proxy-memoize">dai-shi/proxy-memoize</a>:
     Intuitive magical memoization library with Proxy and WeakMap</p>
 
 <p>This will re-execute when the <code>done</code> property toggles even though
@@ -3455,8 +3436,7 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 <p><a href="https://github.com/toomuchdesign/re-reselect" class="github">
     <img src="https://img.shields.io/github/stars/toomuchdesign/re-reselect.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/toomuchdesign/re-reselect">toomuchdesign/re-reselect</a>
-:
+<a href="https://github.com/toomuchdesign/re-reselect">toomuchdesign/re-reselect</a>:
     Enhance Reselect selectors with deeper memoization and cache management.</p>
 
 <p>As of Reselect v5, what you’d need this library for can now achieved with Reselect <code>createSelectorOptions</code> natively.</p>
@@ -3987,50 +3967,37 @@ configureStore({
 <p><a href="https://github.com/reduxjs/redux-thunk" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reduxjs/redux-thunk">reduxjs/redux-thunk</a>
-:
-    Thunk middleware for Redux (included)</p>
-
-<p><a href="https://github.com/rt2zz/redux-persist" class="github">
+<a href="https://github.com/reduxjs/redux-thunk">reduxjs/redux-thunk</a>:
+    Thunk middleware for Redux (included)
+<a href="https://github.com/rt2zz/redux-persist" class="github">
     <img src="https://img.shields.io/github/stars/rt2zz/redux-persist.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/rt2zz/redux-persist">rt2zz/redux-persist</a>
-:
-    Persist and rehydrate a redux store</p>
-
-<p><a href="https://github.com/redux-observable/redux-observable" class="github">
+<a href="https://github.com/rt2zz/redux-persist">rt2zz/redux-persist</a>:
+    Persist and rehydrate a redux store
+<a href="https://github.com/redux-observable/redux-observable" class="github">
     <img src="https://img.shields.io/github/stars/redux-observable/redux-observable.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/redux-observable/redux-observable">redux-observable/redux-observable</a>
-:
-    RxJS middleware for action side effects using ‘Epics’</p>
-
-<p><a href="https://github.com/LogRocket/redux-logger" class="github">
+<a href="https://github.com/redux-observable/redux-observable">redux-observable/redux-observable</a>:
+    RxJS middleware for action side effects using ‘Epics’
+<a href="https://github.com/LogRocket/redux-logger" class="github">
     <img src="https://img.shields.io/github/stars/LogRocket/redux-logger.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/LogRocket/redux-logger">LogRocket/redux-logger</a>
-:
-    Logger for Redux</p>
-
-<p><a href="https://github.com/omnidan/redux-undo" class="github">
+<a href="https://github.com/LogRocket/redux-logger">LogRocket/redux-logger</a>:
+    Logger for Redux
+<a href="https://github.com/omnidan/redux-undo" class="github">
     <img src="https://img.shields.io/github/stars/omnidan/redux-undo.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/omnidan/redux-undo">omnidan/redux-undo</a>
-:
-    ♻️ higher order reducer to add undo/redo</p>
-
-<p><a href="https://github.com/redux-utilities/redux-promise" class="github">
+<a href="https://github.com/omnidan/redux-undo">omnidan/redux-undo</a>:
+    ♻️ higher order reducer to add undo/redo
+<a href="https://github.com/redux-utilities/redux-promise" class="github">
     <img src="https://img.shields.io/github/stars/redux-utilities/redux-promise.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/redux-utilities/redux-promise">redux-utilities/redux-promise</a>
-:
-    Dispatch promises</p>
-
-<p><a href="https://github.com/agraboso/redux-api-middleware" class="github">
+<a href="https://github.com/redux-utilities/redux-promise">redux-utilities/redux-promise</a>:
+    Dispatch promises
+<a href="https://github.com/agraboso/redux-api-middleware" class="github">
     <img src="https://img.shields.io/github/stars/agraboso/redux-api-middleware.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/agraboso/redux-api-middleware">agraboso/redux-api-middleware</a>
-:
+<a href="https://github.com/agraboso/redux-api-middleware">agraboso/redux-api-middleware</a>:
     Redux middleware for calling an API.</p>
 
 <p>Or roll your own:</p>
@@ -4138,21 +4105,16 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
       <icon>lock</icon>
       <title>Immer</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/immerjs/immer" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/immerjs/immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/immerjs/immer">immerjs/immer</a>
-:
+<a href="https://github.com/immerjs/immer">immerjs/immer</a>:
     Create the next immutable state by mutating the current one</p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/immerjs/immer" class="github">
+      <body><![CDATA[<p><a href="https://github.com/immerjs/immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/immerjs/immer">immerjs/immer</a>
-:
+<a href="https://github.com/immerjs/immer">immerjs/immer</a>:
     Create the next immutable state by mutating the current one</p>
 
 <p>Immer is the solution the ReduxJS/Toolkit has adopted to enforce pure reducers: it allows you to write reducers
@@ -4409,8 +4371,7 @@ return (
 <p><a href="https://github.com/immerjs/use-immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/use-immer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/immerjs/use-immer">immerjs/use-immer</a>
-:
+<a href="https://github.com/immerjs/use-immer">immerjs/use-immer</a>:
     Use immer to drive state with a React hooks</p>
 
 <pre><code class="language-ts">import { useImmer } from "use-immer";
@@ -4464,21 +4425,16 @@ const TodoAdd = () =&gt; {
       <icon>icon-reactjs</icon>
       <title>ReduxJS/Toolkit</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>
-:
+<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
     The official, opinionated, batteries-included toolset for efficient Redux development</p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
+      <body><![CDATA[<p><a href="https://github.com/reduxjs/redux-toolkit" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>
-:
+<a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
     The official, opinionated, batteries-included toolset for efficient Redux development</p>
 
 <p class="notice--info">This first post is context and can basically be ignored.<br />
@@ -4505,8 +4461,7 @@ documentation is still daunting, you can take it step by step.</p>
 <p><a href="https://github.com/immerjs/immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/immerjs/immer">immerjs/immer</a>
-:
+<a href="https://github.com/immerjs/immer">immerjs/immer</a>:
     Create the next immutable state by mutating the current one</p>
 
 <p>Before we actually start with ReduxJS/Toolkit (RTK), let’s take a step back.</p>
@@ -5840,14 +5795,11 @@ An exercise on joining a table with itself.</p>
       <icon>icon-git</icon>
       <title>Git Hooks</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/typicode/husky" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/typicode/husky" class="github">
     <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/typicode/husky">typicode/husky</a>
-:
+<a href="https://github.com/typicode/husky">typicode/husky</a>:
     Git hooks made easy 🐶 woof!</p>
-
 ]]></excerpt>
       <block1><![CDATA[<h1 id="hooks">Hooks</h1>
 
@@ -5979,22 +5931,17 @@ exit $hasBuildErrors
 <p><a href="https://github.com/toplenboren/simple-git-hooks" class="github">
     <img src="https://img.shields.io/github/stars/toplenboren/simple-git-hooks.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/toplenboren/simple-git-hooks">toplenboren/simple-git-hooks</a>
-:
-    A simple git hooks manager for small projects</p>
-
-<p><a href="https://github.com/evilmartians/lefthook" class="github">
+<a href="https://github.com/toplenboren/simple-git-hooks">toplenboren/simple-git-hooks</a>:
+    A simple git hooks manager for small projects
+<a href="https://github.com/evilmartians/lefthook" class="github">
     <img src="https://img.shields.io/github/stars/evilmartians/lefthook.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/evilmartians/lefthook">evilmartians/lefthook</a>
-:
-    Fast and powerful Git hooks manager for any type of projects</p>
-
-<p><a href="https://github.com/pre-commit/pre-commit" class="github">
+<a href="https://github.com/evilmartians/lefthook">evilmartians/lefthook</a>:
+    Fast and powerful Git hooks manager for any type of projects
+<a href="https://github.com/pre-commit/pre-commit" class="github">
     <img src="https://img.shields.io/github/stars/pre-commit/pre-commit.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>
-:
+<a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>:
     A framework for managing and maintaining multi-language pre-commit hooks</p>]]></body>
   </post>
   <post>
@@ -10004,8 +9951,7 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <p><a href="https://github.com/sqlmapproject/sqlmap" class="github">
     <img src="https://img.shields.io/github/stars/sqlmapproject/sqlmap.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/sqlmapproject/sqlmap">sqlmapproject/sqlmap</a>
-:
+<a href="https://github.com/sqlmapproject/sqlmap">sqlmapproject/sqlmap</a>:
     Automatic SQL injection and database takeover tool</p>
 
 <!--more-->
@@ -10114,8 +10060,7 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
 <p><a href="https://github.com/vanhauser-thc/thc-hydra" class="github">
     <img src="https://img.shields.io/github/stars/vanhauser-thc/thc-hydra.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vanhauser-thc/thc-hydra">vanhauser-thc/thc-hydra</a>
-:
+<a href="https://github.com/vanhauser-thc/thc-hydra">vanhauser-thc/thc-hydra</a>:
     hydra</p>
 
 <!--more-->
@@ -10219,8 +10164,7 @@ Security Bootcamp for such clue!</p>
 <p><a href="https://github.com/nmap/nmap" class="github">
     <img src="https://img.shields.io/github/stars/nmap/nmap.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/nmap/nmap">nmap/nmap</a>
-:
+<a href="https://github.com/nmap/nmap">nmap/nmap</a>:
     Github mirror of official SVN repository.</p>
 
 <p>A CLI tool to discover hosts and services on a computer network
@@ -10763,8 +10707,7 @@ it is time to post one!</p>
 <p><a href="https://github.com/itenium-be/slack-meme-poster" class="github">
     <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/itenium-be/slack-meme-poster">itenium-be/slack-meme-poster</a>
-:
+<a href="https://github.com/itenium-be/slack-meme-poster">itenium-be/slack-meme-poster</a>:
     Install your own Slack Meme Bot now!</p>
 
 <ul>
@@ -11447,43 +11390,32 @@ having to do the same.</p>
 <p><a href="https://github.com/recharts/recharts" class="github">
     <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/recharts/recharts">recharts/recharts</a>
-:
-    A Redefined chart library built on d3</p>
-
-<p><a href="https://github.com/airbnb/visx" class="github">
+<a href="https://github.com/recharts/recharts">recharts/recharts</a>:
+    A Redefined chart library built on d3
+<a href="https://github.com/airbnb/visx" class="github">
     <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/airbnb/visx">airbnb/visx</a>
-:
-    A collection of reusable low-level visualization components. Built on d3</p>
-
-<p><a href="https://github.com/plouc/nivo" class="github">
+<a href="https://github.com/airbnb/visx">airbnb/visx</a>:
+    A collection of reusable low-level visualization components. Built on d3
+<a href="https://github.com/plouc/nivo" class="github">
     <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/plouc/nivo">plouc/nivo</a>
-:
-    Nivo provides supercharged React components to easily build dataviz apps, built on d3.</p>
-
-<p><a href="https://github.com/FormidableLabs/victory" class="github">
+<a href="https://github.com/plouc/nivo">plouc/nivo</a>:
+    Nivo provides supercharged React components to easily build dataviz apps, built on d3.
+<a href="https://github.com/FormidableLabs/victory" class="github">
     <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/FormidableLabs/victory">FormidableLabs/victory</a>
-:
-    A collection of components for building interactive data visualizations. Built on d3</p>
-
-<p><a href="https://github.com/uber/react-vis" class="github">
+<a href="https://github.com/FormidableLabs/victory">FormidableLabs/victory</a>:
+    A collection of components for building interactive data visualizations. Built on d3
+<a href="https://github.com/uber/react-vis" class="github">
     <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/uber/react-vis">uber/react-vis</a>
-:
-    A collection of components to render common data visualization charts. Built on d3</p>
-
-<p><a href="https://github.com/reactchartjs/react-chartjs-2" class="github">
+<a href="https://github.com/uber/react-vis">uber/react-vis</a>:
+    A collection of components to render common data visualization charts. Built on d3
+<a href="https://github.com/reactchartjs/react-chartjs-2" class="github">
     <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/reactchartjs/react-chartjs-2">reactchartjs/react-chartjs-2</a>
-:
+<a href="https://github.com/reactchartjs/react-chartjs-2">reactchartjs/react-chartjs-2</a>:
     React components for Chart.js, the most popular charting library</p>
 
 <p><br />
@@ -11492,18 +11424,15 @@ Many are built using the very versatile <a href="https://d3js.org/">d3.js</a> li
 <p><a href="https://github.com/d3/d3" class="github">
     <img src="https://img.shields.io/github/stars/d3/d3.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/d3/d3">d3/d3</a>
-:
+<a href="https://github.com/d3/d3">d3/d3</a>:
     Bring data to life with SVG, Canvas and HTML. 📊📈🎉</p>
 
 <p><br />
-If you already used <code>Chart.js</code> before, you may want to choose for the <code>react-chartjs-2</code> wrapper:</p>
-
-<p><a href="https://github.com/chartjs/Chart.js" class="github">
+If you already used <code>Chart.js</code> before, you may want to choose for the <code>react-chartjs-2</code> wrapper:<br />
+<a href="https://github.com/chartjs/Chart.js" class="github">
     <img src="https://img.shields.io/github/stars/chartjs/Chart.js.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/chartjs/Chart.js">chartjs/Chart.js</a>
-:
+<a href="https://github.com/chartjs/Chart.js">chartjs/Chart.js</a>:
     Simple HTML5 Charts using the canvas tag</p>
 
 <h2 id="overview">Overview</h2>
@@ -12322,15 +12251,12 @@ Jest does seem to have more ⭐⭐⭐</p>
 <p><a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>
-:
-    Simple JavaScript testing framework for browsers and node.js</p>
-
-<p><a href="https://github.com/facebook/jest" class="github">
+<a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
+    Simple JavaScript testing framework for browsers and node.js
+<a href="https://github.com/facebook/jest" class="github">
     <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/facebook/jest">facebook/jest</a>
-:
+<a href="https://github.com/facebook/jest">facebook/jest</a>:
     Delightful JavaScript Testing.</p>
 
 <h1 id="automatic-migration">Automatic Migration</h1>
@@ -12338,8 +12264,7 @@ Jest does seem to have more ⭐⭐⭐</p>
 <p><a href="https://github.com/skovhus/jest-codemods" class="github">
     <img src="https://img.shields.io/github/stars/skovhus/jest-codemods.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/skovhus/jest-codemods">skovhus/jest-codemods</a>
-:
+<a href="https://github.com/skovhus/jest-codemods">skovhus/jest-codemods</a>:
     Codemods for migrating to Jest</p>
 
 <p>Instead of going through the entire Jest documentation to find out
@@ -12728,8 +12653,7 @@ Useless info:
 <p><a href="https://github.com/jest-community/vscode-jest" class="github">
     <img src="https://img.shields.io/github/stars/jest-community/vscode-jest.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jest-community/vscode-jest">jest-community/vscode-jest</a>
-:
+<a href="https://github.com/jest-community/vscode-jest">jest-community/vscode-jest</a>:
     The optimal flow for Jest based testing in VS Code</p>
 
 <p><strong>How it looks</strong>:</p>
@@ -12850,15 +12774,12 @@ Which is basically on equal footing with EPPlus.</p>
 <p><a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>
-:
-    The old and free one</p>
-
-<p><a href="https://github.com/EPPlusSoftware/EPPlus" class="github">
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
+    The old and free one
+<a href="https://github.com/EPPlusSoftware/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>
-:
+<a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>:
     The new and not so free one</p>
 
 <h2 id="forks">Forks</h2>
@@ -12870,15 +12791,12 @@ EPPlus misleading “Deprecated” notice.</p>
 <p><a href="https://github.com/rimland/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/rimland/EPPlus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/rimland/EPPlus">rimland/EPPlus</a>
-:
-    Most stars but no activity in the last 5 years</p>
-
-<p><a href="https://github.com/visualon/epplus" class="github">
+<a href="https://github.com/rimland/EPPlus">rimland/EPPlus</a>:
+    Most stars but no activity in the last 5 years
+<a href="https://github.com/visualon/epplus" class="github">
     <img src="https://img.shields.io/github/stars/visualon/epplus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/visualon/epplus">visualon/epplus</a>
-:
+<a href="https://github.com/visualon/epplus">visualon/epplus</a>:
     Actively maintained up till .NET 8 support but deprecated since May 28, 2025</p>
 
 <p>One thing that I did stumble upon with the classic EPPlus is that it has a dependency on <code>System.Drawing.Common</code>
@@ -12891,29 +12809,22 @@ which only works on Windows. The non-free version has removed this dependency.</
 <p><a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>
-:
-    .NET library for reading, manipulating and writing Excel files</p>
-
-<p><a href="https://github.com/nissl-lab/npoi" class="github">
+<a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
+    .NET library for reading, manipulating and writing Excel files
+<a href="https://github.com/nissl-lab/npoi" class="github">
     <img src="https://img.shields.io/github/stars/nissl-lab/npoi.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/nissl-lab/npoi">nissl-lab/npoi</a>
-:
-    .NET library to read/write Office formats</p>
-
-<p><a href="https://github.com/mini-software/MiniExcel" class="github">
+<a href="https://github.com/nissl-lab/npoi">nissl-lab/npoi</a>:
+    .NET library to read/write Office formats
+<a href="https://github.com/mini-software/MiniExcel" class="github">
     <img src="https://img.shields.io/github/stars/mini-software/MiniExcel.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/mini-software/MiniExcel">mini-software/MiniExcel</a>
-:
-    Easy Excel .NET helper to import/export/template spreadsheets</p>
-
-<p><a href="https://github.com/mganss/ExcelMapper" class="github">
+<a href="https://github.com/mini-software/MiniExcel">mini-software/MiniExcel</a>:
+    Easy Excel .NET helper to import/export/template spreadsheets
+<a href="https://github.com/mganss/ExcelMapper" class="github">
     <img src="https://img.shields.io/github/stars/mganss/ExcelMapper.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/mganss/ExcelMapper">mganss/ExcelMapper</a>
-:
+<a href="https://github.com/mganss/ExcelMapper">mganss/ExcelMapper</a>:
     An Excel to object mapper.</p>
 
 <h2 id="if-you-just-need-to-read">If you just need to read</h2>
@@ -12921,8 +12832,7 @@ which only works on Windows. The non-free version has removed this dependency.</
 <p><a href="https://github.com/ExcelDataReader/ExcelDataReader" class="github">
     <img src="https://img.shields.io/github/stars/ExcelDataReader/ExcelDataReader.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ExcelDataReader/ExcelDataReader">ExcelDataReader/ExcelDataReader</a>
-:
+<a href="https://github.com/ExcelDataReader/ExcelDataReader">ExcelDataReader/ExcelDataReader</a>:
     Lightweight C# library for reading Excel files</p>
 
 <h2 id="low-level">Low Level</h2>
@@ -12932,10 +12842,8 @@ which only works on Windows. The non-free version has removed this dependency.</
 <p><a href="https://github.com/dotnet/Open-XML-SDK" class="github">
     <img src="https://img.shields.io/github/stars/dotnet/Open-XML-SDK.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>
-:
+<a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>:
     Open XML SDK by Microsoft.</p>
-
 ]]></body>
   </post>
   <post>
@@ -13540,132 +13448,45 @@ workaround for properties being “all over the place”.</p>
       <block1><![CDATA[<h1 id="basic-editing">Basic Editing</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Up/Down</kbd>
-			
-		
-
-		
-	
-	: Move Line Up/Down
+			<kbd>Up/Down</kbd>: Move Line Up/Down
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Up/Down</kbd>
-			
-		
-
-		
-	
-	: Copy Line Down/Up
+			<kbd>Up/Down</kbd>: Copy Line Down/Up
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-	
-	: Delete Line
+			<kbd>K</kbd>: Delete Line
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>L</kbd>
-			
-		
-
-		
-	
-	: Select whole line (expandLineSelection)
+			<kbd>L</kbd>: Select whole line (expandLineSelection)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Left/Right</kbd>
-			
-		
-
-		
-	
-	: Shrink/Expand Selection
+			<kbd>Left/Right</kbd>: Shrink/Expand Selection
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>/</kbd>
-			
-		
-
-		
-	
-	: Toggle Line Comment
+			<kbd>/</kbd>: Toggle Line Comment
 </div>]]></block1>
       <body><![CDATA[<p>Custom shortcuts:</p>
 <ul>
@@ -13739,177 +13560,48 @@ workaround for properties being “all over the place”.</p>
 <h1 id="file-management">File Management</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>S</kbd>
-			
-		
-
-		
-	
-	: File: Save All
+			<kbd>K</kbd>,
+			<kbd>S</kbd>: File: Save All
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>W</kbd>
-			
-		
-
-		
-	
-	: View: Close All Editors
+			<kbd>W</kbd>: View: Close All Editors
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: File: Close Workspace
+			<kbd>K</kbd>,
+			<kbd>F</kbd>: File: Close Workspace
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>O</kbd>
-			
-		
-
-		
-	
-	: File: Open Folder...
+			<kbd>O</kbd>: File: Open Folder...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>M</kbd>
-			
-		
-
-		
-	
-	: Change language mode
+			<kbd>K</kbd>,
+			<kbd>M</kbd>: Change language mode
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Z</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Word Wrap
+			<kbd>Z</kbd>: View: Toggle Word Wrap
 </div>
 
 <p><br />
@@ -13921,572 +13613,177 @@ Custom shortcut:</p>
 <h1 id="navigation">Navigation</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Quick Open
+			<kbd>P</kbd>: Quick Open
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>R</kbd>
-			
-		
-
-		
-	
-	: File: Open Recent...
+			<kbd>R</kbd>: File: Open Recent...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: View: Show All Editors
+			<kbd>P</kbd>: View: Show All Editors
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>T</kbd>
-			
-		
-
-		
-	
-	: Go to Symbol in Workspace...
+			<kbd>T</kbd>: Go to Symbol in Workspace...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>G</kbd>
-			
-		
-
-		
-	
-	: Go to Line...
+			<kbd>G</kbd>: Go to Line...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>O</kbd>
-			
-		
-
-		
-	
-	: Go to Symbol in File...
+			<kbd>O</kbd>: Go to Symbol in File...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Left/Right</kbd>
-			
-		
-
-		
-	
-	: Go back / forward
+			<kbd>Left/Right</kbd>: Go back / forward
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Q</kbd>
-			
-		
-
-		
-	
-	: Go to Last Edit Location
+			<kbd>Q</kbd>: Go to Last Edit Location
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>µ</kbd>
-			
-		
-
-		
-	
-	: Go to matching Bracket
+			<kbd>µ</kbd>: Go to matching Bracket
 </div>
 
 <h1 id="folding">Folding</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>)</kbd>
-			
-		
-
-		
-	
-	: Fold region
+			<kbd>)</kbd>: Fold region
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>^</kbd>
-			
-		
-
-		
-	
-	: Unfold region
+			<kbd>^</kbd>: Unfold region
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>à</kbd>
-			
-		
-
-		
-	
-	: Fold All
+			<kbd>à</kbd>: Fold All
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>J</kbd>
-			
-		
-
-		
-	
-	: Unfold All
+			<kbd>J</kbd>: Unfold All
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>!</kbd>
-			
-		
-
-		
-	
-	: Fold all regions
+			<kbd>!</kbd>: Fold all regions
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>ç</kbd>
-			
-		
-
-		
-	
-	: Unfold all regions
+			<kbd>ç</kbd>: Unfold all regions
 </div>
 
 <h1 id="intellisense">Intellisense</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Space</kbd>
-			
-		
-
-		
-	
-	: Trigger Suggest
+			<kbd>Space</kbd>: Trigger Suggest
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Go to Definition (Or: Control + Click)
+			<kbd>F12</kbd>: Go to Definition (Or: Control + Click)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Peek Definition
+			<kbd>F12</kbd>: Peek Definition
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Open Definition on the Side (Or: Control + Alt + Click)
+			<kbd>K</kbd>,
+			<kbd>F12</kbd>: Open Definition on the Side (Or: Control + Alt + Click)
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Go to Implementation
+			<kbd>F12</kbd>: Go to Implementation
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Peek Implementation
+			<kbd>F12</kbd>: Peek Implementation
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: Peek References
+			<kbd>F12</kbd>: Peek References
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>F12</kbd>
-			
-		
-
-		
-	
-	: References: Find All References
+			<kbd>F12</kbd>: References: Find All References
 </div>
 
 <pre><code class="language-javascript">{
@@ -14505,27 +13802,11 @@ Custom shortcut:</p>
 <h1 id="snippets">Snippets</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>J</kbd>
-			
-		
-
-		
-	
-	: Insert Snippet
+			<kbd>J</kbd>: Insert Snippet
 </div>
 
 <p><code>Control+Shift+P</code>: “Preferences: Configure User Snippets”</p>
@@ -14550,193 +13831,65 @@ Custom shortcut:</p>
 <h1 id="multi-cursor">Multi Cursor</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Up/Down</kbd>
-			
-		
-
-		
-	
-	: Add Cursor Above/Below
+			<kbd>Up/Down</kbd>: Add Cursor Above/Below
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>I</kbd>
-			
-		
-
-		
-	
-	: Add Cursors to Line Ends
+			<kbd>I</kbd>: Add Cursors to Line Ends
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>D</kbd>
-			
-		
-
-		
-	
-	: Add Selection To Next Find Match
+			<kbd>D</kbd>: Add Selection To Next Find Match
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>U</kbd>
-			
-		
-
-		
-	
-	: Soft Undo (Undo last cursor operation)
+			<kbd>U</kbd>: Soft Undo (Undo last cursor operation)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>D</kbd>
-			
-		
-
-		
-	
-	: Move Last Selection To Next Find Match
+			<kbd>D</kbd>: Move Last Selection To Next Find Match
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>L</kbd>
-			
-		
-
-		
-	
-	: Select All Occurrences of Find Match
+			<kbd>L</kbd>: Select All Occurrences of Find Match
 </div>
 
 <h4 id="mouse-multi-cursor">Mouse Multi Cursor</h4>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Click</kbd>
-			
-		
-
-		
-	
-	: Insert Cursor
+			<kbd>Click</kbd>: Insert Cursor
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Drag</kbd>
-			
-		
-
-		
-	
-	: Column (box) selection
+			<kbd>Drag</kbd>: Column (box) selection
 </div>
 
 <pre><code class="language-javascript">// settings.json
@@ -14748,417 +13901,130 @@ Custom shortcut:</p>
 <h1 id="refactor">Refactor</h1>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F2</kbd>
-			
-		
-
-		
-	
-	: Rename File (Explorer) / Rename Symbol (Editor)
+			<kbd>F2</kbd>: Rename File (Explorer) / Rename Symbol (Editor)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>;</kbd>
-			
-		
-
-		
-	
-	: Quick Fix... (Extract selection to method/constant)
+			<kbd>;</kbd>: Quick Fix... (Extract selection to method/constant)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>R</kbd>
-			
-		
-
-		
-	
-	: Refactor...
+			<kbd>R</kbd>: Refactor...
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>I</kbd>
-			
-		
-
-		
-	
-	: Show Hover
+			<kbd>I</kbd>: Show Hover
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>²</kbd>
-			
-		
-
-		
-	
-	: Toggle Quote (Extension BriteSnow.vscode-toggle-quotes)
+			<kbd>²</kbd>: Toggle Quote (Extension BriteSnow.vscode-toggle-quotes)
 </div>
 
 <h4 id="problems">Problems</h4>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>M</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Problems Panel (Errors, Warnings, ...)
+			<kbd>M</kbd>: View: Toggle Problems Panel (Errors, Warnings, ...)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F8</kbd>
-			
-		
-
-		
-	
-	: Cycle through errors (Shift to reverse cycle)
+			<kbd>F8</kbd>: Cycle through errors (Shift to reverse cycle)
 </div>
 
 <h1 id="editor-groups">Editor Groups</h1>
 
 <div style="margin-bottom: 12px;">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Enter</kbd>
-			
-		
-
-		
-	
-	: In Side Bar Explorer: Open to the Side (Or: Alt + Click)
+			<kbd>Enter</kbd>: In Side Bar Explorer: Open to the Side (Or: Alt + Click)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>Arrow</kbd>
-			
-		
-
-		
-	
-	: View: Move Editor Group
+			<kbd>K</kbd>,
+			<kbd>Arrow</kbd>: View: Move Editor Group
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Left/Right</kbd>
-			
-		
-
-		
-	
-	: View: Focus Left/Right Editor Group
+			<kbd>Left/Right</kbd>: View: Focus Left/Right Editor Group
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Left/Right</kbd>
-			
-		
-
-		
-	
-	: View: Move Editor into Prev/Next Group
+			<kbd>Left/Right</kbd>: View: Move Editor into Prev/Next Group
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>PageUp/Down</kbd>
-			
-		
-
-		
-	
-	: View: Move Editor (Tab) Left/Right
+			<kbd>PageUp/Down</kbd>: View: Move Editor (Tab) Left/Right
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Tab</kbd>
-			
-		
-
-		
-	
-	: View: Open Next Recently Used Editor
+			<kbd>Tab</kbd>: View: Open Next Recently Used Editor
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>à</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Vertical/Horizontal Editor Layout
+			<kbd>à</kbd>: View: Toggle Vertical/Horizontal Editor Layout
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>1 / 2 / 3</kbd>
-			
-		
-
-		
-	
-	: View: Focus 1st / 2nd / 3rd Editor Group
+			<kbd>1 / 2 / 3</kbd>: View: Focus 1st / 2nd / 3rd Editor Group
 </div>
 
 <h4 id="closing-them">Closing them</h4>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>W</kbd>
-			
-		
-
-		
-	
-	: View: Close All Editors
+			<kbd>W</kbd>: View: Close All Editors
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>W</kbd>
-			
-		
-
-		
-	
-	: View: Close All Editor Groups
+			<kbd>W</kbd>: View: Close All Editor Groups
 </div>
 
 <p><br />
@@ -15182,85 +14048,28 @@ Custom shortcuts:</p>
 <h1 id="formatting">Formatting</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: Format Document
+			<kbd>F</kbd>: Format Document
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: Format Selection
+			<kbd>F</kbd>: Format Selection
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>O</kbd>
-			
-		
-
-		
-	
-	: Organize Imports
+			<kbd>O</kbd>: Organize Imports
 </div>
 
 <pre><code class="language-javascript">// settings.json
@@ -15281,79 +14090,36 @@ Custom shortcuts:</p>
 <p>I guess this is here because I’ve done mostly markdown - writing this :)</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>V</kbd>
-			
-		
-
-		
-	
-	: Markdown: Open Preview to the Side
+			<kbd>K</kbd>,
+			<kbd>V</kbd>: Markdown: Open Preview to the Side
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>V</kbd>
-			
-		
-
-		
-	
-	: Markdown: Open Preview
+			<kbd>V</kbd>: Markdown: Open Preview
 </div>
 
-<p><br /></p>
-
-<p><a href="https://github.com/yzhang-gh/vscode-markdown" class="github">
+<p><br />
+<a href="https://github.com/yzhang-gh/vscode-markdown" class="github">
     <img src="https://img.shields.io/github/stars/yzhang-gh/vscode-markdown.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/yzhang-gh/vscode-markdown">yzhang-gh/vscode-markdown</a>
-:
-    Add intuitive keyboard shortcuts, TOC, table formatter, autocompletion and more!</p>
-
-<p><a href="https://github.com/davidanson/vscode-markdownlint" class="github">
+<a href="https://github.com/yzhang-gh/vscode-markdown">yzhang-gh/vscode-markdown</a>:
+    Add intuitive keyboard shortcuts, TOC, table formatter, autocompletion and more!
+<a href="https://github.com/davidanson/vscode-markdownlint" class="github">
     <img src="https://img.shields.io/github/stars/davidanson/vscode-markdownlint.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/davidanson/vscode-markdownlint">davidanson/vscode-markdownlint</a>
-:
+<a href="https://github.com/davidanson/vscode-markdownlint">davidanson/vscode-markdownlint</a>:
     Markdown linting and style checking</p>
 
 <p><a href="https://github.com/streetsidesoftware/vscode-spell-checker" class="github">
     <img src="https://img.shields.io/github/stars/streetsidesoftware/vscode-spell-checker.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/streetsidesoftware/vscode-spell-checker">streetsidesoftware/vscode-spell-checker</a>
-:
+<a href="https://github.com/streetsidesoftware/vscode-spell-checker">streetsidesoftware/vscode-spell-checker</a>:
     Source code spell checker</p>
 
 <pre><code class="language-javascript">{
@@ -15407,62 +14173,21 @@ Custom shortcuts:</p>
 </code></pre>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>R</kbd>
-			
-		
-
-		
-	
-	: Help: Keyboard Shortcuts Reference (pdf)
+			<kbd>R</kbd>: Help: Keyboard Shortcuts Reference (pdf)
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Show All Commands, and follow with:
+			<kbd>P</kbd>: Show All Commands, and follow with:
 </div>
 
 <ul>
@@ -15499,39 +14224,21 @@ Custom shortcuts:</p>
 <p>Extensions are stored in <code>%USERPROFILE%\.vscode\extensions</code>.</p>
 
 <p>I’ve got my own dotfiles that include settings but VSCode got you covered with a plugin
-that saves it as a <a href="https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba">Github GIST (example)</a>.</p>
-
-<p><a href="https://github.com/shanalikhan/code-settings-sync" class="github">
+that saves it as a <a href="https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba">Github GIST (example)</a>.
+<a href="https://github.com/shanalikhan/code-settings-sync" class="github">
     <img src="https://img.shields.io/github/stars/shanalikhan/code-settings-sync.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/shanalikhan/code-settings-sync">shanalikhan/code-settings-sync</a>
-:
+<a href="https://github.com/shanalikhan/code-settings-sync">shanalikhan/code-settings-sync</a>:
     Synchronize your Settings using Github GIST</p>
 
 <h2 id="making-it-your-own">Making it your own</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Show All Commands
+			<kbd>P</kbd>: Show All Commands
 </div>
 
 <ul>
@@ -15591,90 +14298,24 @@ if you want to add it later on (check the path inside the reg).</p>
 <h4 id="start-from-vscode">Start from VSCode</h4>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>O</kbd>
-			
-		
-
-		
-	
-	: Open active file in new instance
+			<kbd>K</kbd>,
+			<kbd>O</kbd>: Open active file in new instance
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>R</kbd>
-			
-		
-
-		
-	
-	: Reveal active file in Windows explorer
+			<kbd>K</kbd>,
+			<kbd>R</kbd>: Reveal active file in Windows explorer
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Copy path of active file
+			<kbd>K</kbd>,
+			<kbd>P</kbd>: Copy path of active file
 </div>
 
 <h4 id="start-from-git">Start from git</h4>
@@ -15699,66 +14340,21 @@ if you want to add it later on (check the path inside the reg).</p>
 <p><img src="/assets/blog-images/vscode-window-layout.png" alt="alt" class="img-responsive" /></p>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F11</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Full Screen
+			<kbd>F11</kbd>: View: Toggle Full Screen
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Q</kbd>
-			
-		
-
-		
-	
-	: View: Quick Open View
+			<kbd>Q</kbd>: View: Quick Open View
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>Z</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Zen Mode (2xESC to exit)
+			<kbd>K</kbd>,
+			<kbd>Z</kbd>: View: Toggle Zen Mode (2xESC to exit)
 </div>
 
 <p>Some Zen Mode settings:</p>
@@ -15774,99 +14370,35 @@ if you want to add it later on (check the path inside the reg).</p>
 <h2 id="activity-bar">Activity Bar</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>E</kbd>
-			
-		
-
-		
-	
-	: Explorer
+			<kbd>E</kbd>: Explorer
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>G</kbd>
-			
-		
-
-		
-	
-	: Source Control
+			<kbd>G</kbd>: Source Control
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>D</kbd>
-			
-		
-
-		
-	
-	: Debug
+			<kbd>D</kbd>: Debug
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>X</kbd>
-			
-		
-
-		
-	
-	: Extensions
+			<kbd>X</kbd>: Extensions
 </div>
 
 <p><br />
@@ -15878,41 +14410,15 @@ Custom shortcut:</p>
 <h2 id="side-bar">Side Bar</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>B</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Side Bar Visibility
+			<kbd>B</kbd>: View: Toggle Side Bar Visibility
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>à</kbd>
-			
-		
-
-		
-	
-	: View: Focus into Side Bar
+			<kbd>à</kbd>: View: Focus into Side Bar
 </div>
 
 <pre><code class="language-javascript">{
@@ -15943,89 +14449,31 @@ Custom shortcut:</p>
 <h2 id="panels">Panels</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>J</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Panel
+			<kbd>J</kbd>: View: Toggle Panel
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>Y</kbd>
-			
-		
-
-		
-	
-	: View: Debug Console
+			<kbd>Y</kbd>: View: Debug Console
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>ù</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Integrated Terminal
+			<kbd>ù</kbd>: View: Toggle Integrated Terminal
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>U</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Output
+			<kbd>U</kbd>: View: Toggle Output
 </div>
 
 <p><br />
@@ -16038,89 +14486,31 @@ Custom shortcuts:</p>
 <h1 id="search">Search</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: Find (Navigate with F3)
+			<kbd>F</kbd>: Find (Navigate with F3)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: View: Show Search (Navigate with F4)
+			<kbd>F</kbd>: View: Show Search (Navigate with F4)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>H</kbd>
-			
-		
-
-		
-	
-	: Replace
+			<kbd>H</kbd>: Replace
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>H</kbd>
-			
-		
-
-		
-	
-	: Search: Replace in Files
+			<kbd>H</kbd>: Search: Replace in Files
 </div>
 
 <p><br />
@@ -16184,70 +14574,25 @@ There is <a href="https://www.growingwiththeweb.com/2017/03/mastering-vscodes-te
 pretty blog post for more Terminal info.</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>ù</kbd>
-			
-		
-
-		
-	
-	: View: Toggle Integrated Terminal
+			<kbd>ù</kbd>: View: Toggle Integrated Terminal
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>ù</kbd>
-			
-		
-
-		
-	
-	: Terminal: Create New Integrated Terminal
+			<kbd>ù</kbd>: Terminal: Create New Integrated Terminal
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>5</kbd>
-			
-		
-
-		
-	
-	: Terminal: Split Terminal
+			<kbd>5</kbd>: Terminal: Split Terminal
 </div>
 
 <h4 id="integrate-cmder-into-vscode">Integrate Cmder into VSCode</h4>
@@ -16295,27 +14640,11 @@ project I used Vue on, well… the VSCode plugins were just superb while ST3 fai
 to have you install yet a few more extensions 😃</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>X</kbd>
-			
-		
-
-		
-	
-	: Search Extensions in Marketplace
+			<kbd>X</kbd>: Search Extensions in Marketplace
 </div>
 
 <p>The builtin search functionality is pretty slick. You will usually be able to find what you want.
@@ -16332,37 +14661,12 @@ Click to configure it :)</p>
 <h4 id="themes">Themes</h4>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>K</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>K</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>T</kbd>
-			
-		
-
-		
-	
-	: Preferences: Color Theme (Search: @category:themes)
+			<kbd>T</kbd>: Preferences: Color Theme (Search: @category:themes)
 </div>
 
 <p>Also: <code>Preferences: File Icon Theme</code></p>
@@ -16374,15 +14678,12 @@ Click to configure it :)</p>
 <p><a href="https://github.com/ritwickdey/vscode-live-server" class="github">
     <img src="https://img.shields.io/github/stars/ritwickdey/vscode-live-server.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ritwickdey/vscode-live-server">ritwickdey/vscode-live-server</a>
-:
-    Launch a development local Server with live reload feature for static &amp; dynamic pages.</p>
-
-<p><a href="https://github.com/Huachao/vscode-restclient" class="github">
+<a href="https://github.com/ritwickdey/vscode-live-server">ritwickdey/vscode-live-server</a>:
+    Launch a development local Server with live reload feature for static &amp; dynamic pages.
+<a href="https://github.com/Huachao/vscode-restclient" class="github">
     <img src="https://img.shields.io/github/stars/Huachao/vscode-restclient.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Huachao/vscode-restclient">Huachao/vscode-restclient</a>
-:
+<a href="https://github.com/Huachao/vscode-restclient">Huachao/vscode-restclient</a>:
     REST Client</p>
 
 <h4 id="for-the-web">For The Web</h4>
@@ -16390,66 +14691,49 @@ Click to configure it :)</p>
 <p><a href="https://github.com/ChristianKohler/PathIntellisense" class="github">
     <img src="https://img.shields.io/github/stars/ChristianKohler/PathIntellisense.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ChristianKohler/PathIntellisense">ChristianKohler/PathIntellisense</a>
-:
-    Autocompletes filenames</p>
-
-<p><a href="https://github.com/ChristianKohler/NpmIntellisense" class="github">
+<a href="https://github.com/ChristianKohler/PathIntellisense">ChristianKohler/PathIntellisense</a>:
+    Autocompletes filenames
+<a href="https://github.com/ChristianKohler/NpmIntellisense" class="github">
     <img src="https://img.shields.io/github/stars/ChristianKohler/NpmIntellisense.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/ChristianKohler/NpmIntellisense">ChristianKohler/NpmIntellisense</a>
-:
-    Autocomplete npm modules in import statements</p>
-
-<p><a href="https://github.com/wix/vscode-import-cost" class="github">
+<a href="https://github.com/ChristianKohler/NpmIntellisense">ChristianKohler/NpmIntellisense</a>:
+    Autocomplete npm modules in import statements
+<a href="https://github.com/wix/vscode-import-cost" class="github">
     <img src="https://img.shields.io/github/stars/wix/vscode-import-cost.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/wix/vscode-import-cost">wix/vscode-import-cost</a>
-:
-    Display the import size of the package you are importing inside the code editor</p>
-
-<p><a href="https://github.com/lannonbr/vscode-js-annotations" class="github">
+<a href="https://github.com/wix/vscode-import-cost">wix/vscode-import-cost</a>:
+    Display the import size of the package you are importing inside the code editor
+<a href="https://github.com/lannonbr/vscode-js-annotations" class="github">
     <img src="https://img.shields.io/github/stars/lannonbr/vscode-js-annotations.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/lannonbr/vscode-js-annotations">lannonbr/vscode-js-annotations</a>
-:
-    Add parameter name annotations to function calls</p>
-
-<p><a href="https://github.com/britesnow/vscode-toggle-quotes" class="github">
+<a href="https://github.com/lannonbr/vscode-js-annotations">lannonbr/vscode-js-annotations</a>:
+    Add parameter name annotations to function calls
+<a href="https://github.com/britesnow/vscode-toggle-quotes" class="github">
     <img src="https://img.shields.io/github/stars/britesnow/vscode-toggle-quotes.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/britesnow/vscode-toggle-quotes">britesnow/vscode-toggle-quotes</a>
-:
+<a href="https://github.com/britesnow/vscode-toggle-quotes">britesnow/vscode-toggle-quotes</a>:
     Simple cycling quotes toggler</p>
 
-<p><br /></p>
-
-<p><a href="https://github.com/vincaslt/vscode-highlight-matching-tag" class="github">
+<p><br />
+<a href="https://github.com/vincaslt/vscode-highlight-matching-tag" class="github">
     <img src="https://img.shields.io/github/stars/vincaslt/vscode-highlight-matching-tag.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vincaslt/vscode-highlight-matching-tag">vincaslt/vscode-highlight-matching-tag</a>
-:
-    Highlights matching opening or closing Html tags</p>
-
-<p><a href="https://github.com/zignd/html-css-class-completion" class="github">
+<a href="https://github.com/vincaslt/vscode-highlight-matching-tag">vincaslt/vscode-highlight-matching-tag</a>:
+    Highlights matching opening or closing Html tags
+<a href="https://github.com/zignd/html-css-class-completion" class="github">
     <img src="https://img.shields.io/github/stars/zignd/html-css-class-completion.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/zignd/html-css-class-completion">zignd/html-css-class-completion</a>
-:
-    CSS class name completion for the HTML class attribute based on the CSS files in your workspace</p>
-
-<p><a href="https://github.com/pranaygp/vscode-css-peek" class="github">
+<a href="https://github.com/zignd/html-css-class-completion">zignd/html-css-class-completion</a>:
+    CSS class name completion for the HTML class attribute based on the CSS files in your workspace 
+<a href="https://github.com/pranaygp/vscode-css-peek" class="github">
     <img src="https://img.shields.io/github/stars/pranaygp/vscode-css-peek.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/pranaygp/vscode-css-peek">pranaygp/vscode-css-peek</a>
-:
-    Peek at CSS definitions from a class or id tag in Html</p>
-
-<p><a href="https://github.com/leehooi/vs-color-picker" class="github">
+<a href="https://github.com/pranaygp/vscode-css-peek">pranaygp/vscode-css-peek</a>:
+    Peek at CSS definitions from a class or id tag in Html
+<a href="https://github.com/leehooi/vs-color-picker" class="github">
     <img src="https://img.shields.io/github/stars/leehooi/vs-color-picker.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/leehooi/vs-color-picker">leehooi/vs-color-picker</a>
-:
+<a href="https://github.com/leehooi/vs-color-picker">leehooi/vs-color-picker</a>:
     Select any color on the screen</p>
 
 <p>And all linters, formatters etc you can think of…</p>
@@ -16459,36 +14743,27 @@ Click to configure it :)</p>
 <p><a href="https://github.com/oderwat/vscode-indent-rainbow" class="github">
     <img src="https://img.shields.io/github/stars/oderwat/vscode-indent-rainbow.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/oderwat/vscode-indent-rainbow">oderwat/vscode-indent-rainbow</a>
-:
-    Show indentation with a faint rainbow colored background</p>
-
-<p><a href="https://github.com/aaron-bond/better-comments" class="github">
+<a href="https://github.com/oderwat/vscode-indent-rainbow">oderwat/vscode-indent-rainbow</a>:
+    Show indentation with a faint rainbow colored background
+<a href="https://github.com/aaron-bond/better-comments" class="github">
     <img src="https://img.shields.io/github/stars/aaron-bond/better-comments.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/aaron-bond/better-comments">aaron-bond/better-comments</a>
-:
-    Make TODO’s really shout out 😃</p>
-
-<p><a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2" class="github">
+<a href="https://github.com/aaron-bond/better-comments">aaron-bond/better-comments</a>:
+    Make TODO’s really shout out 😃
+<a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2" class="github">
     <img src="https://img.shields.io/github/stars/CoenraadS/Bracket-Pair-Colorizer-2.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2">CoenraadS/Bracket-Pair-Colorizer-2</a>
-:
-    Bracket Colorizer</p>
-
-<p><a href="https://github.com/johnpapa/vscode-peacock" class="github">
+<a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2">CoenraadS/Bracket-Pair-Colorizer-2</a>:
+    Bracket Colorizer
+<a href="https://github.com/johnpapa/vscode-peacock" class="github">
     <img src="https://img.shields.io/github/stars/johnpapa/vscode-peacock.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/johnpapa/vscode-peacock">johnpapa/vscode-peacock</a>
-:
-    Subtly change the color of your Visual Studio Code workspace, ideal for multi VSCode instances.</p>
-
-<p><a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer" class="github">
+<a href="https://github.com/johnpapa/vscode-peacock">johnpapa/vscode-peacock</a>:
+    Subtly change the color of your Visual Studio Code workspace, ideal for multi VSCode instances.
+<a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer" class="github">
     <img src="https://img.shields.io/github/stars/IBM-Cloud/vscode-log-output-colorizer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer">IBM-Cloud/vscode-log-output-colorizer</a>
-:
+<a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer">IBM-Cloud/vscode-log-output-colorizer</a>:
     Syntax colorization for both the output/debug/extensions panel and *.log files.</p>
 
 <pre><code class="language-javascript">{
@@ -16814,14 +15089,11 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <toc>
       <title>🎇 Tutorial</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/robo-code/robocode" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/robo-code/robocode" class="github">
     <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>
-:
+<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
     Build the best - destroy the rest!</p>
-
 ]]></excerpt>
       <block1><![CDATA[<h1 id="game-physics">Game Physics</h1>
 
@@ -16977,14 +15249,11 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <toc>
       <title>💣 Installation</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/robo-code/robocode" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/robo-code/robocode" class="github">
     <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>
-:
+<a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
     Build the best - destroy the rest!</p>
-
 ]]></excerpt>
       <block1><![CDATA[<h1 id="install-robocode">Install Robocode</h1>
 
@@ -17153,8 +15422,7 @@ scripts and tools to help you try make some sense of what is going on.</p>
 <p><a href="https://github.com/Uberi/Yunit" class="github">
     <img src="https://img.shields.io/github/stars/Uberi/Yunit.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Uberi/Yunit">Uberi/Yunit</a>
-:
+<a href="https://github.com/Uberi/Yunit">Uberi/Yunit</a>:
     Nothing beats a test runner: Uberi and infogulch created one.</p>
 
 <p>Our fork of the super simple Yunit Autohotkey testing framework
@@ -17449,8 +15717,7 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
 <p><a href="https://github.com/emscripten-core/emscripten" class="github">
     <img src="https://img.shields.io/github/stars/emscripten-core/emscripten.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/emscripten-core/emscripten">emscripten-core/emscripten</a>
-:
+<a href="https://github.com/emscripten-core/emscripten">emscripten-core/emscripten</a>:
     An LLVM-to-Web Compiler</p>
 
 <p>Brings your existing C/C++ applications to the web (ex: Autocad, Game Engines like Unity).
@@ -17586,21 +15853,16 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
     <toc>
       <title>👓 AVA Tutorial</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/avajs/ava" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/avajs/ava" class="github">
     <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/avajs/ava">avajs/ava</a>
-:
+<a href="https://github.com/avajs/ava">avajs/ava</a>:
     🚀 Testing can be a drag. AVA helps you get it done.</p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/avajs/ava" class="github">
+      <body><![CDATA[<p><a href="https://github.com/avajs/ava" class="github">
     <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/avajs/ava">avajs/ava</a>
-:
+<a href="https://github.com/avajs/ava">avajs/ava</a>:
     🚀 Testing can be a drag. AVA helps you get it done.</p>
 
 <p><br />
@@ -17722,8 +15984,7 @@ test('Built-in', t =&gt; {
 <p><a href="https://github.com/power-assert-js/power-assert" class="github">
     <img src="https://img.shields.io/github/stars/power-assert-js/power-assert.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/power-assert-js/power-assert">power-assert-js/power-assert</a>
-:
+<a href="https://github.com/power-assert-js/power-assert">power-assert-js/power-assert</a>:
     Very fancy assertion failure reporting</p>
 
 <pre><code class="language-javascript">// Outputs failures with power-assert when value is falsy
@@ -17831,8 +16092,7 @@ npx ava -m='startWith*' -m='!*notContains*' -m='exact'
 <p><a href="https://github.com/sindresorhus/matcher" class="github">
     <img src="https://img.shields.io/github/stars/sindresorhus/matcher.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/sindresorhus/matcher">sindresorhus/matcher</a>
-:
+<a href="https://github.com/sindresorhus/matcher">sindresorhus/matcher</a>:
     Matcher used for <code>--match</code></p>
 
 <h4 id="other-cli-parameters">Other CLI parameters</h4>
@@ -18048,21 +16308,16 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
     <toc>
       <title>🎑 Vue.js</title>
     </toc>
-    <excerpt><![CDATA[
-<p><a href="https://github.com/vuejs/vue" class="github">
+    <excerpt><![CDATA[<p><a href="https://github.com/vuejs/vue" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vue">vuejs/vue</a>
-:
+<a href="https://github.com/vuejs/vue">vuejs/vue</a>:
     Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
-
 ]]></excerpt>
-      <body><![CDATA[
-<p><a href="https://github.com/vuejs/vue" class="github">
+      <body><![CDATA[<p><a href="https://github.com/vuejs/vue" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vue">vuejs/vue</a>
-:
+<a href="https://github.com/vuejs/vue">vuejs/vue</a>:
     Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
 
 <h4 id="why-vue">Why Vue</h4>
@@ -18082,40 +16337,30 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
 <!--more-->
 
 <h4 id="official-projects">Official Projects</h4>
-
 <p><a href="https://github.com/vuejs/vue-router" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue-router.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vue-router">vuejs/vue-router</a>
-:
-    The official router for Vue.js.</p>
-
-<p><a href="https://github.com/vuejs/vuex" class="github">
+<a href="https://github.com/vuejs/vue-router">vuejs/vue-router</a>:
+    The official router for Vue.js. 
+<a href="https://github.com/vuejs/vuex" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vuex.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vuex">vuejs/vuex</a>
-:
-    Centralized State Management for Vue.js.</p>
-
-<p><a href="https://github.com/vuejs/vue-cli" class="github">
+<a href="https://github.com/vuejs/vuex">vuejs/vuex</a>:
+    Centralized State Management for Vue.js.
+<a href="https://github.com/vuejs/vue-cli" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue-cli.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vue-cli">vuejs/vue-cli</a>
-:
-    Standard Tooling for Vue.js Development</p>
-
-<p><a href="https://github.com/vuejs/vue-devtools" class="github">
+<a href="https://github.com/vuejs/vue-cli">vuejs/vue-cli</a>:
+    Standard Tooling for Vue.js Development
+<a href="https://github.com/vuejs/vue-devtools" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue-devtools.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vue-devtools">vuejs/vue-devtools</a>
-:
-    ⚙ Chrome and Firefox devtools extension for debugging Vue.js applications.</p>
-
-<p><a href="https://github.com/vuejs/vetur" class="github">
+<a href="https://github.com/vuejs/vue-devtools">vuejs/vue-devtools</a>:
+    ⚙ Chrome and Firefox devtools extension for debugging Vue.js applications.
+<a href="https://github.com/vuejs/vetur" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vetur.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuejs/vetur">vuejs/vetur</a>
-:
+<a href="https://github.com/vuejs/vetur">vuejs/vetur</a>:
     Vue tooling for VS Code.</p>
 
 <h1 id="hello-vue">Hello Vue</h1>
@@ -18522,15 +16767,12 @@ new Vue({
 <p><a href="https://github.com/vuelidate/vuelidate" class="github">
     <img src="https://img.shields.io/github/stars/vuelidate/vuelidate.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/vuelidate/vuelidate">vuelidate/vuelidate</a>
-:
-    Simple, lightweight model-based validation for Vue.js</p>
-
-<p><a href="https://github.com/baianat/vee-validate" class="github">
+<a href="https://github.com/vuelidate/vuelidate">vuelidate/vuelidate</a>:
+    Simple, lightweight model-based validation for Vue.js
+<a href="https://github.com/baianat/vee-validate" class="github">
     <img src="https://img.shields.io/github/stars/baianat/vee-validate.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/baianat/vee-validate">baianat/vee-validate</a>
-:
+<a href="https://github.com/baianat/vee-validate">baianat/vee-validate</a>:
     Template Based Validation Framework for Vue.js</p>
 
 <h4 id="caveat">Caveat</h4>
@@ -18652,8 +16894,7 @@ b.format('YYYY-MM-DD HH:mm:ss');
 <p><a href="https://github.com/moment/moment" class="github">
     <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/moment/moment">moment/moment</a>
-:
+<a href="https://github.com/moment/moment">moment/moment</a>:
     Parse, validate, manipulate, and display dates in javascript.</p>
 
 <h1 id="install">Install</h1>
@@ -19144,36 +17385,27 @@ moment.parseZone('2019-04-19T20:16:28+05:00');
 <p><a href="https://github.com/rotaready/moment-range" class="github">
     <img src="https://img.shields.io/github/stars/rotaready/moment-range.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/rotaready/moment-range">rotaready/moment-range</a>
-:
-    Fancy date ranges for Moment.js</p>
-
-<p><a href="https://github.com/icambron/twix.js" class="github">
+<a href="https://github.com/rotaready/moment-range">rotaready/moment-range</a>:
+    Fancy date ranges for Moment.js
+<a href="https://github.com/icambron/twix.js" class="github">
     <img src="https://img.shields.io/github/stars/icambron/twix.js.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/icambron/twix.js">icambron/twix.js</a>
-:
-    A date range plugin for moment.js</p>
-
-<p><a href="https://github.com/c-trimm/moment-recur" class="github">
+<a href="https://github.com/icambron/twix.js">icambron/twix.js</a>:
+    A date range plugin for moment.js
+<a href="https://github.com/c-trimm/moment-recur" class="github">
     <img src="https://img.shields.io/github/stars/c-trimm/moment-recur.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/c-trimm/moment-recur">c-trimm/moment-recur</a>
-:
-    A momentjs plugin for matching and generating recurring dates.</p>
-
-<p><a href="https://github.com/jsmreese/moment-duration-format" class="github">
+<a href="https://github.com/c-trimm/moment-recur">c-trimm/moment-recur</a>:
+    A momentjs plugin for matching and generating recurring dates.
+<a href="https://github.com/jsmreese/moment-duration-format" class="github">
     <img src="https://img.shields.io/github/stars/jsmreese/moment-duration-format.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jsmreese/moment-duration-format">jsmreese/moment-duration-format</a>
-:
-    Format function plugin for the Moment Duration object.</p>
-
-<p><a href="https://github.com/jmeas/moment-business" class="github">
+<a href="https://github.com/jsmreese/moment-duration-format">jsmreese/moment-duration-format</a>:
+    Format function plugin for the Moment Duration object.
+<a href="https://github.com/jmeas/moment-business" class="github">
     <img src="https://img.shields.io/github/stars/jmeas/moment-business.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jmeas/moment-business">jmeas/moment-business</a>
-:
+<a href="https://github.com/jmeas/moment-business">jmeas/moment-business</a>:
     Utilities for Western workweeks (addWeekDays, isWeekDay, isWeekendDay etc)</p>
 
 <h1 id="alternatives">Alternatives</h1>
@@ -19186,8 +17418,7 @@ There is a reason <code>Date</code> is not covered in <a href="http://shop.oreil
 <p><a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" class="github">
     <img src="https://img.shields.io/github/stars/you-dont-need/You-Dont-Need-Momentjs.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs">you-dont-need/You-Dont-Need-Momentjs</a>
-:
+<a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs">you-dont-need/You-Dont-Need-Momentjs</a>:
     List of functions which you can use to replace moment.js + ESLint Plugin</p>
 
 <h4 id="replace-moment-with-a-smaller-project">Replace Moment with a smaller project</h4>
@@ -19195,36 +17426,27 @@ There is a reason <code>Date</code> is not covered in <a href="http://shop.oreil
 <p><a href="https://github.com/moment/moment" class="github">
     <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/moment/moment">moment/moment</a>
-:
-    This one :)</p>
-
-<p><a href="https://github.com/moment/luxon" class="github">
+<a href="https://github.com/moment/moment">moment/moment</a>:
+    This one :)
+<a href="https://github.com/moment/luxon" class="github">
     <img src="https://img.shields.io/github/stars/moment/luxon.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/moment/luxon">moment/luxon</a>
-:
-    A library for working with dates and times in JS (7kb)</p>
-
-<p><a href="https://github.com/date-fns/date-fns" class="github">
+<a href="https://github.com/moment/luxon">moment/luxon</a>:
+    A library for working with dates and times in JS (7kb)
+<a href="https://github.com/date-fns/date-fns" class="github">
     <img src="https://img.shields.io/github/stars/date-fns/date-fns.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/date-fns/date-fns">date-fns/date-fns</a>
-:
-    ⌛ Modern JavaScript date utility library ⌛ (13kb). Functional and tree shakeable!</p>
-
-<p><a href="https://github.com/iamkun/dayjs" class="github">
+<a href="https://github.com/date-fns/date-fns">date-fns/date-fns</a>:
+    ⌛ Modern JavaScript date utility library ⌛ (13kb). Functional and tree shakeable!
+<a href="https://github.com/iamkun/dayjs" class="github">
     <img src="https://img.shields.io/github/stars/iamkun/dayjs.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/iamkun/dayjs">iamkun/dayjs</a>
-:
-    ⏰ Immutable date library alternative to Moment.js with the same modern API (2kb)</p>
-
-<p><a href="https://github.com/hustcc/timeago.js" class="github">
+<a href="https://github.com/iamkun/dayjs">iamkun/dayjs</a>:
+    ⏰ Immutable date library alternative to Moment.js with the same modern API (2kb)
+<a href="https://github.com/hustcc/timeago.js" class="github">
     <img src="https://img.shields.io/github/stars/hustcc/timeago.js.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/hustcc/timeago.js">hustcc/timeago.js</a>
-:
+<a href="https://github.com/hustcc/timeago.js">hustcc/timeago.js</a>:
     A tiny library used to format date with <code>*** time ago</code> statement. eg: ‘3 hours ago’. No dependency &amp; localization &amp; tiny. (2kb)</p>
 
 <h4 id="steven-levithan">Steven Levithan</h4>
@@ -19235,8 +17457,7 @@ adds a <code>Date.prototype.format</code> function. (2kb)</p>
 <p><a href="https://github.com/felixge/node-dateformat" class="github">
     <img src="https://img.shields.io/github/stars/felixge/node-dateformat.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/felixge/node-dateformat">felixge/node-dateformat</a>
-:
+<a href="https://github.com/felixge/node-dateformat">felixge/node-dateformat</a>:
     A node.js package for Steven Levithan’s excellent dateFormat() function.</p>
 
 <h2 id="sticking-with-date">Sticking with Date</h2>
@@ -19419,8 +17640,7 @@ and are pointed to a third party package instead:</p>
 <p><a href="https://github.com/newren/git-filter-repo" class="github">
     <img src="https://img.shields.io/github/stars/newren/git-filter-repo.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/newren/git-filter-repo">newren/git-filter-repo</a>
-:
+<a href="https://github.com/newren/git-filter-repo">newren/git-filter-repo</a>:
     Quickly rewrite git repository history (filter-branch replacement)</p>
 
 <p><a href="https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html">git-filter-repo(1) docs</a></p>
@@ -19557,27 +17777,11 @@ Runs automatically on certain pages like Google search results, StackExchange qu
 on Github itself and on Package Manager registries.</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>S</kbd>
-			
-		
-
-		
-	
-	: Activate on any other page
+			<kbd>S</kbd>: Activate on any other page
 </div>]]></block1>
       <body><![CDATA[<h1 id="more-examples">More Examples</h1>
 
@@ -20269,37 +18473,12 @@ Add API links:
 <p><strong>Show Shortcut</strong>:</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>C</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>C</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>V</kbd>
-			
-		
-
-		
-	
-	: Description
+			<kbd>V</kbd>: Description
 </div>
 
 <pre><code>{% include kbd k="Control+C,Control+V" l="Description" %}
@@ -20311,8 +18490,7 @@ Add API links:
 <p><a href="https://github.com/Laoujin/dotfiles" class="github">
     <img src="https://img.shields.io/github/stars/Laoujin/dotfiles.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Laoujin/dotfiles">Laoujin/dotfiles</a>
-:
+<a href="https://github.com/Laoujin/dotfiles">Laoujin/dotfiles</a>:
     Windows dotfiles</p>
 
 <pre><code>{% include github-stars.html url="Laoujin/dotfiles" %}
@@ -20573,8 +18751,7 @@ not even }} {{ or %} {%
 <p><a href="https://github.com/jekyll/jemoji" class="github">
     <img src="https://img.shields.io/github/stars/jekyll/jemoji.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jekyll/jemoji">jekyll/jemoji</a>
-:
+<a href="https://github.com/jekyll/jemoji">jekyll/jemoji</a>:
     I give this plugin two :+1:!</p>
 
 <p>Copy ✂️ Paste 📋</p>
@@ -20586,15 +18763,12 @@ not even }} {{ or %} {%
   <li><a href="https://gist.github.com/endolith/157796#file-unicode-official-emojis-txt">Smaller list</a></li>
 </ul>
 
-<p>Find on CLI with</p>
-
-<p><a href="https://github.com/sindresorhus/emoj" class="github">
+<p>Find on CLI with
+<a href="https://github.com/sindresorhus/emoj" class="github">
     <img src="https://img.shields.io/github/stars/sindresorhus/emoj.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/sindresorhus/emoj">sindresorhus/emoj</a>
-:
+<a href="https://github.com/sindresorhus/emoj">sindresorhus/emoj</a>:
     Doesn’t work on Windows though</p>
-
 <pre><code>npm install --global emoj
 emoj [text]
 </code></pre>
@@ -20619,8 +18793,7 @@ emoj [text]
 <p><a href="https://github.com/benbalter/jekyll-avatar" class="github">
     <img src="https://img.shields.io/github/stars/benbalter/jekyll-avatar.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/benbalter/jekyll-avatar">benbalter/jekyll-avatar</a>
-:</p>
+<a href="https://github.com/benbalter/jekyll-avatar">benbalter/jekyll-avatar</a>:</p>
 
 <p><img class="avatar avatar-small" alt="fabpot" width="40" height="40" data-proofer-ignore="true" src="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40" srcset="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40 1x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=80 2x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=120 3x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=160 4x" /></p>
 <pre><code>{% avatar fabpot %}
@@ -21009,187 +19182,59 @@ Other interesting settings:</p>
       <body><![CDATA[<h1 id="breakpoints">Breakpoints</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>E</kbd>
-			
-		
-
-		
-	
-	: Control on which exceptions to break with the Exceptions window
+			<kbd>E</kbd>: Control on which exceptions to break with the Exceptions window
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>B</kbd>
-			
-		
-
-		
-	
-	: Breakpoints window
+			<kbd>B</kbd>: Breakpoints window
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-	
-	: Toggle breakpoint
+			<kbd>F9</kbd>: Toggle breakpoint
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-	
-	: Enable/Disable breakpoint
+			<kbd>F9</kbd>: Enable/Disable breakpoint
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-	
-	: Delete all breakpoints
+			<kbd>F9</kbd>: Delete all breakpoints
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>B</kbd>
-			
-		
-
-		
-	
-	: New function breakpoint dialog
+			<kbd>B</kbd>: New function breakpoint dialog
 </div>
 
 <p>Useful when you want to add a breakpoint to every method with a specific name.</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> C</kbd>
-			
-		
-
-		
-	
-	: Breakpoint condition
+			<kbd>F9</kbd>,
+			<kbd> C</kbd>: Breakpoint condition
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> L</kbd>
-			
-		
-
-		
-	
-	: Breakpoint label
+			<kbd>F9</kbd>,
+			<kbd> L</kbd>: Breakpoint label
 </div>
 
 <p>Assigning labels to breakpoints could be handy together with the export/import functionality?</p>
@@ -21240,104 +19285,34 @@ class Counter
 <h2 id="windows">Windows</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F9</kbd>
-			
-		
-
-		
-	
-	: QuickWatch window for variable on cursor (blocking)
+			<kbd>F9</kbd>: QuickWatch window for variable on cursor (blocking)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>C</kbd>
-			
-		
-
-		
-	
-	: Call stack window
+			<kbd>C</kbd>: Call stack window
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>W</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> 1-4</kbd>
-			
-		
-
-		
-	
-	: Watch windows 1-4
+			<kbd>W</kbd>,
+			<kbd> 1-4</kbd>: Watch windows 1-4
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>A</kbd>
-			
-		
-
-		
-	
-	: Command window
+			<kbd>A</kbd>: Command window
 </div>
 
 <h3 id="locals-and-autos">Locals and Autos</h3>
@@ -21365,27 +19340,11 @@ Debug.WriteLineIf(false, "msg");
 <h3 id="immediate-window">Immediate window</h3>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>I</kbd>
-			
-		
-
-		
-	
-	: Immediate window
+			<kbd>I</kbd>: Immediate window
 </div>
 
 <p>Can access local variables and call methods. Even Linq queries
@@ -21398,61 +19357,50 @@ are possible here.</p>
 <p><a href="https://github.com/haacked/encourage" class="github">
     <img src="https://img.shields.io/github/stars/haacked/encourage.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/haacked/encourage">haacked/encourage</a>
-:
+<a href="https://github.com/haacked/encourage">haacked/encourage</a>:
     A bit of encouragment added to Visual Studio</p>
 
 <h2 id="plugins">Plugins</h2>
 
-<p><strong>ReadableExpressions</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers">download</a>)</p>
-
-<p><a href="https://github.com/agileobjects/ReadableExpressions" class="github">
+<p><strong>ReadableExpressions</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers">download</a>)<br />
+<a href="https://github.com/agileobjects/ReadableExpressions" class="github">
     <img src="https://img.shields.io/github/stars/agileobjects/ReadableExpressions.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/agileobjects/ReadableExpressions">agileobjects/ReadableExpressions</a>
-:
+<a href="https://github.com/agileobjects/ReadableExpressions">agileobjects/ReadableExpressions</a>:
     Readable views of Expression Trees</p>
 
 <p><br />
-<strong>DataTable Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer">download</a>)</p>
-
-<p><a href="https://github.com/MgSam/DataTableVisualizer" class="github">
+<strong>DataTable Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer">download</a>)<br />
+<a href="https://github.com/MgSam/DataTableVisualizer" class="github">
     <img src="https://img.shields.io/github/stars/MgSam/DataTableVisualizer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/MgSam/DataTableVisualizer">MgSam/DataTableVisualizer</a>
-:
+<a href="https://github.com/MgSam/DataTableVisualizer">MgSam/DataTableVisualizer</a>:
     A non-modal, dockable, searchable DataTable visualizer</p>
 
 <p><br />
-<strong>Image Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=AleksanderBerus.DebuggerImageVisualizerPreview">download</a>)</p>
-
-<p><a href="https://github.com/aberus/ImageVisualizer" class="github">
+<strong>Image Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=AleksanderBerus.DebuggerImageVisualizerPreview">download</a>)<br />
+<a href="https://github.com/aberus/ImageVisualizer" class="github">
     <img src="https://img.shields.io/github/stars/aberus/ImageVisualizer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a>
-:</p>
+<a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a>:</p>
 
 <p><br />
-<strong>Entity Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=KirillPolishchuk.EntityVisualizer">download</a>)</p>
-
-<p><a href="https://github.com/kpol/EntityVisualizer" class="github">
+<strong>Entity Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=KirillPolishchuk.EntityVisualizer">download</a>)<br />
+<a href="https://github.com/kpol/EntityVisualizer" class="github">
     <img src="https://img.shields.io/github/stars/kpol/EntityVisualizer.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/kpol/EntityVisualizer">kpol/EntityVisualizer</a>
-:
+<a href="https://github.com/kpol/EntityVisualizer">kpol/EntityVisualizer</a>:
     Display SQL source code generated by Entity Framework</p>
 
 <!-- <br> -->
 <!-- **Linq to Entity query visualizer** ([download](https://marketplace.visualstudio.com/items?itemName=RRV.LinqtoEntityqueryvisualizer))   -->
 
 <p><br />
-<strong>LINQBridgeVs</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=codingadventures.linqbridgevs">download</a>)</p>
-
-<p><a href="https://github.com/codingadventures/LINQBridgeVs" class="github">
+<strong>LINQBridgeVs</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=codingadventures.linqbridgevs">download</a>)<br />
+<a href="https://github.com/codingadventures/LINQBridgeVs" class="github">
     <img src="https://img.shields.io/github/stars/codingadventures/LINQBridgeVs.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/codingadventures/LINQBridgeVs">codingadventures/LINQBridgeVs</a>
-:
+<a href="https://github.com/codingadventures/LINQBridgeVs">codingadventures/LINQBridgeVs</a>:
     Bridge between a Visual Studio debugging session and LINQPad.</p>
 
 <p><br />
@@ -21963,8 +19911,7 @@ This is one project with such collection.</p>
 <p><a href="https://github.com/danrevah/ngx-pipes" class="github">
     <img src="https://img.shields.io/github/stars/danrevah/ngx-pipes.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/danrevah/ngx-pipes">danrevah/ngx-pipes</a>
-:</p>
+<a href="https://github.com/danrevah/ngx-pipes">danrevah/ngx-pipes</a>:</p>
 
 <pre><code class="language-sh">npm install ngx-pipes --save
 </code></pre>
@@ -22003,8 +19950,7 @@ This is one project with such collection.</p>
 <p><a href="https://github.com/fknop/angular-pipes" class="github">
     <img src="https://img.shields.io/github/stars/fknop/angular-pipes.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/fknop/angular-pipes">fknop/angular-pipes</a>
-:</p>
+<a href="https://github.com/fknop/angular-pipes">fknop/angular-pipes</a>:</p>
 
 <pre><code class="language-sh">npm install angular-pipes --save
 </code></pre>
@@ -22896,343 +20842,77 @@ fanciest tool but more powerful than you might expect.</p>
 
 <p>Default cursor is just a <code>:</code></p>
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-m</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --long-prompt</kbd>
-			
-		
-
-		
-	
-	: Show # bytes passed
+			<kbd>-m</kbd>,
+			<kbd> --long-prompt</kbd>: Show # bytes passed
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-M</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --LONG-PROMPT</kbd>
-			
-		
-
-		
-	
-	: Show current lines displayed (ex: 1-57)
+			<kbd>-M</kbd>,
+			<kbd> --LONG-PROMPT</kbd>: Show current lines displayed (ex: 1-57)
 </div>
 
 <p><br /></p>
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-N</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --LINE-NUMBERS</kbd>
-			
-		
-
-		
-	
-	: Display line numbers
+			<kbd>-N</kbd>,
+			<kbd> --LINE-NUMBERS</kbd>: Display line numbers
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-s</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --squeeze-blank-lines</kbd>
-			
-		
-
-		
-	
-	: Fold multiple empty lines to just one (doesn't fold empty + or - lines though)
+			<kbd>-s</kbd>,
+			<kbd> --squeeze-blank-lines</kbd>: Fold multiple empty lines to just one (doesn't fold empty + or - lines though)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-S</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --chop-long-lines</kbd>
-			
-		
-
-		
-	
-	: Truncate long lines instead of wrapping
+			<kbd>-S</kbd>,
+			<kbd> --chop-long-lines</kbd>: Truncate long lines instead of wrapping
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-x</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --window=x</kbd>
-			
-		
-
-		
-	
-	: Set default window line size to x for PgUp/PgDown
+			<kbd>-x</kbd>,
+			<kbd> --window=x</kbd>: Set default window line size to x for PgUp/PgDown
 </div>]]></block1>
       <body><![CDATA[<h2 id="searching">Searching</h2>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-I</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --IGNORE-CASE</kbd>
-			
-		
-
-		
-	
-	: Case insensitive search
+			<kbd>-I</kbd>,
+			<kbd> --IGNORE-CASE</kbd>: Case insensitive search
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-i</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --ignore-case</kbd>
-			
-		
-
-		
-	
-	: Case insensitive search unless uppercase characters are found in the search pattern
+			<kbd>-i</kbd>,
+			<kbd> --ignore-case</kbd>: Case insensitive search unless uppercase characters are found in the search pattern
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-jX</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --jump-target=X</kbd>
-			
-		
-
-		
-	
-	: with X a number: Show search result X lines from the top of the screen
+			<kbd>-jX</kbd>,
+			<kbd> --jump-target=X</kbd>: with X a number: Show search result X lines from the top of the screen
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-J</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --status-column</kbd>
-			
-		
-
-		
-	
-	: Place * on lines with search results
+			<kbd>-J</kbd>,
+			<kbd> --status-column</kbd>: Place * on lines with search results
 </div>
 
 <h2 id="quitting">Quitting</h2>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-e</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --quit-at-eof</kbd>
-			
-		
-
-		
-	
-	: Exits less when reached end twice
+			<kbd>-e</kbd>,
+			<kbd> --quit-at-eof</kbd>: Exits less when reached end twice
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-E</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --QUIT-AT-EOF</kbd>
-			
-		
-
-		
-	
-	: Exits less when first reached end
+			<kbd>-E</kbd>,
+			<kbd> --QUIT-AT-EOF</kbd>: Exits less when first reached end
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-F</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --quit-if-one-screen</kbd>
-			
-		
-
-		
-	
-	: Exits when output is less than 1 page
+			<kbd>-F</kbd>,
+			<kbd> --quit-if-one-screen</kbd>: Exits when output is less than 1 page
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>-~</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> --tilde</kbd>
-			
-		
-
-		
-	
-	: Lines after end of file are blank, not ~
+			<kbd>-~</kbd>,
+			<kbd> --tilde</kbd>: Lines after end of file are blank, not ~
 </div>
 
 <h1 id="moving-around">Moving around</h1>
@@ -23247,255 +20927,59 @@ fanciest tool but more powerful than you might expect.</p>
 <h2 id="going-down">Going down</h2>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xe</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xj</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xENTER</kbd>
-			
-		
-
-		
-	
-	: Forward one line or x lines if x is provided
+			<kbd>xe</kbd>,
+			<kbd> xj</kbd>,
+			<kbd> xENTER</kbd>: Forward one line or x lines if x is provided
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xd</kbd>
-			
-		
-
-		
-	
-	: Forward half a page. If x is specified it becomes the new default for d
+			<kbd>xd</kbd>: Forward half a page. If x is specified it becomes the new default for d
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xPgDwn</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xSPACE</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xf</kbd>
-			
-		
-
-		
-	
-	: Forward a page. x is optional, if provided it sets the size of the page (once)
+			<kbd>xPgDwn</kbd>,
+			<kbd> xSPACE</kbd>,
+			<kbd> xf</kbd>: Forward a page. x is optional, if provided it sets the size of the page (once)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xz</kbd>
-			
-		
-
-		
-	
-	: Sets the size of x as the page size (in lines) for all subsequent calls of f, SPACE and PgDwn
+			<kbd>xz</kbd>: Sets the size of x as the page size (in lines) for all subsequent calls of f, SPACE and PgDwn
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>G</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> &gt;</kbd>
-			
-		
-
-		
-	
-	: Forward to the end
+			<kbd>G</kbd>,
+			<kbd> &gt;</kbd>: Forward to the end
 </div>
 
 <h2 id="going-up">Going up</h2>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xy</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xk</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>xy</kbd>,
+			<kbd> xk</kbd>,
 			<kbd> CONTROL</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Backward one line or x lines if x is provided
+			<kbd>P</kbd>: Backward one line or x lines if x is provided
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xu</kbd>
-			
-		
-
-		
-	
-	: Backward half a page. If x is specified it becomes the new default for u
+			<kbd>xu</kbd>: Backward half a page. If x is specified it becomes the new default for u
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xPgUp</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> xb</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>xPgUp</kbd>,
+			<kbd> xb</kbd>,
 			<kbd> ESC</kbd>
-			
 				+
-			
-		
-			<kbd>V</kbd>
-			
-		
-
-		
-	
-	: Backward a page. x is optional, if provided it sets the size of the page (once)
+			<kbd>V</kbd>: Backward a page. x is optional, if provided it sets the size of the page (once)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xw</kbd>
-			
-		
-
-		
-	
-	: Sets the size of x as the page size (in lines) for all subsequent calls of b, PgUp
+			<kbd>xw</kbd>: Sets the size of x as the page size (in lines) for all subsequent calls of b, PgUp
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>g</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> &lt;</kbd>
-			
-		
-
-		
-	
-	: Backward to the beginning
+			<kbd>g</kbd>,
+			<kbd> &lt;</kbd>: Backward to the beginning
 </div>
 
 <h2 id="searching-1">Searching</h2>
@@ -23503,311 +20987,76 @@ fanciest tool but more powerful than you might expect.</p>
 <p>See searching parameters above for configuring case sensitivity.</p>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>/</kbd>
-			
-		
-
-		
-	
-	: Search down for text or regex
+			<kbd>/</kbd>: Search down for text or regex
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>?</kbd>
-			
-		
-
-		
-	
-	: Search up
+			<kbd>?</kbd>: Search up
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>n</kbd>
-			
-		
-
-		
-	
-	: Goto next match
+			<kbd>n</kbd>: Goto next match
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>N</kbd>
-			
-		
-
-		
-	
-	: Goto previous match
+			<kbd>N</kbd>: Goto previous match
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>&amp;</kbd>
-			
-		
-
-		
-	
-	: Search and show only the matching lines
+			<kbd>&amp;</kbd>: Search and show only the matching lines
 </div>
 
 <h2 id="other">Other</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>s </kbd>
-			
 				+
-			
-		
-			<kbd> filename</kbd>
-			
-		
-
-		
-	
-	: Save to file and inspect with your weapon of choice
+			<kbd> filename</kbd>: Save to file and inspect with your weapon of choice
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>(</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> )</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> {</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> }</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> [</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> ]</kbd>
-			
-		
-
-		
-	
-	: When the character pressed is on top of the page, scroll to its counterpart
+			<kbd>(</kbd>,
+			<kbd> )</kbd>,
+			<kbd> {</kbd>,
+			<kbd> }</kbd>,
+			<kbd> [</kbd>,
+			<kbd> ]</kbd>: When the character pressed is on top of the page, scroll to its counterpart
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>xp</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> x%</kbd>
-			
-		
-
-		
-	
-	: Go to x% position in document
+			<kbd>xp</kbd>,
+			<kbd> x%</kbd>: Go to x% position in document
 </div>
 
 <p><br />
 <strong>Marking</strong>:</p>
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>mx</kbd>
-			
-		
-
-		
-	
-	: With x any character. Mark this position as x.
+			<kbd>mx</kbd>: With x any character. Mark this position as x.
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>'x</kbd>
-			
-		
-
-		
-	
-	: Goto the position marked as x
+			<kbd>'x</kbd>: Goto the position marked as x
 </div>
 
 <h1 id="quitting-1">Quitting</h1>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>ESC</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> SPACE</kbd>
-			
-		
-
-		
-	
-	: ESC followed by SPACE: continue scrolling after end of stream
+			<kbd>ESC</kbd>,
+			<kbd> SPACE</kbd>: ESC followed by SPACE: continue scrolling after end of stream
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>q</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> Q</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> :q</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> :Q</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd> ZZ</kbd>
-			
-		
-
-		
-	
-	: Exit less
+			<kbd>q</kbd>,
+			<kbd> Q</kbd>,
+			<kbd> :q</kbd>,
+			<kbd> :Q</kbd>,
+			<kbd> ZZ</kbd>: Exit less
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>CONTROL</kbd>
-			
 				+
-			
-		
-			<kbd>l</kbd>
-			
-		
-
-		
-	
-	: Clear screen afterwards?
+			<kbd>l</kbd>: Clear screen afterwards?
 </div>
 
 <h1 id="summary">Summary</h1>
@@ -24024,13 +21273,11 @@ and <a href="http://yaml.org">parsers are available for all languages</a>.</p>
 <p>It’s not all <a href="https://github.com/cblp/yaml-sucks">moonshine and roses</a> though as the implementations
 tend to yield different results for more exotic inputs (and sometimes also for not so exotic input).</p>
 
-<p><strong>YamlDotNet</strong></p>
-
-<p><a href="https://github.com/aaubry/YamlDotNet" class="github">
+<p><strong>YamlDotNet</strong><br />
+<a href="https://github.com/aaubry/YamlDotNet" class="github">
     <img src="https://img.shields.io/github/stars/aaubry/YamlDotNet.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/aaubry/YamlDotNet">aaubry/YamlDotNet</a>
-:
+<a href="https://github.com/aaubry/YamlDotNet">aaubry/YamlDotNet</a>:
     For .NET, there is YamlDotNet</p>
 
 <pre><code class="language-c#">Install-Package YamlDotNet
@@ -24043,13 +21290,11 @@ using (var file = File.OpenText("_config.yml"))
 }
 </code></pre>
 
-<p><strong>js-yaml</strong></p>
-
-<p><a href="https://github.com/nodeca/js-yaml" class="github">
+<p><strong>js-yaml</strong><br />
+<a href="https://github.com/nodeca/js-yaml" class="github">
     <img src="https://img.shields.io/github/stars/nodeca/js-yaml.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/nodeca/js-yaml">nodeca/js-yaml</a>
-:
+<a href="https://github.com/nodeca/js-yaml">nodeca/js-yaml</a>:
     For Node, there is js-yaml</p>
 
 <pre><code class="language-js">npm install js-yaml
@@ -25376,37 +22621,29 @@ are over 1000 Jasmine npm packages and we’ll cover them all here.</p>
 
 <!--more-->
 
-<p>Or apparently just</p>
-
-<p><a href="https://github.com/thlorenz/proxyquire" class="github">
+<p>Or apparently just
+<a href="https://github.com/thlorenz/proxyquire" class="github">
     <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>
-:
+<a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>:
     Proxies nodejs require in order to allow overriding dependencies during testing.</p>
 
 <p><br />
-and some custom reporters:</p>
-
-<p><a href="https://github.com/bcaudan/jasmine-spec-reporter" class="github">
+and some custom reporters:<br />
+<a href="https://github.com/bcaudan/jasmine-spec-reporter" class="github">
     <img src="https://img.shields.io/github/stars/bcaudan/jasmine-spec-reporter.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/bcaudan/jasmine-spec-reporter">bcaudan/jasmine-spec-reporter</a>
-:
-    Real time console spec reporter for jasmine testing framework</p>
-
-<p><a href="https://github.com/Marak/colors.js" class="github">
+<a href="https://github.com/bcaudan/jasmine-spec-reporter">bcaudan/jasmine-spec-reporter</a>:
+    Real time console spec reporter for jasmine testing framework
+<a href="https://github.com/Marak/colors.js" class="github">
     <img src="https://img.shields.io/github/stars/Marak/colors.js.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/Marak/colors.js">Marak/colors.js</a>
-:
-    Color configuration for jasmine-spec-reporter</p>
-
-<p><a href="https://github.com/larrymyers/jasmine-reporters" class="github">
+<a href="https://github.com/Marak/colors.js">Marak/colors.js</a>:
+    Color configuration for jasmine-spec-reporter
+<a href="https://github.com/larrymyers/jasmine-reporters" class="github">
     <img src="https://img.shields.io/github/stars/larrymyers/jasmine-reporters.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/larrymyers/jasmine-reporters">larrymyers/jasmine-reporters</a>
-:
+<a href="https://github.com/larrymyers/jasmine-reporters">larrymyers/jasmine-reporters</a>:
     Reporter classes for the jasmine test framework.</p>
 
 <p><br />
@@ -25415,22 +22652,17 @@ Other Jasmine plugins you might find useful:</p>
 <p><a href="https://github.com/node-nock/nock" class="github">
     <img src="https://img.shields.io/github/stars/node-nock/nock.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/node-nock/nock">node-nock/nock</a>
-:
-    HTTP server mocking and expectations library for Node.js</p>
-
-<p><a href="https://github.com/visionmedia/supertest" class="github">
+<a href="https://github.com/node-nock/nock">node-nock/nock</a>:
+    HTTP server mocking and expectations library for Node.js
+<a href="https://github.com/visionmedia/supertest" class="github">
     <img src="https://img.shields.io/github/stars/visionmedia/supertest.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/visionmedia/supertest">visionmedia/supertest</a>
-:
-    Super-agent driven library for testing node.js HTTP servers using a fluent API.</p>
-
-<p><a href="https://github.com/jhnns/rewire" class="github">
+<a href="https://github.com/visionmedia/supertest">visionmedia/supertest</a>:
+    Super-agent driven library for testing node.js HTTP servers using a fluent API.
+<a href="https://github.com/jhnns/rewire" class="github">
     <img src="https://img.shields.io/github/stars/jhnns/rewire.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/jhnns/rewire">jhnns/rewire</a>
-:
+<a href="https://github.com/jhnns/rewire">jhnns/rewire</a>:
     Use <code>rewire('./file.js')</code> instead of <code>require()</code> and get a fresh copy each time</p>
 
 <h1 id="reporters">Reporters</h1>
@@ -25512,8 +22744,7 @@ describe('fake the api call', function() {
 <p><a href="https://github.com/hbenl/vscode-jasmine-test-adapter" class="github">
     <img src="https://img.shields.io/github/stars/hbenl/vscode-jasmine-test-adapter.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/hbenl/vscode-jasmine-test-adapter">hbenl/vscode-jasmine-test-adapter</a>
-:
+<a href="https://github.com/hbenl/vscode-jasmine-test-adapter">hbenl/vscode-jasmine-test-adapter</a>:
     Jasmine Test Adapter for the VS Code Test Explorer</p>
 
 <p>And <a href="https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code">instructions for setting up a <code>launch.json</code> on Stackoverflow</a></p>
@@ -26634,14 +23865,12 @@ probably the most used mocking framework out there at the moment.</p>
 <p><a href="https://github.com/moq/moq4" class="github">
     <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/moq/moq4">moq/moq4</a>
-:</p>
+<a href="https://github.com/moq/moq4">moq/moq4</a>:</p>
 
 <p><a href="https://github.com/nsubstitute/nsubstitute" class="github">
     <img src="https://img.shields.io/github/stars/nsubstitute/nsubstitute.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/nsubstitute/nsubstitute">nsubstitute/nsubstitute</a>
-:</p>
+<a href="https://github.com/nsubstitute/nsubstitute">nsubstitute/nsubstitute</a>:</p>
 
 <!--more-->
 
@@ -27134,8 +24363,7 @@ They are explained in depth in part 3 Import.</p>
 <p><a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>
-:
+<a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
     The free one</p>
 
 <pre><code class="language-sh">Install-Package EPPlus -Version 4.5.3.3
@@ -27146,8 +24374,7 @@ They are explained in depth in part 3 Import.</p>
 <p><a href="https://github.com/EPPlusSoftware/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>
-:
+<a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>:
     The not so free one</p>
 
 <pre><code class="language-sh">Install-Package EPPlus
@@ -27428,22 +24655,9 @@ and some Autohotkey examples on how to add extra functionality.</p>
 
 <p style="display: inline">Open Windows Explorer, the most direct way:</p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Win</kbd>
-			
 				+
-			
-		
-			<kbd>E</kbd>
-			
-		
-
-		
-	
-	: Open Windows Explorer
+			<kbd>E</kbd>: Open Windows Explorer
 </div>
 
 <p><br />
@@ -27454,22 +24668,9 @@ From a cmd prompt: <code>start .</code></p>
 
 <p style="display: inline">From within Windows Explorer itself:</p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>N</kbd>
-			
-		
-
-		
-	
-	: Open new window in same path
+			<kbd>N</kbd>: Open new window in same path
 </div>
 
 <hr />
@@ -27477,301 +24678,100 @@ From a cmd prompt: <code>start .</code></p>
 <h1 id="builtin-shortcuts">Builtin shortcuts</h1>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>N</kbd>
-			
-		
-
-		
-	
-	: Create a new directory
+			<kbd>N</kbd>: Create a new directory
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F2</kbd>
-			
-		
-
-		
-	
-	: Rename selected. Follow with Tab to rename next.
+			<kbd>F2</kbd>: Rename selected. Follow with Tab to rename next.
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>Delete</kbd>
-			
-		
-
-		
-	
-	: Delete permanently
+			<kbd>Delete</kbd>: Delete permanently
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>C</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
+			<kbd>C</kbd>,
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>V</kbd>
-			
-		
-
-		
-	
-	: Duplicate file
+			<kbd>V</kbd>: Duplicate file
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F10</kbd>
-			
-		
-
-		
-	
-	: Open context menu (or Menu) = Right click
+			<kbd>F10</kbd>: Open context menu (or Menu) = Right click
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Enter</kbd>
-			
-		
-
-		
-	
-	: Open directory/file properties (or Alt+Double click)
+			<kbd>Enter</kbd>: Open directory/file properties (or Alt+Double click)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>6</kbd>
-			
-		
-
-		
-	
-	: Switch to details view
+			<kbd>6</kbd>: Switch to details view
 </div>
 
 <p>The 6 can be replaced with any number from 1 (Extra large icons) to 4 (Small icons),
 5 (List), 7 (Tiles) and 8 (Content).</p>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>L</kbd>
-			
-		
-
-		
-	
-	: Focus AddressBar (or Alt+D)
+			<kbd>L</kbd>: Focus AddressBar (or Alt+D)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F4</kbd>
-			
-		
-
-		
-	
-	: Open AddressBar dropdown with last typed locations
+			<kbd>F4</kbd>: Open AddressBar dropdown with last typed locations
 </div>
 
 <p>The locations are stored in: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths</p>
 
 <p><strong>Navigation</strong>:</p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Up</kbd>
-			
-		
-
-		
-	
-	: Go to parent folder
+			<kbd>Up</kbd>: Go to parent folder
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Left</kbd>
-			
-		
-
-		
-	
-	: Go to previous folder (or Backspace)
+			<kbd>Left</kbd>: Go to previous folder (or Backspace)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>Right</kbd>
-			
-		
-
-		
-	
-	: Go to next folder
+			<kbd>Right</kbd>: Go to next folder
 </div>
 
 <p><br />
 <strong>Drag &amp; Drop</strong>:</p>
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>Control</kbd>
-			
-		
-
-		
-	
-	: Copy dragged file(s)
+			<kbd>Control</kbd>: Copy dragged file(s)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>Shift</kbd>
-			
-		
-
-		
-	
-	: Move dragged file(s)
+			<kbd>Shift</kbd>: Move dragged file(s)
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Shift</kbd>
-			
-		
-
-		
-	
-	: Create shortcut
+			<kbd>Shift</kbd>: Create shortcut
 </div>
 
 <h2 id="create-a-new-dotfile">Create a new dotfile</h2>
@@ -27785,32 +24785,10 @@ From a cmd prompt: <code>start .</code></p>
 
 <p style="display: inline">Alt+D followed by cmd or powershell will open a prompt at the current path.</p>
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Shift</kbd>
-			
 				+
-			
-		
-			<kbd>F10</kbd>
-			
-		
-
-		
-			,
-		
-	
-		
-		
-			<kbd>w</kbd>
-			
-		
-
-		
-	
-	: Open command prompt in selected folder
+			<kbd>F10</kbd>,
+			<kbd>w</kbd>: Open command prompt in selected folder
 </div>
 
 <p><br /></p>
@@ -27831,121 +24809,39 @@ Get-ChildItem $path | Select-Object `
 <h2 id="less-used-shortcuts">Less used shortcuts</h2>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F1</kbd>
-			
-		
-
-		
-	
-	: Toggle Ribbon
+			<kbd>F1</kbd>: Toggle Ribbon
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>Mousewheel</kbd>
-			
-		
-
-		
-	
-	: Scroll through the different views
+			<kbd>Mousewheel</kbd>: Scroll through the different views
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Alt</kbd>
-			
 				+
-			
-		
-			<kbd>P</kbd>
-			
-		
-
-		
-	
-	: Toggle preview pane
+			<kbd>P</kbd>: Toggle preview pane
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
 			<kbd>Control</kbd>
-			
 				+
-			
-		
-			<kbd>F</kbd>
-			
-		
-
-		
-	
-	: Focus the search box
+			<kbd>F</kbd>: Focus the search box
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F11</kbd>
-			
-		
-
-		
-	
-	: Full screen
+			<kbd>F11</kbd>: Full screen
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>F5</kbd>
-			
-		
-
-		
-	
-	: Refresh
+			<kbd>F5</kbd>: Refresh
 </div>
 
 <div style="display: block">
-	
-	
-		
-		
-			<kbd>Right</kbd>
-			
-		
-
-		
-	
-	: Select first subfolder when there is no selection
+			<kbd>Right</kbd>: Select first subfolder when there is no selection
 </div>
 
 <h1 id="autohotkey-extensions">Autohotkey Extensions</h1>
@@ -29753,13 +26649,11 @@ still be a team decision.</p>]]></body>
 <p>After which you get a tiny, unresizable, form where you can view and manage them.
 Something better eventually arrived with Windows 10 but still, PowerShell :)</p>
 ]]></excerpt>
-      <block1><![CDATA[<p>If you’d like a GUI instead you could try:</p>
-
-<p><a href="https://github.com/rix0rrr/WindowsPathEditor" class="github">
+      <block1><![CDATA[<p>If you’d like a GUI instead you could try:
+<a href="https://github.com/rix0rrr/WindowsPathEditor" class="github">
     <img src="https://img.shields.io/github/stars/rix0rrr/WindowsPathEditor.svg?style=social&amp;label=Star" />
 </a>
-<a href="https://github.com/rix0rrr/WindowsPathEditor">rix0rrr/WindowsPathEditor</a>
-:</p>
+<a href="https://github.com/rix0rrr/WindowsPathEditor">rix0rrr/WindowsPathEditor</a>:</p>
 
 <h1 id="getting-environment-variables">Getting environment variables</h1>
 
