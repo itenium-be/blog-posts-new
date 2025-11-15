@@ -1,0 +1,25 @@
+{%- assign page = include.page -%}
+{%- if page.package-versions -%}
+<h1>
+    Package Versions
+    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+</h1>
+{%- assign packageInfos = site.data.blog.packages -%}
+{%- for package in page.package-versions -%}
+    {%- assign packageInfo = packageInfos | where: "package", package.package | first -%}
+    {%- if packageInfo -%}
+        {%- if package.version -%}
+            {%- assign desc = 'v' | append: package.version -%}
+        {%- else -%}
+            {%- assign desc = '' -%}
+        {%- endif -%}
+        <div>
+            {% include github-stars.html url=packageInfo.git desc=desc %}
+        </div>
+    {%- else -%}
+        <p>
+            {{ package.package }}: v{{ package.version }}
+        </p>
+    {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
