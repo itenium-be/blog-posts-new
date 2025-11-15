@@ -76,10 +76,12 @@ layout: null
       {%- if before_block1.size > 1 %}
       <block1><![CDATA[{{ before_block1[1] | strip }}]]></block1>
       {%- endif %}
-      <body><![CDATA[{{ content_parts[1] | strip }}]]></body>
+      <block2><![CDATA[{{ content_parts[1] | strip }}]]></block2>
     {%- else %}
-      <body><![CDATA[{{ post.content }}]]></body>
+      <block2><![CDATA[{{ post.content }}]]></block2>
     {%- endif %}
+    {%- capture package_versions_content %}{% include package-versions.html page=post %}{%- endcapture %}
+    <block3><![CDATA[{{ package_versions_content }}]]></block3>
   </post>
 {%- endfor %}
 </blog-posts>
