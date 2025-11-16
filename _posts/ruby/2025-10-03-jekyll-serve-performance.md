@@ -69,6 +69,9 @@ There probably isn't much you have to do when [upgrading from v3 to v4](https://
 
 
 
+<!--block1-->
+
+
 # Incremental Serving
 
 The next logical step is to only re-render what has actually changed.

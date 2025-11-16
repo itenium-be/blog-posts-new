@@ -25,11 +25,12 @@ One of the current trends in Q&A engineering is the **increased use of automatio
 
 <!--more-->
 
-<br>
 Another trend in Q&A engineering is the **increased focus on security testing**. As cyber threats become more sophisticated, it's essential to ensure that software products are secure and protected from potential vulnerabilities. Security testing can identify any weaknesses or vulnerabilities in software systems, allowing developers to address them before they can be exploited.
 
 
-<br>
+<!--block1-->
+
+
 In addition to automation and security, another current trend in Q&A engineering is **the shift towards agile methodologies**. Agile methodologies emphasize collaboration and flexibility, allowing for more efficient and effective software development. By using agile methodologies, Q&A engineers can work closely with developers to ensure that software products are thoroughly tested throughout the development process, rather than waiting until the end.
 
 

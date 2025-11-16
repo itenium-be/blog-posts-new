@@ -44,6 +44,9 @@ This blog post delves into the key takeaways from the event, highlighting the im
 [Elisabeth Theophille](https://www.linkedin.com/in/elizabeth-theophille-1224244), Chief technology transformation officer at Novartis, opened the event by addressing the gender gap in the tech industry, emphasizing that only 24% of tech professionals worldwide are women. Despite the challenges, she encouraged women to embrace change and enjoy the journey of growth, highlighting the importance of finding comfort in discomfort. In a world where diversity and inclusion are becoming increasingly vital, her message resonated with many.
 
 
+<!--block1-->
+
+
 # Heineken's Transformation Journey
 
 Heineken shared insights into their transformation journey, emphasizing that digital transformation is not about productivity but about seizing new business opportunities. They acknowledged the high risk of failure but stressed the importance of learning fast and adapting even faster. Their three focus areas—focussing on customer value, empowering employees, and unlocking data—were key drivers of their success. They also highlighted the significance of attracting and retaining talent in the tech industry by offering creative solutions and fostering new skills.

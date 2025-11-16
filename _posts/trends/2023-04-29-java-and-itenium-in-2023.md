@@ -24,10 +24,11 @@ In the world of software development, Java has long been one of the most widely 
 
 <!--more-->
 
-<br>
+
 So what are some of the latest trends in Java that you need to be aware of? One of the most significant is **the rise of microservices architecture**. This approach to software development involves breaking applications down into smaller, independent components that can be developed, tested, and deployed separately. This can help to streamline development and deployment processes, improve scalability and resilience, and reduce the risk of downtime and other issues.
 
-<br>
+<!--block1-->
+
 Another important trend is **the growing popularity of cloud-based development and deployment**. Cloud platforms like **AWS, Azure, and Google Cloud** offer a range of tools and services that can help to simplify and accelerate the development and deployment of Java applications. They also provide robust infrastructure and security features that can help to ensure the reliability and availability of your applications.
 
 <br>

@@ -25,7 +25,7 @@ As we look ahead to 2023, the world of .Net development is evolving rapidly. The
 
 No matter what the latest trends in .Net may be, it's important for businesses to remember that delays in software development projects can have significant opportunity costs. Every day that a project is delayed can mean lost revenue, missed opportunities, and additional expenses. This is why it's so important to work with experienced .Net consultants who can ensure that your project is completed on time and within budget.
 
-<br>
+<!--block1-->
 
 At Itenium, we understand the importance of timely project delivery. That's why we have a team of senior .Net consultants who are available to help you with your project. Our consultants have years of experience working on .Net projects of all sizes, and can help you avoid the costs associated with project delays.
 

@@ -24,10 +24,12 @@ A **functional analyst** is responsible for analyzing and understanding the func
 <!--more-->
 
 
-<br>
 The role of a functional analyst is critical to the success of a software development project. Without a functional analyst, there is a risk that the software will not meet the needs of the stakeholders, resulting in a product that is not useful or effective. The absence of a functional analyst can also lead to misunderstandings between stakeholders and developers, resulting in delays, rework, and increased costs.
 
-<br>
+
+<!--block1-->
+
+
 If a functional analyst is absent from a software development project, the project may experience a number of negative consequences. For example, there may be a lack of clarity around the project requirements, leading to misunderstandings and delays. The software may not be able to meet the needs of the stakeholders, resulting in dissatisfaction with the final product. There may also be a lack of coordination between the different teams involved in the project, leading to inefficiencies and errors.
 
 <br>

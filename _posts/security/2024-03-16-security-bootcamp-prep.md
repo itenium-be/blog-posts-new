@@ -58,6 +58,9 @@ You should have received yours by email.
 If you do not have an API key, contact one of the game admins.
 
 
+<!--block1-->
+
+
 ## Teams
 
 **Divide & Conquer**
