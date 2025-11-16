@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<blog-posts>
-  <post>
+<blog-posts>  <post>
     <title>Chrome Extension: Starify Links</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Because why stop at GitHub Repositories</subTitle>
@@ -28995,4 +28994,5 @@ Pragmatic Tip 8: “<strong>Invest Regularly in Your Knowledge Portfolio</strong
             <li>This Part: Pragmatic Tip 1: Care About Your Craft</li>
             <li>Part 2: <a href="/productivity/2012/12/02/pragmatic-tip-2-think-about-your-work.html">Pragmatic Tip 2: Think! About Your Work</a></li></ul>]]></block3>
   </post>
+
 </blog-posts>
