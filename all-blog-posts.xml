@@ -280,15 +280,7 @@ remote: warning: GH001: Large files detected. You may want to try Git Large File
     <excerpt><![CDATA[<p>Every change to a blog post on this website took a whopping 20 second
 delay before I could see the result.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>Every change to a blog post on this website took a whopping 20 second
-delay before I could see the result.</p>
-
-<p>The <a href="https://talk.jekyllrb.com/t/exclude-jekyll-feed-in-development-environment/2681/4">solution</a>
-was really simple, really. And was committed in the README as a TODO over 3 years ago.</p>
-
-<!--more-->
-
-<h1 id="upgrade-jekyll">Upgrade Jekyll</h1>
+      <block1><![CDATA[<h1 id="upgrade-jekyll">Upgrade Jekyll</h1>
 
 <p>Upgrading Jekyll from v3.9.0 to 4.2.2 already brought the
 reload time down from <strong>20s to 12s</strong>.</p>
@@ -315,9 +307,8 @@ end
 <ul>
   <li><code>ruby -v</code> needs to be &gt;=2.7.0</li>
   <li><code>{{ site.baseurl }}/{% post_url some-post %}</code> -&gt; <code>{% post_url some-post %}</code></li>
-</ul>
-
-<h1 id="incremental-serving">Incremental Serving</h1>
+</ul>]]></block1>
+      <block2><![CDATA[<h1 id="incremental-serving">Incremental Serving</h1>
 
 <p>The next logical step is to only re-render what has actually changed.
 This reduced reload times from <strong>12s to 3s</strong> 🎉🥳</p>
@@ -430,8 +421,7 @@ Set-Alias bejs Start-Jekyll
 Set-Alias bejsd Start-JekyllWithDrafts
 Set-Alias bejsdev Start-JekyllDev
 Set-Alias bejsddev Start-JekyllDevWithDrafts
-</code></pre>
-]]></block2>
+</code></pre>]]></block2>
     <block3><![CDATA[<h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -2042,18 +2032,13 @@ sheet1.CopyTo(workbook, "Copy");
     </toc>
     <excerpt><![CDATA[<p>Last month, I had the opportunity to attend <strong>DDD Europe 2025</strong> in the Queen Elisabeth Hall in Antwerp — a few inspiring days full of insights, ideas, and engaging discussions around Domain-Driven Design, software quality, and architecture. Here are some of my key takeaways:</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>Last month, I had the opportunity to attend <strong>DDD Europe 2025</strong> in the Queen Elisabeth Hall in Antwerp — a few inspiring days full of insights, ideas, and engaging discussions around Domain-Driven Design, software quality, and architecture. Here are some of my key takeaways:</p>
-
-<!--more-->
-
-<h1 id="the-talks">The Talks</h1>
+      <block1><![CDATA[<h1 id="the-talks">The Talks</h1>
 
 <h2 id="charting-the-uncharted">Charting the Uncharted</h2>
 
 <p>By <a href="https://2025.dddeurope.com/speakers/prem-chandrasekaran/">Prem Chandrasekaran</a><br />
-A passionate talk about the complexity of defining Bounded Contexts and subdomains in DDD. While well delivered, it mostly reinforced existing knowledge for me.</p>
-
-<h2 id="domain-experiments">Domain Experiments</h2>
+A passionate talk about the complexity of defining Bounded Contexts and subdomains in DDD. While well delivered, it mostly reinforced existing knowledge for me.</p>]]></block1>
+      <block2><![CDATA[<h2 id="domain-experiments">Domain Experiments</h2>
 
 <p>By <a href="https://2025.dddeurope.com/speakers/mike-wojtyna/">Mike Wojtyna</a><br />
 Loved this practical take on using TDD as a tool to experiment with domain models safely — a great approach to avoid full rewrites when evolving your model.</p>
@@ -2097,8 +2082,7 @@ A fascinating deep dive from Eric into the world of LLMs and how companies like 
 
 <h1 id="final-thoughts">Final Thoughts</h1>
 
-<p>Overall, DDD Europe 2025 was a great mix of deep dives, practical tips, and renewed perspectives. Already looking forward to next year!</p>
-]]></block2>
+<p>Overall, DDD Europe 2025 was a great mix of deep dives, practical tips, and renewed perspectives. Already looking forward to next year!</p>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
@@ -8145,16 +8129,7 @@ with terrain and foliage assets.</p>
     </toc>
     <excerpt><![CDATA[<p>The next iteration of the itenium Security Bootcamp is at the <a href="https://www.mitechcon.org/">Michigan Technology Conference 2024</a>. Its vulnerable applications will be running for the duration of the conference: exploit the vulnerabilities (hack!?) and submit captured flags in the Portal website.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>The next iteration of the itenium Security Bootcamp is at the <a href="https://www.mitechcon.org/">Michigan Technology Conference 2024</a>. Its vulnerable applications will be running for the duration of the conference: exploit the vulnerabilities (hack!?) and submit captured flags in the Portal website.</p>
-
-<p>Here is how those that will participate can prepare themselves.</p>
-
-<p>If the term <code>SQL Injection</code> does not ring a bell, you may want to start by reading up on
-that and other vulnerabilities such as: XSS, CSRF, OWASP, …</p>
-
-<!--more-->
-
-<p><strong>Super Tips</strong>:<br />
+      <block1><![CDATA[<p><strong>Super Tips</strong>:<br />
 Statements in this blog that have a 😉 emoji, ignore at your own peril 😉</p>
 
 <h1 id="api-key">API Key</h1>
@@ -8165,9 +8140,8 @@ Statements in this blog that have a 😉 emoji, ignore at your own peril 😉</p
 The API key is required to login and to submit captured flags (=score points).</p>
 
 <p>You should have received yours by email.<br />
-If you do not have an API key, contact one of the game admins.</p>
-
-<h2 id="teams">Teams</h2>
+If you do not have an API key, contact one of the game admins.</p>]]></block1>
+      <block2><![CDATA[<h2 id="teams">Teams</h2>
 
 <p><strong>Divide &amp; Conquer</strong></p>
 
@@ -8347,8 +8321,7 @@ as passphrase and score Vault multipliers.</p>
 
 <p>Beware, incorrectly decrypted flags will cost points!</p>
 
-<p>Check the blog post in The Hacker’s Toolkit Blog in-game for more info!</p>
-]]></block2>
+<p>Check the blog post in The Hacker’s Toolkit Blog in-game for more info!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
             <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
@@ -9279,19 +9252,10 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
     </toc>
     <excerpt><![CDATA[<p class="hide-from-excerpt notice">(And of course, this blog is written with the help of AI)</p>
 ]]></excerpt>
-      <block2><![CDATA[<p class="hide-from-excerpt notice">(And of course, this blog is written with the help of AI)</p>
+      <block1><![CDATA[<h1 id="the-gender-gap-in-tech">The Gender Gap in Tech</h1>
 
-<p>In the ever-evolving world of technology, the <a href="https://europeanwomenintech.com/">European Women in Tech</a> in Amsterdam shed light on some crucial insights and perspectives. From the wise words of Elisabeth Theophille, who emphasized the importance of embracing change and enjoying the journey, to the valuable lessons learned from industry leaders like Heineken, Ikea, and ING, the event provided a unique opportunity to explore the complexities of digital transformation and AI.</p>
-
-<p>This blog post delves into the key takeaways from the event, highlighting the importance of responsible AI, organizational transformation, the role of data-driven decision-making, and Ikea’s contribution to the realm of Explainable AI.</p>
-
-<!--more-->
-
-<h1 id="the-gender-gap-in-tech">The Gender Gap in Tech</h1>
-
-<p><a href="https://www.linkedin.com/in/elizabeth-theophille-1224244">Elisabeth Theophille</a>, Chief technology transformation officer at Novartis, opened the event by addressing the gender gap in the tech industry, emphasizing that only 24% of tech professionals worldwide are women. Despite the challenges, she encouraged women to embrace change and enjoy the journey of growth, highlighting the importance of finding comfort in discomfort. In a world where diversity and inclusion are becoming increasingly vital, her message resonated with many.</p>
-
-<h1 id="heinekens-transformation-journey">Heineken’s Transformation Journey</h1>
+<p><a href="https://www.linkedin.com/in/elizabeth-theophille-1224244">Elisabeth Theophille</a>, Chief technology transformation officer at Novartis, opened the event by addressing the gender gap in the tech industry, emphasizing that only 24% of tech professionals worldwide are women. Despite the challenges, she encouraged women to embrace change and enjoy the journey of growth, highlighting the importance of finding comfort in discomfort. In a world where diversity and inclusion are becoming increasingly vital, her message resonated with many.</p>]]></block1>
+      <block2><![CDATA[<h1 id="heinekens-transformation-journey">Heineken’s Transformation Journey</h1>
 
 <p>Heineken shared insights into their transformation journey, emphasizing that digital transformation is not about productivity but about seizing new business opportunities. They acknowledged the high risk of failure but stressed the importance of learning fast and adapting even faster. Their three focus areas—focussing on customer value, empowering employees, and unlocking data—were key drivers of their success. They also highlighted the significance of attracting and retaining talent in the tech industry by offering creative solutions and fostering new skills.</p>
 
@@ -9323,8 +9287,7 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>The European Women in Tech event 2023 in Amsterdam provided valuable insights into the ever-evolving world of technology, digital transformation, responsible AI, and the importance of Explainable AI. Embracing change, fostering diversity and inclusion, adopting data-driven decision-making, and ensuring the transparency of AI systems are key elements for success in this era of gardening the digital transformation. As technology continues to shape our world, staying informed, being adaptive and responsible is crucial for individuals and organizations alike.</p>
-]]></block2>
+<p>The European Women in Tech event 2023 in Amsterdam provided valuable insights into the ever-evolving world of technology, digital transformation, responsible AI, and the importance of Explainable AI. Embracing change, fostering diversity and inclusion, adopting data-driven decision-making, and ensuring the transparency of AI systems are key elements for success in this era of gardening the digital transformation. As technology continues to shape our world, staying informed, being adaptive and responsible is crucial for individuals and organizations alike.</p>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
@@ -10094,11 +10057,7 @@ of Michiel.</p>
     </toc>
     <excerpt><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>
-
-<!--more-->
-
-<h1 id="what">What</h1>
+      <block1><![CDATA[<h1 id="what">What</h1>
 
 <p>A security awareness workshop disguised as a teambuilding game.</p>
 
@@ -10112,9 +10071,8 @@ accumulate points by uncovering vulnerabilities in our websites
 (such as SQL Injection, XSS, and more).</p>
 
 <p>Boost your team’s score by tackling puzzles and brain-teasers,
-employing a diverse set of IT tools.</p>
-
-<h2 id="presentations">Presentations</h2>
+employing a diverse set of IT tools.</p>]]></block1>
+      <block2><![CDATA[<h2 id="presentations">Presentations</h2>
 
 <p>After successfully executing a specific hack, our program includes a
 comprehensive PowerPoint presentation that delves into the intricacies
@@ -10159,9 +10117,7 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <h1 id="security-bootcamp">Security Bootcamp</h1>
 
 <p>Interested in organizing our Security Bootcamp for your IT teams?
-<a href="mailto:">Contact us today</a>!</p>
-
-]]></block2>
+<a href="mailto:">Contact us today</a>!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
             <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
@@ -10207,19 +10163,7 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
     </toc>
     <excerpt><![CDATA[<p><a href="https://sqlmap.org/">sqlmap</a> is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p><a href="https://sqlmap.org/">sqlmap</a> is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.</p>
-
-<h1 class="hide-from-excerpt" id="what">What</h1>
-
-<p><a href="https://github.com/sqlmapproject/sqlmap" class="github">
-    <img src="https://img.shields.io/github/stars/sqlmapproject/sqlmap.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/sqlmapproject/sqlmap">sqlmapproject/sqlmap</a>:
-    Automatic SQL injection and database takeover tool</p>
-
-<!--more-->
-
-<p>It has some… interesting features:</p>
+      <block1><![CDATA[<p>It has some… interesting features:</p>
 <ul>
   <li>Enumerate users, roles, databases, … and dump all rows</li>
   <li>Password hash recognition and attempt cracking with a dictionary attack</li>
@@ -10227,9 +10171,8 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
   <li>Search for tables, columns, execute arbitrary SQL, …</li>
   <li>Database process’ user privilege escalation</li>
   <li>Setup an interactive command prompt</li>
-</ul>
-
-<h1 id="how">How</h1>
+</ul>]]></block1>
+      <block2><![CDATA[<h1 id="how">How</h1>
 
 <pre><code class="language-sh">sqlmap -u 'url' --dump
 </code></pre>
@@ -10281,8 +10224,7 @@ docker run --rm -it -v ./sqlmap-data:/root/.sqlmap/ paoloo/sqlmap --url "url" --
 <h1 id="when">When</h1>
 
 <p>During itenium’s Security Bootcamp <code>sqlmap</code> can be used to retrieve
-a flag hidden in a database by attacking a vulnerable web page.</p>
-]]></block2>
+a flag hidden in a database by attacking a vulnerable web page.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
             <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
@@ -10320,21 +10262,7 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
     </toc>
     <excerpt><![CDATA[<p>Show how easy it would be to gain unauthorized access to a system remotely.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>Show how easy it would be to gain unauthorized access to a system remotely.</p>
-
-<h1 class="hide-from-excerpt" id="what">What</h1>
-
-<p>Hydra is a brute-force tool to perform dictionary attacks against protocols such as Ftp, Http(s), Cisco, Oracle, Postgres, SMTP, Telnet, SSH and many more.</p>
-
-<p><a href="https://github.com/vanhauser-thc/thc-hydra" class="github">
-    <img src="https://img.shields.io/github/stars/vanhauser-thc/thc-hydra.svg?style=social&amp;label=Star" />
-</a>
-<a href="https://github.com/vanhauser-thc/thc-hydra">vanhauser-thc/thc-hydra</a>:
-    hydra</p>
-
-<!--more-->
-
-<h1 id="how">How</h1>
+      <block1><![CDATA[<h1 id="how">How</h1>
 
 <pre><code class="language-sh">hydra -l user -P rockyou.txt ftp://192.168.1.6 -t8 -v -I
 </code></pre>
@@ -10357,9 +10285,8 @@ a flag hidden in a database by attacking a vulnerable web page.</p>
     </ul>
   </li>
   <li><code>-I</code>: ignore an existing restore file</li>
-</ul>
-
-<h2 id="docker">Docker</h2>
+</ul>]]></block1>
+      <block2><![CDATA[<h2 id="docker">Docker</h2>
 
 <p>This assumes that you have a <code>wordlist.txt</code> file in your working directory.</p>
 
@@ -10379,8 +10306,7 @@ A famous one is <code>rockyou.txt</code> (14M).</p>
 
 <p>Whenever you figure out that a certain protocol and user has a weak password,
 it’s time to whip out Hydra! Check the Security Audit Blog during itenium’s
-Security Bootcamp for such clue!</p>
-]]></block2>
+Security Bootcamp for such clue!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
             <li>This Part: Hacking Tool: hydra</li>
@@ -10423,23 +10349,7 @@ Security Bootcamp for such clue!</p>
     </toc>
     <excerpt><![CDATA[<p>Before Trinity could take down the electric grid, she had to find an attack vector. Her hack started with… <a href="https://nmap.org/">nmap</a>!</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>Before Trinity could take down the electric grid, she had to find an attack vector. Her hack started with… <a href="https://nmap.org/">nmap</a>!</p>
-
-<p><br /></p>
-
-<figure class="youtubemovie">
-    <div class="iframewrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0PxTAn4g20U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-    </div>
-
-    
-    <figcaption>And then used an actual SSH exploit. Nmap can obviously do more than tell you whether SSH is on port 22 ;)</figcaption>
-    
-</figure>
-
-<!--more-->
-
-<h1 id="what">What</h1>
+      <block1><![CDATA[<h1 id="what">What</h1>
 
 <p><a href="https://github.com/nmap/nmap" class="github">
     <img src="https://img.shields.io/github/stars/nmap/nmap.svg?style=social&amp;label=Star" />
@@ -10450,9 +10360,8 @@ Security Bootcamp for such clue!</p>
 <p>A CLI tool to discover hosts and services on a computer network
 by sending packets and analyzing the responses.</p>
 
-<p>If you rather have a GUI, there is <a href="https://nmap.org/zenmap/">zenmap</a>.</p>
-
-<h1 id="how">How</h1>
+<p>If you rather have a GUI, there is <a href="https://nmap.org/zenmap/">zenmap</a>.</p>]]></block1>
+      <block2><![CDATA[<h1 id="how">How</h1>
 
 <p>List all bells &amp; whistles:</p>
 
@@ -10522,8 +10431,7 @@ for the port but there is no telling if that is actually the case.</p>
 <h1 id="when">When</h1>
 
 <p>At the start of the itenium Security Bootcamp at least one player per team should do
-an nmap scan to discover services that are not (yet) available directly from the Portal.</p>
-]]></block2>
+an nmap scan to discover services that are not (yet) available directly from the Portal.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Hacking Tool: nmap</li>
             <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
@@ -11102,20 +11010,11 @@ docker-compose up --build -d
     <excerpt><![CDATA[<p>As technology continues to advance at an exponential rate, the field of quality assurance (Q&amp;A) engineering is constantly evolving.
 One of the current trends in Q&amp;A engineering is the <strong>increased use of automation</strong>. As the complexity of software applications continues to grow, so does the need for efficient and reliable testing methods. Automated testing can help speed up the testing process, improve accuracy, and reduce costs. With the use of advanced tools and techniques, automated testing can also be customized to fit the specific needs of each software project.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>As technology continues to advance at an exponential rate, the field of quality assurance (Q&amp;A) engineering is constantly evolving.
-One of the current trends in Q&amp;A engineering is the <strong>increased use of automation</strong>. As the complexity of software applications continues to grow, so does the need for efficient and reliable testing methods. Automated testing can help speed up the testing process, improve accuracy, and reduce costs. With the use of advanced tools and techniques, automated testing can also be customized to fit the specific needs of each software project.</p>
-
-<!--more-->
+      <block1><![CDATA[<p>Another trend in Q&amp;A engineering is the <strong>increased focus on security testing</strong>. As cyber threats become more sophisticated, it’s essential to ensure that software products are secure and protected from potential vulnerabilities. Security testing can identify any weaknesses or vulnerabilities in software systems, allowing developers to address them before they can be exploited.</p>]]></block1>
+      <block2><![CDATA[<p>In addition to automation and security, another current trend in Q&amp;A engineering is <strong>the shift towards agile methodologies</strong>. Agile methodologies emphasize collaboration and flexibility, allowing for more efficient and effective software development. By using agile methodologies, Q&amp;A engineers can work closely with developers to ensure that software products are thoroughly tested throughout the development process, rather than waiting until the end.</p>
 
 <p><br />
-Another trend in Q&amp;A engineering is the <strong>increased focus on security testing</strong>. As cyber threats become more sophisticated, it’s essential to ensure that software products are secure and protected from potential vulnerabilities. Security testing can identify any weaknesses or vulnerabilities in software systems, allowing developers to address them before they can be exploited.</p>
-
-<p><br />
-In addition to automation and security, another current trend in Q&amp;A engineering is <strong>the shift towards agile methodologies</strong>. Agile methodologies emphasize collaboration and flexibility, allowing for more efficient and effective software development. By using agile methodologies, Q&amp;A engineers can work closely with developers to ensure that software products are thoroughly tested throughout the development process, rather than waiting until the end.</p>
-
-<p><br />
-At itenium, we understand the importance of staying up-to-date with the latest trends in Q&amp;A engineering. That’s why we have a team of experienced testers available to help you keep your software up to par. <strong>Whether you need help with automation, security testing, or agile methodologies, we have the expertise to assist you</strong> in achieving your Q&amp;A goals. <a href="mailto:">Contact us today</a> to learn more about our services and how we can help you stay ahead of the curve.</p>
-]]></block2>
+At itenium, we understand the importance of staying up-to-date with the latest trends in Q&amp;A engineering. That’s why we have a team of experienced testers available to help you keep your software up to par. <strong>Whether you need help with automation, security testing, or agile methodologies, we have the expertise to assist you</strong> in achieving your Q&amp;A goals. <a href="mailto:">Contact us today</a> to learn more about our services and how we can help you stay ahead of the curve.</p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
@@ -11142,22 +11041,14 @@ At itenium, we understand the importance of staying up-to-date with the latest t
     </toc>
     <excerpt><![CDATA[<p>A <strong>functional analyst</strong> is responsible for analyzing and understanding the functional requirements of a software system. They work closely with stakeholders, such as clients or end-users, to identify their needs and translate them into functional specifications that can be used by developers to build the software.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>A <strong>functional analyst</strong> is responsible for analyzing and understanding the functional requirements of a software system. They work closely with stakeholders, such as clients or end-users, to identify their needs and translate them into functional specifications that can be used by developers to build the software.</p>
-
-<!--more-->
-
-<p><br />
-The role of a functional analyst is critical to the success of a software development project. Without a functional analyst, there is a risk that the software will not meet the needs of the stakeholders, resulting in a product that is not useful or effective. The absence of a functional analyst can also lead to misunderstandings between stakeholders and developers, resulting in delays, rework, and increased costs.</p>
-
-<p><br />
-If a functional analyst is absent from a software development project, the project may experience a number of negative consequences. For example, there may be a lack of clarity around the project requirements, leading to misunderstandings and delays. The software may not be able to meet the needs of the stakeholders, resulting in dissatisfaction with the final product. There may also be a lack of coordination between the different teams involved in the project, leading to inefficiencies and errors.</p>
+      <block1><![CDATA[<p>The role of a functional analyst is critical to the success of a software development project. Without a functional analyst, there is a risk that the software will not meet the needs of the stakeholders, resulting in a product that is not useful or effective. The absence of a functional analyst can also lead to misunderstandings between stakeholders and developers, resulting in delays, rework, and increased costs.</p>]]></block1>
+      <block2><![CDATA[<p>If a functional analyst is absent from a software development project, the project may experience a number of negative consequences. For example, there may be a lack of clarity around the project requirements, leading to misunderstandings and delays. The software may not be able to meet the needs of the stakeholders, resulting in dissatisfaction with the final product. There may also be a lack of coordination between the different teams involved in the project, leading to inefficiencies and errors.</p>
 
 <p><br />
 It is therefore important to have a talented functional analyst on a software development project. At itenium, <strong>our functional analysts have the expertise and experience needed to ensure that your project requirements are well understood</strong>, and that the software is built to meet those requirements. By <strong>working closely with stakeholders and developers</strong>, our functional analysts can help to ensure that your software development project is a success.</p>
 
 <p><br />
-<a href="mailto:">Contact Itenium today</a> to learn more!</p>
-]]></block2>
+<a href="mailto:">Contact Itenium today</a> to learn more!</p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
@@ -12284,22 +12175,14 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
     </toc>
     <excerpt><![CDATA[<p>In the world of software development, Java has long been one of the most widely used programming languages. Its versatility and reliability make it a popular choice for a wide range of applications, from mobile apps to enterprise software systems. However, staying up-to-date with the latest trends and developments in Java can be a challenge, especially for busy development teams with tight project deadlines.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>In the world of software development, Java has long been one of the most widely used programming languages. Its versatility and reliability make it a popular choice for a wide range of applications, from mobile apps to enterprise software systems. However, staying up-to-date with the latest trends and developments in Java can be a challenge, especially for busy development teams with tight project deadlines.</p>
-
-<!--more-->
-
-<p><br />
-So what are some of the latest trends in Java that you need to be aware of? One of the most significant is <strong>the rise of microservices architecture</strong>. This approach to software development involves breaking applications down into smaller, independent components that can be developed, tested, and deployed separately. This can help to streamline development and deployment processes, improve scalability and resilience, and reduce the risk of downtime and other issues.</p>
-
-<p><br />
-Another important trend is <strong>the growing popularity of cloud-based development and deployment</strong>. Cloud platforms like <strong>AWS, Azure, and Google Cloud</strong> offer a range of tools and services that can help to simplify and accelerate the development and deployment of Java applications. They also provide robust infrastructure and security features that can help to ensure the reliability and availability of your applications.</p>
+      <block1><![CDATA[<p>So what are some of the latest trends in Java that you need to be aware of? One of the most significant is <strong>the rise of microservices architecture</strong>. This approach to software development involves breaking applications down into smaller, independent components that can be developed, tested, and deployed separately. This can help to streamline development and deployment processes, improve scalability and resilience, and reduce the risk of downtime and other issues.</p>]]></block1>
+      <block2><![CDATA[<p>Another important trend is <strong>the growing popularity of cloud-based development and deployment</strong>. Cloud platforms like <strong>AWS, Azure, and Google Cloud</strong> offer a range of tools and services that can help to simplify and accelerate the development and deployment of Java applications. They also provide robust infrastructure and security features that can help to ensure the reliability and availability of your applications.</p>
 
 <p><br />
 Of course, keeping up with these and other Java trends can be a daunting task, especially if you’re already stretched thin with project deadlines and other responsibilities. Fortunately, there is a solution that can help you stay on top of the latest Java trends and ensure that your projects are completed on time: <strong>Itenium’s team of senior Java consultants</strong>. With their deep expertise and experience, these consultants can provide invaluable guidance and support to help you navigate the constantly evolving Java landscape and keep your projects on track.</p>
 
 <p><br />
-So if you want to ensure that your Java projects are completed on time and to the highest standards, don’t let yourself be delayed by a lack of expertise or resources. <a href="mailto:">Contact Itenium today</a> to learn more about how our senior Java consultants can help you stay ahead of the curve and achieve your goals.</p>
-]]></block2>
+So if you want to ensure that your Java projects are completed on time and to the highest standards, don’t let yourself be delayed by a lack of expertise or resources. <a href="mailto:">Contact Itenium today</a> to learn more about how our senior Java consultants can help you stay ahead of the curve and achieve your goals.</p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
@@ -13115,15 +12998,8 @@ out of the box with <code>create-react-app</code>.</p>
     </toc>
     <excerpt><![CDATA[<p>As we look ahead to 2023, the world of .Net development is evolving rapidly. There are several new trends that are emerging and are set to dominate the industry in the coming years.</p>
 ]]></excerpt>
-      <block2><![CDATA[<p>As we look ahead to 2023, the world of .Net development is evolving rapidly. There are several new trends that are emerging and are set to dominate the industry in the coming years.</p>
-
-<!--more-->
-
-<p>No matter what the latest trends in .Net may be, it’s important for businesses to remember that delays in software development projects can have significant opportunity costs. Every day that a project is delayed can mean lost revenue, missed opportunities, and additional expenses. This is why it’s so important to work with experienced .Net consultants who can ensure that your project is completed on time and within budget.</p>
-
-<p><br /></p>
-
-<p>At Itenium, we understand the importance of timely project delivery. That’s why we have a team of senior .Net consultants who are available to help you with your project. Our consultants have years of experience working on .Net projects of all sizes, and can help you avoid the costs associated with project delays.</p>
+      <block1><![CDATA[<p>No matter what the latest trends in .Net may be, it’s important for businesses to remember that delays in software development projects can have significant opportunity costs. Every day that a project is delayed can mean lost revenue, missed opportunities, and additional expenses. This is why it’s so important to work with experienced .Net consultants who can ensure that your project is completed on time and within budget.</p>]]></block1>
+      <block2><![CDATA[<p>At Itenium, we understand the importance of timely project delivery. That’s why we have a team of senior .Net consultants who are available to help you with your project. Our consultants have years of experience working on .Net projects of all sizes, and can help you avoid the costs associated with project delays.</p>
 
 <p><br />
 Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor, ML.NET, or any other .Net framework, our consultants can help</strong>. We work closely with our clients to understand their specific needs and to develop customized solutions that meet their unique requirements.
@@ -13131,8 +13007,7 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
 <br /></p>
 
 <p>So, if you’re looking to stay ahead of the competition in 2023, don’t let a delayed .Net project hold you back.
-<a href="mailto:">Contact Itenium today</a> to learn more about how our senior .Net consultants can help you achieve your goals.</p>
-]]></block2>
+<a href="mailto:">Contact Itenium today</a> to learn more about how our senior .Net consultants can help you achieve your goals.</p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
