@@ -27,7 +27,7 @@ layout: null
     {%- if post.bigimg %}
     <bigimg>
       {%- if post.bigimg.url %}
-      <url>{{ 'https://itenium.be/blog-posts-new/assets/blog-images/' | append: post.bigimg.url | xml_escape }}</url>
+      <url>{{ site.image_base_url | append: '/blog-images/' | append: post.bigimg.url | xml_escape }}</url>
       {%- endif %}
       {%- if post.bigimg.desc %}
       <desc>{{ post.bigimg.desc | xml_escape }}</desc>
@@ -43,7 +43,7 @@ layout: null
     {%- if post.img %}
     <img>
       {%- if post.img.url %}
-      <url>{{ 'https://itenium.be/blog-posts-new/assets/blog-images/' | append: post.img.url | xml_escape }}</url>
+      <url>{{ site.image_base_url | append: '/blog-images/' | append: post.img.url | xml_escape }}</url>
       {%- endif %}
       {%- if post.img.desc %}
       <desc>{{ post.img.desc | xml_escape }}</desc>
@@ -70,15 +70,22 @@ layout: null
     </toc>
     {%- endif %}
     <excerpt><![CDATA[{{ post.excerpt }}]]></excerpt>
+    {%- assign img_src_replace = site.image_base_url | append: '/blog-images/' | prepend: 'src="' %}
+    {%- assign img_href_replace = site.image_base_url | append: '/blog-images/' | prepend: 'href="' %}
+    {%- assign assets_src_replace = site.image_base_url | append: '/blog-assets/' | prepend: 'src="' %}
+    {%- assign assets_href_replace = site.image_base_url | append: '/blog-assets/' | prepend: 'href="' %}
     {%- assign content_parts = post.content | split: "<!--block1-->" %}
     {%- if content_parts.size > 1 %}
       {%- assign before_block1 = content_parts[0] | split: "<!--more-->" %}
       {%- if before_block1.size > 1 %}
-      <block1><![CDATA[{{ before_block1[1] | strip }}]]></block1>
+      {%- assign block1_content = before_block1[1] | strip | replace: 'src="/blog/assets/blog-images/', img_src_replace | replace: 'href="/blog/assets/blog-images/', img_href_replace | replace: 'src="/blog/assets/blog-assets/', assets_src_replace | replace: 'href="/blog/assets/blog-assets/', assets_href_replace %}
+      <block1><![CDATA[{{ block1_content }}]]></block1>
       {%- endif %}
-      <block2><![CDATA[{{ content_parts[1] | strip }}]]></block2>
+      {%- assign block2_content = content_parts[1] | strip | replace: 'src="/blog/assets/blog-images/', img_src_replace | replace: 'href="/blog/assets/blog-images/', img_href_replace | replace: 'src="/blog/assets/blog-assets/', assets_src_replace | replace: 'href="/blog/assets/blog-assets/', assets_href_replace %}
+      <block2><![CDATA[{{ block2_content }}]]></block2>
     {%- else %}
-      <block2><![CDATA[{{ post.content }}]]></block2>
+      {%- assign block2_content = post.content | replace: 'src="/blog/assets/blog-images/', img_src_replace | replace: 'href="/blog/assets/blog-images/', img_href_replace | replace: 'src="/blog/assets/blog-assets/', assets_src_replace | replace: 'href="/blog/assets/blog-assets/', assets_href_replace %}
+      <block2><![CDATA[{{ block2_content }}]]></block2>
     {%- endif %}
     {%- capture block3_content -%}
       {%- include post-series.html page=post -%}
