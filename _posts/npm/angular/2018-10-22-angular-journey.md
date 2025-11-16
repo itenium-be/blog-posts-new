@@ -37,14 +37,20 @@ After 3 years of desktop development I’ve started with Angular 2+ in july 2016
 {: .hide-from-excerpt}
 
 Back then the landscape was a lot more difficult than it is today.
+
+
 <!--more-->
+
+
 - We did not have [Angular-cli](https://cli.angular.io/) yet, we had to do the packing and configuration ourselves.
 - We did not have a lot of documentation, and the one we had was often out of date and misleading.
 - Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. The intellisense was often lacking, inline templates support was lacking, and so on..
 - We got Release Candidates that contained major breaking changes. *"WTF? [Semver](https://semver.org) much?"*
 - Npm equaled pain. Back then even more than now. Packages were often not versioned in a way that made sense. 
 
-<br/>
+
+<!--block1-->
+
 
 “expression has changed after it was checked”
 One of the interviewing questions I ask candidates is if they know this error message that would pop up in the console window in development mode. 
@@ -71,6 +77,9 @@ But how do you implement it when you have a tree of components who all contain a
 I have a solid idea now, but only because it’s the logical result of a road full of trial & error.
 
 <br/>
+
+
+
 
 # As of today
 I’m still glad I can work with Angular every day.

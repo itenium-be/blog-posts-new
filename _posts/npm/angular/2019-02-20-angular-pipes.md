@@ -98,6 +98,10 @@ export class AppComponent {
 }
 ```
 
+
+<!--block1-->
+
+
 ## String Casing Pipes
 
 [UpperCasePipe](https://angular.dev/api/common/UpperCasePipe)
