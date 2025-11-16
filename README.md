@@ -8,4 +8,5 @@ for [https://itenium.be/blog](https://itenium.be/blog)
 
 ## Publish
 
-- [all-blog-posts.xml](https://itenium.be/blog-posts-new/all-blog-posts.xml)
+- [all-blog-posts.xml](https://itenium-be.github.io/blog-posts-new/all-blog-posts.xml)
+- [new-blog-posts.xml](https://itenium-be.github.io/blog-posts-new/new-blog-posts.xml)
