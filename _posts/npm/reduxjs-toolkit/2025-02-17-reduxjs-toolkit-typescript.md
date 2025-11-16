@@ -49,6 +49,10 @@ export type RootState = ReturnType<typeof store.getState>;
 export const useAppSelector = useSelector.withTypes<RootState>();
 ```
 
+
+<!--block1-->
+
+
 # createAsyncThunk
 
 [More info](https://redux-toolkit.js.org/usage/usage-with-typescript#defining-a-pre-typed-createasyncthunk)

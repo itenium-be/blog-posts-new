@@ -76,6 +76,10 @@ it('but does not execute the function', () => {
 });
 ```
 
+
+<!--block1-->
+
+
 Or create your own spies:
 
 ```js

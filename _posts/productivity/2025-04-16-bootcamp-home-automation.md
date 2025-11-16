@@ -50,6 +50,10 @@ A word of caution...
 
 {% include post/youtube.html id="nwPtcqcqz00" desc="A gentle reminder that maybe not everything should be automated" %}
 
+
+<!--block1-->
+
+
 # 🏗️🧰 Materials
 
 Because we needed a lot of soldering bouts etc, we asked the consultants if they could bring

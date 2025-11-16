@@ -44,6 +44,11 @@ After some issues finding the correct building in the Amsterdam RAI (Don’t sta
 The second thing I was amazed of was the number of keynote, deep dives and workshops that were given by, yes: Only female leaders.
 
 
+
+<!--block1-->
+
+
+
 # “Diversity and Inclusion (D&I) should be embedded in the WHOLE company, not only HR”
 
 The biggest topic of the conference was Diversity and Inclusion. This is all about the value of having gender, race and age diversity within your company.  Gillian Tans, former Ceo of booking.com phrased this very well by stating “Diversity drives more innovation and more creativity in your company. It should be embedded in the whole company, not only in recruiting new employees.“

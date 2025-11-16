@@ -72,6 +72,10 @@ Notable exceptions are: `\<` and `\>`, `[a-Z]`, `\Q\E`. Your mileage may vary.
 {: .table-code}
 
 
+
+<!--block1-->
+
+
 ## Shorthands
 
 | Shorthand | Meaning          | Remarks

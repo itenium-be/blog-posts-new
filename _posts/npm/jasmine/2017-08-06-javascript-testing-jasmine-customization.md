@@ -66,6 +66,8 @@ it('should not use myCustomEquality', function() {
 ```
 
 
+<!--block1-->
+
 
 # Custom matchers
 

@@ -48,6 +48,10 @@ workbook.RowHeight = 20; // & ColumnWidth
 // DefaultShowGridLines, DefaultShowZeros, ...
 ```
 
+
+<!--block1-->
+
+
 ## Printing
 
 - [More advanced printing options](https://github.com/closedxml/closedxml/wiki#page-setup-print-options)

@@ -102,6 +102,10 @@ export const { addTodo, removeTodo } = todoSlice.actions;
 export const { selectTodo } = todoSlice.selectors;
 ```
 
+
+<!--block1-->
+
+
 ## Dispatching an action
 
 See [Part 5: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})

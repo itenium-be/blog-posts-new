@@ -36,6 +36,9 @@ Some blog posts that have Autohotkey scripts for you to test out right away!
 - [Hotkeys tutorial](/blog/productivity/autohotkey-hotkeys)
 
 
+<!--block1-->
+
+
 # The DynaRun script
 
 Select an Autohotkey script and press `Capslock + F5`

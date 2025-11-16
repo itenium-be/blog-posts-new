@@ -39,7 +39,10 @@ because I keep forgetting all this stuff.
 
 # New blog post
 
-Create a new file in a folder in `_posts`:
+Create a
+
+
+<!--block1--> new file in a folder in `_posts`:
 - `_drafts`: Not published.
 - `productivity`: Most things end up here apparently.
 - `dotnet`: Everything c#, .NET Core, Visual Studio, etc.
@@ -49,6 +52,9 @@ Create a new file in a folder in `_posts`:
 - `dev-setup`: PowerShell, git, CLI, IDE, ...
 - `design`: Software Design, Architecture. Currently no UI/UX Design.
 - `trends`: About itenium itself, IT Consultancy, Current Market Trends, ...
+
+
+<!--block1-->
 
 
 # Front Matter
@@ -108,6 +114,9 @@ socials:
 > "" — Koen Koenen
 
 {: .notice--info}
+
+
+<!--block1-->
 
 {% raw %}
 {% include github-stars.html url="" desc="" %}

@@ -42,6 +42,10 @@ Which is basically on equal footing with EPPlus.
 Companion to the EPPlus series, specifically to Part 2: Formulas.  
 Covering the EPPlus syntax and implemented functions.
 
+
+<!--block1-->
+
+
 # Basics
 
 Add a formula with:  

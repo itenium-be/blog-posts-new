@@ -49,6 +49,9 @@ and some custom reporters:
 {% include github-stars.html url="larrymyers/jasmine-reporters" desc="Reporter classes for the jasmine test framework." %}
 
 
+<!--block1-->
+
+
 <br>
 Other Jasmine plugins you might find useful:
 

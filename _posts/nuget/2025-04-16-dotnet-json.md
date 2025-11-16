@@ -62,6 +62,9 @@ Otherwise use the [nuget package](https://www.nuget.org/packages/System.Text.Jso
 - **Newtonsoft.Json**: Easy, tolerant, lots of features, but much slower
 
 
+<!--block1-->
+
+
 # Basic Usage
 
 (De)Serialization with optional settings/options:

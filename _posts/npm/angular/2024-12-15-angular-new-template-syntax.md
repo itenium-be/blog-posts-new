@@ -71,6 +71,10 @@ Need to import `NgIf` from `@angular/common`.
 }
 ```
 
+
+<!--block1-->
+
+
 # @for
 
 ## Old Syntax

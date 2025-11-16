@@ -66,6 +66,8 @@ If you already used `Chart.js` before, you may want to choose for the `react-cha
 {% include github-stars.html url="chartjs/Chart.js" desc="Simple HTML5 Charts using the canvas tag" %}
 
 
+<!--block1-->
+
 
 ## Overview
 

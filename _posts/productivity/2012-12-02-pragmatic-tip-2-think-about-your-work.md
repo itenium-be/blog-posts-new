@@ -33,6 +33,12 @@ Find ways to refine your skills and always be on the lookout for new adventures.
 One such adventure to make you stronger is learning about Design Patterns.
 And a great way to learn more about patterns is by [teaching about them](https://github.com/itenium-be/Talk-DesignPatterns).
 
+
+
+<!--block1-->
+
+
+
 # Learning Design Patterns
 
 How do you convince a developer unfamiliar with Design Patterns to pick up a book on the topic. There are a few amazing books about

@@ -100,6 +100,10 @@ executes the selector twice and logs a warning to the console
 if one of the inputSelectors returns a different reference.
 
 
+<!--block1-->
+
+
+
 ## With Parameters
 
 Filter the todo list with a needle parameter.

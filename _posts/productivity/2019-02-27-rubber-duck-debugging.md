@@ -52,6 +52,10 @@ The most magnificent duck I've received so far:
 {% include post/image.html file=fileName alt="Ducky!!" title="Ping hasn't pushed much code though" desc=imgDesc maxWidth="360px" %}
 
 
+
+<!--block1-->
+
+
 ## Rubber Duck Prank
 
 Warning: This stuff is hilarious.

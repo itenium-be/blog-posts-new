@@ -56,6 +56,9 @@ The [React Developer Tools](https://chrome.google.com/webstore/detail/react-deve
 - ⚛️ Profiler: the simple and excellent React Component Profiler
 
 
+<!--block1-->
+
+
 ## Profiler Tab
 
 ### Action Buttons

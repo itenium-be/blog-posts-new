@@ -38,6 +38,9 @@ Which is basically on equal footing with EPPlus.
 # That's fine!
 
 
+<!--block1-->
+
+
 # IEnumerable objects
 {: .hide-from-excerpt}
 

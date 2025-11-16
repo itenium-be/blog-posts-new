@@ -55,6 +55,9 @@ Macintosh (OS 9): CR, \r, 0D, 13
 - `.shift`: Makes it smaller. Shorter word than .unshift
 
 
+<!--block1-->
+
+
 **JavaScript:**  
 - `.call`: Pass arguments as **c**olumns - `fn.call(this, arg1, arg2, ...)`
 - `.apply` Pass arguments as an **a**rray - `fn.call(this, [arg1, arg2, ...])`

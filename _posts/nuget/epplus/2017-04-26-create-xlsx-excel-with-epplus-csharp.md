@@ -55,6 +55,10 @@ They are explained in depth in part 3 Import.
 The blog posts will only cover the most important functionality.
 [More extensive code examples][github-project] can be found in the GitHub project.
 
+
+<!--block1-->
+
+
 Quickstart
 ==========
 

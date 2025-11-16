@@ -49,6 +49,10 @@ OfficeProperties props = package.Workbook.Properties;
 var colE = package.Workbook.Worksheets.First().Column(5);
 ```
 
+
+<!--block1-->
+
+
 ## Printing
 ```c#
 using (var package = new ExcelPackage())

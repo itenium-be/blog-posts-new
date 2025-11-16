@@ -41,7 +41,10 @@ and are not even trying to become a better professional but instead have to drag
 only for that very same code to come back to haunt and derive you from your sleep during maintenance, then perhaps you should try 
 to find something else? Why torment yourself like this when there are very likely jobs out there that you would in fact enjoy!?
 
-<br>
+
+<!--block1-->
+
+
 In all professions, new things need to be learned as processes are refined or replaced, and this is especially true in our branch. 
 You might currently be a specialist in a mainstream language such as Java or c# and while these won't be outdated anytime soon, 
 the keyword here should be "currently". Like everything in IT, these languages will eventually disappear as newer and cooler languages 

@@ -61,7 +61,7 @@ package-versions:
 {% include github-stars.html url="vuejs/vetur" desc="Vue tooling for VS Code." %}
 
 
-
+<!--block1-->
 
 
 # Hello Vue

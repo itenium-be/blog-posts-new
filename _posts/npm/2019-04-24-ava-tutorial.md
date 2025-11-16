@@ -66,6 +66,9 @@ There is also a [Common Pitfalls](https://github.com/avajs/ava/blob/master/docs/
 you run into some trouble early on.
 
 
+<!--block1-->
+
+
 
 # Example
 

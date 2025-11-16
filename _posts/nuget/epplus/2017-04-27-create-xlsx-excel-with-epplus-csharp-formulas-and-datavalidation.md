@@ -44,6 +44,9 @@ Not a problem for EPPlus. Instead of calculating values and writing them to
 an excel, leverage the power of Excel formulas.
 
 
+<!--block1-->
+
+
 # Formulas
 
 [The project code][github-project] creates an Excel like this:

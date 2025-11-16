@@ -52,6 +52,10 @@ Okay maybe that was not a good start trying to convince you to learn regex.
 **You don't know you need to know regex until you know regex.**
 {: .notice}
 
+
+<!--block1-->
+
+
 ## Applicability
 
 

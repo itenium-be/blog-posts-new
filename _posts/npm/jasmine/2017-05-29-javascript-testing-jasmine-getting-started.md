@@ -50,6 +50,8 @@ The following code snippets will assume you did.
 If you have no clue how to start, some **working examples** can be created with `jasmine examples`.
 
 
+<!--block1-->
+
 
 # Configure
 

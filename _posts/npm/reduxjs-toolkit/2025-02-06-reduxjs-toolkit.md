@@ -79,6 +79,9 @@ while (almost) not having to think about immutability anymore!
 [Part 2: Immer]({% post_url npm/reduxjs-toolkit/2025-02-07-reduxjs-toolkit-immer %})
 
 
+<!--block1-->
+
+
 # createSlice and configureStore
 
 Okay, now that we're Immer experts, let's look at the two most important

@@ -53,6 +53,10 @@ A few ClosedXML specific gotchas:
 - Use , as function parameter separator
 - A function that is [not implemented](https://docs.closedxml.io/en/latest/features/functions.html) can be set but the value cannot be read
 
+
+<!--block1-->
+
+
 # String manipulation
 
 All string indexes start from 1.

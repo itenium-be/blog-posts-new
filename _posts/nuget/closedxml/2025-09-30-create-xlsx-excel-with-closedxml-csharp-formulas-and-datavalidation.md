@@ -92,6 +92,10 @@ sheet.Range("H2:H5").FormulaR1C1 = "RC[-2]*(1-R5C7)"; // R5C7 is G5
 workbook.SaveAs("file.xlsx", new SaveOptions() {EvaluateFormulasBeforeSaving = true});
 ```
 
+
+<!--block1-->
+
+
 ## Support
 
 - [Supported Functions](https://github.com/closedxml/closedxml/wiki/Evaluating-Formulas#supported-functions)
