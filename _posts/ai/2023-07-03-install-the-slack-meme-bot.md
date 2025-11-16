@@ -35,7 +35,7 @@ it is time to post one!
 
 # What it looks like
 
-![Example of a Slack Meme Bot posting]({{ site.baseurl }}/assets/blog-images/slack-meme-bot-example.png "Slack Meme Bot in action")
+![Example of a Slack Meme Bot posting](/assets/blog-images/slack-meme-bot-example.png "Slack Meme Bot in action")
 
 # Requirements
 
@@ -90,4 +90,4 @@ Follow their [official instructions](https://api.slack.com/messaging/webhooks):
     - Add New Webhook to Workspace
     - Copy the url!
 
-![Activating Slack Webhook]({{ site.baseurl }}/assets/blog-images/slack-meme-bot-slack-setup.png "Activating Slack Webhook"){: .img-responsive}
+![Activating Slack Webhook](/assets/blog-images/slack-meme-bot-slack-setup.png "Activating Slack Webhook"){: .img-responsive}
