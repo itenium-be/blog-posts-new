@@ -1,0 +1,15 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<blog-posts>
+{%- assign now = site.time | date: '%s' | plus: 0 %}
+{%- assign one_hour_ago = now | minus: 3600 %}
+{%- for post in site.posts %}
+  {%- assign post_date = post.date | date: '%s' | plus: 0 %}
+  {%- assign post_modified = post.last_modified_at | default: post.date | date: '%s' | plus: 0 %}
+  {%- if post_date >= one_hour_ago or post_modified >= one_hour_ago %}
+{%- include blog-post-xml.html post=post %}
+  {%- endif %}
+{%- endfor %}
+</blog-posts>
