@@ -29,9 +29,15 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p ./deploy
+          cp ./_site/all-blog-posts.xml ./deploy/
+          cp -r ./assets ./deploy/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./deploy
           publish_branch: gh-pages
