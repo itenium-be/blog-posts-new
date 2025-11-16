@@ -50,7 +50,7 @@ gazillion pages that is the [default documentation](https://redux.js.org/introdu
 We're 2025 and you start a new app with old, trusted and deprecated `create-react-app`,
 only to find out that using Redux is also, deprecated.
 
-![Redux createStore deprecation](/assets/blog-images/reduxjs-toolkit-createStore-deprecated.png "Redux createStore deprecation"){: .img-responsive .hide-from-excerpt}
+![Redux createStore deprecation]({{ "/assets/blog-images/reduxjs-toolkit-createStore-deprecated.png" | relative_url }} "Redux createStore deprecation"){: .img-responsive .hide-from-excerpt}
 
 During previous migrations I took a long hard look at the [ReduxJS/Toolkit documentation](https://redux-toolkit.js.org/)
 and I was like... Aint nobody got time for that!

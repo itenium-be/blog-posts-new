@@ -75,7 +75,7 @@ Use `gnh` to display all actions available by Git-NumberedAdd with description a
 
 Displays the output of `git status --short` together with fabricated indexes like so
 
-![Git-NumberedStatus](/assets/blog-images/git-add-numbered-status.png){: .img-responsive}
+![Git-NumberedStatus]({{ "/assets/blog-images/git-add-numbered-status.png" | relative_url }}){: .img-responsive}
 
 Working directory color codes:
 - Yellow: <span style="color: #CDCB7D">**M**</span>odified (file0 to file3)
@@ -90,7 +90,7 @@ Configure the color output by modifying `$global:gitStatusNumbers`.
 If `$global:gitStatusNumbers.includeNumstat` is true (=by default), Git-NumberedStatus will also
 execute a `git diff --numstat` and add lines added/deleted to the output.
 
-![Git-NumberedStatus with --numstat](/assets/blog-images/git-add-numbered-status-numstat.png){: .img-responsive}
+![Git-NumberedStatus with --numstat]({{ "/assets/blog-images/git-add-numbered-status-numstat.png" | relative_url }}){: .img-responsive}
 
 
 # Git-NumberedAdd <small>(alias: ga)</small>
@@ -135,7 +135,7 @@ files so that they also show up in the diff.
 This only works for files already staged.
 Example output:  
 
-![Git-NumberedStatus](/assets/blog-images/git-add-numbered-status-staged.png){: .img-responsive}
+![Git-NumberedStatus]({{ "/assets/blog-images/git-add-numbered-status-staged.png" | relative_url }}){: .img-responsive}
 
 To, for example unstage file0 and file4  
 ```ps
@@ -215,7 +215,7 @@ git add --interactive # or -i for short
 
 Once in interactive mode:  
 
-![git add --interactive](/assets/blog-images/git-add-interactive.png){: .img-responsive}
+![git add --interactive]({{ "/assets/blog-images/git-add-interactive.png" | relative_url }}){: .img-responsive}
 
 And then use `2: Update` to stage files.
 

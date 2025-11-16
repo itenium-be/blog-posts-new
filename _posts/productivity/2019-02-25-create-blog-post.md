@@ -116,7 +116,7 @@ socials:
 {% include post/youtube.html id="youtubeId" desc="" %}
 {% endraw %}
 
-![alt](/assets/blog-images/ "title"){: .img-responsive}
+![alt](/assets/blog-images/file.jpg "title"){: .img-responsive}
 
 [description][ref]
 [ref]: url
@@ -255,8 +255,8 @@ Bootstrap 3: `.img-responsive`, `.img-rounded`, `.img-thumbnail`, `.img-circle`.
 
 ```
 <!-- Inline -->
-![alt text](/assets/blog-images/screenshot.jpg "Title Text"){: .img-responsive}
-![](/assets/blog-images/ ""){: .img-responsive}
+![alt text]({{ "/assets/blog-images/screenshot.jpg" | relative_url }} "Title Text"){: .img-responsive}
+![](/assets/blog-images/file.jpg){: .img-responsive}
 
 <!-- Reference -->
 ![alt text][ref]

@@ -50,7 +50,7 @@ commit!
 You basically want to avoid forcing your colleagues to review
 mega PRs for what could have been much smaller, right?
 
-![Everyone loves reviewing such PR!](/assets/blog-images/git-hygiene-pr.png){: .img-responsive}
+![Everyone loves reviewing such PR!]({{ "/assets/blog-images/git-hygiene-pr.png" | relative_url }}){: .img-responsive}
 
 These either result in your PR being open for a very long time
 (with all the merge conflicts that entails!)
@@ -106,7 +106,7 @@ git config --global alias.dfc 'diff --staged'
 
 ## Step 3: Commit!
 
-![Commit messages matter!](/assets/blog-images/git-hygiene-commit-message.jpg){: .img-responsive}
+![Commit messages matter!]({{ "/assets/blog-images/git-hygiene-commit-message.jpg" | relative_url }}){: .img-responsive}
 
 Don't write your life's story (at least not in a commit message!)
 but do add something meaningful, what exactly are you changing?
@@ -339,4 +339,4 @@ especially when it happens time and time again...
 
 Here's one last meme to keep the mood light:
 
-![Yup, pretty much every dev!](/assets/blog-images/git-hygiene-commit-message2.jpg)
+![Yup, pretty much every dev!]({{ "/assets/blog-images/git-hygiene-commit-message2.jpg" | relative_url }})

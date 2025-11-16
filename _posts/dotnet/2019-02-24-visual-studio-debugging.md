@@ -205,7 +205,7 @@ Not open source:
 ## Visual Studio 2017
 
 **Run to click**:  
-![Run to click](/assets/blog-images/visual-studio-debugging-run-to-click.png)
+![Run to click]({{ "/assets/blog-images/visual-studio-debugging-run-to-click.png" | relative_url }})
 
 
 ## Visual Studio 2019

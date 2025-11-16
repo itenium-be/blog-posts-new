@@ -62,7 +62,7 @@ some extra equipment to the bootcamp.
 
 After an initial presentation the teams got to work! 
 
-![The Teams](/assets/blog-images/bootcamp-home-automation-teams.png){: .img-responsive}
+![The Teams]({{ "/assets/blog-images/bootcamp-home-automation-teams.png" | relative_url }}){: .img-responsive}
 
 
 # 🔥⚡ Smart Socket
@@ -74,7 +74,7 @@ Creating our own, programmable "smart" socket with HLK-PM01 and ESP01.
 
 ## If it smells like chicken, you're holding it wrong
 
-![If it smells like chicken, you're holding it wrong](/assets/blog-images/bootcamp-home-automation-soldering-meme.png)
+![If it smells like chicken, you're holding it wrong]({{ "/assets/blog-images/bootcamp-home-automation-soldering-meme.png" | relative_url }})
 
 
 

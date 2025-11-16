@@ -168,4 +168,4 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 
 # Advantages
 
-![Nailed it!](/assets/blog-assets/colorblind-ididit.png)
+![Nailed it!]({{ "/assets/blog-assets/colorblind-ididit.png" | relative_url }})

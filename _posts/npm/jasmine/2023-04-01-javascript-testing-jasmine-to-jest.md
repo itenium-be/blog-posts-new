@@ -314,7 +314,7 @@ Jest works out of the box when using [`create-react-app`](https://create-react-a
 
 **How it looks**:
 
-![Visual UnitTest result cues in Visual Studio Code](/assets/blog-images/vscode-jest-test-runner.png "Pretty slick")
+![Visual UnitTest result cues in Visual Studio Code]({{ "/assets/blog-images/vscode-jest-test-runner.png" | relative_url }} "Pretty slick")
 
 
 ## Notifications?

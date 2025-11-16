@@ -198,7 +198,7 @@ but in a non-mutating way.
 The ReduxJS/Toolkit reducers have already called `produce`,
 so this has been abstracted away for us.
 
-![The immer flow](/assets/blog-images/reduxjs-toolkit-immer-flow.png "The immer flow"){: .img-responsive}
+![The immer flow]({{ "/assets/blog-images/reduxjs-toolkit-immer-flow.png" | relative_url }} "The immer flow"){: .img-responsive}
 
 
 ## Produce Example

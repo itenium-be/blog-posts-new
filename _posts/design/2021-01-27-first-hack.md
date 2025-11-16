@@ -30,7 +30,7 @@ I started playing Ambar (since down) with a few friends. This could be the story
 
 # The Strategy
 
-![Ambar logo](/assets/blog-images/first-hack-ambar-logo.jpg "Ambar logo")
+![Ambar logo]({{ "/assets/blog-images/first-hack-ambar-logo.jpg" | relative_url }} "Ambar logo")
 
 During one age of the browser game Ambar, we were playing an empire in which our strategy was to grow like mad but without training any troops.
 If we could outgrow everyone fast enough, no one would be able to open a magical portal to our empire to attack us, since portal-opening was based on empire size.

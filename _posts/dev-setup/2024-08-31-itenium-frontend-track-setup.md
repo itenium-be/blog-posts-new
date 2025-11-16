@@ -93,7 +93,7 @@ Back when those posts were written, Visual Studio Code didn't have a builtin opt
 to sync your settings so I did it with our [dotfiles](https://github.com/Laoujin/dotfiles). But now it's just a
 [menu option](https://code.visualstudio.com/docs/editor/settings-sync) away.
 
-![Turn on sync in Visual Studio Code](/assets/blog-images/frontend-track-turn-on-sync.png "Turn on sync in Visual Studio Code")
+![Turn on sync in Visual Studio Code]({{ "/assets/blog-images/frontend-track-turn-on-sync.png" | relative_url }} "Turn on sync in Visual Studio Code")
 
 Especially useful when you have an installation on your home and work laptops, or when
 you change projects!
@@ -431,7 +431,7 @@ And add a `.vscode/launch.json`:
 
 If you can't see failure details, open the Terminal `Ctrl+J`!
 
-![Jest in Visual Studio Code!](/assets/blog-images/frontend-track-vscode-jest.png "Jest in Visual Studio Code!")
+![Jest in Visual Studio Code!]({{ "/assets/blog-images/frontend-track-vscode-jest.png" | relative_url }} "Jest in Visual Studio Code!")
 
 
 # The Sessions

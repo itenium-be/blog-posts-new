@@ -31,7 +31,7 @@ Filling in an entire form with predefined values.
 Considering the following login form
 ([Html version](/assets/blog-images/autohotkey-login-form.html))
 
-![desc](/assets/blog-images/autohotkey-login-form.png)
+![desc]({{ "/assets/blog-images/autohotkey-login-form.png" | relative_url }})
 
 
 

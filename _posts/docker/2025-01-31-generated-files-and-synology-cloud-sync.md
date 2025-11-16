@@ -57,7 +57,7 @@ getting synced alright, but the generated files were not!?
 
 Steps: Control Panel > File Services > NFS > Enable
 
-![Enabling NFS v4 on Synology](/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png "Enabling NFS v4 on Synology"){: .img-responsive}
+![Enabling NFS v4 on Synology]({{ "/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" | relative_url }} "Enabling NFS v4 on Synology"){: .img-responsive}
 
 
 
@@ -69,7 +69,7 @@ Steps: Control Panel > File Services > NFS > Enable
 - Control Panel > Shared Folder > right Click "workspace" > Edit > NFS Permissions
   - Create > Hostname or IP: 127.0.0.1 > Save
 
-![Enabling NFS on Synology Shared Folder](/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png "Enabling NFS on Synology Shared Folder"){: .img-responsive}
+![Enabling NFS on Synology Shared Folder]({{ "/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png" | relative_url }} "Enabling NFS on Synology Shared Folder"){: .img-responsive}
 
 
 ## The Code

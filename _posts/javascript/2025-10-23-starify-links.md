@@ -78,13 +78,13 @@ Maybe rightfully so, as it took me about 2 years before I got around fixing it �
 
 If you do the easy implementation, as for example with [Github Star Count](https://chromewebstore.google.com/detail/github-star-count/jahogeehepfohgakggfeeimokcgnmdid), you get this on Google:
 
-![Starify - The Easy Way](/assets/blog-images/starify-links-easy.png)
+![Starify - The Easy Way]({{ "/assets/blog-images/starify-links-easy.png" | relative_url }})
 
 
 But that is just unacceptable, so this is what "Starify Links" does, which **will break**
 again at some point in the future 😓
 
-![Starify - The Hard Way](/assets/blog-images/starify-links-hard.png)
+![Starify - The Hard Way]({{ "/assets/blog-images/starify-links-hard.png" | relative_url }})
 
 
 # Flocking
@@ -103,7 +103,7 @@ or maybe just because once I get started, I just can't seem to stop myself 😀
 - Support all the badges that seem worthwhile
 - Make everything configurable
 
-![The Result - Starify All The Links](/assets/blog-images/starify-all-links.png)
+![The Result - Starify All The Links]({{ "/assets/blog-images/starify-all-links.png" | relative_url }})
 
 
 # Thanks Shields.io
@@ -146,7 +146,7 @@ without me doing any work, and all that in about 10-15 prompts.
 
 This is what it generated for configuring the badges!
 
-![Configure all badges options screen](/assets/blog-images/starify-links-options.png "Configure all the badges!"){: .img-responsive}
+![Configure all badges options screen]({{ "/assets/blog-images/starify-links-options.png" | relative_url }} "Configure all the badges!"){: .img-responsive}
 
 But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to "_API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation._"

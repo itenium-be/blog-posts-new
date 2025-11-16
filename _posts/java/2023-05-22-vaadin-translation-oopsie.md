@@ -37,7 +37,7 @@ The application consisted of a bunch of views (parent components) which themselv
 
 **The translation key is formed as such**:
 
-![Visual translation key formation](/assets/blog-images/vaadin_translation_key_template.png "Pretty slick")
+![Visual translation key formation]({{ "/assets/blog-images/vaadin_translation_key_template.png" | relative_url }} "Pretty slick")
 
 The parent id is set on the parent component. The component type is defined by the component itself and we refer to its class name for that, for example for a checkbox component it would be checkbox. The component id is set on the component. The translation field depends on the component type. Some component types put the translation values in label fields and in that case the translation field would be “caption” (labels used to be captions in Vaadin version 8), some have the translations in div fields in which case the translation field is set as “div”. 
 

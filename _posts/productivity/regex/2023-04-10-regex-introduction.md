@@ -37,7 +37,7 @@ Some people, when confronted with a problem, think 'I know, I'll use regular exp
 
 **Or the XKCD version**:
 
-![Perl Problems](/assets/blog-images/regex-xkcd-problems.png "Perl Problems (https://xkcd.com/1171)")
+![Perl Problems]({{ "/assets/blog-images/regex-xkcd-problems.png" | relative_url }} "Perl Problems (https://xkcd.com/1171)")
 
 
 <!--more-->
@@ -100,7 +100,7 @@ head and handle the replacement details with multiple cursor trickery?
 
 You want to avoid falling into the trap of spending more time on your regex than you would spend doing it manually.
 
-![Manual vs Regex Time Trade-Off](/assets/blog-images/regex-time-trade-off.png "Manual vs Regex Time Trade-Off")
+![Manual vs Regex Time Trade-Off]({{ "/assets/blog-images/regex-time-trade-off.png" | relative_url }} "Manual vs Regex Time Trade-Off")
 
 
 ## Learning
@@ -144,7 +144,7 @@ Some examples (or [a full list](https://gist.github.com/CMCDragonkai/6c933f4a7d7
 
 <!--
 Naah, not funny enough
-![Basically too many differences](/assets/blog-images/regex-hate.jpg "Basically too many differences")
+![Basically too many differences]({{ "/assets/blog-images/regex-hate.jpg" | relative_url }} "Basically too many differences")
 -->
 
 
@@ -155,7 +155,7 @@ Naah, not funny enough
 There are the obvious ones: throwing [regex against HTML](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454) or XML.
 
 
-![HTML Parsing](/assets/blog-images/regex-html.png "HTML Parsing")
+![HTML Parsing]({{ "/assets/blog-images/regex-html.png" | relative_url }} "HTML Parsing")
 
 **Use a parser instead**. And then you can throw some jquery against it or whatever API your language exposes.
 It's going to be a lot more readable, maintainable and more robust to changes in the HTML.
@@ -181,7 +181,7 @@ Which is how we fluently arrive at...
 ## Writing vs Reading
 
 
-![Writing vs Reading RegEx](/assets/blog-images/regex-writing-vs-reading.png "Writing vs Reading RegEx")
+![Writing vs Reading RegEx]({{ "/assets/blog-images/regex-writing-vs-reading.png" | relative_url }} "Writing vs Reading RegEx")
 
 It's funny because it's true. Requirements change and well, good luck deciphering your own regex.  
 Or heaven forbids, one someone else wrote! 😱
@@ -191,7 +191,7 @@ Or heaven forbids, one someone else wrote! 😱
 
 Let's be honest here...
 
-![Perl Problems](/assets/blog-images/regex-xkcd-fantasy.png "Perl Problems (https://xkcd.com/208/)")
+![Perl Problems]({{ "/assets/blog-images/regex-xkcd-fantasy.png" | relative_url }} "Perl Problems (https://xkcd.com/208/)")
 
 **Moving on**
 

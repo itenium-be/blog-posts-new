@@ -103,7 +103,7 @@ you have not properly assessed the patterns' `Applicability` nor its `Intent`
 and are left only with its `Consequences`:
 
 
-![There will be consequences meme](/assets/blog-images/CQRS-Ramble-Consequences.jpg "There will be consequences"){: .img-responsive}
+![There will be consequences meme]({{ "/assets/blog-images/CQRS-Ramble-Consequences.jpg" | relative_url }} "There will be consequences"){: .img-responsive}
 
 
 ## An Explosion of Classes
@@ -128,7 +128,7 @@ So yeah, the amount of types in your application will grow. Dramatically.
 Well since it's CRUD you are bound to be doing the exact same thing multiple times. Right.. not exactly the same thing of course,
 there is that one field... in which entity was it again?
 
-![Duplication!? Duplication everywhere!](/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg)
+![Duplication!? Duplication everywhere!]({{ "/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" | relative_url }})
 
 
 - The CreateHandler for entity 1 will look very much like the one for entity 2.
@@ -180,7 +180,7 @@ The search for answers **to the wrong question**:
 
 Because you want to keep [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), one searches for solutions.
 
-![Keeping Oneself DRY](/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg)
+![Keeping Oneself DRY]({{ "/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" | relative_url }})
 
 
 

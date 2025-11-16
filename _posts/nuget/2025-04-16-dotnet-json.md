@@ -364,7 +364,7 @@ the `DefaultContractResolver`.
 but I'm guessing this is comparing apples and oranges because STJ is included by default
 and is thus under-represented in the graph.
 
-![Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years](/assets/blog-images/dotnet-json-trend.png "Nuget downloads comparison"){: .img-responsive}
+![Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years]({{ "/assets/blog-images/dotnet-json-trend.png" | relative_url }} "Nuget downloads comparison"){: .img-responsive}
 
 
 # More!!

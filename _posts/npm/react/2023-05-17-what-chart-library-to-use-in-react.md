@@ -133,7 +133,7 @@ Time: 15 minutes.
 
 #### Example
 
-![Rechart line chart](/assets/blog-images/react-charting-rechart.png "Recharts: Line Chart")
+![Rechart line chart]({{ "/assets/blog-images/react-charting-rechart.png" | relative_url }} "Recharts: Line Chart")
 
 #### Code
 
@@ -183,7 +183,7 @@ It assumes all data inserted are datum objects whereas in this case they are per
 
 #### Example
 
-![Visx line chart](/assets/blog-images/react-charting-visx.png "Visx: Line Chart")
+![Visx line chart]({{ "/assets/blog-images/react-charting-visx.png" | relative_url }} "Visx: Line Chart")
 
 #### Code
 
@@ -253,7 +253,7 @@ Big visual issue however as you can probably tell is that the values don't exact
 
 #### Example
 
-![Nivo line chart](/assets/blog-images/react-charting-nivo.png "Nivo: Line Chart")
+![Nivo line chart]({{ "/assets/blog-images/react-charting-nivo.png" | relative_url }} "Nivo: Line Chart")
 
 #### Code
 
@@ -300,7 +300,7 @@ Usage was relatively easy, but it has the same limitation as the Nivo library be
 
 #### Example
 
-![Victory line chart](/assets/blog-images/react-charting-victory.png "Victory: Line Chart")
+![Victory line chart]({{ "/assets/blog-images/react-charting-victory.png" | relative_url }} "Victory: Line Chart")
 
 #### Code
 
@@ -345,7 +345,7 @@ Also I needed to map the data properties to x and y as well again.
 
 #### Example
 
-![React-vis line chart](/assets/blog-images/react-charting-react-vis.png "React-vis: Line Chart")
+![React-vis line chart]({{ "/assets/blog-images/react-charting-react-vis.png" | relative_url }} "React-vis: Line Chart")
 
 #### Code
 
@@ -388,7 +388,7 @@ The end result does look nice however.
 
 #### Example
 
-![React-chartjs-2 line chart](/assets/blog-images/react-charting-react-chartjs-2.png "React-chartjs-2: Line Chart")
+![React-chartjs-2 line chart]({{ "/assets/blog-images/react-charting-react-chartjs-2.png" | relative_url }} "React-chartjs-2: Line Chart")
 
 #### Code
 
@@ -463,4 +463,4 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 
 The `create-react-app` is [published at itenium.be](https://itenium.be/React-Charting/).
 
-![Demo App Overview](/assets/blog-images/react-charting-demo-app.png "Demo App Overview")
+![Demo App Overview]({{ "/assets/blog-images/react-charting-demo-app.png" | relative_url }} "Demo App Overview")

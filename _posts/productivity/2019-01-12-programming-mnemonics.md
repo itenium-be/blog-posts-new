@@ -125,4 +125,4 @@ Even for tar one exists, as the following IRC conversation illustrates:
 Not really a programming mnemonic but Simon posted it,
 and I liked it too much to not add it here 😀
 
-![There vs Their](/assets/blog-images/mnemonics-there-their.png "There vs Their")
+![There vs Their]({{ "/assets/blog-images/mnemonics-there-their.png" | relative_url }} "There vs Their")

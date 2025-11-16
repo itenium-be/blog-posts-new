@@ -39,7 +39,7 @@ teachers + departments (postgres) and the football worldcups (sql server).
 
 Which country scored the most owngoals? Read on to find out!
 
-![Special SQL Skillset Taken meme](/assets/blog-images/sql-training-meme.png "Special SQL Skillset"){: .img-responsive}
+![Special SQL Skillset Taken meme]({{ "/assets/blog-images/sql-training-meme.png" | relative_url }} "Special SQL Skillset"){: .img-responsive}
 
 <!--more-->
 
@@ -54,7 +54,7 @@ After this it was pretty smooth sailing. Tom found an error in the calculation o
 
 ## Before we start
 
-![Meme SQL is always all caps!](/assets/blog-images/sql-training-meme2.png "It can only be SELECT FROM!!"){: .img-responsive}
+![Meme SQL is always all caps!]({{ "/assets/blog-images/sql-training-meme2.png" | relative_url }} "It can only be SELECT FROM!!"){: .img-responsive}
 
 
 ## Notable Hacks

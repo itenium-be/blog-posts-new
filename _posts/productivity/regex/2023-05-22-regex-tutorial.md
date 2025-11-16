@@ -125,7 +125,7 @@ Or use named groups if supported in your regex implementation.
 
 The last & thoughest feature each developer should definitely know: lookahead & lookbehind!
 
-![Lookahead vs Lookbehind syntax](/assets/blog-images/regex-lookaround.png "Lookahead vs Lookbehind syntax")
+![Lookahead vs Lookbehind syntax]({{ "/assets/blog-images/regex-lookaround.png" | relative_url }} "Lookahead vs Lookbehind syntax")
 
 **Example**:
 

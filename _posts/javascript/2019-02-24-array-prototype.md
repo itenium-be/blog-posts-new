@@ -321,7 +321,7 @@ for (let itm of input) {
 Thanks [Wim De Cleen](https://x.com/bewidec/status/935573858136051713) (and Martin Fowler)
 for this amazing diagram, I love it!
 
-![Explain LINQ to a 5 year old](/assets/blog-images/Array.prototype-fowler-diagrams.jpg "Explain LINQ to a 5 year old"){: .img-responsive}
+![Explain LINQ to a 5 year old]({{ "/assets/blog-images/Array.prototype-fowler-diagrams.jpg" | relative_url }} "Explain LINQ to a 5 year old"){: .img-responsive}
 
 
 

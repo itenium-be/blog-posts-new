@@ -154,7 +154,7 @@ Reselect will only execute the combiner fn when the inputs have changed,
 which is typically your entire root state (with potentially additional parameters)
 AND the result of those input selectors has changed.
 
-![How reselect works](/assets/blog-images/reduxjs-toolkit-reselect-how-it-works.png "How reselect works"){: .img-responsive}
+![How reselect works]({{ "/assets/blog-images/reduxjs-toolkit-reselect-how-it-works.png" | relative_url }} "How reselect works"){: .img-responsive}
 
 Configure this behavior with `argsMemoize(Options)` and `memoize(Options)`.
 

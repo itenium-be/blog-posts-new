@@ -39,7 +39,7 @@ todo:
 ---
 
 
-![VSCode Editor](/assets/blog-images/vscode-screenshot.png){: .webfeedsFeaturedVisual }
+![VSCode Editor]({{ "/assets/blog-images/vscode-screenshot.png" | relative_url }}){: .webfeedsFeaturedVisual }
 
 
 > Pragmatic Tip 22:
@@ -158,7 +158,7 @@ Set-Alias cde Start-VSCode
 
 #### Start from Windows Explorer Context Menu
 
-Available during installation but [here is the reg file](/assets/blog-assets/vscode-contextmenu.reg)
+Available during installation but [here is the reg file]({{"/assets/blog-assets/vscode-contextmenu.reg" | relative_url}})
 if you want to add it later on (check the path inside the reg).
 
 
@@ -191,7 +191,7 @@ if you want to add it later on (check the path inside the reg).
 
 # Layout
 
-![alt](/assets/blog-images/vscode-window-layout.png){: .img-responsive}
+![alt]({{ "/assets/blog-images/vscode-window-layout.png" | relative_url }}){: .img-responsive}
 
 {% include kbd k="F11" l="View: Toggle Full Screen" %}
 {% include kbd k="Control+Q" l="View: Quick Open View" %}
@@ -472,4 +472,4 @@ If I ever need to change again because of slowed down development
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,
 you know, something like Vim.
 
-![Sublime Text? Real Americans Use Vim](/assets/blog-images/vscode-use-vim.jpg)
+![Sublime Text? Real Americans Use Vim]({{ "/assets/blog-images/vscode-use-vim.jpg" | relative_url }})

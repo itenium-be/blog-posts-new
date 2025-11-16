@@ -30,7 +30,7 @@ package-versions:
     version: 1.36.0
 ---
 
-![VSCode Editor](/assets/blog-images/vscode-editor.png){: .webfeedsFeaturedVisual }
+![VSCode Editor]({{ "/assets/blog-images/vscode-editor.png" | relative_url }}){: .webfeedsFeaturedVisual }
 
 
 > Pragmatic Tip 22:

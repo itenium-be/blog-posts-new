@@ -73,7 +73,7 @@ in the very first slide, a typo which has been screaming
 at our customers on our website for **8 years**. Whoops!  
 <small>(streng**ht**en vs streng**th**en)</small>
 
-![Strengthening our business](/assets/blog-images/site-inspector-oopsie.png "Strengthening our business"){: .img-responsive}
+![Strengthening our business]({{ "/assets/blog-images/site-inspector-oopsie.png" | relative_url }} "Strengthening our business"){: .img-responsive}
 
 Heh heh, maybe no one ever noticed? 😬🙈🤫
 

@@ -23,7 +23,7 @@ Bookmarks have their own margin where they can be toggled with a mouse click.
 
 <br>
 
-![](/assets/blog-images/notepad-bookmarks-1.jpg){: style="float: left; margin-right: 25px"}
+![]({{ "/assets/blog-images/notepad-bookmarks-1.jpg" | relative_url }}){: style="float: left; margin-right: 25px"}
 
 They can also be **toggled with "CTRL + F2"**. Use **"F2" and "SHIFT + F2" to jump** back and forth between them.
 
@@ -39,9 +39,9 @@ All bookmarks can be cleared from the "Search –> Bookmark" menu. There are som
 menu which might even seem pretty odd at first.
 That is until you combine them with the “Mark” tab in the "**Find Dialog (CTRL + F)**".
 
-![Inverse Bookmark, say what?](/assets/blog-images/notepad-bookmarks-2.jpg)
+![Inverse Bookmark, say what?]({{ "/assets/blog-images/notepad-bookmarks-2.jpg" | relative_url }})
 
 <br>
 Suddenly you can write a regular expression to capture certain lines of text and cut those lines with a single command. Pretty neat!
 
-![Bookmark lines based on search expression](/assets/blog-images/notepad-bookmarks-3.jpg)
+![Bookmark lines based on search expression]({{ "/assets/blog-images/notepad-bookmarks-3.jpg" | relative_url }})

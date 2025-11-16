@@ -307,7 +307,7 @@ sheet.Cell("B5").Value = "I'm centered";
 
 Because a picture is worth a 1000 words:
 
-![The examples below](/assets/blog-images/closedxml-conditional-formatting.png)
+![The examples below]({{ "/assets/blog-images/closedxml-conditional-formatting.png" | relative_url }})
 
 
 ```c#
