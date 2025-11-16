@@ -33,7 +33,7 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger"><a class="page-link" href="/blog/">itenium Blog</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -78,7 +78,7 @@ Use <code>gnh</code> to display all actions available by Git-NumberedAdd with de
 
 <p>Displays the output of <code>git status --short</code> together with fabricated indexes like so</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/git-add-numbered-status.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
 
 <p>Working directory color codes:</p>
 <ul>
@@ -95,7 +95,7 @@ Configure the color output by modifying <code>$global:gitStatusNumbers</code>.</
 <p>If <code>$global:gitStatusNumbers.includeNumstat</code> is true (=by default), Git-NumberedStatus will also
 execute a <code>git diff --numstat</code> and add lines added/deleted to the output.</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status-numstat.png" alt="Git-NumberedStatus with --numstat" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/git-add-numbered-status-numstat.png" alt="Git-NumberedStatus with --numstat" class="img-responsive" /></p>
 
 <h1 id="git-numberedadd-alias-ga">Git-NumberedAdd <small>(alias: ga)</small></h1>
 
@@ -137,7 +137,7 @@ files so that they also show up in the diff.</p>
 <p>This only works for files already staged.
 Example output:</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status-staged.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/git-add-numbered-status-staged.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
 
 <p>To, for example unstage file0 and file4</p>
 <pre><code class="language-ps">PS&gt; Git-NumberedReset 02
@@ -210,7 +210,7 @@ Git-NumberedSetLocation # Alias: gsl
 
 <p>Once in interactive mode:</p>
 
-<p><img src="/assets/blog-images/git-add-interactive.png" alt="git add --interactive" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/git-add-interactive.png" alt="git add --interactive" class="img-responsive" /></p>
 
 <p>And then use <code>2: Update</code> to stage files.</p>
 

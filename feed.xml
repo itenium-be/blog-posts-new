@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/blog/" rel="alternate" type="text/html" /><updated>2025-11-15T17:35:01+00:00</updated><id>https://itenium.be/blog/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/blog/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/blog/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/blog/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://itenium.be/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://itenium.be/blog/" rel="alternate" type="text/html" /><updated>2025-11-16T10:31:03+00:00</updated><id>https://itenium.be/blog/feed.xml</id><title type="html">itenium</title><entry><title type="html">Chrome Extension: Starify Links</title><link href="https://itenium.be/blog/javascript/2025/10/23/starify-links.html" rel="alternate" type="text/html" title="Chrome Extension: Starify Links" /><published>2025-10-23T00:00:00+00:00</published><updated>2025-10-23T00:00:00+00:00</updated><id>https://itenium.be/blog/javascript/2025/10/23/starify-links</id><content type="html" xml:base="https://itenium.be/blog/javascript/2025/10/23/starify-links.html"><![CDATA[<p>Back in 2019 I created a Chrome Extension called
 “<a href="/blog/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
 
 <p>I probably just discovered <a href="https://github.com/sindresorhus/awesome">sindresorhus awesome</a> lists.
@@ -38,12 +38,12 @@ and I got that one star review, after which no one bothered installing it anymor
 
 <p>If you do the easy implementation, as for example with <a href="https://chromewebstore.google.com/detail/github-star-count/jahogeehepfohgakggfeeimokcgnmdid">Github Star Count</a>, you get this on Google:</p>
 
-<p><img src="/assets/blog-images/starify-links-easy.png" alt="Starify - The Easy Way" /></p>
+<p><img src="/blog/assets/blog-images/starify-links-easy.png" alt="Starify - The Easy Way" /></p>
 
 <p>But that is just unacceptable, so this is what “Starify Links” does, which <strong>will break</strong>
 again at some point in the future 😓</p>
 
-<p><img src="/assets/blog-images/starify-links-hard.png" alt="Starify - The Hard Way" /></p>
+<p><img src="/blog/assets/blog-images/starify-links-hard.png" alt="Starify - The Hard Way" /></p>
 
 <h1 id="flocking">Flocking</h1>
 
@@ -62,7 +62,7 @@ or maybe just because once I get started, I just can’t seem to stop myself �
   <li>Make everything configurable</li>
 </ul>
 
-<p><img src="/assets/blog-images/starify-all-links.png" alt="The Result - Starify All The Links" /></p>
+<p><img src="/blog/assets/blog-images/starify-all-links.png" alt="The Result - Starify All The Links" /></p>
 
 <h1 id="thanks-shieldsio">Thanks Shields.io</h1>
 
@@ -116,7 +116,7 @@ without me doing any work, and all that in about 10-15 prompts.</p>
 
 <p>This is what it generated for configuring the badges!</p>
 
-<p><img src="/assets/blog-images/starify-links-options.png" alt="Configure all badges options screen" title="Configure all the badges!" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/starify-links-options.png" alt="Configure all badges options screen" title="Configure all the badges!" class="img-responsive" /></p>
 
 <p>But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to “<em>API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation.</em>”
@@ -1653,7 +1653,7 @@ sheet.Cell("B5").Value = "I'm centered";
 
 <p>Because a picture is worth a 1000 words:</p>
 
-<p><img src="/assets/blog-images/closedxml-conditional-formatting.png" alt="The examples below" /></p>
+<p><img src="/blog/assets/blog-images/closedxml-conditional-formatting.png" alt="The examples below" /></p>
 
 <pre><code class="language-c#">sheet.Cell("B3").Value = "WhenBetween";
 sheet
@@ -1813,7 +1813,7 @@ A strong reminder that microservices only thrive when paired with the right orga
 <h2 id="a-defence-of-technical-excellence">A Defence of Technical Excellence</h2>
 
 <div style="display: flex; align-items: center; gap: 1rem;">
-  <img src="/assets/blog-images/ddd-europe-2025-chris-simon.jpg" style="border-radius: 50%;" />
+  <img src="/blog/assets/blog-images/ddd-europe-2025-chris-simon.jpg" style="border-radius: 50%;" />
   <div>
     By <a href="https://2025.dddeurope.com/speakers/chris-simon/">Chris Simon</a>
     <p>⭐ My personal highlight!</p>

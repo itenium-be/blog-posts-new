@@ -53,12 +53,12 @@ and I got that one star review, after which no one bothered installing it anymor
 
 <p>If you do the easy implementation, as for example with <a href="https://chromewebstore.google.com/detail/github-star-count/jahogeehepfohgakggfeeimokcgnmdid">Github Star Count</a>, you get this on Google:</p>
 
-<p><img src="/assets/blog-images/starify-links-easy.png" alt="Starify - The Easy Way" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/starify-links-easy.png" alt="Starify - The Easy Way" /></p>
 
 <p>But that is just unacceptable, so this is what “Starify Links” does, which <strong>will break</strong>
 again at some point in the future 😓</p>
 
-<p><img src="/assets/blog-images/starify-links-hard.png" alt="Starify - The Hard Way" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/starify-links-hard.png" alt="Starify - The Hard Way" /></p>
 
 <h1 id="flocking">Flocking</h1>
 
@@ -77,7 +77,7 @@ or maybe just because once I get started, I just can’t seem to stop myself �
   <li>Make everything configurable</li>
 </ul>
 
-<p><img src="/assets/blog-images/starify-all-links.png" alt="The Result - Starify All The Links" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/starify-all-links.png" alt="The Result - Starify All The Links" /></p>
 
 <h1 id="thanks-shieldsio">Thanks Shields.io</h1>
 
@@ -131,7 +131,7 @@ without me doing any work, and all that in about 10-15 prompts.</p>
 
 <p>This is what it generated for configuring the badges!</p>
 
-<p><img src="/assets/blog-images/starify-links-options.png" alt="Configure all badges options screen" title="Configure all the badges!" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/starify-links-options.png" alt="Configure all badges options screen" title="Configure all the badges!" class="img-responsive" /></p>
 
 <p>But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to “<em>API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation.</em>”
@@ -1907,7 +1907,7 @@ sheet.Cell("B5").Value = "I'm centered";
 
 <p>Because a picture is worth a 1000 words:</p>
 
-<p><img src="/assets/blog-images/closedxml-conditional-formatting.png" alt="The examples below" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/closedxml-conditional-formatting.png" alt="The examples below" /></p>
 
 <pre><code class="language-c#">sheet.Cell("B3").Value = "WhenBetween";
 sheet
@@ -2116,7 +2116,7 @@ A strong reminder that microservices only thrive when paired with the right orga
 <h2 id="a-defence-of-technical-excellence">A Defence of Technical Excellence</h2>
 
 <div style="display: flex; align-items: center; gap: 1rem;">
-  <img src="/assets/blog-images/ddd-europe-2025-chris-simon.jpg" style="border-radius: 50%;" />
+  <img src="https://itenium.be/blog-posts-new/assets/blog-images/ddd-europe-2025-chris-simon.jpg" style="border-radius: 50%;" />
   <div>
     By <a href="https://2025.dddeurope.com/speakers/chris-simon/">Chris Simon</a>
     <p>⭐ My personal highlight!</p>
@@ -2435,7 +2435,7 @@ in the very first slide, a typo which has been screaming
 at our customers on our website for <strong>8 years</strong>. Whoops!<br />
 <small>(streng<strong>ht</strong>en vs streng<strong>th</strong>en)</small></p>
 
-<p><img src="/assets/blog-images/site-inspector-oopsie.png" alt="Strengthening our business" title="Strengthening our business" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/site-inspector-oopsie.png" alt="Strengthening our business" title="Strengthening our business" class="img-responsive" /></p>
 
 <p>Heh heh, maybe no one ever noticed? 😬🙈🤫</p>
 
@@ -2557,7 +2557,7 @@ some extra equipment to the bootcamp.</p>
 
 <p>After an initial presentation the teams got to work!</p>
 
-<p><img src="/assets/blog-images/bootcamp-home-automation-teams.png" alt="The Teams" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-home-automation-teams.png" alt="The Teams" class="img-responsive" /></p>
 
 <h1 id="-smart-socket">🔥⚡ Smart Socket</h1>
 
@@ -2573,7 +2573,7 @@ some extra equipment to the bootcamp.</p>
 
 <h2 id="if-it-smells-like-chicken-youre-holding-it-wrong">If it smells like chicken, you’re holding it wrong</h2>
 
-<p><img src="/assets/blog-images/bootcamp-home-automation-soldering-meme.png" alt="If it smells like chicken, you're holding it wrong" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/bootcamp-home-automation-soldering-meme.png" alt="If it smells like chicken, you're holding it wrong" /></p>
 
 <h1 id="-smart-houses">🏠✨ Smart Houses</h1>
 
@@ -3027,7 +3027,7 @@ the <code>DefaultContractResolver</code>.</p>
 but I’m guessing this is comparing apples and oranges because STJ is included by default
 and is thus under-represented in the graph.</p>
 
-<p><img src="/assets/blog-images/dotnet-json-trend.png" alt="Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years" title="Nuget downloads comparison" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/dotnet-json-trend.png" alt="Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years" title="Nuget downloads comparison" class="img-responsive" /></p>
 
 <h1 id="more">More!!</h1>
 
@@ -3450,7 +3450,7 @@ const todos = useSelectTodos(searchNeedle);
 which is typically your entire root state (with potentially additional parameters)
 AND the result of those input selectors has changed.</p>
 
-<p><img src="/assets/blog-images/reduxjs-toolkit-reselect-how-it-works.png" alt="How reselect works" title="How reselect works" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-reselect-how-it-works.png" alt="How reselect works" title="How reselect works" class="img-responsive" /></p>
 
 <p>Configure this behavior with <code>argsMemoize(Options)</code> and <code>memoize(Options)</code>.</p>
 
@@ -4525,7 +4525,7 @@ but in a non-mutating way.</p>
 <p>The ReduxJS/Toolkit reducers have already called <code>produce</code>,
 so this has been abstracted away for us.</p>
 
-<p><img src="/assets/blog-images/reduxjs-toolkit-immer-flow.png" alt="The immer flow" title="The immer flow" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-immer-flow.png" alt="The immer flow" title="The immer flow" class="img-responsive" /></p>
 
 <h2 id="produce-example">Produce Example</h2>
 
@@ -4717,7 +4717,7 @@ gazillion pages that is the <a href="https://redux.js.org/introduction/getting-s
 <p>We’re 2025 and you start a new app with old, trusted and deprecated <code>create-react-app</code>,
 only to find out that using Redux is also, deprecated.</p>
 
-<p><img src="/assets/blog-images/reduxjs-toolkit-createStore-deprecated.png" alt="Redux createStore deprecation" title="Redux createStore deprecation" class="img-responsive hide-from-excerpt" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/reduxjs-toolkit-createStore-deprecated.png" alt="Redux createStore deprecation" title="Redux createStore deprecation" class="img-responsive hide-from-excerpt" /></p>
 
 <p>During previous migrations I took a long hard look at the <a href="https://redux-toolkit.js.org/">ReduxJS/Toolkit documentation</a>
 and I was like… Aint nobody got time for that!</p>
@@ -4948,7 +4948,7 @@ They preferred we put the files on our SharePoint since they already had access 
 
 <p>Steps: Control Panel &gt; File Services &gt; NFS &gt; Enable</p>
 
-<p><img src="/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" alt="Enabling NFS v4 on Synology" title="Enabling NFS v4 on Synology" class="img-responsive" /></p>]]></block1>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png" alt="Enabling NFS v4 on Synology" title="Enabling NFS v4 on Synology" class="img-responsive" /></p>]]></block1>
       <block2><![CDATA[<h3 id="enable-nfs-on-shared-drive">Enable NFS on Shared Drive</h3>
 
 <ul>
@@ -4959,7 +4959,7 @@ They preferred we put the files on our SharePoint since they already had access 
   </li>
 </ul>
 
-<p><img src="/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png" alt="Enabling NFS on Synology Shared Folder" title="Enabling NFS on Synology Shared Folder" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png" alt="Enabling NFS on Synology Shared Folder" title="Enabling NFS on Synology Shared Folder" class="img-responsive" /></p>
 
 <h2 id="the-code">The Code</h2>
 
@@ -5444,11 +5444,11 @@ At that point you can also kill the old user.</p>
 
 <p>Best not to tell anyone you are in IT 😃</p>
 
-<p><img src="/assets/blog-images/reset-mac-2.jpg" alt="Relatives asking if this is free tech support for live once I got my computer science degree meme" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/reset-mac-2.jpg" alt="Relatives asking if this is free tech support for live once I got my computer science degree meme" /></p>
 
 <p>More memes!!</p>
 
-<p><img src="/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/reset-imac-1.jpg" alt="Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel" /></p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
@@ -5913,7 +5913,7 @@ teachers + departments (postgres) and the football worldcups (sql server).</p>
 <p>After this it was pretty smooth sailing. Tom found an error in the calculation of the query to calculate the average GDP per capita in South America. That and other small issues were fixed on the spot, on production – as it should! 😉</p>]]></block1>
       <block2><![CDATA[<h2 id="before-we-start">Before we start</h2>
 
-<p><img src="/assets/blog-images/sql-training-meme2.png" alt="Meme SQL is always all caps!" title="It can only be SELECT FROM!!" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/sql-training-meme2.png" alt="Meme SQL is always all caps!" title="It can only be SELECT FROM!!" class="img-responsive" /></p>
 
 <h2 id="notable-hacks">Notable Hacks</h2>
 
@@ -6588,7 +6588,7 @@ during your career, better do it elegantly!</p>
 to sync your settings so I did it with our <a href="https://github.com/Laoujin/dotfiles">dotfiles</a>. But now it’s just a
 <a href="https://code.visualstudio.com/docs/editor/settings-sync">menu option</a> away.</p>
 
-<p><img src="/assets/blog-images/frontend-track-turn-on-sync.png" alt="Turn on sync in Visual Studio Code" title="Turn on sync in Visual Studio Code" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/frontend-track-turn-on-sync.png" alt="Turn on sync in Visual Studio Code" title="Turn on sync in Visual Studio Code" /></p>
 
 <p>Especially useful when you have an installation on your home and work laptops, or when
 you change projects!</p>
@@ -7134,7 +7134,7 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
 
 <p>If you can’t see failure details, open the Terminal <code>Ctrl+J</code>!</p>
 
-<p><img src="/assets/blog-images/frontend-track-vscode-jest.png" alt="Jest in Visual Studio Code!" title="Jest in Visual Studio Code!" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/frontend-track-vscode-jest.png" alt="Jest in Visual Studio Code!" title="Jest in Visual Studio Code!" /></p>
 
 <h1 id="the-sessions">The Sessions</h1>
 
@@ -7618,7 +7618,7 @@ commit!</p>
 <p>You basically want to avoid forcing your colleagues to review
 mega PRs for what could have been much smaller, right?</p>
 
-<p><img src="/assets/blog-images/git-hygiene-pr.png" alt="Everyone loves reviewing such PR!" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-hygiene-pr.png" alt="Everyone loves reviewing such PR!" class="img-responsive" /></p>
 
 <p>These either result in your PR being open for a very long time
 (with all the merge conflicts that entails!)
@@ -7689,7 +7689,7 @@ git config --global alias.dfc 'diff --staged'
 
 <h2 id="step-3-commit">Step 3: Commit!</h2>
 
-<p><img src="/assets/blog-images/git-hygiene-commit-message.jpg" alt="Commit messages matter!" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-hygiene-commit-message.jpg" alt="Commit messages matter!" class="img-responsive" /></p>
 
 <p>Don’t write your life’s story (at least not in a commit message!)
 but do add something meaningful, what exactly are you changing?
@@ -7895,7 +7895,7 @@ especially when it happens time and time again…</p>
 
 <p>Here’s one last meme to keep the mood light:</p>
 
-<p><img src="/assets/blog-images/git-hygiene-commit-message2.jpg" alt="Yup, pretty much every dev!" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-hygiene-commit-message2.jpg" alt="Yup, pretty much every dev!" /></p>
 ]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
@@ -11281,7 +11281,7 @@ it is time to post one!</p>
 ]]></excerpt>
       <block1><![CDATA[<h1 id="what-it-looks-like">What it looks like</h1>
 
-<p><img src="blog/assets/blog-images/slack-meme-bot-example.png" alt="Example of a Slack Meme Bot posting" title="Slack Meme Bot in action" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot-example.png" alt="Example of a Slack Meme Bot posting" title="Slack Meme Bot in action" /></p>
 
 <h1 id="requirements">Requirements</h1>
 
@@ -11348,7 +11348,7 @@ docker-compose up --build -d
   </li>
 </ul>
 
-<p><img src="blog/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: The itenium Slack Meme Bot® : Installation</li>
             <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
@@ -11466,7 +11466,7 @@ It is therefore important to have a talented functional analyst on a software de
 <p>The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.</p>]]></block1>
       <block2><![CDATA[<p><strong>The translation key is formed as such</strong>:</p>
 
-<p><img src="/assets/blog-images/vaadin_translation_key_template.png" alt="Visual translation key formation" title="Pretty slick" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/vaadin_translation_key_template.png" alt="Visual translation key formation" title="Pretty slick" /></p>
 
 <p>The parent id is set on the parent component. The component type is defined by the component itself and we refer to its class name for that, for example for a checkbox component it would be checkbox. The component id is set on the component. The translation field depends on the component type. Some component types put the translation values in label fields and in that case the translation field would be “caption” (labels used to be captions in Vaadin version 8), some have the translations in div fields in which case the translation field is set as “div”.</p>
 
@@ -11936,7 +11936,7 @@ Or use named groups if supported in your regex implementation.</p>
 
 <p>The last &amp; thoughest feature each developer should definitely know: lookahead &amp; lookbehind!</p>
 
-<p><img src="/assets/blog-images/regex-lookaround.png" alt="Lookahead vs Lookbehind syntax" title="Lookahead vs Lookbehind syntax" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-lookaround.png" alt="Lookahead vs Lookbehind syntax" title="Lookahead vs Lookbehind syntax" /></p>
 
 <p><strong>Example</strong>:</p>
 
@@ -12223,7 +12223,7 @@ The amount is an indication of how many are documented! 😃</p>
 
 <h4 id="example">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-rechart.png" alt="Rechart line chart" title="Recharts: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-rechart.png" alt="Rechart line chart" title="Recharts: Line Chart" /></p>
 
 <h4 id="code">Code</h4>
 
@@ -12264,7 +12264,7 @@ It assumes all data inserted are datum objects whereas in this case they are per
 
 <h4 id="example-1">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-visx.png" alt="Visx line chart" title="Visx: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-visx.png" alt="Visx line chart" title="Visx: Line Chart" /></p>
 
 <h4 id="code-1">Code</h4>
 
@@ -12324,7 +12324,7 @@ Big visual issue however as you can probably tell is that the values don’t exa
 
 <h4 id="example-2">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-nivo.png" alt="Nivo line chart" title="Nivo: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-nivo.png" alt="Nivo line chart" title="Nivo: Line Chart" /></p>
 
 <h4 id="code-2">Code</h4>
 
@@ -12363,7 +12363,7 @@ export function Nivo() {
 
 <h4 id="example-3">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-victory.png" alt="Victory line chart" title="Victory: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-victory.png" alt="Victory line chart" title="Victory: Line Chart" /></p>
 
 <h4 id="code-3">Code</h4>
 
@@ -12401,7 +12401,7 @@ Also I needed to map the data properties to x and y as well again.</p>
 
 <h4 id="example-4">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-react-vis.png" alt="React-vis line chart" title="React-vis: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-react-vis.png" alt="React-vis line chart" title="React-vis: Line Chart" /></p>
 
 <h4 id="code-4">Code</h4>
 
@@ -12436,7 +12436,7 @@ The end result does look nice however.</p>
 
 <h4 id="example-5">Example</h4>
 
-<p><img src="/assets/blog-images/react-charting-react-chartjs-2.png" alt="React-chartjs-2 line chart" title="React-chartjs-2: Line Chart" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-react-chartjs-2.png" alt="React-chartjs-2 line chart" title="React-chartjs-2: Line Chart" /></p>
 
 <h4 id="code-5">Code</h4>
 
@@ -12504,7 +12504,7 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 
 <p>The <code>create-react-app</code> is <a href="https://itenium.be/React-Charting/">published at itenium.be</a>.</p>
 
-<p><img src="/assets/blog-images/react-charting-demo-app.png" alt="Demo App Overview" title="Demo App Overview" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/react-charting-demo-app.png" alt="Demo App Overview" title="Demo App Overview" /></p>
 ]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
@@ -12730,7 +12730,7 @@ If not, allow me to convince you…</p>
 
 <p><strong>Or the XKCD version</strong>:</p>
 
-<p><img src="/assets/blog-images/regex-xkcd-problems.png" alt="Perl Problems" title="Perl Problems (https://xkcd.com/1171)" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-xkcd-problems.png" alt="Perl Problems" title="Perl Problems (https://xkcd.com/1171)" /></p>
 
 <!--more-->
 
@@ -12792,7 +12792,7 @@ head and handle the replacement details with multiple cursor trickery?</p>
 
 <p>You want to avoid falling into the trap of spending more time on your regex than you would spend doing it manually.</p>
 
-<p><img src="/assets/blog-images/regex-time-trade-off.png" alt="Manual vs Regex Time Trade-Off" title="Manual vs Regex Time Trade-Off" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-time-trade-off.png" alt="Manual vs Regex Time Trade-Off" title="Manual vs Regex Time Trade-Off" /></p>
 
 <h2 id="learning">Learning</h2>
 
@@ -12834,7 +12834,7 @@ works perfectly in your IDE but not from your application.</p>
 
 <!--
 Naah, not funny enough
-![Basically too many differences](/assets/blog-images/regex-hate.jpg "Basically too many differences")
+![Basically too many differences](/blog/assets/blog-images/regex-hate.jpg "Basically too many differences")
 -->
 
 <h2 id="inapplicability">Inapplicability</h2>
@@ -12843,7 +12843,7 @@ Naah, not funny enough
 
 <p>There are the obvious ones: throwing <a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454">regex against HTML</a> or XML.</p>
 
-<p><img src="/assets/blog-images/regex-html.png" alt="HTML Parsing" title="HTML Parsing" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-html.png" alt="HTML Parsing" title="HTML Parsing" /></p>
 
 <p><strong>Use a parser instead</strong>. And then you can throw some jquery against it or whatever API your language exposes.
 It’s going to be a lot more readable, maintainable and more robust to changes in the HTML.</p>
@@ -12867,7 +12867,7 @@ I mean, why keep <code>str.split('|')[0]</code> around when you can replace it w
 
 <h2 id="writing-vs-reading">Writing vs Reading</h2>
 
-<p><img src="/assets/blog-images/regex-writing-vs-reading.png" alt="Writing vs Reading RegEx" title="Writing vs Reading RegEx" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-writing-vs-reading.png" alt="Writing vs Reading RegEx" title="Writing vs Reading RegEx" /></p>
 
 <p>It’s funny because it’s true. Requirements change and well, good luck deciphering your own regex.<br />
 Or heaven forbids, one someone else wrote! 😱</p>
@@ -12876,7 +12876,7 @@ Or heaven forbids, one someone else wrote! 😱</p>
 
 <p>Let’s be honest here…</p>
 
-<p><img src="/assets/blog-images/regex-xkcd-fantasy.png" alt="Perl Problems" title="Perl Problems (https://xkcd.com/208/)" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/regex-xkcd-fantasy.png" alt="Perl Problems" title="Perl Problems (https://xkcd.com/208/)" /></p>
 
 <p><strong>Moving on</strong></p>
 
@@ -13346,7 +13346,7 @@ Useless info:
 
 <p><strong>How it looks</strong>:</p>
 
-<p><img src="/assets/blog-images/vscode-jest-test-runner.png" alt="Visual UnitTest result cues in Visual Studio Code" title="Pretty slick" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/vscode-jest-test-runner.png" alt="Visual UnitTest result cues in Visual Studio Code" title="Pretty slick" /></p>
 
 <h2 id="notifications">Notifications?</h2>
 
@@ -13745,7 +13745,7 @@ I started playing Ambar (since down) with a few friends. This could be the story
 ]]></excerpt>
       <block1><![CDATA[<h1 id="the-strategy">The Strategy</h1>
 
-<p><img src="/assets/blog-images/first-hack-ambar-logo.jpg" alt="Ambar logo" title="Ambar logo" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/first-hack-ambar-logo.jpg" alt="Ambar logo" title="Ambar logo" /></p>
 
 <p>During one age of the browser game Ambar, we were playing an empire in which our strategy was to grow like mad but without training any troops.
 If we could outgrow everyone fast enough, no one would be able to open a magical portal to our empire to attack us, since portal-opening was based on empire size.
@@ -13869,7 +13869,7 @@ is adding new ways to display, update and create existing entities.
 you have not properly assessed the patterns’ <code>Applicability</code> nor its <code>Intent</code>
 and are left only with its <code>Consequences</code>:</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Consequences.jpg" alt="There will be consequences meme" title="There will be consequences" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/CQRS-Ramble-Consequences.jpg" alt="There will be consequences meme" title="There will be consequences" class="img-responsive" /></p>
 
 <h2 id="an-explosion-of-classes">An Explosion of Classes</h2>
 
@@ -13892,7 +13892,7 @@ Even if you don’t want them, you’ll probably end up with a package that requ
 <p>Well since it’s CRUD you are bound to be doing the exact same thing multiple times. Right.. not exactly the same thing of course,
 there is that one field… in which entity was it again?</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" alt="Duplication!? Duplication everywhere!" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" alt="Duplication!? Duplication everywhere!" /></p>
 
 <ul>
   <li>The CreateHandler for entity 1 will look very much like the one for entity 2.</li>
@@ -13940,7 +13940,7 @@ to work with just one representation. <small>(each heading should probably have 
 
 <p>Because you want to keep <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, one searches for solutions.</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" alt="Keeping Oneself DRY" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" alt="Keeping Oneself DRY" /></p>
 
 <h2 id="domain-inheritance">Domain Inheritance</h2>
 
@@ -14203,7 +14203,7 @@ workaround for properties being “all over the place”.</p>
     <toc>
       <title>Visual Studio Code</title>
     </toc>
-    <excerpt><![CDATA[<p><img src="/assets/blog-images/vscode-editor.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
+    <excerpt><![CDATA[<p><img src="/blog/assets/blog-images/vscode-editor.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
 ]]></excerpt>
       <block1><![CDATA[<h1 id="basic-editing">Basic Editing</h1>
 
@@ -14942,7 +14942,7 @@ Custom shortcuts:</p>
     <toc>
       <title>Visual Studio Code</title>
     </toc>
-    <excerpt><![CDATA[<p><img src="/assets/blog-images/vscode-screenshot.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
+    <excerpt><![CDATA[<p><img src="/blog/assets/blog-images/vscode-screenshot.png" alt="VSCode Editor" class="webfeedsFeaturedVisual" /></p>
 ]]></excerpt>
       <block1><![CDATA[<h1 id="getting-started">Getting Started</h1>
 
@@ -15069,7 +15069,7 @@ Set-Alias cde Start-VSCode
 
 <h4 id="start-from-windows-explorer-context-menu">Start from Windows Explorer Context Menu</h4>
 
-<p>Available during installation but <a href="/assets/blog-assets/vscode-contextmenu.reg">here is the reg file</a>
+<p>Available during installation but <a href="https://itenium.be/blog-posts-new/assets/blog-assets/vscode-contextmenu.reg">here is the reg file</a>
 if you want to add it later on (check the path inside the reg).</p>
 
 <h4 id="start-from-vscode">Start from VSCode</h4>
@@ -15114,7 +15114,7 @@ if you want to add it later on (check the path inside the reg).</p>
 
 <h1 id="layout">Layout</h1>
 
-<p><img src="/assets/blog-images/vscode-window-layout.png" alt="alt" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/vscode-window-layout.png" alt="alt" class="img-responsive" /></p>
 
 <div style="display: block">
 			<kbd>F11</kbd>: View: Toggle Full Screen
@@ -15573,7 +15573,7 @@ Next up: <a href="/blog/blog/dev-setup/vscode-editor">VSCode: Editor Configurati
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,
 you know, something like Vim.</p>
 
-<p><img src="/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Pragmatic Tip #22 : Use A Single Editor Well</li>
             <li>Part 2: <a href="/dev-setup/2019/07/17/vscode-editor.html">VSCode: Editor Settings and Shortcuts</a></li></ul>
@@ -15909,7 +15909,7 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
 ]]></excerpt>
       <block1><![CDATA[<h1 id="game-physics">Game Physics</h1>
 
-<p><img src="/assets/blog-images/robocode-battleground.gif" alt="BattleFieldWidth and BattleFieldHeight" title="BattleFieldWidth and BattleFieldHeight" class="img-responsive" style="max-width: 500px" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/robocode-battleground.gif" alt="BattleFieldWidth and BattleFieldHeight" title="BattleFieldWidth and BattleFieldHeight" class="img-responsive" style="max-width: 500px" /></p>
 
 <ul>
   <li>Default grid for 1v1: 800x600</li>
@@ -17285,7 +17285,7 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
 
 <h1 id="hello-vue">Hello Vue</h1>
 
-<p class="title-url"><a href="/blog/assets/blog-assets/vue-HelloVue.html">HelloVue.html source</a></p>
+<p class="title-url"><a href="https://itenium.be/blog-posts-new/assets/blog-assets/vue-HelloVue.html">HelloVue.html source</a></p>
 
 <h4 id="html">Html</h4>
 <pre><code class="language-html">&lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;
@@ -19417,7 +19417,7 @@ socials:
 {% include post/youtube.html id="youtubeId" desc="" %}
 
 
-![alt](/assets/blog-images/ "title"){: .img-responsive}
+![alt](/assets/blog-images/file.jpg "title"){: .img-responsive}
 
 [description][ref]
 [ref]: url
@@ -19577,8 +19577,8 @@ TODO: Should probably make this clickable to open gallery and/or show full scree
 <p>Bootstrap 3: <code>.img-responsive</code>, <code>.img-rounded</code>, <code>.img-thumbnail</code>, <code>.img-circle</code>.</p>
 
 <pre><code>&lt;!-- Inline --&gt;
-![alt text](/assets/blog-images/screenshot.jpg "Title Text"){: .img-responsive}
-![](/assets/blog-images/ ""){: .img-responsive}
+![alt text](/blog/assets/blog-images/screenshot.jpg "Title Text"){: .img-responsive}
+![](/assets/blog-images/file.jpg){: .img-responsive}
 
 &lt;!-- Reference --&gt;
 ![alt text][ref]
@@ -20205,7 +20205,7 @@ for (let itm of input) {
 <p>Thanks <a href="https://x.com/bewidec/status/935573858136051713">Wim De Cleen</a> (and Martin Fowler)
 for this amazing diagram, I love it!</p>
 
-<p><img src="/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/Array.prototype-fowler-diagrams.jpg" alt="Explain LINQ to a 5 year old" title="Explain LINQ to a 5 year old" class="img-responsive" /></p>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -20495,7 +20495,7 @@ Not open source:</p>
 <h2 id="visual-studio-2017">Visual Studio 2017</h2>
 
 <p><strong>Run to click</strong>:<br />
-<img src="/assets/blog-images/visual-studio-debugging-run-to-click.png" alt="Run to click" /></p>
+<img src="https://itenium.be/blog-posts-new/assets/blog-images/visual-studio-debugging-run-to-click.png" alt="Run to click" /></p>
 
 <h2 id="visual-studio-2019">Visual Studio 2019</h2>
 
@@ -21370,7 +21370,7 @@ Filling in an entire form with predefined values.</p>
 <p>Considering the following login form
 (<a href="/assets/blog-images/autohotkey-login-form.html">Html version</a>)</p>
 
-<p><img src="/assets/blog-images/autohotkey-login-form.png" alt="desc" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/autohotkey-login-form.png" alt="desc" /></p>
 
 <h2 id="the-script">The Script</h2>
 
@@ -21616,7 +21616,7 @@ margin: T R B L;
 <p>Not really a programming mnemonic but Simon posted it,
 and I liked it too much to not add it here 😀</p>
 
-<p><img src="/assets/blog-images/mnemonics-there-their.png" alt="There vs Their" title="There vs Their" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/mnemonics-there-their.png" alt="There vs Their" title="There vs Their" /></p>
 ]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
@@ -21843,7 +21843,7 @@ Use <code>gnh</code> to display all actions available by Git-NumberedAdd with de
 
 <p>Displays the output of <code>git status --short</code> together with fabricated indexes like so</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-add-numbered-status.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
 
 <p>Working directory color codes:</p>
 <ul>
@@ -21860,7 +21860,7 @@ Configure the color output by modifying <code>$global:gitStatusNumbers</code>.</
 <p>If <code>$global:gitStatusNumbers.includeNumstat</code> is true (=by default), Git-NumberedStatus will also
 execute a <code>git diff --numstat</code> and add lines added/deleted to the output.</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status-numstat.png" alt="Git-NumberedStatus with --numstat" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-add-numbered-status-numstat.png" alt="Git-NumberedStatus with --numstat" class="img-responsive" /></p>
 
 <h1 id="git-numberedadd-alias-ga">Git-NumberedAdd <small>(alias: ga)</small></h1>
 
@@ -21902,7 +21902,7 @@ files so that they also show up in the diff.</p>
 <p>This only works for files already staged.
 Example output:</p>
 
-<p><img src="/assets/blog-images/git-add-numbered-status-staged.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-add-numbered-status-staged.png" alt="Git-NumberedStatus" class="img-responsive" /></p>
 
 <p>To, for example unstage file0 and file4</p>
 <pre><code class="language-ps">PS&gt; Git-NumberedReset 02
@@ -21975,7 +21975,7 @@ Git-NumberedSetLocation # Alias: gsl
 
 <p>Once in interactive mode:</p>
 
-<p><img src="/assets/blog-images/git-add-interactive.png" alt="git add --interactive" class="img-responsive" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/git-add-interactive.png" alt="git add --interactive" class="img-responsive" /></p>
 
 <p>And then use <code>2: Update</code> to stage files.</p>
 
@@ -26678,7 +26678,7 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 
 <h1 id="advantages">Advantages</h1>
 
-<p><img src="/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-assets/colorblind-ididit.png" alt="Nailed it!" /></p>]]></block2>
     <block3><![CDATA[<h1>Updates</h1>
 <ul><li>
             8 July 2024: Added Show-Colors function</li><li>
@@ -28802,7 +28802,7 @@ Bookmarks have their own margin where they can be toggled with a mouse click.</p
 ]]></excerpt>
       <block1><![CDATA[<p><br /></p>
 
-<p><img src="/assets/blog-images/notepad-bookmarks-1.jpg" alt="" style="float: left; margin-right: 25px" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/notepad-bookmarks-1.jpg" alt="" style="float: left; margin-right: 25px" /></p>
 
 <p>They can also be <strong>toggled with “CTRL + F2”</strong>. Use <strong>“F2” and “SHIFT + F2” to jump</strong> back and forth between them.</p>]]></block1>
       <block2><![CDATA[<div style="clear: both"></div>
@@ -28813,12 +28813,12 @@ Bookmarks have their own margin where they can be toggled with a mouse click.</p
 menu which might even seem pretty odd at first.
 That is until you combine them with the “Mark” tab in the “<strong>Find Dialog (CTRL + F)</strong>”.</p>
 
-<p><img src="/assets/blog-images/notepad-bookmarks-2.jpg" alt="Inverse Bookmark, say what?" /></p>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/notepad-bookmarks-2.jpg" alt="Inverse Bookmark, say what?" /></p>
 
 <p><br />
 Suddenly you can write a regular expression to capture certain lines of text and cut those lines with a single command. Pretty neat!</p>
 
-<p><img src="/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>]]></block2>
+<p><img src="https://itenium.be/blog-posts-new/assets/blog-images/notepad-bookmarks-3.jpg" alt="Bookmark lines based on search expression" /></p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>

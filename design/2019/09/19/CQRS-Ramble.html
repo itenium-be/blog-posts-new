@@ -33,7 +33,7 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger"><a class="page-link" href="/blog/">itenium Blog</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -111,7 +111,7 @@ is adding new ways to display, update and create existing entities.
 you have not properly assessed the patterns’ <code>Applicability</code> nor its <code>Intent</code>
 and are left only with its <code>Consequences</code>:</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Consequences.jpg" alt="There will be consequences meme" title="There will be consequences" class="img-responsive" /></p>
+<p><img src="/blog/assets/blog-images/CQRS-Ramble-Consequences.jpg" alt="There will be consequences meme" title="There will be consequences" class="img-responsive" /></p>
 
 <h2 id="an-explosion-of-classes">An Explosion of Classes</h2>
 
@@ -134,7 +134,7 @@ Even if you don’t want them, you’ll probably end up with a package that requ
 <p>Well since it’s CRUD you are bound to be doing the exact same thing multiple times. Right.. not exactly the same thing of course,
 there is that one field… in which entity was it again?</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" alt="Duplication!? Duplication everywhere!" /></p>
+<p><img src="/blog/assets/blog-images/CQRS-Ramble-Duplication-Everywhere.jpg" alt="Duplication!? Duplication everywhere!" /></p>
 
 <ul>
   <li>The CreateHandler for entity 1 will look very much like the one for entity 2.</li>
@@ -182,7 +182,7 @@ to work with just one representation. <small>(each heading should probably have 
 
 <p>Because you want to keep <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, one searches for solutions.</p>
 
-<p><img src="/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" alt="Keeping Oneself DRY" /></p>
+<p><img src="/blog/assets/blog-images/CQRS-Ramble-Keeping-DRY.jpeg" alt="Keeping Oneself DRY" /></p>
 
 <h2 id="domain-inheritance">Domain Inheritance</h2>
 
