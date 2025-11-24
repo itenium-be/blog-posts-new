@@ -184,7 +184,7 @@ An honest look at the stumbling blocks of AI coding and how to solve them. The p
       <title>Starify Links</title>
     </toc>
     <excerpt><![CDATA[<p>Back in 2019 I created a Chrome Extension called
-“<a href="/blog/javascript/2019/03/07/starify-github-links.html">Starify Github Links</a>”.</p>
+“<a href="/blog/javascript/starify-github-links/">Starify Github Links</a>”.</p>
 
 <p>I probably just discovered <a href="https://github.com/sindresorhus/awesome">sindresorhus awesome</a> lists.
 And while awesome lists are, well, awesome, the problem is that while it has so many truly excellent
@@ -583,7 +583,7 @@ what’s going on.</p>
 
 <h1 id="powershell-profile">PowerShell Profile</h1>
 
-<p>I have these added to my <a href="/blog/dev-setup/2017/04/11/powershell-profiles.html">ps profile</a>,
+<p>I have these added to my <a href="/blog/dev-setup/powershell-profiles/">ps profile</a>,
 because who wants to remember/write all the bundle exec etc etc 😀</p>
 
 <pre><code class="language-ps1">function Start-Jekyll {
@@ -1129,9 +1129,9 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp/">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation/">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous/">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
             <li>This Part: Excel formulas cheat sheet</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -1453,10 +1453,10 @@ ws.Cell(3, 1).CreateRichText()
   </li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp/">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation/">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
             <li>This Part: Create Excels with C# and ClosedXML: Miscellaneous</li>
-            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+            <li>Part 4: <a href="/dotnet/excel-formulas-cheat-sheet-closedxml/">Excel formulas cheat sheet</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -1737,10 +1737,10 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
 //       it was crashing for me when opening the Excel
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2025/09/29/create-xlsx-excel-with-closedxml-csharp.html">Create Excels with C# and ClosedXML: A tutorial</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp/">Create Excels with C# and ClosedXML: A tutorial</a></li>
             <li>This Part: Create Excels with C# and ClosedXML: Formulas & DataValidation</li>
-            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
-            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous/">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>Part 4: <a href="/dotnet/excel-formulas-cheat-sheet-closedxml/">Excel formulas cheat sheet</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -2177,9 +2177,9 @@ sheet1.CopyTo(workbook, "Copy");
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Create Excels with C# and ClosedXML: A tutorial</li>
-            <li>Part 2: <a href="/dotnet/2025/09/30/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation.html">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2025/10/01/create-xlsx-excel-with-closedxml-csharp-miscellaneous.html">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
-            <li>Part 4: <a href="/dotnet/2025/10/02/excel-formulas-cheat-sheet-closedxml.html">Excel formulas cheat sheet</a></li></ul>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation/">Create Excels with C# and ClosedXML: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous/">Create Excels with C# and ClosedXML: Miscellaneous</a></li>
+            <li>Part 4: <a href="/dotnet/excel-formulas-cheat-sheet-closedxml/">Excel formulas cheat sheet</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -3650,7 +3650,7 @@ const todo = useSelector(state =&gt; selectTodo(state, todoId));
 
 <h1 id="typescript">TypeScript</h1>
 
-<p>See <a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a>
+<p>See <a href="/blog/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a>
 if you’re unsure how to create the <code>RootState</code>.</p>
 
 <pre><code class="language-ts">import { createSelector } from "@reduxjs/toolkit";
@@ -3721,11 +3721,11 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 
 <p>As of Reselect v5, what you’d need this library for can now achieved with Reselect <code>createSelectorOptions</code> natively.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
-            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
-            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
-            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
-            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 1: <a href="/javascript/reduxjs-toolkit/">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/reduxjs-toolkit-createslice/">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/reduxjs-toolkit-createasyncthunk/">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a></li>
             <li>This Part: ReduxJS/Toolkit: createSelector</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -3810,12 +3810,12 @@ import { createSelector } from "@reduxjs/toolkit";
 const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
-            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
-            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
-            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 1: <a href="/javascript/reduxjs-toolkit/">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/reduxjs-toolkit-createslice/">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/reduxjs-toolkit-createasyncthunk/">ReduxJS/Toolkit: createAsyncThunk</a></li>
             <li>This Part: ReduxJS/Toolkit: TypeScript</li>
-            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+            <li>Part 6: <a href="/javascript/reduxjs-toolkit-createselector/">ReduxJS/Toolkit: createSelector</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -4041,12 +4041,12 @@ const creatorSlice = createAppSlice({
 });
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
-            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
-            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 1: <a href="/javascript/reduxjs-toolkit/">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/reduxjs-toolkit-createslice/">ReduxJS/Toolkit: createSlice and configureStore</a></li>
             <li>This Part: ReduxJS/Toolkit: createAsyncThunk</li>
-            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
-            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+            <li>Part 5: <a href="/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/reduxjs-toolkit-createselector/">ReduxJS/Toolkit: createSelector</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -4155,7 +4155,7 @@ export const { selectTodo } = todoSlice.selectors;
 </code></pre>]]></block1>
       <block2><![CDATA[<h2 id="dispatching-an-action">Dispatching an action</h2>
 
-<p>See <a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a>
+<p>See <a href="/blog/javascript/reduxjs-toolkit-typescript/">Part 5: TypeScript</a>
 for how to create the <code>useAppDispatch</code> hook.</p>
 
 <pre><code class="language-ts">import { addTodo } from "./todoSlice";
@@ -4390,12 +4390,12 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
   </tbody>
 </table>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
-            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 1: <a href="/javascript/reduxjs-toolkit/">ReduxJS/Toolkit</a></li>
+            <li>Part 2: <a href="/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
             <li>This Part: ReduxJS/Toolkit: createSlice and configureStore</li>
-            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
-            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
-            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+            <li>Part 4: <a href="/javascript/reduxjs-toolkit-createasyncthunk/">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/reduxjs-toolkit-createselector/">ReduxJS/Toolkit: createSelector</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -4720,12 +4720,12 @@ const TodoAdd = () =&gt; {
 
 <p><code>use-immer</code> also exposes <code>useImmerReducer</code> to replace your <code>useReducer</code>s.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2025/02/06/reduxjs-toolkit.html">ReduxJS/Toolkit</a></li>
+            <li>Part 1: <a href="/javascript/reduxjs-toolkit/">ReduxJS/Toolkit</a></li>
             <li>This Part: ReduxJS/Toolkit: Immer</li>
-            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
-            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
-            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
-            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+            <li>Part 3: <a href="/javascript/reduxjs-toolkit-createslice/">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/reduxjs-toolkit-createasyncthunk/">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/reduxjs-toolkit-createselector/">ReduxJS/Toolkit: createSelector</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -4807,7 +4807,7 @@ do <code>state.someProp</code>, you had to do <code>state.get('someProp')</code>
 <p>Immer is the solution the ReduxJS/Toolkit has adopted and I love how it allows you to write reducers
 while (almost) not having to think about immutability anymore!</p>
 
-<p><a href="/blog/javascript/2025/02/07/reduxjs-toolkit-immer.html">Part 2: Immer</a></p>]]></block1>
+<p><a href="/blog/javascript/reduxjs-toolkit-immer/">Part 2: Immer</a></p>]]></block1>
       <block2><![CDATA[<h1 id="createslice-and-configurestore">createSlice and configureStore</h1>
 
 <p>Okay, now that we’re Immer experts, let’s look at the two most important
@@ -4818,7 +4818,7 @@ exports of the Toolkit: <code>createSlice</code> and <code>configureStore</code>
   <li><code>configureStore</code>: abstracts away the pain that was <code>createStore</code></li>
 </ul>
 
-<p><a href="/blog/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">Part 3: createSlice and configureStore</a></p>
+<p><a href="/blog/javascript/reduxjs-toolkit-createslice/">Part 3: createSlice and configureStore</a></p>
 
 <h1 id="createasyncthunk">createAsyncThunk</h1>
 
@@ -4827,25 +4827,25 @@ all your API call needs.</p>
 
 <p>Coming from “legacy Redux”, this is the last basic piece of ReduxJS/Toolkit!</p>
 
-<p><a href="/blog/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">Part 4: createAsyncThunk</a></p>
+<p><a href="/blog/javascript/reduxjs-toolkit-createasyncthunk/">Part 4: createAsyncThunk</a></p>
 
 <h1 id="typescript">TypeScript</h1>
 
 <p>Keeping everything entirely type-safe.</p>
 
-<p><a href="/blog/javascript/2025/02/17/reduxjs-toolkit-typescript.html">Part 5: TypeScript</a></p>
+<p><a href="/blog/javascript/reduxjs-toolkit-typescript/">Part 5: TypeScript</a></p>
 
 <h1 id="reselect">Reselect</h1>
 
 <p>More batteries included. You basically only need this when running into
-<a href="/blog/javascript/2023/10/06/react-component-profiling.html">performance issues</a>
+<a href="/blog/javascript/react-component-profiling/">performance issues</a>
 which is like, almost never (if you thought things through). Because JavaScript is
 just so damn fast these days.</p>
 
 <p>Still, it’s a good idea to just use selectors from the get-go, that way, you will still
 not be running into re-rendering performance issues after the addition of 6 years of production data.</p>
 
-<p><a href="/blog/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">Part 6: createSelector</a></p>
+<p><a href="/blog/javascript/reduxjs-toolkit-createselector/">Part 6: createSelector</a></p>
 
 <h1 id="rtk-query">RTK Query</h1>
 
@@ -4938,11 +4938,11 @@ sprinkled with a few Redux no-nos on top.</p>
 basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: ReduxJS/Toolkit</li>
-            <li>Part 2: <a href="/javascript/2025/02/07/reduxjs-toolkit-immer.html">ReduxJS/Toolkit: Immer</a></li>
-            <li>Part 3: <a href="/javascript/2025/02/08/reduxjs-toolkit-createSlice.html">ReduxJS/Toolkit: createSlice and configureStore</a></li>
-            <li>Part 4: <a href="/javascript/2025/02/13/reduxjs-toolkit-createAsyncThunk.html">ReduxJS/Toolkit: createAsyncThunk</a></li>
-            <li>Part 5: <a href="/javascript/2025/02/17/reduxjs-toolkit-typescript.html">ReduxJS/Toolkit: TypeScript</a></li>
-            <li>Part 6: <a href="/javascript/2025/02/27/reduxjs-toolkit-createSelector.html">ReduxJS/Toolkit: createSelector</a></li></ul>
+            <li>Part 2: <a href="/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
+            <li>Part 3: <a href="/javascript/reduxjs-toolkit-createslice/">ReduxJS/Toolkit: createSlice and configureStore</a></li>
+            <li>Part 4: <a href="/javascript/reduxjs-toolkit-createasyncthunk/">ReduxJS/Toolkit: createAsyncThunk</a></li>
+            <li>Part 5: <a href="/javascript/reduxjs-toolkit-typescript/">ReduxJS/Toolkit: TypeScript</a></li>
+            <li>Part 6: <a href="/javascript/reduxjs-toolkit-createselector/">ReduxJS/Toolkit: createSelector</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -8650,10 +8650,10 @@ as passphrase and score Vault multipliers.</p>
 
 <p>Check the blog post in The Hacker’s Toolkit Blog in-game for more info!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
-            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
-            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
-            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
+            <li>Part 1: <a href="/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
             <li>This Part: Security Bootcamp Prep</li></ul>]]></block3>
   </post>
   <post>
@@ -10490,11 +10490,11 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <p>Interested in organizing our Security Bootcamp for your IT teams?
 <a href="mailto:">Contact us today</a>!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
-            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
-            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
+            <li>Part 1: <a href="/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
             <li>This Part: The Security Bootcamp</li>
-            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>
+            <li>Part 5: <a href="/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -10604,11 +10604,11 @@ docker run --rm -it -v ./sqlmap-data:/root/.sqlmap/ paoloo/sqlmap --url "url" --
 <p>During itenium’s Security Bootcamp <code>sqlmap</code> can be used to retrieve
 a flag hidden in a database by attacking a vulnerable web page.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
-            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
+            <li>Part 1: <a href="/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
             <li>This Part: Hacking Tool: sqlmap</li>
-            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
-            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>]]></block3>
+            <li>Part 4: <a href="/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Hacking Tool: hydra</title>
@@ -10695,11 +10695,11 @@ A famous one is <code>rockyou.txt</code> (14M).</p>
 it’s time to whip out Hydra! Check the Security Audit Blog during itenium’s
 Security Bootcamp for such clue!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/security/2023/10/01/hacking-tool-nmap.html">Hacking Tool: nmap</a></li>
+            <li>Part 1: <a href="/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
             <li>This Part: Hacking Tool: hydra</li>
-            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
-            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
-            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul>
+            <li>Part 3: <a href="/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -10832,10 +10832,10 @@ for the port but there is no telling if that is actually the case.</p>
 an nmap scan to discover services that are not (yet) available directly from the Portal.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Hacking Tool: nmap</li>
-            <li>Part 2: <a href="/security/2023/10/02/hacking-tool-hydra.html">Hacking Tool: hydra</a></li>
-            <li>Part 3: <a href="/security/2023/10/03/hacking-tool-sqlmap.html">Hacking Tool: sqlmap</a></li>
-            <li>Part 4: <a href="/security/2023/10/04/introducing-the-security-bootcamp.html">The Security Bootcamp</a></li>
-            <li>Part 5: <a href="/security/2024/03/16/security-bootcamp-prep.html">Security Bootcamp Prep</a></li></ul><h1>
+            <li>Part 2: <a href="/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul><h1>
     Package Versions
     <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -11198,8 +11198,8 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
 
 <p>Oh man, I feel old, bitter and out of touch now.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2023/07/03/install-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Installation</a></li>
-            <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
+            <li>Part 1: <a href="/javascript/install-the-slack-meme-bot/">The itenium Slack Meme Bot® : Installation</a></li>
+            <li>Part 2: <a href="/javascript/implementing-the-slack-meme-bot/">The itenium Slack Meme Bot® : Implementation</a></li>
             <li>This Part: The itenium Slack Meme Bot® : with AI?</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -11273,9 +11273,9 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
   <li>Configure the entire Slack message using the Slack <a href="https://app.slack.com/block-kit-builder/">Block Kit Builder</a></li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2023/07/03/install-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Installation</a></li>
+            <li>Part 1: <a href="/javascript/install-the-slack-meme-bot/">The itenium Slack Meme Bot® : Installation</a></li>
             <li>This Part: The itenium Slack Meme Bot® : Implementation</li>
-            <li>Part 3: <a href="/javascript/2023/07/05/ai-the-slack-meme-bot.html">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
+            <li>Part 3: <a href="/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
@@ -11380,8 +11380,8 @@ docker-compose up --build -d
 <p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/slack-meme-bot-slack-setup.png" alt="Activating Slack Webhook" title="Activating Slack Webhook" class="img-responsive" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: The itenium Slack Meme Bot® : Installation</li>
-            <li>Part 2: <a href="/javascript/2023/07/04/implementing-the-slack-meme-bot.html">The itenium Slack Meme Bot® : Implementation</a></li>
-            <li>Part 3: <a href="/javascript/2023/07/05/ai-the-slack-meme-bot.html">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
+            <li>Part 2: <a href="/javascript/implementing-the-slack-meme-bot/">The itenium Slack Meme Bot® : Implementation</a></li>
+            <li>Part 3: <a href="/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Quality Assurance @ itenium</title>
@@ -11950,9 +11950,9 @@ A(?!B)   – Literal A not followed by B
 <p>Lookarounds do not match anything in themselves which make them very handy
 when you want to replace some text but only when it is (not) preceded/succeeded by something else.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
-            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
+            <li>Part 1: <a href="/javascript/regex-in-javascript/">JavaScript RegExp Tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/regex-in-dotnet/">.NET Regex Tutorial</a></li>
+            <li>Part 3: <a href="/productivity/regex-introduction/">Regular Expressions: Introduction</a></li>
             <li>This Part: Regular Expressions: Tutorial</li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
@@ -12859,10 +12859,10 @@ Or heaven forbids, one someone else wrote! 😱</p>
 <p>Did I already mention that you’ll want to have tests of the code using regexes, especially if they tend
 to change often? Don’t be shy to write them, even if they are the only ones in your repository.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
+            <li>Part 1: <a href="/javascript/regex-in-javascript/">JavaScript RegExp Tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/regex-in-dotnet/">.NET Regex Tutorial</a></li>
             <li>This Part: Regular Expressions: Introduction</li>
-            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+            <li>Part 4: <a href="/productivity/regex-tutorial/">Regular Expressions: Tutorial</a></li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -13351,12 +13351,12 @@ out of the box with <code>create-react-app</code>.</p>
 
 <p>Also note that today is truly the perfect day to publish a “Jest” article!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
             <li>This Part: JavaScript Testing: Jasmine to Jest</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -13515,11 +13515,11 @@ which only works on Windows. The non-free version has removed this dependency.</
 <a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>:
     Open XML SDK by Microsoft.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
-            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
-            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp/">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-import/">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/excel-formulas-cheat-sheet/">Excel formulas cheat sheet</a></li>
             <li>This Part: EPPlus: No longer free to use in a commercial setting</li></ul><h1>Updates</h1>
 <ul><li>
             25 February 2025: Added EPPlus forks</li></ul><h1>
@@ -14858,7 +14858,7 @@ Custom shortcuts:</p>
 }
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dev-setup/2019/07/17/pragmatic-tip-22-use-a-single-editor-well.html">Pragmatic Tip #22 : Use A Single Editor Well</a></li>
+            <li>Part 1: <a href="/dev-setup/pragmatic-tip-22-use-a-single-editor-well/">Pragmatic Tip #22 : Use A Single Editor Well</a></li>
             <li>This Part: VSCode: Editor Settings and Shortcuts</li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
@@ -15543,7 +15543,7 @@ you know, something like Vim.</p>
 <p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/vscode-use-vim.jpg" alt="Sublime Text? Real Americans Use Vim" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Pragmatic Tip #22 : Use A Single Editor Well</li>
-            <li>Part 2: <a href="/dev-setup/2019/07/17/vscode-editor.html">VSCode: Editor Settings and Shortcuts</a></li></ul>
+            <li>Part 2: <a href="/dev-setup/vscode-editor/">VSCode: Editor Settings and Shortcuts</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -16020,7 +16020,7 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
   <li><a href="https://www.youtube.com/watch?v=dHrupYhq7sI">Walk-through of testing code for robocode // Philip Johnson</a></li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/design/2019/06/18/robocode-installation.html">Robocode Installation & Debugging</a></li>
+            <li>Part 1: <a href="/design/robocode-installation/">Robocode Installation & Debugging</a></li>
             <li>This Part: Robocode Tutorial</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -16203,7 +16203,7 @@ Find the CLI arguments in <code>robocode.bat</code>.</p>
 view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Robocode Installation & Debugging</li>
-            <li>Part 2: <a href="/design/2019/06/18/robocode-tutorial.html">Robocode Tutorial</a></li></ul>
+            <li>Part 2: <a href="/design/robocode-tutorial/">Robocode Tutorial</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -17167,10 +17167,10 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
   <li><code>$_</code> : entire input string</li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2019/03/05/regex-in-javascript.html">JavaScript RegExp Tutorial</a></li>
+            <li>Part 1: <a href="/javascript/regex-in-javascript/">JavaScript RegExp Tutorial</a></li>
             <li>This Part: .NET Regex Tutorial</li>
-            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
-            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+            <li>Part 3: <a href="/productivity/regex-introduction/">Regular Expressions: Introduction</a></li>
+            <li>Part 4: <a href="/productivity/regex-tutorial/">Regular Expressions: Tutorial</a></li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -18718,7 +18718,7 @@ Set-Alias pr Create-PullRequest
     </toc>
     <excerpt><![CDATA[<p class="notice--info">The Starify-GitHub-Links Chrome extension is no more! 🎉
 Long live “Starify Links” because we’re now adding links to, well, everything! 🌟✨🤩
-See the <a href="/blog/javascript/2025/10/23/starify-links.html">new blog post</a></p>
+See the <a href="/blog/javascript/starify-links/">new blog post</a></p>
 
 <p>A <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">free and open source Chrome Extension</a>
 that adds Github stars badges to all links on a web page.</p>
@@ -19115,9 +19115,9 @@ regex.test(input); // Returns false. lastIndex is reset to 0
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: JavaScript RegExp Tutorial</li>
-            <li>Part 2: <a href="/dotnet/2019/04/19/regex-in-dotnet.html">.NET Regex Tutorial</a></li>
-            <li>Part 3: <a href="/productivity/2023/04/09/regex-introduction.html">Regular Expressions: Introduction</a></li>
-            <li>Part 4: <a href="/productivity/2023/05/21/regex-tutorial.html">Regular Expressions: Tutorial</a></li></ul>
+            <li>Part 2: <a href="/dotnet/regex-in-dotnet/">.NET Regex Tutorial</a></li>
+            <li>Part 3: <a href="/productivity/regex-introduction/">Regular Expressions: Introduction</a></li>
+            <li>Part 4: <a href="/productivity/regex-tutorial/">Regular Expressions: Tutorial</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -22384,7 +22384,7 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 
 <p>For more examples - as UnitTests - check the <a href="https://github.com/itenium-be/NSubstituteTutorial">Github source</a>.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/30/nsubstitute-vs-moq.html">NSubstitute vs Moq</a></li>
+            <li>Part 1: <a href="/dotnet/nsubstitute-vs-moq/">NSubstitute vs Moq</a></li>
             <li>This Part: NSubstitute Tutorial</li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -23354,12 +23354,12 @@ IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 IF(OR(A1="value", A1="value2"), "value1-2", "other")
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
-            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp/">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-import/">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/">Create Excels with C# and EPPlus: Miscellaneous</a></li>
             <li>This Part: Excel formulas cheat sheet</li>
-            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+            <li>Part 6: <a href="/dotnet/epplus-pay-to-play/">EPPlus: No longer free to use in a commercial setting</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -23519,13 +23519,13 @@ describe('fake the api call', function() {
 
 <p>And <a href="https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code">instructions for setting up a <code>launch.json</code> on Stackoverflow</a></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
             <li>This Part: JavaScript Testing: Jasmine plugins</li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -23711,13 +23711,13 @@ it('has its own jasmine.getEnv()', function() {
 });
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
             <li>This Part: JavaScript Testing: Jasmine customization</li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -23849,13 +23849,13 @@ it('can pass context - which will show on failure', async () =&gt; {
 });
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
             <li>This Part: JavaScript Testing: Jasmine async syntax</li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24034,13 +24034,13 @@ it('and on setters', () =&gt; {
 });
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
             <li>This Part: JavaScript Testing: Jasmine Spies</li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24215,13 +24215,13 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
   <li><code>fail(string | Error)</code></li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/javascript/2017/05/29/javascript-testing-jasmine-getting-started.html">JavaScript Testing: Getting started with Jasmine</a></li>
+            <li>Part 1: <a href="/javascript/javascript-testing-jasmine-getting-started/">JavaScript Testing: Getting started with Jasmine</a></li>
             <li>This Part: JavaScript Testing: Jasmine syntax</li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24416,12 +24416,12 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: JavaScript Testing: Getting started with Jasmine</li>
-            <li>Part 2: <a href="/javascript/2017/05/30/javascript-testing-jasmine-syntax.html">JavaScript Testing: Jasmine syntax</a></li>
-            <li>Part 3: <a href="/javascript/2017/05/30/javascript-testing-jasmine-spies.html">JavaScript Testing: Jasmine Spies</a></li>
-            <li>Part 4: <a href="/javascript/2017/05/31/javascript-testing-jasmine-async.html">JavaScript Testing: Jasmine async syntax</a></li>
-            <li>Part 5: <a href="/javascript/2017/08/05/javascript-testing-jasmine-customization.html">JavaScript Testing: Jasmine customization</a></li>
-            <li>Part 6: <a href="/javascript/2017/08/06/javascript-testing-jasmine-plugins.html">JavaScript Testing: Jasmine plugins</a></li>
-            <li>Part 7: <a href="/javascript/2023/04/01/javascript-testing-jasmine-to-jest.html">JavaScript Testing: Jasmine to Jest</a></li></ul>
+            <li>Part 2: <a href="/javascript/javascript-testing-jasmine-syntax/">JavaScript Testing: Jasmine syntax</a></li>
+            <li>Part 3: <a href="/javascript/javascript-testing-jasmine-spies/">JavaScript Testing: Jasmine Spies</a></li>
+            <li>Part 4: <a href="/javascript/javascript-testing-jasmine-async/">JavaScript Testing: Jasmine async syntax</a></li>
+            <li>Part 5: <a href="/javascript/javascript-testing-jasmine-customization/">JavaScript Testing: Jasmine customization</a></li>
+            <li>Part 6: <a href="/javascript/javascript-testing-jasmine-plugins/">JavaScript Testing: Jasmine plugins</a></li>
+            <li>Part 7: <a href="/javascript/javascript-testing-jasmine-to-jest/">JavaScript Testing: Jasmine to Jest</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24561,12 +24561,12 @@ public void ConvertingIndexesAndAddresses()
   <li>A UnitTest to generate excel with a sample LoadFromXXX with a sheet for each TableStyles enum value.</li>
 </ul>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp/">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-import/">Create Excels with C# and EPPlus: Import</a></li>
             <li>This Part: Create Excels with C# and EPPlus: Miscellaneous</li>
-            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
-            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+            <li>Part 5: <a href="/dotnet/excel-formulas-cheat-sheet/">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/epplus-pay-to-play/">EPPlus: No longer free to use in a commercial setting</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24739,12 +24739,12 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
 <pre><code class="language-c#">sheet.Cells["A1"].LoadFromDataTable(new DataTable(), true);
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
-            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp/">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
             <li>This Part: Create Excels with C# and EPPlus: Import</li>
-            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
-            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
-            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+            <li>Part 4: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/excel-formulas-cheat-sheet/">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/epplus-pay-to-play/">EPPlus: No longer free to use in a commercial setting</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -24925,7 +24925,7 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
 <p>The drop of <code>.Setup()</code> and <code>.Object</code> for <strong>all</strong> cases is very win for NSubstitute.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: NSubstitute vs Moq</li>
-            <li>Part 2: <a href="/dotnet/2018/08/12/nsubstitute-tutorial.html">NSubstitute Tutorial</a></li></ul>
+            <li>Part 2: <a href="/dotnet/nsubstitute-tutorial/">NSubstitute Tutorial</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -25231,12 +25231,12 @@ Filtered-out rows are always excluded.</p>
 }
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/dotnet/2017/04/26/create-xlsx-excel-with-epplus-csharp.html">Create Excels with C# and EPPlus: A tutorial</a></li>
+            <li>Part 1: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp/">Create Excels with C# and EPPlus: A tutorial</a></li>
             <li>This Part: Create Excels with C# and EPPlus: Formulas & DataValidation</li>
-            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
-            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
-            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
-            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-import/">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/excel-formulas-cheat-sheet/">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/epplus-pay-to-play/">EPPlus: No longer free to use in a commercial setting</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -25569,11 +25569,11 @@ cfRule1.Style.Font.Bold = true;
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Create Excels with C# and EPPlus: A tutorial</li>
-            <li>Part 2: <a href="/dotnet/2017/04/27/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation.html">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
-            <li>Part 3: <a href="/dotnet/2017/05/01/create-xlsx-excel-with-epplus-csharp-import.html">Create Excels with C# and EPPlus: Import</a></li>
-            <li>Part 4: <a href="/dotnet/2017/05/02/create-xlsx-excel-with-epplus-csharp-miscellaneous.html">Create Excels with C# and EPPlus: Miscellaneous</a></li>
-            <li>Part 5: <a href="/dotnet/2018/03/28/excel-formulas-cheat-sheet.html">Excel formulas cheat sheet</a></li>
-            <li>Part 6: <a href="/dotnet/2023/03/09/epplus-pay-to-play.html">EPPlus: No longer free to use in a commercial setting</a></li></ul>
+            <li>Part 2: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-formulas-and-datavalidation/">Create Excels with C# and EPPlus: Formulas & DataValidation</a></li>
+            <li>Part 3: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-import/">Create Excels with C# and EPPlus: Import</a></li>
+            <li>Part 4: <a href="/dotnet/create-xlsx-excel-with-epplus-csharp-miscellaneous/">Create Excels with C# and EPPlus: Miscellaneous</a></li>
+            <li>Part 5: <a href="/dotnet/excel-formulas-cheat-sheet/">Excel formulas cheat sheet</a></li>
+            <li>Part 6: <a href="/dotnet/epplus-pay-to-play/">EPPlus: No longer free to use in a commercial setting</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -28338,7 +28338,7 @@ required, the unneeded complexity can always be taken back out. No regrets. Plus
 
 <p>Next up is “Provide Options, Don’t Make Lame Excuses”, one of my favorite tips!</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
-            <li>Part 1: <a href="/productivity/2012/12/01/pragmatic-tip-1-care-about-your-craft.html">Pragmatic Tip 1: Care About Your Craft</a></li>
+            <li>Part 1: <a href="/productivity/pragmatic-tip-1-care-about-your-craft/">Pragmatic Tip 1: Care About Your Craft</a></li>
             <li>This Part: Pragmatic Tip 2: Think! About Your Work</li></ul>]]></block3>
   </post>
   <post>
@@ -28392,7 +28392,7 @@ community opens up for which not yet any library or framework exists. Those who 
 Pragmatic Tip 8: “<strong>Invest Regularly in Your Knowledge Portfolio</strong>”, and are slowly becoming obsolete as everyone and everything but them evolves.</p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: Pragmatic Tip 1: Care About Your Craft</li>
-            <li>Part 2: <a href="/productivity/2012/12/02/pragmatic-tip-2-think-about-your-work.html">Pragmatic Tip 2: Think! About Your Work</a></li></ul>]]></block3>
+            <li>Part 2: <a href="/productivity/pragmatic-tip-2-think-about-your-work/">Pragmatic Tip 2: Think! About Your Work</a></li></ul>]]></block3>
   </post>
 
 </blog-posts>
