@@ -15,7 +15,7 @@ kramdown:
     disable: true
 
 # https://github.com/jekyll/minima
-# bundle show minima
+# bundle info minima
 theme: minima
 
 plugins:
