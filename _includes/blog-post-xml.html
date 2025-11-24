@@ -63,11 +63,13 @@
       {%- endif %}
     </toc>
     {%- endif %}
-    <excerpt><![CDATA[{{ post.excerpt }}]]></excerpt>
     {%- assign img_src_replace = site.image_base_url | append: '/blog-images/' | prepend: 'src="' %}
     {%- assign img_href_replace = site.image_base_url | append: '/blog-images/' | prepend: 'href="' %}
     {%- assign assets_src_replace = site.image_base_url | append: '/blog-assets/' | prepend: 'src="' %}
     {%- assign assets_href_replace = site.image_base_url | append: '/blog-assets/' | prepend: 'href="' %}
+    {%- assign excerpt_parts = post.content | split: "<!--more-->" %}
+    {%- assign excerpt_content = excerpt_parts[0] | strip | replace: 'src="/blog/assets/blog-images/', img_src_replace | replace: 'href="/blog/assets/blog-images/', img_href_replace | replace: 'src="/blog/assets/blog-assets/', assets_src_replace | replace: 'href="/blog/assets/blog-assets/', assets_href_replace %}
+    <excerpt><![CDATA[{{ excerpt_content }}]]></excerpt>
     {%- assign content_parts = post.content | split: "<!--block1-->" %}
     {%- if content_parts.size > 1 %}
       {%- assign before_block1 = content_parts[0] | split: "<!--more-->" %}
