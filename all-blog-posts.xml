@@ -1,5 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Devoxx 2025</title>
+    <author>Simon Verhoeven</author>
+    <subTitle>Another magnificent entry with amazing talks on vital topics</subTitle>
+    <date>2025-11-17T00:00:00+00:00</date>
+    <print_date>2025-11-17T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/trends/devoxx-2025/</url>
+    <category>trends</category>
+    <tags>war-story,tech-talk</tags>
+    <desc>Simon Verhoeven&apos;s five favourite talks of Devoxx 2025</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/devoxx-2025-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>Cute army of tiny AI agents climbing out of a coffee mug like it’s their home base, waving flags labeled Rise! Playful, cartoony, bright colors. --ar 700:131</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/devoxx-2025.png</url>
+      <origin>Midjourney</origin>
+      <prompt>A futuristic coffee cup emitting holographic AI agents made of glowing code lines, symbolizing Java powering intelligent systems. Neon blues and oranges, ultra-clean tech aesthetic. --ar 6:5</prompt>
+    </img>
+    <toc>
+      <icon>icon-java</icon>
+      <title>Devoxx</title>
+    </toc>
+    <excerpt><![CDATA[<h1 class="hide-from-excerpt" id="-highlights--trends">🎬 Highlights &amp; Trends</h1>
+]]></excerpt>
+      <block1><![CDATA[<h2 id="1-top-10-event-driven-architecture-pitfalls">1. Top 10 Event-Driven Architecture Pitfalls</h2>
+<p><strong>Speaker:</strong> Victor Rentea<br />
+<a href="https://www.youtube.com/watch?v=0SnuppAHOlQ">Youtube Video</a></p>
+
+<blockquote>
+  <p><em>“Welcome to the Event-Driven Adventure Park!”</em></p>
+</blockquote>
+
+<p><strong>Summary:</strong>
+Victor Rentea presents typical pitfalls within Event-Driven Architecture (EDA) not as dry theory, but as wild attractions in an amusement park. He covers complex distribution problems such as:</p>
+<ul>
+  <li><strong>The “Dual Write” nightmare:</strong> The problem of atomically saving to a database <em>and</em> sending a message.</li>
+  <li><strong>Race Conditions:</strong> When messages arrive or are processed in the wrong order.</li>
+  <li><strong>The “Poison Pill”:</strong> A message that crashes the consumer and is endlessly redelivered.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+This is absolutely not dry material. In his typical humorous and energetic style, Victor makes abstract problems very concrete. Definitely a must for developers interested in <em>war stories</em> who want to avoid the practical pain points of messaging systems.</p>]]></block1>
+      <block2><![CDATA[<h2 id="2-making-significant-software-architecture-decisions">2. Making significant Software Architecture decisions</h2>
+<p><strong>Speaker:</strong> Bert Jan Schrijver<br />
+<a href="https://www.youtube.com/watch?v=uoV7d2Af2tM">Youtube Video</a></p>
+
+<p><strong>Summary:</strong>
+Bert Jan presents the complex process of making architectural choices. He warns against “Resume Driven Development” and introduces models to make decisions more objective. A key point is the <strong>“Seagull Architecture”</strong> anti-pattern: the architect who flies in, drops some decisions, and flies off again without bearing the consequences.</p>
+
+<p><strong>Extra insights:</strong></p>
+<ul>
+  <li><strong>Trade-offs:</strong> Every choice is a sacrifice (e.g., consistency vs. availability).</li>
+  <li><strong>ADRs (Architecture Decision Records):</strong> The importance of documenting <em>why</em> a choice was made.</li>
+  <li><strong>Fitness Functions:</strong> Automatically testing whether your architecture still complies.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+A beautifully structured, non-dogmatic talk that leans on years of experience. If you are interested in the <em>why</em> behind the <em>what</em> and <em>how</em> of decisions, this is highly recommended.</p>
+
+<hr />
+
+<h2 id="3-the-new-java-best-practices">3. The New Java Best Practices</h2>
+<p><strong>Speaker:</strong> Stephen Colebourne<br />
+<a href="https://www.youtube.com/watch?v=4sjJmKXLnuY">Youtube Video</a></p>
+
+<p><strong>Summary:</strong>
+Stephen Colebourne gives a handy overview of how we should be writing Java <em>now</em>, as opposed to the older styles many still use.</p>
+
+<p><strong>Key points:</strong></p>
+<ul>
+  <li><strong>Var:</strong> Use <code>var</code> for local variables to increase readability.</li>
+  <li><strong>Records vs. Beans:</strong> Use <em>Records</em> for transparent data and classic <em>Beans</em> for encapsulation.</li>
+  <li><strong>Switch Expressions &amp; Pattern Matching:</strong> For more concise and safer code.</li>
+  <li><strong>Optional:</strong> Use <code>Optional</code> strictly as a return type.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+An essential update if you don’t want to get stuck in “legacy” Java patterns.</p>
+
+<hr />
+
+<h2 id="4-the-imperfect-architect">4. The imperfect architect</h2>
+<p><strong>Speaker:</strong> Robin Custers<br />
+<a href="https://www.youtube.com/watch?v=TQWWkaSEmVo">Youtube Video</a></p>
+
+<p><strong>Summary:</strong>
+Robin discusses the soft side of the architect profession and the organizational challenges:</p>
+<ul>
+  <li><strong>Political Capital:</strong> View influence as a bank account; build up credit and spend it wisely.</li>
+  <li><strong>Situational Leadership:</strong> Adapt your leadership style to the team.</li>
+  <li><strong>Stakeholders:</strong> How to deal with resistance and forge alliances.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+The perfect architect does not exist. This talk shows how to cultivate a collaborative culture without being dogmatic.</p>
+
+<hr />
+
+<h2 id="5-domain-centric-why-hexagonal-onion-and-clean-architecture-are-answers-to-the-wrong-question">5. Domain-centric? Why Hexagonal, Onion and Clean architecture are answers to the wrong question</h2>
+<p><strong>Speaker:</strong> Oliver Drotbohm<br />
+<a href="https://www.youtube.com/watch?v=co3acmgP2Ng">Youtube Video</a></p>
+
+<p><strong>Summary:</strong>
+Oliver Drotbohm raises critical questions about the hype surrounding Hexagonal and Clean architecture. He questions whether strictly separating technical layers actually serves the right goal.</p>
+
+<p><strong>Core message:</strong></p>
+<ul>
+  <li><strong>Functional vs. Technical:</strong> Focus on <em>vertical slices</em> (functionality) instead of horizontal layers.</li>
+  <li><strong>Modules:</strong> A plea for pragmatic API design (including with <strong>Spring Modulith</strong>).</li>
+  <li><strong>Encapsulation:</strong> Use Java’s package scope effectively instead of making everything public.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+A refreshing look that makes you think: how much abstraction do you <em>really</em> need?</p>
+
+<hr />
+
+<h2 id="honourable-mention-backlogmd---reaching-95-task-success-rate-with-ai-agents">Honourable Mention: Backlog.md - Reaching 95% Task success rate with AI Agents</h2>
+<p><strong>Speaker:</strong> Alex Gavrilescu<br />
+<a href="https://www.youtube.com/watch?v=LSoDQU_9MMA">Youtube Video</a></p>
+
+<p><strong>Summary:</strong>
+In this talk, Alex explains how he successfully uses AI agents for software development, ranging from initial frustrations to a structured process.</p>
+
+<p><strong>The Concept:</strong>
+He introduces <strong>Backlog.md</strong>, where tasks live in markdown files within your git repo.</p>
+<ul>
+  <li><strong>Context Management:</strong> Small, specific tasks prevent the AI from losing track.</li>
+  <li><strong>Spec-Driven Development:</strong> First generate a plan, review it, and only then code.</li>
+</ul>
+
+<p><strong>Why watch:</strong>
+An honest look at the stumbling blocks of AI coding and how to solve them. The project can be found at: <a href="https://github.com/MrLesk/Backlog.md">https://github.com/MrLesk/Backlog.md</a></p>
+
+<hr />
+
+<h1 id="itenium-delegation">Itenium Delegation</h1>
+
+<figure class="imagewrapper" style="max-width: 600px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/devoxx-delegation.png" alt="The Itenium delegation @ Devoxx" title="" class="img-responsive" />
+
+    
+    <figcaption>This year Itenium was once again present!</figcaption>
+    
+</figure>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://devoxx.be/">Devoxx Belgium</a></li>
+        <li><a href="https://www.youtube.com/watch?v=30qKZVdamUg">Opening keynote Devoxx Belgium 2025 with Arthur Janssen</a></li>
+        <li><a href="https://www.youtube.com/@DevoxxForever">Official Youtube channel</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Chrome Extension: Starify Links</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Because why stop at GitHub Repositories</subTitle>
@@ -115,6 +271,7 @@ was, well, just the one js file.</p>
     <ul>
       <li>After that Claude managed to add other badges with me just providing the link to the shields.io badge url</li>
       <li>It didn’t work for all the badges, but it did work straight away for almost all of them</li>
+      <li>Update: I went back in history and asked Claude to introduce the necessary design – and it generated something very much like what I did manually!</li>
     </ul>
   </li>
 </ul>
