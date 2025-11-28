@@ -1580,9 +1580,8 @@ an excel, leverage the power of Excel formulas.</p>]]></excerpt>
 <p>The formulas below show how to set the #FORMULAS.</p>
 
 <p>When setting a range with <code>FormulaA1</code>, it will not adjust columns/rows
-accordingly, you have to use <code>FormulaR1C1</code>.</p>
-
-<pre><code class="language-c#">using var workbook = new XLWorkbook();
+accordingly, you have to use <code>FormulaR1C1</code>.</p>]]></block1>
+      <block2><![CDATA[<pre><code class="language-c#">using var workbook = new XLWorkbook();
 var sheet = workbook.Worksheets.Add("Formula");
 
 // Starting = is optional
@@ -1613,8 +1612,9 @@ sheet.Range("H2:H5").FormulaR1C1 = "RC[-2]*(1-R5C7)"; // R5C7 is G5
 
 // Recalculate all dirty formulas before saving
 workbook.SaveAs("file.xlsx", new SaveOptions() {EvaluateFormulasBeforeSaving = true});
-</code></pre>]]></block1>
-      <block2><![CDATA[<h2 id="support">Support</h2>
+</code></pre>
+
+<h2 id="support">Support</h2>
 
 <ul>
   <li><a href="https://github.com/closedxml/closedxml/wiki/Evaluating-Formulas#supported-functions">Supported Functions</a></li>
