@@ -606,7 +606,7 @@ Set-Alias bejsddev Start-JekyllDevWithDrafts
 </code></pre>]]></block2>
     <block3><![CDATA[<h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jekyll/jekyll" class="github">
     <img src="https://img.shields.io/github/stars/jekyll/jekyll.svg?style=social&label=Star" />
@@ -1463,7 +1463,7 @@ ws.Cell(3, 1).CreateRichText()
         <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
@@ -1751,7 +1751,7 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
         <li><a href="https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188">Alphabetical list of Excel functions</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
@@ -2191,7 +2191,7 @@ sheet1.CopyTo(workbook, "Copy");
         <li><a href="https://github.com/Itenium-Forge/Itenium.ExcelCreator">Our own WebApi wrapper for ClosedXML</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/ClosedXML/ClosedXML" class="github">
     <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
@@ -3230,7 +3230,7 @@ public class PersonWithAttributes
         <li><a href="https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization">The official STJ test suite</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
             Newtonsoft.Json: v13.0.3
         </p><p>
@@ -3737,7 +3737,7 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
         <li><a href="https://itenium.be/blog/javascript/react-component-profiling/">React Component Profiling also goes into some detail with Reselect for performance optimalizations</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/reduxjs/reselect" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&label=Star" />
@@ -4053,7 +4053,7 @@ const creatorSlice = createAppSlice({
         <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/reduxjs/redux-thunk" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&label=Star" />
@@ -4402,7 +4402,7 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
         <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/reduxjs/redux-toolkit" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
@@ -4732,7 +4732,7 @@ const TodoAdd = () =&gt; {
         <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/immerjs/immer" class="github">
     <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&label=Star" />
@@ -4949,7 +4949,7 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
         <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/reduxjs/redux-toolkit" class="github">
     <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
@@ -5261,7 +5261,7 @@ Nr = {{ randomNr }}
         <li><a href="https://github.com/itenium-be/Angular-Days">See src/app/new-template for side-by-side comparison</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/angular/angular" class="github">
     <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
@@ -5926,7 +5926,7 @@ really track everything 😀</p>]]></block2>
         <li><a href="https://github.com/itenium-be/DbAuditWithEF">SQL Server & EntityFramework Core: how to audit</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/dotnet/efcore" class="github">
     <img src="https://img.shields.io/github/stars/dotnet/efcore.svg?style=social&label=Star" />
@@ -6381,7 +6381,7 @@ exit $hasBuildErrors
         <li><a href="https://git-scm.com/docs/githooks">Official githooks documentation</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/typicode/husky" class="github">
     <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
@@ -8296,7 +8296,7 @@ services:
         <li><a href="https://gist.github.com/walkerjeffd/374750c366605cd5123d">Configure Synology NAS as Git Server</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
             DSM: v7.1.1
         </p>]]></block3>
@@ -9304,7 +9304,7 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 <ul><li>
             12 March 2025: Updated to latest versions. Added TUnit, SoftAssertions, Throws derived, ...</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
             NUnit: v4.3.2
         </p><p>
@@ -9472,7 +9472,7 @@ It’s also quite easy to add an empty placeholder.</p>
         <li><a href="https://github.com/angular/angular/blob/main/CHANGELOG.md#1700-2023-11-08">Official Release Notes</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/angular/angular" class="github">
     <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
@@ -10265,7 +10265,7 @@ function callback(id, phase, actualDuration) {
     Examples of reselect selectors</li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/facebook/react" class="github">
     <img src="https://img.shields.io/github/stars/facebook/react.svg?style=social&label=Star" />
@@ -10837,7 +10837,7 @@ an nmap scan to discover services that are not (yet) available directly from the
             <li>Part 4: <a href="/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
             <li>Part 5: <a href="/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
             nmap: v5.2
         </p>]]></block3>
@@ -11593,7 +11593,7 @@ export class CreditVouchDesign extends LitElement {
 <p>A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic.</p>]]></block2>
     <block3><![CDATA[<h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/vaadin/framework" class="github">
     <img src="https://img.shields.io/github/stars/vaadin/framework.svg?style=social&label=Star" />
@@ -12506,7 +12506,7 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
         <li><a href="https://github.com/itenium-be/React-Charting">Project with all the examples for the React chart libraries</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/recharts/recharts" class="github">
     <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&label=Star" />
@@ -12669,7 +12669,7 @@ So if you want to ensure that your Java projects are completed on time and to th
         <li><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-dotnet-7/">.Net Maui and .NET 7 by David Ortinau</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/dotnet/maui" class="github">
     <img src="https://img.shields.io/github/stars/dotnet/maui.svg?style=social&label=Star" />
@@ -13370,7 +13370,7 @@ out of the box with <code>create-react-app</code>.</p>
         <li><a href="https://jestjs.io/docs/getting-started">Official Jest Documentation</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/facebook/jest" class="github">
     <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&label=Star" />
@@ -13524,7 +13524,7 @@ which only works on Windows. The non-free version has removed this dependency.</
 <ul><li>
             25 February 2025: Added EPPlus forks</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
@@ -14866,7 +14866,7 @@ Custom shortcuts:</p>
         <li></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/microsoft/vscode" class="github">
     <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
@@ -15560,7 +15560,7 @@ you know, something like Vim.</p>
         <li><a href="https://marketplace.visualstudio.com/vscode">VSCode Marketplace</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/microsoft/vscode" class="github">
     <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
@@ -16033,7 +16033,7 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
         <li><a href="http://robowiki.net/wiki/Robocode">Robocode Wiki</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/robo-code/robocode" class="github">
     <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
@@ -16215,7 +16215,7 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
         <li><a href="http://robowiki.net/wiki/Robocode">Robocode Wiki</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/robo-code/robocode" class="github">
     <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
@@ -17040,7 +17040,7 @@ console.log('Currently running', test.meta.file);
     Awesome AVA</li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/avajs/ava" class="github">
     <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&label=Star" />
@@ -17735,7 +17735,7 @@ and am already set on using it for a few small projects.</p>]]></block2>
         <li><a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur Visual Studio Code extension</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/vuejs/vue" class="github">
     <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&label=Star" />
@@ -18391,7 +18391,7 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
 <ul><li>
             8 March 2023: Added notice about MomentJS being in maintenance mode</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/moment/moment" class="github">
     <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&label=Star" />
@@ -18523,7 +18523,7 @@ module.exports = {
         <li><a href="https://git-scm.com/docs/githooks">Official githooks documentation</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/typicode/husky" class="github">
     <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
@@ -20667,7 +20667,7 @@ export class MyApplicationModule {}
 <ul><li>
             1 June 2024: Update to Angular v18: locale configuration, i18n pipes, updated official doc links etc</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/angular/angular" class="github">
     <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
@@ -21255,7 +21255,7 @@ All in all it’s just a great framework for modern web applications and most of
         <li><a href="https://www.youtube.com/watch?v=cRC9DlH45lA">Angular: The Documentary | An origin story</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/angular/angular" class="github">
     <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
@@ -22392,7 +22392,7 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
         <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/nsubstitute/NSubstitute" class="github">
     <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
@@ -23535,7 +23535,7 @@ describe('fake the api call', function() {
             28 March 2023: Colorblindness: added color configuration + added jasmine-reporters</li><li>
             17 January 2019: Added reporter plugins</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -23739,7 +23739,7 @@ it('has its own jasmine.getEnv()', function() {
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -23865,7 +23865,7 @@ it('can pass context - which will show on failure', async () =&gt; {
             28 March 2023: Updated to Jasmine 4.3.0.</li><li>
             18 January 2019: await/async is pretty standard now. Added expectAsync examples.</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -24049,7 +24049,7 @@ it('and on setters', () =&gt; {
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -24230,7 +24230,7 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -24439,7 +24439,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 <ul><li>
             28 March 2023: jasmine-ts is deprecated. Updated to Jasmine 4.3.0.</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/jasmine/jasmine" class="github">
     <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
@@ -24573,7 +24573,7 @@ public void ConvertingIndexesAndAddresses()
         <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
@@ -24751,7 +24751,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
         <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
@@ -24932,7 +24932,7 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
         <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/nsubstitute/NSubstitute" class="github">
     <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
@@ -25243,7 +25243,7 @@ Filtered-out rows are always excluded.</p>
         <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
 </ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
@@ -25582,7 +25582,7 @@ cfRule1.Style.Font.Bold = true;
 <ul><li>
             10 March 2023: EPPlus is no longer free for commercial use!</li></ul><h1>
     Package Versions
-    <i class="fa fa-info-circle" style="float: right; color: cornflowerblue; font-size: 28px" title="Package versions used for this post and in the accompanying code on Github"></i>
+    <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
             <a href="https://github.com/JanKallman/EPPlus" class="github">
     <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
