@@ -58,6 +58,8 @@ The formulas below show how to set the #FORMULAS.
 When setting a range with `FormulaA1`, it will not adjust columns/rows
 accordingly, you have to use `FormulaR1C1`.
 
+<!--block1-->
+
 ```c#
 using var workbook = new XLWorkbook();
 var sheet = workbook.Worksheets.Add("Formula");
@@ -91,9 +93,6 @@ sheet.Range("H2:H5").FormulaR1C1 = "RC[-2]*(1-R5C7)"; // R5C7 is G5
 // Recalculate all dirty formulas before saving
 workbook.SaveAs("file.xlsx", new SaveOptions() {EvaluateFormulasBeforeSaving = true});
 ```
-
-
-<!--block1-->
 
 
 ## Support
