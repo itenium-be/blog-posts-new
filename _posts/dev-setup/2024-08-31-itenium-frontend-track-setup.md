@@ -42,7 +42,7 @@ they are not always that compatible!
 
 <!--more-->
 
-# Node Version Manager
+## Node Version Manager
 
 Install the [nvm package](https://community.chocolatey.org/packages/nvm) with [chocolatey](https://chocolatey.org/install).
 There is also a [portable version](https://community.chocolatey.org/packages/nvm.portable).
@@ -71,7 +71,7 @@ The Github repo of the session lists the Node version used at the top of the REA
 <!--block1-->
 
 
-# Visual Studio Code
+## Visual Studio Code
 
 Looks like it's already 5 years since I switched from Sublime Text 3 to Visual Studio Code.
 While all attendees can obviously pick whichever IDE they fancy, if you don't have strong
@@ -87,7 +87,7 @@ Previous blog posts on setting up and learning about Visual Studio Code:
 - [VSCode: Editor Settings and Shortcuts](https://itenium.be/blog/dev-setup/vscode-editor/)
 
 
-## Syncing Settings
+### Syncing Settings
 
 Back when those posts were written, Visual Studio Code didn't have a builtin option
 to sync your settings so I did it with our [dotfiles](https://github.com/Laoujin/dotfiles). But now it's just a
@@ -98,7 +98,7 @@ to sync your settings so I did it with our [dotfiles](https://github.com/Laoujin
 Especially useful when you have an installation on your home and work laptops, or when
 you change projects!
 
-## Plugins
+### Plugins
 
 Each itenium session lists its own set of suggested Visual Studio Code plugins
 in the README.
@@ -184,7 +184,7 @@ You can't go wrong with these for frontend development:
 [GitLens-Repo]: https://github.com/gitkraken/vscode-gitlens
 
 
-# Browser Extensions
+## Browser Extensions
 
 Unlike your preferred IDE, while you can use whichever browser you like for your day-to-day development,
 you do need all browsers installed so that you can at least do some initial testing in Chrome, Firefox
@@ -264,7 +264,7 @@ That being said, the browser extensions are available for pretty much all browse
 [Requestly-Repo]: https://github.com/requestly/requestly
 
 
-# The Project
+## The Project
 
 ```powershell
 # Always use source control ;)
@@ -278,7 +278,7 @@ touch README.md
 npm init --force
 ```
 
-## editorconfig
+### editorconfig
 
 After having installed the [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 VSCode plugin, you also need an `.editorconfig`. Pretty much every template generator creates one of these.
@@ -306,7 +306,7 @@ trim_trailing_whitespace = false
 end_of_line = lf
 ```
 
-## TypeScript
+### TypeScript
 
 While there are some devs out there that don't like TypeScript,
 personally I use TypeScript even for the smallest of projects.
@@ -358,7 +358,7 @@ See this [tsconfig cheat sheet](https://www.totaltypescript.com/tsconfig-cheat-s
 ```
 
 
-## Jest
+### Jest
 
 Jest has come a long way and I would definitely recommend for
 your frontend UnitTesting needs.
@@ -406,7 +406,7 @@ module.exports = {
 ```
 
 
-## Visual Studio Code
+### Visual Studio Code
 
 Run the tests directly in Visual Studio Code with
 the [Jest Plugin](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest).
@@ -434,7 +434,7 @@ If you can't see failure details, open the Terminal `Ctrl+J`!
 ![Jest in Visual Studio Code!]({{ "/assets/blog-images/frontend-track-vscode-jest.png" | relative_url }} "Jest in Visual Studio Code!")
 
 
-# The Sessions
+## The Sessions
 
 Some of our frontend development sessions at itenium.
 

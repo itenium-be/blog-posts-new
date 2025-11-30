@@ -46,7 +46,7 @@ The "?" in the title is certainly not an error, it's not a how-to book but it of
 <!--block1-->
 
 
-## About the book
+### About the book
 
 This book is the start of a new series, and we start with tidying which he calls "the Pringles of software design" to facilitate future (behavioural) changes.
 
@@ -57,7 +57,7 @@ It is split into 3 sections:
 * *Theory*: why should we do it?
 
 
-## Tidyings
+### Tidyings
 
 Here Beck starts us of with some sample tidyings that make behavioural changes (features) in the future easier.  
 These small, easily reversible changes that do not need to be preemptively approved, and increase our enjoyment and productivity while coding.
@@ -70,7 +70,7 @@ Some examples:
 * new interface, old implementation
 * ...
 
-## Managing
+### Managing
 
 Here we dive into the more ephemeral question of: should we tidy up, and if so: when?
 
@@ -87,7 +87,7 @@ He provides us with insights to help us think about:
 
 And as always align with your team.
 
-## Theory
+### Theory
 
 This was my favourite section. We've dived into the what & when, but what's the why? Which is certainly a question one can expect when tidying.  
 Often there can be certain challenges if one cannot properly convey the reasoning for this activity, after all why are you doing this?  
@@ -104,7 +104,7 @@ And here's where we dive into metaphors from the financial market & option tradi
 
 He does a magnificent job of clearly conveying these concepts, which helps us bridge certain gaps. 
 
-# My thoughts
+## My thoughts
 
 The book contains some very useful insights, and the small bite-sized sections made it an enjoyable, educative read whilst sipping some tea.
 

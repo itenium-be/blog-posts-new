@@ -30,7 +30,7 @@ toc:
 
 Show how easy it would be to gain unauthorized access to a system remotely.
 
-# What
+## What
 {: .hide-from-excerpt}
 
 Hydra is a brute-force tool to perform dictionary attacks against protocols such as Ftp, Http(s), Cisco, Oracle, Postgres, SMTP, Telnet, SSH and many more.
@@ -41,7 +41,7 @@ Hydra is a brute-force tool to perform dictionary attacks against protocols such
 
 <!--more-->
 
-# How
+## How
 
 ```sh
 hydra -l user -P rockyou.txt ftp://192.168.1.6 -t8 -v -I
@@ -63,7 +63,7 @@ Flags used:
 <!--block1-->
 
 
-## Docker
+### Docker
 
 This assumes that you have a `wordlist.txt` file in your working directory.
 
@@ -76,14 +76,14 @@ docker run -v $(pwd):/data --rm vanhauser/hydra -l user -P /data/wordlist.txt ft
 ```
 
 
-## Wordlists
+### Wordlists
 
 [Wordlists](https://www.kali.org/tools/wordlists/) contain common passwords.
 A famous one is `rockyou.txt` (14M).
 
 
 
-# When
+## When
 
 Whenever you figure out that a certain protocol and user has a weak password,
 it's time to whip out Hydra! Check the Security Audit Blog during itenium's

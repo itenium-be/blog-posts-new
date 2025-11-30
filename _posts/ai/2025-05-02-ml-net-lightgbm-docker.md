@@ -45,7 +45,7 @@ I added a small WebApi to automate future syncing, retraining and predictions.
 
 <!--more-->
 
-# Docker Training
+## Docker Training
 
 As, once deployed, training failed with:
 
@@ -61,7 +61,7 @@ used when using that trainer.
 
 <!--block1-->
 
-# Installing LightGBM
+## Installing LightGBM
 
 A simple Google search got me to the LightGBM installation instructions:
 
@@ -71,7 +71,7 @@ cd LightGBM && mkdir build && cd build
 cmake .. && make -j && make install
 ```
 
-## CMake Detour
+### CMake Detour
 
 The `apt-get install cmake -y` installed version 3.25.1 which was just not
 good enough for LightGBM!
@@ -94,7 +94,7 @@ cmake --version
 The `--break-system-packages` obviously isn't a very good sign but since
 we will be doing this in the build step of our Dockerfile, it's fine 😅
 
-# Final Dockerfile
+## Final Dockerfile
 
 ```sh
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build

@@ -43,7 +43,7 @@ defined in the IOC registration, at startup, with Autofac.
 
 <!--more-->
 
-# The Implementation
+## The Implementation
 
 A simplified version of the code would be:
 
@@ -94,7 +94,7 @@ public class LoopingDoer : IDoer
 }
 ```
 
-## The Magic
+### The Magic
 
 To make it all work, the "magic" ✨🦄 [Autofac](https://autofac.org/)
 wiring:
@@ -111,7 +111,7 @@ at a completely different location (app startup) before it
 makes any sense.
 
 
-# Keep it Simple
+## Keep it Simple
 
 After removing the decorator and the Autofac registration,
 we ended up with:
@@ -140,12 +140,12 @@ understand, and it also made it easy, trivial even,
 to add the required change.
 
 
-# Decorator Pattern
+## Decorator Pattern
 
 An excellent design pattern to adhere to the Open/Closed Principle:
 Add functionality without modification.
 
-## Intent
+### Intent
 
 It's one of the Structural Patterns from the [GoF](https://en.wikipedia.org/wiki/Design_Patterns).
 
@@ -155,14 +155,14 @@ extending functionality.
 {: .notice--info}
 
 
-## Applicability
+### Applicability
 
 When extension by subclassing is impractical because a large number
 of independent extensions are possible and would produce an explosion
 of subclasses to support every combination.
 
 
-## Consequences
+### Consequences
 
 _More flexible than static inheritance_:  
 Responsibilities can be added and removed at run-time whereas inheritance
@@ -179,7 +179,7 @@ customize, **you can no longer follow the execution flow from the source code
 alone and they can be hard to debug**.
 
 
-## Known Uses
+### Known Uses
 
 I/O Streams are typically implemented using Decorators and they are a really
 good fit for the pattern too!
@@ -200,7 +200,7 @@ case. Having to write all these implementations would result in said explosion
 of subclasses and also make it difficult to keep things DRY!
 
 
-# Conclusion
+## Conclusion
 
 Using the decorator pattern
 instead of writing a simple `foreach` loop;

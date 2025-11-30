@@ -37,7 +37,7 @@ Which is basically on equal footing with EPPlus.
 <hr>
 <br>
 
-# That's fine!
+## That's fine!
 
 Companion to the EPPlus series, specifically to Part 2: Formulas.  
 Covering the EPPlus syntax and implemented functions.
@@ -46,7 +46,7 @@ Covering the EPPlus syntax and implemented functions.
 <!--block1-->
 
 
-# Basics
+## Basics
 
 Add a formula with:  
 
@@ -64,7 +64,7 @@ A few EPPlus specific gotchas:
 
 
 
-# String manipulation
+## String manipulation
 
 All string indexes start from 1.
 
@@ -87,7 +87,7 @@ All string indexes start from 1.
 {: .table-code}
 
 
-# Numbers & Math
+## Numbers & Math
 
 | Function                                 | Meaning                                   
 |------------------------------------------|-------------------------------------------
@@ -106,7 +106,7 @@ All string indexes start from 1.
 | AVERAGE, AVERAGEIF, AVERAGEIFS
 {: .table-code}
 
-## CountIf, SumIf, AverageIf
+### CountIf, SumIf, AverageIf
 
 Criteria possibilities for these xxxIF functions:
 
@@ -118,7 +118,7 @@ Criteria possibilities for these xxxIF functions:
 - `"cat*"`: 0..x wildcard
 
 
-## Real mathy
+### Real mathy
 
 | Function                                 | Meaning                                   
 |------------------------------------------|-------------------------------------------
@@ -139,7 +139,7 @@ And then a whole bunch like:
 - MEDIAN, STDEV, RANK, VAR
 
 
-## SUBTOTAL
+### SUBTOTAL
 
 SUBTOTAL(9,...), as apposed to using SUM directly, will not include other subtotals in the calculation.
 
@@ -165,7 +165,7 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-# Date & Time
+## Date & Time
 
 | Function                                 | C#                                        
 |------------------------------------------|-------------------------------------------
@@ -190,7 +190,7 @@ Filtered-out rows are always excluded.
 
 
 
-# Boolean logic
+## Boolean logic
 
 | Function                                 | Meaning                                         
 |------------------------------------------|-------------------------------------------------
@@ -203,7 +203,7 @@ Filtered-out rows are always excluded.
 | TRUE(), FALSE()                          | True/False values
 {: .table-code}
 
-## Or, And, Not
+### Or, And, Not
 
 ```
 ' Check if cell is blank

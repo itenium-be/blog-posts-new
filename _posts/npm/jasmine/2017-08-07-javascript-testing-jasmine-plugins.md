@@ -59,9 +59,9 @@ Other Jasmine plugins you might find useful:
 {% include github-stars.html url="visionmedia/supertest" desc="Super-agent driven library for testing node.js HTTP servers using a fluent API." %}
 {% include github-stars.html url="jhnns/rewire" desc="Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time" %}
 
-# Reporters
+## Reporters
 
-## Jasmine Spec Reporter
+### Jasmine Spec Reporter
 
 Probably your goto console logger: [jasmine-spec-reporter][jasmine-spec-reporter]:  
 
@@ -89,13 +89,13 @@ jasmine.getEnv().addReporter(new SpecReporter({
 }));
 ```
 
-## Jasmine-Reporters
+### Jasmine-Reporters
 
 A collection of reporters: JUnitXmlReporter, NUnitXmlReporter,
 AppVeyor, TapReporter, TeamCityReporter and TerminalReporter.
 
 
-# Proxyquire
+## Proxyquire
 
 Stub imports of the code being tested.
 
@@ -140,7 +140,7 @@ describe('fake the api call', function() {
 ```
 
 
-# VSCode Integration
+## VSCode Integration
 
 The Jest VSCode test runner got me thinking, this probably also exists for Jasmine.
 

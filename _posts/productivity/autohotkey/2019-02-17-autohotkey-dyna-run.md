@@ -24,7 +24,7 @@ single.. Autohotkey hotkey.
 <!--more-->
 
 
-# Some Autohotkey blog posts
+## Some Autohotkey blog posts
 
 Some blog posts that have Autohotkey scripts for you to test out right away!
 
@@ -39,7 +39,7 @@ Some blog posts that have Autohotkey scripts for you to test out right away!
 <!--block1-->
 
 
-# The DynaRun script
+## The DynaRun script
 
 Select an Autohotkey script and press `Capslock + F5`
 
@@ -105,7 +105,7 @@ Or download [dyna-run-capslock-f5.ahk](/assets/blog-images/autohotkey-dyna-run-c
 <!-- This block exists three times: autohotkey-dyna-run.md, autohotkey-use-case.md and autohotkey-login-form.html -->
 <!-- ATTN: Some slight variations in install instructions!-->
 
-# Installing the script
+## Installing the script
 
 - Download and [install Autohotkey](https://www.autohotkey.com/download) (Pick Autohotkey 1.1)
 - Create a file with the extension **ahk**
@@ -114,7 +114,7 @@ Or download [dyna-run-capslock-f5.ahk](/assets/blog-images/autohotkey-dyna-run-c
 - Select some Authotkey text and press `Capslock + F5`
 
 
-## To start with Windows
+### To start with Windows
 
 To start your Autohotkey script with Windows put a file shortcut in your startup folder. 
 
@@ -133,7 +133,7 @@ With `your_user_name`: `$env:USERNAME` (PS1) or `%USERNAME%` (CMD)
 
 
 
-# Mega test script
+## Mega test script
 
 ```autohotkey
 MsgBox Will it work?

@@ -25,7 +25,7 @@ Reload PowerShell profile
 
 <!--more-->
 
-# PowerShell Core
+## PowerShell Core
 
 The default location changed in PowerShell Core to  
 ```powershell
@@ -36,7 +36,7 @@ $home\Documents\PowerShell
 <!--block1-->
 
 
-# PowerShell
+## PowerShell
 
 
 Profile locations

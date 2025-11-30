@@ -39,7 +39,7 @@ And a great way to learn more about patterns is by [teaching about them](https:/
 
 
 
-# Learning Design Patterns
+## Learning Design Patterns
 
 How do you convince a developer unfamiliar with Design Patterns to pick up a book on the topic. There are a few amazing books about
 Design Patterns out there of which [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=pd_bxgy_b_img_y)
@@ -74,7 +74,7 @@ When learning about patterns, one must be careful to think of them as a new tool
 start molding problems to fit a pattern (Just to be able to implement it now?:). Probably even more important than the patterns themselves, the risks
 should always be clearly communicated when introducing someone to design patterns.
 
-# There are no absolute truths
+## There are no absolute truths
 
 Another way to approach "selling" the GoF Design Patterns book to someone would be by not sampling the patterns themselves but by illustrating
 that the patterns are often implementations of two underlying principles of object-oriented design (described in much detail in section 1.6 of their

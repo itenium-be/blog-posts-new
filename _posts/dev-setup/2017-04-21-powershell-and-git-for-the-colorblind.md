@@ -87,7 +87,7 @@ List current configuration
 ```powershell
 $GitPromptSettings
 ```
-### v0.x
+#### v0.x
 
 My changes
 
@@ -105,7 +105,7 @@ Get possible colors
 - Gray, Blue, Green, Cyan, Red, Magenta, Yellow, White
 - Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, DarkGray
 
-### v1.x
+#### v1.x
 
 Some breaking changes...  
 
@@ -166,6 +166,6 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 ```
 
 
-# Advantages
+## Advantages
 
 ![Nailed it!]({{ "/assets/blog-assets/colorblind-ididit.png" | relative_url }})

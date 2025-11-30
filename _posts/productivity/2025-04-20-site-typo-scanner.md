@@ -40,7 +40,7 @@ Not that hard it turns out.
 
 <!--more-->
 
-# 💸💸 Triplechecker
+## 💸💸 Triplechecker
 
 The git repository has been archived since January 2025 and they basically point you towards
 [www.triplechecker.com](https://www.triplechecker.com/) which is their cloud deploy.
@@ -52,7 +52,7 @@ but after the first 7 errors, it asked me to sign up for a mere €15/month. Uhm
 <!--block1-->
 
 
-# Docker Container
+## Docker Container
 
 You can pretty easily host it yourself though!
 
@@ -69,7 +69,7 @@ Surf to [http://localhost:808](http://localhost:808)
 📈 Profit!!
 
 
-# Big oopsie
+## Big oopsie
 
 So one of the 100+ typos it found was on our home page,
 in the very first slide, a typo which has been screaming
@@ -81,7 +81,7 @@ at our customers on our website for **8 years**. Whoops!
 Heh heh, maybe no one ever noticed? 😬🙈🤫
 
 
-# Let AI figure it out
+## Let AI figure it out
 
 Since the siteinspector README just points you towards the paying service,
 I had the brilliant idea of asking AI to figure it out for me!
@@ -103,7 +103,7 @@ gem install siteinspector
 siteinspector https://itenium.be
 ```
 
-## AI Slopsquatting
+### AI Slopsquatting
 
 ```
 ERROR:  Could not find a valid gem 'siteinspector' (>= 0) in any repository

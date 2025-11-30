@@ -43,7 +43,7 @@ Which country scored the most owngoals? Read on to find out!
 
 <!--more-->
 
-# The Game
+## The Game
 
 The game started with a hickup, other machines were not discoverable on the guest network so the leaderboard server had to be deployed on an external server -- while everyone was already solving exercises! This messed up our scoreboard considerably, especially the ranking for "solved fastest" 😃
 
@@ -52,18 +52,18 @@ After this it was pretty smooth sailing. Tom found an error in the calculation o
 
 <!--block1-->
 
-## Before we start
+### Before we start
 
 ![Meme SQL is always all caps!]({{ "/assets/blog-images/sql-training-meme2.png" | relative_url }} "It can only be SELECT FROM!!"){: .img-responsive}
 
 
-## Notable Hacks
+### Notable Hacks
 
 Even though we had definitely said "no cheating" during the intro powerpoint, some contestants still tried to get extra points for "leanest solution" or just "fixed" their query to get to the hinted at result 😀
 
 
 
-### Mike
+#### Mike
 
 Q: _Which countries have a GDP greater than every country in Europe?_
 
@@ -79,7 +79,7 @@ order by gdp
 Straight to jail Mike! ;)
 
 
-### Alexander
+#### Alexander
 
 Alexander scored some `+4` style points for this one!
 
@@ -99,7 +99,7 @@ to not be counted in his query!
 
 
 
-## The Leaderboards
+### The Leaderboards
 
 The 🏆 top 4 on the final leaderboard 💯:
 
@@ -112,14 +112,14 @@ The 🏆 top 4 on the final leaderboard 💯:
 {: .table-code}
 
 
-## The Prize
+### The Prize
 
 In the end Michael proved too strong and with 63 points, he went home with the title of **itenium SQL Master** and the gaming cup 🎈 🌟 🚀!
 
 {% include post/image.html file="sql-training-winner.png" alt="SQL Training prize for the winner" desc="Michael scored most points and went home with the prize! 🎉" maxWidth="500px" %}
 
 
-# Host Your Own?
+## Host Your Own?
 
 You want to host your own SQL Training competition?  
 You can! The game, exercises and datasets are on our [Github](https://github.com/itenium-be/sql-training)!
@@ -144,9 +144,9 @@ You'll have to change some configuration (see the [README](https://github.com/it
 Possible solutions can be found on a separate [branch](https://github.com/itenium-be/sql-training/blob/solutions/SOLUTIONS.md).
 
 
-# Interesting Queries
+## Interesting Queries
 
-## World: largest country per continent
+### World: largest country per continent
 
 Q: _Find the largest country (by area) in each continent, show the continent, the name and the area._
 
@@ -178,7 +178,7 @@ know the `DISTINCT ON (col_name)` was a thing!
 It's the `ORDER BY area DESC` part that makes this work. Pretty neat!
 
 
-## World: all vowels, no spaces
+### World: all vowels, no spaces
 
 Q: _Find the country that has all the vowels and no spaces in its name._
 
@@ -197,7 +197,7 @@ SELECT name FROM countries
 WHERE name ~ '^(?=.*a)(?=.*e)(?=.*i)(?=.*o)(?=.*u)[^ ]+$'
 ```
 
-## Teachers: Teacher seniority
+### Teachers: Teacher seniority
 
 Typically calculated like:
 
@@ -211,7 +211,7 @@ Michael won the leanest query by instead doing:
 (CURRENT_DATE - employed_at)/365
 ```
 
-## Worldcup: country with most own goals
+### Worldcup: country with most own goals
 
 As promised in the intro...
 
@@ -229,7 +229,7 @@ And the "winner" is... France, with 4 own goals!
 (Valladdares, Yobo, Behich, Mandžukic)
 
 
-## Unsolved
+### Unsolved
 
 **World-8**: Get confusing top level domains: tld that start/end in a different country name.  
 An exercise on joining a table with itself.

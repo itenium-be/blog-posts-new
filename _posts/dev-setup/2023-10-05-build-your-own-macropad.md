@@ -38,7 +38,7 @@ of Michiel.
 <!--more-->
 
 
-# Friendly Warning
+## Friendly Warning
 
 Before we begin soldering...
 
@@ -49,14 +49,14 @@ Before we begin soldering...
 <!--block1-->
 
 
-# The Components
+## The Components
 
 A [microcontroller](https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/others/seeed-studio-seeeduino-xiao-rp2040-dual-core-cortex-m0-separate-headers), [1 rotary encoder](https://www.tinytronics.nl/shop/en/switches/manual-switches/rotary-encoders/rotary-encoder-module) and [6 keyboard switches](https://www.alternate.nl/Sharkoon/Gateron-PRO-2-0-BROWN-Switch-Set-keyboard-switches/html/product/1892291).
 
 {% include post/image.html file="macropad-circuit.png" alt="" title="" desc="" maxWidth="360px" %}
 
 
-## The Assembly
+### The Assembly
 
 
 {% include post/image.html file="macropad-soldering.png" alt="" title="" desc="Soldering the pins on the microcontroller" maxWidth="360px" %}
@@ -70,7 +70,7 @@ A [microcontroller](https://www.tinytronics.nl/shop/en/development-boards/microc
 
 
 
-# The Session
+## The Session
 
 {% include post/image.html file="macropad-intro.png" alt="" title="" desc="Thank you Michiel for a very cool and fun evening!" maxWidth="500px" %}
 
@@ -80,7 +80,7 @@ A [microcontroller](https://www.tinytronics.nl/shop/en/development-boards/microc
 
 
 
-# Final Touches
+## Final Touches
 
 Making them buttons actually do something using [Autohotkey](https://www.autohotkey.com/) or [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/).
 
@@ -89,6 +89,6 @@ Making them buttons actually do something using [Autohotkey](https://www.autohot
 {% include post/image.html file="macropad-assembly-finished.png" alt="" title="" desc="Et voila, a stylish MacroPad!" maxWidth="360px" %}
 
 
-## What's Next
+### What's Next
 
 To make our MacroPads truly our own, we definitely have to do a followup Autohotkey session 😎

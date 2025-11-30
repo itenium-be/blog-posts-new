@@ -36,7 +36,7 @@ Which is basically on equal footing with EPPlus.
 
 <!--more-->
 
-# EPPlus Repositories
+## EPPlus Repositories
 
 
 {% include github-stars.html url="JanKallman/EPPlus" desc="The old and free one" %}
@@ -46,7 +46,7 @@ Which is basically on equal footing with EPPlus.
 <!--block1-->
 
 
-## Forks
+### Forks
 
 EPPlus is a pretty solid tool and you probably don't need any of the additional
 fluff they're adding in the now paid version. Use these to circumvent the official
@@ -59,7 +59,7 @@ One thing that I did stumble upon with the classic EPPlus is that it has a depen
 which only works on Windows. The non-free version has removed this dependency.
 
 
-# Alternatives
+## Alternatives
 
 If you prefer something that is more actively maintained/developed:
 
@@ -70,11 +70,11 @@ If you prefer something that is more actively maintained/developed:
 
 
 
-## If you just need to read
+### If you just need to read
 
 {% include github-stars.html url="ExcelDataReader/ExcelDataReader" desc="Lightweight C# library for reading Excel files" %}
 
-## Low Level
+### Low Level
 
 Very low level and verbose. What EPPlus and ClosedXML use under the hood.
 

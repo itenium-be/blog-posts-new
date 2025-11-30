@@ -45,7 +45,7 @@ having to do the same.
 
 <!--more-->
 
-# Charting Libraries
+## Charting Libraries
 
 {% include github-stars.html url="recharts/recharts" desc="A Redefined chart library built on d3" %}
 {% include github-stars.html url="airbnb/visx" desc="A collection of reusable low-level visualization components. Built on d3" %}
@@ -69,7 +69,7 @@ If you already used `Chart.js` before, you may want to choose for the `react-cha
 <!--block1-->
 
 
-## Overview
+### Overview
 
 
 | Library         | Package size | Weekly downloads | Rendering type      | Pricing  | Documentation | Setup time demo |
@@ -103,7 +103,7 @@ The amount is an indication of how many are documented! 😃
 Data as of 19/04/2023.
 
 
-# Test Data Structure
+## Test Data Structure
 
 ```js
 [
@@ -119,7 +119,7 @@ Data as of 19/04/2023.
 
 
 
-# Installation and Usage
+## Installation and Usage
 
 How "easy" is to get a **Line Chart** working for each library?
 
@@ -127,17 +127,17 @@ Check out the [Github source](https://github.com/itenium-be/React-Charting) for 
 
 
 
-## Recharts
+### Recharts
 
 Time: 15 minutes.
 
 **A smooth experience**. Lots of stuff out-of-the-box with little or no configuration (ex: tooltip and legend).
 
-#### Example
+##### Example
 
 ![Rechart line chart]({{ "/assets/blog-images/react-charting-rechart.png" | relative_url }} "Recharts: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save recharts
@@ -174,7 +174,7 @@ export function Recharts() {
 
 
 
-## Visx
+### Visx
 
 Time: 29 minutes
 
@@ -183,11 +183,11 @@ For some reason the library makes the tooltip data object use properties that ha
 It assumes all data inserted are datum objects whereas in this case they are person objects. The documentation also neglects to mention this in their example.
 
 
-#### Example
+##### Example
 
 ![Visx line chart]({{ "/assets/blog-images/react-charting-visx.png" | relative_url }} "Visx: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save @visx/xychart
@@ -244,7 +244,7 @@ export function Visx() {
 
 
 
-## Nivo
+### Nivo
 
 Time: 29 minutes
 
@@ -253,11 +253,11 @@ so I needed to map my dataset to fit this mold. A simple setting for setting wha
 Big visual issue however as you can probably tell is that the values don't exactly show correctly on the x axis.
 
 
-#### Example
+##### Example
 
 ![Nivo line chart]({{ "/assets/blog-images/react-charting-nivo.png" | relative_url }} "Nivo: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save @nivo/core @nivo/line
@@ -293,18 +293,18 @@ export function Nivo() {
 
 
 
-## Victory
+### Victory
 
 Time: 11 minutes
 
 Usage was relatively easy, but it has the same limitation as the Nivo library because you also need to map your data properties to x and y. Also visually it doesn't look as pleasing as some of the other charts in this list.
 
 
-#### Example
+##### Example
 
 ![Victory line chart]({{ "/assets/blog-images/react-charting-victory.png" | relative_url }} "Victory: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save victory
@@ -336,7 +336,7 @@ export function Victory() {
 
 
 
-## React-vis
+### React-vis
 
 Time: 35 minutes
 
@@ -345,11 +345,11 @@ The documentation did not really help either in this case.
 Also I needed to map the data properties to x and y as well again.
 
 
-#### Example
+##### Example
 
 ![React-vis line chart]({{ "/assets/blog-images/react-charting-react-vis.png" | relative_url }} "React-vis: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save react-vis
@@ -379,7 +379,7 @@ export function ReactVis() {
 
 
 
-## React-chartjs-2
+### React-chartjs-2
 
 Time: 35 minutes
 
@@ -388,11 +388,11 @@ An annoying trait is that you have to split your dataset up in into a labels arr
 The end result does look nice however.
 
 
-#### Example
+##### Example
 
 ![React-chartjs-2 line chart]({{ "/assets/blog-images/react-charting-react-chartjs-2.png" | relative_url }} "React-chartjs-2: Line Chart")
 
-#### Code
+##### Code
 
 ```sh
 npm install --save react-chartjs-2 chart.js
@@ -442,14 +442,14 @@ export function ReactChartJS2() {
 
 
 
-# Conclusion
+## Conclusion
 
-## Onur: Recharts
+### Onur: Recharts
 
 First time was a charm, the first library **Recharts** did everything I wanted it to in a clear and convenient manner. 
 It's the only library where I didn't really have a complaint. It's easy to use and has very good documentation. 
 
-## Wouter: Nivo
+### Wouter: Nivo
 
 Disclaimer: I didn't actually implement the Line Charts.
 
@@ -461,7 +461,7 @@ with a below v1 version though and has not yet gained as much traction (300k wee
 Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popularity of `Chart.js` itself.
 
 
-## Deployed Demo App
+### Deployed Demo App
 
 The `create-react-app` is [published at itenium.be](https://itenium.be/React-Charting/).
 

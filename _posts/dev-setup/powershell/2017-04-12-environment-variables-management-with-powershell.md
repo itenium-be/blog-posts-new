@@ -37,7 +37,7 @@ If you'd like a GUI instead you could try:
 {% include github-stars.html url="rix0rrr/WindowsPathEditor" %}
 
 
-# Getting environment variables
+## Getting environment variables
 
 ```powershell
 # Listing all environment variables
@@ -64,7 +64,7 @@ In cmd.exe, all envs can be listed with `set`.
 <!--block1-->
 
 
-# Managing environment variables
+## Managing environment variables
 
 ```powershell
 # Managing current session environment
@@ -124,7 +124,7 @@ If you have chocolatey installed, `RefreshEnv` will also work.
 * * *
 
 
-# $env:PATH helpers
+## $env:PATH helpers
 
 Use `fp` to list all directories in `$env:path`.
 It accepts a search needle as parameter. ex: `fp node`.
@@ -200,7 +200,7 @@ function Remove-EnvironmentPath {
 * * *
 
 
-# Useful environment variables
+## Useful environment variables
 
 Win + Pause: `Control Panel\System and Security\System`  
 PowerShell: `$env:USERNAME`  

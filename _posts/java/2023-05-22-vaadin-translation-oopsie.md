@@ -27,7 +27,7 @@ At a client where I worked on a Vaadin application that had to be upgraded from 
 
 <!--more-->
 
-# How the translations are done
+## How the translations are done
 
 The application consisted of a bunch of views (parent components) which themselves had child components. The actual translation was done on the child component. A translation for a component is retrieved by forming a translation key for the component and using that key to check the translation table in the database for the translation value depending on the language set in the application.
 
@@ -89,7 +89,7 @@ private static void setComponent(String componentRoot, Component component, Stri
   …etc
 }
 ```
-# The issue in the upgrade
+## The issue in the upgrade
 
 So an interesting limitation was introduced somewhere in the versions between 8 and 22. 
 
@@ -151,6 +151,6 @@ public class CustomCheckbox extends Checkbox implements TranslatableTitle {
 
 ```
 
-# Conclusion
+## Conclusion
 
 A good way to summarize how we came to the solution for this translation issue is to say that we applied SOLID principles. More specifically the first two principles. Single responsibility principle was applied by moving the translating from the bloated translateLayout method to each component type. Open-Closed principle was applied by extending the existing Vaadin component types with our custom component type and adding our custom translation logic. 

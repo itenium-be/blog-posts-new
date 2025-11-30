@@ -48,7 +48,7 @@ a single screen to become responsive. Not good.
 <!--more-->
 
 
-# React Developer Tools
+## React Developer Tools
 
 The [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) Chrome extension adds two tabs to DevTools:
 
@@ -59,9 +59,9 @@ The [React Developer Tools](https://chrome.google.com/webstore/detail/react-deve
 <!--block1-->
 
 
-## Profiler Tab
+### Profiler Tab
 
-### Action Buttons
+#### Action Buttons
 
 - <i class="fa fa-circle" style="color: #0086FC"></i> / <i class="fa fa-circle" style="color: #FC3A4B"></i> : Start / Stop profiling
 - <i class="fa fa-refresh" style="color: #59616C"></i> : Reload page and start profiling
@@ -69,13 +69,13 @@ The [React Developer Tools](https://chrome.google.com/webstore/detail/react-deve
 - <i class="fa fa-arrow-left" style="color: #59616C"></i> / <i class="fa fa-arrow-right" style="color: #59616C"></i> : Select previous / next commit
 
 
-### Display
+#### Display
 
 - <i class="fa fa-fire" style="color: #0086FC"></i> : Flamegraph chart
 - <i class="fa fa-sort-amount-desc" style="color: #0086FC"></i> : Ranked chart
 
 
-### Interesting Settings
+#### Interesting Settings
 
 Filter the output once it becomes unwieldy in the <i class="fa fa-cog" style="color: #59616C"></i> settings modal:
 
@@ -83,7 +83,7 @@ Filter the output once it becomes unwieldy in the <i class="fa fa-cog" style="co
 - `Profiler > Hide commits below x ms`: ignore very fast renders (ex: re-renders for tooltips)
 
 
-# Using the Profiler
+## Using the Profiler
 
 Press the "<i class="fa fa-circle" style="color: #0086FC"></i> Start profiling" button,
 perform the action(s) that take too long and press the "<i class="fa fa-circle" style="color: #FC3A4B"></i> Stop profiling"
@@ -97,7 +97,7 @@ is perfect as long as the next performance issues are easy to pick out.
 {% include post/image.html file="rcp-profiler-flamegraph.png" alt="" title="" desc="So what is this 'InvoiceWorkedDays' component?" maxWidth="650px" %}
 
 
-# Easy Pickings
+## Easy Pickings
 
 ⏱️ 6 seconds for 100 invoices/rows.
 
@@ -110,7 +110,7 @@ The first three profiling rounds revealed that the biggest issues were in non-co
 
 <br>
 
-## Culprit 1: Third Party Package
+### Culprit 1: Third Party Package
 
 `InvoiceWorkedDays`, the component in confac that was causing all this fuzz:
 
@@ -130,7 +130,7 @@ We have since replaced the dependency with our own, dedicated (76 liner), npm pa
 
 <br>
 
-## Culprit 2: Nested Loops (CPU)
+### Culprit 2: Nested Loops (CPU)
 
 {% include post/image.html file="rcp-profiler-flamegraph-InvoiceDownloadIcon.png" alt="" title="" desc="Another unexpected performance optimalization target: the InvoiceDownloadIcon" maxWidth="650px" %}
 
@@ -158,7 +158,7 @@ We can greatly optimize this by first filtering on `invoice._id` so the 5 inner 
 
 <br>
 
-## Culprit 3: I/O (sessionStorage)
+### Culprit 3: I/O (sessionStorage)
 
 ⏱️ 2 seconds for 100 invoices/rows.
 
@@ -172,7 +172,7 @@ The second profiler display method
 
 {% include post/image.html file="rcp-profiler-WithClaim-ranked-graph.png" alt="" title="" desc="Profiler Ranked chart display" maxWidth="650px" %}
 
-#### The Code
+##### The Code
 
 ```ts
 // The decorator
@@ -212,7 +212,7 @@ const token = sessionStorage.getItem('jwt');
 
 <br>
 
-## Alternatives
+### Alternatives
 
 When you are rendering a grid with thousands of rows,
 you'll always going to end up with a performance problem (at some point).
@@ -226,7 +226,7 @@ There are several mitigations:
 - **Suspense & useDeferredValue**: Not relevant here because all data is already in memory
 
 
-## Conclusions
+### Conclusions
 
 ⏱️ 360 ms for 100 invoices/rows.
 
@@ -240,7 +240,7 @@ This greatly improved performance (6s -> 360ms) which is good enough.
 
 <br>
 
-# The Meaty Part
+## The Meaty Part
 
 There is another screen and performance there is... disastrous.
 
@@ -258,7 +258,7 @@ There is another screen and performance there is... disastrous.
 
 <br>
 
-## Belgian Holidays Cache
+### Belgian Holidays Cache
 
 For this workshop, `date-holidays` was not replaced with a more dedicated and efficient alternative.
 Instead we're using it as a placeholder for something that would actually take a long time
@@ -273,7 +273,7 @@ const workDaysInMonthCache: {[month: string]: number} = {};
 {% include post/image.html file="rcp-profiler-flamegraph-projectMonths.png" alt="" title="" desc="A more even distribution now... So no easy performance targets" maxWidth="650px" %}
 
 
-## Avoiding IFeature Construction
+### Avoiding IFeature Construction
 
 The `IFeature` configures a grid and CRUD pages for a backend entity.
 
@@ -311,7 +311,7 @@ export const ProjectMonthsList = ({feature, month}: ProjectMonthsListProps) => {
 
 <br>
 
-## Introducing: Reselect
+### Introducing: Reselect
 
 A library for creating [memoized "selector" functions](https://github.com/reduxjs/reselect).
 Commonly used with Redux and comes with the [@reduxjs/toolkit](https://redux-toolkit.js.org/).
@@ -355,7 +355,7 @@ export const createFullProjectMonthsSelector = () => createSelector(
 
 <br>
 
-## Introducing: useMemo
+### Introducing: useMemo
 
 Skip expensive recalculations with [`useMemo`](https://react.dev/reference/react/useMemo)
 
@@ -392,7 +392,7 @@ export const OpenedProjectMonthsList = ({ month }: OpenedProjectMonthsListProps)
 
 <br>
 
-## Introducing: memo
+### Introducing: memo
 
 When a `ProjectMonthListCollapsed` is rendered, its details don't change,
 so we can do some aggressive caching there, keeping the entire rendered
@@ -419,7 +419,7 @@ export const OpenOrClosedProjectMonthsList = ({ month }) => {
 
 <br>
 
-## The Aftermath
+### The Aftermath
 
 
 {% include post/image.html file="rcp-profiler-projectMonths-final.png" alt="" title="" desc="Flamegraph after opening a second projectMonth" maxWidth="650px" %}
@@ -429,7 +429,7 @@ export const OpenOrClosedProjectMonthsList = ({ month }) => {
 3. The completely cached collapsed/closed projectMonths (memo)
 
 
-## Conclusions
+### Conclusions
 
 - ⏱️ 2 projectMonths: 350ms -> 170ms
 - ⏱️ 4 projectMonths: 1.2s -> 311ms
@@ -438,7 +438,7 @@ export const OpenOrClosedProjectMonthsList = ({ month }) => {
 The biggest win was avoiding the re-renders of all projectMonths
 when opening/closing just one and caching expensive Redux selects.
 
-### Take-Aways
+#### Take-Aways
 
 - Depend on as little as possible
   - Components should rely on their minimum requirements of state and props only
@@ -446,13 +446,13 @@ when opening/closing just one and caching expensive Redux selects.
 - Cache expensive calculations
 - createSelector, useMemo and memo are your friends
 
-#### The IFeature
+##### The IFeature
 
 > _"Weeks of coding can save you hours of planning."_
 > — Fred Brooks
 
 
-### Unexpected Side-Effect
+#### Unexpected Side-Effect
 
 The overall structure and code quality has improved due the refactorings
 needed to realize the performance targets.
@@ -462,14 +462,14 @@ needed to realize the performance targets.
 
 
 
-# Profiler Alternatives
+## Profiler Alternatives
 
 If the Chrome Profiler Extension isn't cutting it for you anymore,
 you can still fallback to these alternatives for locating
 performance optimalization targets.
 
 
-## console.time
+### console.time
 
 Good old [console](https://developer.mozilla.org/en-US/docs/Web/API/console/timeEnd) 😉
 
@@ -483,7 +483,7 @@ expensiveOp2()
 console.timeEnd('timer1')
 ```
 
-## Profiler Component
+### Profiler Component
 
 [`<Profiler />`](https://react.dev/reference/react/Profiler) doesn't actually render anything
 and can be nested by providing different ids.
@@ -544,7 +544,7 @@ function callback(id, phase, actualDuration) {
 ```
 
 
-# Further Optimalizations
+## Further Optimalizations
 
 - Avoid inline styles
 - [**useCallback**](https://react.dev/reference/react/useCallback): cache event handlers

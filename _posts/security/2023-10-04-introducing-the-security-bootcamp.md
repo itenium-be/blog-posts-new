@@ -34,12 +34,12 @@ The Security Bootcamp is a transformative training program designed to empower y
 
 <!--more-->
 
-# What
+## What
 
 A security awareness workshop disguised as a teambuilding game.
 
 
-## Capture the flag
+### Capture the flag
 
 At the core of our Security Bootcamp lies the conviction that the
 most effective defense is a well-informed and proactive offense.
@@ -57,7 +57,7 @@ employing a diverse set of IT tools.
 
 
 
-## Presentations
+### Presentations
 
 After successfully executing a specific hack, our program includes a
 comprehensive PowerPoint presentation that delves into the intricacies
@@ -82,7 +82,7 @@ vulnerabilities time and again, often resulting in significant financial repercu
 
 
 
-## Hacking Tools
+### Hacking Tools
 
 Participants directly witness the potentially severe repercussions
 of vulnerable applications through engaging presentations, in-game blog posts,
@@ -91,7 +91,7 @@ including [nmap][nmap], [hydra][hydra], and [sqlmap][sqlmap].
 
 
 
-# Why
+## Why
 
 The Security Bootcamp stands out as the solution to elevate your organization's cybersecurity posture:
 
@@ -104,7 +104,7 @@ The Security Bootcamp stands out as the solution to elevate your organization's 
 
 
 
-# Security Bootcamp
+## Security Bootcamp
 
 Interested in organizing our Security Bootcamp for your IT teams?
 [Contact us today](mailto:{{ site.email.general }})!

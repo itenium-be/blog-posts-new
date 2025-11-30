@@ -22,7 +22,7 @@ toc:
   title: 🙈 See No Evil
 ---
 
-# ValueObjects
+## ValueObjects
 {: .hide-from-excerpt}
 
 A ramble against objects containing `DateStart` & `DateEnd` pairs of properties.
@@ -42,7 +42,7 @@ This is the case for the [**ValueObject**](https://martinfowler.com/bliki/ValueO
 
 <!--more-->
 
-# Basic Example
+## Basic Example
 
 Consider the following class:
 ```c#
@@ -90,9 +90,9 @@ class Name {
 }
 ```
 
-# Advantages
+## Advantages
 
-#### For the IDE
+##### For the IDE
 
 Instead of a long list of properties that may be difficult to navigate in your IDE,
 where it is difficult to spot that one property you need,
@@ -100,14 +100,14 @@ one could instead split it up in things that logically belong together to keep i
 Keep data that belongs together - together!
 
 
-#### For the UI
+##### For the UI
 
 Such stuff is usually displayed together. All the way down to the frontend, passing
 an `Address` to an `AddressComponent` is very preferable over passing those properties
 in separately.
 
 
-#### For Expressiveness
+##### For Expressiveness
 
 Without our precious `ValueObject`, we would end up creating all sorts of helper classes
 for often sought after functionality, all scattered around the codebase, some perhaps
@@ -121,11 +121,11 @@ And isn't that what Object Oriented Design is all about? 😇
 
 
 
-# Recognition
+## Recognition
 
 If you look, `ValueObject` opportunities will present themselves.
 
-## Technical ValueObjects
+### Technical ValueObjects
 
 Classes are very technical in nature and so there'll be purely technical candidates
 like, for example, a (still?) popular one:  
@@ -134,7 +134,7 @@ Why clutter (all) your entities with 4 superfluous properties if you can hide th
 a single `Audit` ValueObject?
 
 
-## Domain ValueObjects
+### Domain ValueObjects
 
 It is the `ValueObjects` derived from the Business Domain that often offer the
 most value however. Helper functions for a `DateRange` only go as long as a `IsIn(DateTime)`.
@@ -142,7 +142,7 @@ For Domain ValueObjects, this can be whatever rabbit Marketing pulls out of thei
 depending on the current lunar phase, so the possibilities are endless!
 
 
-### Not Invented Here Syndrome
+#### Not Invented Here Syndrome
 
 I never thought I'd ever say this: Do not use a package. Yes, there is that well-known and fully-fledged `DateRange` package out there.
 80% of its features are probably not useful for your problem domain though. Again you get a long list of methods that basically
@@ -150,7 +150,7 @@ clutter your IDE. Super handy features that are applicable only in your domain w
 probably has very particular requirements.
 
 
-### Business Domain Example
+#### Business Domain Example
 
 ```c#
 // A domain where we work with measured stuff
@@ -179,9 +179,9 @@ class Measurement {
 
 
 
-# Random Thoughts
+## Random Thoughts
 
-#### The True Enemy?
+##### The True Enemy?
 
 Well I guess that missing `ValueObjects` are often an unfortunate side-effect of using a relational database.
 Your SQL database simply likes things flat. Your ORM probably has something like Custom Types (Hibernate), 
@@ -189,7 +189,7 @@ Complex Types (EF) or Owned Entities (EF Core). If you use an ORM it can probabl
 for you.
 
 
-#### Derive, Don't Store
+##### Derive, Don't Store
 
 If you can calculate something from existing state, do so.
 Once stored separately, it will, at some point be out of sync, I guarantee it.
@@ -208,7 +208,7 @@ class Person {
 ```
 
 
-# Conclusions
+## Conclusions
 
 
 Not creating a value object for coherent pairs of value types is a missed opportunity? 😂

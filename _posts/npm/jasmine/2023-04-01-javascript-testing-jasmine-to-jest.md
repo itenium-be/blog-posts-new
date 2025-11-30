@@ -34,7 +34,7 @@ package-versions:
     version: 29.5.0
 ---
 
-# Jasmine vs Jest
+## Jasmine vs Jest
 {: .hide-from-excerpt}
 
 When you search "**Jasmine vs Jest**", you get a lot of high level comparisons
@@ -59,7 +59,7 @@ Jest does seem to have more ⭐⭐⭐
 <!--block1-->
 
 
-# Automatic Migration
+## Automatic Migration
 
 {% include github-stars.html url="skovhus/jest-codemods" desc="Codemods for migrating to Jest" %}
 
@@ -81,7 +81,7 @@ npx jest-codemods --help
 npx jest-codemods .
 ```
 
-# Configuration
+## Configuration
 
 Create a `jest.config.ts`:
 
@@ -116,7 +116,7 @@ expect.addEqualityTesters([reInventToBe]);
 expect.extend({ yourMatcher });
 ```
 
-## Custom Matchers
+### Custom Matchers
 
 Use `expect.extend` instead of `jasmine.addMatchers`.
 
@@ -142,7 +142,7 @@ expect(100).yourMatcher(99, 'param-y', 'param-z');
 ```
 
 
-# The Differences
+## The Differences
 
 - In Jest `test` is an alias for `it`.
 - `jasmine.xxx` matchers typically translate directly to `expect.xxx`.
@@ -152,7 +152,7 @@ expect(100).yourMatcher(99, 'param-y', 'param-z');
 - Jest has [test.each](https://jestjs.io/docs/api#each) to run an array of inputs
 
 
-## Spies
+### Spies
 
 There are some differences in syntax when using spies, most is solved automatically by the code-mod.
 Jest offers a cleaner API with additional functionality.
@@ -206,7 +206,7 @@ jest.restoreAllMocks();
 ```
 
 
-## proxyquire --> Mocks
+### proxyquire --> Mocks
 
 Replace the `api.js` dependency in `cut.js`:
 
@@ -226,7 +226,7 @@ So the `proxyquire` package is not needed in Jest.
 Jest mocks are also much more versatile...
 
 
-## Async
+### Async
 
 Jasmine has `done.fail(err)`. This has been simplified to just `done(err)` in Jest.
 
@@ -249,7 +249,7 @@ const p1 = jest.fn().mockImplementation(() => Promise.resolve(1));
 
 <!--
 Useless info:
-## Not in Jest
+### Not in Jest
 
 - arrayWithExactContents
 - toBePositiveInfinity and toBeNegativeInfinity: Who cares I guess
@@ -258,7 +258,7 @@ Useless info:
 
 
 
-# TL;DR - Differences Table
+## TL;DR - Differences Table
 
 The tl;dr version:
 
@@ -307,7 +307,7 @@ The tl;dr version:
 
 
 
-# VSCode Integration
+## VSCode Integration
 
 Jest works out of the box when using [`create-react-app`](https://create-react-app.dev/docs/debugging-tests)!
 (link contains the VSCode `launch.json`) after installing the Jest VSCode Extension:
@@ -319,7 +319,7 @@ Jest works out of the box when using [`create-react-app`](https://create-react-a
 ![Visual UnitTest result cues in Visual Studio Code]({{ "/assets/blog-images/vscode-jest-test-runner.png" | relative_url }} "Pretty slick")
 
 
-## Notifications?
+### Notifications?
 
 Set `notify: true` in `jest.config.ts`.
 
@@ -330,7 +330,7 @@ npm install -S node-notifier
 And get that dopamine shot every time it says 0 tests failed 😃
 
 
-# Conclusions
+## Conclusions
 
 Key points:
 

@@ -44,7 +44,7 @@ Or some fun issues during heavy context switching :)
 Syntax comparison
 -----------------
 
-### General syntax
+#### General syntax
 
 ```vb
 ' VB.NET
@@ -100,7 +100,7 @@ namespace MyApp {
 }
 ```
 
-### Data Types
+#### Data Types
 
 | VB.NET                              | C#
 |-------------------------------------|--------------------------|
@@ -128,7 +128,7 @@ So yes, `Date` does have a time part.
 
 
 
-### Type Information
+#### Type Information
 
 | VB.NET                          | C#
 |---------------------------------|---------------------------------|
@@ -154,7 +154,7 @@ And more conversion methods in `Microsoft.VisualBasic.Conversion`. This is a Mod
 so `Conversion.Int(x)` is available as `Int(x)` without Import.
 
 
-### Operators, Strings
+#### Operators, Strings
 
 | VB.NET                          | C#                              |
 |---------------------------------|---------------------------------|
@@ -187,7 +187,7 @@ the evaluations. Ex: `If x IsNot Nothing And x.Trigger() Then` will crash.
 
 To escape a reserved word `Public Class [Class]`. (C#: `public class @class`)
 
-### Control flow
+#### Control flow
 
 | VB.NET                          | C#
 |---------------------------------|---------------------------------|
@@ -250,7 +250,7 @@ foreach (string n in names) {
 
 
 
-### Classes, Generics, Methods, Enums, ...
+#### Classes, Generics, Methods, Enums, ...
 
 | VB.NET                 | C#
 |----------------------  |---------------------------------|
@@ -365,7 +365,7 @@ End Class
 
 
 
-### Linq, Lambdas and Anonymous Types
+#### Linq, Lambdas and Anonymous Types
 
 
 **Lambdas**:
@@ -461,7 +461,7 @@ Dim peopleByAge =
 
 
 
-### Initializers
+#### Initializers
 
 | VB.NET                                     | C#
 |--------------------------------------------|--------------------------------------------|
@@ -494,7 +494,7 @@ var students = new Dictionary<int, string>
 
 
 
-### Other
+#### Other
 
 **Exception Handling**:
 ```vb
@@ -557,7 +557,7 @@ object name = "string";
 That's obviously not what one wants. Emulating C#'s `var name = "str"` behavior can be achieved
 by turning `Option Strict On` and `Option Infer On` in the Project Properties Compile tab.
 
-### Stuff that was imported from VB6
+#### Stuff that was imported from VB6
 
 They are listed here, but you may skip this part and pretend it never happened.
 
@@ -573,7 +573,7 @@ On Error GoTo MyErrorHandler
 MyErrorHandler: Console.WriteLine(Err.Description)
 ```
 
-### Microsoft.VisualBasic namespace
+#### Microsoft.VisualBasic namespace
 
 `Microsoft.VisualBasic.Strings`:  
 If you want to forego Object Oriented, the whole set of VB6 string methods is available.  

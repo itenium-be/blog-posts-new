@@ -74,7 +74,7 @@ Macintosh (OS 9): CR, \r, 0D, 13
 
 
 
-# CSS
+## CSS
 
 Order for margins/paddings
 
@@ -96,7 +96,7 @@ Order for margins/paddings
 > Hash is not a class
 
 
-# Mathy
+## Mathy
 
 The order of math operations:
 
@@ -110,9 +110,9 @@ To remember the value of pi:
 > (The number of letters in each word equals the numerals in pi = 3.1415927)
 
 
-# Other
+## Other
 
-## Even for tar
+### Even for tar
 
 Even for tar one exists, as the following IRC conversation illustrates:
 
@@ -123,7 +123,7 @@ Even for tar one exists, as the following IRC conversation illustrates:
 <bucketmouse> XTRACT ZE FILES
 ```
 
-## English
+### English
 
 Not really a programming mnemonic but Simon posted it,
 and I liked it too much to not add it here 😀

@@ -56,7 +56,7 @@ serialization, circular reference handling).
 System.Text.Json is included in the runtime for .NET Core 3.1 and later.
 Otherwise use the [nuget package](https://www.nuget.org/packages/System.Text.Json).
 
-# TL&DR
+## TL&DR
 
 - **System.Text.Json**: The default, fast, memory efficient, but basic features
 - **Newtonsoft.Json**: Easy, tolerant, lots of features, but much slower
@@ -65,7 +65,7 @@ Otherwise use the [nuget package](https://www.nuget.org/packages/System.Text.Jso
 <!--block1-->
 
 
-# Basic Usage
+## Basic Usage
 
 (De)Serialization with optional settings/options:
 
@@ -81,7 +81,7 @@ string json = JsonConvert.SerializeObject(obj[, settings]);
 MyClass? obj = JsonConvert.DeserializeObject<MyClass>(json[, settings]);
 ```
 
-# Configuration
+## Configuration
 
 |              | System.Text.Json                       | Newtonsoft.Json                 | Remarks |
 |--------------|----------------------------------------|---------------------------------|---------|
@@ -97,7 +97,7 @@ MyClass? obj = JsonConvert.DeserializeObject<MyClass>(json[, settings]);
 | Constructor  | RespectRequiredConstructorParameters   | ConstructorHandling
 {: .table-code}
 
-## Floats
+### Floats
 
 Serialize float/double NaN, Infinity and -Infinity as strings.
 
@@ -159,7 +159,7 @@ public class StringFloatConverter : JsonConverter
 }
 ```
 
-## Default Options
+### Default Options
 
 Only for Newtonsoft:
 
@@ -171,9 +171,9 @@ var defaultOpts = JsonSerializerOptions.Default;
 ```
 
 
-# Performance
+## Performance
 
-## Case Sensitivity
+### Case Sensitivity
 
 One of the reasons System.Text.Json is so much more performant is because
 Newtonsoft json key names are completely case insensitive, while property
@@ -193,7 +193,7 @@ var obj = JsonConvert.DeserializeObject<Person>(json);
 Assert.Equal("Bert", obj.Name);
 ```
 
-## Postel's law
+### Postel's law
 
 Be conservative in what you send, be liberal in what you accept.
 {: .notice--info}
@@ -228,7 +228,7 @@ var opts = new JsonSerializerOptions()
 ```
 
 
-## Span(Of T)
+### Span(Of T)
 
 The main reason for the performance difference however is the use of `Span<T>`
 in System.Text.Json. Which is not being adopted by Newtonsoft because of
@@ -240,7 +240,7 @@ feature to eliminate the use of Reflection.
 
 
 
-# WebApi
+## WebApi
 
 System.Text.Json is the default from .NET Core 3.1 and up.
 
@@ -292,7 +292,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 });
 ```
 
-# Custom Converters
+## Custom Converters
 
 When the serialization options/settings can't handle your case, maybe because
 you cannot control how the json communication happens or because some values
@@ -301,7 +301,7 @@ should be converted to a domain specific type, you can add your own converters.
 Imagine that our frontend sends and/or accepts Money in a specific culture, like
 `15.000,99` (nl-BE formatting).
 
-## STJ CulturalMoney
+### STJ CulturalMoney
 
 For illustration purposes only; you'll probably want to handle all sorts of edge cases 😉
 
@@ -324,7 +324,7 @@ public class CulturalMoneyConverter(CultureInfo culture) : JsonConverter<decimal
 }
 ```
 
-## Newtonsoft CulturalMoney
+### Newtonsoft CulturalMoney
 
 ```csharp
 new JsonSerializerSettings().Converters.Add(new CulturalMoneyConverter(new CultureInfo("nl-BE")));
@@ -348,7 +348,7 @@ public class CulturalMoneyConverter(CultureInfo culture) : Newtonsoft.Json.JsonC
 ```
 
 
-## Contract Resolvers
+### Contract Resolvers
 
 If converters aren't doing it for you, because your frontend team is sending some
 really weird stuff, it's still possible to further alter the behavior of serialization.
@@ -361,7 +361,7 @@ For Newtonsoft, set the `JsonSerializerSettings.ContractResolver` and inherit fr
 the `DefaultContractResolver`.
 
 
-# Adoption
+## Adoption
 
 [Adoption for both libraries is going up](https://nugettrends.com/packages?ids=System.Text.Json&ids=Newtonsoft.Json&months=120), with no decline in sight for Newtonsoft.Json
 but I'm guessing this is comparing apples and oranges because STJ is included by default
@@ -370,21 +370,21 @@ and is thus under-represented in the graph.
 ![Newtonsoft.Json vs System.Text.Json nuget downloads graph for the last 10 years]({{ "/assets/blog-images/dotnet-json-trend.png" | relative_url }} "Nuget downloads comparison"){: .img-responsive}
 
 
-# More!!
+## More!!
 
-## Polymorphism
+### Polymorphism
 
 Works pretty much out of the box for Newtonsoft.
 For STJ it is possible to achieve starting from .NET Core 7
 with the `JsonDerivedTypeAttribute` on the base class.
 
-## Attributes
+### Attributes
 
 Both have attributes that can be applied to fields and/or
 properties to change serialization behavior without reverting
 to custom code.
 
-### STJ Attributes
+#### STJ Attributes
 
 ```csharp
 public class Person
@@ -412,7 +412,7 @@ public class Person
 }
 ```
 
-### Newtonsoft Attributes
+#### Newtonsoft Attributes
 
 ```csharp
 [JsonObject(MemberSerialization.OptOut)]
@@ -441,7 +441,7 @@ public class PersonWithAttributes
 ```
 
 
-## Callbacks
+### Callbacks
 
 Execute code before/after (de)serialization:
 - STJ: implement interfaces (IJsonOnSerializing, IJsonOnSerialized, IJsonOnDeserializing, IJsonOnDeserialized)

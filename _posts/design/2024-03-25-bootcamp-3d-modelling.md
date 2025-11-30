@@ -33,7 +33,7 @@ inspired by the grandeur of ancient Rome and Greece.
 
 <!--more-->
 
-# Breakfast
+## Breakfast
 
 
 {% include post/image.html file="bootcamp-3dmodelling-breakfast.png" alt="" title="" desc="Can't go landscaping on an empty stomach!" maxWidth="500px" %}
@@ -42,7 +42,7 @@ inspired by the grandeur of ancient Rome and Greece.
 <!--block1-->
 
 
-## Fake it!
+### Fake it!
 
 We started the bootcamp with a short introduction to "Game Graphics Production"
 followed by a Unreal Engine 101 where Tom also let us in on the game industry's biggest
@@ -58,13 +58,13 @@ copied over and over!
 As true developers this was easily accepted, and so we got to work!
 
 
-# Lunch
+## Lunch
 
 
 {% include post/image.html file="bootcamp-3dmodelling-dinner.png" alt="" title="" desc="Taking a break after all that building and constructing!" maxWidth="500px" %}
 
 
-## Finishing Touches
+### Finishing Touches
 
 After lunch, there were additional demos on some more advanced Unreal Engine functionality:
 make it all look even better by playing with light, fog, elevations and finish up the landscape
@@ -72,9 +72,9 @@ with terrain and foliage assets.
 
 
 
-# Closing
+## Closing
 
-## The Winners
+### The Winners
 
 The top 3 resulting screenshots, as voted by the itenium consultants:
 
@@ -90,7 +90,7 @@ The top 3 resulting screenshots, as voted by the itenium consultants:
 {% include post/image.html file="bootcamp-3dmodelling-nr3.png" alt="" title="" desc="🥉 Timo" maxWidth="500px" %}
 
 
-## Honorable Mention
+### Honorable Mention
 
 
 {% include post/image.html file="bootcamp-3dmodelling-itenium.png" alt="" title="" desc="🏅 Sofie: manages to get on the podium every year with some out of the box thinking ;)" maxWidth="500px" %}

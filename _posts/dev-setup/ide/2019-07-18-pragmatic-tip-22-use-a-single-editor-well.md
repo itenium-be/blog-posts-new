@@ -55,7 +55,7 @@ And so I finally decided to leave Sublime Text 3 behind. Welcome Visual Studio C
 <!--more-->
 
 
-# Getting Started
+## Getting Started
 
 ```bash
 choco install vscode
@@ -74,9 +74,9 @@ choco install vscode
 <!--block1-->
 
 
-# Configuration
+## Configuration
 
-## Locations
+### Locations
 
 VSCode stores your configuration in `%APPDATA%\Code\User`:
 - `settings.json`
@@ -103,7 +103,7 @@ that saves it as a [Github GIST (example)](https://gist.github.com/Laoujin/eb201
 
 
 
-## Making it your own
+### Making it your own
 
 {% include kbd k="Control+Shift+P" l="Show All Commands" %}
 
@@ -114,7 +114,7 @@ that saves it as a [Github GIST (example)](https://gist.github.com/Laoujin/eb201
   - [Official Docs: Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings): Solid article, gets to advanced customization pretty rapidly
 
 
-#### Settings.json
+##### Settings.json
 
 ```javascript
 {
@@ -130,7 +130,7 @@ that saves it as a [Github GIST (example)](https://gist.github.com/Laoujin/eb201
 
 
 
-# Starting VSCode
+## Starting VSCode
 
 List of the [Core CLI options](https://code.visualstudio.com/docs/editor/command-line#_core-cli-options)
 - `-n` or `--new-window`: Opens new instance instead of restoring previous session
@@ -140,7 +140,7 @@ List of the [Core CLI options](https://code.visualstudio.com/docs/editor/command
 - `--install-extension`: Also uninstall, disable and list. [Whole list](https://code.visualstudio.com/docs/editor/command-line#_working-with-extensions).
 
 
-#### Start from PowerShell
+##### Start from PowerShell
 
 ```powershell
 $ide = "C:\Users\$($env:username)\AppData\Local\Programs\Microsoft VS Code\bin\Code.cmd"
@@ -156,20 +156,20 @@ function Start-VSCode {
 Set-Alias cde Start-VSCode
 ```
 
-#### Start from Windows Explorer Context Menu
+##### Start from Windows Explorer Context Menu
 
 Available during installation but [here is the reg file]({{"/assets/blog-assets/vscode-contextmenu.reg" | relative_url}})
 if you want to add it later on (check the path inside the reg).
 
 
-#### Start from VSCode
+##### Start from VSCode
 
 {% include kbd k="Control+K,O" l="Open active file in new instance" %}
 {% include kbd k="Control+K,R" l="Reveal active file in Windows explorer" %}
 {% include kbd k="Control+K,P" l="Copy path of active file" %}
 
 
-#### Start from git
+##### Start from git
 
 ```ini
 # ~/.gitconfig
@@ -189,7 +189,7 @@ if you want to add it later on (check the path inside the reg).
 
 
 
-# Layout
+## Layout
 
 ![alt]({{ "/assets/blog-images/vscode-window-layout.png" | relative_url }}){: .img-responsive}
 
@@ -210,7 +210,7 @@ Some Zen Mode settings:
 }
 ```
 
-## Activity Bar
+### Activity Bar
 
 {% include kbd k="Control+Shift+E" l="Explorer" %}
 {% include kbd k="Control+Shift+G" l="Source Control" %}
@@ -221,7 +221,7 @@ Some Zen Mode settings:
 Custom shortcut:
 - `Control K, Control A`: View: Toggle Activity Bar Visibility
 
-## Side Bar
+### Side Bar
 
 {% include kbd k="Control+B" l="View: Toggle Side Bar Visibility" %}
 {% include kbd k="Control+à" l="View: Focus into Side Bar" oem="0" %}
@@ -252,7 +252,7 @@ Custom shortcuts:
 
 
 
-## Panels
+### Panels
 
 {% include kbd k="Control+J" l="View: Toggle Panel" %}
 {% include kbd k="Control+Shift+Y" l="View: Debug Console" %}
@@ -266,7 +266,7 @@ Custom shortcuts:
 
 
 
-# Search
+## Search
 
 {% include kbd k="Control+F" l="Find (Navigate with F3)" %}
 {% include kbd k="Control+Shift+F" l="View: Show Search (Navigate with F4)" %}
@@ -295,7 +295,7 @@ Toggle files to include/exclude (`Control Shift J`)
   - `[0-9a-z]`: Match range of characters
 
 
-#### settings.json
+##### settings.json
 
 ```javascript
 {
@@ -323,7 +323,7 @@ Custom shortcuts:
 
 
 
-# Terminal
+## Terminal
 
 I'm still using [Cmder](https://cmder.net/) for all my CLI needs so I haven't really
 configured the Terminal much.
@@ -335,7 +335,7 @@ pretty blog post for more Terminal info.
 {% include kbd k="Control+Shift+5" l="Terminal: Split Terminal" %}
 
 
-#### Integrate Cmder into VSCode
+##### Integrate Cmder into VSCode
 
 ```javascript
 // settings.json
@@ -349,7 +349,7 @@ pretty blog post for more Terminal info.
 ```
 
 
-# Tasks
+## Tasks
 
 Stored in `.vscode\tasks.json` in your workspace path.
 
@@ -375,7 +375,7 @@ And of course there are extensions for
 
 
 
-# Extensions
+## Extensions
 
 The main reason for the migration was the [VSCode Marketplace](https://marketplace.visualstudio.com/vscode).
 Sublime still can't handle the React Fragment `<></>` syntax. And this one
@@ -398,7 +398,7 @@ All its settings now show up in your `defaultSettings.json`.
 A ⚙ (Gears) appears in the Side Bar after installation below the ⭐ (Stars) of the installed extension.
 Click to configure it :)
 
-#### Themes
+##### Themes
 
 {% include kbd k="Control+K,Control+T" l="Preferences: Color Theme (Search: @category:themes)" %}
 
@@ -406,7 +406,7 @@ Also: `Preferences: File Icon Theme`
 
 
 
-#### Some Projects
+##### Some Projects
 
 (that don't show up pretty instantaneously when opening a file)
 
@@ -414,7 +414,7 @@ Also: `Preferences: File Icon Theme`
 {% include github-stars.html url="Huachao/vscode-restclient" desc="REST Client" %}
 
 
-#### For The Web
+##### For The Web
 
 {% include github-stars.html url="ChristianKohler/PathIntellisense" desc="Autocompletes filenames" %}
 {% include github-stars.html url="ChristianKohler/NpmIntellisense" desc="Autocomplete npm modules in import statements" %}
@@ -431,7 +431,7 @@ Also: `Preferences: File Icon Theme`
 And all linters, formatters etc you can think of...
 
 
-#### Making things stand out more
+##### Making things stand out more
 
 {% include github-stars.html url="oderwat/vscode-indent-rainbow" desc="Show indentation with a faint rainbow colored background" %}
 {% include github-stars.html url="aaron-bond/better-comments" desc="Make TODO's really shout out 😃" %}
@@ -447,7 +447,7 @@ And all linters, formatters etc you can think of...
 ```
 
 
-# Conclusion
+## Conclusion
 
 Very glad I made the switch. It was quite the effort but I'm pretty content already.
 Still need to configure linting, formatting, languages setup and also fix the occasional
@@ -466,7 +466,7 @@ Next up: [VSCode: Editor Configuration and Shortcuts]({{ '/blog/dev-setup/vscode
 
 * * * *
 
-#### Promise to self
+##### Promise to self
 
 If I ever need to change again because of slowed down development
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,

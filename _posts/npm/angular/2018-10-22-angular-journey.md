@@ -33,7 +33,7 @@ Today I want to blog about my Angular(2 - 6) experiences the past years.
 
 After 3 years of desktop development I’ve started with Angular 2+ in july 2016, when it was still in beta. 
 
-# Back then
+## Back then
 {: .hide-from-excerpt}
 
 Back then the landscape was a lot more difficult than it is today.
@@ -81,7 +81,7 @@ I have a solid idea now, but only because it’s the logical result of a road fu
 
 
 
-# As of today
+## As of today
 I’m still glad I can work with Angular every day.
 
 - The framework embraces [TypeScript](https://www.typescriptlang.org/) which is a revelation compared to JavaScript.

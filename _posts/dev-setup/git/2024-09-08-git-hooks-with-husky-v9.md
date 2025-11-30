@@ -41,7 +41,7 @@ redirect_from: /blog/productivity/git-hooks-with-husky/
 
 <!--more-->
 
-# Hooks
+## Hooks
 
 > **git hooks**  
 > Run a program before certain points in gits execution.  
@@ -70,7 +70,7 @@ git commit -n
 <!--block1-->
 
 
-# Husky
+## Husky
 
 Or, use Husky to easily make the git hooks part of the repository itself and share it with the entire team.
 
@@ -104,7 +104,7 @@ git config core.hooksPath
 # --> .husky/_
 ```
 
-## Script `h`
+### Script `h`
 
 In this order:
 
@@ -117,7 +117,7 @@ In this order:
 - It executes `.husky/XXX` (stops on first error)
 
 
-## CI/CD
+### CI/CD
 
 You may not be installing the `devDependencies` during a production build.
 To avoid the `prepare` npm script from failing:
@@ -129,7 +129,7 @@ To avoid the `prepare` npm script from failing:
 ```
 
 
-## Project Not in Git Root Directory
+### Project Not in Git Root Directory
 
 Prepush script that works around the frontend project `package.json` not being in the
 root of the git repository.
@@ -175,7 +175,7 @@ exit $hasBuildErrors
 ```
 
 
-# Alternatives
+## Alternatives
 
 {% include github-stars.html url="toplenboren/simple-git-hooks" desc="A simple git hooks manager for small projects" %}
 {% include github-stars.html url="evilmartians/lefthook" desc="Fast and powerful Git hooks manager for any type of projects" %}

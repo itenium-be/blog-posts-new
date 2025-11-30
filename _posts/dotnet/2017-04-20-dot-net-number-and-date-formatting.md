@@ -99,7 +99,7 @@ CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
 Number Formatting
 =================
-### Standard Numeric Formats
+#### Standard Numeric Formats
 
 ```c#
 decimal m = 1000.5050M;
@@ -142,7 +142,7 @@ Other standard numeric formats:
 // "X" => Hexidecimal (integral only)
 ```
 
-### Custom formats:
+#### Custom formats:
 
 | Specifier | Description                                        |
 |-----------|----------------------------------------------------|
@@ -182,7 +182,7 @@ Other standard numeric formats:
 
 Date Formatting
 ===============
-### Standard Date and Time Format Strings
+#### Standard Date and Time Format Strings
 
 Configuration: `System.Globalization.DateTimeFormatInfo`
 
@@ -222,7 +222,7 @@ var dto = new DateTimeOffset(dt, TimeSpan.FromHours(2));
 | R / r  | RFC1123              | Tue, 31 Jan 2017 22:15:59 GMT        | Tue, 31 Jan 2017 20:15:59 GMT
 {: .table-code}
 
-### Custom Date and Time Format Strings
+#### Custom Date and Time Format Strings
 
 | Specifier | Description             |
 |-----------|-------------------------|

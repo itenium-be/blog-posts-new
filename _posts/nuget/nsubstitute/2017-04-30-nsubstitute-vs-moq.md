@@ -54,7 +54,7 @@ ICalculator nsub = Substitute.For<ICalculator>();
 
 
 
-# Basic example
+## Basic example
 
 Notice how NSubstitute dropped all the ceremony code required by Moq.
 
@@ -73,7 +73,7 @@ Assert.AreEqual(3, nsub.Add(1, 2));
 
 
 
-# Matching arguments
+## Matching arguments
 
 **Moq**
 
@@ -95,7 +95,7 @@ nsub.Add(Arg.Any<int>(), Arg.Is<int>(b => b % 2 == 0)).Returns(3);
 
 
 
-# Verification
+## Verification
 
 **Moq**
 
@@ -121,7 +121,7 @@ var requiredAssignmentForCompiler = nsub.DidNotReceive().Mode;
 
 
 
-# Out and ref
+## Out and ref
 
 `ref` works in both frameworks exactly the same as `out`.
 
@@ -152,7 +152,7 @@ Assert.AreEqual(0.4F, remainder);
 
 
 
-# Exceptions
+## Exceptions
 
 **Moq**
 
@@ -183,7 +183,7 @@ nsub.When(x => x.SetMode("HEX")).Do(x => { throw new ArgumentException(); });
 
 
 
-# Summary
+## Summary
 
 I find Moqs `Func<T1, T2, ...>` overloads they have provided for `.Return` very useful.
 NSubstitute requires some more typing to achieve the same `.Return` capabilities but 

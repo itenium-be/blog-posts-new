@@ -21,12 +21,12 @@ toc:
 
 <!--more-->
 
-# Scoping
+## Scoping
 let/const
 
 
 
-# Functions
+## Functions
 default parameter values
 
 rest parameter
@@ -34,14 +34,14 @@ function f (x, y, ...a) {
 spread operator
 f(1, 2, ...[3, 4, 5])
 
-## Arrow-Functions
+### Arrow-Functions
 
 
 
-# Template String
+## Template String
 
 
-# Properties
+## Properties
 
 property shorthand
 obj = { x, y }
@@ -54,7 +54,7 @@ obj = { foo() {} }
 obj = { foo: foo() {} }
 
 
-# Destructuring
+## Destructuring
 
 var [one, , three] = [1, 2, 3]
 [ b, a ] = [ a, b ]

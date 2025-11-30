@@ -32,7 +32,7 @@ Almost all of this stuff should work in most regex implementations.
 Notable exceptions are: `\<` and `\>`, `[a-Z]`, `\Q\E`. Your mileage may vary.
 
 
-# Basic Syntax
+## Basic Syntax
 
 
 | Regex      | Matches                                                 | Remarks
@@ -76,7 +76,7 @@ Notable exceptions are: `\<` and `\>`, `[a-Z]`, `\Q\E`. Your mileage may vary.
 <!--block1-->
 
 
-## Shorthands
+### Shorthands
 
 | Shorthand | Meaning          | Remarks
 |-----------|------------------|--------
@@ -95,7 +95,7 @@ Shorthands can be inverted by capitalizing them: `\D` (not a digit)
 Also `\v` (vertical tab), `\f` (form feed).  
 Inside a character class `\b` matches backspace.
 
-# Modifiers
+## Modifiers
 
 | Modifier     | Description
 |--------------|------------
@@ -106,7 +106,7 @@ Inside a character class `\b` matches backspace.
 {: .table-code}
 
 
-# Replacement
+## Replacement
 
 | Replacement | Description
 |-------------|------------
@@ -125,7 +125,7 @@ Use non-capturing groups `(?:)` to keep your backreferences (`$1`, `$2`, ...) in
 Or use named groups if supported in your regex implementation.
 
 
-# Looking around
+## Looking around
 
 The last & thoughest feature each developer should definitely know: lookahead & lookbehind!
 

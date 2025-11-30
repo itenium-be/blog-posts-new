@@ -35,7 +35,7 @@ With `jasmine.clock()`, the value of `new Date()` can be manipulated.
 <!--more-->
 
 
-# Example
+## Example
 
 `it`, `beforeEach`, `afterAll`, ... have an additional optional parameter called timeout (ms).
 A test fails for such a block when nor `done()` nor `done.fail()` is called within 
@@ -70,7 +70,7 @@ xit('can fail with a specific message', done => {
 <!--block1-->
 
 
-# Time Travel
+## Time Travel
 
 ```js
 beforeEach(() => jasmine.clock().install());
@@ -99,7 +99,7 @@ it('can hijack new Date', () => {
 afterEach(() => jasmine.clock().uninstall());
 ```
 
-# expectAsync
+## expectAsync
 
 ```js
 it('can check for resolved', async () => {

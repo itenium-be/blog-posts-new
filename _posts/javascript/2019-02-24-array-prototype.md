@@ -79,7 +79,7 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 <!--block1-->
 
 
-# Comparison Table
+## Comparison Table
 
 
 | C#                              | JavaScript                                     | MDN Link
@@ -109,9 +109,9 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 {: .table-code}
 
 
-# Commonly used methods
+## Commonly used methods
 
-## Select = map
+### Select = map
 
 ```javascript
 // C#
@@ -142,7 +142,7 @@ When mapping to an object without code block, you need to wrap your object betwe
 ```
 
 
-## Where, Distinct = filter
+### Where, Distinct = filter
 
 `Where` and [`filter`][filter] behave pretty much exactly alike.
 Linqs `Distinct` we'll need to implement ourselves.
@@ -156,7 +156,7 @@ expect(result).toEqual([0, 1, 5]);
 ```
 
 
-## Aggregate, GroupBy, ... = reduce
+### Aggregate, GroupBy, ... = reduce
 
 Linq has Sum, Min, Max, Average, GroupBy, etc.
 While JavaScript doesn't have them, they can all be achieved trivially with [`reduce`][reduce]
@@ -209,7 +209,7 @@ expect(grouped).toEqual({
 ```
 
 
-## slice
+### slice
 
 Linq has First, Last, Skip, SkipLast, SkipWhile, Take, TakeLast, TakeWhile.
 JavaScript has [`slice`][slice].
@@ -223,7 +223,7 @@ expect(input.slice()).toEqual([...input]);
 slice(startIndex = 0, endIndex = length-1);
 ```
 
-### C# Ranges
+#### C# Ranges
 
 ```c#
 var array = new[] { 1, 2, 3, 4, 5 };
@@ -234,7 +234,7 @@ Assert.Equal(new[] { 3, 4, 5 }, array[2..]);
 Assert.Equal(new[] { 1, 2, 3, 4, 5 }, array[..]);
 ```
 
-### with
+#### with
 
 Since 2023, there is also [`with`][with] which returns a new
 array where one item is replaced with a new value by index.
@@ -246,12 +246,12 @@ const newArr = arr.with(index, newValue);
 
 
 
-# Mutations
+## Mutations
 
 These functions operate in place.  
 Since ECMAScript 2023, some have non-mutating alternatives!
 
-## OrderBy = sort and toSorted
+### OrderBy = sort and toSorted
 
 - Use [toSorted][toSorted] if you need a new array for the sorted result.
 - **Without compareFn the array is sorted according to each character's Unicode code point value.**
@@ -280,7 +280,7 @@ Since ECMAScript 2023, some have non-mutating alternatives!
 - JS doesn't have `ThenBy` chaining possibilities, you'll have to do this yourself.
 
 
-## forEach
+### forEach
 
 While [`forEach`][forEach] is not really doing any mutation by itself, it is often what it's used for.
 Mutations are especially dangerous in for example a Redux environment where UI changes might lag.
@@ -304,7 +304,7 @@ for (let itm of input) {
 ```
 
 
-## Other mutators
+### Other mutators
 
 - [`reverse()`][reverse]: There is now also [`toReversed()`][toReversed] (2023)
 - [`push(el1, [el2, ...])`][push]: Add element(s) at the end. Returns the new array length.
@@ -316,7 +316,7 @@ for (let itm of input) {
     - There is now also [toSpliced][toSpliced] (2023)
 
 
-# Linq for ages 5 and up
+## Linq for ages 5 and up
 
 Thanks [Wim De Cleen](https://x.com/bewidec/status/935573858136051713) (and Martin Fowler)
 for this amazing diagram, I love it!

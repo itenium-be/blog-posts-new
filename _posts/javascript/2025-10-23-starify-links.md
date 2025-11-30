@@ -48,7 +48,7 @@ So how do you know what to spend your time on, GitHub stars, obviously!
 And that is what this extension did, add star badges to GitHub repository links 😀
 
 
-# Not my first rodeo
+## Not my first rodeo
 
 I had already quite some experience with UserScripts / ContentScripts / Greasemonkey Scripts.
 Back in the day, I got myself fooled into starting to play Tribal Wars. But... For a game that only
@@ -62,7 +62,7 @@ more consistent, more powerful.
 <!--block1-->
 
 
-# One Star
+## One Star
 
 And that is how I ended up with one rating, a one star review for the "Starify Github Links"...
 Unlike the current two competitors (which arrived years after my extension, I'd like to add!)
@@ -74,7 +74,7 @@ and I got that one star review, after which no one bothered installing it anymor
 Maybe rightfully so, as it took me about 2 years before I got around fixing it 😀
 
 
-# Easy Implementation
+## Easy Implementation
 
 If you do the easy implementation, as for example with [Github Star Count](https://chromewebstore.google.com/detail/github-star-count/jahogeehepfohgakggfeeimokcgnmdid), you get this on Google:
 
@@ -87,13 +87,13 @@ again at some point in the future 😓
 ![Starify - The Hard Way]({{ "/assets/blog-images/starify-links-hard.png" | relative_url }})
 
 
-# Flocking
+## Flocking
 
 That extension still had 200 installs, so much more than my current 34,
 so something had to be done!
 
 
-# What's New
+## What's New
 
 So what's new, what I did to convince people to use my extension instead...
 or maybe just because once I get started, I just can't seem to stop myself 😀
@@ -106,7 +106,7 @@ or maybe just because once I get started, I just can't seem to stop myself 😀
 ![The Result - Starify All The Links]({{ "/assets/blog-images/starify-all-links.png" | relative_url }})
 
 
-# Thanks Shields.io
+## Thanks Shields.io
 
 The badges are provided by [shields.io](https://shields.io/).
 
@@ -114,7 +114,7 @@ For the GitHub badges if you ever see "[Unable to select next GitHub token from 
 help them out by authorizing their [OAuth Application](https://img.shields.io/github-auth).
 
 
-# Thanks Claude
+## Thanks Claude
 
 I had to do some things before starting all that because the current code base
 was, well, just the one js file.
@@ -140,7 +140,7 @@ I'm not sure if it would be able to figure it out eventually, as at that point I
 and coded those parts myself.
 
 
-## Generated Options Page
+### Generated Options Page
 
 The configuration screens were a great success for Claude, it pretty much built it
 without me doing any work, and all that in about 10-15 prompts.

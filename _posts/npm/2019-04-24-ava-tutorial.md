@@ -37,7 +37,7 @@ The screenshots on the project site promised extensive assertion failure output 
 and built-in Promise, async/await, Observable and React component support.
 So I tried it out and yup, AVA delivered.
 
-# Get Started
+## Get Started
 {: .hide-from-excerpt}
 
 ```bash
@@ -70,7 +70,7 @@ you run into some trouble early on.
 
 
 
-# Example
+## Example
 
 ```javascript
 import test from 'ava';
@@ -123,7 +123,7 @@ test.serial.before(() => {});
 [Assertions](https://github.com/avajs/ava/blob/master/docs/03-assertions.md)
 {: .title-url}
 
-# Assertions
+## Assertions
 
 You can use any assertion library
 instead of or in addition to the built-in one,
@@ -152,7 +152,7 @@ test('Built-in', t => {
 });
 ```
 
-#### power-assert
+##### power-assert
 
 {% include github-stars.html url="power-assert-js/power-assert" desc="Very fancy assertion failure reporting" %}
 
@@ -161,7 +161,7 @@ test('Built-in', t => {
 t.assert(value, [message]);
 ```
 
-## Macros
+### Macros
 
 Create custom testers with [macros](https://github.com/avajs/ava/blob/master/docs/01-writing-tests.md#reusing-test-logic-through-macros).
 
@@ -180,7 +180,7 @@ test('providedTitle', macro, 'in', 'expected');
 ```
 
 
-## Exceptions
+### Exceptions
 
 ```javascript
 test('throws error', t => {
@@ -213,7 +213,7 @@ test('throws async', async t => {
 });
 ```
 
-## Not included
+### Not included
 
 - [Endpoint testing Recipe](https://github.com/avajs/ava/blob/master/docs/recipes/endpoint-testing.md): Use your favourite library
 - [Browser testing](https://github.com/avajs/ava/blob/master/docs/recipes/browser-testing.md)
@@ -222,7 +222,7 @@ test('throws async', async t => {
 
 
 
-# Workflow
+## Workflow
 
 ```javascript
 test.only('Like Jasmine fit', t => {
@@ -246,7 +246,7 @@ test.failing('Passes only when the test does NOT pass', t => {
 [Command Line](https://github.com/avajs/ava/blob/master/docs/05-command-line.md)
 {: .title-url}
 
-# CLI
+## CLI
 
 Always runs the local AVA installation if available.  
 CLI takes precedence over configuration.
@@ -271,7 +271,7 @@ npx ava -m='startWith*' -m='!*notContains*' -m='exact'
 
 {% include github-stars.html url="sindresorhus/matcher" desc="Matcher used for `--match`" %}
 
-#### Other CLI parameters
+##### Other CLI parameters
 
 - `--serial`, `-s`: Run tests serially
 - `--concurrency`, `-c`: Max tests running at the same time (Default: # CPU Cores)
@@ -287,7 +287,7 @@ npx ava -m='startWith*' -m='!*notContains*' -m='exact'
 [Configuration](https://github.com/avajs/ava/blob/master/docs/06-configuration.md)
 {: .title-url}
 
-# Configuration
+## Configuration
 
 In your `package.json`:  
 ```json
@@ -326,7 +326,7 @@ In your `package.json`:
 
 
 
-# Async Support
+## Async Support
 
 ```javascript
 test('Promise support', t => {

@@ -63,7 +63,7 @@ Comparing .NET Testing Frameworks.
 Target audience: A developer switching frameworks :)
 
 
-# Test Suites
+## Test Suites
 
 Typically test classes and/or methods are decorated with Attributes.
 
@@ -102,7 +102,7 @@ Typically test classes and/or methods are decorated with Attributes.
 <!--block1-->
 
 
-#### xUnit IClassFixture
+##### xUnit IClassFixture
 
 Setup in xUnit doesn't work with Attributes!  
 xUnit injects the same `XUnitTestsFixture` to the constructor
@@ -134,9 +134,9 @@ public class XUnitTestsWithSetUp : IClassFixture<XUnitTestsFixture>
 ```
 
 
-## Assembly setup
+### Assembly setup
 
-### xUnit
+#### xUnit
 
 As per the `IClassFixture<T>` example above, the `XUnitTestsFixture`
 will be injected in all test classes in the assembly.
@@ -145,7 +145,7 @@ will be injected in all test classes in the assembly.
 [assembly: AssemblyFixture(typeof(XUnitTestsFixture))]
 ```
 
-### NUnit
+#### NUnit
 
 ```c#
 [SetUpFixture]
@@ -159,7 +159,7 @@ public class Config
 }
 ```
 
-### MSTest
+#### MSTest
 
 ```c#
 [TestClass]
@@ -179,7 +179,7 @@ public class MyTestClass
 }
 ```
 
-### TUnit
+#### TUnit
 
 ```c#
 public class TUnitSetup
@@ -204,7 +204,7 @@ public class TUnitSetup
 ```
 
 
-# Assertions
+## Assertions
 
 ```c#
 bool? actual = true;
@@ -222,7 +222,7 @@ Assert.AreEqual(true, actual);
 await Assert.That(actual).IsEqualTo(true);
 ```
 
-## Basic
+### Basic
 
 | NUnit                    | xUnit               | MSTest       | TUnit             | Notes
 |--------------------------|---------------------|--------------|-------------------|------
@@ -234,7 +234,7 @@ await Assert.That(actual).IsEqualTo(true);
 {: .table-code}
 
 
-## Strings
+### Strings
 
 All but NUnit use an overload to ignore case for Start/End with.
 
@@ -249,7 +249,7 @@ All but NUnit use an overload to ignore case for Start/End with.
 {: .table-code}
 
 
-## Exceptions
+### Exceptions
 
 ```c#
 Action sut = () => throw new Exception("cause");
@@ -290,7 +290,7 @@ await Assert.That(asyncSut)
   .WithMessageMatching(StringMatcher.AsRegex("^cause$"));
 ```
 
-### Exact vs Derived
+#### Exact vs Derived
 
 The above assertions expect the exceptions to be of exactly the type
 provided. If you do not want a failure when the actual type is a
@@ -302,7 +302,7 @@ derived type:
 - TUnit: `var ex = Assert.Throws(Async)<T>(sut)`
 
 
-## Collections
+### Collections
 
 | NUnit                    | xUnit               | MSTest                             | TUnit          | Notes
 |--------------------------|---------------------|------------------------------------|----------------|------
@@ -319,7 +319,7 @@ derived type:
 | Is.Unique                |                     | CollectionAssert<br>.AllItemsAreUnique | HasDistinctItems
 {: .table-code}
 
-#### xUnit Assert.Collection
+##### xUnit Assert.Collection
 
 Specific assertions per element in the collection.
 
@@ -332,7 +332,7 @@ Assert.Collection(
 );
 ```
 
-#### NUnit Dictionary Assertions
+##### NUnit Dictionary Assertions
 
 ```c#
 var dict = new Dictionary<int, int>
@@ -349,7 +349,7 @@ Assert.That(dict, Does.Not.ContainValue(3));
 ```
 
 
-## Numbers
+### Numbers
 
 ```c#
 // xUnit
@@ -371,7 +371,7 @@ await Assert.That(actual).IsLessThan(0);
 // Is(Not)Zero, IsNegative/Positive
 ```
 
-## Soft Assertions
+### Soft Assertions
 
 A test stops running as soon as an assertion fails. But sometimes it is handy
 that all assertions still run so that you have more context to pinpoint the exact
@@ -402,9 +402,9 @@ Before NUnit 4.2 the syntax was:
 [`Assert.Multiple(() => { /* assertions */ })`](https://docs.nunit.org/articles/nunit/writing-tests/assertions/multiple-asserts.html)
 
 
-## NUnit and TUnit Only
+### NUnit and TUnit Only
 
-#### Dates
+##### Dates
 
 ```c#
 // NUnit
@@ -416,7 +416,7 @@ await Assert.That(later).IsAfter(now);
 await Assert.That(later).IsBetween(now, now.AddHours(3));
 ```
 
-#### Directories
+##### Directories
 
 Also: `Is.SamePath(OrUnder)`
 
@@ -427,7 +427,7 @@ Assert.That(new DirectoryInfo("c:\\temp"), Does.Exist);
 Assert.That(new DirectoryInfo("c:\\temp"), Is.Not.Empty);
 ```
 
-#### And/Or
+##### And/Or
 
 ```c#
 // NUnit

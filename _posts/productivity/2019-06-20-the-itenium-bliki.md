@@ -19,7 +19,7 @@ This is what usually is the very first blog post. With links to some new-old pos
 {: .hide-from-excerpt}
 
 
-# Personal Reference Bliki
+## Personal Reference Bliki
 {: .hide-from-excerpt}
 
 Everyone who has worked with me for a while knows I'm really hyped about the
@@ -28,7 +28,7 @@ pragmatic tips, but this blog has instead turned into more of a "personal refere
 
 <!--more-->
 
-#### Reference
+##### Reference
 
 Turns out I usually blog about a framework or library that I learned and basically wrote
 as short a version of their documentation as possible, trying to let the code speak
@@ -47,7 +47,7 @@ is about 10 pages and it covers, in pretty much the same detail, 80 pages of the
 <!--block1-->
 
 
-#### Bliki
+##### Bliki
 
 Blog posts might be updated later on:
 - To fix typos, broken code or add links
@@ -59,7 +59,7 @@ Blog posts might be updated later on:
 
 The name shamelessly stolen from [Martin Fowler's bliki](https://martinfowler.com/).
 
-#### Personal
+##### Personal
 
 Some blog posts are used for me to link to avoid
 [Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
@@ -74,9 +74,9 @@ PS: There is a [The Pragmatic Programmer 20th Anniversary Edition](https://pragp
 coming up. I should probably pre-order.
 
 
-# Original Blog Posts
+## Original Blog Posts
 
-## Pragmatic Tips
+### Pragmatic Tips
 
 **The Pragmatic Tips blog posts from back in 2012:**
 
@@ -94,7 +94,7 @@ Should I write now on those two tips, I do think the articles would turn out rad
 The second post ends with _Next up is “Provide Options, Don’t Make Lame Excuses”, one of my favorite tips!_  
 So yeah, I'll try not to make any promises on this blog anymore.
 
-## Uhoh
+### Uhoh
 
 Not sure if I wanted these migrated. But here they are!
 

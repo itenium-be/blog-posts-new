@@ -36,7 +36,7 @@ Before Trinity could take down the electric grid, she had to find an attack vect
 
 <!--more-->
 
-# What
+## What
 
 {% include github-stars.html url="nmap/nmap" desc="Github mirror of official SVN repository." %}
 
@@ -50,7 +50,7 @@ If you rather have a GUI, there is [zenmap](https://nmap.org/zenmap/).
 <!--block1-->
 
 
-# How
+## How
 
 List all bells & whistles:
 
@@ -59,7 +59,7 @@ nmap --help
 ```
 
 
-## Fast Scan
+### Fast Scan
 
 <i class="fa fa-hourglass-half"></i> +/- 10s
 
@@ -86,7 +86,7 @@ Flags used:
 
 
 
-## Slow Scan
+### Slow Scan
 
 <i class="fa fa-hourglass-half"></i> +/- 10m
 
@@ -101,7 +101,7 @@ Flags used:
 - `-p <port ranges>`: Only scan specified ports
 
 
-## Docker
+### Docker
 
 There is an Docker image for that…
 
@@ -114,7 +114,7 @@ Flags used:
 - `-A`: Enable OS detection, version detection, script scanning, and traceroute
 
 
-# When
+## When
 
 At the start of the itenium Security Bootcamp at least one player per team should do
 an nmap scan to discover services that are not (yet) available directly from the Portal.

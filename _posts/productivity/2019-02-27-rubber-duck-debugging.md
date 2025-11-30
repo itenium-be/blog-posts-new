@@ -24,7 +24,7 @@ toc:
   icon: bug
 ---
 
-# Talk to the Duck
+## Talk to the Duck
 {: .hide-from-excerpt}
 
 When confronted with a problem, don't ask the person next to you for help right away,
@@ -41,7 +41,7 @@ Most likely the duck will just sit there and appear to have done exactly nothing
 Does it get satisfaction every time it assists someone in finding a solution? We will probably never know.
 
 
-# More Frivolous
+## More Frivolous
 
 My family somehow turned Rubber Duck Debugging into "give Wouter as many ducks as humanly possible".
 
@@ -56,16 +56,16 @@ The most magnificent duck I've received so far:
 <!--block1-->
 
 
-## Rubber Duck Prank
+### Rubber Duck Prank
 
 Warning: This stuff is hilarious.
 
 {% include post/youtube.html id="uYOmtEcZ1lk" desc="Not at all relevant to rubber duck debugging but still very funny!" %}
 
 
-# Further Reading
+## Further Reading
 
-## Pragmatic Programmers
+### Pragmatic Programmers
 
 The original idea was to blog about the Pragmatic Programmer Tips.
 The blog turned out quite differently however. Still, here we are, Rubber
@@ -84,7 +84,7 @@ One final tip (in this context!) from them pragmatic programmers: "_Don't be afr
 No one knows everything.
 
 
-## Coding Horror
+### Coding Horror
 
 > The effort of walking an imaginary someone through your problem, step by step and in some detail, 
 is what will often lead you to your answer.
@@ -96,7 +96,7 @@ StackOverflow also did a [April Fools' Day joke](https://en.wikipedia.org/wiki/R
 about this. Displaying a duck in the corner which, after some apparent thinking & writing, produced a quack.
 
 
-## WikiWikiWeb
+### WikiWikiWeb
 
 At WikiwikiWeb they also have a [RubberDucking](http://wiki.c2.com/?RubberDucking) page.
 They originally called it the [CardboardProgrammer](http://wiki.c2.com/?CardboardProgrammer):

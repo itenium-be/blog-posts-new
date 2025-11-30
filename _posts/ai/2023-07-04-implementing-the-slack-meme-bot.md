@@ -29,11 +29,11 @@ How does the Slack Meme Bot work, technically?
 
 <!--more-->
 
-# docker-compose
+## docker-compose
 
 The `docker-compose` exists of two services
 
-## File Server
+### File Server
 
 `halverneus/static-file-server` makes the memes accessible from the internet.  
 The Slack WebHook sends just the url of the meme, after which Slack attempts to
@@ -50,12 +50,12 @@ chmod -R 755 memes_dir
 
 <!--block1-->
 
-## Cron Job
+### Cron Job
 
 The `Dockerfile` copies the `job` folder with the Node program to the docker container
 and then runs `start.sh` which schedules running `meme-poster.js` and starts the Cron daemon. 
 
-### Slack Meme Poster
+#### Slack Meme Poster
 
 The `meme-poster.js` selects a random file from your `MEMES_DIR` and moves it to
 a `already-sent` subfolder to make sure no meme is ever posted twice.
@@ -63,7 +63,7 @@ a `already-sent` subfolder to make sure no meme is ever posted twice.
 It then sends the meme url to Slack using the WebHook and 🎉, meme posted!
 
 
-# Make it your own
+## Make it your own
 
 [Configure the actual Slack message](https://github.com/itenium-be/slack-meme-poster/blob/master/job/post-slack.js)
 

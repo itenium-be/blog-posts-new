@@ -75,7 +75,7 @@ matchNoG == /(st)r/.exec('str');
 
 
 
-# Common Usage
+## Common Usage
 
 Define yourself a regex:  
 ```javascript
@@ -90,7 +90,7 @@ const ctor = new RegExp('\\w+');
 <!--block1-->
 
 
-## RegExp.prototype.test
+### RegExp.prototype.test
 
 [RegExp.prototype.test](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 {: style="float: right"}
@@ -103,7 +103,7 @@ const didMatch = /a/.test('abc');
 
 
 
-## String.prototype.replace
+### String.prototype.replace
 
 [String.prototype.replace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 {: style="float: right"}
@@ -129,7 +129,7 @@ ECMAScript2021 added [`replaceAll`](https://developer.mozilla.org/en-US/docs/Web
 
 
 
-## String.prototype.match
+### String.prototype.match
 
 **match() with the `g` flag**:  
 
@@ -166,7 +166,7 @@ const exec = /a(?<theB>b?)/.exec('0abaa');
 expect(exec).toEqual(match);
 ```
 
-## RegExp.prototype.exec
+### RegExp.prototype.exec
 
 [RegExp.prototype.exec](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
 {: style="float: right"}
@@ -188,7 +188,7 @@ globbing.exec(input);
 == null
 ```
 
-## RegExp.prototype.matchAll <small>(ES2020)</small>
+### RegExp.prototype.matchAll <small>(ES2020)</small>
 
 [RegExp.prototype.matchAll](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll)
 {: style="float: right"}
@@ -207,7 +207,7 @@ for (const match of result) {
 
 
 
-# Flags
+## Flags
 
 ```javascript
 const rl = /ab+c/i;
@@ -230,12 +230,12 @@ const rc = new RegExp('ab+c', 'i');
 {: .table-code}
 
 
-## UnicodeSets
+### UnicodeSets
 
 The `v` flag doesn't just bring stuff like `p{RGI_Emoji}` but also extensions to character classes.  
 Checkout [v8.dev](https://v8.dev/features/regexp-v-flag) for a whole bunch of additional examples.
 
-### Subtraction with `--`
+#### Subtraction with `--`
 
 ```js
 // Only non-ascii numbers
@@ -246,7 +246,7 @@ Checkout [v8.dev](https://v8.dev/features/regexp-v-flag) for a whole bunch of ad
 /^[[a-z]--[aeoiu]]$/v.test('q'); // true
 ```
 
-### Intersection with `&&`
+#### Intersection with `&&`
 
 ```js
 // Only Arabic numbers
@@ -263,14 +263,14 @@ Checkout [v8.dev](https://v8.dev/features/regexp-v-flag) for a whole bunch of ad
 ```
 
 
-# Less Common
+## Less Common
 
 ```typescript
 const flags: string = /a/ig.flags; // "gi"
 const src: string = /a/.source; // "a"
 ```
 
-## String.prototype.search
+### String.prototype.search
 
 [String.prototype.search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
 {: style="float: right"}
@@ -283,7 +283,7 @@ const index: number = /a/.search('a');
 
 
 
-## String.prototype.split
+### String.prototype.split
 
 [String.prototype.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 {: style="float: right"}
@@ -302,7 +302,7 @@ But also possible to split on regex matches.
 
 
 
-## RegExp.prototype.lastIndex
+### RegExp.prototype.lastIndex
 
 [RegExp.prototype.lastIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex)
 {: style="float: right"}

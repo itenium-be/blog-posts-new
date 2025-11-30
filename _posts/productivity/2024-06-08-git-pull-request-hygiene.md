@@ -61,9 +61,9 @@ after the first 20 files -- both are outcomes that are not ideal.
 <!--block1-->
 
 
-# PR Preparation
+## PR Preparation
 
-## Step 1: Stage your changes
+### Step 1: Stage your changes
 
 ```sh
 # Shorter
@@ -93,7 +93,7 @@ For each hunk you have a few options, the most common:
 
 
 
-## Step 2: Review the staging area
+### Step 2: Review the staging area
 
 Before doing the actual commit, go over all staged
 changes: are you about to commit everything that
@@ -108,7 +108,7 @@ git config --global alias.dfc 'diff --staged'
 
 
 
-## Step 3: Commit!
+### Step 3: Commit!
 
 ![Commit messages matter!]({{ "/assets/blog-images/git-hygiene-commit-message.jpg" | relative_url }}){: .img-responsive}
 
@@ -126,7 +126,7 @@ team members, file attachments etc!
 
 
 
-## Step 4: Create the PR
+### Step 4: Create the PR
 
 You obviously also want to automate this!
 See our blog post on [exotic git snippets](https://itenium.be/blog/dev-setup/exotic-git-recipes/#create-pr-in-browser)
@@ -137,14 +137,14 @@ for a small script to create a PR like a breeze.
 pr
 ```
 
-### Check the "Files changed"
+#### Check the "Files changed"
 
 Since a PR typically exists of multiple commits,
 before sending the PR to your colleague, make
 sure to go through all your changes one last time.
 
 
-### Consider a PR checklist
+#### Consider a PR checklist
 
 Most systems allow you to create a file like
 [`.github/pull_request_template.md`](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
@@ -154,9 +154,9 @@ been easily catched by the PR creator.
 
 
 
-# Poor Hygiene Examples
+## Poor Hygiene Examples
 
-## Lingering debug statements
+### Lingering debug statements
 
 The PR still contains statements
 that a quick glance would've catched:
@@ -179,7 +179,7 @@ function isLoggedIn() {
 ```
 
 
-## Should never have been committed
+### Should never have been committed
 
 Earlier this week I deleted an HTML file
 which contained local test run results.
@@ -198,7 +198,7 @@ When in doubt whether you should `.gitignore` something,
 google it!
 
 
-## Avoid Superfluous Changes
+### Avoid Superfluous Changes
 
 These are changes that typically happen automatically on a save
 and means that someone has a different linter installed,
@@ -238,7 +238,7 @@ can pretty much solve this in your team by automatically fixing all linting issu
 a commit.
 
 
-## Not Needed After All
+### Not Needed After All
 
 If your first hunk is this one and there are no
 others in the same file, I guess you moved the
@@ -263,7 +263,7 @@ Also note that dev stuff should be in `devDependencies`!
 
 
 
-## Local Configuration
+### Local Configuration
 
 Manual or automatic changes for local dev configuration should never be
 checked in! That db connectionString on your local machine has no place
@@ -283,7 +283,7 @@ every PR until eternity...
 ```
 
 
-## Generated and Useless
+### Generated and Useless
 
 `ng generate`... So cool, so easy, and so many useless files
 that all get checked in.
@@ -331,7 +331,7 @@ This makes the PR look bigger than it really is,
 and also harder to spot what has actually changed.
 
 
-# Conclusion
+## Conclusion
 
 Keep your PR short & sweet, a mere glance through all
 changed files will spot almost all these things.

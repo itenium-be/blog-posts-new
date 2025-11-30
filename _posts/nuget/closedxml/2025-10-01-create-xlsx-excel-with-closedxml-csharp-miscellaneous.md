@@ -31,7 +31,7 @@ socials:
 ---
 
 
-# Miscellaneous features
+## Miscellaneous features
 {: .hide-from-excerpt}
 
 ClosedXML can do a whole lot more for you. This post covers some interesting stuff that didn't really fit anywhere else.
@@ -52,7 +52,7 @@ workbook.RowHeight = 20; // & ColumnWidth
 <!--block1-->
 
 
-## Printing
+### Printing
 
 - [More advanced printing options](https://github.com/closedxml/closedxml/wiki#page-setup-print-options)
 - [sheet.PageSetup.PaperSize options](https://github.com/closedxml/closedxml/wiki/Paper-Size-Lookup-Table)
@@ -81,7 +81,7 @@ sheet.SheetView.View = XLSheetViewOptions.PageLayout;
 ```
 
 
-## Comments
+### Comments
 
 ```c#
 using var workbook = new XLWorkbook();
@@ -110,7 +110,7 @@ foreach (var cell in sheet.CellsUsed(XLCellsUsedOptions.Comments, c => c.HasComm
 }
 ```
 
-## RichText
+### RichText
 
 ```c#
 using var wb = new XLWorkbook();
@@ -129,7 +129,7 @@ ws.Cell(3, 1).CreateRichText()
 ```
 
 
-# Migrating from EPPlus
+## Migrating from EPPlus
 
 | EPPlus                           | ClosedXML                     |
 |----------------------------------|-------------------------------|
@@ -176,7 +176,7 @@ ws.Cell(3, 1).CreateRichText()
 | Cells.AutoFitColumns()           | ColumnsUsed().AdjustToContents()
 {: .table-code}
 
-# Other
+## Other
 
 Things not covered...
 
@@ -184,7 +184,7 @@ Things not covered...
 - [AutoFilter](https://docs.closedxml.io/en/latest/features/autofilter.html)
 - [Sorting](https://docs.closedxml.io/en/latest/features/sort.html)
 
-## Tables
+### Tables
 
 ClosedXML has good functionality and examples for creating tables:
 

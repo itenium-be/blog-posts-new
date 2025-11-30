@@ -41,7 +41,7 @@ easiest one to setup: using the Synology nginx.
 
 Open Synology DSM and
 
-# Step 1: Setup Reverse Proxy
+## Step 1: Setup Reverse Proxy
 
 Control Panel > Login Portal > Advanced > Reverse Proxy > Create
 
@@ -62,7 +62,7 @@ Reverse Proxy Rules:
 <!--block1-->
 
 
-# Step 2: Create Certificate
+## Step 2: Create Certificate
 
 Control Panel > Security > Certificate > Add
 
@@ -74,7 +74,7 @@ Control Panel > Security > Certificate > Add
 
 You can reuse the same certificate for multiple Docker containers.
 
-# Step 3: Use Certificate
+## Step 3: Use Certificate
 
 Control Panel > Security > Certificate > Settings
 

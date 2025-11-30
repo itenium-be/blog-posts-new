@@ -52,7 +52,7 @@ Get-Help
 ```
 
 
-# Aliases
+## Aliases
 
 Aliases are displayed with `Get-Help`
 
@@ -85,7 +85,7 @@ Show-Command Get-EventLog # Display GUI to fill in the parameters
 
 
 
-# Metadata
+## Metadata
 Get-Alias, New-Alias
 Get-Alias -Definition Get-Process
 
@@ -99,10 +99,10 @@ $PSDefaultParameterValues
 
 $Get-PSRepository, ...
 
-# Built in variables
-# TODO: $NULL, $false, ...
+## Built in variables
+## TODO: $NULL, $false, ...
 
-# Built in help
+## Built in help
 Get-Help *log* -Full
 Get-Help about_*
 Get-Command -Noun *event*
@@ -142,33 +142,33 @@ function Git-NumberedHelp() {
 
 ##############################################################################
 #.SYNOPSIS
-# Display the results of Parse-GitStatus
+## Display the results of Parse-GitStatus
 #
 #.DESCRIPTION
-# Output looks like:
-# ---------------------
-# Staged files:
-#   0  M file0
-#   1  A file1
+## Output looks like:
+## ---------------------
+## Staged files:
+##   0  M file0
+##   1  A file1
 #
-# Working directory:
-#   0  M file0
-# ---------------------
+## Working directory:
+##   0  M file0
+## ---------------------
 #
-# Legend
-# '0-1' are the indexes
-# Status codes:
-# - M: Modified
-# - A: Added
-# - D: deleted
-# - R: Renamed
+## Legend
+## '0-1' are the indexes
+## Status codes:
+## - M: Modified
+## - A: Added
+## - D: deleted
+## - R: Renamed
 #
-# Use Git-NumberedHelp for an overview of all actions and utilities
+## Use Git-NumberedHelp for an overview of all actions and utilities
 #
 #.EXAMPLE
-# Git-NumberedStatus
+## Git-NumberedStatus
 #
-# And follow with:
-# Git-NumberedAdd -3 5 6 8-10
-# To add the files: 0, 1, 2, 5, 6, 8, 9 and 10
+## And follow with:
+## Git-NumberedAdd -3 5 6 8-10
+## To add the files: 0, 1, 2, 5, 6, 8, 9 and 10
 ##############################################################################

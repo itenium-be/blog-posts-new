@@ -16,7 +16,7 @@ Ctrl-K + Ctrl-S is used to surrounded a block of code to an specific block or co
 ... Reinstall VS2017 and add the new stuff to the posts here...
 
 
-## Inspections
+### Inspections
 Break when a value changes
 https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/
 
@@ -29,12 +29,12 @@ https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-fo
 
 
 
-## Profiling
+### Profiling
 
 {% include kbd k="Alt+F2" l="Start with CPU/GPU/Memory usage" %}
 
 
-## Visualizers
+### Visualizers
 
 Visualizer for EF ValidationError exceptions
 
@@ -42,7 +42,7 @@ https://docs.microsoft.com/en-us/visualstudio/debugger/walkthrough-writing-a-vis
 
 
 
-## Threads
+### Threads
 
 
 CTRL+ALT+H : Threads window
@@ -100,7 +100,7 @@ ATTN: Make sure you don't bind something to Ctrl C, X or Control C won't work an
 --> Make sure there is not a binding for the Ctrl "first" shortcut.
 
 
-### General
+#### General
 
 - Tools.Options: Ctrl O, O (Open Options)
 - Open Explorer
@@ -115,7 +115,7 @@ ATTN: Make sure you don't bind something to Ctrl C, X or Control C won't work an
 - Tools.CodeSnippetsManager: Ctrl K, B
 - File.NewSnippet
 
-### Project Shortcuts
+#### Project Shortcuts
 
 - Project.SetasStartUpProject: Ctrl S, P (StartUp Project) or Ctrl Alt R
 - Build.PublishSelection: Ctrl P, P (Project Publish)
@@ -136,7 +136,7 @@ ATTN: Make sure you don't bind something to Ctrl C, X or Control C won't work an
 - Project.AddNewSolutionFolder: Ctrl P, F (Project Folder)
 
 
-### File Shortcuts
+#### File Shortcuts
 
 - Project.AddExistingItem: Shift Alt A
 - Project.AddNewItem: Ctrl N
@@ -149,32 +149,32 @@ ATTN: Make sure you don't bind something to Ctrl C, X or Control C won't work an
 - 
 
 
-### Git
+#### Git
 
 - Team.Git.ViewHistory: Ctrl G, H (Git History)
 - Team.Git.Annotate: Ctrl G, B (Git Blame)
 - Team.Git.CompareWithUnmodified: Ctrl G, U (Git Unmodified)
 
-### TFS
+#### TFS
 
 - File.GetLastestVersion?
 - File.TfsGetLastestVersion: Ctrl T, L (Tfs Latest) --> ReSharper already hooks in on the Ctrl + T
 - File.TfsHistory: Ctrl T, H (Tfs History)
 
 
-### Testing
+#### Testing
 
 - All tests in solution: Ctrl U, L
 - Run tests in scope: Ctrl U, R
 - Debug tests in scope: Ctrl U, D
 - Repeat previous run: Ctrl U, U
 
-## Build
+### Build
 
 - Build.Cancel: Ctrl B, C (Build Cancel)
 
 
-## Debug
+### Debug
 
 - Debug.Start: F5
 - Debug.StartWithoutDebugging: Ctrl F5

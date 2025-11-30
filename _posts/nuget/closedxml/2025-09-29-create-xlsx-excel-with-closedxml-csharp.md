@@ -44,7 +44,7 @@ can be found in the GitHub project.
 
 <!--more-->
 
-# ClosedXML
+## ClosedXML
 
 {% include github-stars.html url="ClosedXML/ClosedXML" desc="ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files." %}
 
@@ -59,7 +59,7 @@ the [OpenXML API](https://github.com/dotnet/Open-XML-SDK) it's built on top off.
 <!--block1-->
 
 
-## MIT Licensed
+### MIT Licensed
 
 I used to be a big fan of EPPlus but since it is no longer free,
 this aims to be a pretty much 1 to 1 conversion of our EPPlus blog series.
@@ -68,7 +68,7 @@ If you're migrating, AI is pretty good at converting EPPlus code to ClosedXML,
 for most (simple) use cases, it just works!
 
 
-# Documentation
+## Documentation
 
 Documentation is a bit in limbo. The **Github wiki** contains most examples but
 they are not always up to date, as for some things the API has changed slightly.
@@ -93,7 +93,7 @@ This creates all the example Excels in `ClosedXML.Examples/bin/Debug/net8.0/Crea
 you can then compare the code with the actual output and go from there!
 
 
-# Basic Usage
+## Basic Usage
 
 ```c#
 using ClosedXML.Excel;
@@ -143,7 +143,7 @@ sheet.ColumnsUsed().AdjustToContents();
 workbook.SaveAs("basicUsage.xslx");
 ```
 
-## Fluent Syntax
+### Fluent Syntax
 
 At first I didn't quite understand why there were both properties and "setter functions"
 for so many things. It is a bit overkill but it does allow the following code:
@@ -168,9 +168,9 @@ Which does look better! 😃
 
 
 
-# Examples
+## Examples
 
-## Selecting Cells
+### Selecting Cells
 
 ```c#
 using var workbook = new XLWorkbook();
@@ -225,7 +225,7 @@ movedRanger.Value = "Moved";
 // Union, Intersection, Intersects, Difference
 ```
 
-## Writing Values
+### Writing Values
 
 ```c#
 using var workbook = new XLWorkbook();
@@ -272,7 +272,7 @@ sheet.Cell("C26").Value = "Link to data sheet";
 sheet.Cell("Z1").Clear();
 ```
 
-## Styling Cells
+### Styling Cells
 
 ```c#
 using var workbook = new XLWorkbook();
@@ -307,7 +307,7 @@ sheet.Cell("B5").Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center
 sheet.Cell("B5").Value = "I'm centered";
 ```
 
-### Conditional Formatting
+#### Conditional Formatting
 
 Because a picture is worth a 1000 words:
 
@@ -349,7 +349,7 @@ sheet
   .HighestValue();
 ```
 
-## Sheets
+### Sheets
 
 ```c#
 using var workbook = new XLWorkbook("crash-if-not-exists.xlsx");
@@ -387,7 +387,7 @@ sheet1.CopyTo(workbook, "Copy");
 // Overload to validate & evaluate formulas
 ```
 
-# WebApi
+## WebApi
 
 There are small nugets available for delivering the Excel in [ASP.NET, MVC and WebApi](https://github.com/ClosedXML/ClosedXML?tab=readme-ov-file#extensions) environments.
 
@@ -408,7 +408,7 @@ public static class Extensions
 }
 ```
 
-# Extension Methods
+## Extension Methods
 
 Just some handy tidbits.
 

@@ -40,7 +40,7 @@ Some git commands and scripts that come in handy from time to time.
 <!--more-->
 
 
-# Splitting Repositories
+## Splitting Repositories
 
 You start with a small project. It grows over time as you add more and more features.
 And then, at some point, you realize one of these features should actually
@@ -80,7 +80,7 @@ git filter-repo --path src --subdirectory-filter src
 
 
 <br>
-# Locking out package-lock.json
+## Locking out package-lock.json
 
 These days each `npm install` makes a `git diff` on frontend projects a real drag.
 Page upon page of uninteresting changes.  
@@ -98,7 +98,7 @@ Important note: If you use the `git df` alias, `git df package-lock.json` will *
 You'll have to use plain old `git diff` for checking the excluded files!
 
 <br>
-# Deleting merged branches
+## Deleting merged branches
 
 **Locally**:  
 `~/.gitconfig` aliases. `(develop|master)`: Do not delete these branches even if merged with current branch.
@@ -123,7 +123,7 @@ git my-merged-remote-branches | % { git push --no-verify origin $_ }
 
 
 <br>
-# Filename case renaming
+## Filename case renaming
 
 Pesky Windows.  
 Also note the [`core.ignorecase`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase) configuration value.
@@ -133,7 +133,7 @@ git mv -f OldFileNameCase newfilenamecase
 
 
 <br>
-# Remapping remote urls
+## Remapping remote urls
 
 When the remote url changes for all your repositories.
 
@@ -155,7 +155,7 @@ foreach ($path in $paths) {
 
 
 <br>
-# Create PR in browser
+## Create PR in browser
 
 From your current branch.
 
@@ -185,7 +185,7 @@ Set-Alias pr Create-PullRequest
 
 <br>
 <br>
-# Other blog posts
+## Other blog posts
 
 - [git assume unchanged](https://itenium.be/blog/dev-setup/git-assume-unchanged/)
 - [git hooks with Husky](https://itenium.be/blog/productivity/git-hooks-with-husky/)

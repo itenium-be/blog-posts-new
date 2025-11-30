@@ -37,7 +37,7 @@ Mock global variables in your modules with `jasmine.getGlobal().pi = 3.14`.
 
 <!--more-->
 
-# Custom equality testers
+## Custom equality testers
 
 If custom equality testers are provided, they will be checked first 
 before the default equality logic when calling `toEqual()`.
@@ -69,7 +69,7 @@ it('should not use myCustomEquality', function() {
 <!--block1-->
 
 
-# Custom matchers
+## Custom matchers
 
 ```js
 beforeEach(function() {
@@ -117,7 +117,7 @@ const util = {
 
 
 
-# Environment and globals
+## Environment and globals
 
 Files included in the `jasmine.json` "helpers" wildcard(s)
 can provide convenience functions, global variables as well as

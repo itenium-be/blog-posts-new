@@ -58,9 +58,9 @@ An example:
 <!--more-->
 
 
-# Builtin Pipes
+## Builtin Pipes
 
-## JsonPipe <small>(Impure)</small>
+### JsonPipe <small>(Impure)</small>
 
 
 Quick object dump with the **impure JsonPipe**.
@@ -102,7 +102,7 @@ export class AppComponent {
 <!--block1-->
 
 
-## String Casing Pipes
+### String Casing Pipes
 
 [UpperCasePipe](https://angular.dev/api/common/UpperCasePipe)
 , [LowerCasePipe](https://angular.dev/api/common/LowerCasePipe)
@@ -116,12 +116,12 @@ UPPERCASE => {{ 'uppercase' | uppercase }}
 This Is Title Case => {{ 'tHIs is tiTLE CaSe' | titlecase }}{% endraw %}
 ```
 
-## Locale Sensitive Pipes
+### Locale Sensitive Pipes
 
 Used by **DatePipe**, **CurrencyPipe**, **DecimalPipe** and **PercentPipe**.
 
 
-### Setup
+#### Setup
 
 [Official i18n docs](https://angular.dev/guide/i18n)
 {: style="float: right"}
@@ -166,7 +166,7 @@ bootstrapApplication(AppComponent, appConfig);
 
 
 
-### CurrencyPipe
+#### CurrencyPipe
 
 [CurrencyPipe API](https://angular.dev/api/common/CurrencyPipe)
 {: style="float: right"}
@@ -196,7 +196,7 @@ Parameters `digitsInfo` and `locale` work exactly the same for DecimalPipe and P
 [DecimalPipe API](https://angular.dev/api/common/DecimalPipe)
 {: style="float: right"}
 
-### DecimalPipe
+#### DecimalPipe
 
 Outside html templates, use [`formatNumber()`](https://angular.dev/api/common/formatNumber) instead!
 
@@ -212,7 +212,7 @@ Outside html templates, use [`formatNumber()`](https://angular.dev/api/common/fo
 [PercentPipe API](https://angular.dev/api/common/PercentPipe)
 {: style="float: right"}
 
-### PercentPipe
+#### PercentPipe
 
 Use [`formatPercent()`](https://angular.dev/api/common/formatPercent) outside templates.
 
@@ -225,7 +225,7 @@ Use [`formatPercent()`](https://angular.dev/api/common/formatPercent) outside te
 ```
 
 
-### DatePipe
+#### DatePipe
 
 [DatePipe API](https://angular.dev/api/common/DatePipe)
 {: style="float: right"}
@@ -265,12 +265,12 @@ More options for the format:
 
 
 
-## Array Pipes
+### Array Pipes
 
 [SlicePipe API](https://angular.dev/api/common/SlicePipe)
 {: style="float: right"}
 
-### SlicePipe <small>(Impure)</small>
+#### SlicePipe <small>(Impure)</small>
 
 ```html
 {% raw %}<!-- Signature -->
@@ -288,7 +288,7 @@ More options for the format:
 
 
 
-### KeyValuePipe <small>(Impure)</small>
+#### KeyValuePipe <small>(Impure)</small>
 
 [KeyValuePipe API](https://angular.dev/api/common/KeyValuePipe)
 {: style="float: right"}
@@ -325,7 +325,7 @@ The output would be:
 
 
 
-## AsyncPipe <small>(Impure)</small>
+### AsyncPipe <small>(Impure)</small>
 
 [AsyncPipe API](https://angular.dev/api/common/AsyncPipe)
 {: style="float: right"}
@@ -359,12 +359,12 @@ export class AppComponent {
 ```
 
 
-## i18n Pipes
+### i18n Pipes
 
 [I18nPluralPipe API](https://angular.dev/api/common/I18nPluralPipe)
 {: style="float: right"}
 
-### I18nPluralPipe
+#### I18nPluralPipe
 
 
 Display "1 item" but "2 items", check the
@@ -384,7 +384,7 @@ const pluralItemsMap = {
 [I18nSelectPipe API](https://angular.dev/api/common/I18nSelectPipe)
 {: style="float: right"}
 
-### I18nSelectPipe
+#### I18nSelectPipe
 
 
 
@@ -400,11 +400,11 @@ const genderMap = {
 
 
 
-# Custom Pipes
+## Custom Pipes
 
 Create your own pipes for displaying values relevant in your application domain.
 
-## Creation
+### Creation
 
 Use [`ng generate`](https://angular.dev/cli/generate/pipe)
 
@@ -419,7 +419,7 @@ Options:
 - `--module=` and `--project=`
 - `--skipImport=false` and `--skipTests=false`
 
-## Example
+### Example
 
 ```typescript
 import { Pipe, PipeTransform } from '@angular/core';
@@ -440,7 +440,7 @@ export class HoursPipe implements PipeTransform {
 }
 ```
 
-## Installation
+### Installation
 
 If you didn't use `ng generate`.
 
@@ -452,7 +452,7 @@ If you didn't use `ng generate`.
 ```
 
 
-## Testing
+### Testing
 
 Run tests with `ng test`.
 
@@ -480,11 +480,11 @@ describe('HoursPipe', () => {
 ```
 
 
-# Real World Examples
+## Real World Examples
 
 Some custom examples to get in the right mind what Pipes could be useful for.
 
-## Nl2brPipe
+### Nl2brPipe
 
 Convert newlines in string resources to `<br>`s.
 
@@ -504,7 +504,7 @@ export class Nl2brPipe implements PipeTransform {
 }
 ```
 
-## UCFirstPipe
+### UCFirstPipe
 
 While `capitalize` (capitalize each word) is bundled with Angular,
 one to capitalize just the first letter is not.
@@ -521,7 +521,7 @@ export class UcFirstPipe implements PipeTransform {
 }
 ```
 
-## BytesPipe
+### BytesPipe
 
 Fancy display of filesizes etc.
 
@@ -562,7 +562,7 @@ export class BytesPipe implements PipeTransform {
 
 
 
-## ngx-pipes
+### ngx-pipes
 
 Pretty much any generic pipe you can think of already exists.
 This is one project with such collection.
@@ -604,7 +604,7 @@ import { NgPipesModule } from 'ngx-pipes';
 
 
 
-## angular-pipes
+### angular-pipes
 
 Pretty much the same collection of pipes in this project.
 

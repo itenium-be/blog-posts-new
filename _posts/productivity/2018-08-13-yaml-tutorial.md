@@ -26,7 +26,7 @@ data serialization language.
 
 <!--more-->
 
-# YAML Ain't Markup Language
+## YAML Ain't Markup Language
 
 Before we dive into the "code":
 
@@ -44,7 +44,7 @@ When unsure what something does exactly, try it online: [json <-> yaml][json2yam
 <!--block1-->
 
 
-## Scalars
+### Scalars
 
 ```yml
 # This is a comment
@@ -78,7 +78,7 @@ Json: `{
 - `key: !!float 0` => 0.0
 
 
-## Strings
+### Strings
 
 ```yml
 # To be on the safe side, quote all strings
@@ -105,7 +105,7 @@ fold: >
 
 
 
-## Mappings and Sequences
+### Mappings and Sequences
 
 ```yaml
 map:
@@ -149,7 +149,7 @@ The Json for `array_map`:
 ```
 
 
-## Anchors 
+### Anchors 
 
 **Using anchors**:  
 ```
@@ -188,7 +188,7 @@ Json:
 - Catherine: `{gender: 'F', age: null, spouse: 'Mary'}`  
 
 
-## Other
+### Other
 
 **Binary**:  
 ```
@@ -211,7 +211,7 @@ Json: `{set: {item2: null, item3: null, item1: null}}`
 
 
 
-# Implementations
+## Implementations
 
 I first came into contact with Yaml when using Jekyll, where it is used quite extensively.
 Aside from Jekyll, it is used for a many things, in Spring, Travis CI, Grav, in the cloud, ...

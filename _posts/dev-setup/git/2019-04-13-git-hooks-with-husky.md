@@ -39,7 +39,7 @@ Avoid pushing changes that break the build with githooks and Husky.
 
 <!--more-->
 
-# Hooks
+## Hooks
 
 > **git hooks**  
 > Run a program before certain points in gits execution.
@@ -52,7 +52,7 @@ to test them out.
 <!--block1-->
 
 
-# Husky
+## Husky
 
 Hooks are saved locally and not pushed to the remote.
 Husky allows you to easily make the git hooks part of the repository itself.
@@ -77,7 +77,7 @@ It's also possible to put the json (without the `husky` node)
 in a `.huskyrc` or `.huskyrc.json` file.
 
 
-## prepush.sh
+### prepush.sh
 
 Prepush script that works around the frontend project `package.json` not being in the
 root of the git repository.
@@ -112,7 +112,7 @@ cd $originalPath
 exit $hasBuildErrors
 ```
 
-## Other
+### Other
 
 More control with `.huskyrc.js` and environment variables.
 

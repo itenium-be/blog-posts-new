@@ -47,7 +47,7 @@ Some people, when confronted with a problem, think 'I know, I'll use regular exp
 Okay maybe that was not a good start trying to convince you to learn regex.
 
 
-# The Why
+## The Why
 
 **You don't know you need to know regex until you know regex.**
 {: .notice}
@@ -56,7 +56,7 @@ Okay maybe that was not a good start trying to convince you to learn regex.
 <!--block1-->
 
 
-## Applicability
+### Applicability
 
 
 Regular Expressions are typically used for user **input validation**.
@@ -84,7 +84,7 @@ regexes are still a very useful tool as they can be used in many one time action
 
 These are the reason this series is posted under the productivity category.
 
-## Example
+### Example
 
 Whenever I fix a bug that was the result of an error that might have happened in other places as well,
 I might use a regex to find those, even if the other code contains different variable names,
@@ -92,7 +92,7 @@ code style etc it would still find them - at least if the regex was written in a
 the context into account.
 
 
-## Tooling
+### Tooling
 
 Don't forget about tooling.
 Having **direct feedback on what your regex is matching on your dataset as you type it**.. It's the best 😃  
@@ -107,7 +107,7 @@ You want to avoid falling into the trap of spending more time on your regex than
 ![Manual vs Regex Time Trade-Off]({{ "/assets/blog-images/regex-time-trade-off.png" | relative_url }} "Manual vs Regex Time Trade-Off")
 
 
-## Learning
+### Learning
 
 [RegExOne](https://regexone.com): An interactive tutorial!
 
@@ -129,11 +129,11 @@ it still starts really slow and is perfectly readable by someone with no (or ver
 
 
 
-# The Why Not
+## The Why Not
 
 Always be wary before resorting to regex 😉
 
-## Implementations
+### Implementations
 
 As if RegExes are not confusing enough in and by themselves, there are different implementations of regex.
 While all implementations are largely the same, you may still find yourself in a situation where the regex
@@ -152,9 +152,9 @@ Naah, not funny enough
 -->
 
 
-## Inapplicability
+### Inapplicability
 
-### Html
+#### Html
 
 There are the obvious ones: throwing [regex against HTML](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454) or XML.
 
@@ -170,7 +170,7 @@ to **do something simple**, well... Why not? What's the worst that can happen by
 `<SomeUniqueNode>SOME ID WITH KNOWN STRUCTURE</SomeUniqueNode>` and save you importing a third
 party library which is probably bloated and inefficiently written?
 
-### Everywhere
+#### Everywhere
 
 I once worked with a senior developer who, I think, had just discovered regex.
 And, he had become so fond of them (or something?) that all code he touched was littered with little regexes after.
@@ -182,7 +182,7 @@ To top it off, all his regexes were needlessly long, most of them could be writt
 Which is how we fluently arrive at...
 
 
-## Writing vs Reading
+### Writing vs Reading
 
 
 ![Writing vs Reading RegEx]({{ "/assets/blog-images/regex-writing-vs-reading.png" | relative_url }} "Writing vs Reading RegEx")
@@ -191,7 +191,7 @@ It's funny because it's true. Requirements change and well, good luck decipherin
 Or heaven forbids, one someone else wrote! 😱
 
 
-# The **REAL** Why
+## The **REAL** Why
 
 Let's be honest here...
 

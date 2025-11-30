@@ -39,7 +39,7 @@ Create them an account at [account.apple.com](https://account.apple.com),
 the shit already starts there, get ready to confirm the email once and
 your friends' phone like, literally, a gazillion times.
 
-# The Steps
+## The Steps
 
 - Turn on the iMac AND
 - Press and hold `Command + R` until it boots into Recovery Mode
@@ -61,7 +61,7 @@ shutdown -h now
 <!--block1-->
 
 
-# Reboot
+## Reboot
 
 At this point, you're almost there!
 
@@ -74,7 +74,7 @@ You'll probably get stuck when trying to accept the Terms & Conditions:
 Once in the OS, you can go to System > iCloud to login the Apple Account.  
 At that point you can also kill the old user.
 
-# Conclusion
+## Conclusion
 
 Best not to tell anyone you are in IT 😃
 

@@ -73,7 +73,7 @@ The locations are stored in: HKCU:\Software\Microsoft\Windows\CurrentVersion\Exp
 {% include kbd k="Shift" l="Move dragged file(s)" %}
 {% include kbd k="Control+Shift" l="Create shortcut" %}
 
-## Create a new dotfile
+### Create a new dotfile
 
 To work around "You must type a file name", append an additional dot at the end of the filename.
 ```
@@ -83,7 +83,7 @@ Or in PowerShell: `ac .gitignore "node_modules"`
 
 
 
-## Back to the CLI
+### Back to the CLI
 
 Alt+D followed by cmd or powershell will open a prompt at the current path.
 {: style="display: inline"}
@@ -91,7 +91,7 @@ Alt+D followed by cmd or powershell will open a prompt at the current path.
 
 <br>
 
-## Jump to an env var
+### Jump to an env var
 
 
 Alt+D followed by `%APPDATA%`, `%USERPROFILE%` or any environment variable.  
@@ -106,7 +106,7 @@ Get-ChildItem $path | Select-Object `
 	@{l="Path";e={[Environment]::GetFolderPath($_.GetValue("Name")).Replace(" ", "")}}
 ```
 
-## Less used shortcuts
+### Less used shortcuts
 
 {% include kbd k="Control+F1" l="Toggle Ribbon" %}
 {% include kbd k="Control+Mousewheel" l="Scroll through the different views" %}
@@ -144,7 +144,7 @@ Explorer_GetPath()
 Explorer_GetSelected()
 ```
 
-## Hijacking Windows + E
+### Hijacking Windows + E
 
 If the selected text while pressing Windows E is a path,
 open Windows Explorer in that specific path.
@@ -179,13 +179,13 @@ Return
 ```
 
 
-## Zip directory
+### Zip directory
 
 [Ahk source][github-ahk-zip] for creating a zip file with the contents of
 the current directory or the currently selected files.
 
 
-## Create new file
+### Create new file
 
 One creates a new directory with Control + Shift + N but there is not really one for
 creating a new file.
@@ -221,7 +221,7 @@ DeselectSelectedFiles()
 }
 ```
 
-## Other
+### Other
 
 **Change extension dialog**:  
 Windows doesn't offer an option to not show a confirmation dialog

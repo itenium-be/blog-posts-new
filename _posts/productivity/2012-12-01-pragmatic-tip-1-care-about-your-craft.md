@@ -20,7 +20,7 @@ toc:
 > "Why spend your life developing software unless you care about doing it well?"  
 > — The Pragmatic Programmers
 
-# Yet Another Blog
+## Yet Another Blog
 {: .hide-from-excerpt}
 
 Scott Hanselman said "[Now, go write, create, commit.](http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx)".
@@ -33,7 +33,7 @@ The intention is to actively work and log on Andrew Hunt's and Dave Thomas' "[Pr
 a set of 70 tips, each designed to help you become a better programmer as presented in their 
 – already much appraised – book "The Pragmatic Programmer".
 
-# Care About Your Craft
+## Care About Your Craft
 
 Their very first Pragmatic Tip "**Care About Your Craft**"" goes without saying. If you don't enjoy communicating with the business
 (why put that first you ask…), trying to come up with solutions that work for both camps, if you don't care about fighting code-rot

@@ -36,7 +36,7 @@ redirect_from: /blog/productivity/robocode-tutorial/
 
 <!--more-->
 
-# Game Physics
+## Game Physics
 
 ![BattleFieldWidth and BattleFieldHeight]({{ "/assets/blog-images/robocode-battleground.gif" | relative_url }} "BattleFieldWidth and BattleFieldHeight"){: .img-responsive}{: style="max-width: 500px"}
 
@@ -54,11 +54,11 @@ redirect_from: /blog/productivity/robocode-tutorial/
 <!--block1-->
 
 
-# The Robot
+## The Robot
 
 A Robot consists of:
 
-## Body
+### Body
 
 - `Energy`: 
     - Start with 100.
@@ -75,7 +75,7 @@ A Robot consists of:
 - `Width` & `Height`: Dimensions of the Robot. (36x36)
 
 
-## Gun
+### Gun
 
 Pew! Pew! Pew!!
 
@@ -99,7 +99,7 @@ Pew! Pew! Pew!!
 
 
 
-## Radar
+### Radar
 
 Scans for other robots.
 
@@ -113,7 +113,7 @@ Scans for other robots.
 
 
 
-# Battling other robots
+## Battling other robots
 
 The best way to debug your robot is, of course battling others!
 
@@ -124,9 +124,9 @@ The best way to debug your robot is, of course battling others!
 - [Open Source Robots](https://robowiki.net/wiki/Category:Open_Source_Bots)
 
 
-# Learning Resources
+## Learning Resources
 
-#### Learning to
+##### Learning to
 
 - [Move](http://robowiki.net/wiki/Movement)
 - [Use the radar](http://robowiki.net/wiki/Radar)
@@ -134,13 +134,13 @@ The best way to debug your robot is, of course battling others!
 - [More tutorials](http://robowiki.net/wiki/Tutorials)
 
 
-#### Other resources
+##### Other resources
 
 - [Robocode articles](http://robowiki.net/wiki/Robocode/Articles)
 - [Graphical Debugging](http://robowiki.net/wiki/Robocode/Graphical_Debugging)
 
 
-#### Youtube
+##### Youtube
 
 - [Programming Games: Robocode // Patrick Cupka](https://www.youtube.com/watch?v=oTjjkXebCAY)
 - [Introduction to Robocode // Philip Johnson](https://www.youtube.com/watch?v=wJzJ57ZC1sc)

@@ -39,7 +39,7 @@ so that I can start using it for simple stuff, POCs and more!
 We're talking a whole whopping 180 lines of code here, including newlines and comments.
 ChatGPT is all the hype, so surely it must be able to write this very very simple app, right?
 
-# Initial Prompt
+## Initial Prompt
 
 Let's dumb it down a bit, forgetting about Docker, the static file server and the `already-sent` folder for now.
 
@@ -125,7 +125,7 @@ So... Let's ask ChatGPT?
 It gave me some additional scopes but they seemed irrelevant and I indeed got the same error after.
 
 
-# WebHook Prompt
+## WebHook Prompt
 
 Let's go back to the WebHook then..
 
@@ -191,7 +191,7 @@ Progress!! 🎉
 
 
 
-# File Server
+## File Server
 
 > Can you create a docker-compose with a service that executes a Python script with a cron job and a static file server service?
 
@@ -219,7 +219,7 @@ Here it seemed I either ran against the limits of ChatGPT or against the limitat
 of my "AI Prompt Engineering"-skillz.
 
 
-## Backtrack: Hello World
+### Backtrack: Hello World
 
 I then tried for over an hour to get ChatGPT to create a docker-compose that
 prints "Hello World".
@@ -238,7 +238,7 @@ Some of the things it tried:
 At this point I was just copy pasting the code and nothing worked.
 
 
-## Being Sassy
+### Being Sassy
 
 > Do you think that if I keep asking changes that at some point it will actually work?
 
@@ -249,7 +249,7 @@ Oh and I'm also asking for a freaking "Hello World" app here...
 
 
 
-# Troubleshooting
+## Troubleshooting
 
 ChatGPT pretty much gave up after a while and shifted into troubleshooting mode.
 
@@ -266,7 +266,7 @@ cat /var/log/syslog
 ```
 
 
-# Conclusion
+## Conclusion
 
 It is a gadget, nothing more.
 
@@ -276,7 +276,7 @@ needs to be reviewed thoroughly. To me, it doesn't seem like it can be used
 for much more than generating some skeleton code, saving you a few keystrokes.
 
 
-## The Horror
+### The Horror
 
 During technical interviews, I sometimes come across what I call a "Trial & Error"-programmer:
 They try something and then run the code, check if the result is correct and if it is not,
@@ -301,7 +301,7 @@ while True:
 After which it generated code without scheduling 😃
 
 
-### Reading vs Writing
+#### Reading vs Writing
 
 > “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.”
 > ― Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
@@ -316,7 +316,7 @@ debugging and future feature development that much harder, if it succeeded in
 producing something that works.
 
 
-## The Good
+### The Good
 
 If you already know how to code and want to have 80% of your code generated for you,
 you may want to have a look at using ChatGPT. Just remember that:
@@ -333,7 +333,7 @@ It seems to be quite good at solving really small very well known problems. I al
 `docker exec`. A simple prompt gave me a correct copy-pastable answer! That is to be expected considering how it
 works beneath the hood I guess.
 
-## Introspection
+### Introspection
 
 From ChatGPT itself:
 
@@ -347,7 +347,7 @@ From ChatGPT itself:
 It was unable to tell me if that response was hardcoded or not.
 
 
-## Final Thoughts
+### Final Thoughts
 
 I'm disappointed, for sure. It created a working Python script quite fast which got my hopes up,
 but then it failed at what is typically the hardest part anyway: integration.

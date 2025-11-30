@@ -28,7 +28,7 @@ I started playing Ambar (since down) with a few friends. This could be the story
 
 <!--more-->
 
-# The Strategy
+## The Strategy
 
 ![Ambar logo]({{ "/assets/blog-images/first-hack-ambar-logo.jpg" | relative_url }} "Ambar logo")
 
@@ -40,7 +40,7 @@ This was kind of the idea because as you can guess, having no troops in a war ga
 <!--block1-->
 
 
-# The Portal
+## The Portal
 
 And... Turns out we hadn't grown enough, fast enough because right after the initial no-attack period an enemy empire did succeed in opening a portal to us 😲.  
 Usually this is not really a problem, as there is a spell to close a portal should someone open one to an "undesirable" target - in our case **any** other empire.
@@ -49,7 +49,7 @@ Unfortunately, for our "strategy" to work, we all needed to pick a certain race 
 And of course this race did not posses the capability to cast the "Close Portal" spell. At this point, we were ready for the slaughterhouse.
 
 
-# The Hack
+## The Hack
 
 Casting a spell in Ambar was as simple as selecting it from a dropdown menu:
 
@@ -79,7 +79,7 @@ And 💥, the portal closed, our empire saved from those heinous invaders and me
 I did get an IM from someone of the attacking empire asking how exactly we managed to magically close the portal since no one in our empire had the required race to do so ;)
 
 
-# The Conclusion
+## The Conclusion
 
 All user input is evil.
 

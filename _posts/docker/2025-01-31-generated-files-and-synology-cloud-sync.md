@@ -49,11 +49,11 @@ getting synced alright, but the generated files were not!?
 
 <!--more-->
 
-# In CloudSync Folder
+## In CloudSync Folder
 
-## Synology Configuration
+### Synology Configuration
 
-### Enable NFS
+#### Enable NFS
 
 Steps: Control Panel > File Services > NFS > Enable
 
@@ -64,7 +64,7 @@ Steps: Control Panel > File Services > NFS > Enable
 <!--block1-->
 
 
-### Enable NFS on Shared Drive
+#### Enable NFS on Shared Drive
 
 - Control Panel > Shared Folder > right Click "workspace" > Edit > NFS Permissions
   - Create > Hostname or IP: 127.0.0.1 > Save
@@ -72,9 +72,9 @@ Steps: Control Panel > File Services > NFS > Enable
 ![Enabling NFS on Synology Shared Folder]({{ "/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png" | relative_url }} "Enabling NFS on Synology Shared Folder"){: .img-responsive}
 
 
-## The Code
+### The Code
 
-### compose.yaml
+#### compose.yaml
 
 Requires an `.env` file with: `SYNC_DIR=/volume1/CloudSyncedFolder/shared-with-3rd-party`
 
@@ -101,14 +101,14 @@ volumes:
       device: ":${SYNC_DIR}"
 ```
 
-### Other files
+#### Other files
 
 [Minimal CRON job setup](https://github.com/itenium-be/synology-cloud-sync-vs-docker)
 - Dockerfile: Copies `sh` files to the container and runs start.sh
 - start.sh: Calls `crontab` to run create-file.sh and starts the daemon
 - create-file.sh: `touch /export/export.csv`
 
-## NFWhat?
+### NFWhat?
 
 NFS or [Network File System](https://en.wikipedia.org/wiki/Network_File_System),
 a distributed file system protocol which allows you to access files over a network
@@ -119,7 +119,7 @@ Thanks to NFS we get proper `inotify` events and CloudSync picks up our files.
 Crisis averted!
 
 
-# Outside CloudSync Folder
+## Outside CloudSync Folder
 
 It might not be possible to create the files directly into the folder that
 CloudSync is active on.
@@ -131,7 +131,7 @@ but, of course, that doesn't work.
 ln -s /volume1/Projects/GeneratedFiles /volume1/Dropbox/GeneratedProjectFiles
 ```
 
-## Scheduled rsync Task
+### Scheduled rsync Task
 
 An easy solution here is creating a recurring task to run `rsync`.
 

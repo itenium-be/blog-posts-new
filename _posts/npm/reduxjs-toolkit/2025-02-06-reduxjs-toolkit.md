@@ -61,7 +61,7 @@ documentation is still daunting, you can take it step by step.
 
 <!--more-->
 
-# Immer
+## Immer
 
 {% include github-stars.html url="immerjs/immer" desc="Create the next immutable state by mutating the current one" %}
 
@@ -82,7 +82,7 @@ while (almost) not having to think about immutability anymore!
 <!--block1-->
 
 
-# createSlice and configureStore
+## createSlice and configureStore
 
 Okay, now that we're Immer experts, let's look at the two most important
 exports of the Toolkit: `createSlice` and `configureStore`.
@@ -93,7 +93,7 @@ exports of the Toolkit: `createSlice` and `configureStore`.
 [Part 3: createSlice and configureStore]({% post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice %})
 
 
-# createAsyncThunk
+## createAsyncThunk
 
 On top of the included redux-thunk package, `createAsyncThunk` is the helper function for
 all your API call needs.
@@ -103,14 +103,14 @@ Coming from "legacy Redux", this is the last basic piece of ReduxJS/Toolkit!
 [Part 4: createAsyncThunk]({% post_url npm/reduxjs-toolkit/2025-02-13-reduxjs-toolkit-createAsyncThunk %})
 
 
-# TypeScript
+## TypeScript
 
 Keeping everything entirely type-safe.
 
 [Part 5: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})
 
 
-# Reselect
+## Reselect
 
 More batteries included. You basically only need this when running into
 [performance issues]({% post_url npm/react/2023-10-06-react-component-profiling %})
@@ -123,7 +123,7 @@ not be running into re-rendering performance issues after the addition of 6 year
 [Part 6: createSelector]({% post_url npm/reduxjs-toolkit/2025-02-27-reduxjs-toolkit-createSelector %})
 
 
-# RTK Query
+## RTK Query
 
 A much **higher level of abstraction**.  
 Okay, we're getting to the meat of ReduxJS/Toolkit now. Yes, only now.
@@ -145,12 +145,12 @@ So maybe something you want to use for your next NEW React app ;)
 Part 7: createApi (under construction!)
 
 
-# Not Covered
+## Not Covered
 
 Parts of this series that will probably not be written.
 
 
-## Other Features
+### Other Features
 
 Since I already spent way too much time on this 😀
 
@@ -202,7 +202,7 @@ mechanic to delay low-priority actions.
 
 
 
-## Best Practices
+### Best Practices
 
 A blog post that has been sitting on my todo list for the longest time is
 "_Redux: The Good, The Bad and The Boilerplate_".

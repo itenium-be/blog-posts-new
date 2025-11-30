@@ -51,7 +51,7 @@ interface ICalculator
 <!--block1-->
 
 
-# Creating a substitute
+## Creating a substitute
 
 ```c#
 // For an interface
@@ -76,7 +76,7 @@ Assert.IsInstanceOf<Calculator>(sub);
 
 
 
-# Matching arguments
+## Matching arguments
 
 ```c#
 // Arg.Any and fixed value
@@ -96,7 +96,7 @@ Assert.That(nsub.Add(1, -2), Is.EqualTo(100));
 ```
 
 
-# Verification
+## Verification
 
 **Did receive calls:**
 
@@ -136,7 +136,7 @@ nsub.DidNotReceiveWithAnyArgs().Add(0, 0);
 ```
 
 
-# Providing values
+## Providing values
 
 Without setup the following is returned:  
 - For primitives: `default(int)`
@@ -148,7 +148,7 @@ When substituting a class, non-virtual methods returning an interface
 cannot be mocked and will return `null`.
 
 
-## Methods and properties
+### Methods and properties
 
 ```c#
 // Methods
@@ -183,7 +183,7 @@ Assert.Throws<Exception>(() => { var result = nsub.Mode; });
 ```
 
 
-### For all of type
+#### For all of type
 
 ```c#
 using NSubstitute.Extensions;
@@ -197,7 +197,7 @@ Assert.That(nsub.Divide(0, 9, out float remainder), Is.EqualTo(5));
 ```
 
 
-### Out and ref
+#### Out and ref
 
 `ref` works in the same way as `out`.
 
@@ -212,7 +212,7 @@ Assert.AreEqual(0.4F, remainder);
 ```
 
 
-## Exceptions
+### Exceptions
 
 ```c#
 using NSubstitute.ExceptionExtensions;
@@ -225,7 +225,7 @@ Assert.Throws<Exception>(() => nsub.SetMode("HEX"));
 ```
 
 
-# Side effect callbacks
+## Side effect callbacks
 
 **AndDoes**:  
 Do something after `Add` was called.
@@ -270,10 +270,10 @@ Assert.AreEqual(42, argumentUsed);
 
 
 
-# Less frequently used
+## Less frequently used
 
 
-## Partial Class Substitution
+### Partial Class Substitution
 
 ```c#
 public class SummingReader
@@ -316,7 +316,7 @@ result = reader.CalculateSum("foo.txt");
 Assert.That(result, Is.EqualTo(6));
 ```
 
-## Provide values using CallInfo callback
+### Provide values using CallInfo callback
 
 ```c#
 nsub
@@ -346,13 +346,13 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 
 
 
-## Events
+### Events
 
 - [Checking event subscriptions](http://nsubstitute.github.io/help/received-calls/#checking_event_subscriptions)
 - [Checking event invocation](http://nsubstitute.github.io/help/received-calls/#checking_event_invocation)
 - [Raising events](http://nsubstitute.github.io/help/raising-events)
 
-# Summary
+## Summary
 
 So I like NSubstitute. Like a lot. That's it.
 

@@ -50,11 +50,11 @@ git config --global core.pager "less --LONG-PROMPT --tabs=3 --quit-at-eof --quit
 
 Add a link to the [man page][less-man-page] and this topic is hereby extensively covered :)
 
-# Parameters for core.pager
+## Parameters for core.pager
 
 Git defaults to `less FRSX`.
 
-## Display
+### Display
 
 Default cursor is just a `:`
 {% include kbd k="-m, --long-prompt" l="Show # bytes passed" %}
@@ -71,14 +71,14 @@ Default cursor is just a `:`
 <!--block1-->
 
 
-## Searching
+### Searching
 
 {% include kbd k="-I, --IGNORE-CASE" l="Case insensitive search" %}
 {% include kbd k="-i, --ignore-case" l="Case insensitive search unless uppercase characters are found in the search pattern" %}
 {% include kbd k="-jX, --jump-target=X" l="with X a number: Show search result X lines from the top of the screen" %}
 {% include kbd k="-J, --status-column" l="Place * on lines with search results" %}
 
-## Quitting
+### Quitting
 
 {% include kbd k="-e, --quit-at-eof" l="Exits less when reached end twice" %}
 {% include kbd k="-E, --QUIT-AT-EOF" l="Exits less when first reached end" %}
@@ -86,14 +86,14 @@ Default cursor is just a `:`
 {% include kbd k="-~, --tilde" l="Lines after end of file are blank, not ~" %}
 
 
-# Moving around
+## Moving around
 
 Syntax used:  
 - `xp`: Triggers for any number x followed by `p`.
 - `xp`: Also triggers when just pressing `p`.
 - Omitted: Many keys can be combined with `Control` for the same effect.
 
-## Going down
+### Going down
 
 {% include kbd k="xe, xj, xENTER" l="Forward one line or x lines if x is provided" %}
 
@@ -105,7 +105,7 @@ Syntax used:
 {% include kbd k="G, >" l="Forward to the end" %}
 
 
-## Going up
+### Going up
 
 {% include kbd k="xy, xk, CONTROL+P" l="Backward one line or x lines if x is provided" %}
 
@@ -117,7 +117,7 @@ Syntax used:
 {% include kbd k="g, <" l="Backward to the beginning" %}
 
 
-## Searching
+### Searching
 
 See searching parameters above for configuring case sensitivity.
 
@@ -127,7 +127,7 @@ See searching parameters above for configuring case sensitivity.
 {% include kbd k="N" l="Goto previous match" %}
 {% include kbd k="&" l="Search and show only the matching lines" %}
 
-## Other
+### Other
 
 {% include kbd k="s + filename" l="Save to file and inspect with your weapon of choice" %}
 {% include kbd k="(, ), {, }, [, ]" l="When the character pressed is on top of the page, scroll to its counterpart" %}
@@ -139,14 +139,14 @@ See searching parameters above for configuring case sensitivity.
 {% include kbd k="'x" l="Goto the position marked as x" %}
 
 
-# Quitting
+## Quitting
 
 {% include kbd k="ESC, SPACE" l="ESC followed by SPACE: continue scrolling after end of stream" %}
 {% include kbd k="q, Q, :q, :Q, ZZ" l="Exit less" %}
 {% include kbd k="CONTROL+l" l="Clear screen afterwards?" %}
 
 
-# Summary
+## Summary
 
 After a few years of just using `PgUp` and `PgDown` I guess this research
 was way overdue.

@@ -62,7 +62,7 @@ docker compose up -d --build
 
 <!--more-->
 
-# Simple Run
+## Simple Run
 
 ```sh
 docker run --name some-mongo \
@@ -76,7 +76,7 @@ docker run --name some-mongo \
 <!--block1-->
 
 
-# Initial Load
+## Initial Load
 
 Scripts are executed in alphabetical order,
 executed on `MONGO_INITDB_DATABASE`.
@@ -87,7 +87,7 @@ See the [Github Docker-Mongo Repository](https://github.com/itenium-be/Docker-Mo
 for these examples.
 
 
-## With JavaScript
+### With JavaScript
 
 Example `compose.yaml` file:
 
@@ -127,7 +127,7 @@ db.celebrities.insertMany([
 ]);
 ```
 
-## With Shell
+### With Shell
 
 ```yaml
 services:
@@ -178,7 +178,7 @@ mongoimport --db $MONGO_INITDB_DATABASE \
 ```
 
 
-# Mongo Shell
+## Mongo Shell
 
 
 ```sh
@@ -208,7 +208,7 @@ docker exec -it mongo-js-load sh
 ```
 
 
-# mongod.conf
+## mongod.conf
 
 By default mongo will not load any conf file. If you want to work
 with a custom [mongod.conf](https://www.mongodb.com/docs/manual/reference/configuration-options/):
@@ -254,7 +254,7 @@ Inside the container check [`/etc/mongod.conf.orig`](https://www.mongodb.com/doc
 {: .table-code}
 
 
-# Security
+## Security
 
 Get into the `mongosh` without credentials and then do
 everything in the shell itself.
@@ -279,7 +279,7 @@ db.createUser({
 })
 ```
 
-## With Initial Load
+### With Initial Load
 
 In a `js` file. Mongo 6 supports `process.env`:
 
@@ -311,7 +311,7 @@ EOF
 ```
 
 
-## Roles
+### Roles
 
 The official docs for
 [Built-In Roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/#std-label-built-in-roles).
@@ -339,7 +339,7 @@ Other roles:
 [systemjs]: https://www.mongodb.com/docs/manual/reference/system-collections/#mongodb-data--database-.system.js
 
 
-# Synology
+## Synology
 
 If you run these examples on Synology, chances are they won't work!
 You may see the following error:

@@ -39,7 +39,7 @@ was really simple, really. And was committed in the README as a TODO over 3 year
 
 <!--more-->
 
-# Upgrade Jekyll
+## Upgrade Jekyll
 
 Upgrading Jekyll from v3.9.0 to 4.2.2 already brought the
 reload time down from **20s to 12s**.
@@ -72,7 +72,7 @@ There probably isn't much you have to do when [upgrading from v3 to v4](https://
 <!--block1-->
 
 
-# Incremental Serving
+## Incremental Serving
 
 The next logical step is to only re-render what has actually changed.
 This reduced reload times from **12s to 3s** 🎉🥳
@@ -85,7 +85,7 @@ bundle exec jekyll serve --incremental
 bundle exec jekyll serve -I
 ```
 
-## Caveat
+### Caveat
 
 The `--incremental` will only update file(s) that have actually changed.
 This means that a new post will not appear in your blog post listing /
@@ -119,7 +119,7 @@ regenerate: true
 ```
 
 
-## Windows Directory Monitor
+### Windows Directory Monitor
 
 {% include github-stars.html url="Maher4Ever/wdm" desc="A threaded directories monitor for Windows." %}
 
@@ -133,7 +133,7 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 `bundle install` and you're ready to go!
 
 
-# Development config.yml
+## Development config.yml
 
 This can be improved even further by not doing some plugin work
 that is typically not necessary during development anyway.
@@ -148,7 +148,7 @@ In the copied `_config_dev.yml` I removed all the gems in
 This however only reduced the reload time by 0.5s which wasn't worth
 it for me as I'd have to keep two config.ymls in sync.
 
-## Limit Posts
+### Limit Posts
 
 In the `_config_dev.yml`, you can specify to only render the last x posts.
 This turned out to be not very useful because the profiler told me
@@ -162,7 +162,7 @@ limit_posts: 20
 ```
 
 
-# Profiling
+## Profiling
 
 If it's still taking too long, you can use `--profile` to figure out
 what's going on.
@@ -172,7 +172,7 @@ bundle exec jekyll serve --profile
 ```
 
 
-# PowerShell Profile
+## PowerShell Profile
 
 I have these added to my [ps profile]({% post_url dev-setup/powershell/2017-04-11-powershell-profiles %}),
 because who wants to remember/write all the bundle exec etc etc 😀

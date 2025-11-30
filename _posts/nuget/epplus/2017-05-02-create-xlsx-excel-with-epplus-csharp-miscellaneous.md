@@ -35,7 +35,7 @@ Which is basically on equal footing with EPPlus.
 <br>
 
 
-# Miscellaneous features
+## Miscellaneous features
 
 
 EPPlus can do a whole lot more for you. This post covers some interesting stuff that didn't really fit anywhere else.
@@ -53,7 +53,7 @@ var colE = package.Workbook.Worksheets.First().Column(5);
 <!--block1-->
 
 
-## Printing
+### Printing
 ```c#
 using (var package = new ExcelPackage())
 {
@@ -83,7 +83,7 @@ using (var package = new ExcelPackage())
 ```
 
 
-## Comments &amp; RichText
+### Comments &amp; RichText
 
 Each RichText.Add() returns a new object that takes over all styling from the textobject is was invoked on
 and can then be styled separately.
@@ -109,7 +109,7 @@ using (var package = new ExcelPackage())
 ```
 
 
-## Converting indexes and ranges
+### Converting indexes and ranges
 
 ```c#
 [Test]

@@ -43,7 +43,7 @@ which can be a bit daunting at first.
 
 <!--more-->
 
-# Quick setup
+## Quick setup
 
 ```sh
 # Install
@@ -68,7 +68,7 @@ Processing is done for files with front matter, all other files are copied strai
 
 
 
-# Site configuration
+## Site configuration
 
 The generated `_config.yml` is a [YAML][YAML-Post] file containing global configuration
 that is used in all pages, posts etc. All other files can define page specific
@@ -112,7 +112,7 @@ The default Markdown renderer is [kramdown](https://kramdown.gettalong.org/).
 See [Part 5: Liquid][part-5] for Shopify's Liquid syntax -->
 
 
-# Themes
+## Themes
 
 By default, the [minima theme][theme-minima] is used. This is defined as `theme: minima` in your `_config.yml`.
 
@@ -145,13 +145,13 @@ Once a theme has been chosen, all roads are still open, as you can override anyt
 `bundle show minima` outputs the path to all files of the theme. Copy any file there to your jekyll
 directory respecting the relative path and that file will be used instead.
 
-# Layouts
+## Layouts
 
 All files in the `_layouts` folder can be used in the `layout` front matter.
 
 `_layouts\default.html`: The base layout used by home.html, page.html and post.html.
 
-## Assets
+### Assets
 
 Any file in `/assets` will be copied to the resulting site. If the file has front matter,
 the file will be rendered. --> Already saying above that anything gets copied
@@ -166,7 +166,7 @@ assets: https://jekyllrb.com/docs/themes/#assets
 
 [Official Jekyll Themes docs](https://jekyllrb.com/docs/themes/)
 
-# Conventions and technologies
+## Conventions and technologies
 
 -- keep this as short as possible --> quickest way to publishing your first post...
 
@@ -183,7 +183,7 @@ Idea was to do an article about Liquid remember?
 
 --> But first VISUG... :p
 
-## GitHub Pages
+### GitHub Pages
 
 Goto the Settings of your project to activate [GitHub Pages](https://pages.github.com/)
 for free hosting (also with custom domain name!)

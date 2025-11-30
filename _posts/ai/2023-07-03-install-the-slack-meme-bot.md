@@ -33,11 +33,11 @@ it is time to post one!
 
 <!--more-->
 
-# What it looks like
+## What it looks like
 
 ![Example of a Slack Meme Bot posting]({{ "/assets/blog-images/slack-meme-bot-example.png" | relative_url }} "Slack Meme Bot in action")
 
-# Requirements
+## Requirements
 
 {% include github-stars.html url="itenium-be/slack-meme-poster" desc="Install your own Slack Meme Bot now!" %}
 
@@ -50,7 +50,7 @@ That's it, really!
 
 <!--block1-->
 
-# Installation & Configuration
+## Installation & Configuration
 
 See [README.md](https://github.com/itenium-be/slack-meme-poster) for step by step instructions.
 
@@ -74,7 +74,7 @@ The `.env` contains:
     - Let the [crontab.guru](https://crontab.guru/) configure this for you
 
 
-# Slack WebHook Setup
+## Slack WebHook Setup
 
 Get yourself a Slack WebHook url, which looks like this:
 

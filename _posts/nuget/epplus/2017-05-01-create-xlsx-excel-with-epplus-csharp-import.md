@@ -35,13 +35,13 @@ Which is basically on equal footing with EPPlus.
 <hr>
 <br>
 
-# That's fine!
+## That's fine!
 
 
 <!--block1-->
 
 
-# IEnumerable objects
+## IEnumerable objects
 {: .hide-from-excerpt}
 
 Exporting data to an Excel doesn't get easier than this
@@ -119,7 +119,7 @@ using (var package = new ExcelPackage())
 
 
 
-# CSV file
+## CSV file
 
 ```c#
 using (var package = new ExcelPackage())
@@ -146,7 +146,7 @@ using (var package = new ExcelPackage())
 
 
 
-# DataReader &amp; DataTable
+## DataReader &amp; DataTable
 
 In case you ever need it, it's there :)
 

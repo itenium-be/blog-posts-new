@@ -30,7 +30,7 @@ toc:
 [sqlmap](https://sqlmap.org/) is a CLI tool for automated discovery of SQL injection vulnerabilities in web applications.
 
 
-# What
+## What
 {: .hide-from-excerpt}
 
 {% include github-stars.html url="sqlmapproject/sqlmap" desc="Automatic SQL injection and database takeover tool" %}
@@ -49,7 +49,7 @@ It has some... interesting features:
 <!--block1-->
 
 
-# How
+## How
 
 ```sh
 sqlmap -u 'url' --dump
@@ -82,7 +82,7 @@ Other interesting flags:
     - `--os-shell`: Prompt for an interactive operating system shell
 
 
-## Docker
+### Docker
 
 
 ```sh
@@ -93,7 +93,7 @@ docker run --rm -it -v ./sqlmap-data:/root/.sqlmap/ paoloo/sqlmap --url "url" --
 ```
 
 
-# When
+## When
 
 During itenium's Security Bootcamp `sqlmap` can be used to retrieve
 a flag hidden in a database by attacking a vulnerable web page.

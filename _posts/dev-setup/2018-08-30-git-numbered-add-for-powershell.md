@@ -53,7 +53,7 @@ to manipulate the working directory and staging area with fabricated indexes.
 
 <!--more-->
 
-# PowerShell Gallery
+## PowerShell Gallery
 
 Now available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Git-NumberedAdd)!
 
@@ -65,13 +65,13 @@ Install-Module -Name Git-NumberedAdd
 <!--block1-->
 
 
-# Git-NumberedHelp <small>(alias: gnh)</small>
+## Git-NumberedHelp <small>(alias: gnh)</small>
 
 All these aliases to save time but who can remember all that?  
 Use `gnh` to display all actions available by Git-NumberedAdd with description and alias.
 
 
-# Git-NumberedStatus <small>(alias: gs)</small>
+## Git-NumberedStatus <small>(alias: gs)</small>
 
 Displays the output of `git status --short` together with fabricated indexes like so
 
@@ -85,7 +85,7 @@ Working directory color codes:
 Git-NumberedStatus accepts extra CLI arguments. Example: `gs -u` to see all `--untracked-files`.  
 Configure the color output by modifying `$global:gitStatusNumbers`.
 
-## With Numstat
+### With Numstat
 
 If `$global:gitStatusNumbers.includeNumstat` is true (=by default), Git-NumberedStatus will also
 execute a `git diff --numstat` and add lines added/deleted to the output.
@@ -93,7 +93,7 @@ execute a `git diff --numstat` and add lines added/deleted to the output.
 ![Git-NumberedStatus with --numstat]({{ "/assets/blog-images/git-add-numbered-status-numstat.png" | relative_url }}){: .img-responsive}
 
 
-# Git-NumberedAdd <small>(alias: ga)</small>
+## Git-NumberedAdd <small>(alias: ga)</small>
 
 All set to stage some files!
 
@@ -112,7 +112,7 @@ The same can be achieved with:
 `Git-NumberedAdd +3` would add file4 and file5 in the above scenario.
 
 
-## And Commit
+### And Commit
 
 Provide a final string argument to continue and commit the staged files:
 
@@ -122,7 +122,7 @@ ga 0 1 2 "commit: files 0, 1 and 2"
 ```
 
 
-# Git-NumberedDiff <small>(alias: gd)</small>
+## Git-NumberedDiff <small>(alias: gd)</small>
 
 Works like `Git-NumberedAdd` but can also be called without arguments to
 see the diff of all files. It will call `git add -N` for all newly created
@@ -130,7 +130,7 @@ files so that they also show up in the diff.
 
 `git diff --cached` is currently not implemented in this script.
 
-# Git-NumberedReset <small>(alias: grs)</small>
+## Git-NumberedReset <small>(alias: grs)</small>
 
 This only works for files already staged.
 Example output:  
@@ -147,7 +147,7 @@ M       file2
 D       file4
 ```
 
-# All actions
+## All actions
 
 Wrappers for all your basic git commands
 
@@ -163,7 +163,7 @@ Git-NumberedCheckout # Alias: gco
 Git-NumberedReset # Alias: grs
 ```
 
-## Git-Assuming
+### Git-Assuming
 
 Unfamiliar with "assume unchanged"?
 Check the docs on [`git update-index --assume-unchanged`](https://git-scm.com/docs/git-update-index).
@@ -191,7 +191,7 @@ Git-NumberedHidden # alias: ghide
 ```
 
 
-## Utilities
+### Utilities
 
 ```powershell
 # Get the full path of a file
@@ -206,7 +206,7 @@ Git-NumberedSetLocation # Alias: gsl
 # Use Pop-Location (alias: popd) to go back to where you came from
 ```
 
-# Alternatives
+## Alternatives
 
 Sometime similar is actually built into Git itself
 ```bash

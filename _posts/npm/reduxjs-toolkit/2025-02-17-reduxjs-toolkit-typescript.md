@@ -35,7 +35,7 @@ type safety!
 
 <!--more-->
 
-# TypeScript Hooks
+## TypeScript Hooks
 
 ```ts
 import { configureStore } from "@reduxjs/toolkit";
@@ -53,7 +53,7 @@ export const useAppSelector = useSelector.withTypes<RootState>();
 <!--block1-->
 
 
-# createAsyncThunk
+## createAsyncThunk
 
 [More info](https://redux-toolkit.js.org/usage/usage-with-typescript#defining-a-pre-typed-createasyncthunk)
 
@@ -71,7 +71,7 @@ const createAppAsyncThunk = createAsyncThunk.withTypes<{
 }>()
 ```
 
-# createSelector
+## createSelector
 
 ```ts
 // Wrapping reselect createSelector

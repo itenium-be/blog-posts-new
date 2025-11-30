@@ -43,7 +43,7 @@ Time for some creative hotkey combinations! 'Advanced Hotkeys' covers code snipp
 how to run different scripts on single, double or triple key presses as well as how to
 differentiate between long(ish) key presses or mouse clicks. And more...
 
-# Example
+## Example
 {: .hide-from-excerpt}
 
 ```autohotkey
@@ -60,10 +60,10 @@ Return
 
 <!--more-->
 
-# Basic Syntax
+## Basic Syntax
 
 
-## Keyboard
+### Keyboard
 
 | Shorthand | Full            | Desc
 |-----------|-----------------|----------
@@ -121,7 +121,7 @@ If your keyboard has keys that are not in the full keylist,
 You can also let Autohotkey itself do the figuring out for you. Its builtin command
 `KeyHistory` opens a window where you can figure out which is which.
 
-## Native function
+### Native function
 
 Prefix a hotkey with `~` to not block the native function.  
 
@@ -134,7 +134,7 @@ Prefix a hotkey with `~` to not block the native function.
 ```
 
 
-## Custom combinations
+### Custom combinations
 
 To combine keys that do not have a shorthand use `&`.
 Keys on the left side of such custom combinations lose their native function.
@@ -147,7 +147,7 @@ Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 ```
 
 
-## Other
+### Other
 
 **Key Down and Up**  
 Add `UP` to a hotkey combination to run the script on key release rather than on keypress.  
@@ -192,12 +192,12 @@ Return
 ```
 
 
-# Advanced Hotkeys
+## Advanced Hotkeys
 
 Creating more advanced hotkey combinations.
 
 
-## Context sensitive hotkeys
+### Context sensitive hotkeys
 
 Control in which applications a hotkey is (not) active with the
 keywords 
@@ -237,7 +237,7 @@ Find out the `ahk_class` of a program with Window Spy (AU3_Spy.exe)
 which comes bundled with Autohotkey itself.
 
 
-## Combining 2 hotkeys
+### Combining 2 hotkeys
 
 **Check if a hotkey combination is pressed twice**  
 
@@ -279,9 +279,9 @@ return
 
 [`Input`](https://autohotkey.com/docs/commands/Input.htm) option `L1` is the maximum allowed length. (L1 -> L5)
 
-## Double, triple and long key presses
+### Double, triple and long key presses
 
-#### Simple double keypress
+##### Simple double keypress
 
 Map a double `µ` keypress to a smiley.
 ```autohotkey
@@ -300,7 +300,7 @@ $µ::
 Return
 ```
 
-#### The whole shebang
+##### The whole shebang
 
 ```autohotkey
 #c::
@@ -382,7 +382,7 @@ return
 ```
 
 
-## Morse hotkeys
+### Morse hotkeys
 
 The [forum thread on hold patterns](https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns).
 
@@ -416,9 +416,9 @@ Else
   MsgBox Press pattern %p%
 Return
 ```
-# Other
+## Other
 
-## Waiting for something
+### Waiting for something
 
 Wait for something to happen with [`SetTimer`](https://autohotkey.com/docs/commands/SetTimer.htm)
 
@@ -441,7 +441,7 @@ return
 ```
 
 
-## Suspension
+### Suspension
 
 ```autohotkey
 ; Toggle script suspension

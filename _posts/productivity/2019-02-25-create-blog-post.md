@@ -37,7 +37,7 @@ because I keep forgetting all this stuff.
 <!--more-->
 
 
-# New blog post
+## New blog post
 
 Create a
 
@@ -57,9 +57,9 @@ Create a
 <!--block1-->
 
 
-# Front Matter
+## Front Matter
 
-## Template
+### Template
 
 `img` size must be 360x300. `bigimg` is 1400x262.
 
@@ -154,7 +154,7 @@ Add API links:
 {% endraw %}
 ```
 
-## Values
+### Values
 
 - `date`: Make sure the filename and this date match.
 - `desc`: Multiline.
@@ -192,7 +192,7 @@ Add API links:
 
 
 
-# Markdown
+## Markdown
 
 Can use Html and Liquid includes.
 
@@ -200,7 +200,7 @@ Add inline style with `{: style="margin-left: 20px"}`.
 {: style="margin-left: 20px"}
 
 
-## Liquid Includes
+### Liquid Includes
 
 **Show Shortcut**:
 
@@ -237,7 +237,7 @@ Will look for the file in `/assets/blog-images/`
 ```
 
 
-## Markdown
+### Markdown
 
 Create a `<hr>`:  
 ```
@@ -298,7 +298,7 @@ Bootstrap 3: `.img-responsive`, `.img-rounded`, `.img-thumbnail`, `.img-circle`.
 
 
 
-## Tables
+### Tables
 
 Can use emphasis and inline code blocks inside table cells.
 
@@ -350,7 +350,7 @@ Can use emphasis and inline code blocks inside table cells.
 
 
 
-## Notices
+### Notices
 
 This is a `{: .notice}`. Use `**` for **titles**.
 {: .notice}
@@ -363,7 +363,7 @@ This is a `{: .notice--danger}`
 
 
 
-## Escaping
+### Escaping
 
 Especially fun when blogging for example about Jekyll itself.
 <!-- But meta posts like this are especially fun -->
@@ -402,13 +402,13 @@ not even }} {{ or %} {%
 -->
 
 
-# Plugins
+## Plugins
 
 [Github pages supported plugins](https://pages.github.com/versions)
 
 Some new shiny things to try out in future blog posts:
 
-## jemoji
+### jemoji
 
 {% include github-stars.html url="jekyll/jemoji" desc="I give this plugin two :+1:!" %}
 
@@ -428,7 +428,7 @@ emoj [text]
 ```
 
 
-## jekyll-gist
+### jekyll-gist
 
 {% include github-stars.html url="jekyll/jekyll-gist" desc="" %}
 
@@ -442,7 +442,7 @@ emoj [text]
 ```
 
 
-## jekyll-avatar
+### jekyll-avatar
 
 {% include github-stars.html url="benbalter/jekyll-avatar" %}
 {% avatar fabpot %}

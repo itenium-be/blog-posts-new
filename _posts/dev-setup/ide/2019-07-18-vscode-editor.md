@@ -42,7 +42,7 @@ package-versions:
 <!--more-->
 
 
-# Basic Editing
+## Basic Editing
 
 {% include kbd k="Alt+Up/Down" l="Move Line Up/Down" %}
 {% include kbd k="Shift+Alt+Up/Down" l="Copy Line Down/Up" %}
@@ -69,7 +69,7 @@ Custom shortcuts:
 - View: Toggle Render Whitespace
 
 
-# Settings
+## Settings
 
 ```javascript
 // settings.json
@@ -126,7 +126,7 @@ Custom shortcuts:
 ```
 
 
-# File Management
+## File Management
 
 {% include kbd k="Control+K,S" l="File: Save All" %}
 {% include kbd k="Control+K,Control+W" l="View: Close All Editors" %}
@@ -142,7 +142,7 @@ Custom shortcut:
 
 
 
-# Navigation
+## Navigation
 
 {% include kbd k="Control+P" l="Quick Open" %}
 {% include kbd k="Control+R" l="File: Open Recent..." %}
@@ -157,7 +157,7 @@ Custom shortcut:
 {% include kbd k="Control+Shift+µ" l="Go to matching Bracket" oem="\\" %}
 
 
-# Folding
+## Folding
 
 {% include kbd k="Control+Shift+)" l="Fold region" oem="[" %}
 {% include kbd k="Control+Shift+^" l="Unfold region" oem="]" %}
@@ -167,7 +167,7 @@ Custom shortcut:
 {% include kbd k="Control+K,Control+ç" l="Unfold all regions" oem="9" %}
 
 
-# Intellisense
+## Intellisense
 
 {% include kbd k="Control+Space" l="Trigger Suggest" %}
 
@@ -198,7 +198,7 @@ Custom shortcut:
 }
 ```
 
-# Snippets
+## Snippets
 
 {% include kbd k="Control+Alt+J" l="Insert Snippet" %}
 
@@ -221,7 +221,7 @@ Custom shortcut:
 ```
 
 
-# Multi Cursor
+## Multi Cursor
 
 {% include kbd k="Control+Alt+Up/Down" l="Add Cursor Above/Below" %}
 {% include kbd k="Shift+Alt+I" l="Add Cursors to Line Ends" %}
@@ -233,7 +233,7 @@ Custom shortcut:
 {% include kbd k="Control+Shift+L" l="Select All Occurrences of Find Match" %}
 
 
-#### Mouse Multi Cursor
+##### Mouse Multi Cursor
 
 {% include kbd k="Alt+Click" l="Insert Cursor" %}
 {% include kbd k="Shift+Alt+Drag" l="Column (box) selection" %}
@@ -246,7 +246,7 @@ Custom shortcut:
 ```
 
 
-# Refactor
+## Refactor
 
 {% include kbd k="F2" l="Rename File (Explorer) / Rename Symbol (Editor)" %}
 {% include kbd k="Control+;" l="Quick Fix... (Extract selection to method/constant)" %}
@@ -254,7 +254,7 @@ Custom shortcut:
 {% include kbd k="Control+K,Control+I" l="Show Hover" %}
 {% include kbd k="Control+²" l="Toggle Quote (Extension BriteSnow.vscode-toggle-quotes)" oem="'" %}
 
-#### Problems
+##### Problems
 
 {% include kbd k="Control+Shift+M" l="View: Toggle Problems Panel (Errors, Warnings, ...)" %}
 {% include kbd k="F8" l="Cycle through errors (Shift to reverse cycle)" %}
@@ -262,7 +262,7 @@ Custom shortcut:
 
 
 
-# Editor Groups
+## Editor Groups
 
 {: style="margin-bottom: 12px;"}
 {% include kbd k="Control+Enter" l="In Side Bar Explorer: Open to the Side (Or: Alt + Click)" %}
@@ -276,7 +276,7 @@ Custom shortcut:
 {% include kbd k="Control+1 / 2 / 3" l="View: Focus 1st / 2nd / 3rd Editor Group" %}
 
 
-#### Closing them
+##### Closing them
 
 {% include kbd k="Control+K,Control+W" l="View: Close All Editors" %}
 {% include kbd k="Control+K,Control+Shift+W" l="View: Close All Editor Groups" %}
@@ -300,7 +300,7 @@ Custom shortcuts:
 ```
 
 
-# Formatting
+## Formatting
 
 {% include kbd k="Shift+Alt+F" l="Format Document" %}
 {% include kbd k="Control+K,Control+F" l="Format Selection" %}
@@ -322,7 +322,7 @@ Custom shortcuts:
 
 
 
-# Markdown
+## Markdown
 
 I guess this is here because I've done mostly markdown - writing this :)
 

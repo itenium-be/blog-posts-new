@@ -35,7 +35,7 @@ toc:
 <!--more-->
 
 
-# Emscripten
+## Emscripten
 
 {% include github-stars.html url="emscripten-core/emscripten" desc="An LLVM-to-Web Compiler" %}
 
@@ -48,14 +48,14 @@ It emulates OpenGL, the FileSystem etc.
 <!--block1-->
 
 
-# For Web Developers
+## For Web Developers
 
 Two main use cases
 - Surgical replacement of tiny modules in your JavaScript, the hot paths, the bottlenecks, with WebAssembly
 - Use existing libraries that do not exist on npm from another ecosystem (C/C++, Rust, ...)
 
 
-# The Performance Myth
+## The Performance Myth
 
 WebAssembly and JavaScript both have the same peak performance. But...
 JavaScript can easily fall off the "fast path" while WebAssembly will not.
@@ -80,9 +80,9 @@ With Liftoff you always stay on the fast path.
 {% include post/image.html file="webassembly-js-vs-wasm.png" desc="The peak performance is about the same but in some browsers the JavaScript performance is way off!" maxWidth="678px" %}
 
 
-# The Future
+## The Future
 
-#### WebAssembly Threads and SIMD
+##### WebAssembly Threads and SIMD
 
 Will allow WebAssembly to outperform JavaScript.
 
@@ -92,7 +92,7 @@ Will allow WebAssembly to outperform JavaScript.
 - Ships with Chrome 74
 
 
-#### Host bindings
+##### Host bindings
 
 <!-- IDL: Interface Description Language -->
 Interact easily with JavaScript and DOM objects with the **Web IDL interface**.
@@ -102,7 +102,7 @@ Web IDL is a requirement for other proposals such as **Garbage Collection**,
 **Tail Call optimizations** and **Exception Handling**.
 
 
-#### ECMA module integration
+##### ECMA module integration
 
 ```javascript
 import {foo} from './myModule.wasm';
@@ -110,9 +110,9 @@ import {foo} from './myModule.wasm';
 
 
 
-# An Example
+## An Example
 
-## Windows Emscripten SDK Installation
+### Windows Emscripten SDK Installation
 
 [Install the Emscripten SDK](https://emscripten.org/docs/getting_started/downloads.html)
 
@@ -124,7 +124,7 @@ cd emsdk
 emsdk_env.bat
 ```
 
-## An Application
+### An Application
 
 Your original, mega complex C application `HelloWorld.c`  
 ```c

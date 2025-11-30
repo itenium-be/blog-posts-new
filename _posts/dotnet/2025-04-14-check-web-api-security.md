@@ -42,7 +42,7 @@ version, with some possible variations.
 
 <!--more-->
 
-# TL&DR
+## TL&DR
 
 ```csharp
 Type[] controllerTypes = typeof(YourController).Assembly.GetTypes()
@@ -88,12 +88,12 @@ if (missingAuthActions.Any())
 <!--block1-->
 
 
-# Variations
+## Variations
 
 Maybe you want to remove the code allowing `[AllowAnonymous]` or something...
 
 
-## Finding the Controllers
+### Finding the Controllers
 
 The code above checks for the presence of `[ApiController]` but your mileage may vary:
 
@@ -108,7 +108,7 @@ The code above checks for the presence of `[ApiController]` but your mileage may
 .Where(t => t.Name.Contains("Controller"))
 ```
 
-## NotImplementedException
+### NotImplementedException
 
 In a blatant violation of the [Interface Segregation Principle (ISP)](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 some of our controllers implemented an interface but only implemented a few of the methods, with all others just doing a:
@@ -147,12 +147,12 @@ public static bool MethodThrowsNotImplementedException(MethodInfo method)
 }
 ```
 
-# Minimal APIs
+## Minimal APIs
 
 We're not using minimal APIs but for the sake of completeness, here is the code
 to check the same thing:
 
-## Program.cs
+### Program.cs
 
 Here we need to check if either `RequireAuthorization` or `AllowAnonymous` fluent
 methods were called for each endpoint.
@@ -174,7 +174,7 @@ public partial class Program { }
 #endif
 ```
 
-## The Test
+### The Test
 
 ```csharp
 var factory = new WebApplicationFactory<Program>().WithWebHostBuilder(builder =>

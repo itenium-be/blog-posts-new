@@ -41,7 +41,7 @@ Which is basically on equal footing with EPPlus.
 <hr>
 <br>
 
-# That's fine!
+## That's fine!
 
 Quick tutorial about creating xlsx Excels with
 C# and the [EPPlus nuget package][epplus-nuget].
@@ -63,7 +63,7 @@ Quickstart
 ==========
 
 
-## Without license
+### Without license
 
 {% include github-stars.html url="JanKallman/EPPlus" desc="The free one" %}
 
@@ -72,7 +72,7 @@ Install-Package EPPlus -Version 4.5.3.3
 ```
 
 
-## With license
+### With license
 
 {% include github-stars.html url="EPPlusSoftware/EPPlus" desc="The not so free one" %}
 
@@ -92,7 +92,7 @@ Key stored in `EPPlus:ExcelPackage.LicenseContext`.
 
 
 
-## Usage
+### Usage
 
 ```c#
 using OfficeOpenXml;

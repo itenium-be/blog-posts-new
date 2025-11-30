@@ -42,11 +42,11 @@ without having to worry about introducing new bugs.
 The tests are your safety net you want to rely on!
 
 
-# When
+## When
 
 There are actually many cases where you want to do this:
 
-## Legacy Singletons
+### Legacy Singletons
 
 > **The Legacy Code Dilemma**  
 > When we have to change code, we should have tests in place.<br>
@@ -67,7 +67,7 @@ public class Singleton
 <!--block1-->
 
 
-### Refactored Testable Singleton
+#### Refactored Testable Singleton
 
 We introduce an interface, mimicking the original API
 and provide an `internal` setter so that we can substitute
@@ -89,7 +89,7 @@ public class Singleton : ISingleton
 }
 ```
 
-## Limiting the API surface
+### Limiting the API surface
 
 Inside project X you have some helper classes/functions, a few Extension Methods,
 or maybe part of your startup code has some logic in it.
@@ -102,7 +102,7 @@ You don't want to make them public, but obviously you do want to write tests
 for them!
 
 
-## When Not
+### When Not
 
 ```c#
 public class Calculator
@@ -134,12 +134,12 @@ to change the sub-parts. Worse, if the requirements change,
 going to endure anyway rather than rewrite all those tests...
 
 
-# How
+## How
 
 This blog post was supposed to be just this but, well,
 I got carried away...
 
-## Old Legacy Project Format
+### Old Legacy Project Format
 
 Create an `AssemblyInfo.cs` class and add:
 
@@ -149,7 +149,7 @@ using System.Runtime.CompilerServices;
 ```
 
 
-## New SDK-Style Project Format
+### New SDK-Style Project Format
 
 Add to the `csproj` file:
 
@@ -162,7 +162,7 @@ Add to the `csproj` file:
 ```
 
 
-# Summary
+## Summary
 
 I could easily remember the `AssemblyInfo` version but
 the `csproj` one... not so much.

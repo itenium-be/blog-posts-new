@@ -36,7 +36,7 @@ for  of all the functions as UnitTests.
 
 <!--more-->
 
-# Basics
+## Basics
 
 Add a formula with:  
 
@@ -57,7 +57,7 @@ A few ClosedXML specific gotchas:
 <!--block1-->
 
 
-# String manipulation
+## String manipulation
 
 All string indexes start from 1.
 
@@ -81,7 +81,7 @@ All string indexes start from 1.
 {: .table-code}
 
 
-# Numbers & Math
+## Numbers & Math
 
 | Function                                        | Meaning                                   
 |-------------------------------------------------|-------------------------------------------
@@ -107,7 +107,7 @@ All string indexes start from 1.
 | AVERAGEIFS(avg_range, range1, crit1, ...)       | Not implemented
 {: .table-code}
 
-## CountIf, SumIf, AverageIf
+### CountIf, SumIf, AverageIf
 
 Criteria possibilities for these xxxIF functions:
 
@@ -119,7 +119,7 @@ Criteria possibilities for these xxxIF functions:
 - `"cat*"`: 0..x wildcard
 
 
-## Real mathy
+### Real mathy
 
 | Function                                 | Meaning                                   
 |------------------------------------------|-------------------------------------------
@@ -140,7 +140,7 @@ And then a whole bunch like:
 - MEDIAN, STDEV, RANK, VAR
 
 
-## SUBTOTAL
+### SUBTOTAL
 
 SUBTOTAL(9,...), as apposed to using SUM directly, will not include other subtotals in the calculation.
 
@@ -166,7 +166,7 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-# Date & Time
+## Date & Time
 
 | Function                                    | C# / Info                                 
 |---------------------------------------------|-------------------------------------------
@@ -193,7 +193,7 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-# Boolean logic
+## Boolean logic
 
 | Function                                 | Meaning                                         
 |------------------------------------------|-------------------------------------------------
@@ -206,7 +206,7 @@ Filtered-out rows are always excluded.
 | TRUE(), FALSE()                          | True/False values
 {: .table-code}
 
-## Or, And, Not
+### Or, And, Not
 
 ```vb
 ' Check if cell is blank

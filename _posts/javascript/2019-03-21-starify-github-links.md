@@ -54,21 +54,21 @@ on Github itself and on Package Manager registries.
 <!--block1-->
 
 
-# More Examples
+## More Examples
 
-## Google Search Results
+### Google Search Results
 
 {% include post/image.html file="starify-github-links-google-results.png" alt="" title="" desc="" %}
 
 
-## Github Awesome List
+### Github Awesome List
 
 {% include post/image.html file="starify-github-links-github-awesome-list.png" alt="" title="" desc="" %}
 
 
 
 
-# Source
+## Source
 
 Fork the project and modify the source if you want different behavior because... Well there isn't
 some sort of settings page :)

@@ -46,9 +46,9 @@ added to the `imports` array of a standalone component.
 
 <!--more-->
 
-# @if
+## @if
 
-## Old Syntax
+### Old Syntax
 
 Need to import `NgIf` from `@angular/common`.
 
@@ -61,7 +61,7 @@ Need to import `NgIf` from `@angular/common`.
 </ng-template>
 ```
 
-## New Syntax
+### New Syntax
 
 ```html
 @if(boolVar) {
@@ -75,9 +75,9 @@ Need to import `NgIf` from `@angular/common`.
 <!--block1-->
 
 
-# @for
+## @for
 
-## Old Syntax
+### Old Syntax
 
 Need to import `NgFor` from `@angular/common`. 
 
@@ -102,7 +102,7 @@ trackElFn(index: number, el: T) {
 ```
 
 
-## New Syntax
+### New Syntax
 
 The track is mandatory in the new syntax.
 
@@ -112,9 +112,9 @@ The track is mandatory in the new syntax.
 }
 ```
 
-# @switch
+## @switch
 
-## Old Syntax
+### Old Syntax
 
 Need to import `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` from `@angular/common`.
 
@@ -126,7 +126,7 @@ Need to import `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` from `@angular/c
 </div>
 ```
 
-## New Syntax
+### New Syntax
 
 ```html
 @switch(randomNumber) {
@@ -136,9 +136,9 @@ Need to import `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` from `@angular/c
 }
 ```
 
-# @let
+## @let
 
-## Old Syntax
+### Old Syntax
 
 This was previously not possible out of the box but the
 same could be achieved with an `ngIf`:
@@ -150,7 +150,7 @@ same could be achieved with an `ngIf`:
 ```
 
 
-## New Syntax
+### New Syntax
 
 Don't forget the ending `;`!
 

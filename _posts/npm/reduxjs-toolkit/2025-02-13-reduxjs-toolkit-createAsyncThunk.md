@@ -66,7 +66,7 @@ This dispatches the following actions (from the first "Type" argument):
 Check [Promise Lifecycle Actions](https://redux-toolkit.js.org/api/createAsyncThunk#promise-lifecycle-actions)
 for the exact signatures of the pending/rejected/fulfilled actions.
 
-# Reduce It
+## Reduce It
 
 ```ts
 const mySlice = createSlice({
@@ -92,17 +92,17 @@ const mySlice = createSlice({
 <!--block1-->
 
 
-# Parameters
+## Parameters
 
 ```ts
 createAsyncThunk(Type, PayloadCreator, [Options]);
 ```
 
-## 1. Type
+### 1. Type
 
 A string that will be prepended with the three states and dispatched as they happen.
 
-## 2. PayloadCreator
+### 2. PayloadCreator
 
 ```ts
 async (params, thunkApi) => {}
@@ -117,7 +117,7 @@ async (params, thunkApi) => {}
   - `signal`: [AbortController.signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal) when you want to implement cancellation (see [Cancellation](https://redux-toolkit.js.org/api/createAsyncThunk#cancellation))
   - `rejectWithValue(value; [meta])` and `fulfillWithValue(value, [meta])`: or just throw/return!
 
-## 3. Options
+### 3. Options
 
 An option object that can contain:
 
@@ -128,7 +128,7 @@ An option object that can contain:
 - `getPendingMeta`: merge extra data into `pendingAction.meta`
 
 
-# Unwrapping
+## Unwrapping
 
 `createAsyncThunk` always returns a resolved promise, even if it was rejected.
 To get the actual contents, `.unwrap()` it!
@@ -140,7 +140,7 @@ dispatch(fetchStuff({id: 42}))
   .catch(error => {})
 ```
 
-# Matchers
+## Matchers
 
 We already saw the `fetchStuff.settled` (for handling fulfilled or rejected) matcher above but there
 are [other ways](https://redux-toolkit.js.org/api/matching-utilities#createasyncthunk-specific-matchers)
@@ -179,7 +179,7 @@ const mySlice = createSlice({
 ```
 
 
-# Reducer Creator
+## Reducer Creator
 
 This alternative `reducers` creation allows you to add thunks
 without having to revert to `extraReducers`.

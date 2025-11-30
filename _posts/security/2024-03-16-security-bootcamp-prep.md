@@ -47,7 +47,7 @@ that and other vulnerabilities such as: XSS, CSRF, OWASP, ...
 Statements in this blog that have a 😉 emoji, ignore at your own peril 😉
 
 
-# API Key
+## API Key
 
 **GUARD YOUR API KEY WITH YOUR LIFE**
 
@@ -61,14 +61,14 @@ If you do not have an API key, contact one of the game admins.
 <!--block1-->
 
 
-## Teams
+### Teams
 
 **Divide & Conquer**
 
 It's possible to play in a team!
 
 
-# Start Playing
+## Start Playing
 
 At the start of the conference we will communicate how to:
 
@@ -80,7 +80,7 @@ which will generate a JWT token used for authentication.
 
 
 
-# Setting The Stage
+## Setting The Stage
 
 **BREAKING NEWS**:
 All MITechCon sessions STOLEN, mere days before the conference start!
@@ -92,18 +92,18 @@ had insufficient material of their own).
 But don't panic just yet, there is hope still: our hacker liaison discovered {{page.competitor.company}} has scheduled a major portal migration on {{page.ctf-date.start}}. We managed to secure migration API keys, which will enable us to infiltrate their portal and, with some clever hacking, retrieve our beloved zip.
 
 
-# Your Tools
+## Your Tools
 
-## Hardware
+### Hardware
 
 **Bring your own ethernet cable and make sure your laptop has an ethernet port!**
 
 You do not want to perform a brute force attack on wifi, trust us.
 
 
-## Software
+### Software
 
-### Hardcore
+#### Hardcore
 
 You are a seasoned hacker or really want to dive into this.
 
@@ -114,7 +114,7 @@ You are a seasoned hacker or really want to dive into this.
 You can install this on Windows!
 
 
-### Docker
+#### Docker
 
 There is a Docker image for pretty much all the tools you'll need.
 
@@ -131,7 +131,7 @@ docker pull rediscommander/redis-commander
 docker pull jrottenberg/ffmpeg
 ```
 
-### Manual Install
+#### Manual Install
 
 - [Postman](https://www.postman.com/downloads/): fabricating requests is necessary for certain hacks!
 - Database tools: [Compass][compass] (mongo), [HeidiSQL][heidisql] (mysql), [AnotherRedisDesktopManager][redis] (redis)
@@ -148,13 +148,13 @@ docker pull jrottenberg/ffmpeg
 [metasploit]: https://www.metasploit.com/download
 
 
-## Tools
+### Tools
 
 See "ALSO IN THIS SERIES" for our specific blog posts on
 using nmap, hydra and sqlmap.
 
 
-### Chrome Dev Tools
+#### Chrome Dev Tools
 
 Open Dev Tools with **F12**.  
 The following tabs will be interesting for the bootcamp:
@@ -181,9 +181,9 @@ You could also monitor network traffic with a tool like
 or [Wireshark](https://www.wireshark.org/download.html)
 
 
-# The Game
+## The Game
 
-## The Portal
+### The Portal
 
 If you are unsure how to get started
 
@@ -192,7 +192,7 @@ If you are unsure how to get started
     - Visit the "Hacks Overview" page from the portal for extra tips
 - Run an `nmap` scan on the server the Portal is served from to discover more
 
-## In-Game Blogs
+### In-Game Blogs
 
 As part of the Security Bootcamp, two (vulnerable) Wordpress
 blogs are spun up, visit them from the Portal for more useful information:
@@ -202,7 +202,7 @@ blogs are spun up, visit them from the Portal for more useful information:
 **The Security Audit Blog** contains clues for the treasure hunts.
 
 
-## The Flags
+### The Flags
 
 Just performing a certain hack does not score points,
 you have to locate the flag that is revealed by the hack.
@@ -223,7 +223,7 @@ Other things that score points:
 Check the blog post in The Hacker's Toolkit Blog in-game for more info!
 
 
-## The Vault
+### The Vault
 
 The Vault is where {{page.competitor.ceo}} has hidden our precious zip. 
 It is the end game and will open on {{page.ctf-date.vault}}.  

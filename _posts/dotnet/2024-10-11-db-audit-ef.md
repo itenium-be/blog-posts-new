@@ -42,7 +42,7 @@ can be found at the Github repository.
 
 <!--more-->
 
-# Option 1: Created & Modified By/On Triggers
+## Option 1: Created & Modified By/On Triggers
 
 Each table has 4 extra columns to keep track of by who/when the record was created
 and by who/when the record was last updated. Obviously little EF code is needed for
@@ -102,7 +102,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 ```
 
-## UseSqlOutputClause(false)
+### UseSqlOutputClause(false)
 
 Required for all tables that have triggers [since EF Core 7](https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-7.0/breaking-changes?tabs=v7#sqlserver-tables-with-triggers):
 
@@ -114,7 +114,7 @@ This reverts the behavior of EF back to that of older versions of EF, a less per
 way of capturing the generated Ids during insertion.
 
 
-## Pros vs Cons
+### Pros vs Cons
 
 ✅ All changes to the table are captured, not just those done by the application  
 ⚠️ Changes made by the application are typically all done with the same database user, not the actual user  
@@ -123,11 +123,11 @@ way of capturing the generated Ids during insertion.
 
 
 
-# Option 2: Created & Modified By/On by EF
+## Option 2: Created & Modified By/On by EF
 
 Doing exactly the same thing but this time we let EF do the heavy lifting.
 
-## Abstraction: UserProvider
+### Abstraction: UserProvider
 
 EF somehow needs to know who the current user is, so let's create a little abstraction
 and inject the correct implementation depending on the runtime context.
@@ -158,7 +158,7 @@ public class MyDbContextFactory : IDesignTimeDbContextFactory<MyDbContext>
 }
 ```
 
-## Abstraction: Audit Owned Entity
+### Abstraction: Audit Owned Entity
 
 By having all our entities implement `IAudit` we can configure the `Audit` [ValueObject](https://martinfowler.com/bliki/ValueObject.html)
 for all our entities as an [Owned entity](https://learn.microsoft.com/en-us/ef/core/modeling/owned-entities).
@@ -183,7 +183,7 @@ public class Audit
 ```
 
 
-## The DbContext Implementation
+### The DbContext Implementation
 
 ```c#
 public class MyDbContext(IUserProvider userProvider) : DbContext
@@ -253,7 +253,7 @@ also contains code where the `Audit` only has getters and everything is set usin
 reflection.
 
 
-## Pros vs Cons
+### Pros vs Cons
 
 ✅ Captures the actual user that made the request  
 ⚠️ Changes done directly in the database are not tracked  
@@ -261,7 +261,7 @@ reflection.
 
 
 
-# Option 3: Separate Audit Table with Trigger
+## Option 3: Separate Audit Table with Trigger
 
 We create a separate table and track all changes to all our tables with a trigger.
 
@@ -311,7 +311,7 @@ This inserts XML with the changes in Audit.OldValues & NewValues.
 If you want to use this approach for many tables, you probably want to abstract this in a function or something 😉
 
 
-## Pros vs Cons
+### Pros vs Cons
 
 ✅ All changes to the table are captured, not just those done by the application  
 ✅ This approach keeps track of all modifications  
@@ -321,12 +321,12 @@ If you want to use this approach for many tables, you probably want to abstract 
 
 
 
-# Option 4: Separate Audit Table with EF
+## Option 4: Separate Audit Table with EF
 
 We do exactly the same but with EF doing the heavy lifting.
 The Old/NewValues are stored as JSON, not as XML.
 
-## Abstraction: IId
+### Abstraction: IId
 
 We need to get the db ID to insert it into the Audit table!  
 All entities have to implement this interface.
@@ -339,7 +339,7 @@ public interface IId
 ```
 
 
-## The DbContext Implementation
+### The DbContext Implementation
 
 
 ```c#
@@ -441,7 +441,7 @@ If you are doing EventSourcing, you already have this.
 It also allows you to implement this in different ways.
 
 
-## Pros vs Cons
+### Pros vs Cons
 
 ✅ This approach keeps track of all modifications  
 ✅ Captures the actual user that made the request  
@@ -449,7 +449,7 @@ It also allows you to implement this in different ways.
 
 
 
-# Conclusion
+## Conclusion
 
 It depends? 🤷  
 

@@ -43,7 +43,7 @@ all your actions as they are now defined by the reducers!
 
 <!--more-->
 
-# createSlice
+## createSlice
 
 ```ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
@@ -106,7 +106,7 @@ export const { selectTodo } = todoSlice.selectors;
 <!--block1-->
 
 
-## Dispatching an action
+### Dispatching an action
 
 See [Part 5: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})
 for how to create the `useAppDispatch` hook.
@@ -122,7 +122,7 @@ const TodoAdd = () => {
 ```
 
 
-# configureStore
+## configureStore
 
 Once you've defined some slices, time to combine them into your store.
 
@@ -175,7 +175,7 @@ anything, this will also setup the must have
 This can be overriden/configured by passing `devTools: false | DevToolsOptions` to `configureStore`.
 
 
-## Middleware
+### Middleware
 
 The [redux-thunk](https://github.com/reduxjs/redux-thunk) middleware is added by default,
 since you are going to be doing some http calls 😊
@@ -229,7 +229,7 @@ configureStore({
 });
 ```
 
-### Custom Middleware
+#### Custom Middleware
 
 Some ready made redux middlewares:
 
@@ -269,7 +269,7 @@ If you need to modify middleware after store creation, you can do so with [creat
 currently recommends using instead of using something like [`redux-saga`](https://github.com/redux-saga/redux-saga) or `redux-observable`.
 
 
-## Enhancers
+### Enhancers
 
 Middleware is added to the store by the [`applyMiddleware`](https://redux.js.org/api/applymiddleware)
 enhancer. Enhancers are the most powerful extension method available in Redux and it's unlikely
@@ -285,7 +285,7 @@ The by default added enhancers are DevTools
 and [autoBatchEnhancer](https://redux-toolkit.js.org/api/autoBatchEnhancer).
 
 
-### Middleware vs Enhancers
+#### Middleware vs Enhancers
 
 | Feature                      | Middleware   | Store Enhancer |
 |------------------------------|--------------|----------------|

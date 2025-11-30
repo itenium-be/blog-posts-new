@@ -40,7 +40,7 @@ an excel, leverage the power of Excel formulas.
 
 <!--more-->
 
-# Formulas
+## Formulas
 
 [The project code][github-project] creates an Excel like this:
 
@@ -95,13 +95,13 @@ workbook.SaveAs("file.xlsx", new SaveOptions() {EvaluateFormulasBeforeSaving = t
 ```
 
 
-## Support
+### Support
 
 - [Supported Functions](https://github.com/closedxml/closedxml/wiki/Evaluating-Formulas#supported-functions)
 - [Graphical representation of function evaluation](https://docs.closedxml.io/en/latest/concepts/function-evaluation.html#id1)
 
 
-## SUBTOTAL
+### SUBTOTAL
 
 SUBTOTAL(9,...), as opposed to using SUM directly, will not include other subtotals in their calculation.
 
@@ -127,9 +127,9 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-# DataValidation
+## DataValidation
 
-## Dropdownlists
+### Dropdownlists
 
 ```c#
 using var workbook = new XLWorkbook();
@@ -154,7 +154,7 @@ validation.ShowInputMessage = true;
 validation.IgnoreBlanks = true;
 ```
 
-## Number & DateTime validation
+### Number & DateTime validation
 
 ```c#
 using var workbook = new XLWorkbook();

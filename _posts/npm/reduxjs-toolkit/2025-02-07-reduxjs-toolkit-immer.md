@@ -45,7 +45,7 @@ Awards!? 🏆🥇
 
 <!--more-->
 
-# Redux Bugs
+## Redux Bugs
 
 Redux bugs are almost always cases where you didn't quite spread enough and/or did
 an accidental mutation of the state.
@@ -57,9 +57,9 @@ don't know you're using immer until you inspect the type and see `WritableDraft<
 <!--block1-->
 
 
-# Example
+## Example
 
-## Without Immer
+### Without Immer
 
 Do you really want to be doing this...
 
@@ -84,7 +84,7 @@ function reducerSpreadHell(state, action) {
 One could argue that you should be normalizing your store instead of
 writing reducers like that, and you'd be right.
 
-## With Immer
+### With Immer
 
 Still, with immer, all that becomes just this:
 
@@ -92,7 +92,7 @@ Still, with immer, all that becomes just this:
 state.first.second[action.someId].fourth = action.someValue;
 ```
 
-# Immer Reducers
+## Immer Reducers
 
 You'd write them as if you just didn't care about immutability!
 
@@ -134,11 +134,11 @@ reducers: {
 },
 ```
 
-## Caveats
+### Caveats
 
 There are some caveats like using `current()` when you want to look at the state.
 
-### Replacing the entire state
+#### Replacing the entire state
 
 As in the case of removeTodo, you cannot completely replace `state`.
 
@@ -156,7 +156,7 @@ removeTodo: (state, action: PayloadAction<number>) => {
 }
 ```
 
-### Reducers without curly braces
+#### Reducers without curly braces
 
 Use `void` for your one-liner reducers:
 
@@ -172,7 +172,7 @@ addTodo: (state, action: PayloadAction<Todo>) => {
 }
 ```
 
-### Primitives cannot be wrapped
+#### Primitives cannot be wrapped
 
 If you extract a primitive value (number, bool, string) from the state
 and then manipulate it, you're no longer working with a WritableDraft
@@ -190,7 +190,7 @@ addMessage: (state, action: PayloadAction<any>) => {
 ```
 
 
-# Under the hood
+## Under the hood
 
 Immer's bread and butter is the `produce(baseState, recipe)` function.
 It takes your `baseState`, wraps it in a `WritableDraft` and
@@ -205,7 +205,7 @@ so this has been abstracted away for us.
 ![The immer flow]({{ "/assets/blog-images/reduxjs-toolkit-immer-flow.png" | relative_url }} "The immer flow"){: .img-responsive}
 
 
-## Produce Example
+### Produce Example
 
 Small code example to illustrate how `produce` works.
 In the accompanying git repository, the code is a bit more involved and includes tests
@@ -242,7 +242,7 @@ const reducerTastyPizza = (state: PizzaState, action: UpdatePizzaTopping) => {
 }
 ```
 
-# Outside of ReduxJS/Toolkit
+## Outside of ReduxJS/Toolkit
 
 Immer can be useful even if you are not using ReduxJS/Toolkit. Or
 just outside your reducers -- you already have the dependency anyway!
@@ -255,7 +255,7 @@ const [text, setText] = useState("");
 // If you've got 10 properties, then 10x useState???
 ```
 
-## Nimmer!
+### Nimmer!
 
 ```ts
 import { produce } from "immer";
@@ -298,7 +298,7 @@ return (
 )
 ```
 
-## useImmer
+### useImmer
 
 But of course there is a package for that!
 

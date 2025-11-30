@@ -38,7 +38,7 @@ redirect_from: /blog/productivity/robocode-installation/
 
 <!--more-->
 
-# Install Robocode
+## Install Robocode
 
 Prerequisites:  
 - [Java JDK 6+](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -54,9 +54,9 @@ If you get a _"'java' is not recognized as an internal or external command"_, th
 <!--block1-->
 
 
-# Building a Robot
+## Building a Robot
 
-## In the Robocode UI
+### In the Robocode UI
 
 Robot > Source Editor (Control + E) > New Robot (Control + N)
 
@@ -96,7 +96,7 @@ Extend either `Robot` or `AdvancedRobot`. An AdvancedRobot:
 When you are ready for battle, use: Compiler > Compile (Control + B) in the Source Editor.
 
 
-## In Eclipse
+### In Eclipse
 
 New Project:  
 - Libraries > Add External JARs...: Add `libs/robocode.jar`.
@@ -108,13 +108,13 @@ Be sure your final robot is [packaged](http://robowiki.net/wiki/Robocode/Package
 A `*` appears in-game next to a robot's name if it is a development version.
 
 
-#### Robocode UI
+##### Robocode UI
 
 Add the project's `bin` folder in the Robocode UI:  
 Options > Preferences > Development Options > Add  
 
 
-### Debugging
+#### Debugging
 
 Run as > Run configurations > Java Application
 
@@ -126,7 +126,7 @@ Do not point to a Robocode directory where the .NET plug-in is also installed!
 
 
 
-## In Visual Studio
+### In Visual Studio
 
 Download the [.NET plug-in for Robocode](https://sourceforge.net/projects/robocode/files/robocode/1.9.3.3/) 
 and **install in the same directory as Robocode itself**!
@@ -135,7 +135,7 @@ Create a .NET Framework project and reference `libs\robocode.dll`.
 See [`dotnet-bots`](https://github.com/itenium-be/Robocode) for a minimal example. 
 
 
-#### Robocode UI
+##### Robocode UI
 
 Add the `bin\Debug` folder in the Robocode UI:  
 Options > Preferences > Development Options > Add  
@@ -143,7 +143,7 @@ Options > Preferences > Development Options > Add
 [Wiki](http://robowiki.net/wiki/Robocode/.NET/Create_a_.NET_robot_with_Visual_Studio)
 
 
-### Debugging
+#### Debugging
 
 Project > Properties > Debug:  
 - Start external program: `C:\Program Files\Java\jdk1.8.0_211\bin\java.exe`
@@ -159,14 +159,14 @@ Be sure your final robot is a `Release` build!
 
 
 
-# More Debugging
+## More Debugging
 
 Start Robocode UI in debug mode:  
 `java -Ddebug=true -Xmx512M ...`  
 Find the CLI arguments in `robocode.bat`.
 
 
-#### Robot Console
+##### Robot Console
 
 See `out.println()` (or `Console.WriteLine()`) in your robot log by clicking on your robot name in the right top battle
 view pane in the UI. SYSTEM events and crash stack traces will also be printed in the robot console.

@@ -27,7 +27,7 @@ environment but when you do have to revert to modifying a committed configuratio
 "git assume unchanged" to avoid committing your changes in these files accidentally.
 
 
-# Assume Unchanged
+## Assume Unchanged
 {: .hide-from-excerpt}
 
 
@@ -41,7 +41,7 @@ git update-index --no-assume-unchanged fileName
 
 <!--more-->
 
-## Aliases
+### Aliases
 
 But who can remember that...  
 Some handy git aliases without `update-index` nightmarish syntax to be put in your `~/.gitconfig`:
@@ -77,7 +77,7 @@ One of our other projects [Git-NumberedAdd](/blog/productivity/git-numbered-add-
 indexes instead of filenames.
 
 
-# Skip Worktree
+## Skip Worktree
 
 I've always used assume unchanged but apparently `--skip-worktree` would be a superior
 solution for changes in configuration files because it retains the `S` flag (as seen with `git ls-files -v`)
@@ -90,7 +90,7 @@ git update-index --skip-worktree fileName
 git update-index --no-skip-worktree fileName
 ```
 
-## Aliases
+### Aliases
 
 ```ini
 [alias]

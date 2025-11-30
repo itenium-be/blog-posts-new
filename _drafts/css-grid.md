@@ -6,12 +6,12 @@ desc: Three part series on CSS Grid
 
 CSSGrid
 =======
-## Internet Exploder
+### Internet Exploder
 
 Supported in IE11 (but not grid-gap and grid-template-areas) + use Autoprefixer (-ms-grid, ...)
 
 
-## Basic Syntax
+### Basic Syntax
 
 ```scss
 .container {
@@ -31,13 +31,13 @@ Supported in IE11 (but not grid-gap and grid-template-areas) + use Autoprefixer 
 ```
 
 
-## Templates
+### Templates
 
-### Fixed rows/columns
+#### Fixed rows/columns
 
 Use `grid-template-columns` and `grid-template-rows`
 
-### Areas  
+#### Areas  
 
 ```scss
 .container{
@@ -82,7 +82,7 @@ The different areas are callable by name
 ```
 
 
-## Helpers
+### Helpers
 
 **Fraction units**
 
@@ -211,7 +211,7 @@ place-items: center; /* = align-items: center; + justify-items: center; */
 
 
 
-## Questions
+### Questions
 
 **What do we do when people open the website on a resolution with width smaller than the minimum supported one (1024px)**  
 Current suggestion? __show dialog: not optimized for this resolution__?

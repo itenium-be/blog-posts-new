@@ -33,7 +33,7 @@ Install-Package MongoDB.Driver
 ```
 
 
-# Connection
+## Connection
 
 
 For more examples - as UnitTests - check the [Github source][github-source].

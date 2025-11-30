@@ -36,7 +36,7 @@ toc:
   title: CQRS + CRUD # = 💩
 ---
 
-# A ramble against CQRS
+## A ramble against CQRS
 {: .hide-from-excerpt}
 
 A lot of interesting articles have been published about **Command Query Responsibility Segregation**.
@@ -79,7 +79,7 @@ most of us are working on enterprise applications which are all pretty much CRUD
 So let's explore what usually happens when you use CQRS for a CRUD application...
 
 
-# The CQRS Mayhem
+## The CQRS Mayhem
 
 An often overlooked aspect of design patterns are the `Consequences`:
 
@@ -106,7 +106,7 @@ and are left only with its `Consequences`:
 ![There will be consequences meme]({{ "/assets/blog-images/CQRS-Ramble-Consequences.jpg" | relative_url }} "There will be consequences"){: .img-responsive}
 
 
-## An Explosion of Classes
+### An Explosion of Classes
 
 A create and an update probably save to the same place in the same structure.
 
@@ -123,7 +123,7 @@ Even if you don't want them, you'll probably end up with a package that requires
 So yeah, the amount of types in your application will grow. Dramatically.
 
 
-## An Explosion of Duplication
+### An Explosion of Duplication
 
 Well since it's CRUD you are bound to be doing the exact same thing multiple times. Right.. not exactly the same thing of course,
 there is that one field... in which entity was it again?
@@ -138,7 +138,7 @@ there is that one field... in which entity was it again?
 
 
 
-## Confusion on the frontend
+### Confusion on the frontend
 
 An update screen is usually populated with existing values. You have a different model for
 the Read. So you need to map the Read to the Update model before you can populate the controls...
@@ -170,7 +170,7 @@ to work with just one representation. <small>(each heading should probably have 
 
 
 
-# The Search For Answers
+## The Search For Answers
 
 The search for answers **to the wrong question**:  
 
@@ -185,7 +185,7 @@ Because you want to keep [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_your
 
 
 
-## Domain Inheritance
+### Domain Inheritance
 
 The inevitable happens. In order to somewhat mitigate the maintainability issues
 that arise from applying CQRS when it really shouldn't, inheritance is used so that each
@@ -223,7 +223,7 @@ And 🎉, most maintenance includes exactly that: add this one field, rename tha
 Even in-code class and property documentation needs to be duplicated.
 
 
-## Generic Base Classes
+### Generic Base Classes
 
 The next source of repetition needs to go and so a well intended developer creates generic base classes to avoid
 request handler code duplication.
@@ -262,7 +262,7 @@ unfortunately the IRepository needed it. The TReadModel is first because the
 same order of generic parameters is used in the Read, Update and Delete handlers
 due to some nasty copy paste errors in the past.
 
-#### How to recognize such class
+##### How to recognize such class
 
 - Lot's of generic parameters
 - Zero documentation
@@ -275,7 +275,7 @@ Okay, perhaps I can't be too mad about this one, everyone probably ends up
 with something similar for a CRUD persistence layer using either architecture.
 
 
-# Why would more code even be bad
+## Why would more code even be bad
 
 > The ratio of time spent reading versus writing is well over 10 to 1.  
 > — _Robert C. Martin_
@@ -294,7 +294,7 @@ you'll now spend much more time on what you're already doing most?
 More code === More bugs 😃
 
 
-## Accidental Complexity vs Essential Complexity
+### Accidental Complexity vs Essential Complexity
 
 [Essential Complexity](https://en.wikipedia.org/wiki/No_Silver_Bullet) is driven by
 business needs and cannot be avoided.  
@@ -310,7 +310,7 @@ What did applying CQRS bring to table that starts really paying off months/years
 
 
 
-# Freedom or Enslavement
+## Freedom or Enslavement
 
 For those of you who have not yet noticed, what bothers me most about CQRS is that for everything
 you do, it always means more code, usually in the form of new classes.
@@ -327,7 +327,7 @@ CQRS isn't very good at.
 
 So what is one to do?
 
-## KISS
+### KISS
 
 If the only difference between create and update is the availability of the `id` property,
 instead of literally writing/copying hundreds of lines of code, you can solve the issue
@@ -347,7 +347,7 @@ If there is more to it:
 
 
 
-## A CQRS Rule of Thumb
+### A CQRS Rule of Thumb
 
 An easy to follow checklist to determine if you need CQRS for this upcoming "MetaDataAdmin" project:
 
@@ -363,7 +363,7 @@ If he made 7 radically different wireframes: 2 Creates, 3 Updates and 2 Reads - 
 **THEN**: I suggest you consider CQRS, it might be a good fit.  
 
 
-## Mitigation
+### Mitigation
 
 If despite all this, it is CQRS or the highway:
 
@@ -384,7 +384,7 @@ UnitTest the heck out of those pretty "BaseHandlers" and you'll be fine!
 <small>Or, you know, just abstract it away with a pretty meta-CQRS-CRUD design ;)</small>
 
 
-# Conclusions
+## Conclusions
 
 <!-- !Safely in comment! -->
 <!--   CQRS === The 😈   -->
@@ -394,7 +394,7 @@ UnitTest the heck out of those pretty "BaseHandlers" and you'll be fine!
 If so, will it be helpful to do for all parts of the application and for all entities?
 
 
-## The Cure Is Worse Than The Disease
+### The Cure Is Worse Than The Disease
 
 If you are using CQRS for a CRUDdy app, then you are basically avoiding issues like:
 

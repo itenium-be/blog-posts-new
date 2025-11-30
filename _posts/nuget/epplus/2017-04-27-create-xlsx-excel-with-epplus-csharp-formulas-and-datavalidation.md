@@ -36,7 +36,7 @@ Which is basically on equal footing with EPPlus.
 <hr>
 <br>
 
-# That's fine!
+## That's fine!
 
 In case your users want to continue working with the Excels after generation.
 
@@ -47,7 +47,7 @@ an excel, leverage the power of Excel formulas.
 <!--block1-->
 
 
-# Formulas
+## Formulas
 
 [The project code][github-project] creates an Excel like this:
 
@@ -97,7 +97,7 @@ using (var package = new ExcelPackage())
 }
 ```
 
-## SUBTOTAL
+### SUBTOTAL
 SUBTOTAL(9,...), as opposed to using SUM directly, will not include other subtotals in their calculation.
 
 ```vba
@@ -122,9 +122,9 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-# DataValidation
+## DataValidation
 
-## Dropdownlists
+### Dropdownlists
 
 ```c#
 using (var package = new ExcelPackage())
@@ -154,7 +154,7 @@ using (var package = new ExcelPackage())
 }
 ```
 
-## Integer & DateTime validation
+### Integer & DateTime validation
 
 ```c#
 using (var package = new ExcelPackage())

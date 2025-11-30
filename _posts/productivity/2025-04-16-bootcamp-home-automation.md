@@ -44,7 +44,7 @@ into two parts:
 
 <!--more-->
 
-# Before we begin
+## Before we begin
 
 A word of caution...
 
@@ -54,7 +54,7 @@ A word of caution...
 <!--block1-->
 
 
-# 🏗️🧰 Materials
+## 🏗️🧰 Materials
 
 Because we needed a lot of soldering bouts etc, we asked the consultants if they could bring
 some extra equipment to the bootcamp.
@@ -62,45 +62,45 @@ some extra equipment to the bootcamp.
 {% include post/image.html file="bootcamp-home-automation-materials.jpg" alt="" title="" desc="Mike 'misunderstood' the assignment and we had to bring in HR" maxWidth="500px" %}
 
 
-# The Teams
+## The Teams
 
 After an initial presentation the teams got to work! 
 
 ![The Teams]({{ "/assets/blog-images/bootcamp-home-automation-teams.png" | relative_url }}){: .img-responsive}
 
 
-# 🔥⚡ Smart Socket
+## 🔥⚡ Smart Socket
 
 Creating our own, programmable "smart" socket with HLK-PM01 and ESP01.
 
 {% include post/image.html file="bootcamp-home-automation-socket.jpg" alt="" title="" desc="Completed smart socket assemblage" maxWidth="360px" %}
 
 
-## If it smells like chicken, you're holding it wrong
+### If it smells like chicken, you're holding it wrong
 
 ![If it smells like chicken, you're holding it wrong]({{ "/assets/blog-images/bootcamp-home-automation-soldering-meme.png" | relative_url }})
 
 
 
-# 🏠✨ Smart Houses
+## 🏠✨ Smart Houses
 
 We brought in some "smart houses", packed with all kinds of sensors and connected to the Wifi with
 raspberry pies with the "Home Assistant OS" on them.
 
 {% include post/image.html file="bootcamp-home-automation-houses.png" alt="" title="" desc="Casa Del Lag, The Cloud Cottage, The Overengineered Hut and The Reboot Ranch" maxWidth="800px" %}
 
-## Smart Home Kit
+### Smart Home Kit
 
 {% include post/image.html file="bootcamp-home-automation-smart-home.png" alt="" title="" desc="Smart Home Kit (KS5009) from Keyestudio" maxWidth="400px" %}
 
 
 
-# Work
+## Work
 
 {% include post/image.html file="bootcamp-home-automation-at-work.jpg" alt="" title="" desc="And this is supposed to be fun!?" maxWidth="800px" %}
 
 
-# The End
+## The End
 
 We ended the evening with maybe the most important part, the closing reception with discussions on
 our little IoT adventure ;)  

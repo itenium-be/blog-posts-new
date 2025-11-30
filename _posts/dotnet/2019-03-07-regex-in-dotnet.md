@@ -47,7 +47,7 @@ Its methods may throw a [`RegexMatchTimeoutException`](https://docs.microsoft.co
 <!--block1-->
 
 
-# Creation
+## Creation
 
 ```csharp
 var regex = new Regex(@"\d+", RegexOptions.None);
@@ -65,7 +65,7 @@ var commentedRegex = new Regex(@"
 - `RegexOptions.Singleline`: `.` matches `\n`.
 
 
-# Tes A Match
+## Tes A Match
 
 ```csharp
 Match match = Regex.Match("1-22-333", @"(\d+)-(\d+)-(\d+)(-\d+)?");
@@ -82,7 +82,7 @@ Group fours = match.Groups.Last();
 Assert.False(fours.Success);
 ```
 
-## Multiple Named Matches
+### Multiple Named Matches
 
 ```csharp
 string pattern = @"(?<one>\d+)-(?<two>\d+)";
@@ -104,9 +104,9 @@ Assert.Equal("1", one.Value);
 ```
 
 
-# Replace
+## Replace
 
-#### Basic Usage
+##### Basic Usage
 ```c#
 var regex = new Regex(@"(\d)-(\d+)");
 var result = regex.Replace("1-22", "$1+$2");
@@ -116,7 +116,7 @@ result = Regex.Replace("1", @"(?<amount>\d+)", "$$ ${amount}");
 Assert.Equal("$ 1", result);
 ```
 
-#### Replace with Function
+##### Replace with Function
 ```c#
 string input = "Hello World!";
 string pattern = @"Hello";
@@ -125,7 +125,7 @@ var result = Regex.Replace(input, pattern, (Match m) => $"<b>{m.Value}</b>");
 Assert.Equal("<b>Hello</b> World!", result);
 ```
 
-#### Other Substitutions
+##### Other Substitutions
 - `$&` : entire match
 - ```$```` : before
 - `$'` : after

@@ -24,9 +24,9 @@ Filling in an entire form with predefined values.
 
 <!--more-->
 
-# The Use Case
+## The Use Case
 
-## The Form
+### The Form
 
 Considering the following login form
 ([Html version](/assets/blog-images/autohotkey-login-form.html))
@@ -38,7 +38,7 @@ Considering the following login form
 
 
 
-## The Script
+### The Script
 
 The Autohotkey script:
 
@@ -53,7 +53,7 @@ to fill in the form and submit it.
 <!-- This block exists three times: autohotkey-dyna-run.md, autohotkey-use-case.md and autohotkey-login-form.html -->
 <!-- ATTN: Some slight variations in install instructions!-->
 
-# Autohotkey installation
+## Autohotkey installation
 
 - Download and [install Autohotkey](https://www.autohotkey.com/download) (Pick Autohotkey 1.1)
 - Create a file with the extension **ahk**
@@ -61,7 +61,7 @@ to fill in the form and submit it.
 - Double click your newly created file to activate the hotstring
 - Press **lma** while the cursor is in the email input on [the test page](/assets/blog-images/autohotkey-login-form.html)
 
-## To start with Windows
+### To start with Windows
 
 To start your Autohotkey script with Windows put a file shortcut in your startup folder. 
 
@@ -79,9 +79,9 @@ Usually something like:
 With `your_user_name`: `$env:USERNAME` (PS1) or `%USERNAME%` (CMD)
 
 
-# More info
+## More info
 
-## The Script Explained
+### The Script Explained
 
 <!-- TODO: put link here after writing Autohotkey - Hotstrings tutorial -->
 
@@ -100,7 +100,7 @@ return
 ```
 
 
-## Using a hotkey instead
+### Using a hotkey instead
 
 The same could also be triggered by pressing `Control + Windows + L` for example
 
@@ -113,7 +113,7 @@ return
 See the [blog post on hotkeys](/blog/productivity/autohotkey-hotkeys/) for more hotkey info and possibilities.
 
 
-## Context sensitive
+### Context sensitive
 
 When testing an application, I tend to use a different browser for each user profile so that I do
 not have to logout/login all the time. We could even check the value of `document.title` and use different

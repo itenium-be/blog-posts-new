@@ -56,7 +56,7 @@ and recombining the data efficient is where `createSelector` comes into play.
 
 <!--more-->
 
-# Examples
+## Examples
 
 By convention, selectors are named [`selectThing`](https://redux.js.org/style-guide/#name-selector-functions-as-selectthing):
 
@@ -104,7 +104,7 @@ if one of the inputSelectors returns a different reference.
 
 
 
-## With Parameters
+### With Parameters
 
 Filter the todo list with a needle parameter.
 
@@ -138,7 +138,7 @@ const todos = useSelectTodos(searchNeedle);
 ```
 
 
-### Multiple Parameters
+#### Multiple Parameters
 
 ```ts
 const selectTodos = createSelector(
@@ -152,7 +152,7 @@ const selectTodos = createSelector(
 ```
 
 
-## createSelectorOptions
+### createSelectorOptions
 
 Reselect will only execute the combiner fn when the inputs have changed,
 which is typically your entire root state (with potentially additional parameters)
@@ -165,7 +165,7 @@ Configure this behavior with `argsMemoize(Options)` and `memoize(Options)`.
 If you want to change the default behavior of many/all
 selectors, use [createSelectorCreator](https://reselect.js.org/api/createSelectorCreator).
 
-### lruMemoize
+#### lruMemoize
 
 [`lruMemoize`](https://reselect.js.org/api/lruMemoize)
 (Least Recently Used) was the default before v5 of Reselect.
@@ -200,14 +200,14 @@ export const selectMyTodosCompletedCount = createSelector(
 )
 ```
 
-### weakMapMemoize (default)
+#### weakMapMemoize (default)
 
 [`weakMapMemoize`](https://reselect.js.org/api/weakMapMemoize)
 is the new default since v5 and provides a dynamic cache size
 out of the box.
 
 
-### unstable_autotrackMemoize (experimental)
+#### unstable_autotrackMemoize (experimental)
 
 There is also the experimental [`unstable_autotrackMemoize`](https://reselect.js.org/api/unstable_autotrackMemoize),
 which, like `proxy-memoize` below, can be more efficient.
@@ -231,7 +231,7 @@ const selectTodos = createSelector(
 ```
 
 
-# createSlice
+## createSlice
 
 Common selectors can already be defined in the `createSlice` setup.
 
@@ -255,7 +255,7 @@ const todo = useSelector(state => selectTodo(state, todoId));
 
 
 
-# TypeScript
+## TypeScript
 
 See [ReduxJS/Toolkit: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})
 if you're unsure how to create the `RootState`.
@@ -265,7 +265,7 @@ import { createSelector } from "@reduxjs/toolkit";
 const createAppSelector = createSelector.withTypes<RootState>();
 ```
 
-# Debugging
+## Debugging
 
 {% include github-stars.html url="skortchmark9/reselect-tools" desc="Debugging Tools for Reselect" %}
 
@@ -284,9 +284,9 @@ const meta = {
 ```
 
 
-# Alternatives
+## Alternatives
 
-## proxy-memoize
+### proxy-memoize
 
 {% include github-stars.html url="dai-shi/proxy-memoize" desc="Intuitive magical memoization library with Proxy and WeakMap" %}
 
@@ -317,7 +317,7 @@ For this reason **the ReduxJS/Toolkit officially encourages you to consider usin
 
 
 
-## re-reselect
+### re-reselect
 
 {% include github-stars.html url="toomuchdesign/re-reselect" desc="Enhance Reselect selectors with deeper memoization and cache management." %}
 

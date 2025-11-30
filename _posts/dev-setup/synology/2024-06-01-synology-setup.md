@@ -48,7 +48,7 @@ you know, mere file storage.
 
 <!--more-->
 
-# Initial Setup
+## Initial Setup
 
 Getting started is really easy, after connecting
 your NAS to your local network, navigate to
@@ -69,7 +69,7 @@ Synology conveniently offers you their
 <!--block1-->
 
 
-## Local IP
+### Local IP
 
 Who can remember some random default IP?  
 Control Panel > Connectivity > Network:  
@@ -77,7 +77,7 @@ Control Panel > Connectivity > Network:
 - General > Server name: Remember that your DSM is also available as "serverName:5000"!
 
 
-## External Access
+### External Access
 
 You will want to access your Synology even when not
 on your local network. Signing into a Synology Account
@@ -91,7 +91,7 @@ After that:
   - Enable Heartbeat: Get email notifications when your Synology goes down/back up.
 
 
-## Other options
+### Other options
 
 Some other options you may want to tweak right away:
 
@@ -100,9 +100,9 @@ Some other options you may want to tweak right away:
 
 
 
-# User Setup
+## User Setup
 
-## Passwordless Sign-In
+### Passwordless Sign-In
 
 Configure passwordless sign-in from the <i class="fa fa-user"></i>
 icon at the top right of the DSM and pick "Account" and then
@@ -118,7 +118,7 @@ Some other interesting options there:
   - Control Panel > User & Group > Advanced > Apply password strength rules
 
 
-# SSH
+## SSH
 
 First, activate your `~/` home:  
 Control Panel > File Sharing > User & Group > Advanced > User Home > Enable user home service
@@ -150,7 +150,7 @@ Or start in `services.msc`: OpenSSH Authentication Agent
 
 
 
-## RSA Key Pairs
+### RSA Key Pairs
 
 Who wants to type that password all the time...
 
@@ -184,7 +184,7 @@ Check out [this blog post](https://blog.aaronlenoir.com/2018/05/06/ssh-into-syno
 for more details.
 
 
-## Oh My Bash!
+### Oh My Bash!
 
 The out of the box ssh experience of Synology is ok.
 But we can do better...
@@ -222,27 +222,27 @@ TODO: A separate blog post on Oh My Bash?
 Configuring your own theme:
 Available colors:
 
-# export COLOR_NC='\e[0m' # No Color
-# export COLOR_BLACK='\e[0;30m'
-# export COLOR_GRAY='\e[1;30m'
-# export COLOR_RED='\e[0;31m'
-# export COLOR_LIGHT_RED='\e[1;31m'
-# export COLOR_GREEN='\e[0;32m'
-# export COLOR_LIGHT_GREEN='\e[1;32m'
-# export COLOR_BROWN='\e[0;33m'
-# export COLOR_YELLOW='\e[1;33m'
-# export COLOR_BLUE='\e[0;34m'
-# export COLOR_LIGHT_BLUE='\e[1;34m'
-# export COLOR_PURPLE='\e[0;35m'
-# export COLOR_LIGHT_PURPLE='\e[1;35m'
-# export COLOR_CYAN='\e[0;36m'
-# export COLOR_LIGHT_CYAN='\e[1;36m'
-# export COLOR_LIGHT_GRAY='\e[0;37m'
-# export COLOR_WHITE='\e[1;37m'
+## export COLOR_NC='\e[0m' # No Color
+## export COLOR_BLACK='\e[0;30m'
+## export COLOR_GRAY='\e[1;30m'
+## export COLOR_RED='\e[0;31m'
+## export COLOR_LIGHT_RED='\e[1;31m'
+## export COLOR_GREEN='\e[0;32m'
+## export COLOR_LIGHT_GREEN='\e[1;32m'
+## export COLOR_BROWN='\e[0;33m'
+## export COLOR_YELLOW='\e[1;33m'
+## export COLOR_BLUE='\e[0;34m'
+## export COLOR_LIGHT_BLUE='\e[1;34m'
+## export COLOR_PURPLE='\e[0;35m'
+## export COLOR_LIGHT_PURPLE='\e[1;35m'
+## export COLOR_CYAN='\e[0;36m'
+## export COLOR_LIGHT_CYAN='\e[1;36m'
+## export COLOR_LIGHT_GRAY='\e[0;37m'
+## export COLOR_WHITE='\e[1;37m'
 -->
 
 
-# Package Center
+## Package Center
 
 You probably want to install these packages.
 From the UI because `synopkg` doesn't seem
@@ -259,7 +259,7 @@ but if you want some ready-made packages that
 are not in the official listing, be sure to
 checkout [SynoCommunity](https://synocommunity.com/).
 
-## Cloud Sync
+### Cloud Sync
 
 I created a `/volume1/Dropbox` shared folder for Dropbox:
 
@@ -269,9 +269,9 @@ sudo synoshare --add Dropbox "Dropbox Cloud Sync" /volume1/Dropbox "" "users" ""
 ```
 
 
-## Git
+### Git
 
-### Configuration
+#### Configuration
 
 ```sh
 git config --global user.name ""
@@ -296,7 +296,7 @@ ln -s /volume1/Dropbox/.common.gitconfig ~/.common.gitconfig
 git config --global include.path "~/.common.gitconfig"
 ```
 
-### Github
+#### Github
 
 For private repos and pushing stuff:
 
@@ -311,7 +311,7 @@ Add the SSH Authentication key in [Github Settings](https://github.com/settings/
 
 
 
-## Docker
+### Docker
 
 To avoid having to `sudo docker` everything.
 
@@ -322,13 +322,13 @@ sudo chown root:docker /var/run/docker.sock
 ```
 
 
-## Text Editor
+### Text Editor
 
 It's good for editing a config file here or there
 but also not for much more than that!
 
 
-### Visual Studio Code
+#### Visual Studio Code
 
 In case you don't like VIM 😀
 

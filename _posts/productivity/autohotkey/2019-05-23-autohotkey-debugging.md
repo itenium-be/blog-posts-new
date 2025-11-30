@@ -38,7 +38,7 @@ scripts and tools to help you try make some sense of what is going on.
 
 <!--more-->
 
-# Yunit
+## Yunit
 
 {% include github-stars.html url="Uberi/Yunit" desc="Nothing beats a test runner: Uberi and infogulch created one." %}
 
@@ -50,9 +50,9 @@ Check our [Github README](https://github.com/itenium-be/Yunit) for a screenshot 
 <!--block1-->
 
 
-# Builtin functionality
+## Builtin functionality
 
-## MsgBox
+### MsgBox
 
 MsgBox pauses the current thread so you can use "other debugging tools"
 while displaying something.
@@ -64,7 +64,7 @@ MsgBox aaargh %var%
 MsgBox % var "and" vas
 ```
 
-#### Tooltip
+##### Tooltip
 
 [`Tooltip`](https://autohotkey.com/docs/commands/ToolTip.htm) 
 creates a non-blocking, always-on-top window anywhere on the screen.
@@ -79,7 +79,7 @@ Tooltip [, Text`nMoreText, X, Y, WhichTooltip]
 - WhichTooltip: A number between 1-20 to control multiple tooltips.
 
 
-## Windows
+### Windows
 
 I'll be honest, they are not the prettiest tools in the shed.
 They do come in handy from time to time and 
@@ -93,7 +93,7 @@ are available from the default tray icon menu.
 Scripts to [retrieve and parse the output for these windows](https://www.autohotkey.com/boards/viewtopic.php?f=6&t=9656&p=248727).
 
 
-### Window Spy
+#### Window Spy
 
 Activate scripts only in certain contexts with `IfWinActive`. 
 But how to determine this `ahk_class` thingy?
@@ -113,7 +113,7 @@ utility Window Spy (usually called `AU3_Spy.exe`). It's also available from
 the tray menu.
 
 
-## Warnings
+### Warnings
 
 ```autohotkey
 ; Default: Disable all warnings.
@@ -137,7 +137,7 @@ use [`EnvGet`](https://autohotkey.com/docs/commands/EnvGet.htm)
 environment variables instead.
 
 
-## OutputDebug
+### OutputDebug
 
 ```autohotkey
 OutputDebug, Value of %var%
@@ -148,9 +148,9 @@ Follow `OutputDebug` with, for example DebugView (`Dbgview.exe`)
 from [Sysinternals](https://docs.microsoft.com/en-us/sysinternals/).
 
 
-## Suspension
+### Suspension
 
-### Pause
+#### Pause
 
 [`Pause`](https://www.autohotkey.com/docs/commands/Pause.htm) will toggle the current thread.
 Hotstrings and Hotkeys will still run.
@@ -163,7 +163,7 @@ Hotstrings and Hotkeys will still run.
 ```
 
 
-### Suspend
+#### Suspend
 
 [`Suspend`](https://www.autohotkey.com/docs/commands/Suspend.htm) will enable/disable all hotkeys and hotstrings.
 `A_IsSuspended` contains the script suspension state.
@@ -187,7 +187,7 @@ and a different tray icon is shown when toggled. Nothing is worse as you thinkin
 your code doesn't work as expected when its not even running :)
 
 
-### Exit & ExitApp
+#### Exit & ExitApp
 
 The [`#Persistent`](https://www.autohotkey.com/docs/commands/_Persistent.htm) directive
 will make a script not directly `Exit` after the auto-execute section. `Exit` merely 
@@ -234,9 +234,9 @@ ExitFunc(ExitReason, ExitCode)
 
 
 
-# Custom Scripts
+## Custom Scripts
 
-## Autoreload on save
+### Autoreload on save
 
 Reload the Autohotkey script on save when working on it in your favourite editor.
 
@@ -266,7 +266,7 @@ return
 
 
 
-## InstaHelp
+### InstaHelp
 
 Should your IntelliSense not cut it, open the online docs on the selected Autohotkey keyword with `Capslock + A`.
 If it doesn't match a keyword, google "Autohotkey _selected text_".
@@ -302,7 +302,7 @@ Script to [open Autohotkey.chm instead](https://www.autohotkey.com/docs/scripts/
 
 
 
-## Other
+### Other
 
 [`A_ScriptHwnd`](https://www.autohotkey.com/docs/Variables.htm#ScriptHwnd)
 contains the unique ID (HWND) of the script's hidden main window.

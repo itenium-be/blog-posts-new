@@ -22,7 +22,7 @@ toc:
 ---
 
 
-# Basic Shortcuts
+## Basic Shortcuts
 {: .hide-from-excerpt}
 
 {% include kbd k="F5" l="Start debugging" %}
@@ -52,7 +52,7 @@ Other interesting settings:
 <!--block1-->
 
 
-# Breakpoints
+## Breakpoints
 
 {% include kbd k="Control+Alt+E" l="Control on which exceptions to break with the Exceptions window" %}
 
@@ -77,7 +77,7 @@ Debug.Fail();
 Debug.Assert(true, "Conditional break");
 ```
 
-# Attributes
+## Attributes
 
 - [`DebuggerStepThroughAttribute`][DebuggerStepThroughAttribute]: Makes F11 on a member behave like F10
 - [`DebuggerHiddenAttribute`][DebuggerHiddenAttribute]: Hide the member from the debugger
@@ -88,7 +88,7 @@ put it in a method decorated with the [`ConditionalAttribute("DEBUG")`][Conditio
 
 
 
-# Inspection
+## Inspection
 
 Hover over a variable to see its value. Double click on it to 
 change its value. Override `ToString()` or use the 
@@ -117,7 +117,7 @@ Use this attribute when you need to significantly and fundamentally change the d
 {: .notice--info}
 
 
-## Windows
+### Windows
 
 {% include kbd k="Shift+F9" l="QuickWatch window for variable on cursor (blocking)" %}
 {% include kbd k="Control+Alt+C" l="Call stack window" %}
@@ -125,7 +125,7 @@ Use this attribute when you need to significantly and fundamentally change the d
 {% include kbd k="Control+Alt+A" l="Command window" %}
 
 
-### Locals and Autos
+#### Locals and Autos
 
 Open from menu:  
 - Debug > Windows > Locals
@@ -135,7 +135,7 @@ Can see member return values in the Autos window.
 Text in red: variable value changed since last evaluation.  
 
 
-### Output Window
+#### Output Window
 
 Menu: Debug > Windows > Output  
 Control what is written to the Output Window with Tools > Options > Debugging > Output Window
@@ -147,7 +147,7 @@ Debug.WriteLine("msg");
 Debug.WriteLineIf(false, "msg");
 ```
 
-### Immediate window
+#### Immediate window
 
 {% include kbd k="Control+Alt+I" l="Immediate window" %}
 
@@ -156,7 +156,7 @@ are possible here.
 
 
 
-# Visualizers
+## Visualizers
 
 One of my favourite bloggers, [Phil Haack created the Visual Studio visualizer Encourage](https://haacked.com/archive/2014/06/20/encourage-vs/).
 
@@ -164,7 +164,7 @@ One of my favourite bloggers, [Phil Haack created the Visual Studio visualizer E
 
 
 
-## Plugins
+### Plugins
 
 **ReadableExpressions** ([download](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers))  
 {% include github-stars.html url="agileobjects/ReadableExpressions" desc="Readable views of Expression Trees" %}
@@ -200,15 +200,15 @@ Not open source:
 
 
 
-# New in Visual Studio
+## New in Visual Studio
 
-## Visual Studio 2017
+### Visual Studio 2017
 
 **Run to click**:  
 ![Run to click]({{ "/assets/blog-images/visual-studio-debugging-run-to-click.png" | relative_url }})
 
 
-## Visual Studio 2019
+### Visual Studio 2019
 
 - Promises "significant" performance improvements in stepping
 - Yipiee, they added search to Autos, Locals and Watch windows! (Options > Debugging > Search)

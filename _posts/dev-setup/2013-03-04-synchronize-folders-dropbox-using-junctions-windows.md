@@ -32,7 +32,7 @@ to either directory gets immediately synchronized with Dropbox…
 <!--block1-->
 
 
-# To create a junction.
+## To create a junction.
 
 The first parameter is the directory you want to create, the second parameter is the existing directory you want to link. Windows changes
 the icon of a junction folder to indicate its nature but when you have linked to a Dropbox folder, it is overwritten by the Dropbox
@@ -44,7 +44,7 @@ junction "newlyCreatedJunctionPath" "existingOriginalPath"
 junction "C:\Users\Documents\Dropbox\www" "c:\wamp\www"
 ```
 
-# To list all existing junction points
+## To list all existing junction points
 
 Use `–s` for recursive search and `–q` to stop displaying access denied stuff. Aside from you custom made links this will also display
 a whole bunch of already made junction points related to the current Windows account.
@@ -53,7 +53,7 @@ a whole bunch of already made junction points related to the current Windows acc
 junction -s -q c:\
 ```
 
-# To delete an existing junction.
+## To delete an existing junction.
 
 Deleting an entire junction folder will keep the original directory intact. So it's probably easier to just delete the junction point in Explorer.
 If you want to get rid of everything, merely deleting the original directory will leave the junction "hanging".

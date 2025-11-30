@@ -38,7 +38,7 @@ package-versions:
 
 {% include github-stars.html url="vuejs/vue" desc="Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." %}
 
-#### Why Vue
+##### Why Vue
 
 - `100k+ ⭐`: So many people can't be wrong
 - Declarative rendering with a cool, terse syntax
@@ -53,7 +53,7 @@ package-versions:
 <!--more-->
 
 
-#### Official Projects
+##### Official Projects
 {% include github-stars.html url="vuejs/vue-router" desc="The official router for Vue.js. " %}
 {% include github-stars.html url="vuejs/vuex" desc="Centralized State Management for Vue.js." %}
 {% include github-stars.html url="vuejs/vue-cli" desc="Standard Tooling for Vue.js Development" %}
@@ -64,12 +64,12 @@ package-versions:
 <!--block1-->
 
 
-# Hello Vue
+## Hello Vue
 
 [HelloVue.html source]({{ 'assets/blog-assets/vue-HelloVue.html' | relative_url}})
 {: .title-url}
 
-#### Html
+##### Html
 ```html
 {% raw %}<script src="https://unpkg.com/vue"></script>
 
@@ -116,7 +116,7 @@ package-versions:
 </div>{% endraw %}
 ```
 
-#### JavaScript
+##### JavaScript
 ```javascript
 const vm = new Vue({
     el: '#app',
@@ -146,12 +146,12 @@ console.log('Modify data directly from the console with `vm.product = "Shoes";`'
 ```
 
 
-# Templates
+## Templates
 
 [Interpolations guide](https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation)
 {: .title-url}
 
-#### Displaying values:  
+##### Displaying values:  
 ```html
 {% raw %}<h1>{{ name.toUpperCase() }}</h1>
 <p v-text="name"></p>
@@ -160,7 +160,7 @@ console.log('Modify data directly from the console with `vm.product = "Shoes";`'
 
 
 
-#### Computed Properties
+##### Computed Properties
 Prefer `computed` properties over doing string formatting in the templates directly
 as they will only be re-evaluated when a relevant dependency changes.
 
@@ -180,7 +180,7 @@ new Vue({
 ```
 
 
-## Attributes
+### Attributes
 
 [Attributes guide](https://vuejs.org/api/built-in-directives.html#v-bind)
 {: .title-url}
@@ -195,7 +195,7 @@ Evaluated should return a bindable property or `null`.
 
 Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 
-#### :style
+##### :style
 ```html
 :style="{fontSize: '13px'}"
 :style="{'font-size': styles.size}"
@@ -207,7 +207,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 - Vendor prefixes are added automatically
 - Can combine html `style` and Vue `:style` attributes.
 
-#### :class
+##### :class
 ```html
 :class="'btn' + btn.type"
 :class="[cond ? 'active' : '']"
@@ -217,7 +217,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 
 [Conditional Rendering guide](https://vuejs.org/guide/essentials/conditional.html#conditional-rendering)
 {: .title-url}
-## Conditions
+### Conditions
 ```html
 {% raw %}<!-- Falsy values will not render -->
 <p v-if="inventory > 10">In Stock</p>
@@ -253,7 +253,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 
 [Lists guide](https://vuejs.org/guide/essentials/list.html#list-rendering)
 {: .title-url}
-## Looping
+### Looping
 ```html
 {% raw %}<!-- Render 5 stars -->
 <i v-for="i in 5" class="fa fa-star" :key="i"></i>
@@ -280,14 +280,14 @@ Like `v-if` you can use a template to render a block of multiple elements.
 
 [Events guide](https://vuejs.org/guide/essentials/event-handling.html#event-handling)
 {: .title-url}
-## Events
+### Events
 ```html
 <button v-on:click="nr++"></button>
 <form @submit="methodName"></form>
 <input @keyup.enter="fn(arg1, arg2, ...)">
 ```
 
-#### Event Modifiers
+##### Event Modifiers
 - `@keyup.enter`: `.enter` is called a [Key Modifier](https://vuejs.org/guide/essentials/event-handling.html#key-modifiers)
 - Modifiers are stackable: `.mod1.mod2`
 - `@keyup.page-down="onPageDown"`
@@ -308,12 +308,12 @@ Like `v-if` you can use a template to render a block of multiple elements.
 
 
 
-# Components
+## Components
 
 [Components guide](https://vuejs.org/guide/essentials/component-basics.html#components-basics)
 {: .title-url}
 
-#### Usage
+##### Usage
 ```javascript
 // Html
 // <product :premium="premium" @add-to-cart="updateCart" class="main-prod"></product>
@@ -332,7 +332,7 @@ new Vue({
 });
 ```
 
-#### Declare
+##### Declare
 
 ```javascript
 {% raw %}const comp = Vue.component('product', {
@@ -400,14 +400,14 @@ new Vue({
 });{% endraw %}
 ```
 
-## Slots
+### Slots
 
 Slots, like React `props.children` or Angular `ng-content`.
 
 [Slots guide](https://vuejs.org/guide/components/slots.html#slots)
 {: .title-url}
 
-#### Usage
+##### Usage
 ```html
 <alert-box>
   <!-- Named Slot -->
@@ -422,7 +422,7 @@ Slots, like React `props.children` or Angular `ng-content`.
 </alert-box>
 ```
 
-#### Declare
+##### Declare
 ```javascript
 Vue.component('alert-box', {
   template: `
@@ -436,12 +436,12 @@ Vue.component('alert-box', {
 
 
 
-# Forms
+## Forms
 
 [Forms guide](https://vuejs.org/guide/essentials/forms.html#form-input-bindings)
 {: .title-url}
 
-#### Html
+##### Html
 ```html
 {% raw %}<form @submit.prevent="onSubmit">
   <input v-model="name" @keydown.ctrl.v.prevent="blockPaste">
@@ -471,7 +471,7 @@ Vue.component('alert-box', {
 </form>{% endraw %}
 ```
 
-#### JavaScript
+##### JavaScript
 ```javascript
 new Vue({
   data: {
@@ -498,13 +498,13 @@ new Vue({
 });
 ```
 
-#### Validation not included
+##### Validation not included
 
 {% include github-stars.html url="vuelidate/vuelidate" desc="Simple, lightweight model-based validation for Vue.js" %}
 {% include github-stars.html url="baianat/vee-validate" desc="Template Based Validation Framework for Vue.js" %}
 
 
-#### Caveat
+##### Caveat
 
 Reuse of `<input>` elements could lead to strange behavior.
 
@@ -523,7 +523,7 @@ Reuse of `<input>` elements could lead to strange behavior.
 [Using v-model on Components](https://vuejs.org/guide/components/v-model.html#component-v-model)
 {: .title-url}
 
-## Custom Model Binding
+### Custom Model Binding
 
 ```javascript
 Vue.component('custom-input', {
@@ -544,9 +544,9 @@ new Vue({
 
 
 
-# Reactivity
+## Reactivity
 
-#### Array
+##### Array
 
 Vue.js has wrapped array functions so that they are reactive:  
 `push`, `pop`, `shift`, `unshift`, `splice`, `sort`, `reverse`
@@ -561,7 +561,7 @@ vm.$set(vm.items, indexOfItem, newValue);
 ```
 
 
-#### Objects
+##### Objects
 
 Assigning a new property to an object is not reactive.
 Assign it a default value on initialization.
@@ -573,7 +573,7 @@ vm.$set(vm.userProfile, 'age', 27);
 ```
 
 <br>
-# Closing Thoughts
+## Closing Thoughts
 
 I was really surprised by Vue's simplicity and terse syntax due its many shorthands.
 Tooling in Visual Studio Code and Chrome is really good. The CLI was pretty amazing
