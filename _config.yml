@@ -33,3 +33,5 @@ exclude:
   - .claude
   - vendor
   - .bundle
+  - check-separators.ps1
+  - deepen-headers.ps1
