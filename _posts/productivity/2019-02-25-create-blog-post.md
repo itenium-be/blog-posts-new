@@ -30,7 +30,7 @@ This is something for me (or anyone else really)
 because I keep forgetting all this stuff.
 
 - Use `{: .hide-from-excerpt}` to do just that.
-- `img` size must be 360x300. `bigimg` is 1400x262.
+- `img` size must be 360x300. `bigimg` is 2000x500.
 - A `—`
 - [Pragmatic Tips](http://www.ccs.neu.edu/home/lieber/courses/csg110/sp08/Pragmatic%20Quick%20Reference.htm)
 
@@ -58,7 +58,7 @@ Create a new file in a folder in `_posts`:
 
 ### Template
 
-`img` size must be 360x300. `bigimg` is 1400x262.
+`img` size must be 360x300. `bigimg` is 2000x500.
 
 ```yaml
 ---
@@ -69,7 +69,7 @@ subTitle: ""
 date: 2025-10-
 desc: >
   
-bigimg: 1400x262
+bigimg: 2000x500
   url: -big.png
   prompt: ""
   origin: Midjourney
@@ -157,7 +157,7 @@ Add API links:
 - `desc`: Multiline.
     - Displayed on the main page and in the post details aside.
     - In other places the excerpt is displayed. Which is everything before `<!--more-->`.
-- **`bigimg`: 1400x262 pixels**
+- **`bigimg`: 2000x500 pixels**
     - `url`: Located in `/assets/blog-images/`
     - Optional `desc` and `origin`
 - `img`:
