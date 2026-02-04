@@ -39,10 +39,7 @@ because I keep forgetting all this stuff.
 
 ## New blog post
 
-Create a
-
-
-<!--block1--> new file in a folder in `_posts`:
+Create a new file in a folder in `_posts`:
 - `_drafts`: Not published.
 - `productivity`: Most things end up here apparently.
 - `dotnet`: Everything c#, .NET Core, Visual Studio, etc.
