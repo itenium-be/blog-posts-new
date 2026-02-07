@@ -76,6 +76,9 @@ and are pointed to a third party package instead:
 pip3 install git-filter-repo
 git filter-repo -h
 git filter-repo --path src --subdirectory-filter src
+
+# When you want to turn src/frontend into a new repository
+git filter-repo --path src/frontend --path-rename src/frontend/:
 ```
 
 
