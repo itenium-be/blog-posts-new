@@ -37,7 +37,6 @@ exclude:
   - deepen-headers.ps1
   - _config_dev.yml
   - index.html
-  - _posts
   - _drafts
   - _data
   - _includes
