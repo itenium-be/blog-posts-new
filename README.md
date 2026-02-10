@@ -8,6 +8,8 @@ for [https://itenium.be/blog](https://itenium.be/blog)
 ## Local Development
 
 ```ps1
+bundle exec jekyll serve --config _config_dev.yml
+bundle exec jekyll serve --incremental --config _config_dev.yml
 bundle exec jekyll serve --drafts --incremental --config _config_dev.yml
 ```
 
