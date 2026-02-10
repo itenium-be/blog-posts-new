@@ -1,8 +1,8 @@
 {%- assign url = 'https://github.com/' | append: include.url -%}
 {%- assign repoName = include.url -%}
-<p>
-    <a href="{{ url }}" class="github">
-        <img src="https://img.shields.io/github/stars/{{ include.url }}.svg?style=social&label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="{{ url }}" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/{{ include.url }}.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/{{ include.url }}">{{ include.url }}</a>
     {%- if include.desc != '' -%}:
