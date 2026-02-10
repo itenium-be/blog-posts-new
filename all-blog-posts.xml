@@ -496,9 +496,9 @@ took to get it back on track!</p>]]></block2>
 large media files to <a href="https://obsidian.md/">Obsidian</a> which
 I’m syncing with a private github repository.</p>
 
-<p>
-    <a href="https://github.com/git-lfs/git-lfs" class="github">
-        <img src="https://img.shields.io/github/stars/git-lfs/git-lfs.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/git-lfs/git-lfs" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/git-lfs/git-lfs.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/git-lfs/git-lfs">git-lfs/git-lfs</a>:
         Git extension for versioning large files</p>
@@ -687,9 +687,9 @@ home page because <strong>that</strong> file has not changed…</p>
 
 <h3 id="windows-directory-monitor">Windows Directory Monitor</h3>
 
-<p>
-    <a href="https://github.com/Maher4Ever/wdm" class="github">
-        <img src="https://img.shields.io/github/stars/Maher4Ever/wdm.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/Maher4Ever/wdm" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Maher4Ever/wdm.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/Maher4Ever/wdm">Maher4Ever/wdm</a>:
         A threaded directories monitor for Windows.</p>
@@ -763,9 +763,9 @@ Set-Alias bejsddev Start-JekyllDevWithDrafts
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jekyll/jekyll" class="github">
-        <img src="https://img.shields.io/github/stars/jekyll/jekyll.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jekyll/jekyll" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jekyll/jekyll.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jekyll/jekyll">jekyll/jekyll</a>:
         v4.2.2</p>
@@ -1622,9 +1622,9 @@ ws.Cell(3, 1).CreateRichText()
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/ClosedXML/ClosedXML" class="github">
-        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
         v0.105.0</p>
@@ -1912,9 +1912,9 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/ClosedXML/ClosedXML" class="github">
-        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
         v0.105.0</p>
@@ -1953,9 +1953,9 @@ C# and the <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML nuget pack
 can be found in the GitHub project.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="closedxml">ClosedXML</h2>
 
-<p>
-    <a href="https://github.com/ClosedXML/ClosedXML" class="github">
-        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
         ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files.</p>
@@ -2355,9 +2355,9 @@ sheet1.CopyTo(workbook, "Copy");
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/ClosedXML/ClosedXML" class="github">
-        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
         v0.105.0</p>
@@ -2565,16 +2565,16 @@ easiest one to setup: using the Synology nginx.</p>]]></excerpt>
       <icon>icon-shell</icon>
       <title>LightGBM Installation</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/dotnet/machinelearning" class="github">
-        <img src="https://img.shields.io/github/stars/dotnet/machinelearning.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/dotnet/machinelearning" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dotnet/machinelearning.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dotnet/machinelearning">dotnet/machinelearning</a>:
         ML.NET is an open source and cross-platform machine learning framework for .NET.</p>
 
-<p>
-    <a href="https://github.com/microsoft/LightGBM" class="github">
-        <img src="https://img.shields.io/github/stars/microsoft/LightGBM.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/microsoft/LightGBM" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/microsoft/LightGBM.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/microsoft/LightGBM">microsoft/LightGBM</a>:
         A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.</p>
@@ -2699,9 +2699,9 @@ ldd /usr/local/lib/lib_lightgbm.so
     <excerpt><![CDATA[<p>While moving some todos from one location to another I came across “Check Site Inspector”
 and thought, why not run it against this website right now – how hard can it be.</p>
 
-<p>
-    <a href="https://github.com/siteinspector/siteinspector" class="github">
-        <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/siteinspector/siteinspector" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>:
         </p>
@@ -2768,9 +2768,9 @@ ERROR:  Possible alternatives: site-inspector
 
 <p>That’s right, the gem doesn’t exist. And <code>site-inspector</code> is something different.</p>
 
-<p>
-    <a href="https://github.com/benbalter/site-inspector" class="github">
-        <img src="https://img.shields.io/github/stars/benbalter/site-inspector.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/benbalter/site-inspector" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/benbalter/site-inspector.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/benbalter/site-inspector">benbalter/site-inspector</a>:
         Ruby Gem to sniff information about a domain's technology and capabilities.</p>
@@ -2942,9 +2942,9 @@ And now to find something cool for next year! 😀</p>]]></block2>
       <icon>dot-circle-o</icon>
       <title>.NET Json</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/JamesNK/Newtonsoft.Json" class="github">
-        <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/JamesNK/Newtonsoft.Json" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
 
@@ -3618,9 +3618,9 @@ if (unsecured.Any())
       <icon>icon-reactjs</icon>
       <title>reselect</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/reduxjs/reselect" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/reselect" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
         Create memoized 'selector' functions</p>
@@ -3831,9 +3831,9 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 
 <h2 id="debugging">Debugging</h2>
 
-<p>
-    <a href="https://github.com/skortchmark9/reselect-tools" class="github">
-        <img src="https://img.shields.io/github/stars/skortchmark9/reselect-tools.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/skortchmark9/reselect-tools" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/skortchmark9/reselect-tools.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/skortchmark9/reselect-tools">skortchmark9/reselect-tools</a>:
         Debugging Tools for Reselect</p>
@@ -3855,9 +3855,9 @@ this tool to visualize re-computations.</p>
 
 <h3 id="proxy-memoize">proxy-memoize</h3>
 
-<p>
-    <a href="https://github.com/dai-shi/proxy-memoize" class="github">
-        <img src="https://img.shields.io/github/stars/dai-shi/proxy-memoize.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/dai-shi/proxy-memoize" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dai-shi/proxy-memoize.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dai-shi/proxy-memoize">dai-shi/proxy-memoize</a>:
         Intuitive magical memoization library with Proxy and WeakMap</p>
@@ -3887,9 +3887,9 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 
 <h3 id="re-reselect">re-reselect</h3>
 
-<p>
-    <a href="https://github.com/toomuchdesign/re-reselect" class="github">
-        <img src="https://img.shields.io/github/stars/toomuchdesign/re-reselect.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/toomuchdesign/re-reselect" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/toomuchdesign/re-reselect.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/toomuchdesign/re-reselect">toomuchdesign/re-reselect</a>:
         Enhance Reselect selectors with deeper memoization and cache management.</p>
@@ -3914,9 +3914,9 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/reduxjs/reselect" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/reselect" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/reselect.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/reselect">reduxjs/reselect</a>:
         v5.1.1</p>
@@ -4232,9 +4232,9 @@ const creatorSlice = createAppSlice({
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/reduxjs/redux-thunk" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux-thunk" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux-thunk">reduxjs/redux-thunk</a>:
         v3.1.0</p>
@@ -4454,51 +4454,51 @@ configureStore({
 
 <p>Some ready made redux middlewares:</p>
 
-<p>
-    <a href="https://github.com/reduxjs/redux-thunk" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux-thunk" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux-thunk.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux-thunk">reduxjs/redux-thunk</a>:
         Thunk middleware for Redux (included)</p>
 
-<p>
-    <a href="https://github.com/rt2zz/redux-persist" class="github">
-        <img src="https://img.shields.io/github/stars/rt2zz/redux-persist.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/rt2zz/redux-persist" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/rt2zz/redux-persist.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/rt2zz/redux-persist">rt2zz/redux-persist</a>:
         Persist and rehydrate a redux store</p>
 
-<p>
-    <a href="https://github.com/redux-observable/redux-observable" class="github">
-        <img src="https://img.shields.io/github/stars/redux-observable/redux-observable.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/redux-observable/redux-observable" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/redux-observable/redux-observable.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/redux-observable/redux-observable">redux-observable/redux-observable</a>:
         RxJS middleware for action side effects using 'Epics'</p>
 
-<p>
-    <a href="https://github.com/LogRocket/redux-logger" class="github">
-        <img src="https://img.shields.io/github/stars/LogRocket/redux-logger.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/LogRocket/redux-logger" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/LogRocket/redux-logger.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/LogRocket/redux-logger">LogRocket/redux-logger</a>:
         Logger for Redux</p>
 
-<p>
-    <a href="https://github.com/omnidan/redux-undo" class="github">
-        <img src="https://img.shields.io/github/stars/omnidan/redux-undo.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/omnidan/redux-undo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/omnidan/redux-undo.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/omnidan/redux-undo">omnidan/redux-undo</a>:
         ♻️ higher order reducer to add undo/redo</p>
 
-<p>
-    <a href="https://github.com/redux-utilities/redux-promise" class="github">
-        <img src="https://img.shields.io/github/stars/redux-utilities/redux-promise.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/redux-utilities/redux-promise" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/redux-utilities/redux-promise.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/redux-utilities/redux-promise">redux-utilities/redux-promise</a>:
         Dispatch promises</p>
 
-<p>
-    <a href="https://github.com/agraboso/redux-api-middleware" class="github">
-        <img src="https://img.shields.io/github/stars/agraboso/redux-api-middleware.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/agraboso/redux-api-middleware" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/agraboso/redux-api-middleware.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/agraboso/redux-api-middleware">agraboso/redux-api-middleware</a>:
         Redux middleware for calling an API.</p>
@@ -4596,9 +4596,9 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/reduxjs/redux-toolkit" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
         v2.5.0</p>
@@ -4630,9 +4630,9 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
       <icon>lock</icon>
       <title>Immer</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/immerjs/immer" class="github">
-        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/immerjs/immer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/immerjs/immer">immerjs/immer</a>:
         Create the next immutable state by mutating the current one</p>
@@ -4884,9 +4884,9 @@ return (
 
 <p>But of course there is a package for that!</p>
 
-<p>
-    <a href="https://github.com/immerjs/use-immer" class="github">
-        <img src="https://img.shields.io/github/stars/immerjs/use-immer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/immerjs/use-immer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/immerjs/use-immer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/immerjs/use-immer">immerjs/use-immer</a>:
         Use immer to drive state with a React hooks</p>
@@ -4930,9 +4930,9 @@ const TodoAdd = () =&gt; {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/immerjs/immer" class="github">
-        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/immerjs/immer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/immerjs/immer">immerjs/immer</a>:
         v9.0.21</p>
@@ -4964,9 +4964,9 @@ const TodoAdd = () =&gt; {
       <icon>icon-reactjs</icon>
       <title>ReduxJS/Toolkit</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/reduxjs/redux-toolkit" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
         The official, opinionated, batteries-included toolset for efficient Redux development</p>
@@ -4989,9 +4989,9 @@ it is worth the time learning. Reduced boilerplate, batteries included and while
 documentation is still daunting, you can take it step by step.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="immer">Immer</h2>
 
-<p>
-    <a href="https://github.com/immerjs/immer" class="github">
-        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/immerjs/immer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/immerjs/immer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/immerjs/immer">immerjs/immer</a>:
         Create the next immutable state by mutating the current one</p>
@@ -5151,25 +5151,25 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/reduxjs/redux-toolkit" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux-toolkit">reduxjs/redux-toolkit</a>:
         v2.5.0</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/reduxjs/redux" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/redux.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/redux" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/redux.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/redux">reduxjs/redux</a>:
         v5.0.1</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/reduxjs/react-redux" class="github">
-        <img src="https://img.shields.io/github/stars/reduxjs/react-redux.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reduxjs/react-redux" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reduxjs/react-redux.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reduxjs/react-redux">reduxjs/react-redux</a>:
         v9.2.0</p>
@@ -5469,9 +5469,9 @@ Nr = {{ randomNr }}
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/angular/angular" class="github">
-        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/angular/angular" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/angular/angular">angular/angular</a>:
         v19</p>
@@ -6136,9 +6136,9 @@ really track everything 😀</p>]]></block2>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/dotnet/efcore" class="github">
-        <img src="https://img.shields.io/github/stars/dotnet/efcore.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/dotnet/efcore" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dotnet/efcore.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dotnet/efcore">dotnet/efcore</a>:
         v8.0.10</p>
@@ -6401,9 +6401,9 @@ An exercise on joining a table with itself.</p>
 <p><b>Other interesting reads</b></p>
 <ul>
         <li><a href="https://mystery.knightlab.com/">SQL Murder Mystery: Can you find out whodunnit?</a></li>
-        <li><p>
-    <a href="https://github.com/openfootball/worldcup" class="github">
-        <img src="https://img.shields.io/github/stars/openfootball/worldcup.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/openfootball/worldcup" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/openfootball/worldcup.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/openfootball/worldcup">openfootball/worldcup</a>:
         The free dataset where we got the worldcup data from</p>
@@ -6435,9 +6435,9 @@ An exercise on joining a table with itself.</p>
       <icon>icon-git</icon>
       <title>Git Hooks</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/typicode/husky" class="github">
-        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/typicode/husky" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/typicode/husky">typicode/husky</a>:
         Git hooks made easy 🐶 woof!</p>]]></excerpt>
@@ -6568,23 +6568,23 @@ exit $hasBuildErrors
 
 <h2 id="alternatives">Alternatives</h2>
 
-<p>
-    <a href="https://github.com/toplenboren/simple-git-hooks" class="github">
-        <img src="https://img.shields.io/github/stars/toplenboren/simple-git-hooks.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/toplenboren/simple-git-hooks" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/toplenboren/simple-git-hooks.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/toplenboren/simple-git-hooks">toplenboren/simple-git-hooks</a>:
         A simple git hooks manager for small projects</p>
 
-<p>
-    <a href="https://github.com/evilmartians/lefthook" class="github">
-        <img src="https://img.shields.io/github/stars/evilmartians/lefthook.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/evilmartians/lefthook" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/evilmartians/lefthook.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/evilmartians/lefthook">evilmartians/lefthook</a>:
         Fast and powerful Git hooks manager for any type of projects</p>
 
-<p>
-    <a href="https://github.com/pre-commit/pre-commit" class="github">
-        <img src="https://img.shields.io/github/stars/pre-commit/pre-commit.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/pre-commit/pre-commit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/pre-commit/pre-commit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>:
         A framework for managing and maintaining multi-language pre-commit hooks</p>]]></block2>
@@ -6601,9 +6601,9 @@ exit $hasBuildErrors
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/typicode/husky" class="github">
-        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/typicode/husky" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/typicode/husky">typicode/husky</a>:
         v9.1.5</p>
@@ -7859,9 +7859,9 @@ CMD ["mongod"]
 <ul>
         <li><a href="https://hub.docker.com/_/mongo">Docker Hub: Mongo (Community Maintained)</a></li>
         <li><a href="https://hub.docker.com/r/mongodb/mongodb-community-server">Docker Hub: Mongo (MongoDb Company)</a></li>
-        <li><p>
-    <a href="https://github.com/docker-library/mongo" class="github">
-        <img src="https://img.shields.io/github/stars/docker-library/mongo.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/docker-library/mongo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/docker-library/mongo.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/docker-library/mongo">docker-library/mongo</a>:
         Github repo for Docker Image (Community)</p>
@@ -8906,30 +8906,30 @@ as passphrase and score Vault multipliers.</p>
     </toc>
     <excerpt><![CDATA[<p>Comparing .NET Testing Frameworks.</p>
 
-<p>
-    <a href="https://github.com/xunit/xunit" class="github">
-        <img src="https://img.shields.io/github/stars/xunit/xunit.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/xunit/xunit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/xunit/xunit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/xunit/xunit">xunit/xunit</a>:
         Community-focused unit testing tool</p>
 
-<p>
-    <a href="https://github.com/nunit/nunit" class="github">
-        <img src="https://img.shields.io/github/stars/nunit/nunit.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nunit/nunit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nunit/nunit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nunit/nunit">nunit/nunit</a>:
         NUnit Framework</p>
 
-<p>
-    <a href="https://github.com/microsoft/testfx" class="github">
-        <img src="https://img.shields.io/github/stars/microsoft/testfx.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/microsoft/testfx" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/microsoft/testfx.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/microsoft/testfx">microsoft/testfx</a>:
         MSTest framework and adapter</p>
 
-<p>
-    <a href="https://github.com/thomhurst/TUnit" class="github">
-        <img src="https://img.shields.io/github/stars/thomhurst/TUnit.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/thomhurst/TUnit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/thomhurst/TUnit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/thomhurst/TUnit">thomhurst/TUnit</a>:
         A modern, fast and flexible .NET testing framework</p>]]></excerpt>
@@ -9524,9 +9524,9 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/shouldly/shouldly" class="github">
-        <img src="https://img.shields.io/github/stars/shouldly/shouldly.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/shouldly/shouldly" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/shouldly/shouldly.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/shouldly/shouldly">shouldly/shouldly</a>:
         Should testing for .NET—the way assertions should be!</p>
@@ -9705,9 +9705,9 @@ It’s also quite easy to add an empty placeholder.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/angular/angular" class="github">
-        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/angular/angular" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/angular/angular">angular/angular</a>:
         v17</p>
@@ -10491,9 +10491,9 @@ function callback(id, phase, actualDuration) {
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/amsterdamharu/selectors" class="github">
-        <img src="https://img.shields.io/github/stars/amsterdamharu/selectors.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/amsterdamharu/selectors" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/amsterdamharu/selectors.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/amsterdamharu/selectors">amsterdamharu/selectors</a>:
         Examples of reselect selectors</p>
@@ -10502,9 +10502,9 @@ function callback(id, phase, actualDuration) {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/facebook/react" class="github">
-        <img src="https://img.shields.io/github/stars/facebook/react.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/facebook/react" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/facebook/react.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/facebook/react">facebook/react</a>:
         v18.2.0</p>
@@ -10773,9 +10773,9 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 
 <h2 class="hide-from-excerpt" id="what">What</h2>
 
-<p>
-    <a href="https://github.com/sqlmapproject/sqlmap" class="github">
-        <img src="https://img.shields.io/github/stars/sqlmapproject/sqlmap.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/sqlmapproject/sqlmap" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/sqlmapproject/sqlmap.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/sqlmapproject/sqlmap">sqlmapproject/sqlmap</a>:
         Automatic SQL injection and database takeover tool</p>]]></excerpt>
@@ -10882,9 +10882,9 @@ a flag hidden in a database by attacking a vulnerable web page.</p>]]></block2>
 
 <p>Hydra is a brute-force tool to perform dictionary attacks against protocols such as Ftp, Http(s), Cisco, Oracle, Postgres, SMTP, Telnet, SSH and many more.</p>
 
-<p>
-    <a href="https://github.com/vanhauser-thc/thc-hydra" class="github">
-        <img src="https://img.shields.io/github/stars/vanhauser-thc/thc-hydra.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vanhauser-thc/thc-hydra" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vanhauser-thc/thc-hydra.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vanhauser-thc/thc-hydra">vanhauser-thc/thc-hydra</a>:
         hydra</p>]]></excerpt>
@@ -10988,9 +10988,9 @@ Security Bootcamp for such clue!</p>]]></block2>
 </figure>]]></excerpt>
       <block1><![CDATA[<h2 id="what">What</h2>
 
-<p>
-    <a href="https://github.com/nmap/nmap" class="github">
-        <img src="https://img.shields.io/github/stars/nmap/nmap.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nmap/nmap" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nmap/nmap.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nmap/nmap">nmap/nmap</a>:
         Github mirror of official SVN repository.</p>
@@ -11554,9 +11554,9 @@ it is time to post one!</p>]]></excerpt>
 
 <h2 id="requirements">Requirements</h2>
 
-<p>
-    <a href="https://github.com/itenium-be/slack-meme-poster" class="github">
-        <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/slack-meme-poster" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/itenium-be/slack-meme-poster">itenium-be/slack-meme-poster</a>:
         Install your own Slack Meme Bot now!</p>
@@ -11836,9 +11836,9 @@ export class CreditVouchDesign extends LitElement {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/vaadin/framework" class="github">
-        <img src="https://img.shields.io/github/stars/vaadin/framework.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/vaadin/framework" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vaadin/framework.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vaadin/framework">vaadin/framework</a>:
         v24.0.4</p>
@@ -12200,9 +12200,9 @@ when you want to replace some text but only when it is (not) preceded/succeeded 
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/itenium-be/Regex-Tutorial" class="github">
-        <img src="https://img.shields.io/github/stars/itenium-be/Regex-Tutorial.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Regex-Tutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Regex-Tutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/itenium-be/Regex-Tutorial">itenium-be/Regex-Tutorial</a>:
         Powerpoint pptx and hands-on exercises</p>
@@ -12238,44 +12238,44 @@ As suggested by a colleague, I created this blog post with the results of my res
 having to do the same.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="charting-libraries">Charting Libraries</h2>
 
-<p>
-    <a href="https://github.com/recharts/recharts" class="github">
-        <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/recharts/recharts" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/recharts/recharts">recharts/recharts</a>:
         A Redefined chart library built on d3</p>
 
-<p>
-    <a href="https://github.com/airbnb/visx" class="github">
-        <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/airbnb/visx" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/airbnb/visx">airbnb/visx</a>:
         A collection of reusable low-level visualization components. Built on d3</p>
 
-<p>
-    <a href="https://github.com/plouc/nivo" class="github">
-        <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/plouc/nivo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/plouc/nivo">plouc/nivo</a>:
         Nivo provides supercharged React components to easily build dataviz apps, built on d3.</p>
 
-<p>
-    <a href="https://github.com/FormidableLabs/victory" class="github">
-        <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/FormidableLabs/victory" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/FormidableLabs/victory">FormidableLabs/victory</a>:
         A collection of components for building interactive data visualizations. Built on d3</p>
 
-<p>
-    <a href="https://github.com/uber/react-vis" class="github">
-        <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/uber/react-vis" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/uber/react-vis">uber/react-vis</a>:
         A collection of components to render common data visualization charts. Built on d3</p>
 
-<p>
-    <a href="https://github.com/reactchartjs/react-chartjs-2" class="github">
-        <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/reactchartjs/react-chartjs-2" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reactchartjs/react-chartjs-2">reactchartjs/react-chartjs-2</a>:
         React components for Chart.js, the most popular charting library</p>
@@ -12283,18 +12283,18 @@ having to do the same.</p>]]></excerpt>
 <p><br />
 Many are built using the very versatile <a href="https://d3js.org/">d3.js</a> library:</p>
 
-<p>
-    <a href="https://github.com/d3/d3" class="github">
-        <img src="https://img.shields.io/github/stars/d3/d3.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/d3/d3" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/d3/d3.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/d3/d3">d3/d3</a>:
         Bring data to life with SVG, Canvas and HTML. 📊📈🎉</p>
 
 <p><br />
 If you already used <code>Chart.js</code> before, you may want to choose for the <code>react-chartjs-2</code> wrapper:</p>
-<p>
-    <a href="https://github.com/chartjs/Chart.js" class="github">
-        <img src="https://img.shields.io/github/stars/chartjs/Chart.js.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/chartjs/Chart.js" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/chartjs/Chart.js.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/chartjs/Chart.js">chartjs/Chart.js</a>:
         Simple HTML5 Charts using the canvas tag</p>]]></block1>
@@ -12766,49 +12766,49 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/recharts/recharts" class="github">
-        <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/recharts/recharts" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/recharts/recharts.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/recharts/recharts">recharts/recharts</a>:
         v2.5.0</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/airbnb/visx" class="github">
-        <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/airbnb/visx" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/airbnb/visx.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/airbnb/visx">airbnb/visx</a>:
         v3.1.2</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/plouc/nivo" class="github">
-        <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/plouc/nivo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/plouc/nivo.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/plouc/nivo">plouc/nivo</a>:
         v0.80.0</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/FormidableLabs/victory" class="github">
-        <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/FormidableLabs/victory" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/FormidableLabs/victory.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/FormidableLabs/victory">FormidableLabs/victory</a>:
         v36.6.0</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/uber/react-vis" class="github">
-        <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/uber/react-vis" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/uber/react-vis.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/uber/react-vis">uber/react-vis</a>:
         v1.11.7</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/reactchartjs/react-chartjs-2" class="github">
-        <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/reactchartjs/react-chartjs-2" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/reactchartjs/react-chartjs-2.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/reactchartjs/react-chartjs-2">reactchartjs/react-chartjs-2</a>:
         v5.2.0</p>
@@ -12941,16 +12941,16 @@ So if you want to ensure that your Java projects are completed on time and to th
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/dotnet/maui" class="github">
-        <img src="https://img.shields.io/github/stars/dotnet/maui.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/dotnet/maui" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dotnet/maui.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dotnet/maui">dotnet/maui</a></p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/xamarin/Xamarin.Forms" class="github">
-        <img src="https://img.shields.io/github/stars/xamarin/Xamarin.Forms.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/xamarin/Xamarin.Forms" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/xamarin/Xamarin.Forms.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/xamarin/Xamarin.Forms">xamarin/Xamarin.Forms</a></p>
 
@@ -13180,24 +13180,24 @@ This is no such article, this is the article that answers the question</p>
       <block1><![CDATA[<p><br />
 Jest does seem to have more ⭐⭐⭐</p>
 
-<p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         Simple JavaScript testing framework for browsers and node.js</p>
 
-<p>
-    <a href="https://github.com/facebook/jest" class="github">
-        <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/facebook/jest" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/facebook/jest">facebook/jest</a>:
         Delightful JavaScript Testing.</p>]]></block1>
       <block2><![CDATA[<h2 id="automatic-migration">Automatic Migration</h2>
 
-<p>
-    <a href="https://github.com/skovhus/jest-codemods" class="github">
-        <img src="https://img.shields.io/github/stars/skovhus/jest-codemods.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/skovhus/jest-codemods" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/skovhus/jest-codemods.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/skovhus/jest-codemods">skovhus/jest-codemods</a>:
         Codemods for migrating to Jest</p>
@@ -13585,9 +13585,9 @@ Useless info:
 <p>Jest works out of the box when using <a href="https://create-react-app.dev/docs/debugging-tests"><code>create-react-app</code></a>!
 (link contains the VSCode <code>launch.json</code>) after installing the Jest VSCode Extension:</p>
 
-<p>
-    <a href="https://github.com/jest-community/vscode-jest" class="github">
-        <img src="https://img.shields.io/github/stars/jest-community/vscode-jest.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jest-community/vscode-jest" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jest-community/vscode-jest.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jest-community/vscode-jest">jest-community/vscode-jest</a>:
         The optimal flow for Jest based testing in VS Code</p>
@@ -13651,9 +13651,9 @@ out of the box with <code>create-react-app</code>.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/facebook/jest" class="github">
-        <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/facebook/jest" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/facebook/jest.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/facebook/jest">facebook/jest</a>:
         v29.5.0</p>
@@ -13723,16 +13723,16 @@ Whether you need help with <strong>ASP.NET Core, Azure Cloud, .NET MAUI, Blazor,
 Which is basically on equal footing with EPPlus.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="epplus-repositories">EPPlus Repositories</h2>
 
-<p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         The old and free one</p>
 
-<p>
-    <a href="https://github.com/EPPlusSoftware/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/EPPlusSoftware/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>:
         The new and not so free one</p>]]></block1>
@@ -13742,16 +13742,16 @@ Which is basically on equal footing with EPPlus.</p>]]></excerpt>
 fluff they’re adding in the now paid version. Use these to circumvent the official
 EPPlus misleading “Deprecated” notice.</p>
 
-<p>
-    <a href="https://github.com/rimland/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/rimland/EPPlus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/rimland/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/rimland/EPPlus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/rimland/EPPlus">rimland/EPPlus</a>:
         Most stars but no activity in the last 5 years</p>
 
-<p>
-    <a href="https://github.com/visualon/epplus" class="github">
-        <img src="https://img.shields.io/github/stars/visualon/epplus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/visualon/epplus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/visualon/epplus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/visualon/epplus">visualon/epplus</a>:
         Actively maintained up till .NET 8 support but deprecated since May 28, 2025</p>
@@ -13763,39 +13763,39 @@ which only works on Windows. The non-free version has removed this dependency.</
 
 <p>If you prefer something that is more actively maintained/developed:</p>
 
-<p>
-    <a href="https://github.com/ClosedXML/ClosedXML" class="github">
-        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ClosedXML/ClosedXML">ClosedXML/ClosedXML</a>:
         .NET library for reading, manipulating and writing Excel files</p>
 
-<p>
-    <a href="https://github.com/nissl-lab/npoi" class="github">
-        <img src="https://img.shields.io/github/stars/nissl-lab/npoi.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nissl-lab/npoi" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nissl-lab/npoi.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nissl-lab/npoi">nissl-lab/npoi</a>:
         .NET library to read/write Office formats</p>
 
-<p>
-    <a href="https://github.com/mini-software/MiniExcel" class="github">
-        <img src="https://img.shields.io/github/stars/mini-software/MiniExcel.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/mini-software/MiniExcel" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/mini-software/MiniExcel.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/mini-software/MiniExcel">mini-software/MiniExcel</a>:
         Easy Excel .NET helper to import/export/template spreadsheets</p>
 
-<p>
-    <a href="https://github.com/mganss/ExcelMapper" class="github">
-        <img src="https://img.shields.io/github/stars/mganss/ExcelMapper.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/mganss/ExcelMapper" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/mganss/ExcelMapper.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/mganss/ExcelMapper">mganss/ExcelMapper</a>:
         An Excel to object mapper.</p>
 
 <h3 id="if-you-just-need-to-read">If you just need to read</h3>
 
-<p>
-    <a href="https://github.com/ExcelDataReader/ExcelDataReader" class="github">
-        <img src="https://img.shields.io/github/stars/ExcelDataReader/ExcelDataReader.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ExcelDataReader/ExcelDataReader" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ExcelDataReader/ExcelDataReader.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ExcelDataReader/ExcelDataReader">ExcelDataReader/ExcelDataReader</a>:
         Lightweight C# library for reading Excel files</p>
@@ -13804,9 +13804,9 @@ which only works on Windows. The non-free version has removed this dependency.</
 
 <p>Very low level and verbose. What EPPlus and ClosedXML use under the hood.</p>
 
-<p>
-    <a href="https://github.com/dotnet/Open-XML-SDK" class="github">
-        <img src="https://img.shields.io/github/stars/dotnet/Open-XML-SDK.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/dotnet/Open-XML-SDK" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dotnet/Open-XML-SDK.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dotnet/Open-XML-SDK">dotnet/Open-XML-SDK</a>:
         Open XML SDK by Microsoft.</p>]]></block2>
@@ -13822,9 +13822,9 @@ which only works on Windows. The non-free version has removed this dependency.</
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         v4.5.3.3</p>
@@ -15119,23 +15119,23 @@ Custom shortcuts:</p>
 </div>
 
 <p><br /></p>
-<p>
-    <a href="https://github.com/yzhang-gh/vscode-markdown" class="github">
-        <img src="https://img.shields.io/github/stars/yzhang-gh/vscode-markdown.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/yzhang-gh/vscode-markdown" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/yzhang-gh/vscode-markdown.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/yzhang-gh/vscode-markdown">yzhang-gh/vscode-markdown</a>:
         Add intuitive keyboard shortcuts, TOC, table formatter, autocompletion and more!</p>
 
-<p>
-    <a href="https://github.com/davidanson/vscode-markdownlint" class="github">
-        <img src="https://img.shields.io/github/stars/davidanson/vscode-markdownlint.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/davidanson/vscode-markdownlint" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/davidanson/vscode-markdownlint.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/davidanson/vscode-markdownlint">davidanson/vscode-markdownlint</a>:
         Markdown linting and style checking</p>
 
-<p>
-    <a href="https://github.com/streetsidesoftware/vscode-spell-checker" class="github">
-        <img src="https://img.shields.io/github/stars/streetsidesoftware/vscode-spell-checker.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/streetsidesoftware/vscode-spell-checker" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/streetsidesoftware/vscode-spell-checker.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/streetsidesoftware/vscode-spell-checker">streetsidesoftware/vscode-spell-checker</a>:
         Source code spell checker</p>
@@ -15170,9 +15170,9 @@ Custom shortcuts:</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/microsoft/vscode" class="github">
-        <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/microsoft/vscode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/microsoft/vscode">microsoft/vscode</a>:
         v1.36.0</p>
@@ -15273,9 +15273,9 @@ started to become quite apparent. Like all plugin maintainers have turned to Vis
 
 <p>I’ve got my own dotfiles that include settings but VSCode got you covered with a plugin
 that saves it as a <a href="https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba">Github GIST (example)</a>.</p>
-<p>
-    <a href="https://github.com/shanalikhan/code-settings-sync" class="github">
-        <img src="https://img.shields.io/github/stars/shanalikhan/code-settings-sync.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/shanalikhan/code-settings-sync" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/shanalikhan/code-settings-sync.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/shanalikhan/code-settings-sync">shanalikhan/code-settings-sync</a>:
         Synchronize your Settings using Github GIST</p>
@@ -15724,82 +15724,82 @@ Click to configure it :)</p>
 
 <p>(that don’t show up pretty instantaneously when opening a file)</p>
 
-<p>
-    <a href="https://github.com/ritwickdey/vscode-live-server" class="github">
-        <img src="https://img.shields.io/github/stars/ritwickdey/vscode-live-server.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ritwickdey/vscode-live-server" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ritwickdey/vscode-live-server.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ritwickdey/vscode-live-server">ritwickdey/vscode-live-server</a>:
         Launch a development local Server with live reload feature for static &amp; dynamic pages.</p>
 
-<p>
-    <a href="https://github.com/Huachao/vscode-restclient" class="github">
-        <img src="https://img.shields.io/github/stars/Huachao/vscode-restclient.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/Huachao/vscode-restclient" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Huachao/vscode-restclient.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/Huachao/vscode-restclient">Huachao/vscode-restclient</a>:
         REST Client</p>
 
 <h5 id="for-the-web">For The Web</h5>
 
-<p>
-    <a href="https://github.com/ChristianKohler/PathIntellisense" class="github">
-        <img src="https://img.shields.io/github/stars/ChristianKohler/PathIntellisense.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ChristianKohler/PathIntellisense" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ChristianKohler/PathIntellisense.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ChristianKohler/PathIntellisense">ChristianKohler/PathIntellisense</a>:
         Autocompletes filenames</p>
 
-<p>
-    <a href="https://github.com/ChristianKohler/NpmIntellisense" class="github">
-        <img src="https://img.shields.io/github/stars/ChristianKohler/NpmIntellisense.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/ChristianKohler/NpmIntellisense" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ChristianKohler/NpmIntellisense.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ChristianKohler/NpmIntellisense">ChristianKohler/NpmIntellisense</a>:
         Autocomplete npm modules in import statements</p>
 
-<p>
-    <a href="https://github.com/wix/vscode-import-cost" class="github">
-        <img src="https://img.shields.io/github/stars/wix/vscode-import-cost.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/wix/vscode-import-cost" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/wix/vscode-import-cost.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/wix/vscode-import-cost">wix/vscode-import-cost</a>:
         Display the import size of the package you are importing inside the code editor</p>
 
-<p>
-    <a href="https://github.com/lannonbr/vscode-js-annotations" class="github">
-        <img src="https://img.shields.io/github/stars/lannonbr/vscode-js-annotations.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/lannonbr/vscode-js-annotations" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/lannonbr/vscode-js-annotations.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/lannonbr/vscode-js-annotations">lannonbr/vscode-js-annotations</a>:
         Add parameter name annotations to function calls</p>
 
-<p>
-    <a href="https://github.com/britesnow/vscode-toggle-quotes" class="github">
-        <img src="https://img.shields.io/github/stars/britesnow/vscode-toggle-quotes.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/britesnow/vscode-toggle-quotes" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/britesnow/vscode-toggle-quotes.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/britesnow/vscode-toggle-quotes">britesnow/vscode-toggle-quotes</a>:
         Simple cycling quotes toggler</p>
 
 <p><br /></p>
-<p>
-    <a href="https://github.com/vincaslt/vscode-highlight-matching-tag" class="github">
-        <img src="https://img.shields.io/github/stars/vincaslt/vscode-highlight-matching-tag.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vincaslt/vscode-highlight-matching-tag" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vincaslt/vscode-highlight-matching-tag.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vincaslt/vscode-highlight-matching-tag">vincaslt/vscode-highlight-matching-tag</a>:
         Highlights matching opening or closing Html tags</p>
 
-<p>
-    <a href="https://github.com/zignd/html-css-class-completion" class="github">
-        <img src="https://img.shields.io/github/stars/zignd/html-css-class-completion.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/zignd/html-css-class-completion" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/zignd/html-css-class-completion.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/zignd/html-css-class-completion">zignd/html-css-class-completion</a>:
         CSS class name completion for the HTML class attribute based on the CSS files in your workspace </p>
 
-<p>
-    <a href="https://github.com/pranaygp/vscode-css-peek" class="github">
-        <img src="https://img.shields.io/github/stars/pranaygp/vscode-css-peek.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/pranaygp/vscode-css-peek" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/pranaygp/vscode-css-peek.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/pranaygp/vscode-css-peek">pranaygp/vscode-css-peek</a>:
         Peek at CSS definitions from a class or id tag in Html</p>
 
-<p>
-    <a href="https://github.com/leehooi/vs-color-picker" class="github">
-        <img src="https://img.shields.io/github/stars/leehooi/vs-color-picker.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/leehooi/vs-color-picker" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/leehooi/vs-color-picker.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/leehooi/vs-color-picker">leehooi/vs-color-picker</a>:
         Select any color on the screen</p>
@@ -15808,37 +15808,37 @@ Click to configure it :)</p>
 
 <h5 id="making-things-stand-out-more">Making things stand out more</h5>
 
-<p>
-    <a href="https://github.com/oderwat/vscode-indent-rainbow" class="github">
-        <img src="https://img.shields.io/github/stars/oderwat/vscode-indent-rainbow.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/oderwat/vscode-indent-rainbow" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/oderwat/vscode-indent-rainbow.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/oderwat/vscode-indent-rainbow">oderwat/vscode-indent-rainbow</a>:
         Show indentation with a faint rainbow colored background</p>
 
-<p>
-    <a href="https://github.com/aaron-bond/better-comments" class="github">
-        <img src="https://img.shields.io/github/stars/aaron-bond/better-comments.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/aaron-bond/better-comments" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/aaron-bond/better-comments.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/aaron-bond/better-comments">aaron-bond/better-comments</a>:
         Make TODO's really shout out 😃</p>
 
-<p>
-    <a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2" class="github">
-        <img src="https://img.shields.io/github/stars/CoenraadS/Bracket-Pair-Colorizer-2.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/CoenraadS/Bracket-Pair-Colorizer-2.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/CoenraadS/Bracket-Pair-Colorizer-2">CoenraadS/Bracket-Pair-Colorizer-2</a>:
         Bracket Colorizer</p>
 
-<p>
-    <a href="https://github.com/johnpapa/vscode-peacock" class="github">
-        <img src="https://img.shields.io/github/stars/johnpapa/vscode-peacock.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/johnpapa/vscode-peacock" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/johnpapa/vscode-peacock.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/johnpapa/vscode-peacock">johnpapa/vscode-peacock</a>:
         Subtly change the color of your Visual Studio Code workspace, ideal for multi VSCode instances.</p>
 
-<p>
-    <a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer" class="github">
-        <img src="https://img.shields.io/github/stars/IBM-Cloud/vscode-log-output-colorizer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/IBM-Cloud/vscode-log-output-colorizer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/IBM-Cloud/vscode-log-output-colorizer">IBM-Cloud/vscode-log-output-colorizer</a>:
         Syntax colorization for both the output/debug/extensions panel and *.log files.</p>
@@ -15885,9 +15885,9 @@ you know, something like Vim.</p>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/viatsko/awesome-vscode" class="github">
-        <img src="https://img.shields.io/github/stars/viatsko/awesome-vscode.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/viatsko/awesome-vscode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/viatsko/awesome-vscode.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/viatsko/awesome-vscode">viatsko/awesome-vscode</a>:
         A curated list of delightful VS Code packages and resources.</p>
@@ -15897,9 +15897,9 @@ you know, something like Vim.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/microsoft/vscode" class="github">
-        <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/microsoft/vscode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/microsoft/vscode.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/microsoft/vscode">microsoft/vscode</a>:
         v1.36.0</p>
@@ -16214,9 +16214,9 @@ Once stored separately, it will, at some point be out of sync, I guarantee it.</
     <toc>
       <title>🎇 Tutorial</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/robo-code/robocode" class="github">
-        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/robo-code/robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
         Build the best - destroy the rest!</p>
@@ -16373,9 +16373,9 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/robo-code/robocode" class="github">
-        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/robo-code/robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
         v1.9.3.3</p>
@@ -16403,9 +16403,9 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
     <toc>
       <title>💣 Installation</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/robo-code/robocode" class="github">
-        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/robo-code/robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
         Build the best - destroy the rest!</p>
@@ -16558,9 +16558,9 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/robo-code/robocode" class="github">
-        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/robo-code/robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/robo-code/robocode.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/robo-code/robocode">robo-code/robocode</a>:
         v1.9.3.3</p>
@@ -16595,9 +16595,9 @@ really taking the time to learn the language properly. This blog post contains s
 scripts and tools to help you try make some sense of what is going on.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="yunit">Yunit</h2>
 
-<p>
-    <a href="https://github.com/Uberi/Yunit" class="github">
-        <img src="https://img.shields.io/github/stars/Uberi/Yunit.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/Uberi/Yunit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Uberi/Yunit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/Uberi/Yunit">Uberi/Yunit</a>:
         Nothing beats a test runner: Uberi and infogulch created one.</p>
@@ -16857,16 +16857,16 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/ahkscript/awesome-AutoHotkey" class="github">
-        <img src="https://img.shields.io/github/stars/ahkscript/awesome-AutoHotkey.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/ahkscript/awesome-AutoHotkey" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ahkscript/awesome-AutoHotkey.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/ahkscript/awesome-AutoHotkey">ahkscript/awesome-AutoHotkey</a>:
         A curated list of awesome</p>
 </li>
-        <li><p>
-    <a href="https://github.com/itenium-be/Mi-Ke" class="github">
-        <img src="https://img.shields.io/github/stars/itenium-be/Mi-Ke.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Mi-Ke" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Mi-Ke.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/itenium-be/Mi-Ke">itenium-be/Mi-Ke</a>:
         Mi-Ke contains most stuff in this blog post, and then some.</p>
@@ -16907,9 +16907,9 @@ contains the unique ID (HWND) of the script’s hidden main window.</p>
 </figure>]]></excerpt>
       <block1><![CDATA[<h2 id="emscripten">Emscripten</h2>
 
-<p>
-    <a href="https://github.com/emscripten-core/emscripten" class="github">
-        <img src="https://img.shields.io/github/stars/emscripten-core/emscripten.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/emscripten-core/emscripten" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/emscripten-core/emscripten.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/emscripten-core/emscripten">emscripten-core/emscripten</a>:
         An LLVM-to-Web Compiler</p>
@@ -17035,16 +17035,16 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/AssemblyScript/assemblyscript" class="github">
-        <img src="https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/AssemblyScript/assemblyscript" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/AssemblyScript/assemblyscript">AssemblyScript/assemblyscript</a>:
         Definitely not a TypeScript to WebAssembly compiler</p>
 </li>
-        <li><p>
-    <a href="https://github.com/WebAssembly/proposals" class="github">
-        <img src="https://img.shields.io/github/stars/WebAssembly/proposals.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/WebAssembly/proposals" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/WebAssembly/proposals.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/WebAssembly/proposals">WebAssembly/proposals</a>:
         Tracking WebAssembly proposals</p>
@@ -17071,9 +17071,9 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
     <toc>
       <title>👓 AVA Tutorial</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/avajs/ava" class="github">
-        <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/avajs/ava" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/avajs/ava">avajs/ava</a>:
         🚀 Testing can be a drag. AVA helps you get it done.</p>
@@ -17190,9 +17190,9 @@ test('Built-in', t =&gt; {
 
 <h5 id="power-assert">power-assert</h5>
 
-<p>
-    <a href="https://github.com/power-assert-js/power-assert" class="github">
-        <img src="https://img.shields.io/github/stars/power-assert-js/power-assert.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/power-assert-js/power-assert" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/power-assert-js/power-assert.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/power-assert-js/power-assert">power-assert-js/power-assert</a>:
         Very fancy assertion failure reporting</p>
@@ -17299,9 +17299,9 @@ npx ava
 npx ava -m='startWith*' -m='!*notContains*' -m='exact'
 </code></pre>
 
-<p>
-    <a href="https://github.com/sindresorhus/matcher" class="github">
-        <img src="https://img.shields.io/github/stars/sindresorhus/matcher.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/sindresorhus/matcher" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/sindresorhus/matcher.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/sindresorhus/matcher">sindresorhus/matcher</a>:
         Matcher used for `--match`</p>
@@ -17389,9 +17389,9 @@ console.log('Currently running', test.meta.file);
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/avajs/awesome-ava" class="github">
-        <img src="https://img.shields.io/github/stars/avajs/awesome-ava.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/avajs/awesome-ava" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/avajs/awesome-ava.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/avajs/awesome-ava">avajs/awesome-ava</a>:
         Awesome AVA</p>
@@ -17400,9 +17400,9 @@ console.log('Currently running', test.meta.file);
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/avajs/ava" class="github">
-        <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/avajs/ava" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/avajs/ava.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/avajs/ava">avajs/ava</a>:
         v1.4.1</p>
@@ -17558,9 +17558,9 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
     <toc>
       <title>🎑 Vue.js</title>
     </toc>
-    <excerpt><![CDATA[<p>
-    <a href="https://github.com/vuejs/vue" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" />
+    <excerpt><![CDATA[<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vue" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vue">vuejs/vue</a>:
         Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
@@ -17579,37 +17579,37 @@ Assert.Equal("&lt;b&gt;Hello&lt;/b&gt; World!", result);
   <li>Supports IE9+</li>
 </ul>]]></excerpt>
       <block1><![CDATA[<h5 id="official-projects">Official Projects</h5>
-<p>
-    <a href="https://github.com/vuejs/vue-router" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vue-router.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vue-router" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vue-router.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vue-router">vuejs/vue-router</a>:
         The official router for Vue.js. </p>
 
-<p>
-    <a href="https://github.com/vuejs/vuex" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vuex.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vuex" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vuex.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vuex">vuejs/vuex</a>:
         Centralized State Management for Vue.js.</p>
 
-<p>
-    <a href="https://github.com/vuejs/vue-cli" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vue-cli.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vue-cli" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vue-cli.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vue-cli">vuejs/vue-cli</a>:
         Standard Tooling for Vue.js Development</p>
 
-<p>
-    <a href="https://github.com/vuejs/vue-devtools" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vue-devtools.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vue-devtools" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vue-devtools.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vue-devtools">vuejs/vue-devtools</a>:
         ⚙ Chrome and Firefox devtools extension for debugging Vue.js applications.</p>
 
-<p>
-    <a href="https://github.com/vuejs/vetur" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vetur.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vetur" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vetur.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vetur">vuejs/vetur</a>:
         Vue tooling for VS Code.</p>]]></block1>
@@ -18014,16 +18014,16 @@ new Vue({
 
 <h5 id="validation-not-included">Validation not included</h5>
 
-<p>
-    <a href="https://github.com/vuelidate/vuelidate" class="github">
-        <img src="https://img.shields.io/github/stars/vuelidate/vuelidate.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vuelidate/vuelidate" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuelidate/vuelidate.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuelidate/vuelidate">vuelidate/vuelidate</a>:
         Simple, lightweight model-based validation for Vue.js</p>
 
-<p>
-    <a href="https://github.com/baianat/vee-validate" class="github">
-        <img src="https://img.shields.io/github/stars/baianat/vee-validate.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/baianat/vee-validate" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/baianat/vee-validate.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/baianat/vee-validate">baianat/vee-validate</a>:
         Template Based Validation Framework for Vue.js</p>
@@ -18110,9 +18110,9 @@ and am already set on using it for a few small projects.</p>]]></block2>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/vuejs/vue" class="github">
-        <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/vuejs/vue" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vuejs/vue.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/vuejs/vue">vuejs/vue</a>:
         v2.6.6</p>
@@ -18165,9 +18165,9 @@ const b = a.clone().add(1, 'week');
 b.format('YYYY-MM-DD HH:mm:ss');
 </code></pre>
 
-<p>
-    <a href="https://github.com/moment/moment" class="github">
-        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/moment/moment" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moment/moment">moment/moment</a>:
         Parse, validate, manipulate, and display dates in javascript.</p>]]></block1>
@@ -18656,37 +18656,37 @@ moment.parseZone('2019-04-19T20:16:28+05:00');
 
 <h2 id="plugins">Plugins</h2>
 
-<p>
-    <a href="https://github.com/rotaready/moment-range" class="github">
-        <img src="https://img.shields.io/github/stars/rotaready/moment-range.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/rotaready/moment-range" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/rotaready/moment-range.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/rotaready/moment-range">rotaready/moment-range</a>:
         Fancy date ranges for Moment.js</p>
 
-<p>
-    <a href="https://github.com/icambron/twix.js" class="github">
-        <img src="https://img.shields.io/github/stars/icambron/twix.js.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/icambron/twix.js" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/icambron/twix.js.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/icambron/twix.js">icambron/twix.js</a>:
         A date range plugin for moment.js</p>
 
-<p>
-    <a href="https://github.com/c-trimm/moment-recur" class="github">
-        <img src="https://img.shields.io/github/stars/c-trimm/moment-recur.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/c-trimm/moment-recur" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/c-trimm/moment-recur.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/c-trimm/moment-recur">c-trimm/moment-recur</a>:
         A momentjs plugin for matching and generating recurring dates.</p>
 
-<p>
-    <a href="https://github.com/jsmreese/moment-duration-format" class="github">
-        <img src="https://img.shields.io/github/stars/jsmreese/moment-duration-format.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jsmreese/moment-duration-format" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jsmreese/moment-duration-format.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jsmreese/moment-duration-format">jsmreese/moment-duration-format</a>:
         Format function plugin for the Moment Duration object.</p>
 
-<p>
-    <a href="https://github.com/jmeas/moment-business" class="github">
-        <img src="https://img.shields.io/github/stars/jmeas/moment-business.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jmeas/moment-business" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jmeas/moment-business.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jmeas/moment-business">jmeas/moment-business</a>:
         Utilities for Western workweeks (addWeekDays, isWeekDay, isWeekendDay etc)</p>
@@ -18698,46 +18698,46 @@ There is a reason <code>Date</code> is not covered in <a href="http://shop.oreil
 
 <h5 id="you-dont-need-moment">You Don’t Need Moment</h5>
 
-<p>
-    <a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" class="github">
-        <img src="https://img.shields.io/github/stars/you-dont-need/You-Dont-Need-Momentjs.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/you-dont-need/You-Dont-Need-Momentjs.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs">you-dont-need/You-Dont-Need-Momentjs</a>:
         List of functions which you can use to replace moment.js + ESLint Plugin</p>
 
 <h5 id="replace-moment-with-a-smaller-project">Replace Moment with a smaller project</h5>
 
-<p>
-    <a href="https://github.com/moment/moment" class="github">
-        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/moment/moment" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moment/moment">moment/moment</a>:
         This one :)</p>
 
-<p>
-    <a href="https://github.com/moment/luxon" class="github">
-        <img src="https://img.shields.io/github/stars/moment/luxon.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/moment/luxon" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moment/luxon.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moment/luxon">moment/luxon</a>:
         A library for working with dates and times in JS (7kb)</p>
 
-<p>
-    <a href="https://github.com/date-fns/date-fns" class="github">
-        <img src="https://img.shields.io/github/stars/date-fns/date-fns.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/date-fns/date-fns" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/date-fns/date-fns.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/date-fns/date-fns">date-fns/date-fns</a>:
         ⌛ Modern JavaScript date utility library ⌛ (13kb). Functional and tree shakeable!</p>
 
-<p>
-    <a href="https://github.com/iamkun/dayjs" class="github">
-        <img src="https://img.shields.io/github/stars/iamkun/dayjs.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/iamkun/dayjs" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/iamkun/dayjs.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/iamkun/dayjs">iamkun/dayjs</a>:
         ⏰ Immutable date library alternative to Moment.js with the same modern API (2kb)</p>
 
-<p>
-    <a href="https://github.com/hustcc/timeago.js" class="github">
-        <img src="https://img.shields.io/github/stars/hustcc/timeago.js.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/hustcc/timeago.js" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/hustcc/timeago.js.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/hustcc/timeago.js">hustcc/timeago.js</a>:
         A tiny library used to format date with `*** time ago` statement. eg: '3 hours ago'. No dependency &amp; localization &amp; tiny. (2kb)</p>
@@ -18747,9 +18747,9 @@ There is a reason <code>Date</code> is not covered in <a href="http://shop.oreil
 <p><a href="http://blog.stevenlevithan.com/archives/date-time-format">JavaScript Date Format</a> at his “Flagrant Badassery” blog
 adds a <code>Date.prototype.format</code> function. (2kb)</p>
 
-<p>
-    <a href="https://github.com/felixge/node-dateformat" class="github">
-        <img src="https://img.shields.io/github/stars/felixge/node-dateformat.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/felixge/node-dateformat" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/felixge/node-dateformat.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/felixge/node-dateformat">felixge/node-dateformat</a>:
         A node.js package for Steven Levithan's excellent dateFormat() function.</p>
@@ -18789,9 +18789,9 @@ const format = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getD
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/moment/moment" class="github">
-        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/moment/moment" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moment/moment.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moment/moment">moment/moment</a>:
         v2.24.0</p>
@@ -18826,9 +18826,9 @@ See the <a href="https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9">2024
 
 <p>Avoid pushing changes that break the build with githooks and Husky.</p>
 
-<p>
-    <a href="https://github.com/typicode/husky" class="github">
-        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/typicode/husky" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/typicode/husky">typicode/husky</a>:
         🐺 Git hooks made easy</p>]]></excerpt>
@@ -18924,9 +18924,9 @@ module.exports = {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/typicode/husky" class="github">
-        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/typicode/husky" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/typicode/husky">typicode/husky</a>:
         v1.3.1</p>
@@ -18977,9 +18977,9 @@ git filter-branch --prune-empty --subdirectory-filter src master
 <p>These days you get a deprecation warning when using <code>filter-branch</code>
 and are pointed to a third party package instead:</p>
 
-<p>
-    <a href="https://github.com/newren/git-filter-repo" class="github">
-        <img src="https://img.shields.io/github/stars/newren/git-filter-repo.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/newren/git-filter-repo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/newren/git-filter-repo.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/newren/git-filter-repo">newren/git-filter-repo</a>:
         Quickly rewrite git repository history (filter-branch replacement)</p>
@@ -19531,9 +19531,9 @@ regex.test(input); // Returns false. lastIndex is reset to 0
 <p><b>Other interesting reads</b></p>
 <ul>
         <li><a href="https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/">Regexes Got Good: The History And Future Of Regular Expressions In JavaScript</a></li>
-        <li><p>
-    <a href="https://github.com/aloisdg/awesome-regex" class="github">
-        <img src="https://img.shields.io/github/stars/aloisdg/awesome-regex.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/aloisdg/awesome-regex" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/aloisdg/awesome-regex.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/aloisdg/awesome-regex">aloisdg/awesome-regex</a>:
         A curated collection of awesome Regex libraries, tools, frameworks and software</p>
@@ -19669,9 +19669,9 @@ It would be perfect if you added a little voice chip that asked, “<em>Did you 
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/atleastimtrying/rubber_duck" class="github">
-        <img src="https://img.shields.io/github/stars/atleastimtrying/rubber_duck.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/atleastimtrying/rubber_duck" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/atleastimtrying/rubber_duck.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/atleastimtrying/rubber_duck">atleastimtrying/rubber_duck</a>:
         A tool for one person pairing.</p>
@@ -19906,9 +19906,9 @@ Add API links:
 
 <p><strong>Github Stars</strong>:</p>
 
-<p>
-    <a href="https://github.com/Laoujin/dotfiles" class="github">
-        <img src="https://img.shields.io/github/stars/Laoujin/dotfiles.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/dotfiles" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/dotfiles.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/Laoujin/dotfiles">Laoujin/dotfiles</a>:
         Windows dotfiles</p>
@@ -20168,9 +20168,9 @@ not even }} {{ or %} {%
 
 <h3 id="jemoji">jemoji</h3>
 
-<p>
-    <a href="https://github.com/jekyll/jemoji" class="github">
-        <img src="https://img.shields.io/github/stars/jekyll/jemoji.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jekyll/jemoji" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jekyll/jemoji.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jekyll/jemoji">jekyll/jemoji</a>:
         I give this plugin two :+1:!</p>
@@ -20185,9 +20185,9 @@ not even }} {{ or %} {%
 </ul>
 
 <p>Find on CLI with</p>
-<p>
-    <a href="https://github.com/sindresorhus/emoj" class="github">
-        <img src="https://img.shields.io/github/stars/sindresorhus/emoj.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/sindresorhus/emoj" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/sindresorhus/emoj.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/sindresorhus/emoj">sindresorhus/emoj</a>:
         Doesn't work on Windows though</p>
@@ -20198,9 +20198,9 @@ emoj [text]
 
 <h3 id="jekyll-gist">jekyll-gist</h3>
 
-<p>
-    <a href="https://github.com/jekyll/jekyll-gist" class="github">
-        <img src="https://img.shields.io/github/stars/jekyll/jekyll-gist.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jekyll/jekyll-gist" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jekyll/jekyll-gist.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jekyll/jekyll-gist">jekyll/jekyll-gist</a></p>
 
@@ -20214,9 +20214,9 @@ emoj [text]
 
 <h3 id="jekyll-avatar">jekyll-avatar</h3>
 
-<p>
-    <a href="https://github.com/benbalter/jekyll-avatar" class="github">
-        <img src="https://img.shields.io/github/stars/benbalter/jekyll-avatar.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/benbalter/jekyll-avatar" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/benbalter/jekyll-avatar.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/benbalter/jekyll-avatar">benbalter/jekyll-avatar</a>:
         </p>
@@ -20614,18 +20614,18 @@ for this amazing diagram, I love it!</p>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/msn0/mdn-polyfills" class="github">
-        <img src="https://img.shields.io/github/stars/msn0/mdn-polyfills.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/msn0/mdn-polyfills" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/msn0/mdn-polyfills.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/msn0/mdn-polyfills">msn0/mdn-polyfills</a>:
         Include polyfills for your favourite functions that are not (yet) implemented by your browser(s).</p>
 </li>
         <li><a href="http://2ality.com/">2ality.com: Blogging on ES proposals</a></li>
         <li><a href="https://stackoverflow.com/a/200614/540352">StackOverflow: Jon Skeet on why there is no forEach in Linq</a></li>
-        <li><p>
-    <a href="https://github.com/morelinq/MoreLINQ" class="github">
-        <img src="https://img.shields.io/github/stars/morelinq/MoreLINQ.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/morelinq/MoreLINQ" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/morelinq/MoreLINQ.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/morelinq/MoreLINQ">morelinq/MoreLINQ</a>:
         Extensions to LINQ to Objects</p>
@@ -20911,9 +20911,9 @@ are possible here.</p>
 
 <p>One of my favourite bloggers, <a href="https://haacked.com/archive/2014/06/20/encourage-vs/">Phil Haack created the Visual Studio visualizer Encourage</a>.</p>
 
-<p>
-    <a href="https://github.com/haacked/encourage" class="github">
-        <img src="https://img.shields.io/github/stars/haacked/encourage.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/haacked/encourage" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/haacked/encourage.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/haacked/encourage">haacked/encourage</a>:
         A bit of encouragment added to Visual Studio</p>
@@ -20921,36 +20921,36 @@ are possible here.</p>
 <h3 id="plugins">Plugins</h3>
 
 <p><strong>ReadableExpressions</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers">download</a>)</p>
-<p>
-    <a href="https://github.com/agileobjects/ReadableExpressions" class="github">
-        <img src="https://img.shields.io/github/stars/agileobjects/ReadableExpressions.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/agileobjects/ReadableExpressions" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/agileobjects/ReadableExpressions.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/agileobjects/ReadableExpressions">agileobjects/ReadableExpressions</a>:
         Readable views of Expression Trees</p>
 
 <p><br />
 <strong>DataTable Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer">download</a>)</p>
-<p>
-    <a href="https://github.com/MgSam/DataTableVisualizer" class="github">
-        <img src="https://img.shields.io/github/stars/MgSam/DataTableVisualizer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/MgSam/DataTableVisualizer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/MgSam/DataTableVisualizer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/MgSam/DataTableVisualizer">MgSam/DataTableVisualizer</a>:
         A non-modal, dockable, searchable DataTable visualizer</p>
 
 <p><br />
 <strong>Image Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=AleksanderBerus.DebuggerImageVisualizerPreview">download</a>)</p>
-<p>
-    <a href="https://github.com/aberus/ImageVisualizer" class="github">
-        <img src="https://img.shields.io/github/stars/aberus/ImageVisualizer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/aberus/ImageVisualizer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/aberus/ImageVisualizer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a>:
         </p>
 
 <p><br />
 <strong>Entity Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=KirillPolishchuk.EntityVisualizer">download</a>)</p>
-<p>
-    <a href="https://github.com/kpol/EntityVisualizer" class="github">
-        <img src="https://img.shields.io/github/stars/kpol/EntityVisualizer.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/kpol/EntityVisualizer" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/kpol/EntityVisualizer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/kpol/EntityVisualizer">kpol/EntityVisualizer</a>:
         Display SQL source code generated by Entity Framework</p>
@@ -20960,9 +20960,9 @@ are possible here.</p>
 
 <p><br />
 <strong>LINQBridgeVs</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=codingadventures.linqbridgevs">download</a>)</p>
-<p>
-    <a href="https://github.com/codingadventures/LINQBridgeVs" class="github">
-        <img src="https://img.shields.io/github/stars/codingadventures/LINQBridgeVs.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/codingadventures/LINQBridgeVs" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/codingadventures/LINQBridgeVs.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/codingadventures/LINQBridgeVs">codingadventures/LINQBridgeVs</a>:
         Bridge between a Visual Studio debugging session and LINQPad.</p>
@@ -21473,9 +21473,9 @@ export class BytesPipe implements PipeTransform {
 <p>Pretty much any generic pipe you can think of already exists.
 This is one project with such collection.</p>
 
-<p>
-    <a href="https://github.com/danrevah/ngx-pipes" class="github">
-        <img src="https://img.shields.io/github/stars/danrevah/ngx-pipes.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/danrevah/ngx-pipes" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/danrevah/ngx-pipes.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/danrevah/ngx-pipes">danrevah/ngx-pipes</a>:
         </p>
@@ -21514,9 +21514,9 @@ This is one project with such collection.</p>
 
 <p>Pretty much the same collection of pipes in this project.</p>
 
-<p>
-    <a href="https://github.com/fknop/angular-pipes" class="github">
-        <img src="https://img.shields.io/github/stars/fknop/angular-pipes.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/fknop/angular-pipes" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/fknop/angular-pipes.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/fknop/angular-pipes">fknop/angular-pipes</a>:
         </p>
@@ -21590,9 +21590,9 @@ export class MyApplicationModule {}
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/angular/angular" class="github">
-        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/angular/angular" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/angular/angular">angular/angular</a>:
         v18</p>
@@ -22180,9 +22180,9 @@ All in all it’s just a great framework for modern web applications and most of
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/angular/angular" class="github">
-        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/angular/angular" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/angular/angular.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/angular/angular">angular/angular</a>:
         v6</p>
@@ -22460,16 +22460,16 @@ Also, see below for similar implementations in Bash and Perl.</p>]]></block2>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/scmbreeze/scm_breeze" class="github">
-        <img src="https://img.shields.io/github/stars/scmbreeze/scm_breeze.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/scmbreeze/scm_breeze" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/scmbreeze/scm_breeze.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/scmbreeze/scm_breeze">scmbreeze/scm_breeze</a>:
         Similar implementation in Bash</p>
 </li>
-        <li><p>
-    <a href="https://github.com/holygeek/git-number" class="github">
-        <img src="https://img.shields.io/github/stars/holygeek/git-number.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/holygeek/git-number" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/holygeek/git-number.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/holygeek/git-number">holygeek/git-number</a>:
         Similar implementation in Perl</p>
@@ -22962,9 +22962,9 @@ and <a href="http://yaml.org">parsers are available for all languages</a>.</p>
 tend to yield different results for more exotic inputs (and sometimes also for not so exotic input).</p>
 
 <p><strong>YamlDotNet</strong></p>
-<p>
-    <a href="https://github.com/aaubry/YamlDotNet" class="github">
-        <img src="https://img.shields.io/github/stars/aaubry/YamlDotNet.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/aaubry/YamlDotNet" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/aaubry/YamlDotNet.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/aaubry/YamlDotNet">aaubry/YamlDotNet</a>:
         For .NET, there is YamlDotNet</p>
@@ -22980,9 +22980,9 @@ using (var file = File.OpenText("_config.yml"))
 </code></pre>
 
 <p><strong>js-yaml</strong></p>
-<p>
-    <a href="https://github.com/nodeca/js-yaml" class="github">
-        <img src="https://img.shields.io/github/stars/nodeca/js-yaml.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nodeca/js-yaml" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nodeca/js-yaml.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nodeca/js-yaml">nodeca/js-yaml</a>:
         For Node, there is js-yaml</p>
@@ -23325,9 +23325,9 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/nsubstitute/NSubstitute" class="github">
-        <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/nsubstitute/NSubstitute" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nsubstitute/NSubstitute">nsubstitute/NSubstitute</a>:
         v2.0.3</p>
@@ -23803,9 +23803,9 @@ even while the script is suspended.</p>]]></block2>
 <ul>
         <li><a href="https://www.autohotkey.com/docs/Hotkeys.htm">Official Hotkeys documentation</a></li>
         <li><a href="https://autohotkey.com/docs/KeyList.htm">List of Keys (Keyboard, Mouse and Joystick)</a></li>
-        <li><p>
-    <a href="https://github.com/babin101/DevKeyboard" class="github">
-        <img src="https://img.shields.io/github/stars/babin101/DevKeyboard.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/babin101/DevKeyboard" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/babin101/DevKeyboard.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/babin101/DevKeyboard">babin101/DevKeyboard</a>:
         Hold down a key to send a different key</p>
@@ -24328,55 +24328,55 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <excerpt><![CDATA[<p>What would we be without some extra plugins. There
 are over 1000 Jasmine npm packages and we’ll cover them all here.</p>]]></excerpt>
       <block1><![CDATA[<p>Or apparently just</p>
-<p>
-    <a href="https://github.com/thlorenz/proxyquire" class="github">
-        <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/thlorenz/proxyquire" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>:
         Proxies nodejs require in order to allow overriding dependencies during testing.</p>
 
 <p><br />
 and some custom reporters:</p>
-<p>
-    <a href="https://github.com/bcaudan/jasmine-spec-reporter" class="github">
-        <img src="https://img.shields.io/github/stars/bcaudan/jasmine-spec-reporter.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/bcaudan/jasmine-spec-reporter" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/bcaudan/jasmine-spec-reporter.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/bcaudan/jasmine-spec-reporter">bcaudan/jasmine-spec-reporter</a>:
         Real time console spec reporter for jasmine testing framework</p>
 
-<p>
-    <a href="https://github.com/Marak/colors.js" class="github">
-        <img src="https://img.shields.io/github/stars/Marak/colors.js.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/Marak/colors.js" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Marak/colors.js.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/Marak/colors.js">Marak/colors.js</a>:
         Color configuration for jasmine-spec-reporter</p>
 
-<p>
-    <a href="https://github.com/larrymyers/jasmine-reporters" class="github">
-        <img src="https://img.shields.io/github/stars/larrymyers/jasmine-reporters.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/larrymyers/jasmine-reporters" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/larrymyers/jasmine-reporters.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/larrymyers/jasmine-reporters">larrymyers/jasmine-reporters</a>:
         Reporter classes for the jasmine test framework.</p>]]></block1>
       <block2><![CDATA[<p><br />
 Other Jasmine plugins you might find useful:</p>
 
-<p>
-    <a href="https://github.com/node-nock/nock" class="github">
-        <img src="https://img.shields.io/github/stars/node-nock/nock.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/node-nock/nock" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/node-nock/nock.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/node-nock/nock">node-nock/nock</a>:
         HTTP server mocking and expectations library for Node.js</p>
 
-<p>
-    <a href="https://github.com/visionmedia/supertest" class="github">
-        <img src="https://img.shields.io/github/stars/visionmedia/supertest.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/visionmedia/supertest" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/visionmedia/supertest.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/visionmedia/supertest">visionmedia/supertest</a>:
         Super-agent driven library for testing node.js HTTP servers using a fluent API.</p>
 
-<p>
-    <a href="https://github.com/jhnns/rewire" class="github">
-        <img src="https://img.shields.io/github/stars/jhnns/rewire.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/jhnns/rewire" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jhnns/rewire.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jhnns/rewire">jhnns/rewire</a>:
         Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time</p>
@@ -24457,9 +24457,9 @@ describe('fake the api call', function() {
 
 <p>The Jest VSCode test runner got me thinking, this probably also exists for Jasmine.</p>
 
-<p>
-    <a href="https://github.com/hbenl/vscode-jasmine-test-adapter" class="github">
-        <img src="https://img.shields.io/github/stars/hbenl/vscode-jasmine-test-adapter.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/hbenl/vscode-jasmine-test-adapter" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/hbenl/vscode-jasmine-test-adapter.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/hbenl/vscode-jasmine-test-adapter">hbenl/vscode-jasmine-test-adapter</a>:
         Jasmine Test Adapter for the VS Code Test Explorer</p>
@@ -24484,17 +24484,17 @@ describe('fake the api call', function() {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/thlorenz/proxyquire" class="github">
-        <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/thlorenz/proxyquire" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/thlorenz/proxyquire.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/thlorenz/proxyquire">thlorenz/proxyquire</a>:
         v2.1.3</p>
@@ -24676,16 +24676,16 @@ it('has its own jasmine.getEnv()', function() {
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><p>
-    <a href="https://github.com/JamieMason/Jasmine-Matchers" class="github">
-        <img src="https://img.shields.io/github/stars/JamieMason/Jasmine-Matchers.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/JamieMason/Jasmine-Matchers" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JamieMason/Jasmine-Matchers.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JamieMason/Jasmine-Matchers">JamieMason/Jasmine-Matchers</a>:
         A whole bunch of generic custom matchers</p>
 </li>
-        <li><p>
-    <a href="https://github.com/mjeanroy/jasmine-utils" class="github">
-        <img src="https://img.shields.io/github/stars/mjeanroy/jasmine-utils.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/mjeanroy/jasmine-utils" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/mjeanroy/jasmine-utils.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/mjeanroy/jasmine-utils">mjeanroy/jasmine-utils</a>:
         Set of custom matchers for Jasmine Test Framework</p>
@@ -24696,9 +24696,9 @@ it('has its own jasmine.getEnv()', function() {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
@@ -24824,9 +24824,9 @@ it('can pass context - which will show on failure', async () =&gt; {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
@@ -25010,9 +25010,9 @@ it('and on setters', () =&gt; {
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
@@ -25193,9 +25193,9 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
@@ -25393,9 +25393,9 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 <p><b>Other interesting reads</b></p>
 <ul>
         <li><a href="https://jasmine.github.io/api/edge/matchers.html">Jasmine documentation: Matchers</a></li>
-        <li><p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         </p>
@@ -25406,9 +25406,9 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/jasmine/jasmine" class="github">
-        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
         v4.3.0</p>
@@ -25542,9 +25542,9 @@ public void ConvertingIndexesAndAddresses()
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         v4.1.0</p>
@@ -25722,9 +25722,9 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         v4.1.0</p>
@@ -25751,16 +25751,16 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
     <excerpt><![CDATA[<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
 probably the most used mocking framework out there at the moment.</p>
 
-<p>
-    <a href="https://github.com/moq/moq4" class="github">
-        <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/moq/moq4" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moq/moq4">moq/moq4</a>:
         </p>
 
-<p>
-    <a href="https://github.com/nsubstitute/nsubstitute" class="github">
-        <img src="https://img.shields.io/github/stars/nsubstitute/nsubstitute.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nsubstitute/nsubstitute" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nsubstitute/nsubstitute.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nsubstitute/nsubstitute">nsubstitute/nsubstitute</a>:
         </p>]]></excerpt>
@@ -25909,17 +25909,17 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/nsubstitute/NSubstitute" class="github">
-        <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/nsubstitute/NSubstitute" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/nsubstitute/NSubstitute">nsubstitute/NSubstitute</a>:
         v2.0.3</p>
 
         </div><div>
-            <p>
-    <a href="https://github.com/moq/moq4" class="github">
-        <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/moq/moq4" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/moq/moq4">moq/moq4</a>:
         v4.7.9</p>
@@ -26224,9 +26224,9 @@ Filtered-out rows are always excluded.</p>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         v4.1.0</p>
@@ -26281,9 +26281,9 @@ They are explained in depth in part 3 Import.</p>
 
 <h3 id="without-license">Without license</h3>
 
-<p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         The free one</p>
@@ -26293,9 +26293,9 @@ They are explained in depth in part 3 Import.</p>
 
 <h3 id="with-license">With license</h3>
 
-<p>
-    <a href="https://github.com/EPPlusSoftware/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/EPPlusSoftware/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/EPPlusSoftware/EPPlus.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/EPPlusSoftware/EPPlus">EPPlusSoftware/EPPlus</a>:
         The not so free one</p>
@@ -26567,9 +26567,9 @@ cfRule1.Style.Font.Bold = true;
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
-            <p>
-    <a href="https://github.com/JanKallman/EPPlus" class="github">
-        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" />
+            <p style="margin-bottom: 5px">
+    <a href="https://github.com/JanKallman/EPPlus" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/JanKallman/EPPlus.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/JanKallman/EPPlus">JanKallman/EPPlus</a>:
         v4.5.3.3</p>
@@ -28609,9 +28609,9 @@ Something better eventually arrived with Windows 10 but still, PowerShell :)</p>
 <pre><code class="language-autohotkey">LAlt &amp; Pause::Run % "rundll32 sysdm.cpl,EditEnvironmentVariables"
 </code></pre>]]></excerpt>
       <block1><![CDATA[<p>If you’d like a GUI instead you could try:</p>
-<p>
-    <a href="https://github.com/rix0rrr/WindowsPathEditor" class="github">
-        <img src="https://img.shields.io/github/stars/rix0rrr/WindowsPathEditor.svg?style=social&amp;label=Star" />
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/rix0rrr/WindowsPathEditor" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/rix0rrr/WindowsPathEditor.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/rix0rrr/WindowsPathEditor">rix0rrr/WindowsPathEditor</a>:
         </p>
