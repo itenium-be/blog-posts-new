@@ -5,7 +5,7 @@ url: "https://itenium.be"
 
 # Blog
 github_data_url: https://github.com/itenium-be/blog-posts/blob/master
-permalink: /blog/:categories/:slug/
+permalink: /:categories/:slug/
 
 # Build settings
 markdown: kramdown
