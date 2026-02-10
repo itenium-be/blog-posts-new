@@ -26,12 +26,14 @@ toc:
 **ISBN-13:** 978-1523004386  
 **Publication date:** 2023-02-07
 
+<!--more-->
+
 ## Introduction
 
 In this book, Joshua Kerievsky tries to answer a key question: what does it actually look like to _be_ agile, rather than merely _do_ agile?
 This distinction immediately piqued my curiosity. Having worked as a software engineering consultant since 2010, I've witnessed the full spectrum of agile implementations, from the genuinely transformative to those where organisations cherry-picked the convenient bits. Kerievsky's promise of a return to first principles through storytelling felt like precisely the perspective our industry needs.
 
-<!--more-->
+<!--block1-->
 
 ## Structure and approach
 
@@ -44,7 +46,6 @@ Kerievsky organises his exploration of agility around six interconnected paradig
 5. **Simplicity** – Growing a solution by starting minimal and evolving
 6. **Resourcefulness** – Overcoming obstacles by being readily inventive
 
-<!--block1-->
 
 What makes this book distinctive is its narrative approach. Rather than prescribing yet another framework or process, Kerievsky explores one or more paradigms through a collection of standalone stories which are drawn from a wide diversity of fields. The diversity of fields is something that immediately appealed to my personal curiosity and helps showcase that the agile process is truly widely applicable.
 
