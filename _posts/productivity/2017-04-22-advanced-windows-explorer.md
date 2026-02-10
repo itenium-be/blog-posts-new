@@ -254,7 +254,7 @@ Return
 **Closing**:  
 Closing an Explorer window can be done with Alt+F4 or with Control+W.
 But when you want to close it after Windows annoyed you, this scrips allows you
-to you to do so by hitting Esc hard, twice.
+to do so by hitting Esc hard, twice.
 
 ```autohotkey
 ~Esc::
