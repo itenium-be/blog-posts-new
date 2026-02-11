@@ -20976,7 +20976,7 @@ Not open source:</p>
 <ul>
   <li>Promises “significant” performance improvements in stepping</li>
   <li>Yipiee, they added search to Autos, Locals and Watch windows! (Options &gt; Debugging &gt; Search)</li>
-  <li>They also managed to cut 25px from the title bar and still make it look <a href="/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
+  <li>They also managed to cut 25px from the title bar and still make it look <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/visual-studio-2019-look.png">pretty slick</a>.</li>
 </ul>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
@@ -21765,7 +21765,7 @@ DynaRun(TempScript, pipename="")
 }
 </code></pre>
 
-<p>Or download <a href="/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">dyna-run-capslock-f5.ahk</a></p>
+<p>Or download <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">dyna-run-capslock-f5.ahk</a></p>
 
 <!-- This block exists three times: autohotkey-dyna-run.md, autohotkey-use-case.md and autohotkey-login-form.html -->
 <!-- ATTN: Some slight variations in install instructions!-->
@@ -21808,7 +21808,7 @@ DynaRun(TempScript, pipename="")
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
         <li>
-                <a href="/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">autohotkey-dyna-run-capslock-f5.ahk</a></li>
+                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">autohotkey-dyna-run-capslock-f5.ahk</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -21835,7 +21835,7 @@ Filling in an entire form with predefined values.</p>]]></excerpt>
 <h3 id="the-form">The Form</h3>
 
 <p>Considering the following login form
-(<a href="/assets/blog-images/autohotkey-login-form.html">Html version</a>)</p>
+(<a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.html">Html version</a>)</p>
 
 <p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.png" alt="desc" /></p>]]></block1>
       <block2><![CDATA[<h3 id="the-script">The Script</h3>
@@ -21858,7 +21858,7 @@ to fill in the form and submit it.</p>
   <li>Create a file with the extension <strong>ahk</strong></li>
   <li>Paste the Autohotkey code from above in the file</li>
   <li>Double click your newly created file to activate the hotstring</li>
-  <li>Press <strong>lma</strong> while the cursor is in the email input on <a href="/assets/blog-images/autohotkey-login-form.html">the test page</a></li>
+  <li>Press <strong>lma</strong> while the cursor is in the email input on <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.html">the test page</a></li>
 </ul>
 
 <h3 id="to-start-with-windows">To start with Windows</h3>
@@ -21946,7 +21946,7 @@ Return
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
         <li>
-                <a href="/assets/blog-images/autohotkey-login-form.html">Test Form Html Page</a></li>
+                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.html">Test Form Html Page</a></li>
 </ul>]]></block3>
   </post>
   <post>
