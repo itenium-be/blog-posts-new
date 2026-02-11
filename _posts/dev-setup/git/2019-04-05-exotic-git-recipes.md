@@ -191,4 +191,4 @@ Set-Alias pr Create-PullRequest
 ## Other blog posts
 
 - [git assume unchanged](https://itenium.be/blog/dev-setup/git-assume-unchanged/)
-- [git hooks with Husky](https://itenium.be/blog/productivity/git-hooks-with-husky/)
+- [git hooks with Husky](https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9/)
