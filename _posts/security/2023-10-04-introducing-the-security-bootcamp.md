@@ -19,9 +19,9 @@ categories: security
 tags: [hacking]
 series: security-bootcamp
 extras:
-  - url: https://itenium.be/Competence-Center/assets/SecurityBootcamp-flyer.png
+  - url: {{ site.image_base_url }}/blog-assets/SecurityBootcamp-flyer.png
     desc: "Download the Security Bootcamp flyer"
-  - url: https://itenium.be/Competence-Center/bootcamps/security
+  - url: https://itenium.be/event/security-bootcamp/
     desc: "The official itenium Security Bootcamp website"
 toc:
   title: Security Bootcamp
