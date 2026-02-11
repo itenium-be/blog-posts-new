@@ -85,12 +85,12 @@ I'll be honest, they are not the prettiest tools in the shed.
 They do come in handy from time to time and 
 are available from the default tray icon menu.
 
-- [`KeyHistory`](https://www.autohotkey.com/docs/commands/KeyHistory.htm): Unsure how to bind a certain key/mouse button? Use this tool!
-- [`ListVars`](https://www.autohotkey.com/docs/commands/ListVars.htm): Lists all variable names with content. Good for primitives (ie: an Array displays `Object object {address: 0x5B2AD0}`).
-- [`ListLines`](https://www.autohotkey.com/docs/commands/ListLines.htm): Script lines most recently executed.
-- [`ListHotkeys`](https://www.autohotkey.com/docs/commands/ListHotkeys.htm): Very crude listing of all registered hotkeys.
+- [`KeyHistory`](https://autohotkey.com/docs/commands/KeyHistory.htm): Unsure how to bind a certain key/mouse button? Use this tool!
+- [`ListVars`](https://autohotkey.com/docs/commands/ListVars.htm): Lists all variable names with content. Good for primitives (ie: an Array displays `Object object {address: 0x5B2AD0}`).
+- [`ListLines`](https://autohotkey.com/docs/commands/ListLines.htm): Script lines most recently executed.
+- [`ListHotkeys`](https://autohotkey.com/docs/commands/ListHotkeys.htm): Very crude listing of all registered hotkeys.
 
-Scripts to [retrieve and parse the output for these windows](https://www.autohotkey.com/boards/viewtopic.php?f=6&t=9656&p=248727).
+Scripts to [retrieve and parse the output for these windows](https://autohotkey.com/boards/viewtopic.php?f=6&t=9656&p=248727).
 
 
 #### Window Spy
@@ -152,7 +152,7 @@ from [Sysinternals](https://docs.microsoft.com/en-us/sysinternals/).
 
 #### Pause
 
-[`Pause`](https://www.autohotkey.com/docs/commands/Pause.htm) will toggle the current thread.
+[`Pause`](https://autohotkey.com/docs/commands/Pause.htm) will toggle the current thread.
 Hotstrings and Hotkeys will still run.
 `A_IsPaused` contains the pause state of the underlying thread.
 
@@ -165,7 +165,7 @@ Hotstrings and Hotkeys will still run.
 
 #### Suspend
 
-[`Suspend`](https://www.autohotkey.com/docs/commands/Suspend.htm) will enable/disable all hotkeys and hotstrings.
+[`Suspend`](https://autohotkey.com/docs/commands/Suspend.htm) will enable/disable all hotkeys and hotstrings.
 `A_IsSuspended` contains the script suspension state.
 
 ```autohotkey
@@ -189,7 +189,7 @@ your code doesn't work as expected when its not even running :)
 
 #### Exit & ExitApp
 
-The [`#Persistent`](https://www.autohotkey.com/docs/commands/_Persistent.htm) directive
+The [`#Persistent`](https://autohotkey.com/docs/commands/_Persistent.htm) directive
 will make a script not directly `Exit` after the auto-execute section. `Exit` merely 
 exits the current thread. Use `ExitApp` to close the script completely.
 
@@ -222,13 +222,13 @@ ExitFunc(ExitReason, ExitCode)
 }
 ```
 
-[ExitReasons](https://www.autohotkey.com/docs/commands/OnExit.htm):  
+[ExitReasons](https://autohotkey.com/docs/commands/OnExit.htm):  
 - Logoff: User logs off
 - Shutdown: Computer shuts down (detect and abort a shutdown with `OnMessage(0x11, "WM_QUERYENDSESSION")`)
 - Close: A `WM_CLOSE` or `WM_QUIT` message
 - Error
 - Menu: From the tray icon menu
-- Commands: `Exit`, `ExitApp`, `Reload` and [`#SingleInstance`](https://www.autohotkey.com/docs/commands/_SingleInstance.htm)
+- Commands: `Exit`, `ExitApp`, `Reload` and [`#SingleInstance`](https://autohotkey.com/docs/commands/_SingleInstance.htm)
 
 
 
@@ -298,18 +298,18 @@ if (IsFunc(needle) or InStr(ahkCommands, needle)) {
 return
 ```
 
-Script to [open Autohotkey.chm instead](https://www.autohotkey.com/docs/scripts/ContextSensitiveHelp.htm).
+Script to [open Autohotkey.chm instead](https://autohotkey.com/docs/scripts/ContextSensitiveHelp.htm).
 
 
 
 ### Other
 
-[`A_ScriptHwnd`](https://www.autohotkey.com/docs/Variables.htm#ScriptHwnd)
+[`A_ScriptHwnd`](https://autohotkey.com/docs/Variables.htm#ScriptHwnd)
 contains the unique ID (HWND) of the script's hidden main window.
 
 - [An object TreeViewer](https://autohotkey.com/board/topic/85201-array-deep-copy-treeview-viewer-and-more/) and more
-- [Array_Gui](https://www.autohotkey.com/boards/viewtopic.php?f=6&t=35124&p=162979): Show arrays as an interactive TreeView.
+- [Array_Gui](https://autohotkey.com/boards/viewtopic.php?f=6&t=35124&p=162979): Show arrays as an interactive TreeView.
 - [Print Array](https://autohotkey.com/board/topic/70490-print-array/)
-- [A Console to log to](https://www.autohotkey.com/boards/viewtopic.php?f=6&t=64724&p=277801)
-- [Joystick Test Script](https://www.autohotkey.com/docs/scripts/JoystickTest.htm): Find out how to bind Jostick buttons
-- [Autohotkey IntelliSense](https://www.autohotkey.com/docs/scripts/IntelliSense.htm): If your editor has no intellisense, switch editors instead :)
+- [A Console to log to](https://autohotkey.com/boards/viewtopic.php?f=6&t=64724&p=277801)
+- [Joystick Test Script](https://www.autohotkey.com/docs/v1/scripts/index.htm#ControllerTest): Find out how to bind Joystick buttons
+- [Autohotkey IntelliSense](https://autohotkey.com/docs/scripts/IntelliSense.htm): If your editor has no intellisense, switch editors instead :)

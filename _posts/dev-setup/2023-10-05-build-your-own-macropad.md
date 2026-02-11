@@ -22,7 +22,7 @@ tags: [fun,tech-talk]
 extras:
   - githubproject: https://github.com/itenium-be/BuildYourOwnMacroPad
     githubtext: "Hands-On Session: build your own MacroPad"
-  - url: https://itenium.be/BuildYourOwnMacroPad/
+  - url: https://itenium-be.github.io/BuildYourOwnMacroPad
     desc: "Step by step instructions on how to do this yourself!"
 toc:
   title: Your MacroPad
@@ -82,7 +82,7 @@ A [microcontroller](https://www.tinytronics.nl/shop/en/development-boards/microc
 
 ## Final Touches
 
-Making them buttons actually do something using [Autohotkey](https://www.autohotkey.com/) or [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/).
+Making them buttons actually do something using [Autohotkey](https://autohotkey.com/) or [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/).
 
 
 

@@ -461,7 +461,7 @@ configuration afterwards.
 {: style="text-align: center; margin-top: 32px; font-size: 23px;"}
 
 <br>
-Next up: [VSCode: Editor Configuration and Shortcuts]({{ '/blog/dev-setup/vscode-editor' | relative_url}})
+Next up: [VSCode: Editor Configuration and Shortcuts]({% post_url dev-setup/ide/2019-07-18-vscode-editor %})
 <br>
 
 * * * *

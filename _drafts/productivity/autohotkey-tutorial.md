@@ -12,7 +12,7 @@ Perils of Autohotkey
 - Branches
 
 
-https://www.autohotkey.com/docs/scripts/KeyboardOnScreen.htm
+https://autohotkey.com/docs/scripts/KeyboardOnScreen.htm
 
 
 https://github.com/Pulover/PuloversMacroCreator
@@ -55,7 +55,7 @@ x := 5
 
 Autohotkey Hotstrings
 =====================
-http://www.autohotkey.com/docs/Hotstrings.htm
+http://autohotkey.com/docs/Hotstrings.htm
 http://irisclasson.com/2015/02/19/autohotkey-hotstrings-and-sending-input/
 
 ; Default end characters:

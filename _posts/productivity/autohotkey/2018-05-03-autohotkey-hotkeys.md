@@ -18,7 +18,7 @@ toc:
   icon: car
 interesting:
   - desc: Official Hotkeys documentation
-    url: https://www.autohotkey.com/docs/Hotkeys.htm
+    url: https://autohotkey.com/docs/Hotkeys.htm
   - desc: List of Keys (Keyboard, Mouse and Joystick)
     url: https://autohotkey.com/docs/KeyList.htm
   - desc: Hold down a key to send a different key
@@ -110,7 +110,7 @@ Return
 
 - JoyX, JoyPOV, JoyInfo, ...
 
-[JoystickTest](https://autohotkey.com/docs/scripts/JoystickTest.htm): A simple script 
+[JoystickTest](https://autohotkey.com/docs/v1/scripts/index.htm#ControllerTest): A simple script 
 for determining the exact mapping of your joystick.
 
 <br>

@@ -107,7 +107,7 @@ Or download [dyna-run-capslock-f5.ahk](/assets/blog-images/autohotkey-dyna-run-c
 
 ## Installing the script
 
-- Download and [install Autohotkey](https://www.autohotkey.com/download) (Pick Autohotkey 1.1)
+- Download and [install Autohotkey](https://autohotkey.com/download) (Pick Autohotkey 1.1)
 - Create a file with the extension **ahk**
 - Paste the Autohotkey code from above in the file
 - Double click your newly created file to activate the script
