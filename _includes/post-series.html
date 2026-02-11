@@ -10,7 +10,7 @@
         {%- if post.url == page.url %}
             <li>This Part: {{ page.title }}</li>
         {%- else %}
-            <li>Part {{ counter }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li>Part {{ counter }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
         {%- endif -%}
     {%- endif -%}
 {%- endfor -%}
