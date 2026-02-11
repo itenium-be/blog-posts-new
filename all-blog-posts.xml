@@ -19081,7 +19081,7 @@ Set-Alias pr Create-PullRequest
 
 <ul>
   <li><a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">git assume unchanged</a></li>
-  <li><a href="https://itenium.be/blog/productivity/git-hooks-with-husky/">git hooks with Husky</a></li>
+  <li><a href="https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9/">git hooks with Husky</a></li>
 </ul>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
