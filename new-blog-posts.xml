@@ -1,3 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<blog-posts>
+<blog-posts>  <post>
+    <title></title>
+    <author></author>
+    <date>2026-02-11T12:05:29+00:00</date>
+    <print_date>2026-02-11T12:05:29+00:00</print_date>
+    <url>https://itenium.be/blog///</url>
+    <category></category>
+    <desc></desc>
+    <excerpt><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="what">What</h2>
+
+<p>A security awareness workshop disguised as a teambuilding game.</p>
+
+<h3 id="capture-the-flag">Capture the flag</h3>
+
+<p>At the core of our Security Bootcamp lies the conviction that the
+most effective defense is a well-informed and proactive offense.</p>
+
+<p>Our workshop takes the form of a team-based game, where participants
+accumulate points by uncovering vulnerabilities in our websites
+(such as SQL Injection, XSS, and more).</p>
+
+<p>Boost your team’s score by tackling puzzles and brain-teasers,
+employing a diverse set of IT tools.</p>]]></block1>
+      <block2><![CDATA[<h3 id="presentations">Presentations</h3>
+
+<p>After successfully executing a specific hack, our program includes a
+comprehensive PowerPoint presentation that delves into the intricacies
+of the vulnerability, along with its associated risks and how it was
+exploited during the game.</p>
+
+<p>We outline the attack vector and provide invaluable guidance for your developers,
+equipping them with essential tips and insights for developing secure APIs
+and web applications.</p>
+
+<p>Your testers learn how to perform fundamental security tests to ensure
+no unauthorized data access or manipulation is possible by crafting
+custom requests.</p>
+
+<p>Our presentations also serve as eye-openers for product owners and managers,
+shedding light on the potential catastrophic consequences of these vulnerabilities
+and the ease with which they can be exploited, using readily available tools.</p>
+
+<p>To drive the message home, we conclude our presentations with real-world examples,
+showcasing how renowned companies and products have fallen victim to these
+vulnerabilities time and again, often resulting in significant financial repercussions.</p>
+
+<h3 id="hacking-tools">Hacking Tools</h3>
+
+<p>Participants directly witness the potentially severe repercussions
+of vulnerable applications through engaging presentations, in-game blog posts,
+and live demonstrations of powerful hacking tools,
+including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>, <a href="https://itenium.be/blog/security/hacking-tool-hydra/">hydra</a>, and <a href="https://itenium.be/blog/security/hacking-tool-sqlmap/">sqlmap</a>.</p>
+
+<h2 id="why">Why</h2>
+
+<p>The Security Bootcamp stands out as the solution to elevate your organization’s cybersecurity posture:</p>
+
+<ul>
+  <li><strong>Security Awareness</strong>: Instill a culture of security consciousness across your IT department.</li>
+  <li><strong>Hands-On Learning</strong>: Real-world, hands-on experiences in ethical hacking and cybersecurity, equipping your team with practical skills they can apply immediately.</li>
+  <li><strong>Team Synergy</strong>: Strengthen team cohesion and collaboration as your employees work together to solve challenges and secure digital assets.</li>
+  <li><strong>Problem-Solving Prowess</strong>: Sharpen critical thinking and problem-solving abilities.</li>
+  <li><strong>Tailored Solutions</strong>: Customize the bootcamp to meet your company’s specific objectives, ensuring maximum relevance and impact.</li>
+</ul>
+
+<h2 id="security-bootcamp">Security Bootcamp</h2>
+
+<p>Interested in organizing our Security Bootcamp for your IT teams?
+<a href="mailto:info@itenium.be">Contact us today</a>!</p>]]></block2>
+    <block3><![CDATA[]]></block3>
+  </post>
+
 </blog-posts>
