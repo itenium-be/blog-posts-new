@@ -7692,7 +7692,7 @@ volumes:
 <p>Get into the <code>mongosh</code> without credentials and then do
 everything in the shell itself.</p>
 
-<p>See <a href="https://www.mongodb.com/docs/manual/reference/method/js-user-management/">User Management Methods</a>
+<p>See <a href="https://www.mongodb.com/docs/manual/core/security-users/">Users in Self-Managed Deployments</a>
 in the mongo docs for more!</p>
 
 <pre><code class="language-js">docker exec -it mongo-secure mongosh
