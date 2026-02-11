@@ -20,15 +20,11 @@
     <toc>
       <title>Joy of Agility: How to Solve Problems and Succeed Sooner</title>
     </toc>
-    <excerpt><![CDATA[<p><strong>Author:</strong> Joshua Kerievsky<br />
-<strong>Publisher:</strong> Berrett-Koehler<br />
-<strong>ISBN-13:</strong> 978-1523004386<br />
-<strong>Publication date:</strong> 2023-02-07</p>]]></excerpt>
-      <block1><![CDATA[<h2 id="introduction">Introduction</h2>
+    <excerpt><![CDATA[<h2 class="hide-from-excerpt" id="introduction">Introduction</h2>
 
 <p>In this book, Joshua Kerievsky tries to answer a key question: what does it actually look like to <em>be</em> agile, rather than merely <em>do</em> agile?
-This distinction immediately piqued my curiosity. Having worked as a software engineering consultant since 2010, I’ve witnessed the full spectrum of agile implementations, from the genuinely transformative to those where organisations cherry-picked the convenient bits. Kerievsky’s promise of a return to first principles through storytelling felt like precisely the perspective our industry needs.</p>]]></block1>
-      <block2><![CDATA[<h2 id="structure-and-approach">Structure and approach</h2>
+This distinction immediately piqued my curiosity. Having worked as a software engineering consultant since 2010, I’ve witnessed the full spectrum of agile implementations, from the genuinely transformative to those where organisations cherry-picked the convenient bits. Kerievsky’s promise of a return to first principles through storytelling felt like precisely the perspective our industry needs.</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="structure-and-approach">Structure and approach</h2>
 
 <p>Kerievsky organises his exploration of agility around six interconnected paradigms:</p>
 
@@ -43,9 +39,8 @@ This distinction immediately piqued my curiosity. Having worked as a software en
 
 <p>What makes this book distinctive is its narrative approach. Rather than prescribing yet another framework or process, Kerievsky explores one or more paradigms through a collection of standalone stories which are drawn from a wide diversity of fields. The diversity of fields is something that immediately appealed to my personal curiosity and helps showcase that the agile process is truly widely applicable.</p>
 
-<p>This structure allows one to dip back into specific sections for inspiration when facing particular challenges. Found yourself rushing a release? Revisit the stories on being quick without hurrying. Team paralysed by fear of failure? The resilience section offers practical wisdom. The bite-sized setup also enables me to easily discuss one of them during a knowledge-sharing meeting, or even while waiting for a beverage.</p>
-
-<h2 id="strengths">Strengths</h2>
+<p>This structure allows one to dip back into specific sections for inspiration when facing particular challenges. Found yourself rushing a release? Revisit the stories on being quick without hurrying. Team paralysed by fear of failure? The resilience section offers practical wisdom. The bite-sized setup also enables me to easily discuss one of them during a knowledge-sharing meeting, or even while waiting for a beverage.</p>]]></block1>
+      <block2><![CDATA[<h2 id="strengths">Strengths</h2>
 
 <p>The book’s greatest strength lies in its accessibility. Kerievsky writes with genuine passion, and his advocacy for joy in work is particularly refreshing in an era where we tend to focus on velocity metrics and burndown charts. He reminds us that agility should lead not merely to better software, but to a more fulfilling experience for everyone involved. Agile or scrum metrics should not be used merely to prove Goodhart’s law (<code>When a measure becomes a target, it ceases to be a good measure</code>).</p>
 
@@ -86,6 +81,11 @@ This distinction immediately piqued my curiosity. Having worked as a software en
 
 <p><em>The Joy of Agility</em> is not another agile methodology book, but a manifesto that inspires us.
 It’s a recommended read for anyone genuinely interested in what it means to be agile, rather than merely doing agile.</p>
+
+<p><strong>Author:</strong> Joshua Kerievsky<br />
+<strong>Publisher:</strong> Berrett-Koehler<br />
+<strong>ISBN-13:</strong> 978-1523004386<br />
+<strong>Publication date:</strong> 2023-02-07</p>
 
 <p><strong>Rating: 9/10</strong></p>]]></block2>
     <block3><![CDATA[
