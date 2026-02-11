@@ -41,8 +41,8 @@ redirect_from: /blog/productivity/robocode-installation/
 ## Install Robocode
 
 Prerequisites:  
-- [Java JDK 6+](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [robocode-1.9.3.3-setup.jar](https://sourceforge.net/projects/robocode/files/robocode/1.9.3.3/)
+- [Java JDK 6+](https://www.oracle.com/java/technologies/downloads/)
+- [RoboCode Releases](https://github.com/robo-code/robocode/releases)
 
 Or follow the official [step by step instructions](http://robowiki.net/wiki/Robocode/System_Requirements).
 

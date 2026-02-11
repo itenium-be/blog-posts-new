@@ -93,10 +93,10 @@ If you already used `Chart.js` before, you may want to choose for the `react-cha
 | React-chartjs-2 | Chart.js   | 4 months ago (544)  | 52 / 665    | 15       | CodeSandbox | [Gallery][5]
 {: .table-code}
 
-[0]: https://recharts.github.io/?p=/en-US/examples
-[1]: https://airbnb.io/visx/gallery
+[0]: https://recharts.github.io/en-US/examples/
+[1]: https://visx.airbnb.tech/gallery
 [2]: https://nivo.rocks/
-[3]: https://formidable.com/open-source/victory/gallery
+[3]: https://nearform.com/open-source/victory/themes
 [4]: https://uber.github.io/react-vis/examples/showcases/plots
 [5]: https://react-chartjs-2.js.org/examples
 
