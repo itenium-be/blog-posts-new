@@ -162,7 +162,7 @@ foreach ($path in $paths) {
 
 From your current branch.
 
-```powershell
+```ps1
 function Create-PullRequest() {
   $baseUrl = git remote get-url origin
 
