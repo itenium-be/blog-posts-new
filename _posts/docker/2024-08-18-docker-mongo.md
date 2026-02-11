@@ -259,7 +259,7 @@ Inside the container check [`/etc/mongod.conf.orig`](https://www.mongodb.com/doc
 Get into the `mongosh` without credentials and then do
 everything in the shell itself.
 
-See [User Management Methods](https://www.mongodb.com/docs/manual/reference/method/js-user-management/)
+See [Users in Self-Managed Deployments](https://www.mongodb.com/docs/manual/core/security-users/)
 in the mongo docs for more!
 
 ```js
