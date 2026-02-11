@@ -19055,7 +19055,7 @@ foreach ($path in $paths) {
 
 <p>From your current branch.</p>
 
-<pre><code class="language-powershell">function Create-PullRequest() {
+<pre><code class="language-ps1">function Create-PullRequest() {
   $baseUrl = git remote get-url origin
 
   if ($baseUrl -match 'github.com') {
