@@ -470,6 +470,6 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 
 ### Deployed Demo App
 
-The `create-react-app` is [published at itenium.be](https://itenium.be/React-Charting/).
+The `create-react-app` is [published at itenium-be.github.io](https://itenium-be.github.io/React-Charting/).
 
 ![Demo App Overview]({{ "/assets/blog-images/react-charting-demo-app.png" | relative_url }} "Demo App Overview")
