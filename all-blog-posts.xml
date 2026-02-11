@@ -1,77 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
-    <title></title>
-    <author></author>
-    <date>2026-02-11T12:06:07+00:00</date>
-    <print_date>2026-02-11T12:06:07+00:00</print_date>
-    <url>https://itenium.be/blog///</url>
-    <category></category>
-    <desc></desc>
-    <excerpt><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>]]></excerpt>
-      <block1><![CDATA[<h2 id="what">What</h2>
-
-<p>A security awareness workshop disguised as a teambuilding game.</p>
-
-<h3 id="capture-the-flag">Capture the flag</h3>
-
-<p>At the core of our Security Bootcamp lies the conviction that the
-most effective defense is a well-informed and proactive offense.</p>
-
-<p>Our workshop takes the form of a team-based game, where participants
-accumulate points by uncovering vulnerabilities in our websites
-(such as SQL Injection, XSS, and more).</p>
-
-<p>Boost your team’s score by tackling puzzles and brain-teasers,
-employing a diverse set of IT tools.</p>]]></block1>
-      <block2><![CDATA[<h3 id="presentations">Presentations</h3>
-
-<p>After successfully executing a specific hack, our program includes a
-comprehensive PowerPoint presentation that delves into the intricacies
-of the vulnerability, along with its associated risks and how it was
-exploited during the game.</p>
-
-<p>We outline the attack vector and provide invaluable guidance for your developers,
-equipping them with essential tips and insights for developing secure APIs
-and web applications.</p>
-
-<p>Your testers learn how to perform fundamental security tests to ensure
-no unauthorized data access or manipulation is possible by crafting
-custom requests.</p>
-
-<p>Our presentations also serve as eye-openers for product owners and managers,
-shedding light on the potential catastrophic consequences of these vulnerabilities
-and the ease with which they can be exploited, using readily available tools.</p>
-
-<p>To drive the message home, we conclude our presentations with real-world examples,
-showcasing how renowned companies and products have fallen victim to these
-vulnerabilities time and again, often resulting in significant financial repercussions.</p>
-
-<h3 id="hacking-tools">Hacking Tools</h3>
-
-<p>Participants directly witness the potentially severe repercussions
-of vulnerable applications through engaging presentations, in-game blog posts,
-and live demonstrations of powerful hacking tools,
-including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>, <a href="https://itenium.be/blog/security/hacking-tool-hydra/">hydra</a>, and <a href="https://itenium.be/blog/security/hacking-tool-sqlmap/">sqlmap</a>.</p>
-
-<h2 id="why">Why</h2>
-
-<p>The Security Bootcamp stands out as the solution to elevate your organization’s cybersecurity posture:</p>
-
-<ul>
-  <li><strong>Security Awareness</strong>: Instill a culture of security consciousness across your IT department.</li>
-  <li><strong>Hands-On Learning</strong>: Real-world, hands-on experiences in ethical hacking and cybersecurity, equipping your team with practical skills they can apply immediately.</li>
-  <li><strong>Team Synergy</strong>: Strengthen team cohesion and collaboration as your employees work together to solve challenges and secure digital assets.</li>
-  <li><strong>Problem-Solving Prowess</strong>: Sharpen critical thinking and problem-solving abilities.</li>
-  <li><strong>Tailored Solutions</strong>: Customize the bootcamp to meet your company’s specific objectives, ensuring maximum relevance and impact.</li>
-</ul>
-
-<h2 id="security-bootcamp">Security Bootcamp</h2>
-
-<p>Interested in organizing our Security Bootcamp for your IT teams?
-<a href="mailto:info@itenium.be">Contact us today</a>!</p>]]></block2>
-    <block3><![CDATA[]]></block3>
-  </post>
-  <post>
     <title>Book review: Joy of Agility: How to Solve Problems and Succeed Sooner</title>
     <author>Simon Verhoeven</author>
     <subTitle>What does it actually look like to be agile, rather than merely do agile?</subTitle>
@@ -5207,7 +5135,11 @@ sprinkled with a few Redux no-nos on top.</p>
 <p>Yes, I’m quite frustrated by this boilerplate²².</p>
 
 <p>Aside from the rant, that blog post would be something that explains basic Redux followed by what is
-basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.</p>]]></block2>
+basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.</p>
+
+<h3 id="we-need-more-screaming-caps">We Need More SCREAMING CAPS</h3>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/reduxjs-toolkit-DanAbramovReduxTweet.png" alt="Dan Abramov on legacy Redux code" /></p>]]></block2>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: ReduxJS/Toolkit</li>
             <li>Part 2: <a href="/blog/javascript/reduxjs-toolkit-immer/">ReduxJS/Toolkit: Immer</a></li>
@@ -8947,6 +8879,7 @@ as passphrase and score Vault multipliers.</p>
             <li>Part 1: <a href="/blog/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
             <li>Part 2: <a href="/blog/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
             <li>Part 3: <a href="/blog/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
+            <li>Part 4: <a href="/blog/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
             <li>This Part: Security Bootcamp Prep</li></ul>]]></block3>
   </post>
   <post>
@@ -10683,7 +10616,7 @@ of Michiel.</p>]]></excerpt>
 
 <h2 id="final-touches">Final Touches</h2>
 
-<p>Making them buttons actually do something using <a href="https://www.autohotkey.com/">Autohotkey</a> or <a href="https://learn.microsoft.com/en-us/windows/powertoys/">Microsoft PowerToys</a>.</p>
+<p>Making them buttons actually do something using <a href="https://autohotkey.com/">Autohotkey</a> or <a href="https://learn.microsoft.com/en-us/windows/powertoys/">Microsoft PowerToys</a>.</p>
 
 <figure class="imagewrapper" style="max-width: 360px">
     <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/macropad-assembly-finished.png" alt="" title="" class="img-responsive" />
@@ -10702,7 +10635,109 @@ of Michiel.</p>]]></excerpt>
 <ul>
         <li><a href="https://github.com/itenium-be/BuildYourOwnMacroPad">Hands-On Session: build your own MacroPad</a></li>
         <li>
-                <a href="https://itenium.be/BuildYourOwnMacroPad/">Step by step instructions on how to do this yourself!</a></li>
+                <a href="https://itenium-be.github.io/BuildYourOwnMacroPad">Step by step instructions on how to do this yourself!</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
+    <title>The Security Bootcamp</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>Strengthen Your Organization&apos;s Defenses with our Security Bootcamp</subTitle>
+    <date>2023-10-04T00:00:00+00:00</date>
+    <print_date>2023-10-04T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/security/introducing-the-security-bootcamp/</url>
+    <category>security</category>
+    <tags>hacking</tags>
+    <desc>Build security awareness within your orgisation with our full day immersive workshop.</desc>
+    <series>security-bootcamp</series>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/hacking-bootcamp-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a security bootcamp</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/hacking-bootcamp.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a security bootcamp</prompt>
+    </img>
+    <toc>
+      <icon>key</icon>
+      <title>Security Bootcamp</title>
+    </toc>
+    <excerpt><![CDATA[<p>The Security Bootcamp is a transformative training program designed to empower your IT department with hands-on cybersecurity skills, enhance team collaboration, and instill a culture of security consciousness. Participants engage in hacking challenges, problem-solving, and teamwork, ultimately growing as protectors of your digital assets.</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="what">What</h2>
+
+<p>A security awareness workshop disguised as a teambuilding game.</p>
+
+<h3 id="capture-the-flag">Capture the flag</h3>
+
+<p>At the core of our Security Bootcamp lies the conviction that the
+most effective defense is a well-informed and proactive offense.</p>
+
+<p>Our workshop takes the form of a team-based game, where participants
+accumulate points by uncovering vulnerabilities in our websites
+(such as SQL Injection, XSS, and more).</p>
+
+<p>Boost your team’s score by tackling puzzles and brain-teasers,
+employing a diverse set of IT tools.</p>]]></block1>
+      <block2><![CDATA[<h3 id="presentations">Presentations</h3>
+
+<p>After successfully executing a specific hack, our program includes a
+comprehensive PowerPoint presentation that delves into the intricacies
+of the vulnerability, along with its associated risks and how it was
+exploited during the game.</p>
+
+<p>We outline the attack vector and provide invaluable guidance for your developers,
+equipping them with essential tips and insights for developing secure APIs
+and web applications.</p>
+
+<p>Your testers learn how to perform fundamental security tests to ensure
+no unauthorized data access or manipulation is possible by crafting
+custom requests.</p>
+
+<p>Our presentations also serve as eye-openers for product owners and managers,
+shedding light on the potential catastrophic consequences of these vulnerabilities
+and the ease with which they can be exploited, using readily available tools.</p>
+
+<p>To drive the message home, we conclude our presentations with real-world examples,
+showcasing how renowned companies and products have fallen victim to these
+vulnerabilities time and again, often resulting in significant financial repercussions.</p>
+
+<h3 id="hacking-tools">Hacking Tools</h3>
+
+<p>Participants directly witness the potentially severe repercussions
+of vulnerable applications through engaging presentations, in-game blog posts,
+and live demonstrations of powerful hacking tools,
+including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>, <a href="https://itenium.be/blog/security/hacking-tool-hydra/">hydra</a>, and <a href="https://itenium.be/blog/security/hacking-tool-sqlmap/">sqlmap</a>.</p>
+
+<h2 id="why">Why</h2>
+
+<p>The Security Bootcamp stands out as the solution to elevate your organization’s cybersecurity posture:</p>
+
+<ul>
+  <li><strong>Security Awareness</strong>: Instill a culture of security consciousness across your IT department.</li>
+  <li><strong>Hands-On Learning</strong>: Real-world, hands-on experiences in ethical hacking and cybersecurity, equipping your team with practical skills they can apply immediately.</li>
+  <li><strong>Team Synergy</strong>: Strengthen team cohesion and collaboration as your employees work together to solve challenges and secure digital assets.</li>
+  <li><strong>Problem-Solving Prowess</strong>: Sharpen critical thinking and problem-solving abilities.</li>
+  <li><strong>Tailored Solutions</strong>: Customize the bootcamp to meet your company’s specific objectives, ensuring maximum relevance and impact.</li>
+</ul>
+
+<h2 id="security-bootcamp">Security Bootcamp</h2>
+
+<p>Interested in organizing our Security Bootcamp for your IT teams?
+<a href="mailto:info@itenium.be">Contact us today</a>!</p>]]></block2>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/blog/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
+            <li>Part 2: <a href="/blog/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
+            <li>Part 3: <a href="/blog/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
+            <li>This Part: The Security Bootcamp</li>
+            <li>Part 5: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li>
+                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-assets/SecurityBootcamp-flyer.png">Download the Security Bootcamp flyer</a></li>
+        <li>
+                <a href="https://itenium.be/event/security-bootcamp/">The official itenium Security Bootcamp website</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -10809,7 +10844,8 @@ a flag hidden in a database by attacking a vulnerable web page.</p>]]></block2>
             <li>Part 1: <a href="/blog/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
             <li>Part 2: <a href="/blog/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
             <li>This Part: Hacking Tool: sqlmap</li>
-            <li>Part 4: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>]]></block3>
+            <li>Part 4: <a href="/blog/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Hacking Tool: hydra</title>
@@ -10900,7 +10936,8 @@ Security Bootcamp for such clue!</p>]]></block2>
             <li>Part 1: <a href="/blog/security/hacking-tool-nmap/">Hacking Tool: nmap</a></li>
             <li>This Part: Hacking Tool: hydra</li>
             <li>Part 3: <a href="/blog/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
-            <li>Part 4: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>
+            <li>Part 4: <a href="/blog/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -11036,7 +11073,8 @@ an nmap scan to discover services that are not (yet) available directly from the
             <li>This Part: Hacking Tool: nmap</li>
             <li>Part 2: <a href="/blog/security/hacking-tool-hydra/">Hacking Tool: hydra</a></li>
             <li>Part 3: <a href="/blog/security/hacking-tool-sqlmap/">Hacking Tool: sqlmap</a></li>
-            <li>Part 4: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul><h1>
+            <li>Part 4: <a href="/blog/security/introducing-the-security-bootcamp/">The Security Bootcamp</a></li>
+            <li>Part 5: <a href="/blog/security/security-bootcamp-prep/">Security Bootcamp Prep</a></li></ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
@@ -12351,7 +12389,7 @@ If you already used <code>Chart.js</code> before, you may want to choose for the
       <td style="text-align: center">470 / 2220</td>
       <td style="text-align: center">11</td>
       <td style="text-align: center">WIP</td>
-      <td><a href="https://recharts.github.io/?p=/en-US/examples">Examples</a></td>
+      <td><a href="https://recharts.github.io/en-US/examples/">Examples</a></td>
     </tr>
     <tr>
       <td>Visx</td>
@@ -12360,7 +12398,7 @@ If you already used <code>Chart.js</code> before, you may want to choose for the
       <td style="text-align: center">117 / 608</td>
       <td style="text-align: center">20+</td>
       <td style="text-align: center">CodeSandbox</td>
-      <td><a href="https://airbnb.io/visx/gallery">Somewhat Interactive</a></td>
+      <td><a href="https://visx.airbnb.tech/gallery">Somewhat Interactive</a></td>
     </tr>
     <tr>
       <td>Nivo</td>
@@ -12378,7 +12416,7 @@ If you already used <code>Chart.js</code> before, you may want to choose for the
       <td style="text-align: center">240 / 1491</td>
       <td style="text-align: center">10</td>
       <td style="text-align: center">NO</td>
-      <td><a href="https://formidable.com/open-source/victory/gallery">Gallery</a></td>
+      <td><a href="https://nearform.com/open-source/victory/themes">Gallery</a></td>
     </tr>
     <tr>
       <td>React-vis</td>
@@ -15818,7 +15856,7 @@ configuration afterwards.</p>
 <p style="text-align: center; margin-top: 32px; font-size: 23px;"><strong>Final score</strong>: 👍 👍 👍 🌈 🌈</p>
 
 <p><br />
-Next up: <a href="/blog/blog/dev-setup/vscode-editor">VSCode: Editor Configuration and Shortcuts</a>
+Next up: <a href="/blog/dev-setup/vscode-editor/">VSCode: Editor Configuration and Shortcuts</a>
 <br /></p>
 
 <hr />
@@ -16319,7 +16357,7 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/itenium-be.github.io">Example Eclipse and Visual Studio Robocode projects</a></li>
+        <li><a href="https://github.com/itenium-be/robocode">Example Eclipse and Visual Studio Robocode projects</a></li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -16374,8 +16412,8 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
 
 <p>Prerequisites:</p>
 <ul>
-  <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java JDK 6+</a></li>
-  <li><a href="https://sourceforge.net/projects/robocode/files/robocode/1.9.3.3/">robocode-1.9.3.3-setup.jar</a></li>
+  <li><a href="https://www.oracle.com/java/technologies/downloads/">Java JDK 6+</a></li>
+  <li><a href="https://github.com/robo-code/robocode/releases">RoboCode Releases</a></li>
 </ul>
 
 <p>Or follow the official <a href="http://robowiki.net/wiki/Robocode/System_Requirements">step by step instructions</a>.</p>
@@ -16596,13 +16634,13 @@ They do come in handy from time to time and
 are available from the default tray icon menu.</p>
 
 <ul>
-  <li><a href="https://www.autohotkey.com/docs/commands/KeyHistory.htm"><code>KeyHistory</code></a>: Unsure how to bind a certain key/mouse button? Use this tool!</li>
-  <li><a href="https://www.autohotkey.com/docs/commands/ListVars.htm"><code>ListVars</code></a>: Lists all variable names with content. Good for primitives (ie: an Array displays <code>Object object {address: 0x5B2AD0}</code>).</li>
-  <li><a href="https://www.autohotkey.com/docs/commands/ListLines.htm"><code>ListLines</code></a>: Script lines most recently executed.</li>
-  <li><a href="https://www.autohotkey.com/docs/commands/ListHotkeys.htm"><code>ListHotkeys</code></a>: Very crude listing of all registered hotkeys.</li>
+  <li><a href="https://autohotkey.com/docs/commands/KeyHistory.htm"><code>KeyHistory</code></a>: Unsure how to bind a certain key/mouse button? Use this tool!</li>
+  <li><a href="https://autohotkey.com/docs/commands/ListVars.htm"><code>ListVars</code></a>: Lists all variable names with content. Good for primitives (ie: an Array displays <code>Object object {address: 0x5B2AD0}</code>).</li>
+  <li><a href="https://autohotkey.com/docs/commands/ListLines.htm"><code>ListLines</code></a>: Script lines most recently executed.</li>
+  <li><a href="https://autohotkey.com/docs/commands/ListHotkeys.htm"><code>ListHotkeys</code></a>: Very crude listing of all registered hotkeys.</li>
 </ul>
 
-<p>Scripts to <a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=9656&amp;p=248727">retrieve and parse the output for these windows</a>.</p>
+<p>Scripts to <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=9656&amp;p=248727">retrieve and parse the output for these windows</a>.</p>
 
 <h4 id="window-spy">Window Spy</h4>
 
@@ -16659,7 +16697,7 @@ from <a href="https://docs.microsoft.com/en-us/sysinternals/">Sysinternals</a>.<
 
 <h4 id="pause">Pause</h4>
 
-<p><a href="https://www.autohotkey.com/docs/commands/Pause.htm"><code>Pause</code></a> will toggle the current thread.
+<p><a href="https://autohotkey.com/docs/commands/Pause.htm"><code>Pause</code></a> will toggle the current thread.
 Hotstrings and Hotkeys will still run.
 <code>A_IsPaused</code> contains the pause state of the underlying thread.</p>
 
@@ -16670,7 +16708,7 @@ Hotstrings and Hotkeys will still run.
 
 <h4 id="suspend">Suspend</h4>
 
-<p><a href="https://www.autohotkey.com/docs/commands/Suspend.htm"><code>Suspend</code></a> will enable/disable all hotkeys and hotstrings.
+<p><a href="https://autohotkey.com/docs/commands/Suspend.htm"><code>Suspend</code></a> will enable/disable all hotkeys and hotstrings.
 <code>A_IsSuspended</code> contains the script suspension state.</p>
 
 <pre><code class="language-autohotkey">^#Pause::
@@ -16692,7 +16730,7 @@ your code doesn’t work as expected when its not even running :)</p>
 
 <h4 id="exit--exitapp">Exit &amp; ExitApp</h4>
 
-<p>The <a href="https://www.autohotkey.com/docs/commands/_Persistent.htm"><code>#Persistent</code></a> directive
+<p>The <a href="https://autohotkey.com/docs/commands/_Persistent.htm"><code>#Persistent</code></a> directive
 will make a script not directly <code>Exit</code> after the auto-execute section. <code>Exit</code> merely 
 exits the current thread. Use <code>ExitApp</code> to close the script completely.</p>
 
@@ -16725,14 +16763,14 @@ ExitFunc(ExitReason, ExitCode)
 }
 </code></pre>
 
-<p><a href="https://www.autohotkey.com/docs/commands/OnExit.htm">ExitReasons</a>:</p>
+<p><a href="https://autohotkey.com/docs/commands/OnExit.htm">ExitReasons</a>:</p>
 <ul>
   <li>Logoff: User logs off</li>
   <li>Shutdown: Computer shuts down (detect and abort a shutdown with <code>OnMessage(0x11, "WM_QUERYENDSESSION")</code>)</li>
   <li>Close: A <code>WM_CLOSE</code> or <code>WM_QUIT</code> message</li>
   <li>Error</li>
   <li>Menu: From the tray icon menu</li>
-  <li>Commands: <code>Exit</code>, <code>ExitApp</code>, <code>Reload</code> and <a href="https://www.autohotkey.com/docs/commands/_SingleInstance.htm"><code>#SingleInstance</code></a></li>
+  <li>Commands: <code>Exit</code>, <code>ExitApp</code>, <code>Reload</code> and <a href="https://autohotkey.com/docs/commands/_SingleInstance.htm"><code>#SingleInstance</code></a></li>
 </ul>
 
 <h2 id="custom-scripts">Custom Scripts</h2>
@@ -16794,20 +16832,20 @@ if (IsFunc(needle) or InStr(ahkCommands, needle)) {
 return
 </code></pre>
 
-<p>Script to <a href="https://www.autohotkey.com/docs/scripts/ContextSensitiveHelp.htm">open Autohotkey.chm instead</a>.</p>
+<p>Script to <a href="https://autohotkey.com/docs/scripts/ContextSensitiveHelp.htm">open Autohotkey.chm instead</a>.</p>
 
 <h3 id="other">Other</h3>
 
-<p><a href="https://www.autohotkey.com/docs/Variables.htm#ScriptHwnd"><code>A_ScriptHwnd</code></a>
+<p><a href="https://autohotkey.com/docs/Variables.htm#ScriptHwnd"><code>A_ScriptHwnd</code></a>
 contains the unique ID (HWND) of the script’s hidden main window.</p>
 
 <ul>
   <li><a href="https://autohotkey.com/board/topic/85201-array-deep-copy-treeview-viewer-and-more/">An object TreeViewer</a> and more</li>
-  <li><a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=35124&amp;p=162979">Array_Gui</a>: Show arrays as an interactive TreeView.</li>
+  <li><a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=35124&amp;p=162979">Array_Gui</a>: Show arrays as an interactive TreeView.</li>
   <li><a href="https://autohotkey.com/board/topic/70490-print-array/">Print Array</a></li>
-  <li><a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=64724&amp;p=277801">A Console to log to</a></li>
-  <li><a href="https://www.autohotkey.com/docs/scripts/JoystickTest.htm">Joystick Test Script</a>: Find out how to bind Jostick buttons</li>
-  <li><a href="https://www.autohotkey.com/docs/scripts/IntelliSense.htm">Autohotkey IntelliSense</a>: If your editor has no intellisense, switch editors instead :)</li>
+  <li><a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=64724&amp;p=277801">A Console to log to</a></li>
+  <li><a href="https://www.autohotkey.com/docs/v1/scripts/index.htm#ControllerTest">Joystick Test Script</a>: Find out how to bind Joystick buttons</li>
+  <li><a href="https://autohotkey.com/docs/scripts/IntelliSense.htm">Autohotkey IntelliSense</a>: If your editor has no intellisense, switch editors instead :)</li>
 </ul>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
@@ -18650,7 +18688,7 @@ moment.parseZone('2019-04-19T20:16:28+05:00');
 <h2 id="alternatives">Alternatives</h2>
 
 <p>If your date needs are few, a few helper methods can save you the Moment (50kb) dependency.
-There is a reason <code>Date</code> is not covered in <a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript: The Good Parts</a> though.</p>
+There is a reason <code>Date</code> is not covered in <a href="https://www.oreilly.com/library/view/javascript-the-good/9780596517748/">JavaScript: The Good Parts</a> though.</p>
 
 <h5 id="you-dont-need-moment">You Don’t Need Moment</h5>
 
@@ -19125,7 +19163,7 @@ on Github itself and on Package Manager registries.</p>
 <p>Fork the project and modify the source if you want different behavior because… Well there isn’t
 some sort of settings page :)</p>
 
-<p>Find these variables at the top of <a href="https://github.com/itenium-be/github-stars-links/blob/v1.7/github-stars.user.js"><code>github-stars.user.js</code></a>:</p>
+<p>Find these variables at the top of <code>github-stars.user.js</code>:</p>
 
 <pre><code class="language-javascript">// Execute directly on pages matching one of these:
 const activateDirectlyOn = [
@@ -21739,7 +21777,7 @@ DynaRun(TempScript, pipename="")
 <h2 id="installing-the-script">Installing the script</h2>
 
 <ul>
-  <li>Download and <a href="https://www.autohotkey.com/download">install Autohotkey</a> (Pick Autohotkey 1.1)</li>
+  <li>Download and <a href="https://autohotkey.com/download">install Autohotkey</a> (Pick Autohotkey 1.1)</li>
   <li>Create a file with the extension <strong>ahk</strong></li>
   <li>Paste the Autohotkey code from above in the file</li>
   <li>Double click your newly created file to activate the script</li>
@@ -21820,7 +21858,7 @@ to fill in the form and submit it.</p>
 <h2 id="autohotkey-installation">Autohotkey installation</h2>
 
 <ul>
-  <li>Download and <a href="https://www.autohotkey.com/download">install Autohotkey</a> (Pick Autohotkey 1.1)</li>
+  <li>Download and <a href="https://autohotkey.com/download">install Autohotkey</a> (Pick Autohotkey 1.1)</li>
   <li>Create a file with the extension <strong>ahk</strong></li>
   <li>Paste the Autohotkey code from above in the file</li>
   <li>Double click your newly created file to activate the hotstring</li>
@@ -23428,7 +23466,7 @@ Return
   <li>JoyX, JoyPOV, JoyInfo, …</li>
 </ul>
 
-<p><a href="https://autohotkey.com/docs/scripts/JoystickTest.htm">JoystickTest</a>: A simple script 
+<p><a href="https://autohotkey.com/docs/v1/scripts/index.htm#ControllerTest">JoystickTest</a>: A simple script 
 for determining the exact mapping of your joystick.</p>
 
 <p><br />
@@ -23757,7 +23795,7 @@ even while the script is suspended.</p>]]></block2>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><a href="https://www.autohotkey.com/docs/Hotkeys.htm">Official Hotkeys documentation</a></li>
+        <li><a href="https://autohotkey.com/docs/Hotkeys.htm">Official Hotkeys documentation</a></li>
         <li><a href="https://autohotkey.com/docs/KeyList.htm">List of Keys (Keyboard, Mouse and Joystick)</a></li>
         <li><p style="margin-bottom: 5px">
     <a href="https://github.com/babin101/DevKeyboard" style="margin-right: 6px">
