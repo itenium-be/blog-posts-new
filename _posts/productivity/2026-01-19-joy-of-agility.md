@@ -21,19 +21,13 @@ toc:
   title: "Joy of Agility: How to Solve Problems and Succeed Sooner"
 ---
 
-**Author:** Joshua Kerievsky  
-**Publisher:** Berrett-Koehler  
-**ISBN-13:** 978-1523004386  
-**Publication date:** 2023-02-07
-
-<!--more-->
-
 ## Introduction
+{: .hide-from-excerpt}
 
 In this book, Joshua Kerievsky tries to answer a key question: what does it actually look like to _be_ agile, rather than merely _do_ agile?
 This distinction immediately piqued my curiosity. Having worked as a software engineering consultant since 2010, I've witnessed the full spectrum of agile implementations, from the genuinely transformative to those where organisations cherry-picked the convenient bits. Kerievsky's promise of a return to first principles through storytelling felt like precisely the perspective our industry needs.
 
-<!--block1-->
+<!--more-->
 
 ## Structure and approach
 
@@ -50,6 +44,8 @@ Kerievsky organises his exploration of agility around six interconnected paradig
 What makes this book distinctive is its narrative approach. Rather than prescribing yet another framework or process, Kerievsky explores one or more paradigms through a collection of standalone stories which are drawn from a wide diversity of fields. The diversity of fields is something that immediately appealed to my personal curiosity and helps showcase that the agile process is truly widely applicable.
 
 This structure allows one to dip back into specific sections for inspiration when facing particular challenges. Found yourself rushing a release? Revisit the stories on being quick without hurrying. Team paralysed by fear of failure? The resilience section offers practical wisdom. The bite-sized setup also enables me to easily discuss one of them during a knowledge-sharing meeting, or even while waiting for a beverage.
+
+<!--block1-->
 
 ## Strengths
 
@@ -85,5 +81,10 @@ People who enjoyed this book will likely also appreciate:
 
 _The Joy of Agility_ is not another agile methodology book, but a manifesto that inspires us.
 It's a recommended read for anyone genuinely interested in what it means to be agile, rather than merely doing agile.
+
+**Author:** Joshua Kerievsky  
+**Publisher:** Berrett-Koehler  
+**ISBN-13:** 978-1523004386  
+**Publication date:** 2023-02-07
 
 **Rating: 9/10**
