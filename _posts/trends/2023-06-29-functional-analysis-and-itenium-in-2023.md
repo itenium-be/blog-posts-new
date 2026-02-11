@@ -36,4 +36,4 @@ If a functional analyst is absent from a software development project, the proje
 It is therefore important to have a talented functional analyst on a software development project. At itenium, **our functional analysts have the expertise and experience needed to ensure that your project requirements are well understood**, and that the software is built to meet those requirements. By **working closely with stakeholders and developers**, our functional analysts can help to ensure that your software development project is a success.
 
 <br>
-[Contact Itenium today](mailto:{{ site.email.general }}) to learn more!
+[Contact Itenium today](mailto:{{ site.email }}) to learn more!

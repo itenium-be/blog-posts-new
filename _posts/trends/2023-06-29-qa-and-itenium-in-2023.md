@@ -35,4 +35,4 @@ In addition to automation and security, another current trend in Q&A engineering
 
 
 <br>
-At itenium, we understand the importance of staying up-to-date with the latest trends in Q&A engineering. That's why we have a team of experienced testers available to help you keep your software up to par. **Whether you need help with automation, security testing, or agile methodologies, we have the expertise to assist you** in achieving your Q&A goals. [Contact us today](mailto:{{ site.email.general }}) to learn more about our services and how we can help you stay ahead of the curve.
+At itenium, we understand the importance of staying up-to-date with the latest trends in Q&A engineering. That's why we have a team of experienced testers available to help you keep your software up to par. **Whether you need help with automation, security testing, or agile methodologies, we have the expertise to assist you** in achieving your Q&A goals. [Contact us today](mailto:{{ site.email }}) to learn more about our services and how we can help you stay ahead of the curve.

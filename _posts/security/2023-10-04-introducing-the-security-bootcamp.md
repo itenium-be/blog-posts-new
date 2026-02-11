@@ -107,7 +107,7 @@ The Security Bootcamp stands out as the solution to elevate your organization's 
 ## Security Bootcamp
 
 Interested in organizing our Security Bootcamp for your IT teams?
-[Contact us today](mailto:{{ site.email.general }})!
+[Contact us today](mailto:{{ site.email }})!
 
 
 

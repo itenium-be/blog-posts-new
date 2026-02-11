@@ -2,6 +2,7 @@ title: itenium
 baseurl: "/blog"
 image_base_url: https://itenium-be.github.io/blog-posts-new/assets
 url: "https://itenium.be"
+email: info@itenium.be
 
 # Blog
 github_data_url: https://github.com/itenium-be/blog-posts/blob/master

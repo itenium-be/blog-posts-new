@@ -35,4 +35,4 @@ Whether you need help with **ASP.NET Core, Azure Cloud, .NET MAUI, Blazor, ML.NE
 <br>
 
 So, if you're looking to stay ahead of the competition in 2023, don't let a delayed .Net project hold you back.
-[Contact Itenium today](mailto:{{ site.email.general }}) to learn more about how our senior .Net consultants can help you achieve your goals.
+[Contact Itenium today](mailto:{{ site.email }}) to learn more about how our senior .Net consultants can help you achieve your goals.
