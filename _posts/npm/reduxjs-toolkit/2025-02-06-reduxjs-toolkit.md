@@ -218,3 +218,8 @@ Yes, I'm quite frustrated by this boilerplate²².
 
 Aside from the rant, that blog post would be something that explains basic Redux followed by what is
 basically the Redux [Style Guide](https://redux.js.org/style-guide/).
+
+
+### We Need More SCREAMING CAPS
+
+![Dan Abramov on legacy Redux code](/assets/blog-images/reduxjs-toolkit-DanAbramovReduxTweet.png)
