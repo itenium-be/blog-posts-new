@@ -5,6 +5,8 @@ for [https://itenium.be/blog](https://itenium.be/blog)
 
 [Instructions on how to create a post and what is available](https://itenium.be/blog/productivity/create-blog-post/)
 
+[Figma](https://www.figma.com/design/UMZVNMJLJMGPtKSR64OtJy/Itenium---Website--Extern-?node-id=1378-2466&p=f)
+
 ## Local Development
 
 ```ps1
