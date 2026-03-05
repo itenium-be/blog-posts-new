@@ -11,7 +11,7 @@ bigimg:
   origin: Midjourney
   prompt: "a conceptual map of interconnected agile paradigms, flowing paths of collaboration, adaptation symbols, grace and resilience emerging from stories, clean minimal illustration, joyful mood, tech blog hero image"
 img:
-  url: joy-of-agility.png
+  url: joy-of-agility-sm.png
 interesting:
   - url: https://www.bkconnection.com/books/title/the-joy-of-agility
     desc: "The Joy of Agility: Official Site"
