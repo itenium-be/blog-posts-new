@@ -31,6 +31,7 @@ group :jekyll_plugins do
    gem "jekyll-avatar", "~> 0.8.0"
   #  gem "jekyll-redirect-from"
    gem "csv"
+   gem "webrick"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
