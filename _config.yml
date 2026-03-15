@@ -11,6 +11,11 @@ permalink: /:categories/:slug/
 # Build settings
 markdown: kramdown
 
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
