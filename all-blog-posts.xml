@@ -5722,7 +5722,8 @@ At that point you can also kill the old user.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Keep track of what&apos;s happening</subTitle>
     <date>2024-10-26T00:00:00+00:00</date>
-    <print_date>2024-10-26T00:00:00+00:00</print_date>
+    <print_date>2026-03-15T00:00:00+00:00</print_date>
+    <last_modified_at>2026-03-15T00:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/db-audit-ef/</url>
     <category>dotnet</category>
     <tags>tutorial,sql</tags>
@@ -5938,6 +5939,46 @@ public class Audit
 also contains code where the <code>Audit</code> only has getters and everything is set using
 reflection.</p>
 
+<h2 id="savechangesinterceptor">SaveChangesInterceptor</h2>
+
+<p>The audit logic can be moved out of the <code>DbContext</code> and into a
+<a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.diagnostics.savechangesinterceptor"><code>SaveChangesInterceptor</code></a> for better separation of concerns and reuse over multiple contexts.</p>
+
+<pre><code class="language-c#">public class AuditInterceptor(IUserProvider userProvider) : SaveChangesInterceptor
+{
+  public override InterceptionResult&lt;int&gt; SavingChanges(
+    DbContextEventData eventData, InterceptionResult&lt;int&gt; result)
+  {
+    SetAuditFields(eventData.Context!);
+    return base.SavingChanges(eventData, result);
+  }
+
+  public override ValueTask&lt;InterceptionResult&lt;int&gt;&gt; SavingChangesAsync(
+    DbContextEventData eventData,
+    InterceptionResult&lt;int&gt; result,
+    CancellationToken cancellationToken = default)
+  {
+    SetAuditFields(eventData.Context!);
+    return base.SavingChangesAsync(eventData, result, cancellationToken);
+  }
+
+  private void SetAuditFields(DbContext context)
+  {
+    // Same implementation as before!
+  }
+}
+</code></pre>
+
+<p>Register the interceptor in <code>OnConfiguring</code>:</p>
+
+<pre><code class="language-c#">protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+  optionsBuilder
+    .UseSqlServer(connectionString)
+    .AddInterceptors(new AuditInterceptor(userProvider));
+}
+</code></pre>
+
 <h3 id="pros-vs-cons-1">Pros vs Cons</h3>
 
 <p>✅ Captures the actual user that made the request<br />
@@ -6136,7 +6177,9 @@ really track everything 😀</p>]]></block2>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
         <li><a href="https://github.com/itenium-be/DbAuditWithEF">SQL Server & EntityFramework Core: how to audit</a></li>
-</ul><h1>
+</ul><h1>Updates</h1>
+<ul><li>
+            15 March 2026: Added section with SaveChangesInterceptor for better separation of concerns</li></ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><div>
@@ -6145,7 +6188,7 @@ really track everything 😀</p>]]></block2>
         <img src="https://img.shields.io/github/stars/dotnet/efcore.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
     <a href="https://github.com/dotnet/efcore">dotnet/efcore</a>:
-        v8.0.10</p>
+        v9.0.3</p>
 
         </div>]]></block3>
   </post>
