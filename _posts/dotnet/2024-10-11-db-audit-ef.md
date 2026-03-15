@@ -24,10 +24,14 @@ extras:
     githubtext: "SQL Server & EntityFramework Core: how to audit"
 package-versions:
   - package: EntityFramework
-    version: 8.0.10
+    version: 9.0.3
 toc:
   title: Db Auditing
   icon: dot-circle-o
+last_modified_at: 2026-03-15
+updates:
+  - date: 2026-03-15
+    desc: "Added section with SaveChangesInterceptor for better separation of concerns"
 socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7256620837301104641-nAEq"
   facebook: "https://www.facebook.com/share/p/1Ditb9saSa/"
@@ -252,6 +256,50 @@ If you really don't trust your team or something, the github repository
 also contains code where the `Audit` only has getters and everything is set using
 reflection.
 
+## SaveChangesInterceptor
+
+The audit logic can be moved out of the `DbContext` and into a
+[`SaveChangesInterceptor`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.diagnostics.savechangesinterceptor) for better separation of concerns and reuse over multiple contexts.
+
+
+```c#
+public class AuditInterceptor(IUserProvider userProvider) : SaveChangesInterceptor
+{
+  public override InterceptionResult<int> SavingChanges(
+    DbContextEventData eventData, InterceptionResult<int> result)
+  {
+    SetAuditFields(eventData.Context!);
+    return base.SavingChanges(eventData, result);
+  }
+
+  public override ValueTask<InterceptionResult<int>> SavingChangesAsync(
+    DbContextEventData eventData,
+    InterceptionResult<int> result,
+    CancellationToken cancellationToken = default)
+  {
+    SetAuditFields(eventData.Context!);
+    return base.SavingChangesAsync(eventData, result, cancellationToken);
+  }
+
+  private void SetAuditFields(DbContext context)
+  {
+    // Same implementation as before!
+  }
+}
+```
+
+Register the interceptor in `OnConfiguring`:
+
+```c#
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+  optionsBuilder
+    .UseSqlServer(connectionString)
+    .AddInterceptors(new AuditInterceptor(userProvider));
+}
+```
+
+
 
 ### Pros vs Cons
 
@@ -451,7 +499,7 @@ It also allows you to implement this in different ways.
 
 ## Conclusion
 
-It depends? 🤷  
+It depends? 🤷
 
 - Do you care who has changed what in your tables directly/manually or using other applications?
 - Do you care what exactly has changed over time and by whom?
