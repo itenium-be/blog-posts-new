@@ -24,6 +24,10 @@ extras:
 toc:
   title: Controller Security
   icon: dot-circle-o
+last_modified_at: 2026-03-15
+updates:
+  - date: 2026-03-15
+    desc: "Extra variation: Authorization with Policy required"
 socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-dotnetdev-activity-7335968914746580992-pQ_Q"
   instagram: "https://www.instagram.com/p/DKeYiXlM0Nu/"
@@ -107,6 +111,22 @@ The code above checks for the presence of `[ApiController]` but your mileage may
 // Check for "Controller" in the name (or use EndsWith)
 .Where(t => t.Name.Contains("Controller"))
 ```
+
+### Authorization With Policy
+
+A stricter check: ensure a Policy is configured:
+
+```csharp
+var authorizeAttr = method.GetCustomAttribute<AuthorizeAttribute>(true);
+if (string.IsNullOrEmpty(authorizeAttr?.Policy?.Trim()))
+{
+  missingAuthActions.Add($"{controller.Name}.{method.Name}");
+}
+```
+
+The code in the repository also takes into account that the Policy could
+be configured on Controller level.
+
 
 ### NotImplementedException
 
