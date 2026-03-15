@@ -3413,7 +3413,8 @@ public class PersonWithAttributes
     <author>Wouter Van Schandevijl</author>
     <subTitle>Make sure your controller action methods are properly secured, automatically, on your CI</subTitle>
     <date>2025-04-14T00:00:00+00:00</date>
-    <print_date>2025-04-14T00:00:00+00:00</print_date>
+    <print_date>2026-03-15T00:00:00+00:00</print_date>
+    <last_modified_at>2026-03-15T00:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/check-web-api-security/</url>
     <category>dotnet</category>
     <tags>testing,war-story</tags>
@@ -3497,6 +3498,20 @@ if (missingAuthActions.Any())
 // Check for "Controller" in the name (or use EndsWith)
 .Where(t =&gt; t.Name.Contains("Controller"))
 </code></pre>
+
+<h3 id="authorization-with-policy">Authorization With Policy</h3>
+
+<p>A stricter check: ensure a Policy is configured:</p>
+
+<pre><code class="language-csharp">var authorizeAttr = method.GetCustomAttribute&lt;AuthorizeAttribute&gt;(true);
+if (string.IsNullOrEmpty(authorizeAttr?.Policy?.Trim()))
+{
+  missingAuthActions.Add($"{controller.Name}.{method.Name}");
+}
+</code></pre>
+
+<p>The code in the repository also takes into account that the Policy could
+be configured on Controller level.</p>
 
 <h3 id="notimplementedexception">NotImplementedException</h3>
 
@@ -3591,7 +3606,9 @@ if (unsecured.Any())
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
         <li><a href="https://github.com/itenium-be/DotNet-Controller-Security-Check">Source code, variations and tests for the tests</a></li>
-</ul>]]></block3>
+</ul><h1>Updates</h1>
+<ul><li>
+            15 March 2026: Extra variation: Authorization with Policy required</li></ul>]]></block3>
   </post>
   <post>
     <title>ReduxJS/Toolkit: createSelector</title>
