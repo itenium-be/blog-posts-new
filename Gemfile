@@ -15,7 +15,7 @@ gem "jekyll", "4.2.2"
 gem "minima", "~> 2.0"
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.2.0", platforms: [:windows]
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -30,8 +30,9 @@ group :jekyll_plugins do
    gem "jekyll-gist", "~> 1.5.0"
    gem "jekyll-avatar", "~> 0.8.0"
   #  gem "jekyll-redirect-from"
+   gem "csv"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:windows, :jruby]
 
