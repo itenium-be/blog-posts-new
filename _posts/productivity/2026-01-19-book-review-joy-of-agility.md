@@ -16,7 +16,7 @@ interesting:
   - url: https://www.bkconnection.com/books/title/the-joy-of-agility
     desc: "The Joy of Agility: Official Site"
 categories: productivity
-tags: [book-review, agile]
+tags: [book-review,agile]
 toc:
   title: "Joy of Agility: How to Solve Problems and Succeed Sooner"
 ---
