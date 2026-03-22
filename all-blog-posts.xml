@@ -481,17 +481,17 @@ staff successfully merge code, new memes and 2 mini games.</p>
 (function() {
   var images = [
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-1.jpeg", text: "Start of the bootcamp, everyone still setting up the project and Claude Code" },
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-1.jpeg", text: "Start of the bootcamp, everyone still setting up the project and Claude Code" },
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-2.jpeg", text: "After burning so many tokens, need to ingest extra calories" },
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-2.jpeg", text: "After burning so many tokens, need to ingest extra calories" },
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-3.jpeg", text: "The team demos at the end of the day" },
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-3.jpeg", text: "The team demos at the end of the day" },
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-4.JPG", text: "The team presentation with the most mini games created ;)" },
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-4.JPG", text: "The team presentation with the most mini games created ;)" },
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-5.jpeg", text: "The team presentation with the most e2e tests" },
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-5.jpeg", text: "The team presentation with the most e2e tests" },
     
-    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-6.jpeg", text: "Team presentation showing the SkillForge login screen" }
+    { file: "https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-6.jpeg", text: "Team presentation showing the SkillForge login screen" }
     
   ];
   var idx = 0;
