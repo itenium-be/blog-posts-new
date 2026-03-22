@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deploy Panic at Itenium</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 14px 20px;
+  gap: 10px;
+}
+
+/* ── HEADER ── */
+#title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #FF6A00;
+  text-shadow: 0 0 18px #FF6A00aa;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#subtitle {
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* ── STATUS ROW ── */
+#status-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 820px;
+}
+.stat-box {
+  flex: 1;
+  background: #141414;
+  border: 1px solid #FF6A00;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+.stat-label {
+  font-size: 9px;
+  color: #FF6A00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.stat-val {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.2;
+}
+#timer-val.danger { color: #ff3333; animation: blink .5s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+
+/* ── PROGRESS BAR ── */
+#prog-wrap { width: 100%; max-width: 820px; }
+#prog-labels { display: flex; justify-content: space-between; font-size: 11px; color: #FF6A00; margin-bottom: 4px; }
+#prog-track {
+  background: #111;
+  border: 1px solid #FF6A00;
+  border-radius: 4px;
+  height: 28px;
+  overflow: hidden;
+  position: relative;
+}
+#prog-fill {
+  background: linear-gradient(90deg, #c54a00, #FF6A00, #ff9d00);
+  height: 100%;
+  width: 0%;
+  transition: width .25s ease;
+  box-shadow: 0 0 12px #FF6A00;
+}
+#prog-fill::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 0;
+  width: 3px; height: 100%;
+  background: #fff;
+  box-shadow: 0 0 6px #fff;
+}
+#prog-num {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ── COFFEE BAR ── */
+#coffee-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 820px;
+}
+#coffee-label { font-size: 11px; color: #a0522d; white-space: nowrap; }
+#coffee-track {
+  flex: 1;
+  background: #111;
+  border: 1px solid #6b3a1f;
+  border-radius: 3px;
+  height: 12px;
+  overflow: hidden;
+}
+#coffee-fill {
+  background: linear-gradient(90deg, #6b3a1f, #c8813a);
+  height: 100%;
+  width: 100%;
+  transition: width .3s ease;
+}
+
+/* ── BUTTON ARENA ── */
+#arena {
+  width: 100%;
+  max-width: 820px;
+  height: 110px;
+  background: #0a0a0a;
+  border: 1px solid #222;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+#arena-hint {
+  position: absolute;
+  bottom: 4px; right: 8px;
+  font-size: 9px;
+  color: #333;
+  pointer-events: none;
+}
+
+.abtn {
+  position: absolute;
+  padding: 9px 14px;
+  border: 2px solid #FF6A00;
+  background: #1a0800;
+  color: #FF6A00;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background .1s, color .1s, box-shadow .1s, transform .1s;
+  animation: popIn .25s ease;
+}
+.abtn:hover { background: #FF6A00; color: #000; box-shadow: 0 0 16px #FF6A00; transform: scale(1.07); }
+.abtn:active { transform: scale(.94); }
+.abtn.fading { opacity: .2; transition: opacity .5s; pointer-events: none; }
+@keyframes popIn { from{opacity:0;transform:scale(.7)} to{opacity:1;transform:scale(1)} }
+
+/* ── TERMINAL ── */
+#terminal {
+  width: 100%;
+  max-width: 820px;
+  flex: 1;
+  background: #030303;
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+  padding: 8px 10px;
+  overflow-y: auto;
+  min-height: 120px;
+  max-height: 180px;
+}
+#term-header { font-size: 10px; color: #444; border-bottom: 1px solid #111; padding-bottom: 5px; margin-bottom: 6px; }
+.tline { font-size: 11px; margin: 2px 0; animation: tslide .2s ease; }
+.tline.info  { color: #4a9eff; }
+.tline.warn  { color: #ffcc00; }
+.tline.error { color: #ff4444; }
+.tline.ok    { color: #44ff99; }
+@keyframes tslide { from{opacity:0;transform:translateX(-8px)} to{opacity:1;transform:translateX(0)} }
+
+/* ── SHAKE ── */
+@keyframes shake {
+  0%,100%{transform:translate(0,0)}
+  10%{transform:translate(-8px,-2px) rotate(-.5deg)}
+  20%{transform:translate(8px,2px) rotate(.5deg)}
+  30%{transform:translate(-7px,-1px) rotate(-.4deg)}
+  40%{transform:translate(7px,1px) rotate(.4deg)}
+  55%{transform:translate(-4px,0)}
+  70%{transform:translate(4px,0)}
+  85%{transform:translate(-2px,0)}
+}
+.shaking { animation: shake .6s ease !important; }
+
+/* ── FLASH OVERLAY ── */
+#flash {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 90;
+  opacity: 0;
+}
+#flash.red  { background: #ff0000; animation: flashAnim .35s ease; }
+#flash.green{ background: #00ff88; animation: flashAnim .35s ease; }
+@keyframes flashAnim { 0%{opacity:.3} 100%{opacity:0} }
+
+/* ── EVENT POPUP ── */
+#event-popup {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%) scale(.8);
+  background: #150000;
+  border: 2px solid #ff3333;
+  border-radius: 8px;
+  padding: 16px 26px;
+  text-align: center;
+  font-size: 15px;
+  color: #ff8888;
+  z-index: 100;
+  display: none;
+  max-width: 380px;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+#event-popup.visible {
+  display: block;
+  animation: popupIn .3s ease forwards;
+}
+@keyframes popupIn {
+  from{opacity:0;transform:translate(-50%,-60%) scale(.8)}
+  to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}
+
+/* ── CONSULTANT NPC ── */
+#consultant {
+  position: fixed;
+  bottom: -120px;
+  right: 30px;
+  background: #0e0e1e;
+  border: 2px solid #FF6A00;
+  border-radius: 10px;
+  padding: 14px 18px;
+  text-align: center;
+  z-index: 110;
+  cursor: pointer;
+  transition: bottom .5s cubic-bezier(.34,1.56,.64,1);
+  max-width: 210px;
+  box-shadow: 0 0 20px #FF6A0044;
+}
+#consultant.up { bottom: 20px; }
+#consultant:hover { border-color: #ffaa00; }
+#consultant-emoji { font-size: 34px; display: block; margin-bottom: 6px; }
+#consultant-quote { font-size: 12px; color: #ccc; }
+#consultant-cta { margin-top: 8px; font-size: 10px; color: #FF6A00; }
+
+/* ── SPEED BADGE ── */
+#speed-badge {
+  position: fixed;
+  top: 18px; right: 18px;
+  background: #1a0a00;
+  border: 1px solid #ff9900;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: #ff9900;
+  z-index: 50;
+  display: none;
+}
+#speed-badge.on { display: block; animation: pulseBadge .6s infinite; }
+@keyframes pulseBadge { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+/* ── END SCREEN ── */
+#end-screen {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.93);
+  z-index: 200;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+#end-screen.on { display: flex; }
+#end-title { font-size: 52px; font-weight: bold; }
+#end-msg { font-size: 18px; color: #ccc; }
+#end-sub { font-size: 13px; color: #666; }
+#end-score { font-size: 15px; color: #FF6A00; margin-top: 4px; }
+#restart-btn {
+  margin-top: 16px;
+  padding: 14px 40px;
+  background: #FF6A00;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .15s;
+}
+#restart-btn:hover { background: #ff9900; box-shadow: 0 0 24px #FF6A00; transform: scale(1.05); }
+
+/* ── BOSS KEY (FAKE EXCEL) ── */
+#boss-screen {
+  display: none;
+  position: fixed; inset: 0;
+  background: #fff;
+  z-index: 999;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  overflow: hidden;
+}
+#boss-screen.on { display: block; }
+.xl-toolbar {
+  background: #1f7145;
+  color: white;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.xl-menu { background: #f0f0f0; padding: 3px 8px; border-bottom: 1px solid #ccc; font-size: 11px; }
+.xl-formula { background: #f5f5f5; padding: 3px 8px; border-bottom: 1px solid #ccc; font-size: 11px; display:flex; gap:12px; }
+.xl-formula span:first-child { background:#fff; border:1px solid #aaa; padding:1px 6px; min-width:40px; }
+.xl-hint { margin-left:auto; font-size: 10px; color: #999; }
+.xl-table { width: 100%; border-collapse: collapse; }
+.xl-table th, .xl-table td { border: 1px solid #ccc; padding: 3px 6px; font-size: 11px; }
+.xl-table th { background: #e8e8e8; text-align: center; font-weight: normal; }
+.xl-cell-hl { background: #c8e6c9 !important; }
+.xl-pos { color: red; }
+.xl-neg { color: green; }
+
+/* ── CONFETTI ── */
+.conf {
+  position: fixed;
+  width: 9px; height: 9px;
+  z-index: 300;
+  animation: confFall linear forwards;
+  pointer-events: none;
+}
+@keyframes confFall {
+  0%   { transform: translateY(-20px) rotate(0deg) scale(1); opacity: 1; }
+  100% { transform: translateY(105vh) rotate(800deg) scale(.5); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── BOSS KEY SCREEN ── -->
+<div id="boss-screen">
+  <div class="xl-toolbar">
+    <strong>📊 Microsoft Excel</strong>
+    <span style="font-size:11px;color:#adf">Q3_Budget_Final_v3_FINAL_USE_THIS_ONE.xlsx</span>
+    <span style="margin-left:auto;font-size:11px;color:#9fc">Saved ✓</span>
+  </div>
+  <div class="xl-menu">File &nbsp; Edit &nbsp; View &nbsp; Insert &nbsp; Format &nbsp; Tools &nbsp; Data &nbsp; Window &nbsp; Help</div>
+  <div class="xl-formula">
+    <span>B2</span>
+    <span style="flex:1">="Q3 Total Budget"</span>
+    <span class="xl-hint">Press B again to return to work</span>
+  </div>
+  <table class="xl-table">
+    <tr>
+      <th style="width:28px"></th>
+      <th>A</th><th class="xl-cell-hl">B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
+    </tr>
+    <tr><th>1</th>
+      <td><b>Department</b></td>
+      <td class="xl-cell-hl"><b>Q3 Budget</b></td>
+      <td><b>Q3 Actual</b></td>
+      <td><b>Variance</b></td>
+      <td><b>%</b></td>
+      <td><b>Status</b></td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>2</th>
+      <td>IT &amp; Development</td>
+      <td class="xl-cell-hl">€ 125,000</td>
+      <td>€ 142,350</td>
+      <td class="xl-pos">-€ 17,350</td>
+      <td class="xl-pos">-13.9%</td>
+      <td>⚠️ Over</td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>3</th>
+      <td>Consulting</td>
+      <td class="xl-cell-hl">€ 89,500</td>
+      <td>€ 91,200</td>
+      <td class="xl-pos">-€ 1,700</td>
+      <td class="xl-pos">-1.9%</td>
+      <td>🔶 Review</td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>4</th>
+      <td>Marketing</td>
+      <td class="xl-cell-hl">€ 45,000</td>
+      <td>€ 38,750</td>
+      <td class="xl-neg">+€ 6,250</td>
+      <td class="xl-neg">+13.9%</td>
+      <td>✅ OK</td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>5</th>
+      <td>HR</td>
+      <td class="xl-cell-hl">€ 62,000</td>
+      <td>€ 59,100</td>
+      <td class="xl-neg">+€ 2,900</td>
+      <td class="xl-neg">+4.7%</td>
+      <td>✅ OK</td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>6</th>
+      <td>Infrastructure</td>
+      <td class="xl-cell-hl">€ 78,000</td>
+      <td>€ 74,500</td>
+      <td class="xl-neg">+€ 3,500</td>
+      <td class="xl-neg">+4.5%</td>
+      <td>✅ OK</td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>7</th>
+      <td><b>TOTAL</b></td>
+      <td class="xl-cell-hl"><b>€ 399,500</b></td>
+      <td><b>€ 405,900</b></td>
+      <td class="xl-pos"><b>-€ 6,400</b></td>
+      <td class="xl-pos"><b>-1.6%</b></td>
+      <td><b>🔶 Review</b></td>
+      <td></td><td></td>
+    </tr>
+    <tr><th>8</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><th>9</th>
+      <td style="color:#888">Notes:</td>
+      <td colspan="5" style="color:#888">IT overrun due to unplanned cloud migration. To be discussed in Q4 planning.</td>
+      <td></td><td></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ── OVERLAYS ── -->
+<div id="flash"></div>
+<div id="speed-badge">⚡ COFFEE BOOST ACTIVE</div>
+
+<div id="consultant" onclick="dismissConsultant()">
+  <span id="consultant-emoji">🧑‍💼</span>
+  <div id="consultant-quote">Have you tried turning it off and on again?</div>
+  <div id="consultant-cta">[ Click to dismiss ]</div>
+</div>
+
+<div id="event-popup"></div>
+
+<!-- ── END SCREEN ── -->
+<div id="end-screen">
+  <div id="end-title"></div>
+  <div id="end-msg"></div>
+  <div id="end-sub"></div>
+  <div id="end-score"></div>
+  <button id="restart-btn" onclick="restartGame()">[ RESTART DEPLOYMENT ]</button>
+</div>
+
+<!-- ── MAIN GAME ── -->
+<div id="game">
+
+  <div>
+    <div id="title">🍊 DEPLOY PANIC AT ITENIUM 💻</div>
+    <div id="subtitle">Friday 16:58 — Client is waiting — Boss is watching — Jenkins is judging you</div>
+  </div>
+
+  <div id="status-row">
+    <div class="stat-box">
+      <div class="stat-label">⏱ Time Remaining</div>
+      <div class="stat-val" id="timer-val">60s</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">📊 Deploy Progress</div>
+      <div class="stat-val" id="progress-val">0%</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">🔥 Chaos Level</div>
+      <div class="stat-val" id="chaos-val" style="color:#44ff88">LOW</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">📦 Actions Taken</div>
+      <div class="stat-val" id="actions-val">0</div>
+    </div>
+  </div>
+
+  <div id="prog-wrap">
+    <div id="prog-labels">
+      <span>DEPLOYMENT PIPELINE</span>
+      <span id="prog-text-out">0 / 100</span>
+    </div>
+    <div id="prog-track">
+      <div id="prog-fill"></div>
+      <div id="prog-num">0%</div>
+    </div>
+  </div>
+
+  <div id="coffee-row">
+    <div id="coffee-label">☕ COFFEE METER</div>
+    <div id="coffee-track">
+      <div id="coffee-fill"></div>
+    </div>
+    <div id="coffee-label" style="font-size:10px;color:#555" id="coffee-pct">100%</div>
+  </div>
+
+  <div id="arena">
+    <div id="arena-hint">Click buttons before they disappear!</div>
+  </div>
+
+  <div id="terminal">
+    <div id="term-header">itenium@prod-server:~$ ./deploy.sh &nbsp;&nbsp; [Press B = Boss Mode]</div>
+    <div id="term-log"></div>
+  </div>
+
+</div>
+
+<script>
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let G = {};
+let ivals = {};
+let actCount = 0;
+let startTime = 0;
+
+// ══════════════════════════════════════════
+//  ACTIONS
+// ══════════════════════════════════════════
+const ACTIONS = [
+  {
+    label: '🔧 Fix Bug',
+    weight: 3,
+    fn() {
+      const gain = 8 + rnd(8);
+      addProg(gain);
+      tlog('info', `[INFO] Bug squashed. ${rnd(20)+3} new bugs created. Net positive.`);
+    }
+  },
+  {
+    label: '🚀 Deploy!',
+    weight: 2,
+    fn() {
+      if (Math.random() < 0.3) {
+        addProg(-20);
+        shake(); flashRed();
+        popup('💥 DEPLOY FAILED!\n"Rolling back... maybe."');
+        tlog('error', '[ERROR] Pipeline on fire. Kubernetes is crying. Rollback initiated.');
+      } else {
+        addProg(28 + rnd(8));
+        flashGreen();
+        tlog('ok', '[SUCCESS] Deployed! (do not look at the logs)');
+      }
+    }
+  },
+  {
+    label: '☕ Drink Coffee',
+    weight: 2,
+    fn() {
+      if (G.coffee <= 5) {
+        addProg(-4);
+        tlog('warn', '[WARN] Empty mug. Despair. Progress lost.');
+      } else {
+        G.coffee = Math.min(100, G.coffee + 25);
+        startBoost();
+        tlog('info', `[INFO] Caffeine mainlined. Speed +50% for 8s.`);
+      }
+    }
+  },
+  {
+    label: '🧑‍💼 Join Meeting',
+    weight: 2,
+    fn() {
+      G.time = Math.max(1, G.time - 5);
+      updateTimer();
+      popup('📅 MEETING JOINED\n"This could have been an email."\n(It really could have.)');
+      tlog('warn', '[WARN] 45-min sync about the sync. -5 seconds of your life.');
+    }
+  },
+  {
+    label: '🤯 StackOverflow',
+    weight: 3,
+    fn() {
+      const r = Math.random();
+      if (r < .2) { addProg(20); tlog('ok',   '[INFO] Found exact duplicate from 2009. Still works. Top answer 847 upvotes.'); }
+      else if (r < .4) { addProg(10); tlog('info', '[INFO] Answer is marked [CLOSED - duplicate]. Found the duplicate. It helped.'); }
+      else if (r < .6) { addProg(-12); shake(); tlog('error','[ERROR] Pasted wrong code. Now it compiles but does nothing.'); }
+      else if (r < .8) { addProg(5);  tlog('warn', '[WARN] Top answer: "Have you tried restarting?" — You have. 14 times.'); }
+      else { G.time = Math.max(1, G.time-3); updateTimer(); tlog('warn','[WARN] Got lost reading a PHP debate. Lost 3 seconds.'); }
+    }
+  },
+  {
+    label: '🔄 Git Pull',
+    weight: 2,
+    fn() {
+      if (Math.random() < .4) {
+        addProg(-15); shake(); flashRed();
+        popup('⚡ MERGE CONFLICT!\n247 conflicts in package-lock.json\nalert(undefined)');
+        tlog('error','[ERROR] CONFLICT: everything.js, nothing.ts, hope.jsx');
+      } else {
+        addProg(10);
+        tlog('info','[INFO] git pull successful. 47 new files. 3 breaking changes. Good luck.');
+      }
+    }
+  },
+  {
+    label: '📝 Write Tests',
+    weight: 2,
+    fn() {
+      addProg(12);
+      tlog('info','[INFO] Tests written. Coverage: 100%. Tests test nothing. Progress anyway.');
+    }
+  },
+  {
+    label: '🔥 Hotfix to Main',
+    weight: 1,
+    fn() {
+      if (Math.random() < .35) {
+        addProg(-25); shake(); flashRed();
+        popup('🚨 MAIN IS BROKEN\nGit blame will find you.\nStart packing.');
+        tlog('error','[ERROR] Pushed broken code to main. Everyone knows it was you.');
+      } else {
+        addProg(30); flashGreen();
+        tlog('ok','[SUCCESS] Hotfix worked. You are a hero. (Until Monday.)');
+      }
+    }
+  },
+  {
+    label: '🐳 Restart Docker',
+    weight: 2,
+    fn() {
+      const gain = rnd(15) - 5;
+      addProg(gain);
+      if (gain > 5) tlog('ok','[INFO] Docker restarted. Problem solved. You have no idea why.');
+      else tlog('warn','[WARN] Docker restarted. Different problem now. Progress?');
+    }
+  },
+  {
+    label: '📋 Update JIRA',
+    weight: 1,
+    fn() {
+      G.time = Math.max(1, G.time - 2);
+      updateTimer();
+      tlog('warn','[WARN] JIRA updated. Nothing changed. -2 seconds. Stakeholders satisfied.');
+    }
+  },
+];
+
+// ══════════════════════════════════════════
+//  RANDOM EVENTS
+// ══════════════════════════════════════════
+const EVENTS = [
+  { t:'error', m:'"The intern deleted the Kubernetes cluster."',       fx(){ addProg(-18); shake(); flashRed(); } },
+  { t:'error', m:'"Someone pushed directly to production."',           fx(){ addProg(-12); shake(); } },
+  { t:'warn',  m:'"It works on my machine." — Jenkins disagrees.',     fx(){ addProg(-6); } },
+  { t:'warn',  m:'"The client wants it by yesterday."',                fx(){ G.time=Math.max(1,G.time-4); updateTimer(); } },
+  { t:'error', m:'"Docker container has achieved sentience."',         fx(){ shake(); addProg(-22); flashRed(); } },
+  { t:'warn',  m:'"Someone did a Reply All to the company email."',    fx(){ } },
+  { t:'warn',  m:'"New requirement added: blockchain integration."',   fx(){ addProg(-8); } },
+  { t:'info',  m:'"Build passes on staging. Staging ≠ prod."',        fx(){ addProg(6); } },
+  { t:'error', m:'"SSL certificate expired. On a Friday."',            fx(){ shake(); addProg(-14); } },
+  { t:'warn',  m:'"npm audit: 1,247 critical vulnerabilities."',       fx(){ addProg(-5); } },
+  { t:'error', m:'"QA environment is missing. No one knows since when."', fx(){ } },
+  { t:'warn',  m:'"Senior dev entered Do Not Disturb mode."',          fx(){ } },
+  { t:'info',  m:'"Free pizza in the kitchen." Productivity: 8%.',    fx(){ addProg(-4); } },
+  { t:'error', m:'"Stakeholder wants a live demo. Right now."',        fx(){ G.time=Math.max(1,G.time-5); shake(); updateTimer(); } },
+  { t:'ok',    m:'"LGTM" — Reviewer who definitely read the PR.',      fx(){ addProg(10); flashGreen(); } },
+  { t:'warn',  m:'"Someone renamed the main branch."',                 fx(){ addProg(-8); shake(); } },
+  { t:'error', m:'"Production database: 0 rows. It was 4 million."',   fx(){ addProg(-25); shake(); flashRed(); popup('🗄️ DATABASE GONE\n"Backup? What backup?"'); } },
+  { t:'info',  m:'"A junior asked what a pointer is."',               fx(){ } },
+  { t:'ok',    m:'"The build failed earlier was just a fluke!"',       fx(){ addProg(12); flashGreen(); } },
+  { t:'warn',  m:'"CI pipeline says: works! (different branch)"',      fx(){ addProg(-5); } },
+];
+
+const CONSULTANT_QUOTES = [
+  "Have you tried turning it off and on again?",
+  "We had the same issue at my last client.",
+  "In my experience, this is a people problem.",
+  "Have you considered rewriting this in COBOL?",
+  "The spec said this was done last sprint.",
+  "I'll need you to update the JIRA ticket.",
+  "Why not just use SharePoint?",
+  "Let me loop in the stakeholders.",
+  "This is a feature, not a bug.",
+  "Did you document this change?",
+  "Have you looked at migrating to SAP?",
+  "What's your test coverage on this?",
+];
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+function init() {
+  G = {
+    time: 60,
+    progress: 0,
+    coffee: 100,
+    boost: false,
+    boostTicks: 0,
+    consultantUp: false,
+    consultantDraining: false,
+    chaos: 0,   // 0 low, 1 med, 2 high
+    alive: true,
+    bossMode: false,
+  };
+  actCount = 0;
+  startTime = Date.now();
+
+  q('arena').innerHTML = '<div id="arena-hint">Click buttons before they disappear!</div>';
+  q('term-log').innerHTML = '';
+  q('prog-fill').style.width = '0%';
+  q('prog-num').textContent = '0%';
+  q('progress-val').textContent = '0%';
+  q('prog-text-out').textContent = '0 / 100';
+  q('coffee-fill').style.width = '100%';
+  q('chaos-val').textContent = 'LOW';
+  q('chaos-val').style.color = '#44ff88';
+  q('actions-val').textContent = '0';
+  q('timer-val').textContent = '60s';
+  q('timer-val').classList.remove('danger');
+  q('speed-badge').classList.remove('on');
+  q('consultant').classList.remove('up');
+  q('event-popup').classList.remove('visible');
+  q('event-popup').style.display = 'none';
+  q('end-screen').classList.remove('on');
+
+  clearAllIvals();
+
+  tlog('info', '[INIT] deploy.sh started... Friday 16:58. Praying to the DevOps gods.');
+  tlog('warn', "[WARN] It's Friday afternoon. What could possibly go wrong?");
+  tlog('info', '[INFO] Loading 1,423 npm packages... (3 are broken)');
+
+  ivals.tick    = setInterval(tick,       1000);
+  ivals.spawn   = setInterval(spawnBtn,   2200);
+  ivals.events  = setInterval(fireEvent,  6000);
+  ivals.consult = setTimeout(showConsultant, 13000 + rnd(8000));
+  spawnBtn(); spawnBtn(); spawnBtn();
+}
+
+function clearAllIvals() {
+  Object.values(ivals).forEach(id => { clearInterval(id); clearTimeout(id); });
+  ivals = {};
+}
+
+// ══════════════════════════════════════════
+//  GAME TICK
+// ══════════════════════════════════════════
+function tick() {
+  if (!G.alive) return;
+
+  G.time--;
+
+  // coffee drain
+  const drain = G.boost ? 3 : 1;
+  G.coffee = Math.max(0, G.coffee - drain);
+  updateCoffee();
+
+  // boost countdown
+  if (G.boost) {
+    G.boostTicks--;
+    if (G.boostTicks <= 0) {
+      G.boost = false;
+      q('speed-badge').classList.remove('on');
+    }
+  }
+
+  // low coffee penalty
+  if (G.coffee === 0 && Math.random() < .25) {
+    addProg(-2);
+    tlog('warn','[WARN] Running on fumes. Staring at monitor. Progress lost.');
+  }
+
+  // consultant time-drain
+  if (G.consultantUp && Math.random() < .35) {
+    G.time = Math.max(0, G.time - 1);
+    tlog('warn','[WARN] Consultant still talking. You are losing your mind.');
+  }
+
+  // chaos escalation
+  const ratio = G.time / 60;
+  if (ratio < .3 && G.chaos < 2) {
+    G.chaos = 2;
+    q('chaos-val').textContent = '🔥 EXTREME';
+    q('chaos-val').style.color = '#ff3333';
+    clearInterval(ivals.events); ivals.events = setInterval(fireEvent, 2800);
+    clearInterval(ivals.spawn);  ivals.spawn  = setInterval(spawnBtn,  1400);
+    tlog('error','[CHAOS] EXTREME CHAOS MODE ACTIVATED. God help us all.');
+  } else if (ratio < .6 && G.chaos < 1) {
+    G.chaos = 1;
+    q('chaos-val').textContent = '⚠️ HIGH';
+    q('chaos-val').style.color = '#ffcc00';
+    clearInterval(ivals.events); ivals.events = setInterval(fireEvent, 4200);
+    clearInterval(ivals.spawn);  ivals.spawn  = setInterval(spawnBtn,  1800);
+    tlog('warn','[WARN] Chaos level rising. Breathe. You can do this. (You cannot.)');
+  }
+
+  updateTimer();
+  if (G.time <= 0) endGame(false);
+}
+
+// ══════════════════════════════════════════
+//  BUTTONS
+// ══════════════════════════════════════════
+function spawnBtn() {
+  if (!G.alive) return;
+  const arena = q('arena');
+  const existing = arena.querySelectorAll('.abtn');
+  if (existing.length >= 6) existing[0].remove();
+
+  const a = weightedPick(ACTIONS);
+  const btn = document.createElement('button');
+  btn.className = 'abtn';
+  btn.textContent = a.label;
+
+  const aw = arena.offsetWidth  || 820;
+  const ah = arena.offsetHeight || 110;
+  const bw = 155, bh = 44;
+  btn.style.left = (5 + rnd(aw - bw - 10)) + 'px';
+  btn.style.top  = (5 + rnd(ah - bh - 10)) + 'px';
+
+  btn.addEventListener('click', () => {
+    if (!G.alive) return;
+    a.fn();
+    actCount++;
+    q('actions-val').textContent = actCount;
+    btn.remove();
+    setTimeout(spawnBtn, G.boost ? 600 : 1200);
+  });
+
+  arena.appendChild(btn);
+
+  // lifetime before fading
+  const life = G.chaos === 2 ? 3500 : G.chaos === 1 ? 5500 : 8000;
+  setTimeout(() => {
+    if (btn.parentNode) {
+      btn.classList.add('fading');
+      setTimeout(() => btn.remove(), 500);
+    }
+  }, life);
+}
+
+// ══════════════════════════════════════════
+//  RANDOM EVENTS
+// ══════════════════════════════════════════
+function fireEvent() {
+  if (!G.alive) return;
+  const e = EVENTS[Math.floor(Math.random() * EVENTS.length)];
+  tlog(e.t, '[EVENT] ' + e.m);
+  e.fx();
+}
+
+// ══════════════════════════════════════════
+//  CONSULTANT
+// ══════════════════════════════════════════
+function showConsultant() {
+  if (!G.alive) return;
+  G.consultantUp = true;
+  const q2 = CONSULTANT_QUOTES[Math.floor(Math.random() * CONSULTANT_QUOTES.length)];
+  q('consultant-quote').textContent = q2;
+  q('consultant').classList.add('up');
+  tlog('warn', `[WARN] 🧑‍💼 Consultant approaching: "${q2}"`);
+}
+
+function dismissConsultant() {
+  G.consultantUp = false;
+  q('consultant').classList.remove('up');
+  tlog('info','[INFO] Consultant dismissed. Back to the chaos.');
+  ivals.consult = setTimeout(showConsultant, 15000 + rnd(10000));
+}
+
+// ══════════════════════════════════════════
+//  COFFEE BOOST
+// ══════════════════════════════════════════
+function startBoost() {
+  G.boost = true;
+  G.boostTicks = 8;
+  q('speed-badge').classList.add('on');
+  spawnBtn(); spawnBtn();
+}
+
+// ══════════════════════════════════════════
+//  PROGRESS
+// ══════════════════════════════════════════
+function addProg(n) {
+  G.progress = Math.max(0, Math.min(100, G.progress + n));
+  const pct = Math.round(G.progress);
+  q('prog-fill').style.width = pct + '%';
+  q('prog-num').textContent = pct + '%';
+  q('progress-val').textContent = pct + '%';
+  q('prog-text-out').textContent = pct + ' / 100';
+  if (G.progress >= 100) endGame(true);
+}
+
+// ══════════════════════════════════════════
+//  DISPLAYS
+// ══════════════════════════════════════════
+function updateTimer() {
+  q('timer-val').textContent = G.time + 's';
+  if (G.time <= 15) q('timer-val').classList.add('danger');
+  else q('timer-val').classList.remove('danger');
+}
+
+function updateCoffee() {
+  const pct = G.coffee;
+  q('coffee-fill').style.width = pct + '%';
+  const fill = q('coffee-fill');
+  if (pct < 20) fill.style.background = '#2a1000';
+  else if (pct < 50) fill.style.background = 'linear-gradient(90deg,#6b3a1f,#944f1a)';
+  else fill.style.background = 'linear-gradient(90deg,#6b3a1f,#c8813a)';
+}
+
+function tlog(type, msg) {
+  const log = q('term-log');
+  const d = new Date();
+  const ts = `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+  const line = document.createElement('div');
+  line.className = 'tline ' + type;
+  line.textContent = `[${ts}] ${msg}`;
+  log.appendChild(line);
+  log.scrollTop = log.scrollHeight;
+  while (log.children.length > 60) log.removeChild(log.firstChild);
+}
+
+function popup(msg) {
+  const el = q('event-popup');
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.classList.add('visible');
+  clearTimeout(ivals.popupHide);
+  ivals.popupHide = setTimeout(() => {
+    el.classList.remove('visible');
+    setTimeout(() => { el.style.display = 'none'; }, 300);
+  }, 2400);
+}
+
+// ══════════════════════════════════════════
+//  VFX
+// ══════════════════════════════════════════
+function shake() {
+  const gc = q('game');
+  gc.classList.remove('shaking');
+  void gc.offsetWidth;
+  gc.classList.add('shaking');
+  setTimeout(() => gc.classList.remove('shaking'), 700);
+}
+
+function flashRed() {
+  const f = q('flash');
+  f.className = '';
+  void f.offsetWidth;
+  f.className = 'red';
+  setTimeout(() => f.className = '', 400);
+}
+function flashGreen() {
+  const f = q('flash');
+  f.className = '';
+  void f.offsetWidth;
+  f.className = 'green';
+  setTimeout(() => f.className = '', 400);
+}
+
+function confetti() {
+  const COLS = ['#FF6A00','#ff9d00','#ffcc00','#44ff99','#4a9eff','#ff69b4','#fff'];
+  for (let i = 0; i < 100; i++) {
+    setTimeout(() => {
+      const c = document.createElement('div');
+      c.className = 'conf';
+      c.style.left = (Math.random()*100) + 'vw';
+      c.style.top  = '-15px';
+      c.style.background = COLS[Math.floor(Math.random()*COLS.length)];
+      const sz = 6 + Math.random()*10;
+      c.style.width  = sz + 'px';
+      c.style.height = sz + 'px';
+      c.style.borderRadius = Math.random() > .5 ? '50%' : '2px';
+      const dur = 2 + Math.random()*2.5;
+      c.style.animationDuration = dur + 's';
+      c.style.animationDelay   = (Math.random()*.8) + 's';
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), (dur+1)*1000);
+    }, i * 25);
+  }
+}
+
+// ══════════════════════════════════════════
+//  END GAME
+// ══════════════════════════════════════════
+function endGame(win) {
+  G.alive = false;
+  clearAllIvals();
+  q('consultant').classList.remove('up');
+  q('speed-badge').classList.remove('on');
+
+  const elapsed = Math.round((Date.now() - startTime) / 1000);
+  const es = q('end-screen');
+  es.classList.add('on');
+
+  if (win) {
+    q('end-title').textContent     = '🎉 DEPLOY SUCCESSFUL!';
+    q('end-title').style.color     = '#44ff99';
+    q('end-msg').textContent       = 'Production survived. (Somehow.)';
+    q('end-sub').textContent       = '🍊 Itenium saves the day — again!';
+    q('end-score').textContent     = `Completed in ${elapsed}s with ${actCount} actions. You are a legend.`;
+    confetti(); flashGreen();
+    tlog('ok','[SUCCESS] DEPLOYMENT COMPLETE. You are a hero. Beer. Now.');
+  } else {
+    q('end-title').textContent     = '💀 DEPLOY FAILED';
+    q('end-title').style.color     = '#ff4444';
+    q('end-msg').textContent       = 'The client has scheduled another meeting.';
+    q('end-sub').textContent       = '"We\'ll fix it in the next sprint." — You, until retirement.';
+    q('end-score').textContent     = `Progress reached: ${Math.round(G.progress)}% in ${elapsed}s. ${actCount} actions taken.`;
+    shake(); flashRed();
+    tlog('error','[ERROR] Deployment window closed. Blame Jenkins. Blame the intern. Blame yourself.');
+  }
+}
+
+function restartGame() {
+  q('end-screen').classList.remove('on');
+  // clean up confetti
+  document.querySelectorAll('.conf').forEach(c => c.remove());
+  init();
+}
+
+// ══════════════════════════════════════════
+//  BOSS KEY
+// ══════════════════════════════════════════
+document.addEventListener('keydown', e => {
+  if (e.key === 'b' || e.key === 'B') {
+    G.bossMode = !G.bossMode;
+    q('boss-screen').classList.toggle('on', G.bossMode);
+  }
+});
+
+// ══════════════════════════════════════════
+//  HELPERS
+// ══════════════════════════════════════════
+function q(id) { return document.getElementById(id); }
+function rnd(n) { return Math.floor(Math.random() * n); }
+function pad(n) { return String(n).padStart(2,'0'); }
+function weightedPick(arr) {
+  const total = arr.reduce((s,a) => s + (a.weight||1), 0);
+  let r = Math.random() * total;
+  for (const a of arr) { r -= (a.weight||1); if (r <= 0) return a; }
+  return arr[arr.length-1];
+}
+
+// ══════════════════════════════════════════
+//  START
+// ══════════════════════════════════════════
+init();
+</script>
+</body>
+</html>
