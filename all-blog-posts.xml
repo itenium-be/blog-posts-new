@@ -368,12 +368,177 @@ staff successfully merge code, new memes and 2 mini games.</p>
     
     <figcaption>We're still safe -- for now ;)</figcaption>
     
-</figure>]]></block2>
+</figure>
+
+<h2 id="behind-the-prompts">Behind the Prompts</h2>
+
+<p>The parts Claude couldn’t generate:</p>
+
+<style>
+.gallery-wrap { position: relative; display: inline-block; }
+.gallery-thumb { cursor: pointer; max-width: 100%; display: block; }
+.gallery-badge {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+.gallery-hint {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 6px;
+  text-align: center;
+}
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.95);
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-modal.active { display: flex; }
+.gallery-close {
+  position: absolute;
+  top: 15px; right: 25px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+}
+.gallery-close:hover { color: #ccc; }
+.gallery-container {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+}
+.gallery-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  z-index: 10000;
+}
+.gallery-nav:hover { color: #ccc; }
+.gallery-prev { left: 15px; }
+.gallery-next { right: 15px; }
+.gallery-counter {
+  position: absolute;
+  top: 15px; left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 16px;
+}
+</style>
+
+<div class="gallery-wrap" onclick="openGallery(0)">
+  <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-gallery-1.jpeg" alt="Start of the bootcamp, everyone still setting up the project and Claude Code" class="gallery-thumb" />
+  <span class="gallery-badge">1 / 6</span>
+</div>
+<p class="gallery-hint">Click to view all 6 photos</p>
+
+<div class="gallery-modal" id="gallery-modal">
+  <span class="gallery-close" onclick="closeGallery()">&times;</span>
+  <span class="gallery-counter" id="gallery-counter"></span>
+  
+  <span class="gallery-nav gallery-prev" onclick="navGallery(-1)">&#10094;</span>
+  <span class="gallery-nav gallery-next" onclick="navGallery(1)">&#10095;</span>
+  
+  <div class="gallery-container">
+    <img class="gallery-img" id="gallery-img" src="" alt="" />
+    <div class="gallery-overlay" id="gallery-overlay"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var images = [
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-1.jpeg", text: "Start of the bootcamp, everyone still setting up the project and Claude Code" },
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-2.jpeg", text: "After burning so many tokens, need to ingest extra calories" },
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-3.jpeg", text: "The team demos at the end of the day" },
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-4.JPG", text: "The team presentation with the most mini games created ;)" },
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-5.jpeg", text: "The team presentation with the most e2e tests" },
+    
+    { file: "/blog/assets/blog-images/ai-bootcamp-gallery-6.jpeg", text: "Team presentation showing the SkillForge login screen" }
+    
+  ];
+  var idx = 0;
+
+  window.openGallery = function(i) {
+    idx = i;
+    showImage();
+    document.getElementById('gallery-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeGallery = function() {
+    document.getElementById('gallery-modal').classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  window.navGallery = function(dir) {
+    idx = (idx + dir + images.length) % images.length;
+    showImage();
+  };
+
+  function showImage() {
+    var img = images[idx];
+    document.getElementById('gallery-img').src = img.file;
+    var overlay = document.getElementById('gallery-overlay');
+    overlay.textContent = img.text;
+    overlay.style.display = img.text ? 'block' : 'none';
+    document.getElementById('gallery-counter').textContent = (idx + 1) + ' / ' + images.length;
+  }
+
+  document.getElementById('gallery-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeGallery();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    var modal = document.getElementById('gallery-modal');
+    if (!modal.classList.contains('active')) return;
+    if (e.key === 'Escape') closeGallery();
+    if (e.key === 'ArrowLeft') navGallery(-1);
+    if (e.key === 'ArrowRight') navGallery(1);
+  });
+})();
+</script>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><a href=""></a></li>
         <li><p style="margin-bottom: 5px">
     <a href="https://github.com/itenium-be/Bootcamp-AI" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/Bootcamp-AI.svg?style=social&label=Star" style="vertical-align: middle" />
