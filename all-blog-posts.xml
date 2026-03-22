@@ -1,5 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Vibe Coding the SkillForge</title>
+    <author>Van Schandevijl Wouter</author>
+    <subTitle>The 2026 itenium AI Bootcamp</subTitle>
+    <date>2026-03-18T00:00:00+00:00</date>
+    <print_date>2026-03-18T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/trends/skillforge-ai-bootcamp/</url>
+    <category>trends</category>
+    <tags>product,fun</tags>
+    <desc>The skill matrix @ itenium is currently an Excel. This is obviously unacceptable for an IT consultancy, enter &quot;SkillForge&quot; our custom app where we &quot;forge our skills&quot;.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-big.png</url>
+      <origin>Nano Banana</origin>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-sm.png</url>
+      <origin>Nano Banana</origin>
+    </img>
+    <excerpt><![CDATA[<p>The skill matrix at itenium is currently an Excel file.</p>
+
+<p>For an IT consultancy, this is obviously unacceptable. The cobbler’s children
+have no shoes, the mechanic drives a rust bucket, and the IT consultancy
+tracks skills in a spreadsheet.</p>
+
+<p>Enter <strong>SkillForge</strong>: our custom app where we “forge our skills.”</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-favicon.png" width="80" style="margin-right: 8px; float: left" alt="SkillForge fav icon" /><span style="color: #828282; font-style: italic">Empower your team with continuous learning. Track progress, manage courses, and build skills together.<br />
+– CEO Steven Robijns, moments before authorizing $1200 in AI token spend</span></p>]]></excerpt>
+      <block1><![CDATA[<h2 id="the-teams">The Teams</h2>
+
+<p>Six teams. Six ridiculous names. Six different interpretations of the backlog.</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-teams.png" alt="The participating teams" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Nickname</th>
+      <th>Vibe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Obsidian</strong></td>
+      <td>The Hallucination Hunters</td>
+      <td>Chasing phantom features</td>
+    </tr>
+    <tr>
+      <td><strong>Royal Purple</strong></td>
+      <td>The Tab Tab Tab Engineers</td>
+      <td>Automation over hesitation</td>
+    </tr>
+    <tr>
+      <td><strong>Teal</strong></td>
+      <td>The Prompt &amp; Pray Engineers</td>
+      <td>Minimal tokens, maximum hope</td>
+    </tr>
+    <tr>
+      <td><strong>Crimson</strong></td>
+      <td>The Yolo Deployers</td>
+      <td>27,000 lines of code. 18 features.</td>
+    </tr>
+    <tr>
+      <td><strong>Emerald</strong></td>
+      <td>The Token Burners</td>
+      <td>Burned bright. Won everything.</td>
+    </tr>
+    <tr>
+      <td><strong>Midnight Blue</strong></td>
+      <td>The Main Branch Pushers</td>
+      <td>No Staging. No fear.</td>
+    </tr>
+  </tbody>
+</table>]]></block1>
+      <block2><![CDATA[<h3 id="everyone">Everyone</h3>
+
+<p>Everyone participated in this vibe coding exercise. And by everyone, we do mean <em>everyone</em>.
+The backoffice staff. The people who normally recoil at the sight of a terminal.
+The ones who think “git” is something you say when frustrated.</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-non-technical-vibing.png" alt="Backoffice Coding" title="Backoffice Coding" /></p>
+
+<p>What could possibly go wrong.</p>
+
+<p>They all got Claude Code accounts. They all started prompting. Some of them
+even merged code.</p>
+
+<p>The developers watched in a mixture of horror and fascination as
+non-technical colleagues casually asked Claude to “add a button that
+does the thing” and… it worked?</p>
+
+<p>Sort of.</p>
+
+<h2 id="the-application">The Application</h2>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-logo.png" alt="SkillForge Logo" style="float: left; margin-right: 20px" />
+We set up a React 19 + .NET 10 + Postgres application. The stack was modern,
+the ambitions were high, and the Excel file was about to become obsolete.</p>
+
+<p>SkillForge was designed to be the ultimate L&amp;D platform for consultants, the PRD had 43 functional requirements:</p>
+
+<ul>
+  <li>User management with role-based access</li>
+  <li>Skill catalogue with proficiency levels and prerequisites</li>
+  <li>Personalized learning roadmaps</li>
+  <li>Goal tracking with coach validation</li>
+</ul>
+
+<h2 id="the-guardrails">The Guardrails</h2>
+
+<p>The whole thing was vibe coded with Claude Code, but we’re not
+<em>complete</em> animals. As responsible adults, guardrails were set up to prevent the AI from shipping
+absolute chaos to production.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/eslint/eslint" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/eslint/eslint.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/eslint/eslint">eslint/eslint</a>:
+        Find and fix problems in your JavaScript code.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/typicode/husky" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/typicode/husky.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/typicode/husky">typicode/husky</a>:
+        Git hooks made easy. Pre-commit validation.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/microsoft/playwright" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/microsoft/playwright.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/microsoft/playwright">microsoft/playwright</a>:
+        E2E testing. Because someone has to check if this works.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/prettier/prettier" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/prettier/prettier.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/prettier/prettier">prettier/prettier</a>:
+        Prettier is an opinionated code formatter.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/webpro-nl/knip" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/webpro-nl/knip.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/webpro-nl/knip">webpro-nl/knip</a>:
+        ✂️ Knip it before you ship it!</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/vitest-dev/vitest" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/vitest-dev/vitest.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/vitest-dev/vitest">vitest-dev/vitest</a>:
+        Next generation testing framework powered by Vite.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nunit/nunit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nunit/nunit.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/nunit/nunit">nunit/nunit</a>:
+        NUnit Framework</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/nsubstitute/NSubstitute" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/nsubstitute/NSubstitute.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/nsubstitute/NSubstitute">nsubstitute/NSubstitute</a>:
+        A friendly substitute for .NET mocking libraries.</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/testcontainers/testcontainers-dotnet" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/testcontainers/testcontainers-dotnet.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/testcontainers/testcontainers-dotnet">testcontainers/testcontainers-dotnet</a>:
+        A library to support tests with throwaway instances of Docker containers</p>
+
+<p style="margin-bottom: 5px">
+    <a href="https://github.com/dotnet/roslynator" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/dotnet/roslynator.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/dotnet/roslynator">dotnet/roslynator</a>:
+        Roslynator is a set of code analysis tools for C#, powered by Roslyn.</p>
+
+<p><br /></p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-great-code.png" style="margin-right: 8px; float: left" alt="SkillForge logo" />
+The idea was simple: Claude Code does the heavy lifting with a <a href="https://medium.com/@addyosmani/stop-using-init-for-agents-md-3086a333f380">very small <code>CLAUDE.md</code></a> instructing it to
+implement everything in <a href="https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/">red/green TDD</a>. Every PR must pass linting, tests, and code review. In theory, this prevents disaster.</p>
+
+<p>In practice… well, …</p>
+
+<div style="clear: both; margin-bottom: 8px"></div>
+
+<h2 id="the-dashboard">The Dashboard</h2>
+
+<p>Because what’s a competition without a scoreboard…
+Teams could watch their token count tick up in real-time. Nothing motivates
+quite like seeing your AI bill climb while your feature count stays flat.</p>
+
+<ul>
+  <li><strong>Tokens burned</strong>: the true measure of effort</li>
+  <li><strong>Tests passing</strong>: the true measure of… something working?</li>
+  <li><strong>PRs merged</strong>: the true measure of not breaking main</li>
+  <li><strong>Lines added</strong>: the true measure of nothing, as Team Crimson proved</li>
+</ul>
+
+<p>We vibe coded the dashboard, with the Competence Coaches improving the dashboard during the
+bootcamp, which resulted in some weird discrepancies like the biggest commit (lines added) being bigger than
+the total amount of lines added of the entire team, and also the dashboard being down for several hours.
+Maybe we should have had an AI harness for the dashboard as well? Naah…</p>
+
+<figure class="imagewrapper" style="max-width: 800px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-leaderboard.png" alt="The Dashboard" title="" class="img-responsive" />
+
+    
+    <figcaption>The cleaned up dashboard (with vibed issues fixed;)</figcaption>
+    
+</figure>
+
+<h2 id="tokens-burned">Tokens Burned</h2>
+
+<p><strong>Total burned</strong>: ~$1200</p>
+
+<p>That’s roughly $35 per person. Or, as we prefer to think of it: the cost of
+one really awkward team dinner, but instead we got a functioning application
+and excellent blog post material.</p>
+
+<h3 id="biggest-spender">Biggest Spender</h3>
+
+<p>As can be seen on the dashboard, Onur was leading in the “most tokens burned” category,
+he was one of the participants whom took the “Tips &amp; Tricks” from the intro powerpoint
+to heart and was using <code>git worktree</code>s.</p>
+
+<p>The rest of his team had other ideas on what to do while waiting for Claude Code to finish hallucinating
+non-existent APIs however, <a href="/blog/ai-bootcamp-mini-games.MOV">they created a few mini games</a>!</p>
+
+<h3 id="deploy-panic">Deploy Panic</h3>
+
+<p>A frantic game where you try to ship features while
+everything is on fire. Surprisingly accurate simulation.</p>
+
+<figure class="imagewrapper" style="max-width: 800px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-deploy-panic.png" alt="Mini game deploy panic" title="" class="img-responsive" />
+
+    
+    <figcaption>Friday 16:58 — Client is waiting — Boss is watching — Jenkins is judging you</figcaption>
+    
+</figure>
+
+<p>You can <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootamp-deploy-panic.html">play Deploy Panic</a> @ itenium right now!</p>
+
+<h3 id="itenium-runner">Itenium Runner</h3>
+
+<p>An endless runner where you dodge obstacles.
+The obstacles are bugs. The runner is your sanity. <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-itenium-runner.html">Play Itenium Runner</a> now!</p>
+
+<figure class="imagewrapper" style="max-width: 800px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-itenium-runner.png" alt="Mini game itenium runner" title="" class="img-responsive" />
+
+    
+    <figcaption>It is rumoured that this game was created with just 2 prompts</figcaption>
+    
+</figure>
+
+<h3 id="more-waiting">More Waiting</h3>
+
+<p>Others had even other ideas on what to have Claude do, including adding memes to their SkillForge application.
+I didn’t even know Claude could create memes ;)</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-mike-meme.png" alt="Memes were created" /></p>
+
+<h2 id="the-winners">The Winners</h2>
+
+<p><strong>Team Emerald</strong>, <em>The Token Burners</em> were selected by Claude as the winning team
+based on <a href="https://github.com/itenium-be/Bootcamp-AI-Dashboard/blob/master/runner/evaluate-teams.md">evaluate-teams.md</a> which was, obviously, also written by Claude. The snake eats its own tail.</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-the-token-burners.png" alt="The winning team logo" /></p>
+
+<blockquote>
+  <p>Emerald is the clear winner with near-complete PRD implementation. They nailed the coaching workflow: goal assignment with deadlines, readiness flags that track aging (days since raised), live session mode with focused validation view, and immutable audit trails. The CSV-based skill seeding is elegant and production-ready. Coach dashboard includes 21-day inactivity detection with visual highlighting. Activity history tracks validations, goal creation, flag raises, and resource completions as a timeline.</p>
+</blockquote>
+
+<p>They went home with the <strong>Certificate of Legendary Achievement</strong></p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-certificate.png" alt="Certificate for the winning team" /></p>
+
+<h3 id="the-runner-up">The Runner Up</h3>
+
+<p>The final dashboard was very <strong>Crimson</strong> colored with most commits, largest commit and most churn, somehow they still managed to score the least amount of points on the team evaluations. We’re not sure how it happened, but it’s just not possible that Claude made a mistake somewhere so, yeah, …</p>
+
+<h3 id="final-team-scoring">Final Team Scoring</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Place</th>
+      <th>Team</th>
+      <th>Score</th>
+      <th>Verdict</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🥇</td>
+      <td><strong>Emerald</strong></td>
+      <td>169/200</td>
+      <td><strong>Winner</strong> - Only feature-complete implementation</td>
+    </tr>
+    <tr>
+      <td>🥈</td>
+      <td><strong>Obsidian</strong></td>
+      <td>118/200</td>
+      <td>Strong foundation, needs goals/coaching</td>
+    </tr>
+    <tr>
+      <td>🥉</td>
+      <td><strong>Teal</strong></td>
+      <td>114/200</td>
+      <td>Best code quality, needs more features</td>
+    </tr>
+    <tr>
+      <td>4th</td>
+      <td><strong>RoyalPurple</strong></td>
+      <td>112/200</td>
+      <td>Great skill data, stubbed coaching</td>
+    </tr>
+    <tr>
+      <td>5th</td>
+      <td><strong>MidnightBlue</strong></td>
+      <td>107/200</td>
+      <td>Clean skills/resources, no goals</td>
+    </tr>
+    <tr>
+      <td>6th</td>
+      <td><strong>Crimson</strong></td>
+      <td>99/200</td>
+      <td>LMS foundation, not a coaching platform</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-takeaway">The Takeaway</h2>
+
+<p>Can you vibe code a production application in one day?</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-compilers.jpg" alt="AI Took our Jobs" /></p>
+
+<p><strong>It Depends</strong> :)</p>
+
+<p>With the right guardrails (linting, tests, PR reviews), AI assistance
+(Claude Code), and motivated teams (competition + leaderboards), you can
+go from “Excel skill matrix” to “functional React/.NET application” in
+about 8 hours.</p>
+
+<p>But was it worth the tokens?</p>
+
+<p>We got an app, a blog post, the memory of watching non-technical
+staff successfully merge code, new memes and 2 mini games.</p>
+
+<p>So yes, definitely ;)</p>
+
+<figure class="imagewrapper" style="max-width: 700px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/ai-bootcamp-layoffs.jpg" alt="The Layoffs" title="" class="img-responsive" />
+
+    
+    <figcaption>We're still safe -- for now ;)</figcaption>
+    
+</figure>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href=""></a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Bootcamp-AI" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Bootcamp-AI.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Bootcamp-AI">itenium-be/Bootcamp-AI</a>:
+        Itenium bootcamp 2026 - L&D Platform creation source code</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Bootcamp-AI-Dashboard" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Bootcamp-AI-Dashboard.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Bootcamp-AI-Dashboard">itenium-be/Bootcamp-AI-Dashboard</a>:
+        Dashboard for the 2026 itenium AI SkillForge Bootcamp: Hall of fame, team statistics</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Bootcamp-AI-Resources" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Bootcamp-AI-Resources.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Bootcamp-AI-Resources">itenium-be/Bootcamp-AI-Resources</a>:
+        Team pictures, certificates, intro powerpoint, ...</p>
+</li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Book review: Joy of Agility: How to Solve Problems and Succeed Sooner</title>
     <author>Simon Verhoeven</author>
     <subTitle>What does it actually look like to be agile, rather than merely do agile?</subTitle>
