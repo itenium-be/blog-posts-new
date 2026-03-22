@@ -16,9 +16,20 @@ desc: >
   The skill matrix @ itenium is currently an Excel. This is obviously
   unacceptable for an IT consultancy, enter "SkillForge" our custom
   app where we "forge our skills".
+gallery_images:
+  - file: ai-bootcamp-gallery-1.jpeg
+    text: "Start of the bootcamp, everyone still setting up the project and Claude Code"
+  - file: ai-bootcamp-gallery-2.jpeg
+    text: "After burning so many tokens, need to ingest extra calories"
+  - file: ai-bootcamp-gallery-3.jpeg
+    text: "The team demos at the end of the day"
+  - file: ai-bootcamp-gallery-4.JPG
+    text: "The team presentation with the most mini games created ;)"
+  - file: ai-bootcamp-gallery-5.jpeg
+    text: "The team presentation with the most e2e tests"
+  - file: ai-bootcamp-gallery-6.jpeg
+    text: "Team presentation showing the SkillForge login screen"
 interesting:
-  - url: ""
-    desc: ""
   - git: "itenium-be/Bootcamp-AI"
     desc: "Itenium bootcamp 2026 - L&D Platform creation source code"
   - git: "itenium-be/Bootcamp-AI-Dashboard"
@@ -238,3 +249,10 @@ staff successfully merge code, new memes and 2 mini games.
 So yes, definitely ;)
 
 {% include post/image.html file="ai-bootcamp-layoffs.jpg" alt="The Layoffs" desc="We're still safe -- for now ;)" maxWidth="700px" %}
+
+
+## Behind the Prompts
+
+The parts Claude couldn't generate:
+
+{% include post/gallery.html images=page.gallery_images %}
