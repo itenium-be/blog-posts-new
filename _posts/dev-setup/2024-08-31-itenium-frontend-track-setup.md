@@ -28,7 +28,7 @@ toc:
 last_modified_at: 2026-04-08 00:00:00 +0200
 updates:
   - date: 2026-04-08 00:00:00 +0200
-    desc: "Add modern alternatives: pnpm & Bun (our new default), winget, fnm"
+    desc: "Add modern alternatives: pnpm & Bun (our new default), winget, fnm. Removed obsolete VSCode, Chrome extensions."
 socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7237037256333565954-ie53"
   instagram: "https://www.instagram.com/p/C_fbgjPN04J/"
@@ -130,24 +130,21 @@ You can't go wrong with these for frontend development:
 | Plugin                             | Installs | Description                                             | Repo       |
 |------------------------------------|---------:|---------------------------------------------------------|------------|
 | **JavaScript**                     |
-| [JavaScript Booster][JS-Booster]   |     620k | JavaScript & TypeScript Refactorings                    | [Github][JSB-Repo]
-| [JS Snippets][JS-Snippets]         |      16M | Code snippets for JavaScript in ES6 syntax              | [Github][JS-Snippets-Repo]
 | [Toggle Quotes][Toggle-Quotes]     |     260k | Quote toggler to cycle through " ' and `                | [Github][Toggle-Quotes-Repo]
 | [Live Server][Live-Server]         |      53M | Local Server with live reload                           | [Github][Live-Server-Repo]
+| [Live Preview][Live-Preview]       |      12M | Microsoft's alternative to Live Server                  | [Github][Live-Preview-Repo]
 | **Importing**                      |
-| [Auto Import][Auto-Import]         |       4M | Generates your import statements                        | [Github][Auto-Import-Repo]
 | [npm Intellisense][npm-Intel]      |       8M | Autocompletes import statements                         | [Github][npm-Intel-Repo]
 | [Import Cost][Import-Cost]         |       4M | Display import/require package size                     | [Github][Import-Cost-Repo]
 | [Path Intellisense][Path-Intel]    |      13M | Autocompletes filenames                                 | [Github][Path-Intel-Repo]
 | **CSS**                            |
+| [Tailwind IntelliSense][Tailwind]  |      14M | Autocomplete, linting, previews for Tailwind CSS        | [Github][Tailwind-Repo]
 | [CSS Peek][CSS-Peek]               |       6M | Peek and Go to definition for CSS                       | [Github][CSS-Peek-Repo]
 | [CSS Completion][CSS-Compl]        |       8M | IntelliSense for CSS class names                        | [Github][CSS-Compl-Repo]
-| [Beautify (S)CSS][Beautify-CSS]    |       2M | Beautify css, sass and less                             | [Github][Beautify-CSS-Repo]
 | **Styling**                        |
 | [EditorConfig][EditorConfig]       |      10M | Automatically follow `.editorconfig`                    | [Github][EditorConfig-Repo]
 | [Prettier][Prettier]               |      48M | Prettier code formatter                                 | [Github][Prettier-Repo]
 | [ESLint][ESLint]                   |      37M | ESLint code formatter                                   | [Github][ESLint-Repo]
-| [Highlight Tag][Match-Tag]         |       2M | Highlights matching `<>` and `</>` tags                 | [Github][Match-Tag-Repo]
 | [Indent-Rainbow][Indent-Rainbow]   |       8M | Makes indentation easier to read                        | [Github][Indent-Rainbow-Repo]
 | [Better Comments][Better-Comments] |       7M | Make those TODOs stand out                              | [Github][Better-Comments-Repo]
 | **Other**                          |
@@ -159,36 +156,30 @@ You can't go wrong with these for frontend development:
 
 
 
-[JS-Booster]: https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster
-[JSB-Repo]: https://github.com/xsburg/vscode-javascript-booster
-[JS-Snippets]: https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
-[JS-Snippets-Repo]: https://github.com/xabikos/vscode-javascript
 [Toggle-Quotes]: https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes
 [Toggle-Quotes-Repo]: https://github.com/BriteSnow/vscode-toggle-quotes
 [Live-Server]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 [Live-Server-Repo]: https://github.com/ritwickdey/vscode-live-server
-[Auto-Import]: https://marketplace.visualstudio.com/items?itemName=steoates.autoimport
-[Auto-Import-Repo]: https://github.com/soates/Auto-Import
+[Live-Preview]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
+[Live-Preview-Repo]: https://github.com/microsoft/vscode-livepreview
 [npm-Intel]: https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense
 [npm-Intel-Repo]: https://github.com/ChristianKohler/NpmIntellisense
 [Import-Cost]: https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
 [Import-Cost-Repo]: https://github.com/wix/import-cost
 [Path-Intel]: https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
 [Path-Intel-Repo]: https://github.com/ChristianKohler/PathIntellisense
+[Tailwind]: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+[Tailwind-Repo]: https://github.com/tailwindlabs/tailwindcss-intellisense
 [CSS-Peek]: https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
 [CSS-Peek-Repo]: https://github.com/pranaygp/vscode-css-peek
 [CSS-Compl]: https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
 [CSS-Compl-Repo]: https://github.com/Zignd/HTML-CSS-Class-Completion
-[Beautify-CSS]: https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
-[Beautify-CSS-Repo]: https://github.com/mike7515/code-beautifier
 [EditorConfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 [EditorConfig-Repo]: https://github.com/editorconfig/editorconfig-vscode
 [Prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 [Prettier-Repo]: https://github.com/prettier/prettier-vscode
 [ESLint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [ESLint-Repo]: https://github.com/Microsoft/vscode-eslint
-[Match-Tag]: https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
-[Match-Tag-Repo]: https://github.com/vincaslt/vscode-highlight-matching-tag
 [Indent-Rainbow]: https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
 [Indent-Rainbow-Repo]: https://github.com/oderwat/vscode-indent-rainbow
 [Better-Comments]: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
@@ -223,10 +214,7 @@ That being said, the browser extensions are available for pretty much all browse
 | [Vue][Vue]                            |       2M | 4.2 (2.1k)| Debug Vue.js applications                                 | [Github][Vue-Repo]
 | **Tools**                             |
 | [Clear Cache][Clear-Cache]            |     900k | 4.5 (1.1k)| Powerful, user-friendly browser data management           | [Website][Clear-Cache-Repo]
-| [Live Reload][Live-Reload]            |     100k | 3.8 (807) | Browser integration for LiveReload
 | [JSON Formatter][Json]                |       2M | 4.6 (1.8k)| Make JSON easy to read                                    | [Github][Json-Repo]
-| [JSONVue][JSONVue]                    |       1M | 4.5 (2.7k)| Validate and view JSON documents                          | [Github][JSONVue-Repo]
-| [EditThisCookie][EditThisCookie]      |       2M | 4.4 (11k) | Edit, search, protect and block cookies!                  | [Github][EditThisCookie-Repo]
 | [ModHeader][ModHeader]                |     700k | 3.2 (1.1k)| Modify HTTP request/response headers, redirect URLs       | 
 | [Requestly][Requestly]                |     200k | 4.4 (1.2k)| Redirect URLs, Modify HTTP Headers, Mock APIs, ...        | [Github][Requestly-Repo]
 | [Lightshot][Lightshot]                |       2M | 4.4 (6.9k)| Screenshot tool
@@ -237,10 +225,7 @@ That being said, the browser extensions are available for pretty much all browse
 | [PixGrid Ruler][PixGrid]              |       1M | 4.1 (12)  | Your Pixel-Perfect Ruler
 | [Dimensions][Dimensions]              |     200k | 4.1 (453) | A tool for designers to measure screen dimensions         | [Github][Dimensions-Repo]
 | **Color Pickers**                     |
-| [Geco Colorpick][Geco-Picker]         |       2M | 4.2 (800) | Color Picker, Eyedropper - Geco colorpick
 | [ColorZilla][ColorZilla]              |       4M | 4.6 (3.8k)| Eyedropper, Color Picker, Gradient Generator              | [Website][ColorZilla-Repo]
-| [Snap Color Picker][Snap-Color]       |       5M | 4.1 (40)  | Choose Your Colors in a Snap
-| [Amazing Color Picker][Amazing-Color] |       4M | 4.6 (45)  | Just amazing color picker tool
 | [ColorPick-Eyedropper][ColorPick-Eye] |       2M | 4.2 (1.2k)| A zoomed eyedropper & color chooser
 {: .table-code}
 
@@ -256,24 +241,16 @@ That being said, the browser extensions are available for pretty much all browse
 [Vue-Repo]: https://github.com/vuejs/devtools
 [Clear-Cache]: https://chromewebstore.google.com/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn
 [Clear-Cache-Repo]: https://clearcache.io
-[Geco-Picker]: https://chromewebstore.google.com/detail/color-picker-eyedropper-g/eokjikchkppnkdipbiggnmlkahcdkikp
 [ColorZilla]: https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp
 [ColorZilla-Repo]: https://www.colorzilla.com/
 [ColorPick-Eye]: https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
-[Snap-Color]: https://chromewebstore.google.com/detail/snap-color-picker/nbpljhppefmpifoffhhmllmacfdckokh
-[Amazing-Color]: https://chromewebstore.google.com/detail/amazing-color-picker/hclbckmnpbnkcpemopdngipibdagmjei
-[Live-Reload]: https://chromewebstore.google.com/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
 [Page-Ruler]: https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff
 [PixGrid]: https://chromewebstore.google.com/detail/pixgrid-ruler/glkplndamjplebapgopdlbicglmfimic
 [Json]: https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
 [Json-Repo]: https://github.com/callumlocke/json-formatter
 [Dimensions]: https://chromewebstore.google.com/detail/dimensions/baocaagndhipibgklemoalmkljaimfdj
 [Dimensions-Repo]: https://github.com/mrflix/dimensions
-[EditThisCookie]: https://chromewebstore.google.com/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg
-[EditThisCookie-Repo]: https://github.com/ETCExtensions/Edit-This-Cookie
 [Lightshot]: https://chromewebstore.google.com/detail/lightshot-screenshot-tool/mbniclmhobmnbdlbpiphghaielnnpgdp
-[JSONVue]: https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
-[JSONVue-Repo]: https://github.com/gildas-lormeau/JSONVue
 [Wappalyzer]: https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
 [Wappalyzer-Repo]: https://github.com/projectdiscovery/wappalyzergo
 [Web-Dev]: https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm
