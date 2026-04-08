@@ -7431,11 +7431,12 @@ without any of the benefits.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Setup your machine for the itenium Frontend Track</subTitle>
     <date>2024-08-31T00:00:00+00:00</date>
-    <print_date>2024-08-31T00:00:00+00:00</print_date>
+    <print_date>2026-04-07T22:00:00+00:00</print_date>
+    <last_modified_at>2026-04-07T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dev-setup/itenium-frontend-track-setup/</url>
     <category>dev-setup</category>
     <tags>tutorial,windows,testing,debugging</tags>
-    <desc>Setting up Node and Visual Studio Code with TypeScript and Jest for the itenium Frontend Track sessions!</desc>
+    <desc>Setting up Node and Visual Studio Code with TypeScript and Bun (or Jest) for the itenium Frontend Track sessions!</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/frontend-track-big.png</url>
       <origin>Midjourney</origin>
@@ -7455,12 +7456,16 @@ without any of the benefits.</p>
 A: Well, you don’t!</p>
 
 <p>You install NVM (Node Version Manager) because
-every project uses a different versions and
+every project uses a different version and
 they are not always that compatible!</p>]]></excerpt>
       <block1><![CDATA[<h2 id="node-version-manager">Node Version Manager</h2>
 
-<p>Install the <a href="https://community.chocolatey.org/packages/nvm">nvm package</a> with <a href="https://chocolatey.org/install">chocolatey</a>.
-There is also a <a href="https://community.chocolatey.org/packages/nvm.portable">portable version</a>.</p>
+<p>Install <a href="https://github.com/coreybutler/nvm-windows">nvm</a> with <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/">winget</a>:</p>
+
+<pre><code class="language-powershell">winget install CoreyButler.NVMforWindows
+</code></pre>
+
+<p>Or with <a href="https://chocolatey.org/install">chocolatey</a>:</p>
 
 <pre><code class="language-powershell">choco install nvm
 </code></pre>
@@ -7476,6 +7481,15 @@ nvm list available
 # Use a specific node version
 nvm install 22.1.0
 nvm use 22.1.0
+</code></pre>
+
+<p>An alternative to nvm is <a href="https://github.com/Schniz/fnm">fnm</a> (Fast Node Manager), which is
+significantly faster and doesn’t require an admin prompt:</p>
+
+<pre><code class="language-powershell">winget install Schniz.fnm
+
+fnm install 22
+fnm use 22
 </code></pre>
 
 <p>The Github repo of the session lists the Node version used at the top of the README.</p>]]></block1>
@@ -7534,18 +7548,6 @@ you see a plugin with a few million downloads? It’s probably worth checking ou
       <td> </td>
     </tr>
     <tr>
-      <td><a href="https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster">JavaScript Booster</a></td>
-      <td style="text-align: right">620k</td>
-      <td>JavaScript &amp; TypeScript Refactorings</td>
-      <td><a href="https://github.com/xsburg/vscode-javascript-booster">Github</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JS Snippets</a></td>
-      <td style="text-align: right">16M</td>
-      <td>Code snippets for JavaScript in ES6 syntax</td>
-      <td><a href="https://github.com/xabikos/vscode-javascript">Github</a></td>
-    </tr>
-    <tr>
       <td><a href="https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes">Toggle Quotes</a></td>
       <td style="text-align: right">260k</td>
       <td>Quote toggler to cycle through “ ‘ and `</td>
@@ -7558,16 +7560,16 @@ you see a plugin with a few million downloads? It’s probably worth checking ou
       <td><a href="https://github.com/ritwickdey/vscode-live-server">Github</a></td>
     </tr>
     <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a></td>
+      <td style="text-align: right">12M</td>
+      <td>Microsoft’s alternative to Live Server</td>
+      <td><a href="https://github.com/microsoft/vscode-livepreview">Github</a></td>
+    </tr>
+    <tr>
       <td><strong>Importing</strong></td>
       <td style="text-align: right"> </td>
       <td> </td>
       <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://marketplace.visualstudio.com/items?itemName=steoates.autoimport">Auto Import</a></td>
-      <td style="text-align: right">4M</td>
-      <td>Generates your import statements</td>
-      <td><a href="https://github.com/soates/Auto-Import">Github</a></td>
     </tr>
     <tr>
       <td><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense">npm Intellisense</a></td>
@@ -7594,6 +7596,12 @@ you see a plugin with a few million downloads? It’s probably worth checking ou
       <td> </td>
     </tr>
     <tr>
+      <td><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">Tailwind IntelliSense</a></td>
+      <td style="text-align: right">14M</td>
+      <td>Autocomplete, linting, previews for Tailwind CSS</td>
+      <td><a href="https://github.com/tailwindlabs/tailwindcss-intellisense">Github</a></td>
+    </tr>
+    <tr>
       <td><a href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek">CSS Peek</a></td>
       <td style="text-align: right">6M</td>
       <td>Peek and Go to definition for CSS</td>
@@ -7604,12 +7612,6 @@ you see a plugin with a few million downloads? It’s probably worth checking ou
       <td style="text-align: right">8M</td>
       <td>IntelliSense for CSS class names</td>
       <td><a href="https://github.com/Zignd/HTML-CSS-Class-Completion">Github</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier">Beautify (S)CSS</a></td>
-      <td style="text-align: right">2M</td>
-      <td>Beautify css, sass and less</td>
-      <td><a href="https://github.com/mike7515/code-beautifier">Github</a></td>
     </tr>
     <tr>
       <td><strong>Styling</strong></td>
@@ -7634,12 +7636,6 @@ you see a plugin with a few million downloads? It’s probably worth checking ou
       <td style="text-align: right">37M</td>
       <td>ESLint code formatter</td>
       <td><a href="https://github.com/Microsoft/vscode-eslint">Github</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag">Highlight Tag</a></td>
-      <td style="text-align: right">2M</td>
-      <td>Highlights matching <code>&lt;&gt;</code> and <code>&lt;/&gt;</code> tags</td>
-      <td><a href="https://github.com/vincaslt/vscode-highlight-matching-tag">Github</a></td>
     </tr>
     <tr>
       <td><a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">Indent-Rainbow</a></td>
@@ -7758,32 +7754,11 @@ all the time.</p>
       <td><a href="https://clearcache.io">Website</a></td>
     </tr>
     <tr>
-      <td><a href="https://chromewebstore.google.com/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Live Reload</a></td>
-      <td style="text-align: right">100k</td>
-      <td>3.8 (807)</td>
-      <td>Browser integration for LiveReload</td>
-      <td> </td>
-    </tr>
-    <tr>
       <td><a href="https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter</a></td>
       <td style="text-align: right">2M</td>
       <td>4.6 (1.8k)</td>
       <td>Make JSON easy to read</td>
       <td><a href="https://github.com/callumlocke/json-formatter">Github</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en">JSONVue</a></td>
-      <td style="text-align: right">1M</td>
-      <td>4.5 (2.7k)</td>
-      <td>Validate and view JSON documents</td>
-      <td><a href="https://github.com/gildas-lormeau/JSONVue">Github</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://chromewebstore.google.com/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg">EditThisCookie</a></td>
-      <td style="text-align: right">2M</td>
-      <td>4.4 (11k)</td>
-      <td>Edit, search, protect and block cookies!</td>
-      <td><a href="https://github.com/ETCExtensions/Edit-This-Cookie">Github</a></td>
     </tr>
     <tr>
       <td><a href="https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj">ModHeader</a></td>
@@ -7856,32 +7831,11 @@ all the time.</p>
       <td> </td>
     </tr>
     <tr>
-      <td><a href="https://chromewebstore.google.com/detail/color-picker-eyedropper-g/eokjikchkppnkdipbiggnmlkahcdkikp">Geco Colorpick</a></td>
-      <td style="text-align: right">2M</td>
-      <td>4.2 (800)</td>
-      <td>Color Picker, Eyedropper - Geco colorpick</td>
-      <td> </td>
-    </tr>
-    <tr>
       <td><a href="https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">ColorZilla</a></td>
       <td style="text-align: right">4M</td>
       <td>4.6 (3.8k)</td>
       <td>Eyedropper, Color Picker, Gradient Generator</td>
       <td><a href="https://www.colorzilla.com/">Website</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://chromewebstore.google.com/detail/snap-color-picker/nbpljhppefmpifoffhhmllmacfdckokh">Snap Color Picker</a></td>
-      <td style="text-align: right">5M</td>
-      <td>4.1 (40)</td>
-      <td>Choose Your Colors in a Snap</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://chromewebstore.google.com/detail/amazing-color-picker/hclbckmnpbnkcpemopdngipibdagmjei">Amazing Color Picker</a></td>
-      <td style="text-align: right">4M</td>
-      <td>4.6 (45)</td>
-      <td>Just amazing color picker tool</td>
-      <td> </td>
     </tr>
     <tr>
       <td><a href="https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg">ColorPick-Eyedropper</a></td>
@@ -7895,6 +7849,10 @@ all the time.</p>
 
 <h2 id="the-project">The Project</h2>
 
+<p>We use <a href="https://bun.sh/">Bun</a> as our package manager and test runner. Bun is a fast all-in-one
+JavaScript runtime that comes with a bundler, test runner, and Node.js-compatible package manager.
+If you prefer, you can also use npm or <a href="https://pnpm.io/">pnpm</a> instead — just swap <code>bun</code> for <code>npm</code>/<code>pnpm</code> in the commands below.</p>
+
 <pre><code class="language-powershell"># Always use source control ;)
 git init
 
@@ -7903,7 +7861,7 @@ touch README.md
 
 # Start a frontend project
 # This creates a package.json
-npm init --force
+bun init
 </code></pre>
 
 <h3 id="editorconfig">editorconfig</h3>
@@ -7945,7 +7903,7 @@ of TypeScript in our session <a href="https://github.com/itenium-be/ModernJS">Mo
 it’s probably available in <a href="https://github.com/DefinitelyTyped/DefinitelyTyped">DefinitelyTyped</a></p>
 
 <pre><code class="language-powershell"># Add TypeScript to package.json
-npm install typescript --save-dev
+bun add -d typescript
 </code></pre>
 
 <p>You want to configure yourself a <a href="https://www.typescriptlang.org/tsconfig/"><code>tsconfig.json</code></a>.
@@ -7982,18 +7940,45 @@ See this <a href="https://www.totaltypescript.com/tsconfig-cheat-sheet">tsconfig
 }
 </code></pre>
 
-<h3 id="jest">Jest</h3>
+<h3 id="testing-with-bun">Testing with Bun</h3>
 
-<p>Jest has come a long way and I would definitely recommend for
-your frontend UnitTesting needs.</p>
+<p>Bun comes with a built-in test runner that works with TypeScript out of the box — no
+extra configuration needed!</p>
 
-<pre><code class="language-powershell">npm install --save-dev jest ts-jest @types/jest @jest/globals
-
-# Setup a jest.config.ts that works with TypeScript
-npx ts-jest config:init
+<pre><code class="language-powershell"># For bun:test type definitions
+bun add -d @types/bun
 
 # Run tests
-npm t
+bun test
+</code></pre>
+
+<p>Your test files just import from <code>bun:test</code>:</p>
+
+<pre><code class="language-ts">import { describe, it, expect } from 'bun:test';
+import { adder } from '../src/adder';
+
+describe('adder', () =&gt; {
+  it('works', () =&gt; {
+    expect(adder(1, 5)).toBe(6);
+  });
+});
+</code></pre>
+
+<p>That’s it. No config files, no extra dependencies, no TypeScript workarounds.
+The API is compatible with Jest so switching between the two is straightforward.</p>
+
+<h3 id="testing-with-jest">Testing with Jest</h3>
+
+<p>If you prefer Jest (e.g. because your project already uses it, or you
+need specific Jest features like snapshot testing):</p>
+
+<pre><code class="language-powershell">bun add -d jest ts-jest @types/jest @jest/globals
+
+# Setup a jest.config.ts that works with TypeScript
+bunx ts-jest config:init
+
+# Run tests
+bun test
 </code></pre>
 
 <p>This <a href="https://github.com/kulshekhar/ts-jest/issues/4081">complains</a> about:</p>
@@ -8078,7 +8063,9 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
         <li><a href="https://github.com/itenium-be/Frontend-Track">Template code repository</a></li>
-</ul>]]></block3>
+</ul><h1>Updates</h1>
+<ul><li>
+            8 April 2026: Add modern alternatives: pnpm & Bun (our new default), winget, fnm. Removed obsolete VSCode, Chrome extensions.</li></ul>]]></block3>
   </post>
   <post>
     <title>Docker + Mongo: a guide</title>
