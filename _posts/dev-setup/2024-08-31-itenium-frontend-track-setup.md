@@ -6,7 +6,7 @@ subTitle: "Setup your machine for the itenium Frontend Track"
 date: 2024-08-31
 desc: >
   Setting up Node and Visual Studio Code
-  with TypeScript and Jest for the
+  with TypeScript and Bun (or Jest) for the
   itenium Frontend Track sessions!
 bigimg:
   url: frontend-track-big.png
@@ -25,6 +25,10 @@ extras:
 toc:
   title: Frontend Track Setup
   icon: icon-javascript
+last_modified_at: 2026-04-08 00:00:00 +0200
+updates:
+  - date: 2026-04-08 00:00:00 +0200
+    desc: "Add modern alternatives: pnpm & Bun (our new default), winget, fnm"
 socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7237037256333565954-ie53"
   instagram: "https://www.instagram.com/p/C_fbgjPN04J/"
@@ -37,15 +41,20 @@ A: Well, you don't!
 {: .notice--info}
 
 You install NVM (Node Version Manager) because
-every project uses a different versions and
+every project uses a different version and
 they are not always that compatible!
 
 <!--more-->
 
 ## Node Version Manager
 
-Install the [nvm package](https://community.chocolatey.org/packages/nvm) with [chocolatey](https://chocolatey.org/install).
-There is also a [portable version](https://community.chocolatey.org/packages/nvm.portable).
+Install [nvm](https://github.com/coreybutler/nvm-windows) with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
+
+```powershell
+winget install CoreyButler.NVMforWindows
+```
+
+Or with [chocolatey](https://chocolatey.org/install):
 
 ```powershell
 choco install nvm
@@ -63,6 +72,16 @@ nvm list available
 # Use a specific node version
 nvm install 22.1.0
 nvm use 22.1.0
+```
+
+An alternative to nvm is [fnm](https://github.com/Schniz/fnm) (Fast Node Manager), which is
+significantly faster and doesn't require an admin prompt:
+
+```powershell
+winget install Schniz.fnm
+
+fnm install 22
+fnm use 22
 ```
 
 The Github repo of the session lists the Node version used at the top of the README.
@@ -266,6 +285,10 @@ That being said, the browser extensions are available for pretty much all browse
 
 ## The Project
 
+We use [Bun](https://bun.sh/) as our package manager and test runner. Bun is a fast all-in-one
+JavaScript runtime that comes with a bundler, test runner, and Node.js-compatible package manager.
+If you prefer, you can also use npm or [pnpm](https://pnpm.io/) instead — just swap `bun` for `npm`/`pnpm` in the commands below.
+
 ```powershell
 # Always use source control ;)
 git init
@@ -275,7 +298,7 @@ touch README.md
 
 # Start a frontend project
 # This creates a package.json
-npm init --force
+bun init
 ```
 
 ### editorconfig
@@ -319,7 +342,7 @@ it's probably available in [DefinitelyTyped](https://github.com/DefinitelyTyped/
 
 ```powershell
 # Add TypeScript to package.json
-npm install typescript --save-dev
+bun add -d typescript
 ```
 
 You want to configure yourself a [`tsconfig.json`](https://www.typescriptlang.org/tsconfig/).
@@ -358,20 +381,49 @@ See this [tsconfig cheat sheet](https://www.totaltypescript.com/tsconfig-cheat-s
 ```
 
 
-### Jest
+### Testing with Bun
 
-Jest has come a long way and I would definitely recommend for
-your frontend UnitTesting needs.
-
+Bun comes with a built-in test runner that works with TypeScript out of the box — no
+extra configuration needed!
 
 ```powershell
-npm install --save-dev jest ts-jest @types/jest @jest/globals
-
-# Setup a jest.config.ts that works with TypeScript
-npx ts-jest config:init
+# For bun:test type definitions
+bun add -d @types/bun
 
 # Run tests
-npm t
+bun test
+```
+
+Your test files just import from `bun:test`:
+
+```ts
+import { describe, it, expect } from 'bun:test';
+import { adder } from '../src/adder';
+
+describe('adder', () => {
+  it('works', () => {
+    expect(adder(1, 5)).toBe(6);
+  });
+});
+```
+
+That's it. No config files, no extra dependencies, no TypeScript workarounds.
+The API is compatible with Jest so switching between the two is straightforward.
+
+
+### Testing with Jest
+
+If you prefer Jest (e.g. because your project already uses it, or you
+need specific Jest features like snapshot testing):
+
+```powershell
+bun add -d jest ts-jest @types/jest @jest/globals
+
+# Setup a jest.config.ts that works with TypeScript
+bunx ts-jest config:init
+
+# Run tests
+bun test
 ```
 
 This [complains](https://github.com/kulshekhar/ts-jest/issues/4081) about:
