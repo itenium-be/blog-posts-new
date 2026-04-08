@@ -24,7 +24,7 @@ extras:
     githubtext: "SQL Server & EntityFramework Core: how to audit"
 package-versions:
   - package: EntityFramework
-    version: 9.0.3
+    version: 10.0.5
 toc:
   title: Db Auditing
   icon: dot-circle-o
