@@ -7,7 +7,7 @@
     <print_date>2026-04-30T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/java/javaone2026-ask-the-architects-tldw/</url>
     <category>java</category>
-    <tags>java,conference,architecture,java-25,java-26</tags>
+    <tags>tech-talk,architecture,java-25,java-26</tags>
     <desc>A summary of the most important insights regarding Project Babylon, the module system, Lombok, and performance from the recent Java One panel.</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/java-one-2026-big.png</url>
@@ -20684,6 +20684,12 @@ because I keep forgetting all this stuff.</p>
   <li><a href="http://www.ccs.neu.edu/home/lieber/courses/csg110/sp08/Pragmatic%20Quick%20Reference.htm">Pragmatic Tips</a></li>
 </ul>]]></excerpt>
       <block1><![CDATA[<h2 id="new-blog-post">New blog post</h2>
+
+<p>Will put an empty blog post in <code>_drafts</code>:</p>
+
+<pre><code class="language-sh">rake draft[""]
+rake draft["My amazing title"]
+</code></pre>
 
 <p>Create a new file in a folder in <code>_posts</code>:</p>
 <ul>
