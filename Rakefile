@@ -35,9 +35,6 @@ def draft_template(title:, slug:, date:)
     extras:
       - url:
         desc: ""
-    toc:
-      title:
-      icon:
     package-versions:
       - package:
         version:
