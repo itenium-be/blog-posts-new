@@ -157,8 +157,7 @@ And that worked really well, but then, as usual, I got carried away...
 
 ### How I got carried away (again)
 
-Because now I could have cool things, like a `<CountDown />` component on a "Break" slide
-- top priority, obviously!
+Because now I could have cool things, like a `<CountDown />` component on a "Break" slide - top priority, obviously!
 
 ```md
 ---
