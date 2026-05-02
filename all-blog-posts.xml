@@ -371,6 +371,231 @@ around doing because it’s too much learning, too much work – that just gets 
         </p>]]></block3>
   </post>
   <post>
+    <title>Scout: A Self-Hosted Deep-Research Agent on Claude Code</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>MIT, three-repo split, one-line install</subTitle>
+    <date>2026-05-02T00:00:00+00:00</date>
+    <print_date>2026-05-02T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/productivity/scout-a-self-hosted-deep-research-agent-on-claude-code/</url>
+    <category>productivity</category>
+    <tags>product,war-story</tags>
+    <desc>Scout: an open-source research agent that runs Claude Code on your hardware. GitHub Issue in, cited Markdown on a site you own out. Sharpen, decompose, cite inline -- patterns that ported a demo into something not only I can actually use.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/scout-a-self-hosted-deep-research-agent-on-claude-code-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>top-down view of a weathered parchment map on a vintage cartographer&apos;s desk, fine ink trails branching outward from a brass compass needle, each trail terminating in small wax-sealed evidence markers and tiny folded research scrolls, warm parchment beige with muted moss-green and burnt-ochre accents, late-afternoon window light, subtle linen grain, editorial-illustration style, painterly with crisp ink line work, clean negative space along top edge for a blog title overlay</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/scout-a-self-hosted-deep-research-agent-on-claude-code-sm.png</url>
+      <origin>Nano Banana</origin>
+    </img>
+    <excerpt><![CDATA[<p>Every year the same problem… what to buy for her birthday. While standing in line at the bakery, I started a GitHub Issue. By the time I got back to my desk, a fancy html overview was published to my GitHub Pages with a fallback to the dry markdown research. In there was the gem “<em>Hunt A Killer: a six-month serialized murder-mystery</em>”!</p>]]></excerpt>
+      <block1><![CDATA[<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-assets/scout-2-atlas.gif" alt="Atlas published research" /></p>
+
+<p>I built <a href="https://github.com/Laoujin/Scout">Scout</a>, an MIT open-source research engine that runs Claude Code on your hardware and takes your one-line topic from a GitHub Issue to a cited markdown on a site you own. This post is about the design decisions behind it.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-pain">The pain</h2>
+
+<p>Most of my research curiosities show up on a phone — on a train, in line,
+mid-conversation. I’d start a conversation in Claude web, then by the time
+I’m at my desk in Claude Code I can’t find the thread — and when I do, it’s
+a Q&amp;A scroll without synthesis. Useful raw, useless as context for whatever
+I’m building.</p>
+
+<p>What I actually wanted:</p>
+
+<ul>
+  <li><strong>Consume later.</strong> Kick research off from anywhere; come back home (or
+after a night’s sleep) with the synthesis ready to drop into a Claude
+Code session. Bonus: by then my 5-hour Pro window has reset, so the
+research didn’t eat the quota I need for the actual work.</li>
+  <li><strong>Readable anywhere.</strong> If I’m not returning soon, I can read the
+published markdown on my phone — plus (optionally) a styled HTML view.</li>
+</ul>
+
+<p>On-the-go capture, desk-side payoff.</p>
+
+<h2 id="what-it-is-in-one-diagram">What it is, in one diagram</h2>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-assets/scout-flow-full.png" alt="Scout flow" /></p>
+
+<p>→ Open a GitHub Issue<br />
+→ Sharpen &amp; Sub-Topics selection (optional)<br />
+→ Fancy HTML pages selection (optional)</p>
+
+<h2 id="three-repositories">Three Repositories</h2>
+
+<ul>
+  <li><strong>Scout</strong> — the engine. Forked once, rarely touched.</li>
+  <li><strong>Atlas</strong> — your published research. All your content.</li>
+  <li><strong>Compass</strong> — the Jekyll theme. A submodule of Atlas.</li>
+</ul>
+
+<p>Because Scout is your fork, I can’t do a rugpull, updates only affect me until
+you decide to pull in the changes.<br />
+With the Compass submodule I can add additional features like full text search,
+filtering, sorting etc and all you have to do is update the submodule to get
+these enhancements for free.</p>
+
+<h2 id="why-not-just-use-x">Why not just use X?</h2>
+
+<p>No shortage of deep-research tools out there</p>
+<ul>
+  <li><a href="https://github.com/assafelovic/gpt-researcher">gpt-researcher</a> ⭐ 26.6k</li>
+  <li><a href="https://github.com/stanford-oval/storm">storm</a> ⭐ 28.1k</li>
+  <li><a href="https://github.com/langchain-ai/open_deep_research">open_deep_research</a> ⭐ 11.2k</li>
+</ul>
+
+<p>Also Perplexity Pages, ChatGPT Deep Research, Gemini Deep Research. Scout’s pitch is narrower:</p>
+
+<ul>
+  <li><strong>Output you own.</strong> Markdown on a Jekyll site you host. No vendor pivot can paywall it or change the URL.</li>
+  <li><strong>No incremental cost.</strong> Runs against your existing Claude Pro/Max quota instead of an API bill or a second subscription.</li>
+  <li><strong>Forkable patterns.</strong> The sharpening prompt, decomposition strategy, and citation rule are editable text files in <code>skills/scout/</code> — not a black-box service.</li>
+</ul>
+
+<p>Other Claude Code skills exist for the raw research call (<a href="https://github.com/199-biotechnologies/claude-deep-research-skill">199-biotechnologies/claude-deep-research-skill</a>, <a href="https://github.com/weizhena/Deep-Research-skills">weizhena/Deep-Research-skills</a>). Scout adds the publishing layer and the loop around the model — sharpen, decompose, cite, synthesize and add pretty views.</p>
+
+<h2 id="decision-1-github-issues-as-the-ux">Decision 1: GitHub Issues as the UX</h2>
+
+<p>Best part of using GitHub Issues as the UX: I didn’t have to build one.<br />
+I already have the account. It’s tightly linked with the source code,
+ships Auth, and gives me a comment thread to converse with Claude Code plus checkboxes to
+kick research off.</p>
+
+<h2 id="decision-2-sharpen-before-research">Decision 2: Sharpen before research</h2>
+
+<p>The biggest single quality lever in the system isn’t the model or the search backend — it’s the sharpening step that runs <strong>before</strong> any research starts.</p>
+
+<p>A user types “best NAS to buy in 2026.” That’s three different questions in a trench coat: best for what budget? Replacing what? Optimizing for storage capacity, idle wattage, or both? Without sharpening, Claude charges off in one direction and the output ignores two thirds of what the user actually meant.</p>
+
+<p>So <code>skills/scout/sharpen.md</code> runs first: read the topic, propose a tightened framing as a comment (“Survey for replacing a Synology NAS in 2026, optimised for AVX2 + ECC, comparing UGREEN / Beelink / Minisforum and TrueNAS / Unraid / Proxmox…”), wait for <code>tick ✓</code> or a steering reply. Only then does research start.</p>
+
+<p>The lesson generalizes: <strong>agents that ask one clarifying question before working produce output an order of magnitude better than agents that don’t.</strong> Sharpening is cheap (one model call), and it eliminates the most common (and expensive!) failure mode — answering the wrong question.</p>
+
+<h2 id="decision-3-decompose-wide-topics-into-parallel-sub-agent-expeditions">Decision 3: Decompose wide topics into parallel sub-agent expeditions</h2>
+
+<p>Some questions are atomic (“best static-site generator in 2026”). Some are containers (“everything I need to leave Synology”). Trying to answer the latter in one pass produces a 4-page jumble.</p>
+
+<p>For <code>expedition</code> depth, the sharpener also proposes 2–8 sub-topics (“hardware shortlist”, “OS/storage stack”, “DSM migration playbook”, “remote access”). Each becomes its own independent expedition, dispatched as a sub-agent in parallel. After they all finish, a synthesis pass produces a parent overview page that links each child.</p>
+
+<p>This is map-reduce, but applied at the <em>research-question</em> level rather than the data level. Two non-obvious things matter:</p>
+
+<ol>
+  <li><strong>Sub-topics must be independently coherent.</strong> If sub-topic 3 needs sub-topic 1’s conclusions, you’ve decomposed wrong — collapse them.</li>
+  <li><strong>The synthesis pass is where most value lives.</strong> Without it, you have N disconnected pages. With it, the parent page reconciles disagreements between children and ends with a recommendation.</li>
+</ol>
+
+<h2 id="decision-4-every-claim-carries-its-url-inline-as-a-skill-rule">Decision 4: “Every claim carries its URL inline” as a skill rule</h2>
+
+<p>The single rule that does the most work: every factual claim, number, or quote must have its source URL <strong>next to the claim</strong>.</p>
+
+<p>Why: when claims and citations are decoupled — a “References” dump at the end — the citation block is decorative. Readers can’t tell which source backs which sentence.</p>
+
+<p>Forcing inline URLs (<code>[[1]](https://...)</code>) doesn’t stop a model from hallucinating, but it makes every claim <em>locally auditable</em>: one click verifies one sentence. Scout enforces this with a <code>citations.jsonl</code> ledger — every <code>[[n]]</code> marker has a matching entry pointing at a URL the model actually fetched, and a self-check reconciles the two before publish. A claim without a fetched URL fails the check.</p>
+
+<p>The hallucinations that survive are the ones where the URL is real and reachable but doesn’t say what the model claims it does — smaller, and catchable in review. Cheap and effective hallucination defense.</p>
+
+<h2 id="what-it-costs">What it costs</h2>
+
+<p>Measured per-run from my own Atlas (Sonnet 4.6 API):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Mode</th>
+      <th>Time</th>
+      <th>Cost median (range)</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>recon</code></td>
+      <td>one-page</td>
+      <td>~2 min</td>
+      <td><strong>$0.83</strong> ($0.73–$0.93)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><code>survey</code></td>
+      <td>single page</td>
+      <td>5–10 min</td>
+      <td><strong>$2.56</strong> ($1.99–$3.99)</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><code>expedition</code></td>
+      <td>single deep</td>
+      <td>12–20 min</td>
+      <td><strong>$8.64</strong> ($7.23–$14.90)</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><code>expedition</code></td>
+      <td>multi-angle</td>
+      <td>35–70 min</td>
+      <td><strong>$28</strong> ($12–$35)</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Small samples — these are my own runs, not a benchmark.</p>
+
+<p>On a Pro/Max subscription, runs consume your existing quota — no API bill, but a multi-angle expedition will eat a chunk of a Pro user’s 5-hour window. Max handles them comfortably.</p>
+
+<h2 id="try-it">Try it</h2>
+
+<pre><code class="language-bash">curl -fsSL https://raw.githubusercontent.com/Laoujin/Scout/main/install.sh \
+  | bash -s -- --config=s5.cartography.v1
+</code></pre>
+
+<p>If piping curl to bash makes you twitch, <a href="https://github.com/Laoujin/Scout/blob/main/install.sh">read it first</a> (~250 lines) or follow the <a href="https://github.com/Laoujin/Scout/blob/main/INSTALL.md">manual install</a>.</p>
+
+<ul>
+  <li>Repo: <a href="https://github.com/Laoujin/Scout">github.com/Laoujin/Scout</a></li>
+  <li>Live example Atlas: <a href="https://laoujin.github.io/Atlas/">laoujin.github.io/Atlas</a></li>
+  <li>Landing page &amp; config picker: <a href="https://laoujin.github.io/Scout/">laoujin.github.io/Scout</a></li>
+</ul>
+
+<h2 id="whats-reusable">What’s reusable</h2>
+
+<p>Sharpen first. Decompose wide topics. Inline citations as a hard rule. Use GitHub Issues so you don’t build a UI. Those four ideas port to any agent that produces long-form output — the rest of Scout is plumbing.</p>
+
+<p>MIT-licensed, three-repo split (Scout / Atlas / Compass), one-line install. Fork it, take the patterns, make it your own.</p>
+
+<p>⭐ <a href="https://github.com/Laoujin/Scout">github.com/Laoujin/Scout</a> if this is useful - helps me prioritize what to build next.</p>
+
+<p>PS: She’s all giddy about next month’s episode ;)</p>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/Scout" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/Scout.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/Scout">Laoujin/Scout</a>:
+        Scout: The orchestration source code</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/Atlas" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/Atlas.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/Atlas">Laoujin/Atlas</a>:
+        Atlas: Published research</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/Compass" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/Compass.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/Compass">Laoujin/Compass</a>:
+        Compass: The theme layouts</p>
+</li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Takeaways from the Java One 2026 Ask the Architect Session</title>
     <author>Simon Verhoeven</author>
     <subTitle>A brief tl;dw on what the future holds for Java, straight from the Oracle engineering team</subTitle>
