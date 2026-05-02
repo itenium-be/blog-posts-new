@@ -57,7 +57,53 @@ time to convert it.</p>
   <li><strong>All the power of HTML/CSS.</strong> Want an animation, a Mermaid diagram, a custom transition, live TypeScript code? It’s all just web.</li>
   <li><strong>Layout consistency for free.</strong> Every slide uses the same theme components. No more “this one slide where the title is suddenly 4 pixels lower.”</li>
 </ul>]]></block1>
-      <block2><![CDATA[<h2 id="a-decade-of-theme-regret">A decade of theme regret</h2>
+      <block2><![CDATA[<h3 id="what-it-looks-like">What it looks like</h3>
+
+<p>A presentation with two slides:</p>
+
+<pre><code class="language-md">---
+theme: ./theme
+transition: fade
+session-time: 60min
+track: AI
+---
+
+# AI Security
+## The S in MCP stands for Security
+
+::image::
+
+![](./images/cover-art.png)
+
+&lt;!-- These are your presenter notes --&gt;
+
+
+---
+layout: default-aside
+---
+
+# ProbLLMs
+
+&lt;v-clicks depth="2"&gt;
+
+- Environment &lt;small&gt;(Water &amp; Electricity)&lt;/small&gt;
+- Cost &lt;small&gt;(GPUs, RAM, ...)&lt;/small&gt;
+- Revenue: &lt;small&gt;&lt;i&gt;AI startups turn hundreds of millions into tens of millions&lt;/i&gt;&lt;/small&gt;
+- IP: Fair Use or Theft?
+- Bias in training data gets amplified
+  - Explainability: &lt;small&gt;We're often not even sure why&lt;/small&gt;
+- Weaponization: &lt;small&gt;Hallucinating AIs autonomously firing weapons is exactly what we need&lt;/small&gt;
+
+&lt;/v-clicks&gt;
+</code></pre>
+
+<ul>
+  <li>Frontmatter which can be picked up by the layout</li>
+  <li><code>v-click(s)</code> as a tag or attribute so more text appears on click</li>
+  <li><code>::slot::</code>s for inserting text in multiple places</li>
+</ul>
+
+<h2 id="a-decade-of-theme-regret">A decade of theme regret</h2>
 
 <p>I gave my first tech talk for itenium at <a href="https://visug.be/">VISUG</a> using
 a default PowerPoint theme. It looked exactly as good as you’d expect.</p>
@@ -99,10 +145,24 @@ I didn’t refresh my rusty Vue. I didn’t have to dig into obscure CSS issues.
 
 <h3 id="how-i-got-carried-away-again">How I got carried away (again)</h3>
 
-<p>Because now I could have a cool things like, a <code>&lt;CountDown /&gt;</code> component on a “Break” slide</p>
+<p>Because now I could have cool things, like a <code>&lt;CountDown /&gt;</code> component on a “Break” slide</p>
 <ul>
   <li>top priority, obviously!</li>
 </ul>
+
+<pre><code class="language-md">---
+layout: break
+---
+# ☕ Break
+
+::timer::
+
+&lt;CountDown :minutes="10" /&gt;
+
+::image::
+
+![](./images/funny-meme.png)
+</code></pre>
 
 <p>But things started to get really off the rails after this prompt:</p>
 
@@ -266,7 +326,9 @@ the public site on push.</p>
 
 <p>Each talk lives in its own repo. <code>Presentations</code> is the index –
 a YAML listing which talks are <code>published: true</code>, aggregated into
-one site on push.</p>
+one site on push. The index itself is built with Astro, which I
+couldn’t tell you the first thing about – never had to glance at
+the code.</p>
 
 <p>And we end up with a card like this!</p>
 
