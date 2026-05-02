@@ -1968,8 +1968,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <a href="https://github.com/itenium-be/ClosedXMLTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/ClosedXMLTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -3416,8 +3415,7 @@ and thought, why not run it against this website right now – how hard can it b
     <a href="https://github.com/siteinspector/siteinspector" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>:
-        </p>
+    <a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a></p>
 
 <p>Not that hard it turns out.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="-triplechecker">💸💸 Triplechecker</h2>
@@ -3671,7 +3669,8 @@ And now to find something cool for next year! 😀</p>]]></block2>
     <a href="https://github.com/JamesNK/Newtonsoft.Json" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/JamesNK/Newtonsoft.Json.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a></p>
+    <a href="https://github.com/JamesNK/Newtonsoft.Json">JamesNK/Newtonsoft.Json</a>:
+        </p>
 
 <p>System.Text.Json (STJ) is about twice as fast as Newtonsoft.Json while only consuming 50% as much memory.
 A legacy project might still be using Newtonsoft but chances are serialization
@@ -13857,14 +13856,16 @@ So if you want to ensure that your Java projects are completed on time and to th
     <a href="https://github.com/dotnet/maui" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/dotnet/maui.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/dotnet/maui">dotnet/maui</a></p>
+    <a href="https://github.com/dotnet/maui">dotnet/maui</a>:
+        </p>
 
         </div><div>
             <p style="margin-bottom: 5px">
     <a href="https://github.com/xamarin/Xamarin.Forms" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/xamarin/Xamarin.Forms.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/xamarin/Xamarin.Forms">xamarin/Xamarin.Forms</a></p>
+    <a href="https://github.com/xamarin/Xamarin.Forms">xamarin/Xamarin.Forms</a>:
+        </p>
 
         </div>]]></block3>
   </post>
@@ -21176,7 +21177,8 @@ emoj [text]
     <a href="https://github.com/jekyll/jekyll-gist" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/jekyll/jekyll-gist.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/jekyll/jekyll-gist">jekyll/jekyll-gist</a></p>
+    <a href="https://github.com/jekyll/jekyll-gist">jekyll/jekyll-gist</a>:
+        </p>
 
 <!-- Boxstarter ID: 12f5d2f76d51ee6c0a49 -->
 <!-- https://gist.github.com/Laoujin/12f5d2f76d51ee6c0a49 -->
@@ -21192,8 +21194,7 @@ emoj [text]
     <a href="https://github.com/benbalter/jekyll-avatar" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/benbalter/jekyll-avatar.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/benbalter/jekyll-avatar">benbalter/jekyll-avatar</a>:
-        </p>
+    <a href="https://github.com/benbalter/jekyll-avatar">benbalter/jekyll-avatar</a></p>
 
 <p><img class="avatar avatar-small" alt="fabpot" width="40" height="40" data-proofer-ignore="true" src="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40" srcset="https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=40 1x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=80 2x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=120 3x, https://avatars3.githubusercontent.com/fabpot?v=3&amp;s=160 4x" /></p>
 <pre><code>{% avatar fabpot %}
@@ -21929,8 +21930,7 @@ are possible here.</p>
     <a href="https://github.com/aberus/ImageVisualizer" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/aberus/ImageVisualizer.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a>:
-        </p>
+    <a href="https://github.com/aberus/ImageVisualizer">aberus/ImageVisualizer</a></p>
 
 <p><br />
 <strong>Entity Visualizer</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=KirillPolishchuk.EntityVisualizer">download</a>)</p>
@@ -22463,8 +22463,7 @@ This is one project with such collection.</p>
     <a href="https://github.com/danrevah/ngx-pipes" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/danrevah/ngx-pipes.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/danrevah/ngx-pipes">danrevah/ngx-pipes</a>:
-        </p>
+    <a href="https://github.com/danrevah/ngx-pipes">danrevah/ngx-pipes</a></p>
 
 <pre><code class="language-sh">npm install ngx-pipes --save
 </code></pre>
@@ -22504,8 +22503,7 @@ This is one project with such collection.</p>
     <a href="https://github.com/fknop/angular-pipes" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/fknop/angular-pipes.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/fknop/angular-pipes">fknop/angular-pipes</a>:
-        </p>
+    <a href="https://github.com/fknop/angular-pipes">fknop/angular-pipes</a></p>
 
 <pre><code class="language-sh">npm install angular-pipes --save
 </code></pre>
@@ -22568,8 +22566,7 @@ export class MyApplicationModule {}
     <a href="https://github.com/itenium-be/Angular-Series" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/Angular-Series.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/Angular-Series">itenium-be/Angular-Series</a>:
-        </p>
+    <a href="https://github.com/itenium-be/Angular-Series">itenium-be/Angular-Series</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -24800,8 +24797,7 @@ even while the script is suspended.</p>]]></block2>
     <a href="https://github.com/itenium-be/Mi-Ke" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/Mi-Ke.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/Mi-Ke">itenium-be/Mi-Ke</a>:
-        </p>
+    <a href="https://github.com/itenium-be/Mi-Ke">itenium-be/Mi-Ke</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -25307,8 +25303,7 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
     <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -25491,8 +25486,7 @@ describe('fake the api call', function() {
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -25693,8 +25687,7 @@ it('has its own jasmine.getEnv()', function() {
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -25843,8 +25836,7 @@ it('can pass context - which will show on failure', async () =&gt; {
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -26036,8 +26028,7 @@ it('and on setters', () =&gt; {
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -26225,8 +26216,7 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -26433,8 +26423,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
-        </p>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a></p>
 </li>
 </ul>
 <p><b>Other interesting reads</b></p>
@@ -26444,8 +26433,7 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
     <a href="https://github.com/jasmine/jasmine" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/jasmine/jasmine.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a>:
-        </p>
+    <a href="https://github.com/jasmine/jasmine">jasmine/jasmine</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -26588,8 +26576,7 @@ public void ConvertingIndexesAndAddresses()
     <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a></p>
 </li>
 </ul><h1>
     Package Versions
@@ -26774,8 +26761,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
     <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a></p>
 </li>
 </ul><h1>
     Package Versions
@@ -26814,15 +26800,13 @@ probably the most used mocking framework out there at the moment.</p>
     <a href="https://github.com/moq/moq4" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/moq/moq4.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/moq/moq4">moq/moq4</a>:
-        </p>
+    <a href="https://github.com/moq/moq4">moq/moq4</a></p>
 
 <p style="margin-bottom: 5px">
     <a href="https://github.com/nsubstitute/nsubstitute" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/nsubstitute/nsubstitute.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/nsubstitute/nsubstitute">nsubstitute/nsubstitute</a>:
-        </p>]]></excerpt>
+    <a href="https://github.com/nsubstitute/nsubstitute">nsubstitute/nsubstitute</a></p>]]></excerpt>
       <block1><![CDATA[<pre><code class="language-c#">// All examples assume
 public interface ICalculator
 {
@@ -27288,8 +27272,7 @@ Filtered-out rows are always excluded.</p>
     <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a></p>
 </li>
 </ul><h1>
     Package Versions
@@ -27635,8 +27618,7 @@ cfRule1.Style.Font.Bold = true;
     <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
-        </p>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a></p>
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
@@ -29690,8 +29672,7 @@ Something better eventually arrived with Windows 10 but still, PowerShell :)</p>
     <a href="https://github.com/rix0rrr/WindowsPathEditor" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/rix0rrr/WindowsPathEditor.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/rix0rrr/WindowsPathEditor">rix0rrr/WindowsPathEditor</a>:
-        </p>
+    <a href="https://github.com/rix0rrr/WindowsPathEditor">rix0rrr/WindowsPathEditor</a></p>
 
 <h2 id="getting-environment-variables">Getting environment variables</h2>
 
