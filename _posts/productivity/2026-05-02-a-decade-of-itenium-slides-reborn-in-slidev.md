@@ -205,7 +205,9 @@ the public site on push.
 
 Each talk lives in its own repo. `Presentations` is the index --
 a YAML listing which talks are `published: true`, aggregated into
-one site on push.
+one site on push. The index itself is built with Astro, which I
+couldn't tell you the first thing about -- never had to glance at
+the code.
 
 And we end up with a card like this!
 
