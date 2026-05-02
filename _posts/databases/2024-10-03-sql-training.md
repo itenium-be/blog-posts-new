@@ -140,7 +140,7 @@ cp .env.template .env
 docker compose up -d --build
 ```
 
-You'll have to change some configuration (see the [README](https://github.com/itenium-be/sql-training/blob/master/README.md)) but that's basically it!  
+You'll have to change some configuration (see the [README](https://github.com/itenium-be/sql-training/blob/main/README.md)) but that's basically it!  
 Possible solutions can be found on a separate [branch](https://github.com/itenium-be/sql-training/blob/solutions/SOLUTIONS.md).
 
 

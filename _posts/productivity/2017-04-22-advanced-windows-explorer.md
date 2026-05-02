@@ -275,7 +275,7 @@ According to [AlternativeTo Windows Explorer][alternatives], many people like To
 
 
 
-[github-ahk]: https://github.com/itenium-be/Mi-Ke/tree/master/scripts-windows-explorer
-[github-ahk-zip]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts-windows-explorer/windows-explorer-zip-directory.ahk
-[github-ahk-utility]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts-windows-explorer/windows-explorer-util.ahk
+[github-ahk]: https://github.com/itenium-be/Mi-Ke/tree/main/scripts-windows-explorer
+[github-ahk-zip]: https://github.com/itenium-be/Mi-Ke/blob/main/scripts-windows-explorer/windows-explorer-zip-directory.ahk
+[github-ahk-utility]: https://github.com/itenium-be/Mi-Ke/blob/main/scripts-windows-explorer/windows-explorer-util.ahk
 [alternatives]: http://alternativeto.net/software/windows-explorer

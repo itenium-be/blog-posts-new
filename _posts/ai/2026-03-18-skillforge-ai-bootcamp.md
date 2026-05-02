@@ -198,7 +198,7 @@ I didn't even know Claude could create memes ;)
 ## The Winners
 
 **Team Emerald**, _The Token Burners_ were selected by Claude as the winning team
-based on [evaluate-teams.md](https://github.com/itenium-be/Bootcamp-AI-Dashboard/blob/master/runner/evaluate-teams.md) which was, obviously, also written by Claude. The snake eats its own tail.
+based on [evaluate-teams.md](https://github.com/itenium-be/Bootcamp-AI-Dashboard/blob/main/runner/evaluate-teams.md) which was, obviously, also written by Claude. The snake eats its own tail.
 
 ![The winning team logo]({{ "/assets/blog-images/ai-bootcamp-the-token-burners.png" | relative_url }})
 

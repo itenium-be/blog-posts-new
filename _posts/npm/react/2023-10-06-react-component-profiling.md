@@ -551,5 +551,5 @@ function callback(id, phase, actualDuration) {
   - Tricky: useCallback also takes time; in my case it actually degraded performance
   - As always with perf optimizations --> **MEASURE** (the profiler is your friend)
 - **memo**: Components without props can be cached entirely
-- [**useWhyDidYouUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very useful)
+- [**useWhyDidYouUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/main/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very useful)
 - [**useDebugValue**](https://react.dev/reference/react/useDebugValue): to be used in custom hooks (more for library developers IMO)
