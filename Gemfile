@@ -29,6 +29,7 @@ group :jekyll_plugins do
    gem "jemoji", "~> 0.13.0"
    gem "jekyll-gist", "~> 1.5.0"
    gem "jekyll-avatar", "~> 0.8.0"
+   gem "jekyll-compose", "~> 0.12"
   #  gem "jekyll-redirect-from"
    gem "csv"
    gem "webrick"

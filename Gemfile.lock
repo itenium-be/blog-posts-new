@@ -66,6 +66,8 @@ GEM
       webrick (~> 1.7)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
+    jekyll-compose (0.12.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -142,6 +144,7 @@ DEPENDENCIES
   csv
   jekyll (~> 4.3)
   jekyll-avatar (~> 0.8.0)
+  jekyll-compose (~> 0.12)
   jekyll-gist (~> 1.5.0)
   jemoji (~> 0.13.0)
   minima (~> 2.5)
@@ -172,6 +175,7 @@ CHECKSUMS
   i18n (1.14.8) sha256=285778639134865c5e0f6269e0b818256017e8cde89993fdfcbfb64d088824a5
   jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
   jekyll-avatar (0.8.0) sha256=ea736277c2de54a21300122096700517972a722d5c68ca83f8723b4999abfd4b
+  jekyll-compose (0.12.0) sha256=0478638a921c5795b1e5b1ffdc769f3c405682e239b1de0117bde60af4edc8db
   jekyll-feed (0.17.0) sha256=689aab16c877949bb9e7a5c436de6278318a51ecb974792232fd94d8b3acfcc3
   jekyll-gist (1.5.0) sha256=495b6483552a3e2975a2752964ea7acddd545bc6e13ce2be15a50cec8d4c9f0f
   jekyll-sass-converter (3.1.0) sha256=83925d84f1d134410c11d0c6643b0093e82e3a3cf127e90757a85294a3862443

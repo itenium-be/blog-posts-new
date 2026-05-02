@@ -20,7 +20,7 @@ interesting:
   - url: https://dev.java
     desc: "Inside Java: Official portal for Java developers"
 categories: java
-tags: [java, conference, architecture, java-25, java-26]
+tags: [tech-talk, architecture, java-25, java-26]
 toc:
   title: "Java One 2026: Ask the Architect"
 ---

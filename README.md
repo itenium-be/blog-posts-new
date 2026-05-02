@@ -16,6 +16,18 @@ bundle exec jekyll serve --drafts --incremental
 ```
 
 
+## Authoring
+
+Create a new draft with front matter from `_config.yml` and body from `Rakefile`
+with [jekyll-compose](https://github.com/jekyll/jekyll-compose):
+
+```ps1
+rake draft["My new post"]
+# → _drafts/2026-05-02-my-new-post.md
+```
+
+
+
 ## Publish
 
 - [all-blog-posts.xml](https://itenium-be.github.io/blog-posts-new/all-blog-posts.xml)
