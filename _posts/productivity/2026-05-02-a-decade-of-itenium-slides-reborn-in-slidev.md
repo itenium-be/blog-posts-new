@@ -275,16 +275,17 @@ And we end up with a card like this!
 
 [![The itenium Presentations site]({{ "/assets/blog-images/decade-of-itenium-slides-reborn-in-slidev-public-site.png" | relative_url }} "The itenium Presentations site"){: .img-responsive}](https://itenium-be.github.io/Presentations/)
 
+Part of the migration skill is generating an "on-brand" Midjourney prompt
+for the cover image. And I absolutely love these!
+
 Ten years of decks, finally in a format that respects how the rest of
 our work is done.
 
 
 ## Conclusion
 
-Part of the skill is generating an "on-brand" Midjourney prompt
-for the cover image. And I absolutely love these!
+I'm so glad I finally got around doing this :)
 
 This is the pattern we see [all over the internet](https://lalitm.com/post/building-syntaqlite-ai/) right now,
-"low priority work" that we would like to do but never get
-around because it's too much learning, too much work
--- that just gets done now, because it's become so easy!
+"low priority work" that we would like to have but never get
+around doing because it's too much learning, too much work -- that just gets done now, because it's become so easy!
