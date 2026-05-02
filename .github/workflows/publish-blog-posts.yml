@@ -3,7 +3,7 @@ name: Build and Publish all-blog-posts.xml
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
   schedule:
     - cron: '30 * * * *'  # Run at :30 every hour
