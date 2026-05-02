@@ -3253,7 +3253,7 @@ easiest one to setup: using the Synology nginx.</p>]]></excerpt>
     <print_date>2025-05-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/docker/ml-net-lightgbm-docker/</url>
     <category>docker</category>
-    <tags>war-story,.net,synology</tags>
+    <tags>war-story,net,synology</tags>
     <desc>&quot;lib_lightgbm&quot; is almost 1GIG so it does make sense to not install it by default...</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/ml-net-lightgbm-big.png</url>
@@ -5847,8 +5847,10 @@ and also adopt RTK Query, you’ll have to change (<del>a bit</del>) more.</p>
 <p>Will it be worth it in the end? Yes. Will it hurt? Also yes.<br />
 So maybe something you want to use for your next NEW React app ;)</p>
 
-<p>TODO: Add the %% back!
-<a href="{ post_url npm/reduxjs-toolkit/2025-03-09-reduxjs-toolkit-createApi }">Part 7: createApi</a></p>
+<!-- TODO: fix this link!! -->
+<!-- [Part 7: createApi](% post_url npm/reduxjs-toolkit/2025-02-19-reduxjs-toolkit-createApi %) -->
+
+<p>Part 7: createApi (under construction!)</p>
 
 <h2 id="not-covered">Not Covered</h2>
 
@@ -9765,8 +9767,8 @@ as passphrase and score Vault multipliers.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Comparing NUnit, xUnit, MSTest and TUnit</subTitle>
     <date>2024-03-13T00:00:00+00:00</date>
-    <print_date>2026-03-14T22:00:00+00:00</print_date>
-    <last_modified_at>2026-03-14T22:00:00+00:00</last_modified_at>
+    <print_date>2025-03-11T22:00:00+00:00</print_date>
+    <last_modified_at>2025-03-11T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/testing-frameworks/</url>
     <category>dotnet</category>
     <tags>testing,cheat-sheet</tags>
@@ -9786,26 +9788,7 @@ as passphrase and score Vault multipliers.</p>
       <icon>dot-circle-o</icon>
       <title>.NET Testing Frameworks</title>
     </toc>
-    <excerpt><![CDATA[<p>Upgrade to xUnit v3</p>
-
-<p>For NUnit collections:
-Assert.That(result, Is.All.Matches<Product>(x =&gt; x.Category.Value == "???"));
-Assert.That(result.Select(x =&gt; x.Name.Value), Is.Unique);
-Assert.That(result, Has.None.Matches<Product>(x =&gt; x.Name.Value.EndsWith(" Socks")));</Product></Product></p>
-
-<p>https://bartwullems.blogspot.com/2025/09/migrating-from-xunit-v2-to-v3-whats-new.html
-https://andrewlock.net/converting-an-xunit-project-to-tunit/</p>
-
-<p>Add some info on the exe test runners for TUnit and xUnit v3
-–&gt; Maybe check how it works to run it oon the CI…</p>
-
-<p>TestCases/TestCaseSource/Theory –&gt; add this (see README git repo)</p>
-
-<p>xUnit: Assert.Skip()</p>
-
-<p>The actual blike-project has updated the versions even more…</p>
-
-<p>Comparing .NET Testing Frameworks.</p>
+    <excerpt><![CDATA[<p>Comparing .NET Testing Frameworks.</p>
 
 <p style="margin-bottom: 5px">
     <a href="https://github.com/xunit/xunit" style="margin-right: 6px">
@@ -10345,11 +10328,7 @@ Assert.That(actual, Is.AtMost(0));
 // Also: AtLeast, Zero, LessThanOrEqualTo, Negative/Positive
 // Greater/LessThan uses IComparable
 
-// MSTest 4.0+
-Assert.IsPositive(actual);
-Assert.IsGreaterThan(0, actual);
-Assert.IsInRange(0, 100, actual);
-// Also: IsNegative, IsLessThan
+// MSTest: N/A
 
 // TUnit
 await Assert.That(actual).IsBetween(0, 100);
@@ -10389,7 +10368,7 @@ await Assert.That("Hello world").IsNotNull();
 
 <h3 id="nunit-and-tunit-only">NUnit and TUnit Only</h3>
 
-<h4 id="dates">Dates</h4>
+<h5 id="dates">Dates</h5>
 
 <pre><code class="language-c#">// NUnit
 Assert.That(later, Is.EqualTo(now).Within(TimeSpan.FromHours(3.0)));
@@ -10400,7 +10379,7 @@ await Assert.That(later).IsAfter(now);
 await Assert.That(later).IsBetween(now, now.AddHours(3));
 </code></pre>
 
-<h4 id="directories">Directories</h4>
+<h5 id="directories">Directories</h5>
 
 <p>Also: <code>Is.SamePath(OrUnder)</code></p>
 
@@ -10410,7 +10389,7 @@ Assert.That(new DirectoryInfo("c:\\temp"), Does.Exist);
 Assert.That(new DirectoryInfo("c:\\temp"), Is.Not.Empty);
 </code></pre>
 
-<h4 id="andor">And/Or</h4>
+<h5 id="andor">And/Or</h5>
 
 <pre><code class="language-c#">// NUnit
 Assert.That(3, Is.LessThan(5).Or.GreaterThan(10));
@@ -10444,18 +10423,17 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
-            15 March 2026: Updated to latest versions.</li><li>
             12 March 2025: Updated to latest versions. Added TUnit, SoftAssertions, Throws derived, ...</li></ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
-            NUnit: v4.5.1
+            NUnit: v4.3.2
         </p><p>
-            xUnit: v3.2.2
+            xUnit: v2.9.3
         </p><p>
-            MSTest.TestFramework: v4.1.0
+            MSTest.TestFramework: v3.8.2
         </p><p>
-            TUnit: v1.19.57
+            TUnit: v0.18.9
         </p>]]></block3>
   </post>
   <post>
@@ -26829,15 +26807,7 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
       <icon>dot-circle-o</icon>
       <title>NSubstitute vs Moq</title>
     </toc>
-    <excerpt><![CDATA[<p>the repo has upgrade moq &amp; NSubstitute:
-we should also update the blog post…
-ThrowsAsync, Arg.AnyType, ForTypeForwardingTo</p>
-
-<ul>
-  <li>NUnit: Use Assert.That instead of the legacy Assert.AreEqual</li>
-</ul>
-
-<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
+    <excerpt><![CDATA[<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
 probably the most used mocking framework out there at the moment.</p>
 
 <p style="margin-bottom: 5px">
