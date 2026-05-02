@@ -10,6 +10,10 @@ img:
   url: meta-create-blog-post.png
   desc: Photo by Tom Sodoge
   origin: https://unsplash.com/photos/Qeqg7F9pfuU
+bigimg:
+  url: meta-create-blog-post-big.png
+  origin: Midjourney
+  prompt: " overhead view of a writer's desk at dusk, open laptop showing a markdown file with visible YAML front matter and Jekyll Liquid tags, a steaming mug, scattered sticky notes with handwritten draft and publish, a small notebook with a pen mid-sentence, soft warm key light, shallow depth of field, clean editorial illustration with a hint of vaporwave teal-and-amber palette, tech blog hero banner --ar 4:1 --style raw"
 interesting:
   - desc: "Font Awesome (for toc.icon)"
     url: https://fontawesome.com/icons
