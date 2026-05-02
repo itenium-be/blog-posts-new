@@ -43,6 +43,14 @@ because I keep forgetting all this stuff.
 
 ## New blog post
 
+Will put an empty blog post in `_drafts`:
+
+```sh
+rake draft[""]
+rake draft["My amazing title"]
+```
+
+
 Create a new file in a folder in `_posts`:
 - `_drafts`: Not published.
 - `productivity`: Most things end up here apparently.
