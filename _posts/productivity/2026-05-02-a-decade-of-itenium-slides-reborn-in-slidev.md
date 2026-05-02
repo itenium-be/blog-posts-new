@@ -73,6 +73,53 @@ The pitch isn't subtle:
 <!--block1-->
 
 
+### What it looks like
+
+A presentation with two slides:
+
+```md
+---
+theme: ./theme
+transition: fade
+session-time: 60min
+track: AI
+---
+
+# AI Security
+## The S in MCP stands for Security
+
+::image::
+
+![](./images/cover-art.png)
+
+<!-- These are your presenter notes -->
+
+
+---
+layout: default-aside
+---
+
+# ProbLLMs
+
+<v-clicks depth="2">
+
+- Environment <small>(Water & Electricity)</small>
+- Cost <small>(GPUs, RAM, ...)</small>
+- Revenue: <small><i>AI startups turn hundreds of millions into tens of millions</i></small>
+- IP: Fair Use or Theft?
+- Bias in training data gets amplified
+  - Explainability: <small>We're often not even sure why</small>
+- Weaponization: <small>Hallucinating AIs autonomously firing weapons is exactly what we need</small>
+
+</v-clicks>
+```
+
+- Frontmatter which can be picked up by the layout
+- `v-click(s)` as a tag or attribute so more text appears on click
+- `::slot::`s for inserting text in multiple places
+
+
+
 ## A decade of theme regret
 
 I gave my first tech talk for itenium at [VISUG](https://visug.be/) using
@@ -110,8 +157,24 @@ And that worked really well, but then, as usual, I got carried away...
 
 ### How I got carried away (again)
 
-Because now I could have a cool things like, a `<CountDown />` component on a "Break" slide
+Because now I could have cool things, like a `<CountDown />` component on a "Break" slide
 - top priority, obviously!
+
+```md
+---
+layout: break
+---
+# ☕ Break
+
+::timer::
+
+<CountDown :minutes="10" />
+
+::image::
+
+![](./images/funny-meme.png)
+```
+
 
 But things started to get really off the rails after this prompt:
 
