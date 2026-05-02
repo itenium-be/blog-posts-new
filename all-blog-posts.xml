@@ -145,10 +145,7 @@ I didn’t refresh my rusty Vue. I didn’t have to dig into obscure CSS issues.
 
 <h3 id="how-i-got-carried-away-again">How I got carried away (again)</h3>
 
-<p>Because now I could have cool things, like a <code>&lt;CountDown /&gt;</code> component on a “Break” slide</p>
-<ul>
-  <li>top priority, obviously!</li>
-</ul>
+<p>Because now I could have cool things, like a <code>&lt;CountDown /&gt;</code> component on a “Break” slide - top priority, obviously!</p>
 
 <pre><code class="language-md">---
 layout: break
