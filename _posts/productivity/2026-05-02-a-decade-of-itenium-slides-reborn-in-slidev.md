@@ -15,7 +15,7 @@ bigimg:
   origin: Midjourney
 img:
   url: decade-of-itenium-slides-reborn-in-slidev-sm.png
-  prompt: "A markdown file with --- slide separators morphing into a stack of crisp presentation slides mid-flight, each slide branded with a subtle geometric tech logo, code-to-slides transformation, clean vector flat design, soft shadows, tech-blue and accent-orange palette, playful and minimal"
+  prompt: "A markdown file with slide separators morphing into a stack of crisp presentation slides mid-flight, each slide branded with a subtle geometric tech logo, code-to-slides transformation, clean vector flat design, soft shadows, tech-blue and accent-orange palette, playful and minimal"
   origin: Midjourney
 categories: productivity
 tags: [war-story,tech-talk]
@@ -32,7 +32,7 @@ package-versions:
 ---
 
 For ten years our presentations have lived in PowerPoint.
-Decks for VISUG, internal sessions, the architecture track,
+Decks for internal sessions, the architecture track,
 the frontend track -- all in `.pptx`, all locked behind MS Office,
 all painful to diff, review, or evolve.
 
@@ -46,7 +46,8 @@ The "something" turned out to be [Slidev](https://sli.dev/).
 
 {% include github-stars.html url="itenium-be/Presentations" desc="Our talks, now as Slidev." %}
 
-The trigger was the first session in our 2026 AI track "AI & Security: The S in MCP stands for Security",
+The trigger was the first session in our 2026 AI track
+"[AI & Security: The S in MCP stands for Security](https://github.com/itenium-be/AI-Security-Talk)",
 the first technical session after our itenium rebranding which was more than just updating the logo,
 it was a whole new Powerpoint theme. Something of a recurring pain-point: this was now the
 4th Powerpoint theme. So every time I would redo an old talk, I would have to also take the
@@ -59,9 +60,9 @@ I was not looking forward to that.
 
 The pitch isn't subtle:
 
-- **Publishable as a site.** Every deck is a static site. No "can you send me the slides?" emails -- just a URL. Ours live at [itenium-be.github.io/Presentations][site] now.
+- **Publishable as a site.** Every deck is a static site. No "can you send me the slides?" emails -- just a URL. Ours lives at [itenium-be.github.io/Presentations][site] now.
 - **Real git diffs.** A typo fix is `+1 -1`, not "binary file changed". Reviews actually work.
-- **No MS Office dependency.** Edit on Linux, on a Chromebook, in the browser. Where ever. No subtle OpenOffice bugs.
+- **No MS Office dependency.** Edit on Linux, on a Chromebook, in the browser. Where ever. No subtle OpenOffice layout differences.
 - **Adversarial review becomes possible.** Once slides are markdown, you can pipe them through an AI critique pass before the talk. More on that below.
 - **All the power of HTML/CSS.** Want an animation, a Mermaid diagram, a custom transition, live TypeScript code? It's all just web.
 - **Layout consistency for free.** Every slide uses the same theme components. No more "this one slide where the title is suddenly 4 pixels lower."
@@ -74,13 +75,13 @@ The pitch isn't subtle:
 
 ## A decade of theme regret
 
-I gave my first tech talk at [VISUG](https://visug.be/) using
+I gave my first tech talk for itenium at [VISUG](https://visug.be/) using
 a default PowerPoint theme. It looked exactly as good as you'd expect.
 
 After that, every itenium talk used our internal theme.
 Three eras of it, actually:
 
-1. **The ancient theme** -- from the company's earliest days. It was OK.
+1. **The ancient theme** -- from the company's earliest days. It was OK-ish.
 2. **The updated theme** -- it was a dark theme, and I actually liked this one :D
 3. **The rebrand theme** -- A modern and on-brand theme
 
@@ -109,16 +110,16 @@ And that worked really well, but then, as usual, I got carried away
 
 ## How I got carried away (again)
 
-Because now I could have a cool things like, a "Break" slide, with a "CountDown" component,
+Because now I could have a cool things like, a "Break" slide, with a `<CountDown />` component,
 because of course that is top priority!
 
 But things started to get really off the rails after this prompt:
 
-> "Hey Claude, check my `/courses`... And make me a markdown table with the presentations I should convert using MoSCoW"
+> "Hey Claude, check my `./courses`... And make me a markdown table with the presentations I should convert using MoSCoW"
 
 ### The Migration Skill
 
-Probably the largest [skill](https://github.com/itenium-be/Presentations/blob/master/MigrationSkill.md)
+Probably the largest [skill](https://github.com/itenium-be/Presentations/blob/main/MigrationSkill.md)
 Claude has ever created for me.
 
 Because converting a `.pptx` to Slidev while still keeping everything intact turned out to be not that
@@ -128,11 +129,11 @@ while admiring Claude do its thing.
 - PPTX -> PDF -> HTML is what worked for me
 - The HTML was too big to read in one go so it's parsed in a separate file that was easier for Claude to work with
 - Because of the "section slides", slide numbers were mismatched between the old and new deck, causing a lof of confusion between Claude and myself
-- Presenter notes and emojis were gone in the HTML, these needed separate parsing
-- Hidden slides were also gone, extra Skill rules
+- Presenter notes and emojis were gone in the HTML, these needed separate parsing, another alternative representation was born
+- Hidden slides were not present in the PDF, extra Skill rules were add to remedy this
 - Images were not always present: what is a background image and what is an image it should take over...
 
-So well, in the draft for this blog post Claude said "just a weekend work". Yeah right.
+So, well, in the draft for this blog post Claude said "just a weekend work". Yeah right.
 
 
 ## Adversarial review
@@ -155,8 +156,12 @@ I should definitely be doing these sessions again soon!
 ## All new talks ship as Slidev
 
 The architecture track is converted and every new itenium talk starts
-as a Slidev project and ships to the public site
+as a Slidev project which ships to the public site
 on push.
+
+And we end up with a card like this!
+
+[![The itenium Presentations site]({{ "/assets/blog-images/decade-of-itenium-slides-reborn-in-slidev-public-site.png" | relative_url }} "The itenium Presentations site"){: .img-responsive}](https://itenium-be.github.io/Presentations/)
 
 Ten years of decks, finally in a format that respects how the rest of
 our work is done.
