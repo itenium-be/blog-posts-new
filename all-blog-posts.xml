@@ -1125,9 +1125,14 @@ took to get it back on track!</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/github-stars-links">Chrome Extension source code</a></li>
-        <li>
-                <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/github-stars-links" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/github-stars-links.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/github-stars-links">itenium-be/github-stars-links</a>:
+        Chrome Extension source code</p>
+</li>
+        <li><a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -1959,7 +1964,13 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ClosedXMLTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -2283,7 +2294,13 @@ ws.Cell(3, 1).CreateRichText()
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ClosedXMLTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a>:
+        More extensive ClosedXML examples in the Github repo</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -2569,7 +2586,13 @@ dateTimeValidation.Date.GreaterThan(DateTime.Now.Date);
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ClosedXMLTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a>:
+        More extensive ClosedXML examples in the Github repo</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -3011,12 +3034,30 @@ sheet1.CopyTo(workbook, "Copy");
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/ClosedXMLTutorial">More extensive ClosedXML examples in the Github repo</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ClosedXMLTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ClosedXMLTutorial">itenium-be/ClosedXMLTutorial</a>:
+        More extensive ClosedXML examples in the Github repo</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><a href="https://github.com/ClosedXML/ClosedXML.Report">Report generation: export any data from .NET classes to Excel using an xlsx-template.</a></li>
-        <li><a href="https://github.com/Itenium-Forge/Itenium.ExcelCreator">Our own WebApi wrapper for ClosedXML</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/ClosedXML/ClosedXML.Report" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/ClosedXML/ClosedXML.Report.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/ClosedXML/ClosedXML.Report">ClosedXML/ClosedXML.Report</a>:
+        Report generation: export any data from .NET classes to Excel using an xlsx-template.</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Itenium-Forge/Itenium.ExcelCreator" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Itenium-Forge/Itenium.ExcelCreator.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Itenium-Forge/Itenium.ExcelCreator">Itenium-Forge/Itenium.ExcelCreator</a>:
+        Our own WebApi wrapper for ClosedXML</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -3212,7 +3253,7 @@ easiest one to setup: using the Synology nginx.</p>]]></excerpt>
     <print_date>2025-05-02T00:00:00+00:00</print_date>
     <url>https://itenium.be/blog/docker/ml-net-lightgbm-docker/</url>
     <category>docker</category>
-    <tags>war-story,net,synology</tags>
+    <tags>war-story,.net,synology</tags>
     <desc>&quot;lib_lightgbm&quot; is almost 1GIG so it does make sense to not install it by default...</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/ml-net-lightgbm-big.png</url>
@@ -3332,7 +3373,13 @@ ldd /usr/local/lib/lib_lightgbm.so
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/TTC-AAlst/PongRank">Predicting next year player rankings</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/TTC-AAlst/PongRank" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/TTC-AAlst/PongRank.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/TTC-AAlst/PongRank">TTC-AAlst/PongRank</a>:
+        Predicting next year player rankings</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -3451,7 +3498,13 @@ Let’s use the same steps mechanism it used on me to run a potentially disastro
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li><a href="https://github.com/siteinspector/siteinspector">A tool for catching spelling errors, grammatical errors, broken links, and other errors on websites.</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/siteinspector/siteinspector" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/siteinspector/siteinspector.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/siteinspector/siteinspector">siteinspector/siteinspector</a>:
+        A tool for catching spelling errors, grammatical errors, broken links, and other errors on websites.</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -3577,7 +3630,13 @@ And now to find something cool for next year! 😀</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Bootcamp-Home-Automation">Pptx, materials, images, documentation, instructions, ...</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Bootcamp-Home-Automation" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Bootcamp-Home-Automation.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Bootcamp-Home-Automation">itenium-be/Bootcamp-Home-Automation</a>:
+        Pptx, materials, images, documentation, instructions, ...</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -4059,7 +4118,13 @@ public class PersonWithAttributes
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/DotNet-Json">The code as xUnit tests</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/DotNet-Json" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/DotNet-Json.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/DotNet-Json">itenium-be/DotNet-Json</a>:
+        The code as xUnit tests</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -4271,7 +4336,13 @@ if (unsecured.Any())
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/DotNet-Controller-Security-Check">Source code, variations and tests for the tests</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/DotNet-Controller-Security-Check" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/DotNet-Controller-Security-Check.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/DotNet-Controller-Security-Check">itenium-be/DotNet-Controller-Security-Check</a>:
+        Source code, variations and tests for the tests</p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             15 March 2026: Extra variation: Authorization with Policy required</li></ul>]]></block3>
@@ -4588,7 +4659,13 @@ const selectTodoDescriptionsProxy = memoize(state =&gt;
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">Check todoSelectors.ts to see the examples in action</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        Check todoSelectors.ts to see the examples in action</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -4679,7 +4756,13 @@ const createAppSelector = createSelector.withTypes&lt;RootState&gt;();
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        The 'Mythical Zoos' example code and the talk pptx</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -4910,7 +4993,13 @@ const creatorSlice = createAppSlice({
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        The 'Mythical Zoos' example code and the talk pptx</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -5274,7 +5363,13 @@ and <a href="https://redux-toolkit.js.org/api/autoBatchEnhancer">autoBatchEnhanc
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        The 'Mythical Zoos' example code and the talk pptx</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -5608,7 +5703,13 @@ const TodoAdd = () =&gt; {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        The 'Mythical Zoos' example code and the talk pptx</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -5746,10 +5847,8 @@ and also adopt RTK Query, you’ll have to change (<del>a bit</del>) more.</p>
 <p>Will it be worth it in the end? Yes. Will it hurt? Also yes.<br />
 So maybe something you want to use for your next NEW React app ;)</p>
 
-<!-- TODO: fix this link!! -->
-<!-- [Part 7: createApi](% post_url npm/reduxjs-toolkit/2025-02-19-reduxjs-toolkit-createApi %) -->
-
-<p>Part 7: createApi (under construction!)</p>
+<p>TODO: Add the %% back!
+<a href="{ post_url npm/reduxjs-toolkit/2025-03-09-reduxjs-toolkit-createApi }">Part 7: createApi</a></p>
 
 <h2 id="not-covered">Not Covered</h2>
 
@@ -5833,7 +5932,13 @@ basically the Redux <a href="https://redux.js.org/style-guide/">Style Guide</a>.
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/reduxjs-toolkit">The 'Mythical Zoos' example code and the talk pptx</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/reduxjs-toolkit" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/reduxjs-toolkit.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/reduxjs-toolkit">itenium-be/reduxjs-toolkit</a>:
+        The 'Mythical Zoos' example code and the talk pptx</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -6009,7 +6114,13 @@ but, of course, that doesn’t work.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/synology-cloud-sync-vs-docker">Minimal Example Code</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/synology-cloud-sync-vs-docker" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/synology-cloud-sync-vs-docker.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/synology-cloud-sync-vs-docker">itenium-be/synology-cloud-sync-vs-docker</a>:
+        Minimal Example Code</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -6151,7 +6262,13 @@ Nr = {{ randomNr }}
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Angular-Days">See src/app/new-template for side-by-side comparison</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Angular-Days" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Angular-Days.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Angular-Days">itenium-be/Angular-Days</a>:
+        See src/app/new-template for side-by-side comparison</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -6317,7 +6434,13 @@ and “encapsulation” instead!</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">Example UnitTests in NUnit, xUnit and MSTest</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/DotNetUnitTestFrameworks" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/DotNetUnitTestFrameworks.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">itenium-be/DotNetUnitTestFrameworks</a>:
+        Example UnitTests in NUnit, xUnit and MSTest</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -6859,7 +6982,13 @@ really track everything 😀</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/DbAuditWithEF">SQL Server & EntityFramework Core: how to audit</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/DbAuditWithEF" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/DbAuditWithEF.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/DbAuditWithEF">itenium-be/DbAuditWithEF</a>:
+        SQL Server & EntityFramework Core: how to audit</p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             15 March 2026: Added section with SaveChangesInterceptor for better separation of concerns</li></ul><h1>
@@ -7126,7 +7255,13 @@ An exercise on joining a table with itself.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/sql-training">The SQL Training game (datasets, docker containers, game & leaderboard)</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/sql-training" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/sql-training.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/sql-training">itenium-be/sql-training</a>:
+        The SQL Training game (datasets, docker containers, game & leaderboard)</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -7322,7 +7457,13 @@ exit $hasBuildErrors
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Frontend-Track">Template code repository</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Frontend-Track" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Frontend-Track.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Frontend-Track">itenium-be/Frontend-Track</a>:
+        Template code repository</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -7526,7 +7667,13 @@ without any of the benefits.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/KISS-Decorators">The code from this blog post as xUnit tests</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/KISS-Decorators" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/KISS-Decorators.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/KISS-Decorators">itenium-be/KISS-Decorators</a>:
+        The code from this blog post as xUnit tests</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -8165,7 +8312,13 @@ the <a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jes
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Frontend-Track">Template code repository</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Frontend-Track" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Frontend-Track.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Frontend-Track">itenium-be/Frontend-Track</a>:
+        Template code repository</p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             8 April 2026: Add modern alternatives: pnpm & Bun (our new default), winget, fnm. Removed obsolete VSCode, Chrome extensions.</li></ul>]]></block3>
@@ -8570,7 +8723,13 @@ CMD ["mongod"]
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Docker-Mongo">The docker + mongo examples</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Docker-Mongo" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Docker-Mongo.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Docker-Mongo">itenium-be/Docker-Mongo</a>:
+        The docker + mongo examples</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -9232,7 +9391,13 @@ services:
 <p><b>Other interesting reads</b></p>
 <ul>
         <li><a href="https://global.download.synology.com/download/Document/Software/DeveloperGuide/Firmware/DSM/All/enu/Synology_DiskStation_Administration_CLI_Guide.pdf">Synology DiskStation Administration CLI Guide</a></li>
-        <li><a href="https://gist.github.com/walkerjeffd/374750c366605cd5123d">Configure Synology NAS as Git Server</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/walkerjeffd/374750c366605cd5123d" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/walkerjeffd/374750c366605cd5123d.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/walkerjeffd/374750c366605cd5123d">walkerjeffd/374750c366605cd5123d</a>:
+        Configure Synology NAS as Git Server</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -9600,8 +9765,8 @@ as passphrase and score Vault multipliers.</p>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Comparing NUnit, xUnit, MSTest and TUnit</subTitle>
     <date>2024-03-13T00:00:00+00:00</date>
-    <print_date>2025-03-11T22:00:00+00:00</print_date>
-    <last_modified_at>2025-03-11T22:00:00+00:00</last_modified_at>
+    <print_date>2026-03-14T22:00:00+00:00</print_date>
+    <last_modified_at>2026-03-14T22:00:00+00:00</last_modified_at>
     <url>https://itenium.be/blog/dotnet/testing-frameworks/</url>
     <category>dotnet</category>
     <tags>testing,cheat-sheet</tags>
@@ -9621,7 +9786,26 @@ as passphrase and score Vault multipliers.</p>
       <icon>dot-circle-o</icon>
       <title>.NET Testing Frameworks</title>
     </toc>
-    <excerpt><![CDATA[<p>Comparing .NET Testing Frameworks.</p>
+    <excerpt><![CDATA[<p>Upgrade to xUnit v3</p>
+
+<p>For NUnit collections:
+Assert.That(result, Is.All.Matches<Product>(x =&gt; x.Category.Value == "???"));
+Assert.That(result.Select(x =&gt; x.Name.Value), Is.Unique);
+Assert.That(result, Has.None.Matches<Product>(x =&gt; x.Name.Value.EndsWith(" Socks")));</Product></Product></p>
+
+<p>https://bartwullems.blogspot.com/2025/09/migrating-from-xunit-v2-to-v3-whats-new.html
+https://andrewlock.net/converting-an-xunit-project-to-tunit/</p>
+
+<p>Add some info on the exe test runners for TUnit and xUnit v3
+–&gt; Maybe check how it works to run it oon the CI…</p>
+
+<p>TestCases/TestCaseSource/Theory –&gt; add this (see README git repo)</p>
+
+<p>xUnit: Assert.Skip()</p>
+
+<p>The actual blike-project has updated the versions even more…</p>
+
+<p>Comparing .NET Testing Frameworks.</p>
 
 <p style="margin-bottom: 5px">
     <a href="https://github.com/xunit/xunit" style="margin-right: 6px">
@@ -10161,7 +10345,11 @@ Assert.That(actual, Is.AtMost(0));
 // Also: AtLeast, Zero, LessThanOrEqualTo, Negative/Positive
 // Greater/LessThan uses IComparable
 
-// MSTest: N/A
+// MSTest 4.0+
+Assert.IsPositive(actual);
+Assert.IsGreaterThan(0, actual);
+Assert.IsInRange(0, 100, actual);
+// Also: IsNegative, IsLessThan
 
 // TUnit
 await Assert.That(actual).IsBetween(0, 100);
@@ -10201,7 +10389,7 @@ await Assert.That("Hello world").IsNotNull();
 
 <h3 id="nunit-and-tunit-only">NUnit and TUnit Only</h3>
 
-<h5 id="dates">Dates</h5>
+<h4 id="dates">Dates</h4>
 
 <pre><code class="language-c#">// NUnit
 Assert.That(later, Is.EqualTo(now).Within(TimeSpan.FromHours(3.0)));
@@ -10212,7 +10400,7 @@ await Assert.That(later).IsAfter(now);
 await Assert.That(later).IsBetween(now, now.AddHours(3));
 </code></pre>
 
-<h5 id="directories">Directories</h5>
+<h4 id="directories">Directories</h4>
 
 <p>Also: <code>Is.SamePath(OrUnder)</code></p>
 
@@ -10222,7 +10410,7 @@ Assert.That(new DirectoryInfo("c:\\temp"), Does.Exist);
 Assert.That(new DirectoryInfo("c:\\temp"), Is.Not.Empty);
 </code></pre>
 
-<h5 id="andor">And/Or</h5>
+<h4 id="andor">And/Or</h4>
 
 <pre><code class="language-c#">// NUnit
 Assert.That(3, Is.LessThan(5).Or.GreaterThan(10));
@@ -10237,7 +10425,13 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">Example UnitTests in NUnit, xUnit and MSTest</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/DotNetUnitTestFrameworks" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/DotNetUnitTestFrameworks.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/DotNetUnitTestFrameworks">itenium-be/DotNetUnitTestFrameworks</a>:
+        Example UnitTests in NUnit, xUnit and MSTest</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -10250,17 +10444,18 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 </li>
 </ul><h1>Updates</h1>
 <ul><li>
+            15 March 2026: Updated to latest versions.</li><li>
             12 March 2025: Updated to latest versions. Added TUnit, SoftAssertions, Throws derived, ...</li></ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
 </h1><p>
-            NUnit: v4.3.2
+            NUnit: v4.5.1
         </p><p>
-            xUnit: v2.9.3
+            xUnit: v3.2.2
         </p><p>
-            MSTest.TestFramework: v3.8.2
+            MSTest.TestFramework: v4.1.0
         </p><p>
-            TUnit: v0.18.9
+            TUnit: v1.19.57
         </p>]]></block3>
   </post>
   <post>
@@ -11198,8 +11393,20 @@ function callback(id, phase, actualDuration) {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/React-ComponentProfiling">Presentation source materials (pptx, code snippets, ...)</a></li>
-        <li><a href="https://github.com/itenium-be/confac">confac Github source</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/React-ComponentProfiling" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/React-ComponentProfiling.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/React-ComponentProfiling">itenium-be/React-ComponentProfiling</a>:
+        Presentation source materials (pptx, code snippets, ...)</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/confac" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/confac.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/confac">itenium-be/confac</a>:
+        confac Github source</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -11346,9 +11553,14 @@ of Michiel.</p>]]></excerpt>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/BuildYourOwnMacroPad">Hands-On Session: build your own MacroPad</a></li>
-        <li>
-                <a href="https://itenium-be.github.io/BuildYourOwnMacroPad">Step by step instructions on how to do this yourself!</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/BuildYourOwnMacroPad" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/BuildYourOwnMacroPad.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/BuildYourOwnMacroPad">itenium-be/BuildYourOwnMacroPad</a>:
+        Hands-On Session: build your own MacroPad</p>
+</li>
+        <li><a href="https://itenium-be.github.io/BuildYourOwnMacroPad">Step by step instructions on how to do this yourself!</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -11447,10 +11659,8 @@ including <a href="https://itenium.be/blog/security/hacking-tool-nmap/">nmap</a>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li>
-                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-assets/SecurityBootcamp-flyer.png">Download the Security Bootcamp flyer</a></li>
-        <li>
-                <a href="https://itenium.be/event/security-bootcamp/">The official itenium Security Bootcamp website</a></li>
+        <li><a href="https://itenium-be.github.io/blog-posts-new/assets/blog-assets/SecurityBootcamp-flyer.png">Download the Security Bootcamp flyer</a></li>
+        <li><a href="https://itenium.be/event/security-bootcamp/">The official itenium Security Bootcamp website</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -12156,7 +12366,13 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/slack-meme-poster-ai">Some of the code that ChatGPT created</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/slack-meme-poster-ai" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster-ai.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/slack-meme-poster-ai">itenium-be/slack-meme-poster-ai</a>:
+        Some of the code that ChatGPT created</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -13473,7 +13689,13 @@ Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popul
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/React-Charting">Project with all the examples for the React chart libraries</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/React-Charting" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/React-Charting.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/React-Charting">itenium-be/React-Charting</a>:
+        Project with all the examples for the React chart libraries</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -14352,9 +14574,27 @@ out of the box with <code>create-react-app</code>.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">Example UnitTests for Jasmine, TypeScript, Jest and Ava</a></li>
-        <li><a href="https://github.com/itenium-be/Frontend-UnitTesting">The technical session materials (pptx etc)</a></li>
-        <li><a href="https://github.com/itenium-be/confac">Jest exercises with increasing complexity in a real-world project (TS, React, Express, Mongo). Use git checkout jest-start</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        Example UnitTests for Jasmine, TypeScript, Jest and Ava</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Frontend-UnitTesting" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Frontend-UnitTesting.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Frontend-UnitTesting">itenium-be/Frontend-UnitTesting</a>:
+        The technical session materials (pptx etc)</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/confac" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/confac.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/confac">itenium-be/confac</a>:
+        Jest exercises with increasing complexity in a real-world project (TS, React, Express, Mongo). Use git checkout jest-start</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -14741,7 +14981,13 @@ and add a little <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/Laoujin/first-hack">First security hole exploited in a game :)</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/first-hack" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/first-hack.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/first-hack">Laoujin/first-hack</a>:
+        First security hole exploited in a game :)</p>
+</li>
 </ul>]]></block3>
   </post>
   <post>
@@ -15872,7 +16118,7 @@ Custom shortcuts:</p>
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
-        <li></li>
+        <li><a href=""></a></li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -16587,8 +16833,13 @@ you know, something like Vim.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li>
-                <a href="https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba">VSCode Settings Sync Gist</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/eb201494af87c818a3756206352d69ba" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/eb201494af87c818a3756206352d69ba.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/eb201494af87c818a3756206352d69ba">Laoujin/eb201494af87c818a3756206352d69ba</a>:
+        VSCode Settings Sync Gist</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -17070,7 +17321,13 @@ other tanks in Java or .NET. The robot battles are running in real-time and on-s
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/robocode">Example Eclipse and Visual Studio Robocode projects</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/robocode.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/robocode">itenium-be/robocode</a>:
+        Example Eclipse and Visual Studio Robocode projects</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -17255,7 +17512,13 @@ view pane in the UI. SYSTEM events and crash stack traces will also be printed i
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Robocode">Example Eclipse and Visual Studio Robocode projects</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Robocode" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Robocode.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Robocode">itenium-be/Robocode</a>:
+        Example Eclipse and Visual Studio Robocode projects</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -17738,7 +18001,13 @@ and 55kb of JavaScript glue in <code>HelloWorld.js</code> were generated.</p>]]>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/TechTalk-WebAssembly">HelloWorld Emscripten example</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/TechTalk-WebAssembly" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/TechTalk-WebAssembly.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/TechTalk-WebAssembly">itenium-be/TechTalk-WebAssembly</a>:
+        HelloWorld Emscripten example</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -18807,7 +19076,13 @@ and am already set on using it for a few small projects.</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Vue.js-Tutorial">Project used for itenium Vue.js technical session</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Vue.js-Tutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Vue.js-Tutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Vue.js-Tutorial">itenium-be/Vue.js-Tutorial</a>:
+        Project used for itenium Vue.js technical session</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -19893,9 +20168,14 @@ const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/github-stars-links">Chrome Extension source code</a></li>
-        <li>
-                <a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/github-stars-links" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/github-stars-links.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/github-stars-links">itenium-be/github-stars-links</a>:
+        Chrome Extension source code</p>
+</li>
+        <li><a href="https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig">Download from the Chrome Web Store</a></li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -20233,7 +20513,13 @@ regex.test(input); // Returns false. lastIndex is reset to 0
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/ModernJS">Jest UnitTests for all ECMAScript features since 2019</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ModernJS" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ModernJS.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ModernJS">itenium-be/ModernJS</a>:
+        Jest UnitTests for all ECMAScript features since 2019</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -20464,11 +20750,9 @@ categories: productivity | dotnet | javascript | dev-setup | design | trends | s
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun,hacking,book-review,synology,mongo]
 series: series-unique-name
 extras:
-  - githubproject: https://github.com/itenium-be/
-    githubtext: "Stuff that came into being during the making of this post"
+  - url: https://github.com/itenium-be/
+    desc: "Stuff that came into being during the making of this post"
   - url: 
-    desc: ""
-  - git: 
     desc: ""
 interesting:
   - url: 
@@ -21321,8 +21605,20 @@ for this amazing diagram, I love it!</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Array.prototype">Github source code as UnitTests</a></li>
-        <li><a href="https://github.com/itenium-be/ModernJS">Jest UnitTests for all ECMAScript features since 2019</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Array.prototype" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Array.prototype.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Array.prototype">itenium-be/Array.prototype</a>:
+        Github source code as UnitTests</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/ModernJS" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/ModernJS.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/ModernJS">itenium-be/ModernJS</a>:
+        Jest UnitTests for all ECMAScript features since 2019</p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -22290,7 +22586,13 @@ export class MyApplicationModule {}
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Angular-Series">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Angular-Series" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Angular-Series.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Angular-Series">itenium-be/Angular-Series</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -22390,8 +22692,7 @@ git update-index --no-skip-worktree fileName
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li>
-                <a href="https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/">Or use our PowerShell module Git-NumberedAdd</a></li>
+        <li><a href="https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/">Or use our PowerShell module Git-NumberedAdd</a></li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -22529,8 +22830,7 @@ DynaRun(TempScript, pipename="")
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li>
-                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">autohotkey-dyna-run-capslock-f5.ahk</a></li>
+        <li><a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk">autohotkey-dyna-run-capslock-f5.ahk</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -22667,8 +22967,7 @@ Return
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li>
-                <a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.html">Test Form Html Page</a></li>
+        <li><a href="https://itenium-be.github.io/blog-posts-new/assets/blog-images/autohotkey-login-form.html">Test Form Html Page</a></li>
 </ul>]]></block3>
   </post>
   <post>
@@ -23164,11 +23463,15 @@ Also, see below for similar implementations in Bash and Perl.</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Git-NumberedAdd">Git-NumberedStatus, Add, Diff, etc ps1 source</a></li>
-        <li>
-                <a href="https://www.powershellgallery.com/packages/Git-NumberedAdd">PowerShell Gallery</a></li>
-        <li>
-                <a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">itenium article with git aliases for --assume-unchanged and --skip-worktree</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Git-NumberedAdd" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Git-NumberedAdd.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Git-NumberedAdd">itenium-be/Git-NumberedAdd</a>:
+        Git-NumberedStatus, Add, Diff, etc ps1 source</p>
+</li>
+        <li><a href="https://www.powershellgallery.com/packages/Git-NumberedAdd">PowerShell Gallery</a></li>
+        <li><a href="https://itenium.be/blog/dev-setup/git-assume-unchanged/">itenium article with git aliases for --assume-unchanged and --skip-worktree</a></li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -24032,7 +24335,13 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/NSubstituteTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/NSubstituteTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/NSubstituteTutorial">itenium-be/NSubstituteTutorial</a>:
+        The accompanying github project contains all code as UnitTests</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -24509,7 +24818,13 @@ even while the script is suspended.</p>]]></block2>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/Mi-Ke">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Mi-Ke" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Mi-Ke.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Mi-Ke">itenium-be/Mi-Ke</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -25010,7 +25325,13 @@ IF(OR(A1="value", A1="value2"), "value1-2", "other")
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -25188,7 +25509,13 @@ describe('fake the api call', function() {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             28 March 2023: Colorblindness: added color configuration + added jasmine-reporters</li><li>
@@ -25384,7 +25711,13 @@ it('has its own jasmine.getEnv()', function() {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -25528,7 +25861,13 @@ it('can pass context - which will show on failure', async () =&gt; {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li><li>
@@ -25715,7 +26054,13 @@ it('and on setters', () =&gt; {
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
@@ -25898,7 +26243,13 @@ xit('I will not run, even if the fdescribe above is removed', () =&gt; {});
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             28 March 2023: Updated to Jasmine 4.3.0.</li></ul><h1>
@@ -26100,7 +26451,13 @@ Make sure you change your <code>jasmine.json</code> file extensions to <code>.ts
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/jasmine-tut">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/jasmine-tut" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/jasmine-tut.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/jasmine-tut">itenium-be/jasmine-tut</a>:
+        </p>
+</li>
 </ul>
 <p><b>Other interesting reads</b></p>
 <ul>
@@ -26249,7 +26606,13 @@ public void ConvertingIndexesAndAddresses()
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
+        </p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -26429,7 +26792,13 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
+        </p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -26460,7 +26829,15 @@ The LoadFromXXX methods do not set any header styling themselves.</p>
       <icon>dot-circle-o</icon>
       <title>NSubstitute vs Moq</title>
     </toc>
-    <excerpt><![CDATA[<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
+    <excerpt><![CDATA[<p>the repo has upgrade moq &amp; NSubstitute:
+we should also update the blog post…
+ThrowsAsync, Arg.AnyType, ForTypeForwardingTo</p>
+
+<ul>
+  <li>NUnit: Use Assert.That instead of the legacy Assert.AreEqual</li>
+</ul>
+
+<p>Comparing <a href="https://github.com/nsubstitute/nsubstitute">NSubstitute</a> syntax with <a href="https://github.com/moq/moq4">Moq</a>,
 probably the most used mocking framework out there at the moment.</p>
 
 <p style="margin-bottom: 5px">
@@ -26616,7 +26993,13 @@ continues to struggle with a whole bunch of deprecated ways of doing things.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/NSubstituteTutorial">The accompanying github project contains all code as UnitTests</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/NSubstituteTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/NSubstituteTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/NSubstituteTutorial">itenium-be/NSubstituteTutorial</a>:
+        The accompanying github project contains all code as UnitTests</p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -26931,7 +27314,13 @@ Filtered-out rows are always excluded.</p>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
+        </p>
+</li>
 </ul><h1>
     Package Versions
     <i class="far fa-info-circle" style="color: cornflowerblue; font-size: 0.4em" title="Package versions used for this post and in the accompanying code on Github"></i>
@@ -27272,7 +27661,13 @@ cfRule1.Style.Font.Bold = true;
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
-        <li><a href="https://github.com/itenium-be/EPPlusTutorial">The accompanying source on GitHub</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/EPPlusTutorial" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/EPPlusTutorial.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/EPPlusTutorial">itenium-be/EPPlusTutorial</a>:
+        </p>
+</li>
 </ul><h1>Updates</h1>
 <ul><li>
             10 March 2023: EPPlus is no longer free for commercial use!</li></ul><h1>
