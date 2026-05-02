@@ -8,7 +8,7 @@
     <url>https://itenium.be/blog/productivity/a-decade-of-itenium-slides-reborn-in-slidev/</url>
     <category>productivity</category>
     <tags>war-story,tech-talk</tags>
-    <desc>Ten years of itenium presentations lived in PowerPoint. Now they live in markdown, ship as a website, diff cleanly in git, and can be reviewed adversarially before every talk. A migration I&apos;d been postponing for years, now done thanks to Claude.</desc>
+    <desc>Ten years of itenium presentations lived in PowerPoint. Now they live in markdown, ship as a website, diff cleanly in git, and can be reviewed adversarially. A migration I&apos;d been postponing for years, now done thanks to Claude.</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/decade-of-itenium-slides-reborn-in-slidev-big.png</url>
       <origin>Midjourney</origin>
@@ -17,10 +17,10 @@
     <img>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/decade-of-itenium-slides-reborn-in-slidev-sm.png</url>
       <origin>Midjourney</origin>
-      <prompt>A markdown file with --- slide separators morphing into a stack of crisp presentation slides mid-flight, each slide branded with a subtle geometric tech logo, code-to-slides transformation, clean vector flat design, soft shadows, tech-blue and accent-orange palette, playful and minimal</prompt>
+      <prompt>A markdown file with slide separators morphing into a stack of crisp presentation slides mid-flight, each slide branded with a subtle geometric tech logo, code-to-slides transformation, clean vector flat design, soft shadows, tech-blue and accent-orange palette, playful and minimal</prompt>
     </img>
     <excerpt><![CDATA[<p>For ten years our presentations have lived in PowerPoint.
-Decks for VISUG, internal sessions, the architecture track,
+Decks for internal sessions, the architecture track,
 the frontend track – all in <code>.pptx</code>, all locked behind MS Office,
 all painful to diff, review, or evolve.</p>
 
@@ -36,10 +36,11 @@ Claude got me past the activation barrier and I’m never looking back.</p>]]></
     <a href="https://github.com/itenium-be/Presentations">itenium-be/Presentations</a>:
         Our talks, now as Slidev.</p>
 
-<p>The trigger was the first session in our 2026 AI track “AI &amp; Security: The S in MCP stands for Security”,
+<p>The trigger was the first session in our 2026 AI track
+“<a href="https://github.com/itenium-be/AI-Security-Talk">AI &amp; Security: The S in MCP stands for Security</a>”,
 the first technical session after our itenium rebranding which was more than just updating the logo,
-it was a whole new Powerpoint theme. Something of a recurring pain-point: this was now the
-4th Powerpoint theme. So every time I would redo an old talk, I would have to also take the
+it was a whole new PowerPoint theme. Something of a recurring pain-point: this was now the
+4th PowerPoint theme. So every time I would redo an old talk, I would have to also take the
 time to convert it.</p>
 
 <p>I was not looking forward to that.</p>
@@ -49,23 +50,23 @@ time to convert it.</p>
 <p>The pitch isn’t subtle:</p>
 
 <ul>
-  <li><strong>Publishable as a site.</strong> Every deck is a static site. No “can you send me the slides?” emails – just a URL. Ours live at <a href="https://itenium-be.github.io/Presentations/">itenium-be.github.io/Presentations</a> now.</li>
+  <li><strong>Publishable as a site.</strong> Every deck is a static site. No “can you send me the slides?” emails – just a URL. Ours lives at <a href="https://itenium-be.github.io/Presentations/">itenium-be.github.io/Presentations</a> now.</li>
   <li><strong>Real git diffs.</strong> A typo fix is <code>+1 -1</code>, not “binary file changed”. Reviews actually work.</li>
-  <li><strong>No MS Office dependency.</strong> Edit on Linux, on a Chromebook, in the browser. Where ever. No subtle OpenOffice bugs.</li>
+  <li><strong>No MS Office dependency.</strong> Edit on Linux, on a Chromebook, in the browser. Wherever. No subtle OpenOffice layout differences.</li>
   <li><strong>Adversarial review becomes possible.</strong> Once slides are markdown, you can pipe them through an AI critique pass before the talk. More on that below.</li>
   <li><strong>All the power of HTML/CSS.</strong> Want an animation, a Mermaid diagram, a custom transition, live TypeScript code? It’s all just web.</li>
   <li><strong>Layout consistency for free.</strong> Every slide uses the same theme components. No more “this one slide where the title is suddenly 4 pixels lower.”</li>
 </ul>]]></block1>
       <block2><![CDATA[<h2 id="a-decade-of-theme-regret">A decade of theme regret</h2>
 
-<p>I gave my first tech talk at <a href="https://visug.be/">VISUG</a> using
+<p>I gave my first tech talk for itenium at <a href="https://visug.be/">VISUG</a> using
 a default PowerPoint theme. It looked exactly as good as you’d expect.</p>
 
 <p>After that, every itenium talk used our internal theme.
 Three eras of it, actually:</p>
 
 <ol>
-  <li><strong>The ancient theme</strong> – from the company’s earliest days. It was OK.</li>
+  <li><strong>The ancient theme</strong> – from the company’s earliest days. It was OK-ish.</li>
   <li><strong>The updated theme</strong> – it was a dark theme, and I actually liked this one :D</li>
   <li><strong>The rebrand theme</strong> – A modern and on-brand theme</li>
 </ol>
@@ -94,38 +95,149 @@ I didn’t refresh my rusty Vue. I didn’t have to dig into obscure CSS issues.
   <li>Point Claude at <a href="https://itenium.be">itenium.be</a> and say “match these fonts, these h1/h2 gadgets, the in-between-slides feel.”</li>
 </ul>
 
-<p>And that worked really well, but then, as usual, I got carried away</p>
+<p>And that worked really well, but then, as usual, I got carried away…</p>
 
-<h2 id="how-i-got-carried-away-again">How I got carried away (again)</h2>
+<h3 id="how-i-got-carried-away-again">How I got carried away (again)</h3>
 
-<p>Because now I could have a cool things like, a “Break” slide, with a “CountDown” component,
-because of course that is top priority!</p>
+<p>Because now I could have a cool things like, a <code>&lt;CountDown /&gt;</code> component on a “Break” slide</p>
+<ul>
+  <li>top priority, obviously!</li>
+</ul>
 
 <p>But things started to get really off the rails after this prompt:</p>
 
 <blockquote>
-  <p>“Hey Claude, check my <code>/courses</code>… And make me a markdown table with the presentations I should convert using MoSCoW”</p>
+  <p>“Hey Claude, check my <code>./courses</code>… And make me a markdown table with the presentations I should convert using MoSCoW”</p>
 </blockquote>
+
+<p>For context, most itenium sessions are hands-on workshops – no
+slides worth publishing. The PowerPoint-heavy ones came out as:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo</th>
+      <th>MoSCoW</th>
+      <th>Notes</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/itenium-be/UnitTesting">UnitTesting</a></td>
+      <td>MUST</td>
+      <td>Old but revised several times</td>
+      <td>DONE</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/MicroServices">MicroServices</a></td>
+      <td>MUST</td>
+      <td>OK</td>
+      <td>DONE</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/ntier-onion-hex">ntier-onion-hex</a></td>
+      <td>MUST</td>
+      <td>OK</td>
+      <td>DONE</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/EventSourcing-CQRS">EventSourcing-CQRS</a></td>
+      <td>MUST</td>
+      <td>OK</td>
+      <td>DONE</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Architecture-KickOff">Architecture-KickOff</a></td>
+      <td>MUST</td>
+      <td>Needs work probably</td>
+      <td>DONE</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/CSharp-Features">CSharp-Features</a></td>
+      <td>MUST</td>
+      <td>C# evolution; needs work, newer C# versions</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Talk-GC">Talk-GC</a></td>
+      <td>MUST</td>
+      <td>Should be updated, new Java &amp; .NET GCs</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/CodeComplete">CodeComplete</a></td>
+      <td>SHOULD</td>
+      <td>OK</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Mythical-Man-Month">Mythical-Man-Month</a></td>
+      <td>SHOULD</td>
+      <td>OK</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Talk-UI-UX">Talk-UI-UX</a></td>
+      <td>COULD</td>
+      <td>“Don’t make me think”</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Talk-DesignPatterns">Talk-DesignPatterns</a></td>
+      <td>COULD</td>
+      <td>Needs work probably</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Regex-Tutorial">Regex-Tutorial</a></td>
+      <td>WISH</td>
+      <td>Maybe update the blog post instead</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Frontend-UnitTesting">Frontend-UnitTesting</a></td>
+      <td>WISH</td>
+      <td>Jasmine/Jest basics; update blog instead</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Talk-React">Talk-React</a></td>
+      <td>WISH</td>
+      <td>Pretty old (still mentions Flow)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/itenium-be/Talk-Git">Talk-Git</a></td>
+      <td>WISH</td>
+      <td>Combine with git-get-out-of-a-mess + DeepDive</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Five Musts done. Two more queued for the next time I’m scheduled to
+give them. The Should / Could / Wish tail… maybe sometime :D</p>
 
 <h3 id="the-migration-skill">The Migration Skill</h3>
 
-<p>Probably the largest <a href="https://github.com/itenium-be/Presentations/blob/master/MigrationSkill.md">skill</a>
+<p>Probably the largest <a href="https://github.com/itenium-be/Presentations/blob/main/MigrationSkill.md">skill</a>
 Claude has ever created for me.</p>
 
 <p>Because converting a <code>.pptx</code> to Slidev while still keeping everything intact turned out to be not that
-super easy after all. At least not for the first two powerpoints, after that I was sipping my coffee
+super easy after all. At least not for the first two PowerPoints, after that I was sipping my coffee
 while admiring Claude do its thing.</p>
 
 <ul>
   <li>PPTX -&gt; PDF -&gt; HTML is what worked for me</li>
   <li>The HTML was too big to read in one go so it’s parsed in a separate file that was easier for Claude to work with</li>
-  <li>Because of the “section slides”, slide numbers were mismatched between the old and new deck, causing a lof of confusion between Claude and myself</li>
-  <li>Presenter notes and emojis were gone in the HTML, these needed separate parsing</li>
-  <li>Hidden slides were also gone, extra Skill rules</li>
+  <li>Because of the “section slides”, slide numbers were mismatched between the old and new deck, causing a lot of confusion between Claude and myself</li>
+  <li>Presenter notes and emojis were gone in the HTML, these needed separate parsing, another alternative representation was born</li>
+  <li>Hidden slides were not present in the PDF, extra Skill rules were added to remedy this</li>
   <li>Images were not always present: what is a background image and what is an image it should take over…</li>
 </ul>
 
-<p>So well, in the draft for this blog post Claude said “just a weekend work”. Yeah right.</p>
+<p>So, well, in the draft for this blog post Claude said “just a weekend work”. Yeah right.</p>
 
 <h2 id="adversarial-review">Adversarial review</h2>
 
@@ -138,16 +250,27 @@ move in IT…</p>
 in slides being moved around the deck, being expanded, obsolete stuff
 being marked as such or removed, new angles being added etc.</p>
 
-<p>“In just one weekend”… Sure Claude, sure.</p>
+<p>The Architecture KickOff deck got the biggest overhaul and feels a lot more… SOLID now ;)
+Added slides on coupling &amp; cohesion, KISS / YAGNI / DRY, trade-offs, last responsible moment,
+accidental vs essential complexity, fitness functions, ADRs.</p>
 
-<p>The architecture-track decks are in such a better shape right now,
-I should definitely be doing these sessions again soon!</p>
+<p>“In just one weekend”… Sure Claude, sure. The weekend turned into a week, then two.</p>
+
+<p>The architecture-track decks are in much better shape now,
+definitely going to do these sessions again – no concrete dates yet.</p>
 
 <h2 id="all-new-talks-ship-as-slidev">All new talks ship as Slidev</h2>
 
-<p>The architecture track is converted and every new itenium talk starts
-as a Slidev project and ships to the public site
-on push.</p>
+<p>Every new itenium talk now starts as a Slidev project, shipping to
+the public site on push.</p>
+
+<p>Each talk lives in its own repo. <code>Presentations</code> is the index –
+a YAML listing which talks are <code>published: true</code>, aggregated into
+one site on push.</p>
+
+<p>And we end up with a card like this!</p>
+
+<p><a href="https://itenium-be.github.io/Presentations/"><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/decade-of-itenium-slides-reborn-in-slidev-public-site.png" alt="The itenium Presentations site" title="The itenium Presentations site" class="img-responsive" /></a></p>
 
 <p>Ten years of decks, finally in a format that respects how the rest of
 our work is done.</p>
@@ -159,8 +282,8 @@ for the cover image. And I absolutely love these!</p>
 
 <p>This is the pattern we see <a href="https://lalitm.com/post/building-syntaqlite-ai/">all over the internet</a> right now,
 “low priority work” that we would like to do but never get
-around because it’s just too much learning, too much work
-– that just gets done now, because it’s just become so easy!</p>]]></block2>
+around because it’s too much learning, too much work
+– that just gets done now, because it’s become so easy!</p>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
@@ -172,7 +295,7 @@ around because it’s just too much learning, too much work
     <a href="https://github.com/itenium-be/Presentations">itenium-be/Presentations</a>:
         itenium Presentations -- the Slidev source</p>
 </li>
-        <li><a href="https://itenium-be.github.io/Presentations/">The same, deployed as a website</a></li>
+        <li><a href="https://itenium-be.github.io/Presentations/">The deployed presentations</a></li>
         <li><p style="margin-bottom: 5px">
     <a href="https://github.com/slidevjs/slidev" style="margin-right: 6px">
         <img src="https://img.shields.io/github/stars/slidevjs/slidev.svg?style=social&label=Star" style="vertical-align: middle" />
