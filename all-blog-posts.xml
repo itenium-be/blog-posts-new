@@ -5,8 +5,8 @@
     <subTitle>A brief tl;dw on what the future holds for Java, straight from the Oracle engineering team</subTitle>
     <date>2026-04-30T00:00:00+00:00</date>
     <print_date>2026-04-30T00:00:00+00:00</print_date>
-    <url>https://itenium.be/blog/engineering/javaone2026-ask-the-architects-tldw/</url>
-    <category>engineering</category>
+    <url>https://itenium.be/blog/java/javaone2026-ask-the-architects-tldw/</url>
+    <category>java</category>
     <tags>java,conference,architecture,java-25,java-26</tags>
     <desc>A summary of the most important insights regarding Project Babylon, the module system, Lombok, and performance from the recent Java One panel.</desc>
     <bigimg>
@@ -16,47 +16,73 @@
     </bigimg>
     <img>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/java-one-2026-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a panel of senior software architects seated on a brightly lit conference stage, large screen behind them displaying the Java logo and JavaOne 2026, audience silhouettes in foreground holding glowing coffee cups, cinematic depth of field, clean modern illustration, tech blog editorial style</prompt>
     </img>
     <toc>
       <title>Java One 2026: Ask the Architect</title>
     </toc>
-    <excerpt><![CDATA[<h2 id="introduction">Introduction</h2>
+    <excerpt><![CDATA[<h2 class="hide-from-excerpt" id="introduction">Introduction</h2>
 
-<p>Recently, I had the opportunity to watch the <strong>Ask the Architect</strong> panel from Java One 2026. Featuring senior figures such as Brian Goetz and John Rose, it provided a candid look into the Java ecosystem’s trajectory.</p>
-
-<p>While it was a fantastic session, watching the full recording is a significant time investment. This ‘tl;dw’ (too long; didn’t watch) summarizes the most relevant points to keep you up to speed on the upcoming platform shifts.</p>
+<p>Recently, I had the opportunity to watch the <strong>Ask the Architect</strong> panel from Java One 2026.
+Featuring senior figures such as <a href="https://inside.java/u/BrianGoetz/">Brian Goetz</a> and
+<a href="https://inside.java/u/JohnRose/">John Rose</a>, it provided a candid look into the Java ecosystem’s trajectory.</p>]]></excerpt>
+      <block1><![CDATA[<p>While it was a fantastic session, watching the full recording is a significant time investment.
+This ‘tl;dw’ (too long; didn’t watch) summarizes the most relevant points to keep you up to speed
+on the upcoming platform shifts.</p>
 
 <h2 id="structured-concurrency-and-project-babylon">Structured Concurrency and Project Babylon</h2>
 
-<p>One of the more anticipated features, <strong>Structured Concurrency</strong>, remains in preview. It is currently heading towards its seventh preview in <strong>JDK 26</strong>. The architects are intentionally refining the API based on community feedback, mirroring the patient maturation process once seen with the HTTP client API.</p>
+<p>One of the more anticipated features, <strong>Structured Concurrency</strong>, remains in preview.
+It is currently heading towards its seventh preview in <strong>JDK 26</strong>. The architects are intentionally
+refining the API based on community feedback, mirroring the patient maturation process once seen with
+the HTTP client API.</p>
 
-<p>Furthermore, <strong>Project Babylon</strong> is now in the JEP phase for incubation. This project focuses on <strong>Code Reflection</strong>, allowing Java to analyze and offload code to GPUs. This is a game-changer for modern AI use cases. The team stressed that while the scope is broad, community experimentation is vital to drive its development forward.</p>
+<p>Furthermore, <strong>Project Babylon</strong> is now in the JEP phase for incubation. This project focuses
+on <strong>Code Reflection</strong>, allowing Java to analyze and offload code to GPUs. This is a game-changer
+for modern AI use cases. The team stressed that while the scope is broad, community experimentation
+is vital to drive its development forward.</p>]]></block1>
+      <block2><![CDATA[<h2 id="jdk-features-and-the-module-system">JDK Features and the Module System</h2>
 
-<h2 id="jdk-features-and-the-module-system">JDK Features and the Module System</h2>
+<p>The panel addressed the recurring question of adding third-party libraries (like Jackson) to the JDK.
+The philosophy remains strict: <strong>no bundling</strong>. This avoids long-term maintenance burdens and
+versioning conflicts. New features only enter the JDK if they are essential for internal workings
+or platform competitiveness.</p>
 
-<p>The panel addressed the recurring question of adding third-party libraries (like Jackson) to the JDK. The philosophy remains strict: <strong>no bundling</strong>. This avoids long-term maintenance burdens and versioning conflicts. New features only enter the JDK if they are essential for internal workings or platform competitiveness.</p>
-
-<p>As for the <strong>Java Module System (JPMS)</strong>, the team acknowledged the slow adoption. While initial friction with build tools and migration costs hindered progress, major frameworks like <strong>Spring</strong> are now successfully making the transition, signaling a maturing ecosystem.</p>
+<p>As for the <strong>Java Module System (JPMS)</strong>, the team acknowledged the slow adoption. While initial
+friction with build tools and migration costs hindered progress, major frameworks like <strong>Spring</strong>
+are now successfully making the transition, signaling a maturing ecosystem.</p>
 
 <h2 id="performance-streams-and-memory">Performance: Streams and Memory</h2>
 
-<p>For the <strong>Stream API</strong>, readability and developer convenience still take precedence over absolute top performance. However, research into “stream fusion” and “Babylonising” streams is underway to better support the JIT compiler during intensive iterations.</p>
+<p>For the <strong>Stream API</strong>, readability and developer convenience still take precedence over absolute
+top performance. However, research into “stream fusion” and “Babylonising” streams is underway to
+better support the JIT compiler during intensive iterations.</p>
 
-<p>On the memory front, <strong>Java 25</strong> introduced the <strong>Compact Object Header</strong>. By reducing the header size from 96/128 bits down to <strong>8 bytes</strong>, Java now saves roughly 4 bytes per object. In memory-intensive workloads, this provides a “free” 10-15% reduction in heap usage—a massive win for cloud-native deployments.</p>
+<p>On the memory front, <strong>Java 25</strong> introduced the <strong>Compact Object Header</strong>. By reducing the header
+size from 96/128 bits down to <strong>8 bytes</strong>, Java now saves roughly 4 bytes per object. In memory-intensive
+workloads, this provides a “free” 10-15% reduction in heap usage—a massive win for cloud-native deployments.</p>
 
 <h2 id="lombok-and-code-generation">Lombok and Code Generation</h2>
 
-<p>The commentary on <strong>Lombok</strong> was direct. While it effectively reduces boilerplate, the architects view it as a “bad citizen” because it relies on internal compiler hacks.</p>
+<p>The commentary on <strong>Lombok</strong> was direct. While it effectively reduces boilerplate, the architects
+view it as a “bad citizen” because it relies on internal compiler hacks.</p>
 
-<p>The Java team expects that modern language features—specifically <strong>Records</strong> and the forthcoming <strong>Value Objects (Project Valhalla)</strong>—will eventually make tools like Lombok redundant. For new development, the recommendation is clear: prefer native language features over bytecode manipulation where possible.</p>
+<p>The Java team expects that modern language features—specifically <strong>Records</strong> and the forthcoming
+<strong>Value Objects (Project Valhalla)</strong>—will eventually make tools like Lombok redundant. For new
+development, the recommendation is clear: prefer native language features over bytecode manipulation where possible.</p>
 
 <h2 id="ai-within-development">AI within Development</h2>
 
-<p>The architects are actively using AI for writing unit tests and updating specifications. However, their approach is <strong>Human-In-The-Loop (HITL)</strong>. AI is viewed as a productivity multiplier, but human judgment remains the final authority. Trust in generated code is not automatic.</p>
+<p>The architects are actively using AI for writing unit tests and updating specifications. However,
+their approach is <strong>Human-In-The-Loop (HITL)</strong>. AI is viewed as a productivity multiplier, but
+human judgment remains the final authority. Trust in generated code is not automatic.</p>
 
 <h2 id="education-and-accessibility">Education and Accessibility</h2>
 
-<p>To compete with Python in educational environments, the team is promoting features like <strong>Implicitly Declared Classes</strong> and <strong>Instance Main Methods</strong>. These features allow students to write code without the “ceremony” of <code>public static void main</code>, making Java far more approachable for beginners.</p>
+<p>To compete with Python in educational environments, the team is promoting features like
+<strong>Implicitly Declared Classes</strong> and <strong>Instance Main Methods</strong>. These features allow students
+to write code without the “ceremony” of <code>public static void main</code>, making Java far more approachable for beginners.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -66,59 +92,13 @@
   <p>“Feedback that describes a problem is more valuable than feedback that proposes a solution.”</p>
 </blockquote>
 
-<p>Whether you are contributing to open-source or designing internal APIs, focusing on the <em>problem space</em> allows the architects (and your teammates) to find the most robust solution.</p>]]></excerpt>
-      <block2><![CDATA[<h2 id="introduction">Introduction</h2>
-
-<p>Recently, I had the opportunity to watch the <strong>Ask the Architect</strong> panel from Java One 2026. Featuring senior figures such as Brian Goetz and John Rose, it provided a candid look into the Java ecosystem’s trajectory.</p>
-
-<p>While it was a fantastic session, watching the full recording is a significant time investment. This ‘tl;dw’ (too long; didn’t watch) summarizes the most relevant points to keep you up to speed on the upcoming platform shifts.</p>
-
-<h2 id="structured-concurrency-and-project-babylon">Structured Concurrency and Project Babylon</h2>
-
-<p>One of the more anticipated features, <strong>Structured Concurrency</strong>, remains in preview. It is currently heading towards its seventh preview in <strong>JDK 26</strong>. The architects are intentionally refining the API based on community feedback, mirroring the patient maturation process once seen with the HTTP client API.</p>
-
-<p>Furthermore, <strong>Project Babylon</strong> is now in the JEP phase for incubation. This project focuses on <strong>Code Reflection</strong>, allowing Java to analyze and offload code to GPUs. This is a game-changer for modern AI use cases. The team stressed that while the scope is broad, community experimentation is vital to drive its development forward.</p>
-
-<h2 id="jdk-features-and-the-module-system">JDK Features and the Module System</h2>
-
-<p>The panel addressed the recurring question of adding third-party libraries (like Jackson) to the JDK. The philosophy remains strict: <strong>no bundling</strong>. This avoids long-term maintenance burdens and versioning conflicts. New features only enter the JDK if they are essential for internal workings or platform competitiveness.</p>
-
-<p>As for the <strong>Java Module System (JPMS)</strong>, the team acknowledged the slow adoption. While initial friction with build tools and migration costs hindered progress, major frameworks like <strong>Spring</strong> are now successfully making the transition, signaling a maturing ecosystem.</p>
-
-<h2 id="performance-streams-and-memory">Performance: Streams and Memory</h2>
-
-<p>For the <strong>Stream API</strong>, readability and developer convenience still take precedence over absolute top performance. However, research into “stream fusion” and “Babylonising” streams is underway to better support the JIT compiler during intensive iterations.</p>
-
-<p>On the memory front, <strong>Java 25</strong> introduced the <strong>Compact Object Header</strong>. By reducing the header size from 96/128 bits down to <strong>8 bytes</strong>, Java now saves roughly 4 bytes per object. In memory-intensive workloads, this provides a “free” 10-15% reduction in heap usage—a massive win for cloud-native deployments.</p>
-
-<h2 id="lombok-and-code-generation">Lombok and Code Generation</h2>
-
-<p>The commentary on <strong>Lombok</strong> was direct. While it effectively reduces boilerplate, the architects view it as a “bad citizen” because it relies on internal compiler hacks.</p>
-
-<p>The Java team expects that modern language features—specifically <strong>Records</strong> and the forthcoming <strong>Value Objects (Project Valhalla)</strong>—will eventually make tools like Lombok redundant. For new development, the recommendation is clear: prefer native language features over bytecode manipulation where possible.</p>
-
-<h2 id="ai-within-development">AI within Development</h2>
-
-<p>The architects are actively using AI for writing unit tests and updating specifications. However, their approach is <strong>Human-In-The-Loop (HITL)</strong>. AI is viewed as a productivity multiplier, but human judgment remains the final authority. Trust in generated code is not automatic.</p>
-
-<h2 id="education-and-accessibility">Education and Accessibility</h2>
-
-<p>To compete with Python in educational environments, the team is promoting features like <strong>Implicitly Declared Classes</strong> and <strong>Instance Main Methods</strong>. These features allow students to write code without the “ceremony” of <code>public static void main</code>, making Java far more approachable for beginners.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>I want to wrap up with a quote from the session that serves as a great guiding principle for our own engineering culture:</p>
-
-<blockquote>
-  <p>“Feedback that describes a problem is more valuable than feedback that proposes a solution.”</p>
-</blockquote>
-
-<p>Whether you are contributing to open-source or designing internal APIs, focusing on the <em>problem space</em> allows the architects (and your teammates) to find the most robust solution.</p>
-]]></block2>
+<p>Whether you are contributing to open-source or designing internal APIs, focusing on the
+<em>problem space</em> allows the architects (and your teammates) to find the most robust solution.</p>]]></block2>
     <block3><![CDATA[
 <h1>Extras</h1>
 <p><b>Other interesting reads</b></p>
 <ul>
+        <li><a href="https://www.reddit.com/r/java/comments/1stf7gs/ask_the_architects_javaone_2026/">Youtube: Ask the Architects JavaOne 2026</a></li>
         <li><a href="https://dev.java">Inside Java: Official portal for Java developers</a></li>
 </ul>]]></block3>
   </post>
@@ -20415,6 +20395,11 @@ It would be perfect if you added a little voice chip that asked, “<em>Did you 
     <category>productivity</category>
     <tags>meta</tags>
     <desc>How to create a new blog post on this site :) Very meta.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/meta-create-blog-post-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt> overhead view of a writer&apos;s desk at dusk, open laptop showing a markdown file with visible YAML front matter and Jekyll Liquid tags, a steaming mug, scattered sticky notes with handwritten draft and publish, a small notebook with a pen mid-sentence, soft warm key light, shallow depth of field, clean editorial illustration with a hint of vaporwave teal-and-amber palette, tech blog hero banner --ar 4:1 --style raw</prompt>
+    </bigimg>
     <img>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/meta-create-blog-post.png</url>
       <desc>Photo by Tom Sodoge</desc>
