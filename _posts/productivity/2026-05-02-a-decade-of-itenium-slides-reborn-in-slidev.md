@@ -108,7 +108,7 @@ What I did was:
 
 And that worked really well, but then, as usual, I got carried away...
 
-## How I got carried away (again)
+### How I got carried away (again)
 
 Because now I could have a cool things like, a `<CountDown />` component on a "Break" slide
 - top priority, obviously!
@@ -116,6 +116,47 @@ Because now I could have a cool things like, a `<CountDown />` component on a "B
 But things started to get really off the rails after this prompt:
 
 > "Hey Claude, check my `./courses`... And make me a markdown table with the presentations I should convert using MoSCoW"
+
+For context, most itenium sessions are hands-on workshops -- no
+slides worth publishing. The PowerPoint-heavy ones came out as:
+
+| Repo                         | MoSCoW | Notes                                         | Status |
+|------------------------------|--------|-----------------------------------------------|--------|
+| [UnitTesting][ut]            | MUST   | Old but revised several times                 | DONE   |
+| [MicroServices][ms]          | MUST   | OK                                            | DONE   |
+| [ntier-onion-hex][noh]       | MUST   | OK                                            | DONE   |
+| [EventSourcing-CQRS][es]     | MUST   | OK                                            | DONE   |
+| [Architecture-KickOff][ak]   | MUST   | Needs work probably                           | DONE   |
+| [CSharp-Features][cs]        | MUST   | C# evolution; needs work, newer C# versions   |        |
+| [Talk-GC][gc]                | MUST   | Should be updated, new Java & .NET GCs        |        |
+| [CodeComplete][cc]           | SHOULD | OK                                            |        |
+| [Mythical-Man-Month][mmm]    | SHOULD | OK                                            |        |
+| [Talk-UI-UX][uiux]           | COULD  | "Don't make me think"                         |        |
+| [Talk-DesignPatterns][dp]    | COULD  | Needs work probably                           |        |
+| [Regex-Tutorial][regex]      | WISH   | Maybe update the blog post instead            |        |
+| [Frontend-UnitTesting][feut] | WISH   | Jasmine/Jest basics; update blog instead      |        |
+| [Talk-React][react]          | WISH   | Pretty old (still mentions Flow)              |        |
+| [Talk-Git][git]              | WISH   | Combine with git-get-out-of-a-mess + DeepDive |        |
+
+[ut]:    https://github.com/itenium-be/UnitTesting
+[ms]:    https://github.com/itenium-be/MicroServices
+[noh]:   https://github.com/itenium-be/ntier-onion-hex
+[es]:    https://github.com/itenium-be/EventSourcing-CQRS
+[ak]:    https://github.com/itenium-be/Architecture-KickOff
+[cs]:    https://github.com/itenium-be/CSharp-Features
+[gc]:    https://github.com/itenium-be/Talk-GC
+[cc]:    https://github.com/itenium-be/CodeComplete
+[mmm]:   https://github.com/itenium-be/Mythical-Man-Month
+[uiux]:  https://github.com/itenium-be/Talk-UI-UX
+[dp]:    https://github.com/itenium-be/Talk-DesignPatterns
+[regex]: https://github.com/itenium-be/Regex-Tutorial
+[feut]:  https://github.com/itenium-be/Frontend-UnitTesting
+[react]: https://github.com/itenium-be/Talk-React
+[git]:   https://github.com/itenium-be/Talk-Git
+
+Five Musts done. Two more queued for the next time I'm scheduled to
+give them. The Should / Could / Wish tail... maybe sometime :D
+
 
 ### The Migration Skill
 
@@ -147,17 +188,24 @@ So after each conversion, I fired up an adversarial review which resulted
 in slides being moved around the deck, being expanded, obsolete stuff
 being marked as such or removed, new angles being added etc.
 
-"In just one weekend"... Sure Claude, sure.
+The Architecture KickOff deck got the biggest overhaul and feels a lot more... SOLID now ;)
+Added slides on coupling & cohesion, KISS / YAGNI / DRY, trade-offs, last responsible moment,
+accidental vs essential complexity, fitness functions, ADRs.
 
-The architecture-track decks are in such a better shape right now,
-I should definitely be doing these sessions again soon!
+"In just one weekend"... Sure Claude, sure. The weekend turned into a week, then two.
+
+The architecture-track decks are in much better shape now,
+definitely going to do these sessions again -- no concrete dates yet.
 
 
 ## All new talks ship as Slidev
 
-The architecture track is converted and every new itenium talk starts
-as a Slidev project which ships to the public site
-on push.
+Every new itenium talk now starts as a Slidev project, shipping to
+the public site on push.
+
+Each talk lives in its own repo. `Presentations` is the index --
+a YAML listing which talks are `published: true`, aggregated into
+one site on push.
 
 And we end up with a card like this!
 
