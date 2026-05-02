@@ -11,7 +11,7 @@ img:
   desc: Photo by Mika Baumeister
 series: epplus
 extras:
-  - githubproject: https://github.com/itenium-be/EPPlusTutorial
+  - url: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 1"
     icon: file-excel-o

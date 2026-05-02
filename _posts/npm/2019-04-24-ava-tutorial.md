@@ -13,7 +13,7 @@ img:
 categories: javascript
 tags: [testing,tutorial]
 interesting:
-  - git: avajs/awesome-ava
+  - url: https://github.com/avajs/awesome-ava
     desc: "Awesome AVA"
 toc:
   title: 👓 AVA Tutorial

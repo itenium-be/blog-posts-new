@@ -27,8 +27,8 @@ interesting:
   - url: https://www.reddit.com/r/synology/comments/pejrp5/files_created_by_docker_container_not_seen_by/
     desc: "Files created by docker container not seen by Synology Drive"
 extras:
-  - githubproject: https://github.com/itenium-be/synology-cloud-sync-vs-docker
-    githubtext: "Minimal Example Code"
+  - url: https://github.com/itenium-be/synology-cloud-sync-vs-docker
+    desc: "Minimal Example Code"
 toc:
   title: CloudSync
   icon: server

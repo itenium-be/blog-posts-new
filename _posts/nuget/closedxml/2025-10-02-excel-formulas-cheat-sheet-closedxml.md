@@ -17,7 +17,7 @@ categories: dotnet
 tags: [excel,cheat-sheet]
 series: closedxml
 extras:
-  - githubproject: https://github.com/itenium-be/ClosedXMLTutorial
+  - url: https://github.com/itenium-be/ClosedXMLTutorial
 toc:
   title: "Excel series: Part 4"
   icon: file-excel-o

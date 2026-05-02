@@ -19,8 +19,8 @@ img:
 categories: dotnet
 tags: [sql,testing]
 extras:
-  - githubproject: https://github.com/itenium-be/DbContext-Testing
-    githubtext: "The accompanying code on GitHub"
+  - url: https://github.com/itenium-be/DbContext-Testing
+    desc: "The accompanying code on GitHub"
 toc:
   title: Database Tests
   icon: dot-circle-o

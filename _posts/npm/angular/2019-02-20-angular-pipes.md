@@ -15,7 +15,7 @@ img:
 categories: javascript
 tags: [angular,cheat-sheet,tutorial]
 extras:
-  - githubproject: https://github.com/itenium-be/Angular-Series
+  - url: https://github.com/itenium-be/Angular-Series
 interesting:
   - url: https://angular.io/generated/live-examples/pipes/stackblitz.html
     desc: Live examples from the official docs

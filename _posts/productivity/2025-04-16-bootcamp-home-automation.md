@@ -16,8 +16,8 @@ img:
   desc: "Self powering socket!!"
 categories: productivity
 extras:
-  - githubproject: https://github.com/itenium-be/Bootcamp-Home-Automation
-    githubtext: "Pptx, materials, images, documentation, instructions, ..."
+  - url: https://github.com/itenium-be/Bootcamp-Home-Automation
+    desc: "Pptx, materials, images, documentation, instructions, ..."
 interesting:
   - url: https://itenium.be/Bootcamp-Home-Automation/
     desc: "Deployed instructions website"

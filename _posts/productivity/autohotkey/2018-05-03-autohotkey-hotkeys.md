@@ -12,7 +12,7 @@ categories: productivity
 tags: [autohotkey]
 series: autohotkey
 extras:
-  - githubproject: https://github.com/itenium-be/Mi-Ke
+  - url: https://github.com/itenium-be/Mi-Ke
 toc:
   title: "Autohotkey series: Hotkeys"
   icon: car
@@ -22,7 +22,7 @@ interesting:
   - desc: List of Keys (Keyboard, Mouse and Joystick)
     url: https://autohotkey.com/docs/KeyList.htm
   - desc: Hold down a key to send a different key
-    git: babin101/DevKeyboard
+    url: https://github.com/babin101/DevKeyboard
   - desc: Morse code by Laszlo
     url: https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/
 last_modified_at: 2023-03-28 00:00:00 +0200

@@ -24,8 +24,8 @@ interesting:
   - url: "https://github.com/dotnet/machinelearning/issues/7454"
     desc: "Issue: LightGbm in Linux Container"
 extras:
-  - githubproject: https://github.com/TTC-AAlst/PongRank
-    githubtext: "Predicting next year player rankings"
+  - url: https://github.com/TTC-AAlst/PongRank
+    desc: "Predicting next year player rankings"
 toc:
   icon: icon-shell
   title: LightGBM Installation

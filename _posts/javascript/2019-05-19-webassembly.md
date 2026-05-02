@@ -16,12 +16,12 @@ img:
 categories: javascript
 tags: [tech-talk]
 extras:
-  - githubproject: https://github.com/itenium-be/TechTalk-WebAssembly
-    githubtext: "HelloWorld Emscripten example"
+  - url: https://github.com/itenium-be/TechTalk-WebAssembly
+    desc: "HelloWorld Emscripten example"
 interesting:
-  - git: AssemblyScript/assemblyscript
+  - url: https://github.com/AssemblyScript/assemblyscript
     desc: "Definitely not a TypeScript to WebAssembly compiler"
-  - git: WebAssembly/proposals
+  - url: https://github.com/WebAssembly/proposals
     desc: "Tracking WebAssembly proposals"
   - url: https://www.youtube.com/playlist?list=PLNYkxOF6rcIATmAmz7HcCzongGvQEtx8i
     desc: "More sessions from Google I/O '19"

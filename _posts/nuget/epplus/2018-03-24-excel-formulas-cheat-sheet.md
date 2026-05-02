@@ -14,7 +14,7 @@ categories: dotnet
 tags: [excel,cheat-sheet]
 series: epplus
 extras:
-  - githubproject: https://github.com/itenium-be/EPPlusTutorial
+  - url: https://github.com/itenium-be/EPPlusTutorial
 toc:
   title: "Excel series: Part 5"
   icon: file-excel-o

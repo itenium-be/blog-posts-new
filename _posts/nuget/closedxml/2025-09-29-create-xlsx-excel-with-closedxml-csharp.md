@@ -15,8 +15,8 @@ bigimg:
   origin: Midjourney
 series: closedxml
 extras:
-  - githubproject: https://github.com/itenium-be/ClosedXMLTutorial
-    githubtext: "More extensive ClosedXML examples in the Github repo"
+  - url: https://github.com/itenium-be/ClosedXMLTutorial
+    desc: "More extensive ClosedXML examples in the Github repo"
 interesting:
   - url: "https://github.com/ClosedXML/ClosedXML.Report"
     desc: "Report generation: export any data from .NET classes to Excel using an xlsx-template."

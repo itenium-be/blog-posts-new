@@ -20,9 +20,9 @@ categories: productivity
 tags: [autohotkey,testing,debugging]
 extras:
 interesting:
-  - git: ahkscript/awesome-AutoHotkey
+  - url: https://github.com/ahkscript/awesome-AutoHotkey
     desc: "A curated list of awesome"
-  - git: itenium-be/Mi-Ke
+  - url: https://github.com/itenium-be/Mi-Ke
     desc: "Mi-Ke contains most stuff in this blog post, and then some."
 toc:
   title: 🐛 To The Trenches

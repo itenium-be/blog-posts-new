@@ -30,11 +30,11 @@ gallery_images:
   - file: ai-bootcamp-gallery-6.jpeg
     text: "Team presentation showing the SkillForge login screen"
 interesting:
-  - git: "itenium-be/Bootcamp-AI"
+  - url: https://github.com/itenium-be/Bootcamp-AI
     desc: "Itenium bootcamp 2026 - L&D Platform creation source code"
-  - git: "itenium-be/Bootcamp-AI-Dashboard"
+  - url: https://github.com/itenium-be/Bootcamp-AI-Dashboard
     desc: "Dashboard for the 2026 itenium AI SkillForge Bootcamp: Hall of fame, team statistics"
-  - git: "itenium-be/Bootcamp-AI-Resources"
+  - url: https://github.com/itenium-be/Bootcamp-AI-Resources
     desc: "Team pictures, certificates, intro powerpoint, ..."
 ---
 

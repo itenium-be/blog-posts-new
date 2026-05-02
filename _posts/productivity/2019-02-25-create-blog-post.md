@@ -85,11 +85,9 @@ categories: productivity | dotnet | javascript | dev-setup | design | trends | s
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun,hacking,book-review,synology,mongo]
 series: series-unique-name
 extras:
-  - githubproject: https://github.com/itenium-be/
-    githubtext: "Stuff that came into being during the making of this post"
+  - url: https://github.com/itenium-be/
+    desc: "Stuff that came into being during the making of this post"
   - url: 
-    desc: ""
-  - git: 
     desc: ""
 interesting:
   - url: 

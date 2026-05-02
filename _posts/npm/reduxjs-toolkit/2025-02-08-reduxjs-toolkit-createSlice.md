@@ -19,8 +19,8 @@ categories: javascript
 tags: [tutorial,react]
 series: reduxjs-toolkit
 extras:
-  - githubproject: https://github.com/itenium-be/reduxjs-toolkit
-    githubtext: "The 'Mythical Zoos' example code and the talk pptx"
+  - url: https://github.com/itenium-be/reduxjs-toolkit
+    desc: "The 'Mythical Zoos' example code and the talk pptx"
 package-versions:
   - package: "@reduxjs/toolkit"
     version: 2.5.0

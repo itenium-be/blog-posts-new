@@ -1,0 +1,40 @@
+{%- comment -%}
+Render a single extras/interesting item as either a github-stars badge
+(when item.url is exactly https://github.com/owner/repo) or a plain <a>.
+Inputs: item.url (required), item.desc (optional).
+{%- endcomment -%}
+
+{%- assign item = include.item -%}
+{%- assign url = item.url -%}
+{%- assign repo_slug = '' -%}
+
+{%- if url contains 'github.com/' -%}
+    {%- assign path = url | split: 'github.com/' | last -%}
+    {%- assign path = path | split: '?' | first -%}
+    {%- assign path = path | split: '#' | first -%}
+    {%- assign last_char = path | slice: -1, 1 -%}
+    {%- if last_char == '/' -%}
+        {%- assign trim_len = path | size | minus: 1 -%}
+        {%- assign path = path | slice: 0, trim_len -%}
+    {%- endif -%}
+    {%- assign parts = path | split: '/' -%}
+    {%- if parts.size == 2 -%}
+        {%- assign owner = parts[0] -%}
+        {%- assign repo = parts[1] -%}
+        {%- if owner != '' and repo != '' -%}
+            {%- assign repo_slug = path -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- if repo_slug != '' -%}
+    {%- include github-stars.html url=repo_slug desc=item.desc -%}
+{%- else -%}
+    <a href="{{ url }}">
+        {%- if item.desc -%}
+            {{- item.desc -}}
+        {%- else -%}
+            {{- url -}}
+        {%- endif -%}
+    </a>
+{%- endif -%}

@@ -11,7 +11,7 @@ img:
   desc: Photo by Carolyn V
 series: js-testing
 extras:
-  - githubproject: https://github.com/itenium-be/jasmine-tut
+  - url: https://github.com/itenium-be/jasmine-tut
 toc:
   title: Jasmine Syntax
   icon: icon-javascript

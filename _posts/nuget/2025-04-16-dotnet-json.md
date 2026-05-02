@@ -19,8 +19,8 @@ img:
 categories: dotnet
 tags: [tutorial]
 extras:
-  - githubproject: https://github.com/itenium-be/DotNet-Json
-    githubtext: "The code as xUnit tests"
+  - url: https://github.com/itenium-be/DotNet-Json
+    desc: "The code as xUnit tests"
 interesting:
   - url: https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/migrate-from-newtonsoft
     desc: "Pretty in-depth migration article with a nice comparison table"

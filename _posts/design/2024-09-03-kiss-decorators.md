@@ -20,8 +20,8 @@ img:
 categories: design
 tags: [war-story]
 extras:
-  - githubproject: https://github.com/itenium-be/KISS-Decorators
-    githubtext: "The code from this blog post as xUnit tests"
+  - url: https://github.com/itenium-be/KISS-Decorators
+    desc: "The code from this blog post as xUnit tests"
 toc:
   title: 🎁 Keep It Simple
   icon:

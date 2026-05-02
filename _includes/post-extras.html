@@ -5,25 +5,9 @@
 
 {%- if page.extras %}
 <p><b>Stuff that came into being during the making of this post</b></p>
-{%- assign extras = page.extras | first %}
 <ul>
     {%- for extra in page.extras %}
-        <li>
-            {%- if extra.url %}
-                <a href="{{ extra.url }}">
-                    {%- if extra.desc -%}
-                        {{- extra.desc -}}
-                    {%- else -%}
-                        {{- extra.url -}}
-                    {%- endif -%}
-                </a>
-
-            {%- elsif extra.githubproject -%}
-                <a href="{{ extra.githubproject }}">
-                    {{- extra.githubtext | default: 'The accompanying source on GitHub' -}}
-                </a>
-            {%- endif -%}
-        </li>
+        <li>{% include post/link.html item=extra %}</li>
     {%- endfor %}
 </ul>
 {%- endif -%}
@@ -32,19 +16,7 @@
 <p><b>Other interesting reads</b></p>
 <ul>
     {%- for interest in page.interesting %}
-        <li>
-            {%- if interest.url -%}
-                <a href="{{ interest.url }}">
-                    {%- if interest.desc -%}
-                        {{ interest.desc }}
-                    {%- else -%}
-                        {{ interest.url }}
-                    {%- endif -%}
-                </a>
-            {%- elsif interest.git -%}
-                {% include github-stars.html url=interest.git desc=interest.desc %}
-            {%- endif -%}
-        </li>
+        <li>{% include post/link.html item=interest %}</li>
     {%- endfor %}
 </ul>
 {%- endif -%}

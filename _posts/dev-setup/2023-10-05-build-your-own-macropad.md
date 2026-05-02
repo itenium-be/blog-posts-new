@@ -20,8 +20,8 @@ img:
 categories: dev-setup
 tags: [fun,tech-talk]
 extras:
-  - githubproject: https://github.com/itenium-be/BuildYourOwnMacroPad
-    githubtext: "Hands-On Session: build your own MacroPad"
+  - url: https://github.com/itenium-be/BuildYourOwnMacroPad
+    desc: "Hands-On Session: build your own MacroPad"
   - url: https://itenium-be.github.io/BuildYourOwnMacroPad
     desc: "Step by step instructions on how to do this yourself!"
 toc:

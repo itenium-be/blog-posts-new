@@ -8,8 +8,8 @@ img:
 categories: dev-setup
 tags: [powershell,windows]
 extras:
-  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/envpath.ps1
-    githubtext: The full ps1 source
+  - url: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/envpath.ps1
+    desc: The full ps1 source
 toc:
   title: Environment vars
   icon: windows

@@ -15,8 +15,8 @@ bigimg:
   origin: Midjourney
 series: closedxml
 extras:
-  - githubproject: https://github.com/itenium-be/ClosedXMLTutorial
-    githubtext: "More extensive ClosedXML examples in the Github repo"
+  - url: https://github.com/itenium-be/ClosedXMLTutorial
+    desc: "More extensive ClosedXML examples in the Github repo"
 toc:
   title: "Excel series: Part 3"
   icon: file-excel-o

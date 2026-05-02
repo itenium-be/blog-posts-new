@@ -19,11 +19,11 @@ img:
 categories: dotnet
 tags: [testing,cheat-sheet]
 interesting:
-  - git: shouldly/shouldly
+  - url: https://github.com/shouldly/shouldly
     desc: "Should testing for .NET—the way assertions should be!"
 extras:
-  - githubproject: https://github.com/itenium-be/DotNetUnitTestFrameworks
-    githubtext: "Example UnitTests in NUnit, xUnit and MSTest"
+  - url: https://github.com/itenium-be/DotNetUnitTestFrameworks
+    desc: "Example UnitTests in NUnit, xUnit and MSTest"
 package-versions:
   - package: NUnit
     version: 4.3.2

@@ -19,8 +19,8 @@ img:
 categories: dotnet
 tags: [testing,war-story]
 extras:
-  - githubproject: https://github.com/itenium-be/DotNet-Controller-Security-Check
-    githubtext: "Source code, variations and tests for the tests"
+  - url: https://github.com/itenium-be/DotNet-Controller-Security-Check
+    desc: "Source code, variations and tests for the tests"
 toc:
   title: Controller Security
   icon: dot-circle-o

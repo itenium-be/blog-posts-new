@@ -17,8 +17,8 @@ bigimg:
 desc: >
   A showcase and comparison of the most popular React charting libraries using a simple "Line Chart"
 extras:
-  - githubproject: https://github.com/itenium-be/React-Charting
-    githubtext: "Project with all the examples for the React chart libraries"
+  - url: https://github.com/itenium-be/React-Charting
+    desc: "Project with all the examples for the React chart libraries"
 toc:
   icon: icon-reactjs
   title: Charts

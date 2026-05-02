@@ -20,8 +20,8 @@ img:
 categories: dotnet
 tags: [tutorial,sql]
 extras:
-  - githubproject: https://github.com/itenium-be/DbAuditWithEF
-    githubtext: "SQL Server & EntityFramework Core: how to audit"
+  - url: https://github.com/itenium-be/DbAuditWithEF
+    desc: "SQL Server & EntityFramework Core: how to audit"
 package-versions:
   - package: EntityFramework
     version: 10.0.5

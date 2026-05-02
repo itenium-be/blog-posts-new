@@ -13,8 +13,8 @@ img:
 categories: javascript
 tags: [product]
 extras:
-  - githubproject: https://github.com/itenium-be/github-stars-links
-    githubtext: "Chrome Extension source code"
+  - url: https://github.com/itenium-be/github-stars-links
+    desc: "Chrome Extension source code"
   - url: https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig
     desc: "Download from the Chrome Web Store"
 interesting:

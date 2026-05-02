@@ -15,7 +15,7 @@ img:
 categories: productivity
 tags: [debugging]
 interesting:
-  - git: atleastimtrying/rubber_duck
+  - url: https://github.com/atleastimtrying/rubber_duck
     desc: "A tool for one person pairing."
   - url: https://rubberduckdebugging.com
     desc: "Rubber Duck Debugging.com"

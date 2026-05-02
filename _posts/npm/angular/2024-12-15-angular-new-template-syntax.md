@@ -22,8 +22,8 @@ img:
 categories: javascript
 tags: [tutorial,angular]
 extras:
-  - githubproject: https://github.com/itenium-be/Angular-Days
-    githubtext: "See src/app/new-template for side-by-side comparison"
+  - url: https://github.com/itenium-be/Angular-Days
+    desc: "See src/app/new-template for side-by-side comparison"
 package-versions:
   - package: angular
     version: 19

@@ -20,8 +20,8 @@ img:
 categories: dotnet
 tags: [testing]
 extras:
-  - githubproject: https://github.com/itenium-be/DotNetUnitTestFrameworks
-    githubtext: "Example UnitTests in NUnit, xUnit and MSTest"
+  - url: https://github.com/itenium-be/DotNetUnitTestFrameworks
+    desc: "Example UnitTests in NUnit, xUnit and MSTest"
 toc:
   title: Internals
   icon: dot-circle-o

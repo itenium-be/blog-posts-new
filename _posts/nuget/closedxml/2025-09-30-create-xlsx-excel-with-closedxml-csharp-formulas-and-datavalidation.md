@@ -15,8 +15,8 @@ bigimg:
   origin: Midjourney
 series: closedxml
 extras:
-  - githubproject: https://github.com/itenium-be/ClosedXMLTutorial
-    githubtext: "More extensive ClosedXML examples in the Github repo"
+  - url: https://github.com/itenium-be/ClosedXMLTutorial
+    desc: "More extensive ClosedXML examples in the Github repo"
 interesting:
   - url: "https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188"
     desc: "Alphabetical list of Excel functions"

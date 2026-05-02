@@ -15,8 +15,8 @@ categories: design
 tags: [fun]
 series: robocode
 extras:
-  - githubproject: https://github.com/itenium-be/Robocode
-    githubtext: "Example Eclipse and Visual Studio Robocode projects"
+  - url: https://github.com/itenium-be/Robocode
+    desc: "Example Eclipse and Visual Studio Robocode projects"
 interesting:
   - url: https://robocode.sourceforge.io/
     desc: "Official Robocode site"

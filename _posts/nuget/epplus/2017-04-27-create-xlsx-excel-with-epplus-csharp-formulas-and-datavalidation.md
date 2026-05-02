@@ -11,7 +11,7 @@ img:
   desc: Photo by Lukas Blazek
 series: epplus
 extras:
-  - githubproject: https://github.com/itenium-be/EPPlusTutorial
+  - url: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 2"
     icon: file-excel-o

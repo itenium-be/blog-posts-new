@@ -24,13 +24,13 @@ interesting:
     desc: "Docker Hub: Mongo (Community Maintained)"
   - url: https://hub.docker.com/r/mongodb/mongodb-community-server
     desc: "Docker Hub: Mongo (MongoDb Company)"
-  - git: docker-library/mongo
+  - url: https://github.com/docker-library/mongo
     desc: "Github repo for Docker Image (Community)"
   - url: https://tutorialsight.com/how-to-install-mongodb-on-your-synology-nas/
     desc: "Step by step Docker+Mongo Tutorial (with screenshots;)"
 extras:
-  - githubproject: https://github.com/itenium-be/Docker-Mongo
-    githubtext: "The docker + mongo examples"
+  - url: https://github.com/itenium-be/Docker-Mongo
+    desc: "The docker + mongo examples"
 toc:
   title: Docker + Mongo
   icon: icon-mongodb

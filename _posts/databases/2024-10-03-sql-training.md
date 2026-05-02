@@ -19,11 +19,11 @@ tags: [sql,product,fun]
 interesting:
   - url: https://mystery.knightlab.com/
     desc: "SQL Murder Mystery: Can you find out whodunnit?"
-  - git: openfootball/worldcup
+  - url: https://github.com/openfootball/worldcup
     desc: "The free dataset where we got the worldcup data from"
 extras:
-  - githubproject: https://github.com/itenium-be/sql-training
-    githubtext: "The SQL Training game (datasets, docker containers, game & leaderboard)"
+  - url: https://github.com/itenium-be/sql-training
+    desc: "The SQL Training game (datasets, docker containers, game & leaderboard)"
 toc:
   title: SQL Training
   icon: icon-mssql

@@ -8,8 +8,8 @@ img:
 categories: dev-setup
 tags: [powershell]
 extras:
-  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1
-    githubtext: "The EF nuget profile"
+  - url: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1
+    desc: "The EF nuget profile"
 toc:
   title: EF6 PMC
   icon: dot-circle-o

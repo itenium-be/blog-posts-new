@@ -17,12 +17,12 @@ categories: javascript
 tags: [tutorial,testing]
 series: js-testing
 extras:
-  - githubproject: https://github.com/itenium-be/jasmine-tut
-    githubtext: "Example UnitTests for Jasmine, TypeScript, Jest and Ava"
-  - githubproject: https://github.com/itenium-be/Frontend-UnitTesting
-    githubtext: "The technical session materials (pptx etc)"
-  - githubproject: https://github.com/itenium-be/confac
-    githubtext: "Jest exercises with increasing complexity in a real-world project (TS, React, Express, Mongo). Use git checkout jest-start"
+  - url: https://github.com/itenium-be/jasmine-tut
+    desc: "Example UnitTests for Jasmine, TypeScript, Jest and Ava"
+  - url: https://github.com/itenium-be/Frontend-UnitTesting
+    desc: "The technical session materials (pptx etc)"
+  - url: https://github.com/itenium-be/confac
+    desc: "Jest exercises with increasing complexity in a real-world project (TS, React, Express, Mongo). Use git checkout jest-start"
 interesting:
   - url: https://jestjs.io/docs/getting-started
     desc: "Official Jest Documentation"

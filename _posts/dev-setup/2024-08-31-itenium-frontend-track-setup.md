@@ -20,8 +20,8 @@ img:
 categories: dev-setup
 tags: [tutorial,windows,testing,debugging]
 extras:
-  - githubproject: https://github.com/itenium-be/Frontend-Track
-    githubtext: "Template code repository"
+  - url: https://github.com/itenium-be/Frontend-Track
+    desc: "Template code repository"
 toc:
   title: Frontend Track Setup
   icon: icon-javascript

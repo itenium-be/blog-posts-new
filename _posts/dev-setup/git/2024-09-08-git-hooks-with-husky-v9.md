@@ -19,8 +19,8 @@ img:
 categories: dev-setup
 tags: [git]
 extras:
-  - githubproject: https://github.com/itenium-be/Frontend-Track
-    githubtext: "Template code repository"
+  - url: https://github.com/itenium-be/Frontend-Track
+    desc: "Template code repository"
 interesting:
   - url: https://git-scm.com/docs/githooks
     desc: Official githooks documentation

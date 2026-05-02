@@ -17,12 +17,12 @@ categories: javascript
 tags: [cheat-sheet,regex]
 series: regex
 extras:
-  - githubproject: https://github.com/itenium-be/ModernJS
-    githubtext: Jest UnitTests for all ECMAScript features since 2019
+  - url: https://github.com/itenium-be/ModernJS
+    desc: Jest UnitTests for all ECMAScript features since 2019
 interesting:
   - url: https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/
     desc: "Regexes Got Good: The History And Future Of Regular Expressions In JavaScript"
-  - git: aloisdg/awesome-regex
+  - url: https://github.com/aloisdg/awesome-regex
     desc: "A curated collection of awesome Regex libraries, tools, frameworks and software"
   - url: https://www.rexegg.com/
     desc: "RexEgg.com: The world's most tyrannosaurical regex tutorial"

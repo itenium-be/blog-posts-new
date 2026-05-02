@@ -11,11 +11,11 @@ img:
   origin: https://unsplash.com/photos/WbiDCxOnytg
 series: js-testing
 extras:
-  - githubproject: https://github.com/itenium-be/jasmine-tut
+  - url: https://github.com/itenium-be/jasmine-tut
 interesting:
   - url: https://jasmine.github.io/api/edge/matchers.html
     desc: "Jasmine documentation: Matchers"
-  - git: jasmine/jasmine
+  - url: https://github.com/jasmine/jasmine
 toc:
   title: Getting Started
   icon: icon-javascript

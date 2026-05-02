@@ -18,8 +18,8 @@ categories: dotnet
 tags: [cheat-sheet,tutorial]
 series: evolution-csharp
 extras:
-  - githubproject: https://github.com/itenium-be/CSharp-Features
-    githubtext: "Repository used for the tech session at itenium"
+  - url: https://github.com/itenium-be/CSharp-Features
+    desc: "Repository used for the tech session at itenium"
 toc:
   title: C# Fetures
   icon: dot-circle-o

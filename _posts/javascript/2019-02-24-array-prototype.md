@@ -14,18 +14,18 @@ bigimg:
 categories: javascript
 tags: [cheat-sheet,tutorial]
 extras:
-  - githubproject: https://github.com/itenium-be/Array.prototype
-    githubtext: Github source code as UnitTests
-  - githubproject: https://github.com/itenium-be/ModernJS
-    githubtext: Jest UnitTests for all ECMAScript features since 2019
+  - url: https://github.com/itenium-be/Array.prototype
+    desc: Github source code as UnitTests
+  - url: https://github.com/itenium-be/ModernJS
+    desc: Jest UnitTests for all ECMAScript features since 2019
 interesting:
-  - git: msn0/mdn-polyfills
+  - url: https://github.com/msn0/mdn-polyfills
     desc: "Include polyfills for your favourite functions that are not (yet) implemented by your browser(s)."
   - url: http://2ality.com/
     desc: "2ality.com: Blogging on ES proposals"
   - url: https://stackoverflow.com/a/200614/540352
     desc: "StackOverflow: Jon Skeet on why there is no forEach in Linq"
-  - git: morelinq/MoreLINQ
+  - url: https://github.com/morelinq/MoreLINQ
     desc: "Extensions to LINQ to Objects"
   - url: https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
     desc: "MooTools: Why Contains is called includes in JavaScript"

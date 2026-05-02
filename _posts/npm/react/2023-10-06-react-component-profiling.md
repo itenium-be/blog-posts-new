@@ -18,12 +18,12 @@ desc: >
   War Story on improving the performance of "confac",
   our internal invoicing application.
 extras:
-  - githubproject: https://github.com/itenium-be/React-ComponentProfiling
-    githubtext: "Presentation source materials (pptx, code snippets, ...)"
-  - githubproject: https://github.com/itenium-be/confac
-    githubtext: "confac Github source"
+  - url: https://github.com/itenium-be/React-ComponentProfiling
+    desc: "Presentation source materials (pptx, code snippets, ...)"
+  - url: https://github.com/itenium-be/confac
+    desc: "confac Github source"
 interesting:
-  - git: amsterdamharu/selectors
+  - url: https://github.com/amsterdamharu/selectors
     desc: "Examples of reselect selectors"
 toc:
   icon: icon-reactjs

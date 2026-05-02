@@ -15,17 +15,17 @@ bigimg:
 categories: dev-setup
 tags: [git,powershell,product]
 extras:
-  - githubproject: https://github.com/itenium-be/Git-NumberedAdd
-    githubtext: Git-NumberedStatus, Add, Diff, etc ps1 source
+  - url: https://github.com/itenium-be/Git-NumberedAdd
+    desc: Git-NumberedStatus, Add, Diff, etc ps1 source
   - desc: "PowerShell Gallery"
     url: https://www.powershellgallery.com/packages/Git-NumberedAdd
   - desc: "itenium article with git aliases for --assume-unchanged and --skip-worktree"
     url: https://itenium.be/blog/dev-setup/git-assume-unchanged/
 interesting:
   - desc: Similar implementation in Bash
-    git: scmbreeze/scm_breeze
+    url: https://github.com/scmbreeze/scm_breeze
   - desc: Similar implementation in Perl
-    git: holygeek/git-number
+    url: https://github.com/holygeek/git-number
 toc:
   title: Numbered Add
   icon: icon-git

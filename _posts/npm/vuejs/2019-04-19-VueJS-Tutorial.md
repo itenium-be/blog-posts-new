@@ -16,8 +16,8 @@ imgtitle: Photo by Fezbot2000
 categories: javascript
 tags: [tutorial]
 extras:
-  - githubproject: https://github.com/itenium-be/Vue.js-Tutorial
-    githubtext: "Project used for itenium Vue.js technical session"
+  - url: https://github.com/itenium-be/Vue.js-Tutorial
+    desc: "Project used for itenium Vue.js technical session"
 interesting:
   - url: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en
     desc: "Vue.js devtools Chrome extension"

@@ -16,7 +16,7 @@ bigimg:
 categories: productivity
 interesting:
   - desc: "Powerpoint pptx and hands-on exercises"
-    git: itenium-be/Regex-Tutorial
+    url: https://github.com/itenium-be/Regex-Tutorial
 tags: [regex,tutorial,cheat-sheet]
 series: regex
 toc:

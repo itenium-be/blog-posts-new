@@ -21,7 +21,7 @@ extras:
   - url: https://gist.github.com/Laoujin/eb201494af87c818a3756206352d69ba
     desc: "VSCode Settings Sync Gist"
 interesting:
-  - git: viatsko/awesome-vscode
+  - url: https://github.com/viatsko/awesome-vscode
     desc: "A curated list of delightful VS Code packages and resources."
   - url: https://marketplace.visualstudio.com/vscode
     desc: "VSCode Marketplace"
