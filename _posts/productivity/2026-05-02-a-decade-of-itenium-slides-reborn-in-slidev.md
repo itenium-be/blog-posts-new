@@ -7,7 +7,7 @@ date: 2026-05-02
 desc: >
   Ten years of itenium presentations lived in PowerPoint.
   Now they live in markdown, ship as a website, diff cleanly in git,
-  and can be reviewed adversarially before every talk.
+  and can be reviewed adversarially.
   A migration I'd been postponing for years, now done thanks to Claude.
 bigimg:
   url: decade-of-itenium-slides-reborn-in-slidev-big.png
@@ -23,7 +23,7 @@ extras:
   - url: https://github.com/itenium-be/Presentations
     desc: "itenium Presentations -- the Slidev source"
   - url: https://itenium-be.github.io/Presentations/
-    desc: "The same, deployed as a website"
+    desc: "The deployed presentations"
   - url: https://github.com/slidevjs/slidev
     desc: Presentation Slides for Developers
 package-versions:
@@ -49,8 +49,8 @@ The "something" turned out to be [Slidev](https://sli.dev/).
 The trigger was the first session in our 2026 AI track
 "[AI & Security: The S in MCP stands for Security](https://github.com/itenium-be/AI-Security-Talk)",
 the first technical session after our itenium rebranding which was more than just updating the logo,
-it was a whole new Powerpoint theme. Something of a recurring pain-point: this was now the
-4th Powerpoint theme. So every time I would redo an old talk, I would have to also take the
+it was a whole new PowerPoint theme. Something of a recurring pain-point: this was now the
+4th PowerPoint theme. So every time I would redo an old talk, I would have to also take the
 time to convert it.
 
 I was not looking forward to that.
@@ -62,7 +62,7 @@ The pitch isn't subtle:
 
 - **Publishable as a site.** Every deck is a static site. No "can you send me the slides?" emails -- just a URL. Ours lives at [itenium-be.github.io/Presentations][site] now.
 - **Real git diffs.** A typo fix is `+1 -1`, not "binary file changed". Reviews actually work.
-- **No MS Office dependency.** Edit on Linux, on a Chromebook, in the browser. Where ever. No subtle OpenOffice layout differences.
+- **No MS Office dependency.** Edit on Linux, on a Chromebook, in the browser. Wherever. No subtle OpenOffice layout differences.
 - **Adversarial review becomes possible.** Once slides are markdown, you can pipe them through an AI critique pass before the talk. More on that below.
 - **All the power of HTML/CSS.** Want an animation, a Mermaid diagram, a custom transition, live TypeScript code? It's all just web.
 - **Layout consistency for free.** Every slide uses the same theme components. No more "this one slide where the title is suddenly 4 pixels lower."
@@ -106,12 +106,12 @@ What I did was:
 - Hand Claude our existing rebrand `.pptx` template and ask it to extract the theme into a Slidev theme package.
 - Point Claude at [itenium.be](https://itenium.be) and say "match these fonts, these h1/h2 gadgets, the in-between-slides feel."
 
-And that worked really well, but then, as usual, I got carried away
+And that worked really well, but then, as usual, I got carried away...
 
 ## How I got carried away (again)
 
-Because now I could have a cool things like, a "Break" slide, with a `<CountDown />` component,
-because of course that is top priority!
+Because now I could have a cool things like, a `<CountDown />` component on a "Break" slide
+- top priority, obviously!
 
 But things started to get really off the rails after this prompt:
 
@@ -123,14 +123,14 @@ Probably the largest [skill](https://github.com/itenium-be/Presentations/blob/ma
 Claude has ever created for me.
 
 Because converting a `.pptx` to Slidev while still keeping everything intact turned out to be not that
-super easy after all. At least not for the first two powerpoints, after that I was sipping my coffee
+super easy after all. At least not for the first two PowerPoints, after that I was sipping my coffee
 while admiring Claude do its thing.
 
 - PPTX -> PDF -> HTML is what worked for me
 - The HTML was too big to read in one go so it's parsed in a separate file that was easier for Claude to work with
-- Because of the "section slides", slide numbers were mismatched between the old and new deck, causing a lof of confusion between Claude and myself
+- Because of the "section slides", slide numbers were mismatched between the old and new deck, causing a lot of confusion between Claude and myself
 - Presenter notes and emojis were gone in the HTML, these needed separate parsing, another alternative representation was born
-- Hidden slides were not present in the PDF, extra Skill rules were add to remedy this
+- Hidden slides were not present in the PDF, extra Skill rules were added to remedy this
 - Images were not always present: what is a background image and what is an image it should take over...
 
 So, well, in the draft for this blog post Claude said "just a weekend work". Yeah right.
@@ -174,5 +174,5 @@ for the cover image. And I absolutely love these!
 
 This is the pattern we see [all over the internet](https://lalitm.com/post/building-syntaqlite-ai/) right now,
 "low priority work" that we would like to do but never get
-around because it's just too much learning, too much work
--- that just gets done now, because it's just become so easy!
+around because it's too much learning, too much work
+-- that just gets done now, because it's become so easy!
