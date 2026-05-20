@@ -1,5 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Google I/O 2026: The Agentic Era</title>
+    <author>Simon Verhoeven</author>
+    <subTitle>A look at Google&apos;s latest AI ecosystem updates and what they mean for enterprise software architecture</subTitle>
+    <date>2026-05-20T00:00:00+00:00</date>
+    <print_date>2026-05-20T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/google-io/</url>
+    <category>ai</category>
+    <tags>google-io,software-architecture,backend-engineering,generative-ai</tags>
+    <desc>An engineering perspective on Gemini 3.5 Flash, the Google Antigravity platform, Android 17 OS-level integration, and the evolving design of backend APIs.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/google-io-2026-agentic-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a minimalist network of microservices interacting with a central glowing AI core, clean software architecture diagram style, deep blue and teal tones, corporate tech blog hero image</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/google-io-2026-agentic-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a clean flat vector illustration of interconnected API nodes, database schemas, and autonomous AI agents processing workflows, modern software engineering theme</prompt>
+    </img>
+    <toc>
+      <title>Google I/O 2026: The Agentic Era</title>
+    </toc>
+    <excerpt><![CDATA[<h1 id="google-io-2026-the-agentic-era">Google I/O 2026: The Agentic Era</h1>
+
+<p><strong>By:</strong> Simon Verhoeven<br />
+<strong>Date:</strong> 20 May 2026</p>
+
+<p>Google I/O 2026 has concluded. The central theme from Sundar Pichai was the transition into the “Agentic Era”. There was a significant number of announcements, ranging from Gemini 3.5 Flash to new OS integrations in Android 17.</p>
+
+<p>It is always helpful to look past the initial promotional framing to see how these tools fit into production environments. The industry is moving beyond standard chatbots towards agents that handle multi-step tasks. To understand what this means for daily software engineering, we need to look at the practical implications of these announcements on our development workflows.</p>
+
+<hr />
+
+<h2 id="contents">Contents</h2>
+<ol>
+  <li><a href="#rapid-recap">Rapid Recap</a></li>
+  <li><a href="#gemini-35-flash-and-google-antigravity">Gemini 3.5 Flash and Google Antigravity</a></li>
+  <li><a href="#ai-agent-framework--project-astra">AI Agent Framework &amp; Project Astra</a></li>
+  <li><a href="#os-level-ai-gemini-intelligence-and-android-17">OS-Level AI: Gemini Intelligence and Android 17</a></li>
+  <li><a href="#search-agents-and-the-universal-cart">Search Agents and the Universal Cart</a></li>
+  <li><a href="#the-future-outlook-for-engineers">The Future Outlook for Engineers</a></li>
+  <li><a href="#final-thoughts">Final Thoughts</a></li>
+</ol>
+
+<hr />
+
+<h2 id="rapid-recap">Rapid Recap</h2>
+
+<ul>
+  <li><strong>Gemini 3.5 Flash:</strong> A lightweight, high-speed foundation model that is central to Google’s agent-first strategy, powering next-generation development tools and creative assistance.</li>
+  <li><strong>Google Antigravity Platform 2.0:</strong> The updated platform for agent orchestration and AI-assisted coding, now featuring a desktop app, CLI, and SDKs for common languages.</li>
+  <li><strong>AI Agent Framework &amp; Gemini API Studio:</strong> Google’s new toolkit for building and deploying independent agents, with built-in support for subagent orchestration, monitoring, and guardrails.</li>
+  <li><strong>Android 17 with Gemini Intelligence:</strong> Gemini’s agentive capabilities land at the OS level, enabling background, cross-app task automation.</li>
+  <li><strong>AI Overviews &amp; Project Astra:</strong> Google Search becomes fully agentic by offering multi-step instructions with contextual summarisation, alongside a preview of Astra, an always-on agent using live camera and environmental context.</li>
+  <li><strong>Universal Cart:</strong> A single agent to track, manage, and automate purchases across retailers.</li>
+  <li><strong>Workspace &amp; Developer Productivity:</strong> Workspace products receive increased generative capabilities, while new codelabs and APIs drive faster onboarding for developers.</li>
+  <li><strong>Accessibility &amp; Wellbeing:</strong> New features like Project Vibe point towards a future where AI agents provide productivity alongside health and accessibility support, serving as an important theme at I/O this year.</li>
+</ul>
+
+<hr />
+
+<h2 id="gemini-35-flash-and-google-antigravity">Gemini 3.5 Flash and Google Antigravity</h2>
+
+<p>The most relevant announcement for developers is the Gemini 3.5 series and the Google Antigravity platform. Google positions Gemini 3.5 Flash as a model for agent-first coding. Antigravity 2.0 claims to turn functional requirements directly into code while automating tests and documentation, now supported by a dedicated desktop app, robust CLI, and cross-platform SDKs. The keynote demonstrations made a strong showing, including live examples where a fleet of subagents collaborated to build applications and even basic operating systems in under a day.</p>
+
+<p>The significant change this year is how these tools fit together. Gemini provides context-aware LLM reasoning, while Antigravity’s desktop and API tools handle the deployment, testing, and monitoring of autonomous coding agents. This marks the first time a mainstream platform offers end-to-end agent application workflows for enterprise integration.</p>
+
+<p>Will Antigravity replace senior engineers? Not anytime soon. Writing greenfield code is rarely the main bottleneck in software projects. The real challenge remains understanding business needs, navigating undocumented logic, and making the right trade-offs in architecture. AI provides a notable boost for boilerplate, scaffolding, and basic tests, but it still requires engineers to review, constrain, and integrate its output responsibly.</p>
+
+<p>In the short term, these tools will feel more like highly capable pair programmers. They will help with the heavy lifting of project setup and accelerate mundane tasks, but system design and knowing what not to automate remain essential.</p>
+
+<hr />
+
+<h2 id="ai-agent-framework--project-astra">AI Agent Framework &amp; Project Astra</h2>
+
+<p>A development worth extra attention is the rise of Google’s new agent framework. With the Gemini API and Antigravity, developers now have a standardised way to build, deploy, and orchestrate agents, whether managing a single assistant or a mesh of specialised subagents. This is not just about chatting with bots. Instead, it focuses on handling multi-step workflows, scheduled jobs, and agent-to-agent collaboration directly within production backend systems.</p>
+
+<p>An interesting preview at I/O was Project Astra, Google’s always-on AI agent. Rather than merely responding to queries, Astra can proactively use sensor and camera data, reason about user context, and offer hands-free assistance. While it is still early days for Astra, it serves as a strong signal of where the ecosystem is headed, moving from passive chat assistants to integrated, event-driven agents that can operate across devices and scenarios.</p>
+
+<hr />
+
+<h2 id="os-level-ai-gemini-intelligence-and-android-17">OS-Level AI: Gemini Intelligence and Android 17</h2>
+
+<p>Google is integrating Gemini Intelligence at the core of Android 17. The new agent system works across apps and devices, showing how AI is moving deeper into the OS layer itself. The agent runs as a service, letting users complete tasks by delegating intent rather than tapping through menu flows.</p>
+
+<p>We will need to rethink our API and event design. Because endpoints will increasingly serve AI agents rather than standard browser clients, systems must expect well-structured output, rich metadata, orderly error handling, and transparent authentication. Designing for traceability, idempotency, granular permissioning, and rate limiting becomes even more important as agent-driven workflows become the norm.</p>
+
+<hr />
+
+<h2 id="search-agents-and-the-universal-cart">Search Agents and the Universal Cart</h2>
+
+<p>Google’s vision for agent-augmented everyday life was strongly on show. Information agents in Search and the Universal Cart point to autonomous software that executes real-world tasks for users. The Universal Cart, which is capable of managing multi-store purchases, price checks, and fulfilment, hints at what business logic might look like when APIs must accommodate automated decision-making alongside human input.</p>
+
+<p>For engineers, this is a straightforward call to raise the bar on API security and transactional integrity. As more agent-driven calls hit production, strong guardrails, permission models, and observability must be baked into every service.</p>
+
+<hr />
+
+<h2 id="the-future-outlook-for-engineers">The Future Outlook for Engineers</h2>
+
+<p>Google I/O 2026 made Google’s view quite clear. AI’s reach across developer tooling and consumer platforms is growing, but critical engineering skills such as system design, security, and business context remain highly valuable.</p>
+
+<p>Looking ahead means getting comfortable with several focus areas:</p>
+<ul>
+  <li><strong>System Architecture:</strong> Ensuring new microservices, whether human- or agent-generated, remain reliable, understandable, and secure.</li>
+  <li><strong>Security and Governance:</strong> Defining exactly where agents are allowed to operate, and remaining vigilant about least-privilege principles.</li>
+  <li><strong>Domain Knowledge:</strong> Framing requirements and prompts so that tools like Antigravity create the right abstractions without leading to architectural dead ends.</li>
+</ul>
+
+<p>Google’s messaging is clear. Baseline productivity will rise, and the fastest-moving teams will integrate AI where it genuinely improves the developer experience. However, scepticism and rigorous review remain core engineering traits. Engineers should integrate new tools thoughtfully without losing sight of quality or maintainability.</p>
+
+<hr />
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>It has been a busy and promising I/O for those building software in AI-augmented environments. Between Antigravity, Gemini, and the continued spread of agentic models, a real opportunity exists to reimagine software architecture rather than just speeding up code generation.</p>
+
+<p>Ultimately, the focus remains on using AI as an assistant rather than a replacement, ensuring that enterprise systems are thoughtfully shaped for the agentic era.</p>
+
+<p>And on a personal note, outside of core software development, the new Google Air Fit wearable also looks interesting. It aims to deliver smart health tracking without the steep subscription fees often seen from platforms like Whoop, representing a welcome approach to hardware innovation.</p>]]></excerpt>
+      <block2><![CDATA[<h1 id="google-io-2026-the-agentic-era">Google I/O 2026: The Agentic Era</h1>
+
+<p><strong>By:</strong> Simon Verhoeven<br />
+<strong>Date:</strong> 20 May 2026</p>
+
+<p>Google I/O 2026 has concluded. The central theme from Sundar Pichai was the transition into the “Agentic Era”. There was a significant number of announcements, ranging from Gemini 3.5 Flash to new OS integrations in Android 17.</p>
+
+<p>It is always helpful to look past the initial promotional framing to see how these tools fit into production environments. The industry is moving beyond standard chatbots towards agents that handle multi-step tasks. To understand what this means for daily software engineering, we need to look at the practical implications of these announcements on our development workflows.</p>
+
+<hr />
+
+<h2 id="contents">Contents</h2>
+<ol>
+  <li><a href="#rapid-recap">Rapid Recap</a></li>
+  <li><a href="#gemini-35-flash-and-google-antigravity">Gemini 3.5 Flash and Google Antigravity</a></li>
+  <li><a href="#ai-agent-framework--project-astra">AI Agent Framework &amp; Project Astra</a></li>
+  <li><a href="#os-level-ai-gemini-intelligence-and-android-17">OS-Level AI: Gemini Intelligence and Android 17</a></li>
+  <li><a href="#search-agents-and-the-universal-cart">Search Agents and the Universal Cart</a></li>
+  <li><a href="#the-future-outlook-for-engineers">The Future Outlook for Engineers</a></li>
+  <li><a href="#final-thoughts">Final Thoughts</a></li>
+</ol>
+
+<hr />
+
+<h2 id="rapid-recap">Rapid Recap</h2>
+
+<ul>
+  <li><strong>Gemini 3.5 Flash:</strong> A lightweight, high-speed foundation model that is central to Google’s agent-first strategy, powering next-generation development tools and creative assistance.</li>
+  <li><strong>Google Antigravity Platform 2.0:</strong> The updated platform for agent orchestration and AI-assisted coding, now featuring a desktop app, CLI, and SDKs for common languages.</li>
+  <li><strong>AI Agent Framework &amp; Gemini API Studio:</strong> Google’s new toolkit for building and deploying independent agents, with built-in support for subagent orchestration, monitoring, and guardrails.</li>
+  <li><strong>Android 17 with Gemini Intelligence:</strong> Gemini’s agentive capabilities land at the OS level, enabling background, cross-app task automation.</li>
+  <li><strong>AI Overviews &amp; Project Astra:</strong> Google Search becomes fully agentic by offering multi-step instructions with contextual summarisation, alongside a preview of Astra, an always-on agent using live camera and environmental context.</li>
+  <li><strong>Universal Cart:</strong> A single agent to track, manage, and automate purchases across retailers.</li>
+  <li><strong>Workspace &amp; Developer Productivity:</strong> Workspace products receive increased generative capabilities, while new codelabs and APIs drive faster onboarding for developers.</li>
+  <li><strong>Accessibility &amp; Wellbeing:</strong> New features like Project Vibe point towards a future where AI agents provide productivity alongside health and accessibility support, serving as an important theme at I/O this year.</li>
+</ul>
+
+<hr />
+
+<h2 id="gemini-35-flash-and-google-antigravity">Gemini 3.5 Flash and Google Antigravity</h2>
+
+<p>The most relevant announcement for developers is the Gemini 3.5 series and the Google Antigravity platform. Google positions Gemini 3.5 Flash as a model for agent-first coding. Antigravity 2.0 claims to turn functional requirements directly into code while automating tests and documentation, now supported by a dedicated desktop app, robust CLI, and cross-platform SDKs. The keynote demonstrations made a strong showing, including live examples where a fleet of subagents collaborated to build applications and even basic operating systems in under a day.</p>
+
+<p>The significant change this year is how these tools fit together. Gemini provides context-aware LLM reasoning, while Antigravity’s desktop and API tools handle the deployment, testing, and monitoring of autonomous coding agents. This marks the first time a mainstream platform offers end-to-end agent application workflows for enterprise integration.</p>
+
+<p>Will Antigravity replace senior engineers? Not anytime soon. Writing greenfield code is rarely the main bottleneck in software projects. The real challenge remains understanding business needs, navigating undocumented logic, and making the right trade-offs in architecture. AI provides a notable boost for boilerplate, scaffolding, and basic tests, but it still requires engineers to review, constrain, and integrate its output responsibly.</p>
+
+<p>In the short term, these tools will feel more like highly capable pair programmers. They will help with the heavy lifting of project setup and accelerate mundane tasks, but system design and knowing what not to automate remain essential.</p>
+
+<hr />
+
+<h2 id="ai-agent-framework--project-astra">AI Agent Framework &amp; Project Astra</h2>
+
+<p>A development worth extra attention is the rise of Google’s new agent framework. With the Gemini API and Antigravity, developers now have a standardised way to build, deploy, and orchestrate agents, whether managing a single assistant or a mesh of specialised subagents. This is not just about chatting with bots. Instead, it focuses on handling multi-step workflows, scheduled jobs, and agent-to-agent collaboration directly within production backend systems.</p>
+
+<p>An interesting preview at I/O was Project Astra, Google’s always-on AI agent. Rather than merely responding to queries, Astra can proactively use sensor and camera data, reason about user context, and offer hands-free assistance. While it is still early days for Astra, it serves as a strong signal of where the ecosystem is headed, moving from passive chat assistants to integrated, event-driven agents that can operate across devices and scenarios.</p>
+
+<hr />
+
+<h2 id="os-level-ai-gemini-intelligence-and-android-17">OS-Level AI: Gemini Intelligence and Android 17</h2>
+
+<p>Google is integrating Gemini Intelligence at the core of Android 17. The new agent system works across apps and devices, showing how AI is moving deeper into the OS layer itself. The agent runs as a service, letting users complete tasks by delegating intent rather than tapping through menu flows.</p>
+
+<p>We will need to rethink our API and event design. Because endpoints will increasingly serve AI agents rather than standard browser clients, systems must expect well-structured output, rich metadata, orderly error handling, and transparent authentication. Designing for traceability, idempotency, granular permissioning, and rate limiting becomes even more important as agent-driven workflows become the norm.</p>
+
+<hr />
+
+<h2 id="search-agents-and-the-universal-cart">Search Agents and the Universal Cart</h2>
+
+<p>Google’s vision for agent-augmented everyday life was strongly on show. Information agents in Search and the Universal Cart point to autonomous software that executes real-world tasks for users. The Universal Cart, which is capable of managing multi-store purchases, price checks, and fulfilment, hints at what business logic might look like when APIs must accommodate automated decision-making alongside human input.</p>
+
+<p>For engineers, this is a straightforward call to raise the bar on API security and transactional integrity. As more agent-driven calls hit production, strong guardrails, permission models, and observability must be baked into every service.</p>
+
+<hr />
+
+<h2 id="the-future-outlook-for-engineers">The Future Outlook for Engineers</h2>
+
+<p>Google I/O 2026 made Google’s view quite clear. AI’s reach across developer tooling and consumer platforms is growing, but critical engineering skills such as system design, security, and business context remain highly valuable.</p>
+
+<p>Looking ahead means getting comfortable with several focus areas:</p>
+<ul>
+  <li><strong>System Architecture:</strong> Ensuring new microservices, whether human- or agent-generated, remain reliable, understandable, and secure.</li>
+  <li><strong>Security and Governance:</strong> Defining exactly where agents are allowed to operate, and remaining vigilant about least-privilege principles.</li>
+  <li><strong>Domain Knowledge:</strong> Framing requirements and prompts so that tools like Antigravity create the right abstractions without leading to architectural dead ends.</li>
+</ul>
+
+<p>Google’s messaging is clear. Baseline productivity will rise, and the fastest-moving teams will integrate AI where it genuinely improves the developer experience. However, scepticism and rigorous review remain core engineering traits. Engineers should integrate new tools thoughtfully without losing sight of quality or maintainability.</p>
+
+<hr />
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>It has been a busy and promising I/O for those building software in AI-augmented environments. Between Antigravity, Gemini, and the continued spread of agentic models, a real opportunity exists to reimagine software architecture rather than just speeding up code generation.</p>
+
+<p>Ultimately, the focus remains on using AI as an assistant rather than a replacement, ensuring that enterprise systems are thoughtfully shaped for the agentic era.</p>
+
+<p>And on a personal note, outside of core software development, the new Google Air Fit wearable also looks interesting. It aims to deliver smart health tracking without the steep subscription fees often seen from platforms like Whoop, representing a welcome approach to hardware innovation.</p>
+]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/">Google Blog: Sundar Pichai on the Agentic Era</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>A Decade of itenium Slides, Reborn in Slidev</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>And how Claude finally got me past the activation barrier</subTitle>
