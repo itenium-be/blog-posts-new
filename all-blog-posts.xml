@@ -118,7 +118,7 @@ and an hour later the first meme was posted on Slack.</p>
       <prompt>a single polaroid photo dropping onto a stylized map with a glowing ink trail connecting it to the next pin, soft pastel cartography, clean flat vector illustration, warm cream and teal palette, playful and minimal</prompt>
     </img>
     <excerpt><![CDATA[<p>The day before her birthday, I was talking about the awesomeness that is
-<a href="/blog/productivity/scout-a-self-hosted-deep-research-agent-on-claude-code/">Scout</a>
+<a href="/blog/ai/scout-a-self-hosted-deep-research-agent-on-claude-code/">Scout</a>
 and she asked if I could set up a Scout/Atlas for her as well. And then she
 remarked that I’d better never give her an app as a gift.</p>
 
@@ -420,8 +420,8 @@ which will take the website down at some point.</p>
     <subTitle>And how Claude finally got me past the activation barrier</subTitle>
     <date>2026-05-02T00:00:00+00:00</date>
     <print_date>2026-05-02T00:00:00+00:00</print_date>
-    <url>https://itenium.be/blog/productivity/a-decade-of-itenium-slides-reborn-in-slidev/</url>
-    <category>productivity</category>
+    <url>https://itenium.be/blog/ai/a-decade-of-itenium-slides-reborn-in-slidev/</url>
+    <category>ai</category>
     <tags>war-story,tech-talk</tags>
     <desc>Ten years of itenium presentations lived in PowerPoint. Now they live in markdown, ship as a website, diff cleanly in git, and can be reviewed adversarially. A migration I&apos;d been postponing for years, now done thanks to Claude.</desc>
     <bigimg>
@@ -791,8 +791,8 @@ around doing because it’s too much learning, too much work – that just gets 
     <subTitle>MIT, three-repo split, one-line install</subTitle>
     <date>2026-05-02T00:00:00+00:00</date>
     <print_date>2026-05-02T00:00:00+00:00</print_date>
-    <url>https://itenium.be/blog/productivity/scout-a-self-hosted-deep-research-agent-on-claude-code/</url>
-    <category>productivity</category>
+    <url>https://itenium.be/blog/ai/scout-a-self-hosted-deep-research-agent-on-claude-code/</url>
+    <category>ai</category>
     <tags>product,war-story</tags>
     <desc>Scout: an open-source research agent that runs Claude Code on your hardware. GitHub Issue in, cited Markdown on a site you own out. Sharpen, decompose, cite inline -- patterns that ported a demo into something not only I can actually use.</desc>
     <bigimg>
@@ -1119,8 +1119,8 @@ to write code without the “ceremony” of <code>public static void main</code>
     <subTitle>The 2026 itenium AI Bootcamp</subTitle>
     <date>2026-03-18T00:00:00+00:00</date>
     <print_date>2026-03-18T00:00:00+00:00</print_date>
-    <url>https://itenium.be/blog/trends/skillforge-ai-bootcamp/</url>
-    <category>trends</category>
+    <url>https://itenium.be/blog/ai/skillforge-ai-bootcamp/</url>
+    <category>ai</category>
     <tags>product,fun</tags>
     <desc>The skill matrix @ itenium is currently an Excel. This is obviously unacceptable for an IT consultancy, enter &quot;SkillForge&quot; our custom app where we &quot;forge our skills&quot;.</desc>
     <bigimg>
