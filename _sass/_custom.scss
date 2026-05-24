@@ -267,3 +267,65 @@ table.table-excel {
     margin-top: 24px;
   }
 }
+
+.post-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 16px 0 24px;
+  padding: 12px;
+  background: #f7f7f7;
+  border-radius: 6px;
+}
+
+.post-filter-input,
+.post-filter-select {
+  padding: 6px 10px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.post-filter-input {
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+
+.post-filter-select {
+  min-width: 140px;
+}
+
+.post-filter-count {
+  margin-left: auto;
+  font-size: 0.85em;
+  color: #777;
+}
+
+.post-item {
+  margin-bottom: 16px;
+
+  h3 {
+    margin: 4px 0;
+  }
+
+  p {
+    margin: 4px 0 0;
+    color: #555;
+  }
+}
+
+.post-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.85em;
+}
+
+.post-author {
+  font-size: 0.8em;
+  color: #777;
+  font-style: italic;
+}
