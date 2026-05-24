@@ -1017,7 +1017,7 @@ to write code without the “ceremony” of <code>public static void main</code>
   </post>
   <post>
     <title>Vibe Coding the SkillForge</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>The 2026 itenium AI Bootcamp</subTitle>
     <date>2026-03-18T00:00:00+00:00</date>
     <print_date>2026-03-18T00:00:00+00:00</print_date>
@@ -4159,7 +4159,7 @@ easiest one to setup: using the Synology nginx.</p>]]></excerpt>
   </post>
   <post>
     <title>Training with ML.NET and LightGBM on Synology with Docker</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>It just worked on Windows 😀</subTitle>
     <date>2025-05-02T00:00:00+00:00</date>
     <print_date>2025-05-02T00:00:00+00:00</print_date>
@@ -11698,7 +11698,7 @@ In the finalle Ken put a lot of effort into the value (or lack thereof) of doing
   </post>
   <post>
     <title>React Component Profiling</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>Extensive guide on React performance optimalization in a real-world application</subTitle>
     <date>2023-10-06T00:00:00+00:00</date>
     <print_date>2023-10-06T00:00:00+00:00</print_date>
@@ -12896,7 +12896,7 @@ an nmap scan to discover services that are not (yet) available directly from the
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : with AI?</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>Implementation was easy enough. Is ChatGPT up for the task?</subTitle>
     <date>2023-07-05T00:00:00+00:00</date>
     <print_date>2023-07-05T00:00:00+00:00</print_date>
@@ -13267,7 +13267,7 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Implementation</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>How was the Slack Meme Bot implemented?</subTitle>
     <date>2023-07-04T00:00:00+00:00</date>
     <print_date>2023-07-04T00:00:00+00:00</print_date>
@@ -13337,7 +13337,7 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
-    <author>Van Schandevijl Wouter</author>
+    <author>Wouter Van Schandevijl</author>
     <subTitle>Use your meme collection to liven op your Slack channel</subTitle>
     <date>2023-07-03T00:00:00+00:00</date>
     <print_date>2023-07-03T00:00:00+00:00</print_date>
@@ -14029,7 +14029,7 @@ when you want to replace some text but only when it is (not) preceded/succeeded 
   </post>
   <post>
     <title>What chart library to use in React?</title>
-    <author>Onur Bugdayci and Van Schandevijl Wouter</author>
+    <author>Onur Bugdayci and Wouter Van Schandevijl</author>
     <subTitle>A quick comparison of the most popular React Charting frameworks</subTitle>
     <date>2023-05-17T00:00:00+00:00</date>
     <print_date>2023-05-17T00:00:00+00:00</print_date>
