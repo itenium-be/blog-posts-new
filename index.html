@@ -13,7 +13,12 @@ title: itenium Blog
     <ul class="post-list">
       {% for post in category_group.items %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.last_modified_at %}
+              &middot; upd {{ post.last_modified_at | date: "%b %-d, %Y" }}
+            {% endif %}
+          </span>
           {% if post.tags and post.tags.size > 0 %}
             <span class="post-tags">
               {% for tag in post.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}

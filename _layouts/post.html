@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    {%- if page.categories and page.categories.size > 0 -%}
+      <div class="post-categories">
+        {%- for cat in page.categories -%}
+          <span class="post-category">{{ cat }}</span>
+        {%- endfor -%}
+      </div>
+    {%- endif %}
+
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
+    {%- if page.subTitle %}
+      <p class="post-subtitle">{{ page.subTitle }}</p>
+    {%- endif %}
+
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {%- if page.last_modified_at %}
+        &middot; updated
+        <time class="dt-updated" datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+          {{ page.last_modified_at | date: "%b %-d, %Y" }}
+        </time>
+      {%- endif %}
+      {%- if page.author %}
+        &middot; <span itemprop="author">{{ page.author }}</span>
+      {%- endif %}
+    </p>
+
+    {%- if page.tags and page.tags.size > 0 %}
+      <div class="post-tags">
+        {%- for tag in page.tags -%}
+          <span class="post-tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+    {%- endif %}
+
+    {%- if page.bigimg and page.bigimg.url %}
+      <img class="post-bigimg"
+           src="{{ '/assets/blog-images/' | append: page.bigimg.url | relative_url }}"
+           alt="{{ page.title | escape }}">
+    {%- endif %}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.img and page.img.url and content contains "<!--more-->" -%}
+      {%- assign _parts = content | split: "<!--more-->" -%}
+      {{ _parts[0] }}
+      <img class="post-img"
+           src="{{ '/assets/blog-images/' | append: page.img.url | relative_url }}"
+           alt="">
+      {%- assign _rest = _parts[1] -%}
+      {%- if _rest contains "<!--block1-->" -%}
+        {%- assign _rparts = _rest | split: "<!--block1-->" -%}
+        {{ _rparts[0] }}
+        <div class="post-img-clear"></div>
+        {{ _rparts[1] }}
+      {%- else -%}
+        {{ _rest }}
+      {%- endif -%}
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
+  </div>
+
+  <footer class="post-footer">
+    {%- include post-series.html page=page -%}
+    {%- include post-extras.html page=page -%}
+    {%- include package-versions.html page=page -%}
+  </footer>
+
+</article>
