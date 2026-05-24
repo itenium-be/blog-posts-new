@@ -9669,7 +9669,7 @@ CMD ["mongod"]
     <url>https://itenium.be/blog/productivity/git-pull-request-hygiene/</url>
     <category>productivity</category>
     <tags>git,war-story</tags>
-    <desc>Think about the reviewer: keep your PR as small as possible and avoid PR comments that you would have catched yourself easily by just quickly glancing over your changes.</desc>
+    <desc>Think about the reviewer: keep your PR as small as possible and avoid PR comments that you would have caught yourself easily by just quickly glancing over your changes.</desc>
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/git-hygiene-big.png</url>
       <origin>Midjourney</origin>
@@ -9806,14 +9806,14 @@ sure to go through all your changes one last time.</p>
 <a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"><code>.github/pull_request_template.md</code></a>
 where you can add a checklist of things that are recurring
 comments from reviewer(s) that could’ve
-been easily catched by the PR creator.</p>
+been easily caught by the PR creator.</p>
 
 <h2 id="poor-hygiene-examples">Poor Hygiene Examples</h2>
 
 <h3 id="lingering-debug-statements">Lingering debug statements</h3>
 
 <p>The PR still contains statements
-that a quick glance would’ve catched:</p>
+that a quick glance would’ve caught:</p>
 
 <pre><code class="language-ts">console.log('val', someValue);
 debugger;
@@ -30538,7 +30538,7 @@ Dim nowNodeText = nowNode.Value
 <p><strong>So which is best</strong><br />
 (just kidding:)</p>
 
-<p>VB.NET used to be lacking many convenient C# features (using, yield, …). While it has mostly catched up, 
+<p>VB.NET used to be lacking many convenient C# features (using, yield, …). While it has mostly caught up,
 C# proves to be a moving target.</p>
 
 <p>Properties used to be a real pain in VB.NET. A one liner syntax is now available like
