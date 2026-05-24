@@ -7,7 +7,7 @@ desc: >
   Think about the reviewer:
   keep your PR as small as possible
   and avoid PR comments that you would
-  have catched yourself easily by
+  have caught yourself easily by
   just quickly glancing over your
   changes.
 bigimg:
@@ -150,7 +150,7 @@ Most systems allow you to create a file like
 [`.github/pull_request_template.md`](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
 where you can add a checklist of things that are recurring
 comments from reviewer(s) that could've
-been easily catched by the PR creator.
+been easily caught by the PR creator.
 
 
 
@@ -159,7 +159,7 @@ been easily catched by the PR creator.
 ### Lingering debug statements
 
 The PR still contains statements
-that a quick glance would've catched:
+that a quick glance would've caught:
 
 ```ts
 console.log('val', someValue);

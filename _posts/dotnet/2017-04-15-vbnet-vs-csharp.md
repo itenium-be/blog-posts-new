@@ -745,7 +745,7 @@ Summary
 **So which is best**  
 (just kidding:)
 
-VB.NET used to be lacking many convenient C# features (using, yield, ...). While it has mostly catched up, 
+VB.NET used to be lacking many convenient C# features (using, yield, ...). While it has mostly caught up,
 C# proves to be a moving target.
 
 Properties used to be a real pain in VB.NET. A one liner syntax is now available like
