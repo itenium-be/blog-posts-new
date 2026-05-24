@@ -141,7 +141,7 @@ Or, and this is also a
 [recurring thing I've noticed](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/):
 Claude is just bad at architecture, we had been going back-and-forth many, many times on this.
 I called Claude out on it multiple times and started suggesting things but not once did Claude
-question it's architecture or how to permanently fix the issue at hand.
+question it's architecture or suggest how to permanently fix the issue at hand.
 
 Which was really simple in the end: decide in which scenario you are and isolate all
 zooming/movement logic into a separate component, I mean... Come on...
