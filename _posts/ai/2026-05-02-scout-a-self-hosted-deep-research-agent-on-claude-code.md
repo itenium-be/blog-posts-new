@@ -16,7 +16,7 @@ bigimg:
 img:
   url: scout-a-self-hosted-deep-research-agent-on-claude-code-sm.png
   origin: Nano Banana
-categories: productivity
+categories: ai
 tags: [product,war-story]
 extras:
   - url: https://github.com/Laoujin/Scout

@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title: "Vibe Coding the SkillForge"
 subTitle: "The 2026 itenium AI Bootcamp"
 date: 2026-03-18
-categories: trends
+categories: ai
 tags: [product,fun]
 bigimg:
   url: ai-bootcamp-big.png

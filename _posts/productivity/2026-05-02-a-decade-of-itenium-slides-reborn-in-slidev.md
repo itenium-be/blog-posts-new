@@ -17,7 +17,7 @@ img:
   url: decade-of-itenium-slides-reborn-in-slidev-sm.png
   prompt: "A markdown file with slide separators morphing into a stack of crisp presentation slides mid-flight, each slide branded with a subtle geometric tech logo, code-to-slides transformation, clean vector flat design, soft shadows, tech-blue and accent-orange palette, playful and minimal"
   origin: Midjourney
-categories: productivity
+categories: ai
 tags: [war-story,tech-talk]
 extras:
   - url: https://github.com/itenium-be/Presentations
