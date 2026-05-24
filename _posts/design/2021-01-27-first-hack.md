@@ -46,7 +46,7 @@ And... Turns out we hadn't grown enough, fast enough because right after the ini
 Usually this is not really a problem, as there is a spell to close a portal should someone open one to an "undesirable" target - in our case **any** other empire.
 
 Unfortunately, for our "strategy" to work, we all needed to pick a certain race providing us with the correct perks and bonuses during registration.
-And of course this race did not posses the capability to cast the "Close Portal" spell. At this point, we were ready for the slaughterhouse.
+And of course this race did not possess the capability to cast the "Close Portal" spell. At this point, we were ready for the slaughterhouse.
 
 
 ## The Hack
