@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Van Schandevijl Wouter
+author: Wouter Van Schandevijl
 title: "The itenium Slack Meme Bot® : Implementation"
 subTitle: "How was the Slack Meme Bot implemented?"
 date: 2023-07-04

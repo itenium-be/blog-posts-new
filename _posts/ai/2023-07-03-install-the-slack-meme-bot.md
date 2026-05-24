@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Van Schandevijl Wouter
+author: Wouter Van Schandevijl
 title: "The itenium Slack Meme Bot® : Installation"
 subTitle: "Use your meme collection to liven op your Slack channel"
 date: 2023-07-03

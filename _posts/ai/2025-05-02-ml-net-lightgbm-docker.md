@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Van Schandevijl Wouter
+author: Wouter Van Schandevijl
 title: "Training with ML.NET and LightGBM on Synology with Docker"
 subTitle: "It just worked on Windows 😀"
 date: 2025-05-02

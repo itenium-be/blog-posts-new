@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Van Schandevijl Wouter
+author: Wouter Van Schandevijl
 title: "The itenium Slack Meme Bot® : with AI?"
 subTitle: "Implementation was easy enough. Is ChatGPT up for the task?"
 date: 2023-07-05

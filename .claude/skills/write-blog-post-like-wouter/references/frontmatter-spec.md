@@ -45,7 +45,7 @@ updates:
 | Field                | Action                                                                                            |
 |----------------------|---------------------------------------------------------------------------------------------------|
 | `layout`             | Leave as `post`.                                                                                  |
-| `author`             | Leave as `Wouter Van Schandevijl`. For co-author: `Onur Bugdayci and Van Schandevijl Wouter`.     |
+| `author`             | Leave as `Wouter Van Schandevijl`. For co-author: `Onur Bugdayci and Wouter Van Schandevijl`.     |
 | `title`              | Already set by rake. Do not re-quote.                                                             |
 | `subTitle`           | Fill with a kicker, pun, or expansion of the title. Quoted string.                                |
 | `date`               | Leave as today's date set by rake.                                                                |

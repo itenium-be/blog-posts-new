@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Onur Bugdayci and Van Schandevijl Wouter
+author: Onur Bugdayci and Wouter Van Schandevijl
 title: "What chart library to use in React?"
 subTitle: "A quick comparison of the most popular React Charting frameworks"
 date: 2023-05-17

@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Van Schandevijl Wouter
+author: Wouter Van Schandevijl
 title: "React Component Profiling"
 subTitle: "Extensive guide on React performance optimalization in a real-world application"
 date: 2023-10-06
