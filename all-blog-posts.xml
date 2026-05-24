@@ -1,5 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>The itenium Slack Meme Bot® : with Claude Code?</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>Three years later, the impossible is now just a one-line prompt.</subTitle>
+    <date>2026-05-24T00:00:00+00:00</date>
+    <print_date>2026-05-24T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/the-itenium-slack-meme-bot-with-claude-code/</url>
+    <category>ai</category>
+    <tags>product,fun,war-story,ai</tags>
+    <desc>Three years ago I tried to make ChatGPT build our Slack Meme Bot and gave up because it didn&apos;t seem it was ever going to get done. Today with Claude Code, it got built and worked straight away.</desc>
+    <series>slack-meme-poster</series>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/the-itenium-slack-meme-bot-with-claude-code-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>two robots in front of a brick wall labelled &apos;Slack&apos; — on the left a 2023 robot stuck at the wall holding a confused python error printout, on the right a 2026 robot already past the wall confidently handing a glowing framed meme to a smiling slack logo, a three-year arrow between them, comic style, vibrant colors, dynamic composition --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/the-itenium-slack-meme-bot-with-claude-code-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a victorious friendly robot handing a glowing framed meme to a smiling slack logo, comic style, vibrant colors</prompt>
+    </img>
+    <excerpt><![CDATA[<p>Three years ago I tried to get ChatGPT to rebuild the itenium Slack Meme Bot
+and gave up halfway through because the LLM just wasn’t up for the task.</p>
+
+<p>This week I asked Claude Code. A brainstorm with a few clarifying questions,
+a quick spec, a few prompts to match my infrastructure, and the resulting code worked
+on my first test.</p>]]></excerpt>
+      <block1><![CDATA[<p>In 2023 I ended the blog post with <em>“It is a gadget, nothing more.”</em> and
+<em>“I feel old, bitter and out of touch”</em>. At the time, that was about right,
+the whole exercise felt like babysitting a confused junior who copy-pasted from Stack Overflow
+without bothering to check if it worked.</p>
+
+<h2 id="claude-code--superpowers">Claude Code + Superpowers</h2>
+
+<p>The prompt:</p>
+
+<blockquote>
+  <p>check current repo. I tried to build the slack-meme-poster back in 2023. AI failed doing
+so. I was really disappointed. Also see <a href="/blog/javascript/ai-the-slack-meme-bot/">this blog post</a></p>
+
+  <p>now, we’re three years later and at this point I’m feeling very confident
+that you should be able to just build this…</p>
+</blockquote>]]></block1>
+      <block2><![CDATA[<p>This triggered a <a href="https://github.com/obra/superpowers">obra/superpowers</a> brainstorm
+which asked me:</p>
+
+<p>Q: Which implementation language?<br />
+A: You decide the language (it picked <strong>Python</strong>)</p>
+
+<p>Q: How should we verify it actually works before declaring done?<br />
+A: Do whatever you think is best. (it picked <strong>TDD</strong>)</p>
+
+<p>Q: Do you have Slack credentials ready to test against?<br />
+A: We’re going to rebuild the existing thing using a WebHook. Have an .env file and a docker compose.</p>
+
+<p>Q: Webhooks can’t upload local files. How do you want to handle the image?<br />
+A: The selected file is moved to <code>meme/already-sent</code>. Part of the docker-compose
+is a service that services these files. The url is also in the .env. (it picked <strong>nginx</strong>)</p>
+
+<p>It created the spec, I skimmed it, fixed one wrong assumption about the folder structure and it built
+a working version after. Then a few follow up prompts so that I could deploy it on my existing infra.</p>
+
+<h2 id="so-what-changed">So What Changed?</h2>
+
+<ul>
+  <li><strong>Agentic</strong>: No copy pasting, Claude creates all the files, wires them up and tells me how to configure and run it</li>
+  <li><strong>Workflow</strong>: Skill frameworks guide Claude so that it doesn’t just start building something</li>
+  <li><strong>TDD</strong>: Probably a bit overkill for something this simple but everything that could be tested, was tested</li>
+  <li><strong>Tooling</strong>: Can actually run bash, docker, python commands</li>
+  <li><strong>Human steers</strong>: Claude can’t know how my ISP router forwarding is set up but it wired everything correctly following my instructions perfectly</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So the answer to <em>“Can AI build the Slack Meme Bot in 2026?”</em> is just:
+<strong>yes</strong>. A brainstorm, a quick spec, a few infrastructure-matching prompts,
+and an hour later the first meme was posted on Slack.</p>
+
+<p>The version I built manually in 2023 took me longer with a lot more swearing.</p>
+
+<p>In 2026 I’m older still, but somehow less bitter, and quite a bit less out of touch 😉</p>]]></block2>
+    <block3><![CDATA[<h1>Also in this series</h1><ul>
+            <li>Part 1: <a href="/blog/javascript/install-the-slack-meme-bot/">The itenium Slack Meme Bot® : Installation</a></li>
+            <li>Part 2: <a href="/blog/javascript/implementing-the-slack-meme-bot/">The itenium Slack Meme Bot® : Implementation</a></li>
+            <li>Part 3: <a href="/blog/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li>
+            <li>This Part: The itenium Slack Meme Bot® : with Claude Code?</li></ul>
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/slack-meme-poster-ai" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster-ai.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/slack-meme-poster-ai">itenium-be/slack-meme-poster-ai</a>:
+        Slack Meme Poster AI building attempts</p>
+</li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Meridian: A Scroll-Driven Memory Timeline</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Drop in a folder of photos, get a scrollable trip-map you can host anywhere</subTitle>
@@ -13252,7 +13350,8 @@ I’m sure ChatGPT can give me something that already mostly works.</p>
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/blog/javascript/install-the-slack-meme-bot/">The itenium Slack Meme Bot® : Installation</a></li>
             <li>Part 2: <a href="/blog/javascript/implementing-the-slack-meme-bot/">The itenium Slack Meme Bot® : Implementation</a></li>
-            <li>This Part: The itenium Slack Meme Bot® : with AI?</li></ul>
+            <li>This Part: The itenium Slack Meme Bot® : with AI?</li>
+            <li>Part 4: <a href="/blog/ai/the-itenium-slack-meme-bot-with-claude-code/">The itenium Slack Meme Bot® : with Claude Code?</a></li></ul>
 <h1>Extras</h1>
 <p><b>Stuff that came into being during the making of this post</b></p>
 <ul>
@@ -13333,7 +13432,8 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>Part 1: <a href="/blog/javascript/install-the-slack-meme-bot/">The itenium Slack Meme Bot® : Installation</a></li>
             <li>This Part: The itenium Slack Meme Bot® : Implementation</li>
-            <li>Part 3: <a href="/blog/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
+            <li>Part 3: <a href="/blog/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li>
+            <li>Part 4: <a href="/blog/ai/the-itenium-slack-meme-bot-with-claude-code/">The itenium Slack Meme Bot® : with Claude Code?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>The itenium Slack Meme Bot® : Installation</title>
@@ -13440,7 +13540,8 @@ docker-compose up --build -d
     <block3><![CDATA[<h1>Also in this series</h1><ul>
             <li>This Part: The itenium Slack Meme Bot® : Installation</li>
             <li>Part 2: <a href="/blog/javascript/implementing-the-slack-meme-bot/">The itenium Slack Meme Bot® : Implementation</a></li>
-            <li>Part 3: <a href="/blog/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li></ul>]]></block3>
+            <li>Part 3: <a href="/blog/javascript/ai-the-slack-meme-bot/">The itenium Slack Meme Bot® : with AI?</a></li>
+            <li>Part 4: <a href="/blog/ai/the-itenium-slack-meme-bot-with-claude-code/">The itenium Slack Meme Bot® : with Claude Code?</a></li></ul>]]></block3>
   </post>
   <post>
     <title>Quality Assurance @ itenium</title>
