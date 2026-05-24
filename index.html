@@ -14,6 +14,11 @@ title: itenium Blog
       {% for post in category_group.items %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% if post.tags and post.tags.size > 0 %}
+            <span class="post-tags">
+              {% for tag in post.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}
+            </span>
+          {% endif %}
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
