@@ -1,5 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Meridian: A Scroll-Driven Memory Timeline</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>Drop in a folder of photos, get a scrollable trip-map you can host anywhere</subTitle>
+    <date>2026-05-23T00:00:00+00:00</date>
+    <print_date>2026-05-23T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/meridian-a-scroll-driven-memory-timeline/</url>
+    <category>ai</category>
+    <tags>product,war-story</tags>
+    <desc>Meridian started as a birthday gift and ended up MIT on GitHub. A triage UI eats a photo folder, pulls EXIF, geocodes locations, looks up the weather on that day -- and the React/MapLibre app turns the result into a scroll-driven timeline where the map draws the travel lines between the memories.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/meridian-a-scroll-driven-memory-timeline-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>top-down view of a vintage travel journal lying open on a worn oak table, scattered polaroid photos connected by hand-drawn dotted ink trails curling across a softly tinted maplibre-style topographic map, small wax-sealed location pins marking each photo, warm cream paper, muted teal coastlines and burnt-sienna route lines, late-afternoon golden light, linen grain, editorial-illustration style, painterly with crisp ink line work, clean negative space along the top edge for a blog title overlay --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/meridian-a-scroll-driven-memory-timeline-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a single polaroid photo dropping onto a stylized map with a glowing ink trail connecting it to the next pin, soft pastel cartography, clean flat vector illustration, warm cream and teal palette, playful and minimal</prompt>
+    </img>
+    <excerpt><![CDATA[<p>The day before her birthday, I was talking about the awesomeness that is
+<a href="/blog/productivity/scout-a-self-hosted-deep-research-agent-on-claude-code/">Scout</a>
+and she asked if I could set up a Scout/Atlas for her as well. And then she
+remarked that I’d better never give her an app as a gift.</p>
+
+<figure class="imagewrapper" style="max-width: 600px">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/meridian-oopsie.jpg" alt="" title="" class="img-responsive" />
+
+    
+    <figcaption>Because that is exactly what I had been doing these past weekends...</figcaption>
+    
+</figure>]]></excerpt>
+      <block1><![CDATA[<h2 id="the-name">The Name</h2>
+
+<p>At first this was called my nickname for her but apparently even when there are 4 Claude Code
+terminals open and one of them contains her name somewhere, she notices that, so I had Claude
+whip up a more generic name so I didn’t have to explain myself. <strong>Meridian</strong> was born 🎉</p>
+
+<h2 id="the-data">The Data</h2>
+
+<p>Last year we organized the first itenium Open Space day. One of the sessions I attended was about
+“Second Brain” and “<a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a>”.
+It took me a few months but I finally did some
+research and decided upon <strong>Obsidian</strong>.</p>
+
+<p>In there I’m keeping track of all our <code>#date</code>s in the “Daily Notes” so I had
+Claude extract text, pictures, locations of all our dates and create json files.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-app">The App</h2>
+
+<p>Is basically a map for a mobile phone where as you scroll a line is drawn between
+“memories” from the json file and as you arrive at a new memory, it displays some
+text, pictures, video, starts playing audio (you know for when there is a song
+linked to that memory!!), the weather, some emojis.</p>
+
+<h2 id="the-claude-interventions">The Claude Interventions</h2>
+
+<p>I had to intervene, multiple times here. At first I thought that Claude would eat this up,
+it sounds simple enough: scroll and draw a line from A to B. The tricky part turned out to be
+the map handling: zooming in and out + changing the center so that the all starting and ending
+points are visible at all times while keeping the map movements “smooth”.</p>
+
+<p>It worked perfectly for memory X but the prompts for making memory Y work broke memory X again,
+and vice versa, over and over, again and again.</p>
+
+<p>I got disappointed with Claude pretty fast so I offered installing Playwright MCP, as per our
+AI session <a href="https://itenium-be.github.io/Presentations/">From Vibe Coding to Agentic Engineering</a>
+at which point Claude concurred that it was “programming blind” and that this would solve all our
+problems.</p>
+
+<p>It didn’t.</p>
+
+<h3 id="playwright-tests">Playwright Tests</h3>
+
+<p>So a bit later, I told Claude that even though it now had “eyes” we still weren’t making
+the progress I was hoping for.</p>
+
+<p>An <a href="https://github.com/obra/superpowers">obra/superpowers</a> brainstorm later and Claude
+was setting up a whole Playwright e2e test suite.</p>
+
+<p><img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/meridian-progress.png" alt="" /></p>
+
+<p>This still wasn’t working…</p>
+
+<h3 id="architectural-direction">Architectural Direction</h3>
+
+<p>The problem in the end was that even though there were now tests,
+the whole thing is a black box: the map is drawn on a canvas so even when opening
+the test suite with the Playwright UI, the preview is just a blank page.</p>
+
+<p>In the end, I had to step in – can you imagine that, needing to step in…
+It was seriously messing up my vibes man.</p>
+
+<p>Either way, the two things that finally allowed us to make progress:</p>
+
+<p>First, I asked Claude to introduce “<strong>sensing variables</strong>”, one of the techniques from
+Michael Feathers’ excellent book, “Working Effectively with Legacy Code” so that
+the tests could scroll and really lock in the behavior.</p>
+
+<p>And second, I told Claude that we need to split the “map movement/zooming” into
+a separate component for each scenario so that the calculations &amp; logic are
+completely isolated, required for the behavior lock-in. There were a few edge cases
+but basically either</p>
+
+<ul>
+  <li>The destination is not visible: zoom out</li>
+  <li>The destination is visible: zoom in or move only</li>
+</ul>
+
+<h3 id="claude-vs-manual-coding">Claude vs Manual Coding</h3>
+
+<p>I was talking about the app with a friend while discussing the current state of AI
+for development and suddenly it hit me:</p>
+
+<p>While Claude was super efficient for the scaffolding, the Obsidian extractions, backfilling
+memories, package selection &amp; integration… For the actual map zooming/movement logic, it was
+so inefficient that it would have been faster if I had just coded that part myself.</p>
+
+<p>In all the Vibe Coding I’ve done since the
+<a href="https://simonwillison.net/2026/Jan/4/inflection/">november 2025 inflection point</a>,
+that was actually a first…</p>
+
+<p>Or, and this is also a
+<a href="https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/">recurring thing I’ve noticed</a>:
+Claude is just bad at architecture, we had been going back-and-forth many, many times on this.
+I called Claude out on it multiple times and started suggesting things but not once did Claude
+question it’s architecture or how to permanently fix the issue at hand.</p>
+
+<p>Which was really simple in the end: decide in which scenario you are and isolate all
+zooming/movement logic into a separate component, I mean… Come on…</p>
+
+<h2 id="open-sourcing-meridian">Open Sourcing Meridian</h2>
+
+<p>And like the other Vibe Coded things Claude has been creating for me these last couple of months,
+with just a few hours extra work, we extracted the hardcoded stuff into an extra <code>story.json</code>,
+created a marketing website with a few example stories and fine-tuned the “triage tool” which
+builds the <code>memories.json</code> from a folder of pictures.</p>
+
+<p><em>“Classic vibe-coded project escalation”</em> is what Claude called it, but at least this time, it was
+just a few extra hours, not weekends :D</p>
+
+<h3 id="the-demo-stories">The Demo Stories</h3>
+
+<ul>
+  <li>🗽 <a href="https://laoujin.github.io/Meridian/NY-Trip/">NY Trip</a> – a 5-day New York trip, arrival to departure</li>
+  <li>💘 <a href="https://laoujin.github.io/Meridian/Love-Story/">Love Story</a> – how we met, a winter of dates between Leuven and Antwerp</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>I used the triage tool to find the memories that weren’t marked as #date in Obsidian.
+It also contains the scripts used to further enrich the data: weather lookup, extract
+GPS coordinates from the pictures and turn that into location names etc.</p>
+
+<pre><code class="language-bash">git clone https://github.com/Laoujin/Meridian
+cd Meridian
+
+# 1. Ingest: read a folder of photos/videos, build the story
+cd triage &amp;&amp; bun install &amp;&amp; bun run triage
+
+# 2. View: scroll-driven timeline with animated map
+cd app    &amp;&amp; bun install &amp;&amp; bun run dev
+</code></pre>
+
+<h2 id="why-not-just-use-x">Why not just use X?</h2>
+
+<p>This was one of the blocks Claude created for this blog post.
+And I was, oh no, you mean I created something that already existed… ?</p>
+
+<ul>
+  <li><a href="https://www.polarsteps.com/">Polarsteps</a>: I knew about this one (heck, my mom is on it 😂)</li>
+  <li><a href="https://wanderlog.com/">Wanderlog</a>: This is more like a trip planner</li>
+  <li>Google Photos memories: AI generated slop? 😉</li>
+  <li><a href="https://www.mapbox.com/">Mapbox</a>: single map view, not really a trip?</li>
+</ul>
+
+<h3 id="the-pitch">The pitch</h3>
+
+<p>You own the whole thing, you don’t have to upload anything to a server of a company
+which will take the website down at some point.</p>
+
+<p>But then after she wanted to show it to everyone so I still had to expose it to the internet…</p>
+
+<p>So, in the end, it is OK to gift a Vibe Coded app to your non-technical partner? :D</p>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Stuff that came into being during the making of this post</b></p>
+<ul>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/Laoujin/Meridian" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/Laoujin/Meridian.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/Laoujin/Meridian">Laoujin/Meridian</a>:
+        Meridian: the source</p>
+</li>
+        <li><a href="https://laoujin.github.io/Meridian/">Landing page with the two live demos</a></li>
+        <li><a href="https://laoujin.github.io/Meridian/NY-Trip/">Demo: a 5-day New York trip</a></li>
+        <li><a href="https://laoujin.github.io/Meridian/Love-Story/">Demo: how we met -- Leuven & Antwerp</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Google I/O 2026: The Agentic Era</title>
     <author>Simon Verhoeven</author>
     <subTitle>A look at Google&apos;s latest AI ecosystem updates and what they mean for enterprise software architecture</subTitle>
