@@ -155,7 +155,7 @@ linked to that memory!!), the weather, some emojis.</p>
 
 <p>I had to intervene, multiple times here. At first I thought that Claude would eat this up,
 it sounds simple enough: scroll and draw a line from A to B. The tricky part turned out to be
-the map handling: zooming in and out + changing the center so that the all starting and ending
+the map handling: zooming in and out + changing the center so that all starting and ending
 points are visible at all times while keeping the map movements “smooth”.</p>
 
 <p>It worked perfectly for memory X but the prompts for making memory Y work broke memory X again,
@@ -13423,7 +13423,7 @@ a <code>already-sent</code> subfolder to make sure no meme is ever posted twice.
 
 <h2 id="make-it-your-own">Make it your own</h2>
 
-<p><a href="https://github.com/itenium-be/slack-meme-poster/blob/main/job/post-slack.js">Configure the actual Slack message</a></p>
+<p><a href="https://github.com/itenium-be/meme-poster/blob/main/job/post-slack.js">Configure the actual Slack message</a></p>
 
 <ul>
   <li><code>messageToPostWithMeme</code>: A simple string sent along with the meme</li>
@@ -13473,10 +13473,10 @@ it is time to post one!</p>]]></excerpt>
 <h2 id="requirements">Requirements</h2>
 
 <p style="margin-bottom: 5px">
-    <a href="https://github.com/itenium-be/slack-meme-poster" style="margin-right: 6px">
-        <img src="https://img.shields.io/github/stars/itenium-be/slack-meme-poster.svg?style=social&amp;label=Star" style="vertical-align: middle" />
+    <a href="https://github.com/itenium-be/meme-poster" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/meme-poster.svg?style=social&amp;label=Star" style="vertical-align: middle" />
     </a>
-    <a href="https://github.com/itenium-be/slack-meme-poster">itenium-be/slack-meme-poster</a>:
+    <a href="https://github.com/itenium-be/meme-poster">itenium-be/meme-poster</a>:
         Install your own Slack Meme Bot now!</p>
 
 <ul>
@@ -13488,10 +13488,10 @@ it is time to post one!</p>]]></excerpt>
 <p>That’s it, really!</p>]]></block1>
       <block2><![CDATA[<h2 id="installation--configuration">Installation &amp; Configuration</h2>
 
-<p>See <a href="https://github.com/itenium-be/slack-meme-poster">README.md</a> for step by step instructions.</p>
+<p>See <a href="https://github.com/itenium-be/meme-poster">README.md</a> for step by step instructions.</p>
 
-<pre><code class="language-sh">git clone https://github.com/itenium-be/slack-meme-poster
-cd slack-meme-poster
+<pre><code class="language-sh">git clone https://github.com/itenium-be/meme-poster
+cd meme-poster
 
 # Configure Slack webhook etc
 cp .env.sample .env
