@@ -73,7 +73,7 @@ linked to that memory!!), the weather, some emojis.
 
 I had to intervene, multiple times here. At first I thought that Claude would eat this up,
 it sounds simple enough: scroll and draw a line from A to B. The tricky part turned out to be
-the map handling: zooming in and out + changing the center so that the all starting and ending
+the map handling: zooming in and out + changing the center so that all starting and ending
 points are visible at all times while keeping the map movements "smooth".
 
 It worked perfectly for memory X but the prompts for making memory Y work broke memory X again,
