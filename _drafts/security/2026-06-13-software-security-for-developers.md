@@ -8,7 +8,7 @@ desc: >
 bigimg:
   url: software-security-big.png
   origin: Midjourney
-  prompt: "secure digital infrastructure with encrypted data flows, authentication protocols visualized, clean lines, corporate blog style, deep blue and silver palette"
+  prompt: "secure digital infrastructure with encrypted data flows, authentication protocols visualized, clean lines, corporate blog style, deep blue and silver palette --ar 4:1"
 img:
   url: software-security-sm.png
   origin: Midjourney
@@ -24,13 +24,10 @@ categories: [java,security]
 tags: [security, cryptography, authentication, java, spring-boot, application-security]
 ---
 
-# Book review: Software Security for Developers
-
-**By:** Simon Verhoeven  
-**Date:** 13 June 2026
-
 Reading Manning's `Software Security for Developers` offered a refreshing break from the usual hand-waving around security principles. 
 The book is grounded in practical reality, honest about what works in production, straightforward about common pitfalls, and careful about those implementation details that trip up even experienced teams.
+
+<!--more-->
 
 ## Contents
 
@@ -56,6 +53,8 @@ When threats can be identified more readily, you need solid foundations to reaso
 The authors make a compelling case for building that genuine security knowledge from first principles. 
 They show how to reason about real systems that fail and how to construct them so they don't. 
 This book offers us the much-needed, solid foundation to understand what is actually happening when they hash a password or verify an encrypted payload.
+
+<!--block1-->
 
 ---
 
