@@ -2,14 +2,14 @@
 layout: post
 author: Simon Verhoeven
 title: "Book review: Essential GraphRAG"
-subTitle: "Freely available at: https://neo4j.com/essential-graphrag/"
+subTitle: "Freely available!"
 date: 2026-05-26
 desc: >
   A review of Manning’s Essential GraphRAG. Insights into retrieval-augmented generation, graph data structures, context pipelines, and the engineering challenges behind modern RAG systems.
 bigimg:
   url: essential-graphrag-big.png
   origin: Midjourney
-  prompt: "sleek technical illustration of interconnected knowledge graphs and language models, clean lines, corporate blog style, deep green and grey palette"
+  prompt: "sleek technical illustration of interconnected knowledge graphs and language models, clean lines, corporate blog style, deep green and grey palette --ar 4:1"
 img:
   url: essential-graphrag-sm.png
   origin: Midjourney
@@ -25,24 +25,23 @@ categories: ai
 tags: [rag, graphrag, software-architecture, knowledge-graphs, engineering]
 ---
 
-# Book review: Essential GraphRAG
-
-**By:** Simon Verhoeven  
-**Date:** 26 May 2026
-
-Reading Manning’s Essential GraphRAG was a welcome shift from the usual GenAI discourse.  
+Reading Manning’s Essential GraphRAG ([free download](https://neo4j.com/essential-graphrag/))
+was a welcome shift from the usual GenAI discourse.  
 It's founded in reality, it's honest about what works, forthcoming about what doesn’t, and attentive to those uncomfortable implementation details that regularly derail even the best-laid plans.
+
+<!--more-->
 
 ## Contents
 
-1. [Why GraphRAG?](#why-graphrag)
-2. [Graph Data Structures](#graph-data-structures)
-3. [The RAG Pipeline in Depth](#the-rag-pipeline-in-depth)
-4. [Engineering and Scaling Challenges](#engineering-and-scaling-challenges)
-5. [Case Studies and Real-World Insights](#case-studies-and-real-world-insights)
-6. [Final Thoughts](#final-thoughts)
+- [Contents](#contents)
+- [Why GraphRAG?](#why-graphrag)
+- [Graph Data Structures](#graph-data-structures)
+- [The RAG Pipeline in Depth](#the-rag-pipeline-in-depth)
+- [Engineering and Scaling Challenges](#engineering-and-scaling-challenges)
+- [Case Studies and Real-World Insights](#case-studies-and-real-world-insights)
+- [Final Thoughts](#final-thoughts)
 
----
+<!--block1-->
 
 ## Why GraphRAG?
 

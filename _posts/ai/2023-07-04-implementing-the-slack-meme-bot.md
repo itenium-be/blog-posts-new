@@ -65,7 +65,7 @@ It then sends the meme url to Slack using the WebHook and 🎉, meme posted!
 
 ## Make it your own
 
-[Configure the actual Slack message](https://github.com/itenium-be/slack-meme-poster/blob/main/job/post-slack.js)
+[Configure the actual Slack message](https://github.com/itenium-be/meme-poster/blob/main/job/post-slack.js)
 
 - `messageToPostWithMeme`: A simple string sent along with the meme
 - Configure the entire Slack message using the Slack [Block Kit Builder](https://app.slack.com/block-kit-builder/)

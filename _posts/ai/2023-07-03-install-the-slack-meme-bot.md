@@ -39,7 +39,7 @@ it is time to post one!
 
 ## Requirements
 
-{% include github-stars.html url="itenium-be/slack-meme-poster" desc="Install your own Slack Meme Bot now!" %}
+{% include github-stars.html url="itenium-be/meme-poster" desc="Install your own Slack Meme Bot now!" %}
 
 - A huge meme collection
 - Docker
@@ -52,11 +52,11 @@ That's it, really!
 
 ## Installation & Configuration
 
-See [README.md](https://github.com/itenium-be/slack-meme-poster) for step by step instructions.
+See [README.md](https://github.com/itenium-be/meme-poster) for step by step instructions.
 
 ```sh
-git clone https://github.com/itenium-be/slack-meme-poster
-cd slack-meme-poster
+git clone https://github.com/itenium-be/meme-poster
+cd meme-poster
 
 # Configure Slack webhook etc
 cp .env.sample .env
