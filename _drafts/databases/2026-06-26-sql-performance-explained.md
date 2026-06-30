@@ -9,7 +9,7 @@ desc: >
 bigimg:
   url: sql-performance-big.png
   origin: Midjourney
-  prompt: "abstract database architecture, glowing B-tree index structures, data streams, tech blog style, deep blues and neon cyans"
+  prompt: "abstract database architecture, glowing B-tree index structures, data streams, tech blog style, deep blues and neon cyans --ar 4:1"
 img:
   url: sql-performance-sm.png
   origin: Midjourney
@@ -25,15 +25,11 @@ categories: software
 tags: [sql, databases, indexing, performance, optimisation, postgresql, mysql, oracle]
 ---
 
-# Book review: SQL Performance Explained
-
-**By:** Simon Verhoeven  
-**Date:** 26 June 2026
-
 A lot of engineers work with indexes before they have had much chance to build a proper feel for them. Some avoid them for too long, others add them too freely, and both approaches can lead to avoidable performance issues. `SQL Performance Explained` is a useful guide for building that intuition in a practical way.
 
 Markus Winand's book is grounded, clear, and careful about the details that matter when a query has to perform well in a real system. It does not try to turn every reader into a database specialist. Instead, it gives developers a better sense of how indexes, execution plans, joins, and query structure shape the work the database actually does.
 
+<!--more-->
 ## Contents
 
 1. [Why This Book?](#why-this-book)
@@ -43,6 +39,7 @@ Markus Winand's book is grounded, clear, and careful about the details that matt
 5. [Practical Performance Pitfalls](#practical-performance-pitfalls)
 6. [Final Thoughts](#final-thoughts)
 
+<!--block1-->
 ---
 
 ## Why This Book?
