@@ -37,8 +37,8 @@ No! For that kind of backpressure you want to be fully deterministic - with **ho
 
 ## The Marketplace
 
-For the session, I turned the slidev deck into it's own tutorial marketplace + plugin. Not very useful
-for actual installation, but useful as a teaching mecanism: the powerpoint repository IS a Claude Plugin!
+For the session, I turned the slidev deck into its own tutorial marketplace + plugin. Not very useful
+for actual installation, but useful as a teaching mechanism: the powerpoint repository IS a Claude Plugin!
 
 It contains super handy skills like the `/greeter` which really is more involved as you'd expect,
 as it teaches about `$ARGUMENTS`, running commands (`! whoami`), and it even incorporates a dependency
@@ -71,7 +71,7 @@ sessions at the same time and back in the olden days when I was still starting C
 I had added some quick & dirty notification hooks to inform me when my input was needed somewhere.
 
 Because of PowerShell vs Bash friction, I have since switched to WSL (maybe `CLAUDE_CODE_USE_POWERSHELL_TOOL=1` could
-have elevated that pain but I only recently learned of this Claude env variable) and I haven't had notifications since.
+have alleviated that pain but I only recently learned of this Claude env variable) and I haven't had notifications since.
 
 ## Yoink
 
