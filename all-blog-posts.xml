@@ -150,12 +150,11 @@ so actually packaging it as a plugin and exposing it as a marketplace was mandat
 
 <p>Microsoft Build 2026 took place from June 2 to 3 in San Francisco, with Microsoft using the event to set out a clear direction for the next phase of its platform strategy.<br />
 The message was straightforward: AI is no longer being positioned as an optional add-on.<br />
-It is becoming part of the infrastructure of how Microsoft expects developers to build, test, and run software.</p>
-
-<p>The event was supported by Microsoft’s official <em>Build Live</em> blog, which served as the company’s central announcements hub, alongside its main <em>Build 2026</em> blog post. 
+It is becoming part of the infrastructure of how Microsoft expects developers to build, test, and run software.</p>]]></excerpt>
+      <block1><![CDATA[<p>The event was supported by Microsoft’s official <em>Build Live</em> blog, which served as the company’s central announcements hub, alongside its main <em>Build 2026</em> blog post. 
 Together, these made it clear that Microsoft wanted this year’s conference to feel practical rather than theatrical.<br />
-The emphasis was on developer tooling, production-ready AI agents, cloud integration, and local machine workflow improvements that can be used in real products today rather than just demonstrated on stage.</p>]]></excerpt>
-      <block1><![CDATA[<h2 id="the-main-theme-ai-as-infrastructure-not-spectacle">The Main Theme: AI as Infrastructure, Not Spectacle</h2>
+The emphasis was on developer tooling, production-ready AI agents, cloud integration, and local machine workflow improvements that can be used in real products today rather than just demonstrated on stage.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-main-theme-ai-as-infrastructure-not-spectacle">The Main Theme: AI as Infrastructure, Not Spectacle</h2>
 
 <p>Microsoft is now treating AI as core infrastructure for development work.<br />
 That means model access, agent orchestration, workflow automation, and terminal-level assistance are all being folded into the platform story.</p>
@@ -169,8 +168,9 @@ Mustafa Suleyman, head of Microsoft AI, unveiled seven self-developed in-house m
 This family includes <strong>MAI-Thinking-1</strong>, a 35-billion active parameter reasoning model designed explicitly for long-chain planning, logical reasoning, and autonomous task execution.<br />
 On key software engineering benchmarks, Microsoft touted its coding proficiency as narrowing the gap with industry leaders like Claude Sonnet 4.6.</p>
 
-<p>Additionally, Microsoft introduced <strong>MAI-Code-1-Flash</strong>, an ultra-efficient coding model optimised specifically for GitHub scenarios and currently rolling out to GitHub Copilot users in VS Code, alongside new targeted models for vision, speech, and interactive voice.</p>]]></block1>
-      <block2><![CDATA[<h2 id="the-intelligent-terminal-and-local-compute-were-standout-announcements">The Intelligent Terminal and Local Compute Were Standout Announcements</h2>
+<p>Additionally, Microsoft introduced <strong>MAI-Code-1-Flash</strong>, an ultra-efficient coding model optimised specifically for GitHub scenarios and currently rolling out to GitHub Copilot users in VS Code, alongside new targeted models for vision, speech, and interactive voice.</p>
+
+<h2 id="the-intelligent-terminal-and-local-compute-were-standout-announcements">The Intelligent Terminal and Local Compute Were Standout Announcements</h2>
 
 <p>One of the more interesting additions at Build 2026 was the new frictionless <strong>intelligent terminal and shell experience</strong>.<br />
 This mattered because it brought AI directly into one of the most familiar and highest-trust environments in software development: the command line.</p>
