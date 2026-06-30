@@ -82,7 +82,7 @@ Some interesting features:
 
 - The notification appears on the screen where the Claude Terminal is located at
 - Clicking the notification activates that Terminal window
-- Displays interesting context like
+- Displays interesting context like the current branch, the last model output etc
 
 And then the scope explosion:
 
@@ -95,7 +95,7 @@ And then the scope explosion:
 
 ### The Demo
 
-Check the marketing website for all 9 themes and the different Claude mascot animations in action!
+Check the [marketing website](https://itenium-be.github.io/Yoink/) for all 9 themes and the different Claude mascot animations in action!
 
 <video width="648" height="448" controls autoplay muted loop>
   <source src="https://github.com/itenium-be/Yoink/raw/refs/heads/main/site/assets/yoink-unicorn.mp4" type="video/mp4">
