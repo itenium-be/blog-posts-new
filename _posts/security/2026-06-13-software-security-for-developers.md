@@ -31,14 +31,15 @@ The book is grounded in practical reality, honest about what works in production
 
 ## Contents
 
-1. [Why This Book?](#why-this-book)
-2. [Cryptographic Fundamentals](#cryptographic-fundamentals)
-3. [Authentication and Modern Patterns](#authentication-and-modern-patterns)
-4. [Practical Engineering and Implementation](#practical-engineering-and-implementation)
-5. [Exercises and Code Samples](#exercises-and-code-samples)
-6. [Final Thoughts](#final-thoughts)
+- [Contents](#contents)
+- [Why This Book?](#why-this-book)
+- [Cryptographic Fundamentals](#cryptographic-fundamentals)
+- [Authentication and Modern Patterns](#authentication-and-modern-patterns)
+- [Practical Engineering and Implementation](#practical-engineering-and-implementation)
+- [Exercises and Code Samples](#exercises-and-code-samples)
+- [Final Thoughts](#final-thoughts)
 
----
+<!--block1-->
 
 ## Why This Book?
 
@@ -54,7 +55,6 @@ The authors make a compelling case for building that genuine security knowledge 
 They show how to reason about real systems that fail and how to construct them so they don't. 
 This book offers us the much-needed, solid foundation to understand what is actually happening when they hash a password or verify an encrypted payload.
 
-<!--block1-->
 
 ---
 
