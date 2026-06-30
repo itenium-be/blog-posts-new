@@ -29,11 +29,13 @@ Microsoft Build 2026 took place from June 2 to 3 in San Francisco, with Microsof
 The message was straightforward: AI is no longer being positioned as an optional add-on.  
 It is becoming part of the infrastructure of how Microsoft expects developers to build, test, and run software.
 
+<!--more-->
+
 The event was supported by Microsoft’s official *Build Live* blog, which served as the company’s central announcements hub, alongside its main *Build 2026* blog post. 
 Together, these made it clear that Microsoft wanted this year’s conference to feel practical rather than theatrical.  
 The emphasis was on developer tooling, production-ready AI agents, cloud integration, and local machine workflow improvements that can be used in real products today rather than just demonstrated on stage.
 
-<!--more-->
+<!--block1-->
 
 ## The Main Theme: AI as Infrastructure, Not Spectacle
 
@@ -51,7 +53,6 @@ On key software engineering benchmarks, Microsoft touted its coding proficiency 
 
 Additionally, Microsoft introduced **MAI-Code-1-Flash**, an ultra-efficient coding model optimised specifically for GitHub scenarios and currently rolling out to GitHub Copilot users in VS Code, alongside new targeted models for vision, speech, and interactive voice.
 
-<!--block1-->
 
 ## The Intelligent Terminal and Local Compute Were Standout Announcements
 
