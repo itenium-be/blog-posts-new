@@ -1,5 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Microsoft Build 2026: AI Becomes Core Infrastructure for Everyday Development</title>
+    <author>Simon Verhoeven</author>
+    <date>2026-06-03T00:00:00+00:00</date>
+    <print_date>2026-06-03T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/microsoft-build-2026/</url>
+    <category>ai</category>
+    <tags>microsoft-build,ai-agents,windows-11,local-llm,software-architecture</tags>
+    <desc>A look at the major announcements at Microsoft Build 2026. Insights into the proprietary MAI model family, local hardware inference, the Microsoft Execution Containers (MXC) SDK, and the Microsoft IQ context fabric.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/microsoft-build-2026-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>sleek technical illustration of AI agents interacting with a command line terminal and local silicon hardware, clean lines, corporate tech blog style, deep blue and slate palette --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/microsoft-build-2026-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>vector network connecting local operating system containers, terminal shells, and cloud databases, modern software engineering theme</prompt>
+    </img>
+    <excerpt><![CDATA[<h2 class="hide-from-excerpt" id="microsoft-build-2026-microsofts-clearest-sign-yet-that-ai-is-becoming-part-of-everyday-development">Microsoft Build 2026: Microsoft’s Clearest Sign Yet That AI is Becoming Part of Everyday Development</h2>
+
+<p>Microsoft Build 2026 took place from June 2 to 3 in San Francisco, with Microsoft using the event to set out a clear direction for the next phase of its platform strategy.<br />
+The message was straightforward: AI is no longer being positioned as an optional add-on.<br />
+It is becoming part of the infrastructure of how Microsoft expects developers to build, test, and run software.</p>
+
+<p>The event was supported by Microsoft’s official <em>Build Live</em> blog, which served as the company’s central announcements hub, alongside its main <em>Build 2026</em> blog post. 
+Together, these made it clear that Microsoft wanted this year’s conference to feel practical rather than theatrical.<br />
+The emphasis was on developer tooling, production-ready AI agents, cloud integration, and local machine workflow improvements that can be used in real products today rather than just demonstrated on stage.</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="the-main-theme-ai-as-infrastructure-not-spectacle">The Main Theme: AI as Infrastructure, Not Spectacle</h2>
+
+<p>Microsoft is now treating AI as core infrastructure for development work.<br />
+That means model access, agent orchestration, workflow automation, and terminal-level assistance are all being folded into the platform story.</p>
+
+<p>This is a subtle but important shift. Earlier AI announcements often focused on individual features or standalone chat prompts.<br />
+Build 2026 was more ambitious.<br />
+Microsoft argued that AI should be leveraged across the entire development stack, from local terminal frameworks up through cloud databases and enterprise services.</p>
+
+<p>Central to this infrastructure play is Microsoft’s pivot towards custom, targeted AI layers rather than relying entirely on generalised foundational models.<br />
+Mustafa Suleyman, head of Microsoft AI, unveiled seven self-developed in-house models under the <strong>MAI (Microsoft AI)</strong> umbrella.<br />
+This family includes <strong>MAI-Thinking-1</strong>, a 35-billion active parameter reasoning model designed explicitly for long-chain planning, logical reasoning, and autonomous task execution.<br />
+On key software engineering benchmarks, Microsoft touted its coding proficiency as narrowing the gap with industry leaders like Claude Sonnet 4.6.</p>
+
+<p>Additionally, Microsoft introduced <strong>MAI-Code-1-Flash</strong>, an ultra-efficient coding model optimised specifically for GitHub scenarios and currently rolling out to GitHub Copilot users in VS Code, alongside new targeted models for vision, speech, and interactive voice.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-intelligent-terminal-and-local-compute-were-standout-announcements">The Intelligent Terminal and Local Compute Were Standout Announcements</h2>
+
+<p>One of the more interesting additions at Build 2026 was the new frictionless <strong>intelligent terminal and shell experience</strong>.<br />
+This mattered because it brought AI directly into one of the most familiar and highest-trust environments in software development: the command line.</p>
+
+<p>Rather than leaving the terminal as a purely manual, text-entry interface, Microsoft showcased an integrated terminal pane that assists with debugging and multi-step workflows in real time.<br />
+If a command fails or a script throws an error, the shell recognises the issue, automatically reviews the live context, interprets the output, and suggests executable fixes inside the environment.</p>
+
+<p>Crucially, Microsoft is leaning heavily into local hardware execution to make this terminal layer fast and routine without incurring cloud API costs. 
+This is anchored by the newly announced <strong>Surface RTX Spark Dev Box</strong>. Powered by NVIDIA’s RTX Spark system-on-chip, this hardware delivers up to one petaflop of AI compute and 128 GB of unified memory.<br />
+It is built explicitly to allow developers to run up to 120-billion parameter models and large agent stacks entirely locally, shipping pre-configured with Windows Subsystem for Linux (WSL 2), native GPU passthrough, and full CUDA support.</p>
+
+<h2 id="agents-and-autopilots-were-central-to-the-story">Agents and “Autopilots” Were Central to the Story</h2>
+
+<p>Another major thread at Build 2026 was the official transition from standard conversational AI to autonomous agent-based systems.<br />
+In Microsoft’s framing, agents are no longer just chatbots; they are active, background-running application components that can plan, reason, and complete tasks over multiple steps.</p>
+
+<p>For enterprise workflows, Microsoft introduced <strong>Autopilots</strong>—always-on, continuous agents that execute tasks autonomously under their own governed identities.<br />
+A prime example showcased was <strong>Microsoft Scout</strong>. Built on open-source <strong>OpenClaw</strong> technology, Scout works natively across Teams, Outlook, and OneDrive to handle meeting preparation, resolve scheduling conflicts, and proactively manage routine developer workflows without waiting for a manual user prompt.</p>
+
+<p>For Visual Studio 2026 users, Microsoft announced specific <strong>modernization agents</strong> that can assess legacy Web Forms applications, build step-by-step upgrade plans, and autonomously migrate the code to a modern component-based Blazor architecture.</p>
+
+<h2 id="the-developer-challenge-securing-and-grounding-the-agent-layer">The Developer Challenge: Securing and Grounding the Agent Layer</h2>
+
+<p>This shift towards autonomous agent execution introduces a massive architectural hurdle: how do developers secure, govern, and ground these systems safely?<br />
+Microsoft addressed this at Build with major software development kit (SDK) rollouts.</p>
+
+<h3 id="agent-security-and-sandboxing">Agent Security and Sandboxing</h3>
+
+<p>To mitigate the risks of agents autonomously running code or accessing unauthorised directories on a machine, Microsoft introduced <strong>Microsoft Execution Containers (MXC)</strong>.<br />
+MXC provides an OS-enforced local sandbox that isolates agents from the rest of Windows, giving developers and security teams explicit policy controls over what an agent can see and execute.</p>
+
+<p>Furthermore, the general availability of the <strong>Agent 365 SDK</strong> introduces a unified control plane.<br />
+It integrates with Microsoft Entra, Purview, and Defender to establish an <em>Agent Registry</em>, allowing enterprise admins to discover unmanaged local agents (including third-party platforms like Claude Code or OpenClaw) and enforce rigorous access, auditing, and compliance restrictions.</p>
+
+<h3 id="the-microsoft-iq-context-fabric">The Microsoft IQ Context Fabric</h3>
+
+<p>To stop models from hallucinating and ensure they understand internal business logic, Microsoft rolled out the <strong>Microsoft IQ</strong> framework.<br />
+This system acts as a unified grounding standard for agents, dividing context into three distinct layers:</p>
+<ul>
+  <li><strong>Work IQ:</strong> Pulls user-specific context from active Microsoft 365 signals (Teams, emails, files).</li>
+  <li><strong>Fabric IQ:</strong> Connects to structured, semantic corporate data definitions, now generally available.</li>
+  <li><strong>Web IQ:</strong> A brand new grounding engine that continuously pre-crawls real-world web data, feeding fresh web context directly to running agents without making them crawl raw web pages live.</li>
+</ul>
+
+<h2 id="azure-and-the-cloud-platform-remain-essential-backends">Azure and the Cloud Platform Remain Essential Backends</h2>
+
+<p>While local processing took centre stage for the desktop, Microsoft reinforced that scaling these agentic applications requires specialised cloud data infrastructure.</p>
+
+<p>For developers moving from local prototype to production, Microsoft launched <strong>Rayfin</strong>, a new open-source SDK and command-line interface.<br />
+Rayfin serves as a managed “Backend-as-a-Service” for Microsoft Fabric, enabling developers to tie GitHub-based workflows directly into enterprise-grade deployments with zero infrastructure management.</p>
+
+<p>To power the backend state and persistent memory tracking that complex multi-agent systems demand, Microsoft unveiled <strong>Azure HorizonDB</strong> in public preview.<br />
+HorizonDB is an elastic, PostgreSQL-compatible database engine engineered specifically for massive AI storage, capable of scaling out compute up to 3,072 vCores and sustaining sub-millisecond, multi-zone commit latencies.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Microsoft Build 2026 was a strong signal that Microsoft wants AI to feel routine, practical, and deeply embedded.<br />
+The intelligent terminal and local hardware push showed that ambition in a developer-friendly form.<br />
+Combined with the company’s heavy structural investments in the MAI model family, the MXC sandboxing SDK, and Azure HorizonDB, it is clear that Microsoft sees the future of development as something shaped by AI at almost every level of the stack.</p>
+
+<p>For developers, the key question now is not whether Microsoft will continue in this direction. It will.<br />
+The real question is whether these new isolated containers, unified context layers, and autonomous coding agents will make day-to-day work genuinely faster, clearer, and more reliable in production environments.</p>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://build.microsoft.com/">Microsoft Build Official Homepage</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Wn5r4uqfsGY">The Terminal Live - Day 1 at Microsoft Build</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Book review: Essential GraphRAG</title>
     <author>Simon Verhoeven</author>
     <subTitle>Freely available!</subTitle>
