@@ -67,7 +67,7 @@ explosion happened again of course - I mean these days I just know it’s going 
 <ul>
   <li>The notification appears on the screen where the Claude Terminal is located at</li>
   <li>Clicking the notification activates that Terminal window</li>
-  <li>Displays interesting context like</li>
+  <li>Displays interesting context like the current branch, the last model output etc</li>
 </ul>
 
 <p>And then the scope explosion:</p>
@@ -83,7 +83,7 @@ explosion happened again of course - I mean these days I just know it’s going 
 
 <h3 id="the-demo">The Demo</h3>
 
-<p>Check the marketing website for all 9 themes and the different Claude mascot animations in action!</p>
+<p>Check the <a href="https://itenium-be.github.io/Yoink/">marketing website</a> for all 9 themes and the different Claude mascot animations in action!</p>
 
 <video width="648" height="448" controls="" autoplay="" muted="" loop="">
   <source src="https://github.com/itenium-be/Yoink/raw/refs/heads/main/site/assets/yoink-unicorn.mp4" type="video/mp4" />
