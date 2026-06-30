@@ -1,5 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Yoink: Fancy Claude Code Notification Hooks</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>WSL notifications with animated Claude mascots and 9 themes</subTitle>
+    <date>2026-06-30T00:00:00+00:00</date>
+    <print_date>2026-06-30T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/yoink-claude-notification-hooks/</url>
+    <category>ai</category>
+    <tags>claude,hooks,notifications,product,war-story,automation,windows</tags>
+    <desc>Yoink: custom notification hooks for Claude on WSL. Get beautifully themed pop-ups when Claude finishes or needs input, with animated mascots, smart context tokens, background agent detection, and configurable themes from unicorn to matrix to dragon. 🦄</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/yoink-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>Colorful futuristic notification popup cards displaying Claude notification events, multiple UI themes side by side: sakura petals falling, neon matrix digital rain, cosmic space with nebulas, ocean waves, dragon embers over lava, unicorn rainbows, all layered on vibrant gradients with animated mascot characters in joyful poses, terminal window environment in background, high-contrast neon colors, cyberpunk aesthetic, professional UI design, clean composition --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/yoink-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>Cute Claude AI mascot celebrating with confetti explosion next to a colorful notification card popup, vibrant gradient background, joyful celebrating pose, modern UI design</prompt>
+    </img>
+    <excerpt><![CDATA[<p>While working on the next itenium AI session “Extending Your Harness”, I was working on the slides of
+the plugin primitives and hooks are definitely a very important one. You don’t ask the model
+nicely to run the tests or to adhere to your linting conventions and pray that it actually does…</p>
+
+<p>No! For that kind of backpressure you want to be fully deterministic - with <strong>hooks</strong>!</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="the-marketplace">The Marketplace</h2>
+
+<p>For the session, I turned the slidev deck into it’s own tutorial marketplace + plugin. Not very useful
+for actual installation, but useful as a teaching mecanism: the powerpoint repository IS a Claude Plugin!</p>
+
+<p>It contains super handy skills like the <code>/greeter</code> which really is more involved as you’d expect,
+as it teaches about <code>$ARGUMENTS</code>, running commands (<code>! whoami</code>), and it even incorporates a dependency
+from an external marketplace (to render a fancy ASCII greeting).</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-hook">The Hook</h2>
+
+<p>For the hooks primitive I first added a <code>PostToolUse</code> for linting. Because the repository doesn’t really
+contain much code, this turned out to be a json validator.</p>
+
+<pre><code class="language-json">"PostToolUse": [{
+  "matcher": "Write|Edit",
+  "hooks": [{
+    "type": "command",
+    "command": "${CLAUDE_PLUGIN_ROOT}/hooks/validate-json.sh"
+  }]
+}]
+</code></pre>
+
+<p>But… That is pretty boring…</p>
+
+<h2 id="notifications">Notifications</h2>
+
+<p>Since I need to burn as many tokens as possible, as quickly as possible, I’m typically running several Claude Code
+sessions at the same time and back in the olden days when I was still starting Claude from my trusted PowerShell
+I had added some quick &amp; dirty notification hooks to inform me when my input was needed somewhere.</p>
+
+<p>Because of PowerShell vs Bash friction, I have since switched to WSL (maybe <code>CLAUDE_CODE_USE_POWERSHELL_TOOL=1</code> could
+have elevated that pain but I only recently learned of this Claude env variable) and I haven’t had notifications since.</p>
+
+<h2 id="yoink">Yoink</h2>
+
+<p>So I quickly started Claude-Notify, later renamed to <strong>Yoink</strong> to have super fancy notifications. The usual scope
+explosion happened again of course - I mean these days I just know it’s going to happen, resistance is futile.</p>
+
+<p>Some interesting features:</p>
+
+<ul>
+  <li>The notification appears on the screen where the Claude Terminal is located at</li>
+  <li>Clicking the notification activates that Terminal window</li>
+  <li>Displays interesting context like</li>
+</ul>
+
+<p>And then the scope explosion:</p>
+
+<ul>
+  <li>9 different themes: 🦄, 🐉, 💊, 🌸, 🚀, 🐳, 🌴, 🤖 and 👻</li>
+  <li>Animated Claude mascot!!</li>
+  <li>75 carefully selected sounds (sound is optional of course)</li>
+  <li>Fully configurable: the themes, the sounds, the colors, gradients, different scenes per theme, the texts (with replacements)</li>
+  <li>A <code>settings-editor.ps1</code> so you can edit Yoinks <code>settings.json</code> and see the result right away</li>
+  <li>A marketing website!</li>
+</ul>
+
+<h3 id="the-demo">The Demo</h3>
+
+<p>Check the marketing website for all 9 themes and the different Claude mascot animations in action!</p>
+
+<video width="648" height="448" controls="" autoplay="" muted="" loop="">
+  <source src="https://github.com/itenium-be/Yoink/raw/refs/heads/main/site/assets/yoink-unicorn.mp4" type="video/mp4" />
+</video>
+
+<h2 id="the-installation">The Installation</h2>
+
+<p>After all that sidetracking, this was still supposed to be part of the AI session,
+so actually packaging it as a plugin and exposing it as a marketplace was mandatory :D</p>
+
+<pre><code class="language-txt">/plugin marketplace add itenium-be/Yoink
+/plugin install yoink@yoink-marketplace
+</code></pre>
+
+<p>Or if you’re running from a clone, edit your <code>~/.claude/settings.json</code>:</p>
+
+<pre><code class="language-jsonc">"hooks": {
+  "SessionStart": [{ "hooks": [{ "type": "command", "command": "bash ~/.claude/yoink/hooks/notify-capture.sh" }] }],
+  "Stop": [{ "hooks": [{ "type": "command", "command": "bash ~/.claude/yoink/hooks/notify-fire.sh done" }] }],
+  "Notification": [{ "hooks": [{ "type": "command", "command": "bash ~/.claude/yoink/hooks/notify-fire.sh needs-input" }] }]
+}
+</code></pre>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://itenium-be.github.io/Yoink">The Yoink marketing website</a></li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Yoink" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Yoink.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Yoink">itenium-be/Yoink</a>:
+        The Yoink source code</p>
+</li>
+        <li><p style="margin-bottom: 5px">
+    <a href="https://github.com/itenium-be/Extending-Your-Agent" style="margin-right: 6px">
+        <img src="https://img.shields.io/github/stars/itenium-be/Extending-Your-Agent.svg?style=social&label=Star" style="vertical-align: middle" />
+    </a>
+    <a href="https://github.com/itenium-be/Extending-Your-Agent">itenium-be/Extending-Your-Agent</a>:
+        The itenium AI session: Extending Your Agent</p>
+</li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Microsoft Build 2026: AI Becomes Core Infrastructure for Everyday Development</title>
     <author>Simon Verhoeven</author>
     <date>2026-06-03T00:00:00+00:00</date>
