@@ -22674,7 +22674,7 @@ emoj [text]
 
 <!-- Boxstarter ID: 12f5d2f76d51ee6c0a49 -->
 <!-- https://gist.github.com/Laoujin/12f5d2f76d51ee6c0a49 -->
-<noscript><pre>400: Invalid request</pre></noscript>
+<noscript><pre>404: Not Found</pre></noscript>
 <script src="https://gist.github.com/9b0b360b0c0cb39143990e92fa3adcef.js"> </script>
 
 <pre><code>{% gist 9b0b360b0c0cb39143990e92fa3adcef %}
