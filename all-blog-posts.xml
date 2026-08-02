@@ -370,9 +370,8 @@ You will close it with genuine understanding rather than vague reassurance that 
 
 <p>The most significant story in Angular 22 is stability. Three important pieces of the modern Angular story are now production-ready: Signal Forms, Angular Aria, and the asynchronous reactivity APIs.</p>
 
-<p>Signal Forms gives Angular a more declarative and composable approach to forms, and it fits naturally with the wider signals model. That matters because forms are one of the places where application complexity tends to accumulate quickly. A more reactive, strongly typed approach reduces boilerplate and makes the flow of state easier to follow.</p>
-
-<pre><code class="language-ts">import { Component, signal } from '@angular/core';
+<p>Signal Forms gives Angular a more declarative and composable approach to forms, and it fits naturally with the wider signals model. That matters because forms are one of the places where application complexity tends to accumulate quickly. A more reactive, strongly typed approach reduces boilerplate and makes the flow of state easier to follow.</p>]]></block1>
+      <block2><![CDATA[<pre><code class="language-ts">import { Component, signal } from '@angular/core';
 import { form, required, min, max, FormField } from '@angular/forms/signals';
 
 @Component({
@@ -418,8 +417,9 @@ export class SupportTicketComponent {
 
   &lt;button type="submit" [disabled]="ticketForm().invalid()"&gt;File Ticket&lt;/button&gt;
 &lt;/form&gt;
-</code></pre>]]></block1>
-      <block2><![CDATA[<p>Angular Aria is also now stable, which is an important step for teams building accessible component libraries and design systems. It gives Angular a clearer story for building accessible primitives without making every component author solve accessibility from first principles.</p>
+</code></pre>
+
+<p>Angular Aria is also now stable, which is an important step for teams building accessible component libraries and design systems. It gives Angular a clearer story for building accessible primitives without making every component author solve accessibility from first principles.</p>
 
 <p>The async reactivity APIs, including <code>resource</code>, <code>rxResource</code>, and <code>httpResource</code>, are now stable as well. This is a particularly useful milestone because it means Angular now has a production-ready way to model asynchronous data in the same reactive style as the rest of the framework.</p>
 
