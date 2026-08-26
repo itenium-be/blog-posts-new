@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Book review: The Coding Dojo Handbook by Emily Bache</title>
+    <author>Simon Verhoeven</author>
+    <subTitle>A practical guide to deliberate practice for developers</subTitle>
+    <date>2026-07-07T00:00:00+00:00</date>
+    <print_date>2026-07-07T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/agile/the-coding-dojo-handbook/</url>
+    <category>agile</category>
+    <tags>tdd,code-katas,software-engineering,team-collaboration,continuous-learning</tags>
+    <desc>A review of Emily Bache’s classic handbook on setting up a Coding Dojo. Practical advice on fostering collaborative learning, master-level code katas, and getting development teams comfortable with Test-Driven Development (TDD).</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/coding-dojo-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>minimalist vector illustration of a modern software engineering dojo, clean lines, programmer collaboration, tech workspace, deep navy blue and bright teal accents --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/coding-dojo-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>stylized software design pattern iconography, overlapping neon loops and code syntax elements, agile engineering theme</prompt>
+    </img>
+    <excerpt><![CDATA[<p>Reading Emily Bache’s <em>The Coding Dojo Handbook</em> was a welcome reminder of how we actually learn to build software. Most engineering books focus on what framework to use or how the latest language syntax looks, but this one tackles how you actually change team habits. Specifically, how do we help a team of developers get better at their craft when the daily sprint pressure never lets up?</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#the-practice-deficit">The Practice Deficit</a></li>
+  <li><a href="#dojo-formats-in-anger">Dojo Formats in Anger</a></li>
+  <li><a href="#the-fine-print">The Fine Print</a></li>
+  <li><a href="#the-kata-in-practice-shaking-up-old-habits">The Kata in Practice: Shaking Up Old Habits</a></li>
+  <li><a href="#the-facilitation-burden">The Facilitation Burden</a></li>
+  <li><a href="#final-thoughts">Final Thoughts</a></li>
+</ul>]]></block1>
+      <block2><![CDATA[<h2 id="the-practice-deficit">The Practice Deficit</h2>
+
+<p>We have a bizarre habit in software engineering. We expect people to learn new skills, like Test-Driven Development or complex refactoring patterns, while they are writing production code on a tight deadline. It is the equivalent of asking a musician to learn a difficult concerto for the first time while standing on stage at the Royal Albert Hall.</p>
+
+<p>Bache argues for the coding dojo as a structured environment to fix this gap. The core idea is deliberate practice: you take a small, isolated problem (a kata), remove the pressure of shipping to production, and focus purely on the mechanics of writing clean code. For anyone tasked with technical coaching or raising the engineering bar in an organisation, this premise makes complete sense.</p>
+
+<h2 id="dojo-formats-in-anger">Dojo Formats in Anger</h2>
+
+<p>The book shines when it breaks down the actual mechanics of running a session. Bache does not just say, “get in a room and code.” She outlines specific formats, mostly Randori and Prepared Kata, and explains exactly how to run them.</p>
+
+<p>In a Randori session, one pair is at the keyboard, switching out every few minutes, while the rest of the room watches and guides. If you have ever tried this with a group of cynical senior developers, you know it can go off the rails quickly. The book provides sensible constraints to stop the session degenerating into a shouting match over code formatting or tabs versus spaces. It focuses on short cycles, small steps, and keeping everyone engaged.</p>
+
+<h2 id="the-fine-print">The Fine Print</h2>
+
+<p>Calling this a blueprint is fair, but it comes with strings attached. A coding dojo is not a plug-and-play solution that fixes engineering culture by its mere existence.</p>
+
+<p>First, it demands a recurring, non-negotiable calendar slot. One-off sessions rarely create lasting change. If leadership does not protect regular practice time, perhaps two hours every second Friday, sprint pressure will usually crowd it out.</p>
+
+<p>Second, you need a baseline of psychological safety. If your team culture involves finger-pointing or intellectual posturing during code reviews, developers will refuse to sit at a keyboard and code live in front of peers. The environment has to allow for mistakes, or the whole exercise turns into anxiety management.</p>
+
+<h2 id="the-kata-in-practice-shaking-up-old-habits">The Kata in Practice: Shaking Up Old Habits</h2>
+
+<p>To see the blueprint value, we have to look at how a simple kata can break bad habits. For example, the classic FizzBuzz kata in Java, but with an added constraint from Bache’s playbook: zero conditional statements allowed. No <code>if</code> blocks, no ternary operators.</p>
+
+<p>The initial reaction will likely be silence, followed by the usual complaints that this is unrealistic. But as pairs cycle through the red-green-refactor loop, they will have to reach for alternative patterns. They end up using an enum-based state approach and map lookups to resolve output strings.</p>
+
+<p>The win is not the code itself, which you would never ship to production, but the visible shift in developers. They will realise how automatically reaching for a given solution can be a crutch. That brief moment of clarity is exactly what the dojo format is meant to produce.</p>
+
+<h2 id="the-facilitation-burden">The Facilitation Burden</h2>
+
+<p>None of this happens without strong facilitation. The hardest part of a coding dojo is not the code, but rather the human element. We can be a defensive bunch, and live coding is intimidating.</p>
+
+<p>Bache spends a good portion of the handbook on the facilitator’s role, and it is easily the most useful section of the book. She gives practical advice on handling the alpha developer who tries to dictate every line from the back row, encouraging the quiet junior who is terrified of making a typo, and keeping the energy from bottoming out.</p>
+
+<p>Without a facilitator actively protecting the rules and keeping the atmosphere constructive, the dojo quickly turns into a tedious lecture or an argument over syntax.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p><em>The Coding Dojo Handbook</em> is a slim, pragmatic guide that skips academic theory in favour of real-world application. It is an excellent resource, but the mechanics are only half the battle.</p>
+
+<p>If you have management backing to protect the time, the patience to facilitate sessions properly, and a team that trusts each other enough to fail in public, this book gives you the tools to meaningfully change how your team writes code.</p>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://leanpub.com/codingdojohandbook">Leanpub: The Coding Dojo Handbook by Emily Bache</a></li>
+        <li><a href="https://codingdojo.org/">Coding Dojo Community Practices and Katas</a></li>
+        <li><a href="https://coding-is-like-cooking.info/">Emily Bache's Blog: Coding is Like Cooking</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Yoink: Fancy Claude Code Notification Hooks</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>WSL notifications with animated Claude mascots and 9 themes</subTitle>
