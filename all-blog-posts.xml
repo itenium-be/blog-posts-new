@@ -26,9 +26,9 @@
 
 <p>Having recently finished Brian Christian’s <em>The Alignment Problem</em>, which looks closely at the micro-level mechanics of model safety and reward metrics, I picked up Mustafa Suleyman’s <em>The Coming Wave</em> as a natural follow-up. Where Christian concentrates on aligning individual algorithms, Suleyman zooms out: how society can contain and govern these systems once they proliferate globally.</p>
 
-<p>Suleyman, co-founder of DeepMind and Inflection AI and currently CEO of Microsoft AI, offers an insider’s warning about the rapid convergence of artificial intelligence and synthetic biology. His thesis is straightforward: we are on the edge of an unprecedented technological surge that is, by its very nature, extraordinarily difficult to control.</p>
+<p class="hide-from-excerpt">Suleyman, co-founder of DeepMind and Inflection AI and currently CEO of Microsoft AI, offers an insider’s warning about the rapid convergence of artificial intelligence and synthetic biology. His thesis is straightforward: we are on the edge of an unprecedented technological surge that is, by its very nature, extraordinarily difficult to control.</p>
 
-<p>From an engineering standpoint, the book shifts the focus from app-level security to supply chain risks across the tech stack. It asks a practical question: as dual-use capabilities become widely accessible, how do open societies mitigate potential misuse without undermining open source?</p>]]></excerpt>
+<p class="hide-from-excerpt">From an engineering standpoint, the book shifts the focus from app-level security to supply chain risks across the tech stack. It asks a practical question: as dual-use capabilities become widely accessible, how do open societies mitigate potential misuse without undermining open source?</p>]]></excerpt>
       <block1><![CDATA[<h2 id="the-anatomy-of-the-wave">The Anatomy of the Wave</h2>
 
 <p>Suleyman argues that we are entering a technological wave comparable to the advent of printing or electricity, but distinguished by exponential speed and significant potential for misapplication.</p>
@@ -152,11 +152,11 @@
   <li>You optimise for engagement, and you end up with notifications designed to keep people glued to the app.</li>
 </ul>
 
-<p>Brian Christian’s <em>The Alignment Problem</em> takes that familiar challenge and applies it to machine learning in a compelling manner.</p>
+<p class="hide-from-excerpt">Brian Christian’s <em>The Alignment Problem</em> takes that familiar challenge and applies it to machine learning in a compelling manner.</p>
 
-<p>The core question Christian explores is not whether AI will become sentient or take over the world, but rather the much more practical and pertinent: <em>How do we stop intelligent systems from optimising exactly for what we measured, even when that is not what we actually intended?</em></p>
+<p class="hide-from-excerpt">The core question Christian explores is not whether AI will become sentient or take over the world, but rather the much more practical and pertinent: <em>How do we stop intelligent systems from optimising exactly for what we measured, even when that is not what we actually intended?</em></p>
 
-<p>As a software engineer, this is a challenge I think about frequently. Like many of us, I am still trying to figure out where AI fits into my workflow and how to use it responsibly.
+<p class="hide-from-excerpt">As a software engineer, this is a challenge I think about frequently. Like many of us, I am still trying to figure out where AI fits into my workflow and how to use it responsibly.
 It is easy to assume that if we can define a clear objective, we can build a system that achieves it.
 Christian shows that the real difficulty is often not in defining the objective, but in making sure the objective is the right one.</p>]]></excerpt>
       <block1><![CDATA[<h2 id="when-models-game-the-system">When Models Game the System</h2>
