@@ -9,9 +9,11 @@ desc: >
 bigimg:
   url: coming-wave-big.png
   origin: Midjourney
-  prompt: "a conceptual illustration of a towering digital wave composed of code and biological strands crashing over a clean city, minimal editorial style, thoughtful and urgent mood"
+  prompt: "a conceptual illustration of a towering digital wave composed of code and biological strands crashing over a clean city, minimal editorial style, thoughtful and urgent mood --ar 4:1"
 img:
   url: coming-wave-sm.png
+  origin: Midjourney
+  prompt: "a glass laboratory jar sealed with a cork, containing a miniature roaring ocean wave made of glowing circuit traces and DNA helices pressing against the glass, a hairline crack running up the side, placed on a dark wooden desk beside an open book, soft single-source lamp light, deep teal and amber palette, minimal editorial illustration, tense and contemplative mood, centered composition"
 categories: tech
 tags: [book-review, ai, technology-policy, synthetic-biology]
 toc:
@@ -31,7 +33,7 @@ From an engineering standpoint, the book shifts the focus from app-level securit
 
 ## The Anatomy of the Wave
 
-Suleyman argues that we are entering a technological wave comparable to the advent of printing or electricity, but distinguished by exponential speed and significant potential for misapplication. 
+Suleyman argues that we are entering a technological wave comparable to the advent of printing or electricity, but distinguished by exponential speed and significant potential for misapplication.
 
 He identifies four defining characteristics of this wave:
 
@@ -42,13 +44,15 @@ He identifies four defining characteristics of this wave:
 
 In software development, open-source proliferation is traditionally viewed as a pure net positive. But when open-source code includes self-improving, general-purpose models that interact with physical infrastructure, the boundary between a helpful utility and a zero-day exploit disappears.
 
+<!--block1-->
+
 ## The Great Dilemma: Totalitarianism vs. Proliferation
 
 At the heart of the book lies a fundamental contradiction facing 21st-century governance:
 
-| Modern Path | The Risk |
-| :--- | :--- |
-| **Unchecked Openness** | Rapid democratisation of frontier tools leads to catastrophic misuse (engineered pandemics, autonomous warfare, societal destabilisation). |
+| Modern Path                   | The Risk |
+|:------------------------------|:---------|
+| **Unchecked Openness**        | Rapid democratisation of frontier tools leads to catastrophic misuse (engineered pandemics, autonomous warfare, societal destabilisation). |
 | **Hard Bans & Total Control** | Enforcing strict prohibitions requires intrusive, state-level surveillance that fundamentally suppresses civil liberties and open society. |
 
 Historically, attempts to ban general-purpose technologies, whether Pope Urban II outlawing the crossbow or imperial China restricting shipbuilding, have consistently failed. Technology diffuses because knowledge cannot be locked in a vault indefinitely. Unlike nuclear weapons, which depend on rare physical materials like enriched uranium, software and synthetic DNA sequences consist of intangible, highly portable information.
