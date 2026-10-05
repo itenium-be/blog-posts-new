@@ -5,3 +5,4 @@ _site
 desktop.ini
 .jekyll-cache/
 .claude/settings.local.json
+assets/midjourney-raw/
