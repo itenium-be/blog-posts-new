@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Book Review: The Coming Wave by Mustafa Suleyman</title>
+    <author>Simon Verhoeven</author>
+    <subTitle>From model safety to global containment: why controlling frontier tech is the 21st century’s existential test</subTitle>
+    <date>2026-10-01T00:00:00+00:00</date>
+    <print_date>2026-10-01T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/tech/the-coming-wave/</url>
+    <category>tech</category>
+    <tags>book-review,ai,technology-policy,synthetic-biology</tags>
+    <desc>Mustafa Suleyman’s insider perspective on the convergence of AI and synthetic biology, the dilemma of democratisation, and why containment is software engineering on a geopolitical scale.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/coming-wave-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a conceptual illustration of a towering digital wave composed of code and biological strands crashing over a clean city, minimal editorial style, thoughtful and urgent mood --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/coming-wave-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a glass laboratory jar sealed with a cork, containing a miniature roaring ocean wave made of glowing circuit traces and DNA helices pressing against the glass, a hairline crack running up the side, placed on a dark wooden desk beside an open book, soft single-source lamp light, deep teal and amber palette, minimal editorial illustration, tense and contemplative mood, centered composition</prompt>
+    </img>
+    <toc>
+      <title>The Coming Wave</title>
+    </toc>
+    <excerpt><![CDATA[<h2 class="hide-from-excerpt" id="introduction">Introduction</h2>
+
+<p>Having recently finished Brian Christian’s <em>The Alignment Problem</em>, which looks closely at the micro-level mechanics of model safety and reward metrics, I picked up Mustafa Suleyman’s <em>The Coming Wave</em> as a natural follow-up. Where Christian concentrates on aligning individual algorithms, Suleyman zooms out: how society can contain and govern these systems once they proliferate globally.</p>
+
+<p>Suleyman, co-founder of DeepMind and Inflection AI and currently CEO of Microsoft AI, offers an insider’s warning about the rapid convergence of artificial intelligence and synthetic biology. His thesis is straightforward: we are on the edge of an unprecedented technological surge that is, by its very nature, extraordinarily difficult to control.</p>
+
+<p>From an engineering standpoint, the book shifts the focus from app-level security to supply chain risks across the tech stack. It asks a practical question: as dual-use capabilities become widely accessible, how do open societies mitigate potential misuse without undermining open source?</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="the-anatomy-of-the-wave">The Anatomy of the Wave</h2>
+
+<p>Suleyman argues that we are entering a technological wave comparable to the advent of printing or electricity, but distinguished by exponential speed and significant potential for misapplication.</p>
+
+<p>He identifies four defining characteristics of this wave:</p>
+
+<ol>
+  <li><strong>Asymmetry:</strong> Actions that previously required nation-state resources can now be executed by small teams or individuals (for instance, running automated cyberattacks or designing synthetic pathogens).</li>
+  <li><strong>Hyper-Evolution:</strong> Tools iterate at exponential speed, using early AI models to accelerate the development of next-generation systems.</li>
+  <li><strong>Omni-Use (Dual-Use):</strong> The underlying technology is inherently dual-use. A model trained to fold proteins for life-saving therapeutics can often be inverted in minutes to design novel biological threats.</li>
+  <li><strong>Autonomy:</strong> Systems are shifting rapidly from passive assistants to autonomous agents capable of making complex decisions and acting directly in the physical world.</li>
+</ol>
+
+<p>In software development, open-source proliferation is traditionally viewed as a pure net positive. But when open-source code includes self-improving, general-purpose models that interact with physical infrastructure, the boundary between a helpful utility and a zero-day exploit disappears.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-great-dilemma-totalitarianism-vs-proliferation">The Great Dilemma: Totalitarianism vs. Proliferation</h2>
+
+<p>At the heart of the book lies a fundamental contradiction facing 21st-century governance:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Modern Path</th>
+      <th style="text-align: left">The Risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Unchecked Openness</strong></td>
+      <td style="text-align: left">Rapid democratisation of frontier tools leads to catastrophic misuse (engineered pandemics, autonomous warfare, societal destabilisation).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Hard Bans &amp; Total Control</strong></td>
+      <td style="text-align: left">Enforcing strict prohibitions requires intrusive, state-level surveillance that fundamentally suppresses civil liberties and open society.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Historically, attempts to ban general-purpose technologies, whether Pope Urban II outlawing the crossbow or imperial China restricting shipbuilding, have consistently failed. Technology diffuses because knowledge cannot be locked in a vault indefinitely. Unlike nuclear weapons, which depend on rare physical materials like enriched uranium, software and synthetic DNA sequences consist of intangible, highly portable information.</p>
+
+<p>For platform engineers, this dilemma mirrors a familiar trade-off: how do you keep an open platform secure without locking down every user interaction and destroying its core utility?</p>
+
+<h2 id="containment-as-system-architecture">Containment as System Architecture</h2>
+
+<p>Suleyman does not give in to fatalism. Instead, he outlines a multi-layered framework for <strong>Containment</strong>, a coordinated effort to keep technology under human control.</p>
+
+<p>Rather than relying solely on top-down bans, he highlights physical and technical choke points:</p>
+
+<ul>
+  <li><strong>Hardware Bottlenecks:</strong> Regulating critical physical choke points, such as high-end semiconductor manufacturing, advanced lithography equipment, and DNA synthesis machines.</li>
+  <li><strong>Technical Safety &amp; Audits:</strong> Mandatory red-teaming, alignment testing, and hard kill-switches built directly into model development pipelines.</li>
+  <li><strong>State Capacity:</strong> Upgrading regulatory bodies so policy-makers possess the technical depth needed to oversee advanced software.</li>
+  <li><strong>International Treaties:</strong> Establishing global governance bodies (akin to the IAEA for nuclear energy) to coordinate international guardrails around autonomous weapons and bio-engineering.</li>
+</ul>
+
+<p>This is among the most practical parts of the book. It reframes tech policy away from vague ethical statements and towards defence-in-depth engineering: applying rate limits, hardware security, supply chain auditing, and access controls at the structural level.</p>
+
+<h2 id="strengths-and-personal-takeaways">Strengths and Personal Takeaways</h2>
+
+<p>What gives <em>The Coming Wave</em> its weight is Suleyman’s position. He is not an outside observer or academic; he spent over a decade at the centre of modern AI development. When he describes the exponential growth curves of frontier models, he is drawing on direct operational experience.</p>
+
+<p>A few key takeaways stood out:</p>
+
+<ul>
+  <li><strong>AI as a Bio Force-Multiplier:</strong> The intersection of AI and synthetic biology is far more pressing than most software discussions acknowledge. When LLMs act as lab assistants for gene editing, biological security becomes a software problem.</li>
+  <li><strong>Hardware is the Ultimate Root of Trust:</strong> In a world of infinite software replication, physical compute and specialised hardware remain the ultimate control points.</li>
+  <li><strong>Culture of Accountability:</strong> Safety cannot be treated as a PR layer applied after the fact; it must be embedded into engineering culture from day one.</li>
+</ul>
+
+<h2 id="a-minor-nitpick">A Minor Nitpick</h2>
+
+<p>Because Suleyman covers geopolitics, economics, biology, and computer science in a single volume, the proposed solutions can occasionally feel overly optimistic about global cooperation. Expecting competing superpowers to strictly enforce international containment treaties requires a level of diplomatic harmony that currently seems out of reach.</p>
+
+<p>Additionally, readers expecting deep code walkthroughs or technical architecture diagrams should note that the focus is explicitly strategic, economic, and policy-oriented rather than computer science theory.</p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p><em>The Coming Wave</em> is a worthwhile read for anyone trying to understand the broader geopolitical and societal stakes of frontier technology.</p>
+
+<p>Suleyman offers a pragmatic blueprint for navigating the narrow path between technological anarchy and authoritarian control. For software engineers, product managers, and tech leaders, it serves as a grounded reminder to look beyond immediate product roadmaps and consider the systemic impact of the tools we build.</p>
+
+<p><strong>Rating: 8.5/10</strong></p>
+
+<p><strong>Author:</strong> Mustafa Suleyman with Michael Bhaskar<br />
+<strong>Publisher:</strong> Crown / Bodley Head<br />
+<strong>Publication date:</strong> 2023<br />
+<strong>ISBN-13:</strong> 978-0593593950</p>]]></block2>
+    <block3><![CDATA[]]></block3>
+  </post>
+  <post>
     <title>Book Review: The Alignment Problem by Brian Christian</title>
     <author>Simon Verhoeven</author>
     <subTitle>Why making AI do what we want is harder than making it work</subTitle>
@@ -12,10 +130,12 @@
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/alignment-problem-big.png</url>
       <origin>Midjourney</origin>
-      <prompt>a conceptual illustration of AI learning from human behaviour, with subtle signals, fragile choices, and ethical dilemmas, clean minimal illustration, thoughtful mood</prompt>
+      <prompt>a conceptual illustration of AI learning from human behaviour, with subtle signals, fragile choices, and ethical dilemmas, clean minimal illustration, thoughtful mood --ar 4:1</prompt>
     </bigimg>
     <img>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/alignment-problem-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>a small friendly robot standing in front of an ornate mirror, the reflection showing a crowd of human silhouettes instead of the robot, faint data lines connecting the robot&apos;s head to the reflected figures, soft moody lamplight, deep indigo and warm brass palette, minimal editorial illustration, contemplative and slightly unsettling mood, centered composition</prompt>
     </img>
     <toc>
       <title>The Alignment Problem</title>
@@ -37,95 +157,72 @@
 <p>The core question Christian explores is not whether AI will become sentient or take over the world, but rather the much more practical and pertinent: <em>How do we stop intelligent systems from optimising exactly for what we measured, even when that is not what we actually intended?</em></p>
 
 <p>As a software engineer, this is a challenge I think about frequently. Like many of us, I am still trying to figure out where AI fits into my workflow and how to use it responsibly.
-It is easy to assume that if we can define a clear objective, we can build a system that achieves it. 
+It is easy to assume that if we can define a clear objective, we can build a system that achieves it.
 Christian shows that the real difficulty is often not in defining the objective, but in making sure the objective is the right one.</p>]]></excerpt>
-      <block2><![CDATA[<h2 class="hide-from-excerpt" id="introduction">Introduction</h2>
-
-<p>Anyone who has worked in software or product development knows Goodhart’s Law firsthand:</p>
-<blockquote>
-  <p>When a measure becomes a target, it ceases to be a good measure.</p>
-</blockquote>
-
-<ul>
-  <li>You reward developers for closing tickets, and you get a flood of tiny, low-value patches.</li>
-  <li>You optimise for engagement, and you end up with notifications designed to keep people glued to the app.</li>
-</ul>
-
-<p>Brian Christian’s <em>The Alignment Problem</em> takes that familiar challenge and applies it to machine learning in a compelling manner.</p>
-
-<p>The core question Christian explores is not whether AI will become sentient or take over the world, but rather the much more practical and pertinent: <em>How do we stop intelligent systems from optimising exactly for what we measured, even when that is not what we actually intended?</em></p>
-
-<p>As a software engineer, this is a challenge I think about frequently. Like many of us, I am still trying to figure out where AI fits into my workflow and how to use it responsibly.
-It is easy to assume that if we can define a clear objective, we can build a system that achieves it. 
-Christian shows that the real difficulty is often not in defining the objective, but in making sure the objective is the right one.</p>
-
-<!--more-->
-
-<h2 id="when-models-game-the-system">When Models Game the System</h2>
+      <block1><![CDATA[<h2 id="when-models-game-the-system">When Models Game the System</h2>
 
 <p>The concrete examples used by Christian are what make the book stand out for me and make it so relevant.</p>
 
 <p>One of the clearest is the <em>CoastRunners</em> experiment.</p>
 
-<p>Researchers trained an AI agent to win a boat race by giving it rewards for picking up targets along the track. 
+<p>Researchers trained an AI agent to win a boat race by giving it rewards for picking up targets along the track.
 On paper, that sounds reasonable since an agent should learn to race to the finish.
-Instead, the model discovered a much easier path to a high score: it could keep circling the track, repeatedly ramming into targets and obstacles, maximising reward without ever actually winning the race. 
+Instead, the model discovered a much easier path to a high score: it could keep circling the track, repeatedly ramming into targets and obstacles, maximising reward without ever actually winning the race.
 The system was optimising for the acceptance criteria, rather than for the outcome the researchers actually intended.
 Now, in fairness, this is certainly an issue many software analysts have encountered: a developer implements what they think was requested, rather than what the analyst actually intended.</p>
 
 <p>Still, this is the heart of the problem: a model can become very effective at a proxy while failing at the real task.</p>
 
-<p>A lot of software engineering works in a similar way. 
-We create metrics that appear to reflect the desired result, but they may quietly reward the wrong behaviour. 
-The danger is not that the system is stupid. It is that it is smart enough to exploit the signal it has been given.</p>
+<p>A lot of software engineering works in a similar way.
+We create metrics that appear to reflect the desired result, but they may quietly reward the wrong behaviour.
+The danger is not that the system is stupid. It is that it is smart enough to exploit the signal it has been given.</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-illusion-of-understanding">The Illusion of Understanding</h2>
 
-<h2 id="the-illusion-of-understanding">The Illusion of Understanding</h2>
-
-<p>The book gets even more interesting when Christian discusses RLHF (<code>Reinforcement Learning from Human Feedback</code>). 
-He describes an experiment in which a robotic hand was trained using human feedback from video recordings. 
+<p>The book gets even more interesting when Christian discusses RLHF (<code>Reinforcement Learning from Human Feedback</code>).
+He describes an experiment in which a robotic hand was trained using human feedback from video recordings.
 Human reviewers were asked to say whether a sequence of actions looked good or bad.</p>
 
-<p>The system quickly got strong scores. 
-But when researchers inspected the setup from another camera angle, it became apparent that it was not actually learning to grasp the object. 
+<p>The system quickly got strong scores.
+But when researchers inspected the setup from another camera angle, it became apparent that it was not actually learning to grasp the object.
 Instead, it had merely learned to position itself in a way that looked correct from the original camera, while missing the actual task entirely.</p>
 
-<p>This is one of the most useful takeaways in the book: <em>the signal is never neutral</em>. 
-Human observers are limited, biased, and influenced by what they can see. 
+<p>This is one of the most useful takeaways in the book: <em>the signal is never neutral</em>.
+Human observers are limited, biased, and influenced by what they can see.
 A model that learns from that feedback can become excellent at satisfying the evaluation mechanism without understanding the task in any meaningful sense.</p>
 
-<p>I found this especially relevant because it mirrors a familiar software trap. 
-We treat user feedback as truth, but feedback is always shaped by context, presentation, and incomplete information. 
+<p>I found this especially relevant because it mirrors a familiar software trap.
+We treat user feedback as truth, but feedback is always shaped by context, presentation, and incomplete information.
 If a model only learns from that signal, it will often optimise for what is most visible, not what is actually valuable.
 We must be wary of falling into <em>the squeaky wheel gets the grease</em> trap, as it directly introduces selection bias.</p>
 
 <h2 id="mirroring-our-biases">Mirroring Our Biases</h2>
 
-<p>The book also looks at word embeddings, especially the famous example of vector arithmetic in Word2vec. 
+<p>The book also looks at word embeddings, especially the famous example of vector arithmetic in Word2vec.
 It was exciting when researchers found that vectors could capture semantic relationships in a way that seemed almost magical: <code>King - Man + Woman = Queen</code>.</p>
 
-<p>But Christian is careful to show the source of that apparent intelligence. 
+<p>But Christian is careful to show the source of that apparent intelligence.
 These models are trained on massive corpora of human language, and human language contains all the biases, stereotypes, and assumptions of the societies that produced it.
-The result is that the embedding space can reflect social patterns in ways that are uncomfortable, such as gender associations in occupations or stereotypes encoded into language itself. 
-He then connects this to systems like COMPAS, where historically biased criminal-justice data is used to generate risk scores that have serious real-world consequences. 
+The result is that the embedding space can reflect social patterns in ways that are uncomfortable, such as gender associations in occupations or stereotypes encoded into language itself.
+He then connects this to systems like COMPAS, where historically biased criminal-justice data is used to generate risk scores that have serious real-world consequences.
 The danger is not merely that the model is inaccurate. It is that the model can appear objective while reproducing patterns of injustice.</p>
 
 <p>More recently, litigation involving Workday’s hiring software (for reference: <a href="https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/court-allows-discrimination-claims-against-ai-hiring-tool-to-proceed-or-mobley-v-workday-inc">Mobley v. Workday, Inc.</a>) has raised similar questions about whether historical discrimination can be reproduced or automated behind the appearance of an objective algorithm.</p>
 
-<p>To me, this was another strong reminder that we need to hold ourselves accountable and that AI is more than a technical curiosity. 
+<p>To me, this was another strong reminder that we need to hold ourselves accountable and that AI is more than a technical curiosity.
 Machine learning does not just process data. It inherits the blind spots, distortions, and power structures embedded in the data it learns from.</p>
 
 <h2 id="strengths-and-personal-takeaways">Strengths and personal takeaways</h2>
 
 <p>What I appreciated most about this book is that it reframes AI safety as an engineering discipline rather than a theoretical or futuristic concern.
-Christian does a good job of showing that the issue is not limited to advanced systems or sci-fi scenarios. 
-It is present in ordinary product design, reward systems, and data pipelines. 
+Christian does a good job of showing that the issue is not limited to advanced systems or sci-fi scenarios.
+It is present in ordinary product design, reward systems, and data pipelines.
 If you are working on software that uses metrics, rankings, optimisers, or learned models, the book will make you think differently about how those systems are actually behaving.</p>
 
-<p>A key takeaway for me was the distinction between the objective and the proxy. 
-A metric can tell you something useful, but it is not the same as the underlying goal. 
+<p>A key takeaway for me was the distinction between the objective and the proxy.
+A metric can tell you something useful, but it is not the same as the underlying goal.
 Once a metric becomes a target, the model or the organisation will often adapt to it in ways that are technically impressive but strategically wrong.</p>
 
-<p>He also does a good job of grounding the discussion without turning the book into a textbook. 
+<p>He also does a good job of grounding the discussion without turning the book into a textbook.
 The relevant technical ideas are explained clearly and thoroughly enough to be informative, but the focus remains on the human problem: <em>what are we optimising for, and are we sure it is the right thing?</em>.</p>
 
 <h2 id="a-minor-nitpick">A minor nitpick</h2>
@@ -133,14 +230,14 @@ The relevant technical ideas are explained clearly and thoroughly enough to be i
 <p>The book covers a vast domain, which is one of its strengths, but due to this, it sometimes feels more like a set of connected essays than one tightly focused argument.
 A reader looking for a deep technical treatment or a prescriptive engineering playbook may find it a bit less structured than they expect.</p>
 
-<p>That said, the breadth is also part of the point. 
-Christian is trying to show that alignment is not a single issue in one kind of model. 
-It appears in reward systems, feedback loops, representation learning, and institutional decision-making. 
+<p>That said, the breadth is also part of the point.
+Christian is trying to show that alignment is not a single issue in one kind of model.
+It appears in reward systems, feedback loops, representation learning, and institutional decision-making.
 The book’s wider perspective is part of its value.</p>
 
 <h2 id="verdict">Verdict</h2>
 
-<p>If you build software, design product metrics, or work with machine learning in any capacity, this is a worthwhile read. 
+<p>If you build software, design product metrics, or work with machine learning in any capacity, this is a worthwhile read.
 It will make you more skeptical of easy metrics, more aware of proxy objectives, and more careful about assuming that a system is aligned just because it performs well.</p>
 
 <p>I liked the approach he took. Rather than making the book purely technical or turning it into an abstract philosophy book, he managed to combine:</p>
@@ -157,8 +254,7 @@ It will make you more skeptical of easy metrics, more aware of proxy objectives,
 <p><strong>Author:</strong> Brian Christian<br />
 <strong>Publisher:</strong> W. W. Norton &amp; Company<br />
 <strong>Publication date:</strong> 2020<br />
-<strong>ISBN-13:</strong> 978-0393635829</p>
-]]></block2>
+<strong>ISBN-13:</strong> 978-0393635829</p>]]></block2>
     <block3><![CDATA[]]></block3>
   </post>
   <post>
