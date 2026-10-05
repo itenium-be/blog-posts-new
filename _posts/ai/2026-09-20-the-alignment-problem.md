@@ -30,12 +30,15 @@ Anyone who has worked in software or product development knows Goodhart’s Law 
 * You optimise for engagement, and you end up with notifications designed to keep people glued to the app.
 
 Brian Christian’s _The Alignment Problem_ takes that familiar challenge and applies it to machine learning in a compelling manner.
+{: .hide-from-excerpt}
 
 The core question Christian explores is not whether AI will become sentient or take over the world, but rather the much more practical and pertinent: _How do we stop intelligent systems from optimising exactly for what we measured, even when that is not what we actually intended?_
+{: .hide-from-excerpt}
 
 As a software engineer, this is a challenge I think about frequently. Like many of us, I am still trying to figure out where AI fits into my workflow and how to use it responsibly.
 It is easy to assume that if we can define a clear objective, we can build a system that achieves it.
 Christian shows that the real difficulty is often not in defining the objective, but in making sure the objective is the right one.
+{: .hide-from-excerpt}
 
 <!--more-->
 

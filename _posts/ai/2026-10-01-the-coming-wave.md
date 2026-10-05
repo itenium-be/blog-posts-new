@@ -26,8 +26,10 @@ toc:
 Having recently finished Brian Christian’s *The Alignment Problem*, which looks closely at the micro-level mechanics of model safety and reward metrics, I picked up Mustafa Suleyman’s *The Coming Wave* as a natural follow-up. Where Christian concentrates on aligning individual algorithms, Suleyman zooms out: how society can contain and govern these systems once they proliferate globally.
 
 Suleyman, co-founder of DeepMind and Inflection AI and currently CEO of Microsoft AI, offers an insider’s warning about the rapid convergence of artificial intelligence and synthetic biology. His thesis is straightforward: we are on the edge of an unprecedented technological surge that is, by its very nature, extraordinarily difficult to control.
+{: .hide-from-excerpt}
 
 From an engineering standpoint, the book shifts the focus from app-level security to supply chain risks across the tech stack. It asks a practical question: as dual-use capabilities become widely accessible, how do open societies mitigate potential misuse without undermining open source?
+{: .hide-from-excerpt}
 
 <!--more-->
 
