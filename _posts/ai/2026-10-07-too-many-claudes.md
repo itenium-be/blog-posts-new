@@ -18,7 +18,7 @@ img:
   prompt: "Isometric vintage railway switchyard seen from above, nine parallel tracks each carrying a small steam locomotive, all tracks converging through a single signal box into one main line, a signalman in the tower pulling levers, sepia and brass tones, technical engraving style with soft watercolor wash, 19th century blueprint aesthetic"
   origin: Midjourney
 categories: ai
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun,hacking,book-review,synology,mongo]
+tags: [git,tech-talk]
 interesting:
   - url: https://frontmania.com/
     desc: "FrontMania Utrecht"
@@ -50,7 +50,7 @@ A week earlier at itenium, we did a technical session on "The Dark Factory". Whi
 - Worktrees & Merge Queues: Scaling up the Claude Code chat windows.
 - A Graph + A Loop: Do the two previous steps and a Dark Factory suddenly isn't so far fetched anymore.
 
-git-worktrees-dark-factory.png
+{% include post/image.html file="git-worktrees-dark-factory.png" alt="The Dark Factory: three talks, one session" %}
 
 
 All three decks are on [dev.itenium.be/Presentations](https://dev.itenium.be/Presentations/).
@@ -60,14 +60,14 @@ All three decks are on [dev.itenium.be/Presentations](https://dev.itenium.be/Pre
 
 Before the AI craze I lived happily in my terminal:
 
-git-worktrees-before.png
+{% include post/image.html file="git-worktrees-before.png" alt="My terminals before Claude" %}
 
 
-Then Claude entered the scene. `create-react-app`, which was already deprecated for years, finally went out the window for `bun` and `vite` as Claude modernized all my projects and helped me set up all the backpressure and guardrails. For me, live became better still: I was delivering more while simultaneously doing the things I have been postponing for years, you know stuff like replacing `moment.js`...
+Then Claude entered the scene. `create-react-app`, which was already deprecated for years, finally went out the window for `bun` and `vite` as Claude modernized all my projects and helped me set up all the backpressure and guardrails. For me, life became better still: I was delivering more while simultaneously doing the things I had been postponing for years, you know stuff like replacing `moment.js`...
 
 ## Two Claudes, One Checkout
 
-Once I started talking with multiple Claudes, things started breaking
+Once I started talking with multiple Claudes, things started breaking:
 
 - A Claude doing a `checkout` or a `commit`, interfering with the work of another Claude
 - Trying to verify one Claude's work while the others trigger compilation errors and hot reloads
@@ -79,7 +79,7 @@ They usually noticed and fixed it. No harm done, but it was wasteful in both tim
 
 You already have the fix. `git worktree` shipped over a decade ago:
 a branch checked out in its own directory. They share the same `.git` folder,
-making is vastly superior over a separate clone.
+making it vastly superior to a separate clone.
 
 ```bash
 git worktree add ../my-feature -b feature
