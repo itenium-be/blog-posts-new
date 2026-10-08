@@ -1,5 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Too Many Claudes</title>
+    <author>Wouter Van Schandevijl</author>
+    <subTitle>Git worktrees and merge queues at FrontMania Utrecht 2026</subTitle>
+    <date>2026-10-07T00:00:00+00:00</date>
+    <print_date>2026-10-07T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/ai/too-many-claudes/</url>
+    <category>ai</category>
+    <tags>git,tech-talk</tags>
+    <desc>Two coding agents in one checkout is a data race. A lightning talk at FrontMania on git worktrees, merge queues and what happens when the queue itself becomes the bottleneck. Plus the full three-part version we did at itenium 😎</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/too-many-claudes-big.png</url>
+      <origin>Midjourney</origin>
+      <prompt>Wide cinematic matte painting of a fairytale gothic castle at dusk, a single narrow drawbridge leading in, dozens of small brass clockwork robots each carrying a glowing scroll queueing single-file across a misty moat, one robot gatekeeper stamping scrolls at the gate, warm lantern light against cold blue fog, painterly detail, Studio Ghibli meets Gothic illustration, teal and amber palette --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/too-many-claudes-sm.png</url>
+      <origin>Midjourney</origin>
+      <prompt>Isometric vintage railway switchyard seen from above, nine parallel tracks each carrying a small steam locomotive, all tracks converging through a single signal box into one main line, a signalman in the tower pulling levers, sepia and brass tones, technical engraving style with soft watercolor wash, 19th century blueprint aesthetic</prompt>
+    </img>
+    <excerpt><![CDATA[<p>The FrontMania conference was pretty big on AI, I guess that’s to be expected in 2026, the state of IT being as it is…<br />
+I was there to see what others are doing with AI and to give a lightning talk myself, which was also an AI session, disguised as a git talk: “Git Worktrees”.</p>]]></excerpt>
+      <block1><![CDATA[<h2 id="my-lightning-talk">My Lightning Talk</h2>
+
+<p>When submitting my sessions, I also submitted “Git Worktrees” as a lightning talk but it didn’t mention anywhere how many minutes that would be. A lightning talk is 10 minutes right… Nope, turns out that at FrontMania, it’s 20!</p>
+
+<p>No one is waiting for a deep-dive on <code>git worktree</code> (I think?), so I decided to also cover
+merge queues which was, for me, the next bottleneck when working with multiple agents. This decision also squarely positioned the talk in the AI corner 😉</p>]]></block1>
+      <block2><![CDATA[<h2 id="the-dark-factory">The Dark Factory</h2>
+
+<p>A week earlier at itenium, we did a technical session on “The Dark Factory”. Which is basically three lightning talks combined.</p>
+
+<ul>
+  <li>Guardrails &amp; Backpressure: The boring part. Probably the most important part.</li>
+  <li>Worktrees &amp; Merge Queues: Scaling up the Claude Code chat windows.</li>
+  <li>A Graph + A Loop: Do the two previous steps and a Dark Factory suddenly isn’t so far fetched anymore.</li>
+</ul>
+
+<figure class="imagewrapper" style="max-width: ">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/git-worktrees-dark-factory.png" alt="The Dark Factory: three talks, one session" title="" class="img-responsive" />
+
+    
+</figure>
+
+<p>All three decks are on <a href="https://dev.itenium.be/Presentations/">dev.itenium.be/Presentations</a>.</p>
+
+<h2 id="life-was-good">Life Was Good</h2>
+
+<p>Before the AI craze I lived happily in my terminal:</p>
+
+<figure class="imagewrapper" style="max-width: ">
+    <img src="https://itenium-be.github.io/blog-posts-new/assets/blog-images/git-worktrees-before.png" alt="My terminals before Claude" title="" class="img-responsive" />
+
+    
+</figure>
+
+<p>Then Claude entered the scene. <code>create-react-app</code>, which was already deprecated for years, finally went out the window for <code>bun</code> and <code>vite</code> as Claude modernized all my projects and helped me set up all the backpressure and guardrails. For me, life became better still: I was delivering more while simultaneously doing the things I had been postponing for years, you know stuff like replacing <code>moment.js</code>…</p>
+
+<h2 id="two-claudes-one-checkout">Two Claudes, One Checkout</h2>
+
+<p>Once I started talking with multiple Claudes, things started breaking:</p>
+
+<ul>
+  <li>A Claude doing a <code>checkout</code> or a <code>commit</code>, interfering with the work of another Claude</li>
+  <li>Trying to verify one Claude’s work while the others trigger compilation errors and hot reloads</li>
+</ul>
+
+<p>They usually noticed and fixed it. No harm done, but it was wasteful in both time and tokens.</p>
+
+<h2 id="enter-git-worktree">Enter git worktree</h2>
+
+<p>You already have the fix. <code>git worktree</code> shipped over a decade ago:
+a branch checked out in its own directory. They share the same <code>.git</code> folder,
+making it vastly superior to a separate clone.</p>
+
+<pre><code class="language-bash">git worktree add ../my-feature -b feature
+git worktree list
+git worktree remove ../my-feature
+</code></pre>
+
+<p>A useful thing I learned while creating the session: a <code>.worktreeinclude</code>
+will copy files (think your <code>.env</code>) to the worktree. It’s part of the Claude Code
+harness or can be installed as a git extension.</p>
+
+<p>At this point you need to move away from <code>npm</code> as you don’t want to be waiting
+on an npm install after each worktree creation… I picked Bun, but switching to <code>pnpm</code>
+solves the problem as well, without requiring code changes. They both hardlink
+the dependencies in your <code>node_modules</code> making installation a matter of seconds.</p>
+
+<h2 id="main-has-moved">Main Has Moved</h2>
+
+<p>Then things started going out of control. Two Claudes became four, then four became six.</p>
+
+<p>And a new bottleneck showed up: A feature is ready on its worktree, the agent wants to merge to local main but main moved. So the agent does a rebase, build, test… and after all that main moved again. And again. At some point I was looking at 4 agents in exactly that loop…</p>
+
+<p>Until they just gave up, sat there doing nothing and waited for me to give the go ahead “you can merge now”. Not very efficient.</p>
+
+<h2 id="the-merge-queue">The Merge Queue</h2>
+
+<p>The fix is to serialize the landing. Once an agent is done, it drops its branch
+on the merge queue and moves on to something else.</p>
+
+<p>Not a new idea: big monorepo teams hit this long before AI.
+<a href="https://github.com/graydon/bors">Bors</a> solved it in 2013,
+GitHub has <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue">merge queues</a>
+and GitLab calls it <a href="https://docs.gitlab.com/ci/pipelines/merge_trains/">merge trains</a>.</p>
+
+<p>I’m on GitHub but these were private repos and in that case, merge queues are a paid feature… It was also around that time that I read <a href="https://yegge.ai/essays/fences-not-sandboxes/">Fences, not Sandboxes</a> by Steve Yegge and instead of just building a merge queue, in true AI Scope Explosion-style, I suddenly found myself building a Dark Factory.</p>]]></block2>
+    <block3><![CDATA[
+<h1>Extras</h1>
+<p><b>Other interesting reads</b></p>
+<ul>
+        <li><a href="https://frontmania.com/">FrontMania Utrecht</a></li>
+        <li><a href="https://yegge.ai/essays/fences-not-sandboxes/">Steve Yegge: Fences, not Sandboxes</a></li>
+        <li><a href="https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f">Steve Yegge: Welcome to the Wasteland: A Thousand Gas Towns</a></li>
+</ul>]]></block3>
+  </post>
+  <post>
     <title>Book Review: The Coming Wave by Mustafa Suleyman</title>
     <author>Simon Verhoeven</author>
     <subTitle>From model safety to global containment: why controlling frontier tech is the 21st century’s existential test</subTitle>
