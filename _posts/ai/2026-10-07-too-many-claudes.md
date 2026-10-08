@@ -8,7 +8,7 @@ desc: >
   Two coding agents in one checkout is a data race. A lightning talk
   at FrontMania on git worktrees, merge queues and what happens when
   the queue itself becomes the bottleneck. Plus the full three-part
-  version we did at itenium and the other sessions I caught. 😎
+  version we did at itenium 😎
 bigimg:
   url: too-many-claudes-big.png
   prompt: "Wide cinematic matte painting of a fairytale gothic castle at dusk, a single narrow drawbridge leading in, dozens of small brass clockwork robots each carrying a glowing scroll queueing single-file across a misty moat, one robot gatekeeper stamping scrolls at the gate, warm lantern light against cold blue fog, painterly detail, Studio Ghibli meets Gothic illustration, teal and amber palette --ar 4:1"
@@ -38,7 +38,7 @@ I was there to see what others are doing with AI and to give a lightning talk my
 When submitting my sessions, I also submitted "Git Worktrees" as a lightning talk but it didn't mention anywhere how many minutes that would be. A lightning talk is 10 minutes right... Nope, turns out that at FrontMania, it's 20!
 
 No one is waiting for a deep-dive on `git worktree` (I think?), so I decided to also cover
-merge queues which was, for me, the next bottleneck when working with multiple agents. This decision also squarely positioned the talk in the AI corner ;)
+merge queues which was, for me, the next bottleneck when working with multiple agents. This decision also squarely positioned the talk in the AI corner 😉
 
 <!--block1-->
 
