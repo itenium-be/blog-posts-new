@@ -260,7 +260,7 @@ And the API surface is where cost and performance live.</p>
 <h2 id="so-not-looking-at-the-code-then">So not looking at the code then?</h2>
 
 <p>Aside from reading the security, architecture and API surface code before a handoff,
-or before a larger changes goes to production, yeah…<br />
+or before a larger change goes to production, yeah…<br />
 And that is a good idea? Uhm, I sure hope so, because, one sec:</p>
 
 <blockquote>
