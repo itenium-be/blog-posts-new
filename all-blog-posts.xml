@@ -13,16 +13,16 @@
     <bigimg>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/human-code-review-will-die-in-2026-big.png</url>
       <origin>Midjourney</origin>
-      <prompt>Wide cinematic matte painting of a moonlit gothic graveyard on a hill, crooked tombstones with jack-o-lanterns, a bat and ghostly wisps, rows of tall lit candles forming a glowing path between the graves, a small brass robot walking the path carrying a lantern, iron fence in the foreground, fog, painterly Tim Burton meets Studio Ghibli style, deep purple, teal and candle-amber palette --ar 4:1</prompt>
+      <prompt>Cinematic dark bedroom at night, alarm clock glowing 3:00, a smartphone buzzing on the nightstand, a human fast asleep under the covers, a small robot sitting on the edge of the bed wide awake with glowing eyes reading a laptop, cold blue moonlight through the window mixed with warm screen glow, moody film still, teal and amber palette --ar 4:1</prompt>
     </bigimg>
     <img>
       <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/human-code-review-will-die-in-2026-sm.png</url>
       <origin>Midjourney</origin>
-      <prompt>Humorous editorial illustration of a tiny developer at a desk buried under an enormous paper scroll unrolling across the whole room and out the window, the scroll covered in green and red diff lines, coffee cups stacked high, a magnifying glass dropped on the floor, bold outlines, flat bright colors, mid-century cartoon style, green, red and cream palette</prompt>
+      <prompt>Playful editorial illustration of a circle of developers and robots in an office tossing a glowing steaming hot potato to each other, everyone flinching, one robot wearing oven mitts, motion lines, bright flat colors, bold outlines, humorous mid-century cartoon style, warm orange and teal palette</prompt>
     </img>
     <excerpt><![CDATA[<p>During my <a href="/blog/ai/too-many-claudes/">lightning talk at FrontMania</a> I said out loud
 what I thought the other talks seemed to be sugarcoating:
-<strong>Human code review will die in 2026.</strong>. Okay maybe 2027, since 2026 ends in 2 months 😉</p>]]></excerpt>
+<strong>Human code review will die in 2026.</strong> Okay maybe 2027, since 2026 ends in 2 months 😉</p>]]></excerpt>
       <block1><![CDATA[<h2 id="the-hot-potato">The Hot Potato</h2>
 
 <p>“We’re not reading <em>all</em> the lines anymore.” came up talk after talk.</p>
@@ -46,7 +46,7 @@ you yourself didn’t even bother…</p>
 
 <h2 id="the-ai-slop-machine">The AI Slop Machine</h2>
 
-<p>However, you can’t just drop code review and just start shipping it all.</p>
+<p>However, you can’t just drop code review and start shipping it all.</p>
 
 <p>In my talk this is assumed to be already in place: backpressure and guardrails.<br />
 It’s the boring part. It’s the prerequisite, a lot of initial setup and then continuous ongoing tweaking.</p>
@@ -146,7 +146,8 @@ if (false) {}
 <h3 id="others">Others</h3>
 
 <p>If a CVE is found in one of your dependencies, it’s an error. This is a tricky one because every time you open a project
-there is a chance the build is broken because something was discovered.</p>
+there is a chance the build is broken because something was discovered. At that point, I just ask the agent to fix it but using
+Renovate/Dependabot would be a better solution there.</p>
 
 <p>Stop the AI from committing API keys: add <code>gitleaks</code>.</p>
 
@@ -154,7 +155,7 @@ there is a chance the build is broken because something was discovered.</p>
 deterministically:</p>
 <ul>
   <li>Put a few thousand, million, … records in the database and run tests against the API.</li>
-  <li>Run many “random” Playwright sessions in parallel and see if how snappy the UI remains.</li>
+  <li>Run many “random” Playwright sessions in parallel and see how snappy the UI remains.</li>
 </ul>
 
 <h2 id="guarding-the-guardrails">Guarding The Guardrails</h2>
@@ -183,11 +184,11 @@ in a certain scenario. Uhoh…</p>
 
 <p>A balance needs to be struck between “getting shit done” vs “it going off the rails”.</p>
 
-<p>So do we need something like:</p>
+<p>So we need something like:</p>
 <ul>
-  <li>You can turn off these rules <code>&lt;list&gt;</code> as you see fit</li>
-  <li>You are not allowed to turn off these rules <code>&lt;list&gt;</code> no matter what</li>
-  <li>You are allowed to turn these rules off <code>&lt;list&gt;</code> but only with explicit approval of a human</li>
+  <li>You can turn off these rules as you see fit: <code>unicorn/no-null</code>, <code>unicorn/prevent-abbreviations</code></li>
+  <li>You are not allowed to turn off these rules no matter what: <code>@typescript-eslint/no-explicit-any</code>, <code>no-eval</code></li>
+  <li>You are allowed to turn these rules off but only with explicit approval of a human: <code>react-hooks/exhaustive-deps</code></li>
 </ul>
 
 <p>And then implement deterministic checks, gates and ratchets for that.</p>
@@ -248,14 +249,18 @@ it shouldn’t be a third prompt, it should be a guardrail, so it can’t recur:
   </tbody>
 </table>
 
-<p>Claude is bad at growing an architecture and at security. I’ve been burned by both.
+<p>Claude is bad at security and at growing an architecture. I’ve been burned by both:
+a homelab service that was supposed to be <code>.lan</code>-only turned out to be publicly reachable,
+and on <a href="/blog/ai/meridian-a-scroll-driven-memory-timeline/">Meridian</a>,
+a very simple app, I ended up dictating the architecture because Claude kept running in circles.
 And the API surface is where cost and performance live.</p>
 
 <p>But how some function or class is implemented? <code>/care</code>.</p>
 
 <h2 id="so-not-looking-at-the-code-then">So not looking at the code then?</h2>
 
-<p>Aside from some periodic checks on security, architecture and API surface, yeah…<br />
+<p>Aside from reading the security, architecture and API surface code before a handoff,
+or before a larger changes goes to production, yeah…<br />
 And that is a good idea? Uhm, I sure hope so, because, one sec:</p>
 
 <blockquote>
