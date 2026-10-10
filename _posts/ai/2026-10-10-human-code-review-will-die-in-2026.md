@@ -10,11 +10,11 @@ desc: >
   build the guardrails that make it possible.
 bigimg:
   url: human-code-review-will-die-in-2026-big.png
-  prompt: "Wide cinematic matte painting of a moonlit gothic graveyard on a hill, crooked tombstones with jack-o-lanterns, a bat and ghostly wisps, rows of tall lit candles forming a glowing path between the graves, a small brass robot walking the path carrying a lantern, iron fence in the foreground, fog, painterly Tim Burton meets Studio Ghibli style, deep purple, teal and candle-amber palette --ar 4:1"
+  prompt: "Cinematic dark bedroom at night, alarm clock glowing 3:00, a smartphone buzzing on the nightstand, a human fast asleep under the covers, a small robot sitting on the edge of the bed wide awake with glowing eyes reading a laptop, cold blue moonlight through the window mixed with warm screen glow, moody film still, teal and amber palette --ar 4:1"
   origin: Midjourney
 img:
   url: human-code-review-will-die-in-2026-sm.png
-  prompt: "Humorous editorial illustration of a tiny developer at a desk buried under an enormous paper scroll unrolling across the whole room and out the window, the scroll covered in green and red diff lines, coffee cups stacked high, a magnifying glass dropped on the floor, bold outlines, flat bright colors, mid-century cartoon style, green, red and cream palette"
+  prompt: "Playful editorial illustration of a circle of developers and robots in an office tossing a glowing steaming hot potato to each other, everyone flinching, one robot wearing oven mitts, motion lines, bright flat colors, bold outlines, humorous mid-century cartoon style, warm orange and teal palette"
   origin: Midjourney
 categories: ai
 tags: [testing,tech-talk]
@@ -32,7 +32,7 @@ extras:
 
 During my [lightning talk at FrontMania]({% post_url ai/2026-10-07-too-many-claudes %}) I said out loud
 what I thought the other talks seemed to be sugarcoating:
-**Human code review will die in 2026.**. Okay maybe 2027, since 2026 ends in 2 months 😉
+**Human code review will die in 2026.** Okay maybe 2027, since 2026 ends in 2 months 😉
 
 
 <!--more-->
@@ -58,7 +58,7 @@ you yourself didn't even bother...
 
 ## The AI Slop Machine
 
-However, you can't just drop code review and just start shipping it all.
+However, you can't just drop code review and start shipping it all.
 
 In my talk this is assumed to be already in place: backpressure and guardrails.  
 It's the boring part. It's the prerequisite, a lot of initial setup and then continuous ongoing tweaking.
@@ -159,14 +159,15 @@ if (false) {}
 ### Others
 
 If a CVE is found in one of your dependencies, it's an error. This is a tricky one because every time you open a project
-there is a chance the build is broken because something was discovered.
+there is a chance the build is broken because something was discovered. At that point, I just ask the agent to fix it but using
+Renovate/Dependabot would be a better solution there.
 
 Stop the AI from committing API keys: add `gitleaks`.
 
 Performance: this is something I've yet to implement but it's something that can be guarded
 deterministically:
 - Put a few thousand, million, ... records in the database and run tests against the API.
-- Run many "random" Playwright sessions in parallel and see if how snappy the UI remains.
+- Run many "random" Playwright sessions in parallel and see how snappy the UI remains.
 
 
 
@@ -192,10 +193,10 @@ in a certain scenario. Uhoh...
 
 A balance needs to be struck between "getting shit done" vs "it going off the rails".
 
-So do we need something like:
-- You can turn off these rules `<list>` as you see fit
-- You are not allowed to turn off these rules `<list>` no matter what
-- You are allowed to turn these rules off `<list>` but only with explicit approval of a human
+So we need something like:
+- You can turn off these rules as you see fit: `unicorn/no-null`, `unicorn/prevent-abbreviations`
+- You are not allowed to turn off these rules no matter what: `@typescript-eslint/no-explicit-any`, `no-eval`
+- You are allowed to turn these rules off but only with explicit approval of a human: `react-hooks/exhaustive-deps`
 
 And then implement deterministic checks, gates and ratchets for that.
 
@@ -235,14 +236,18 @@ The backend? Uhm... I'm not sure. But I know I do care about:
 | API Surface  | How chatty or chunky are we?        |
 | Architecture | Can we keep building at this speed? |
 
-Claude is bad at growing an architecture and at security. I've been burned by both.
+Claude is bad at security and at growing an architecture. I've been burned by both:
+a homelab service that was supposed to be `.lan`-only turned out to be publicly reachable,
+and on [Meridian]({% post_url ai/2026-05-23-meridian-a-scroll-driven-memory-timeline %}),
+a very simple app, I ended up dictating the architecture because Claude kept running in circles.
 And the API surface is where cost and performance live.
 
 But how some function or class is implemented? `/care`.
 
 ## So not looking at the code then?
 
-Aside from some periodic checks on security, architecture and API surface, yeah...  
+Aside from reading the security, architecture and API surface code before a handoff,
+or before a larger changes goes to production, yeah...  
 And that is a good idea? Uhm, I sure hope so, because, one sec:
 
 > "Claude, how many lines of code has this Dark Factory created so far?"  
