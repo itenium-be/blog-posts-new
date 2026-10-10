@@ -9,11 +9,11 @@ desc: >
   are here. What will our job look like in a few years...
 bigimg:
   url: frontmania-panel-discussion-big.png
-  prompt: "Cinematic dark bedroom at night, alarm clock glowing 3:00, a smartphone buzzing on the nightstand, a human fast asleep under the covers, a small robot sitting on the edge of the bed wide awake with glowing eyes reading a laptop, cold blue moonlight through the window mixed with warm screen glow, moody film still, teal and amber palette --ar 4:1"
+  prompt: "Wide cinematic film still of four developers on a dimly lit conference stage peering through binoculars into a thick fog bank rolling over the audience, a road stretching from the stage into the fog and vanishing after a few meters, a small robot already walking ahead into the mist carrying a lantern, moody stage lighting, teal and amber palette --ar 4:1"
   origin: Midjourney
 img:
   url: frontmania-panel-discussion-sm.png
-  prompt: "Playful editorial illustration of a circle of developers and robots in an office tossing a glowing steaming hot potato to each other, everyone flinching, one robot wearing oven mitts, motion lines, bright flat colors, bold outlines, humorous mid-century cartoon style, warm orange and teal palette"
+  prompt: "Humorous editorial illustration of a developer fortune teller squinting into a crystal ball that only shows a few calendar pages, curious robots peeking over their shoulder, bold outlines, flat bright colors, mid-century cartoon style, warm orange and teal palette"
   origin: Midjourney
 categories: ai
 tags: [tech-talk]
