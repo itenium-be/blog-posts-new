@@ -19,6 +19,7 @@ img:
   origin: Midjourney
 categories: ai
 tags: [git,tech-talk]
+series: frontmania-2026
 interesting:
   - url: https://frontmania.com/
     desc: "FrontMania Utrecht"
@@ -27,6 +28,9 @@ interesting:
   - url: https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f
     desc: "Steve Yegge: Welcome to the Wasteland: A Thousand Gas Towns"
 ---
+
+{% include post/image.html file="too-many-claudes-frontmania.jpg" alt="The FrontMania crew behind the light-up letters" desc="FrontMania Utrecht 2026 -- Spooky Edition" maxWidth="800px" %}
+{: .hide-from-excerpt}
 
 The FrontMania conference was pretty big on AI, I guess that's to be expected in 2026, the state of IT being as it is...  
 I was there to see what others are doing with AI and to give a lightning talk myself, which was also an AI session, disguised as a git talk: "Git Worktrees".
@@ -99,7 +103,9 @@ the dependencies in your `node_modules` making installation a matter of seconds.
 
 ## Main Has Moved
 
-Then things started going out of control. Two Claudes became four, then four became six.
+Then things started going out of control. Two Claudes became four, then four became six and before long:
+
+{% include post/image.html file="too-many-claudes-took-over.png" alt="My terminals after Claude" %}
 
 And a new bottleneck showed up: A feature is ready on its worktree, the agent wants to merge to local main but main moved. So the agent does a rebase, build, test... and after all that main moved again. And again. At some point I was looking at 4 agents in exactly that loop...
 
@@ -117,3 +123,10 @@ GitHub has [merge queues](https://docs.github.com/en/repositories/configuring-br
 and GitLab calls it [merge trains](https://docs.gitlab.com/ci/pipelines/merge_trains/).
 
 I'm on GitHub but these were private repos and in that case, merge queues are a paid feature... It was also around that time that I read [Fences, not Sandboxes](https://yegge.ai/essays/fences-not-sandboxes/) by Steve Yegge and instead of just building a merge queue, in true AI Scope Explosion-style, I suddenly found myself building a Dark Factory.
+
+
+## The Gifts
+
+I got gifts! That's what I'm doing this for 😀
+
+{% include post/image.html file="too-many-claudes-gifts.jpg" alt="FrontMania cap and thank-you gift next to the slides" desc="A FrontMania cap and salted caramel chocolate!" maxWidth="700px" %}
