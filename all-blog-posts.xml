@@ -45,7 +45,7 @@
 <p>Moving an existing project to a new toolchain always carries risk. Vite+ includes a <code>vp migrate</code> tool to automate the move from ESLint and Prettier. It moves the configuration to the Ox tools, updates VS Code settings, and adds pre-commit hooks. This works well for standard setups, but older projects with custom ESLint plugins will still need manual fixes after migration.</p>
 
 <h2 id="next-steps">Next Steps</h2>
-<p>If you want to evaluate the toolchain without risking an existing codebase, the easiest approach is to scaffold a new project. You can install the CLI globally and run <code>vp create vit</code> in your terminal to set up a configured baseline environment. Full installation instructions and framework-specific guides are available in the official documentation.</p>
+<p>If you want to evaluate the toolchain without risking an existing codebase, the easiest approach is to scaffold a new project. You can install the CLI globally and run <code>vp create vite</code> in your terminal to set up a configured baseline environment. Full installation instructions and framework-specific guides are available in the official documentation.</p>
 
 <h2 id="references">References</h2>
 <ul>
