@@ -22,9 +22,7 @@
     <toc>
       <title>Vite+</title>
     </toc>
-    <excerpt><![CDATA[<h1 id="vite-simplifying-the-web-development-toolchain">Vite+: Simplifying the Web Development Toolchain</h1>
-
-<p>Setting up a modern web project usually involves connecting a long list of independent tools. A standard baseline requires ESLint for static analysis, Prettier for formatting, Vitest for testing, and Husky for repository hooks. Combined with environment managers like NVM and package managers like pnpm, this sprawl creates heavy configuration overhead before any real code is written.</p>]]></excerpt>
+    <excerpt><![CDATA[<p>Setting up a modern web project usually involves connecting a long list of independent tools. A standard baseline requires ESLint for static analysis, Prettier for formatting, Vitest for testing, and Husky for repository hooks. Combined with environment managers like NVM and package managers like pnpm, this sprawl creates heavy configuration overhead before any real code is written.</p>]]></excerpt>
       <block1><![CDATA[<p>Vite+ (V+) simplifies this process by pulling the core development lifecycle into one interface, handling linting, formatting, testing, and dependency management. It packages standard development practices into a single toolchain that is faster and easier to maintain.</p>]]></block1>
       <block2><![CDATA[<h2 id="configuration-and-tooling">Configuration and Tooling</h2>
 <p>Vite+ mostly cuts down on configuration files. It replaces isolated files like <code>.eslintrc</code>, <code>.prettierrc</code>, and <code>vitest.config.ts</code> with a single <code>v.config</code> file. This central file controls formatting, static analysis, git hooks, and testing. It also includes project templates for React, Next.js, and Astro, applying the standard conventions for each framework so teams spend less time setting up new repositories.</p>
