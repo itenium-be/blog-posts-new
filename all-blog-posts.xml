@@ -5,8 +5,8 @@
     <subTitle>Replacing configuration sprawl with a single, Rust-powered interface</subTitle>
     <date>2026-11-26T00:00:00+00:00</date>
     <print_date>2026-11-26T00:00:00+00:00</print_date>
-    <url>https://itenium.be/blog/tech/viteplus/</url>
-    <category>tech</category>
+    <url>https://itenium.be/blog/javascript/viteplus/</url>
+    <category>javascript</category>
     <tags>web-dev,vite,tooling,javascript,rust</tags>
     <desc>An overview of how Vite+ (V+) integrates linting, formatting, testing, and dependency management into one streamlined CLI, eliminating modern web dev tool sprawl.</desc>
     <bigimg>
