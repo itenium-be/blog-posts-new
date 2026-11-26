@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog-posts>  <post>
+    <title>Vite+: Simplifying the Web Development Toolchain</title>
+    <author>Simon Verhoeven</author>
+    <subTitle>Replacing configuration sprawl with a single, Rust-powered interface</subTitle>
+    <date>2026-11-26T00:00:00+00:00</date>
+    <print_date>2026-11-26T00:00:00+00:00</print_date>
+    <url>https://itenium.be/blog/tech/viteplus/</url>
+    <category>tech</category>
+    <tags>web-dev,vite,tooling,javascript,rust</tags>
+    <desc>An overview of how Vite+ (V+) integrates linting, formatting, testing, and dependency management into one streamlined CLI, eliminating modern web dev tool sprawl.</desc>
+    <bigimg>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/vite-plus-big.webp</url>
+      <origin>Midjourney</origin>
+      <prompt>Dozens of paper config files (.eslintrc, .prettierrc, vitest.config) swirling in a tornado, funneling down into a single clean glowing document, isometric, cool blue and purple palette, playful vector art --ar 4:1</prompt>
+    </bigimg>
+    <img>
+      <url>https://itenium-be.github.io/blog-posts-new/assets/blog-images/vite-plus-sm.webp</url>
+      <origin>Midjourney</origin>
+      <prompt>A blacksmith&apos;s forge where molten rust-orange metal is hammered into a lightning bolt, sparks flying, deep violet background, dramatic chiaroscuro, painterly fantasy style</prompt>
+    </img>
+    <toc>
+      <title>Vite+</title>
+    </toc>
+    <excerpt><![CDATA[<h1 id="vite-simplifying-the-web-development-toolchain">Vite+: Simplifying the Web Development Toolchain</h1>
+
+<p>Setting up a modern web project usually involves connecting a long list of independent tools. A standard baseline requires ESLint for static analysis, Prettier for formatting, Vitest for testing, and Husky for repository hooks. Combined with environment managers like NVM and package managers like pnpm, this sprawl creates heavy configuration overhead before any real code is written.</p>]]></excerpt>
+      <block1><![CDATA[<p>Vite+ (V+) simplifies this process by pulling the core development lifecycle into one interface, handling linting, formatting, testing, and dependency management. It packages standard development practices into a single toolchain that is faster and easier to maintain.</p>]]></block1>
+      <block2><![CDATA[<h2 id="configuration-and-tooling">Configuration and Tooling</h2>
+<p>Vite+ mostly cuts down on configuration files. It replaces isolated files like <code>.eslintrc</code>, <code>.prettierrc</code>, and <code>vitest.config.ts</code> with a single <code>v.config</code> file. This central file controls formatting, static analysis, git hooks, and testing. It also includes project templates for React, Next.js, and Astro, applying the standard conventions for each framework so teams spend less time setting up new repositories.</p>
+
+<p>Under the hood, Vite+ replaces older JavaScript tools with Rust-based alternatives. OxLint and OxFormat replace ESLint and Prettier; they share the same rules and behaviour but run much faster, speeding up both local development and CI pipelines. It also runs TypeScript checks during the linting phase, removing the need for separate <code>tsc</code> commands and enforcing type safety with less overhead.</p>
+
+<h2 id="standardising-environments">Standardising Environments</h2>
+<p>Getting a whole team on the same Node.js version and package manager is often difficult, but Vite+ handles this natively. Developers use <code>vp install</code>, <code>vp run</code>, and <code>vp outdated</code> as standard commands, whether the project underneath uses npm, pnpm, or bun.</p>
+
+<p>It also removes the need for external tools like NVM. Running <code>vp env pin 22</code> locks the Node.js and package manager versions for the project and automatically updates the <code>engines</code> field in <code>package.json</code>.</p>
+
+<h2 id="quality-assurance-and-cicd">Quality Assurance and CI/CD</h2>
+<p>Strict quality checks matter more now that teams use AI coding assistants, as generated code often introduces subtle formatting or type errors. Vite+ enforces these standards automatically. By default, it runs <code>vp check --fix</code> on staged files to correct formatting and linting errors before a commit. Teams can also configure the tool to block commits entirely if it finds errors.</p>
+
+<p>For larger codebases, Vite+ includes monorepo support. It reads standard workspace structures, such as <code>apps/</code> and <code>packages/</code> folders, and routes commands to specific modules while sharing configuration across the repository.</p>
+
+<p>Because testing, linting, and formatting run through one tool, a complete CI pipeline needs very little configuration in its YAML file. Testing runs through Vest, a custom wrapper for Vitest, and the <code>vp test</code> command includes native coverage reporting and watch mode. A VS Code extension provides OxLint analysis and on-save formatting directly in the editor.</p>
+
+<h2 id="migration">Migration</h2>
+<p>Moving an existing project to a new toolchain always carries risk. Vite+ includes a <code>vp migrate</code> tool to automate the move from ESLint and Prettier. It moves the configuration to the Ox tools, updates VS Code settings, and adds pre-commit hooks. This works well for standard setups, but older projects with custom ESLint plugins will still need manual fixes after migration.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+<p>If you want to evaluate the toolchain without risking an existing codebase, the easiest approach is to scaffold a new project. You can install the CLI globally and run <code>vp create vit</code> in your terminal to set up a configured baseline environment. Full installation instructions and framework-specific guides are available in the official documentation.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://viteplus.dev/guide">Vite+ Guide and Documentation</a></li>
+  <li><a href="https://github.com/voidzero-dev/vite-plus/releases">VoidZero Vite+ Releases and Changelog</a></li>
+</ul>]]></block2>
+    <block3><![CDATA[]]></block3>
+  </post>
+  <post>
     <title>Human Code Review Will Die in 2026</title>
     <author>Wouter Van Schandevijl</author>
     <subTitle>Code Review: The hot potato at FrontMania</subTitle>
